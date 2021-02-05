@@ -4,4 +4,5 @@
 
 * [Angular](frontend/Angular.md)
 * [Javascript](frontend/JavaScript.md)
+* [RxJS](frontend/RxJS.md)
 * [Typescript](frontend/TypeScript.md)
