@@ -2,4 +2,5 @@
 
 ## Frontend
 
+* [Javascript](frontend/JavaScript.md)
 * [Typescript](frontend/TypeScript.md)
