@@ -55,8 +55,7 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 [*Go to top*](#Javascript)
 
 TODO
-
-* [String](#String), [Template Literals](#Template-Literals)
+* [String](#String)
 * [Arrays](#Arrays)
 * [Object](#Object)
 * [Dates & Times](#Dates-and-Times)
