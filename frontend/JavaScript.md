@@ -1,12 +1,56 @@
 # Javascript
 
+TODO structure currently been changed
+
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions and is the scripting language for Web pages.
 
-* *Basic*: [Using the Console](#Using-the-Console), [Variables](#Variables), [Data Types](#Data-Types), [Type Conversion](#Type-Conversion), [Numbers & Math Object](#Numbers-and-Math-Object), [String](#String), [Template Literals](#Template-Literals), [Arrays](#Arrays), [Object](#Object), [Dates & Times](#Dates-and-Times), [Control flow](#Control-flow), [Error handling](#Error-handling), [Function](#Function), [JSON](#JSON), [Regular Expression](#Regular-Expression), [Encode & Decode URL](#Encode-and-Decode-URL)
-* *Advanced*
-  * [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), [ES6 Inheritance with class](#ES6-Inheritance-with-class), [Class free inheritance](#Class-free-inheritance)
-  * ES6/7: [Promises](#ES6-Promises), [Async & Await](#ES7-Async-and-Await), [Arrow Functions](#ES6-Arrow-Functions), [Iterators & Generators](#ES6-Iterators-and-Generators), [Symbols](#ES6-Symbols), [Destructuring](#ES6-Destructuring), [Maps](#ES6-Maps), [Sets](#ES6-Sets), [Modules](#ES6-Modules), [Public Class Fields](#Public-Class-Fields)
-  * ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+* [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
+  variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+* [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
+  [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String),
+  [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number),
+  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt),
+  [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean),
+  [undefined](https://developer.mozilla.org/en-US/docs/Glossary/undefined),
+  [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol),
+  [null](https://developer.mozilla.org/en-US/docs/Glossary/Null)
+* reference types: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+* [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) 
+  operator used to check value's type
+  * [typeof variable === 'undefined'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors) to check if variable is undefined
+* [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator used to check if an object "extends a given class" (test if the presence of constructor.prototype in object's prototype chain)
+* [type conversion](#Type-Conversion)
+* [arithmetic's operations: +, -, *, /, %](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
+* APIs
+  * [console](https://developer.mozilla.org/en-US/docs/Web/API/Console) used for debugging purpose
+  * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) provide mathematical constants and functions (e.g. [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples))
+  * String
+  * Array
+  * Object
+  * Date
+  * Time
+  * [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) used to convert value from/to JSON with [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+  * TODO
+  * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent), [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) functions used to encode, decode URI
+
+
+[*Go to top*](#Javascript)
+
+TODO
+
+* [String](#String), [Template Literals](#Template-Literals)
+* [Arrays](#Arrays)
+* [Object](#Object)
+* [Dates & Times](#Dates-and-Times)
+* [Control flow](#Control-flow)
+* [Error handling](#Error-handling)
+* [Function](#Function)
+* [Regular Expression](#Regular-Expression)
+
+* TODO
+* [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), [ES6 Inheritance with class](#ES6-Inheritance-with-class), [Class free inheritance](#Class-free-inheritance)
+* ES6/7: [Promises](#ES6-Promises), [Async & Await](#ES7-Async-and-Await), [Arrow Functions](#ES6-Arrow-Functions), [Iterators & Generators](#ES6-Iterators-and-Generators), [Symbols](#ES6-Symbols), [Destructuring](#ES6-Destructuring), [Maps](#ES6-Maps), [Sets](#ES6-Sets), [Modules](#ES6-Modules), [Public Class Fields](#Public-Class-Fields)
+* ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 * Miscelleanous
   * [JavaScript Patterns](#JavaScript-Patterns):
 [Module](#Module-Pattern), [Revealing Module](#Revealing-Module-Pattern), [Singleton](#Singleton-Pattern), [Factory](#Factory-Pattern), [Observer](#Observer-Pattern), [Mediator](#Mediator-Pattern), [State](#State-Pattern)
@@ -16,30 +60,6 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 *(Page mainly written in 2019)*
 
 [*Go to parent page*](../README.md)
-
-
-## Using the Console
-* [console.log(...)](https://developer.mozilla.org/en-US/docs/Web/API/Console/log)
-* [console.clear()](https://developer.mozilla.org/en-US/docs/Web/API/Console/clear)
-
-[*Go to top*](#Javascript)
-
-
-## Variables
-* [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) for [block scope](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block) local variable
-* [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) for constants
-* ~~[var](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/var) never to be used for variables anymore~~
-
-[*Go to top*](#Javascript)
-
-
-## Data Types
-* [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive) Types: String, Number, Boolean, null, undefined, [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
-* Reference Types: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) (Standard built-in objects)
-* [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) operator to check value's type
-* check if variable exists with ["typeof undeclaredVariable === 'undefined'"](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors)
-
-[*Go to top*](#Javascript)
 
 
 ## Type Conversion
@@ -53,13 +73,6 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 * [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
 * Type coersion happens in several cases in JavaScript and means that when the operands of an operator are different types, one of them will be converted to an "equivalent" value of the other operand's type.
     * It is good practise not to count on type coersion
-
-[*Go to top*](#Javascript)
-
-
-## Numbers and Math Object
-* [Arithmetic's operations: +, -, *, /, %](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
-* [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) has mathematical constants and functions such as [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples) 
 
 [*Go to top*](#Javascript)
 
@@ -139,12 +152,6 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 [*Go to top*](#Javascript)
 
 
-## JSON
-* [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)/[stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify): Object/Array<->String conversion
-
-[*Go to top*](#Javascript)
-
-
 ## Regular Expression
 * [Regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression)
 * Methods: [Regexp.exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) / [.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
@@ -157,12 +164,6 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   * [Quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers) : x+, x*, x?, x{n}, x{,n}, x{n,m}
   * [Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes): ., \d, \D, \s, \S
   * [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions) : x(?=y), x(?!y)
-
-[*Go to top*](#Javascript)
-
-
-## Encode and Decode URL
-* [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) / [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) : encode / decode URI
 
 [*Go to top*](#Javascript)
 
