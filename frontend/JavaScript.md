@@ -6,6 +6,14 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
   variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+* [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
+  [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String),
+  [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number),
+  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt),
+  [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean),
+  [undefined](https://developer.mozilla.org/en-US/docs/Glossary/undefined),
+  [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol),
+  [null](https://developer.mozilla.org/en-US/docs/Glossary/Null)
 * control flow with [if ... else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) and [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 * iterations
     * [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
@@ -17,16 +25,12 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 * error handling with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) and [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
   * [custom error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#custom_error_types) ease error handling
   * [custom error should have a name and message](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
-* [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
-  [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String),
-  [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number),
-  [BigInt](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/BigInt),
-  [Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean),
-  [undefined](https://developer.mozilla.org/en-US/docs/Glossary/undefined),
-  [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol),
-  [null](https://developer.mozilla.org/en-US/docs/Glossary/Null)
-* reference types: [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array), [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object), [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
-* [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof) 
+* functions
+  * [function declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function#Description) vs [ function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Syntax) vs [object's method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
+  * [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE): immediately invoked function expression
+  * [default function parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax)
+  * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+* [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
   operator used to check value's type
   * [typeof variable === 'undefined'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors) to check if variable is undefined
 * [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator used to check if an object "extends a given class" (test if the presence of constructor.prototype in object's prototype chain)
@@ -36,14 +40,18 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   * [console](https://developer.mozilla.org/en-US/docs/Web/API/Console) used for debugging purpose
   * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) provide mathematical constants and functions (e.g. [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples))
   * String
-  * Array
-  * Object
-  * Date
+  * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+  * [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+  * [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
   * Time
   * [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) used to convert value from/to JSON with [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
   * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent), [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) functions used for URI handling
   * TODO
-
+* other nice features
+  * [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) used to build strings efficiently (e.g. dynamic HTML sections)
+  * [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) 
+    with [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals),
+    [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) (and [function calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls))
 
 [*Go to top*](#Javascript)
 
@@ -53,7 +61,6 @@ TODO
 * [Arrays](#Arrays)
 * [Object](#Object)
 * [Dates & Times](#Dates-and-Times)
-* [Function](#Function)
 * [Regular Expression](#Regular-Expression)
 
 * TODO
@@ -96,11 +103,6 @@ TODO
 [*Go to top*](#Javascript)
 
 
-## Template Literals
-* [template literals or template strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) are string literals allowing embedded expressions. You can use multi-line strings and string interpolation features with them
-* template literals are very nice to dynamic build HTML sections.
-
-[*Go to top*](#Javascript)
 
 
 ## Arrays
@@ -132,17 +134,6 @@ TODO
 * create date with [new Date(year, monthIndex [day, h, m, s, ms])](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#syntax) - monthIndex is 0-based; January = 0
 * parsing of dates with [new Date('*string*')](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/Date#parameters) or [Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)('*string*') is strongly discouraged due to browser differences and inconsistencies. Prefer use of external library such as [momentjs](http://momentjs.com/)
 * [Date.get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth)[setMonth()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate)[setDate()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate), [getDay()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear)[setFullYear()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear),[get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours)[setHours()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes)[setMinutes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds)[setSeconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds)[setMilliseconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds), [get/](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime)[setTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime)
-
-[*Go to top*](#Javascript)
-
-
-
-
-## Function
-* [function declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function#Description)[/expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Syntax), [object's method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
-* [default value in function argument](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax)
-* [IIFE (Immediately Invoked Function Expression)](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
-* [spread](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) / [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
 
 [*Go to top*](#Javascript)
 
