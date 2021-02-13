@@ -4,7 +4,7 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 
 * *Basic*: [Using the Console](#Using-the-Console), [Variables](#Variables), [Data Types](#Data-Types), [Type Conversion](#Type-Conversion), [Numbers & Math Object](#Numbers-and-Math-Object), [String](#String), [Template Literals](#Template-Literals), [Arrays](#Arrays), [Object](#Object), [Dates & Times](#Dates-and-Times), [Control flow](#Control-flow), [Error handling](#Error-handling), [Function](#Function), [JSON](#JSON), [Regular Expression](#Regular-Expression), [Encode & Decode URL](#Encode-and-Decode-URL)
 * *Advanced*
-  * [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), [ES6 Inheritance with class](#ES6-Inheritance-with-class)	[Class free inheritance](#Class-free-inheritance)
+  * [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), [ES6 Inheritance with class](#ES6-Inheritance-with-class), [Class free inheritance](#Class-free-inheritance)
   * ES6/7: [Promises](#ES6-Promises), [Async & Await](#ES7-Async-and-Await), [Arrow Functions](#ES6-Arrow-Functions), [Iterators & Generators](#ES6-Iterators-and-Generators), [Symbols](#ES6-Symbols), [Destructuring](#ES6-Destructuring), [Maps](#ES6-Maps), [Sets](#ES6-Sets), [Modules](#ES6-Modules), [Public Class Fields](#Public-Class-Fields)
   * ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
 * Miscelleanous
@@ -13,7 +13,7 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   * [JavaScript Validation](#JavaScript-Validation) and [Minification](#Minification)
 * [References](#References)
 
-*(Page mainly written in 2019, last update: september 2020)*
+*(Page mainly written in 2019)*
 
 [*Go to parent page*](../README.md)
 
