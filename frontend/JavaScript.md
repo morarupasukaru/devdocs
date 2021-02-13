@@ -6,6 +6,17 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
   variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
+* control flow with [if ... else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) and [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
+* iterations
+    * [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+    * [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
+    * [do ... while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
+    * [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) (not to use with [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#Array_iteration_and_for...in))
+    * [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
+    * see also [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* error handling with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) and [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
+  * [custom error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#custom_error_types) ease error handling
+  * [custom error should have a name and message](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
 * [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
   [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String),
   [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number),
@@ -30,8 +41,8 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   * Date
   * Time
   * [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) used to convert value from/to JSON with [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
+  * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent), [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) functions used for URI handling
   * TODO
-  * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent), [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) functions used to encode, decode URI
 
 
 [*Go to top*](#Javascript)
@@ -42,8 +53,6 @@ TODO
 * [Arrays](#Arrays)
 * [Object](#Object)
 * [Dates & Times](#Dates-and-Times)
-* [Control flow](#Control-flow)
-* [Error handling](#Error-handling)
 * [Function](#Function)
 * [Regular Expression](#Regular-Expression)
 
@@ -127,20 +136,6 @@ TODO
 [*Go to top*](#Javascript)
 
 
-## Control flow
-* [if ... else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
-* [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-* loops: [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for), [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while), [do ... while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while), [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) (not to use with [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#Array_iteration_and_for...in)), [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of), [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)[/.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-
-[*Go to top*](#Javascript)
-
-
-## Error handling
-* errors are handled with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
-* errors are thrown with [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
-* custom thrown [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#Custom_Error_Types) object should have a name and message properties; see [whats-a-good-way-to-extend-error-in-javascript](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
-
-[*Go to top*](#Javascript)
 
 
 ## Function
