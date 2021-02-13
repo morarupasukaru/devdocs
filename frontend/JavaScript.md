@@ -15,13 +15,12 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol),
   [null](https://developer.mozilla.org/en-US/docs/Glossary/Null)
 * control flow with [if ... else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else) and [switch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
-* iterations
-    * [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
-    * [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)
-    * [do ... while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while)
-    * [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) (not to use with [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#Array_iteration_and_for...in))
-    * [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of)
-    * see also [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+* iterations with
+    [for](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for),
+    [while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while),
+    [do ... while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while),
+    [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of),
+    [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) ([not for Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#Array_iteration_and_for...in)), see also [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 * error handling with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) and [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
   * [custom error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#custom_error_types) ease error handling
   * [custom error should have a name and message](https://stackoverflow.com/questions/1382107/whats-a-good-way-to-extend-error-in-javascript)
