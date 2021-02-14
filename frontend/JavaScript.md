@@ -1,20 +1,17 @@
 # Javascript
 
 TODO structure currently been changed
-TODO add hints if feature > ES5
 
-JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions and is the scripting language for Web pages.
+JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
+and is the scripting language for Web pages.
 
 * about JavaScript language
   * versions: ES3 (prior 2000), ES5 (2009),  ES6 or ES2015 (supported by most modern browser), ES7 or ES2106, etc.
   * using transpiler and/or polyfills are recommended to be able to use features of latest JS version
   * a polyfill emulate a certain API (e.g. JSON object support)
-  * transpiler like [Babel](https://babeljs.io/) and [Traceur](https://github.com/google/traceur-compiler) transform the code into a targeted JS version to be able to use new language syntax (e.g. arrow function) with old browsers.
-    * transpiler integrate normally also polyfill support
-* TODO    
-*  https://github.com/google/traceur-compiler/wiki/LanguageFeatures
-*  https://github.com/zloirock/core-js#commonjs
-  
+  * transpiler like [Babel](https://babeljs.io/) and [Traceur](https://github.com/google/traceur-compiler) transform the
+    code into a targeted JS version to be able to use new language syntaxes (e.g. arrow function) with old browsers
+  * transpiler support also polyfills
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
   variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 * [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
@@ -49,7 +46,20 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
 * APIs
   * [console](https://developer.mozilla.org/en-US/docs/Web/API/Console) used for debugging purpose
   * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) provide mathematical constants and functions (e.g. [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples))
-  * String
+  * [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+    * [concatenation with +](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators): ```'my ' + 'string'```
+    * [accessor with [...]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#character_access): ```'hello'[1] // provide 'e'```
+    * [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property
+      and [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), 
+      [toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase), 
+      [indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf), 
+      [lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf), 
+      [substring()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring), 
+      [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice), 
+      [split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split), 
+      [replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), 
+      [includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes) String's methods 
+    * String are array-like and can be converted to Array with [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Array_from_a_String)
   * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
   * [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
   * [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
@@ -62,11 +72,15 @@ JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programm
   * [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) 
     with [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals),
     [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) (and [function calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls))
+  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#object-initializer-shorthand
+  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#destructuring-assignment
+  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#property-method-assignment
+  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
+  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
 
 [*Go to top*](#Javascript)
 
 TODO
-* [String](#String)
 * [Arrays](#Arrays)
 * [Object](#Object)
 * [Dates & Times](#Dates-and-Times)
@@ -99,16 +113,6 @@ TODO
 * [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
 * Type coersion happens in several cases in JavaScript and means that when the operands of an operator are different types, one of them will be converted to an "equivalent" value of the other operand's type.
     * It is good practise not to count on type coersion
-
-[*Go to top*](#Javascript)
-
-
-## String
-* [Concatenation: 'Hello' + ' World'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators)
-* Accessor: 'Hello'[2] -> 'l'
-* [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length) property
-* String's methods: [toUpperCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase), [toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase), [indexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf), [lastIndexOf()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf), [substring()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substring), [slice()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/slice), [split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split), [replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
-* String are array-like and can be converted to Array with [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from#Array_from_a_String)
 
 [*Go to top*](#Javascript)
 
