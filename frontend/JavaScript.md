@@ -335,7 +335,6 @@ class Person {
 }
 ```
 
-
 [*Go to top*](#Javascript)
 
 ## JavaScript Patterns
