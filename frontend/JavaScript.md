@@ -1,9 +1,20 @@
 # Javascript
 
 TODO structure currently been changed
+TODO add hints if feature > ES5
 
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions and is the scripting language for Web pages.
 
+* about JavaScript language
+  * versions: ES3 (prior 2000), ES5 (2009),  ES6 or ES2015 (supported by most modern browser), ES7 or ES2106, etc.
+  * using transpiler and/or polyfills are recommended to be able to use features of latest JS version
+  * a polyfill emulate a certain API (e.g. JSON object support)
+  * transpiler like [Babel](https://babeljs.io/) and [Traceur](https://github.com/google/traceur-compiler) transform the code into a targeted JS version to be able to use new language syntax (e.g. arrow function) with old browsers.
+    * transpiler integrate normally also polyfill support
+* TODO    
+*  https://github.com/google/traceur-compiler/wiki/LanguageFeatures
+*  https://github.com/zloirock/core-js#commonjs
+  
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
   variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
 * [primitive types](https://developer.mozilla.org/en-US/docs/Glossary/Primitive): 
@@ -68,6 +79,7 @@ TODO
 * Miscelleanous
   * [JavaScript Patterns](#JavaScript-Patterns):
 [Module](#Module-Pattern), [Revealing Module](#Revealing-Module-Pattern), [Singleton](#Singleton-Pattern), [Factory](#Factory-Pattern), [Observer](#Observer-Pattern), [Mediator](#Mediator-Pattern), [State](#State-Pattern)
+  * [Transpiler](#Transpiler)
   * [JavaScript Validation](#JavaScript-Validation) and [Minification](#Minification)
 * [References](#References)
 
@@ -643,6 +655,10 @@ light.start();
 
 [*Go to top*](#Javascript)
 
+
+## Transpiler
+
+[*Go to top*](#Javascript)
 
 ## JavaScript Validation
 
