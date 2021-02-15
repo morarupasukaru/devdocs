@@ -155,84 +155,35 @@ and is the scripting language for Web pages.
        })();
        ```
   * [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) used to build strings efficiently (e.g. dynamic HTML sections)
+  * [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) to write compact code
+    * advantage: an arrow function inherit *this* if called in an object's method
   * [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) 
     to create easily [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals)
     or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) with existing ones (see also use in [function calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls))
-  * [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) to write compact code
-    * advantage: an arrow function inherit *this* if called in an object's method
-
-[*Go to top*](#Javascript)
-    
-    
-  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#object-initializer-shorthand
-  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#destructuring-assignment
-  * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#property-method-assignment
-  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
-  * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
-  * ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-  * ES6/7: [Promises](#ES6-Promises), 
-  * [Async & Await](#ES7-Async-and-Await), 
-  * [Arrow Functions](#ES6-Arrow-Functions), 
-  * [Destructuring](#ES6-Destructuring), 
-  * [Modules](#ES6-Modules), 
-  * [Public Class Fields](#Public-Class-Fields)
-
-
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Destructuring
-* [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) available on [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) or [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
-  * and allow to set the [Rest of an Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) to a variable
-  * or set the [Rest of an Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) to a variable
-* [Destructuring rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Destructuring_rest_parameters)
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Modules
-* [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) uses [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description), [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) statements
-    * there are two different types of export: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports)
-* alternatives to ES2015 Modules: [CommonJS](https://en.wikipedia.org/wiki/CommonJS) or [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
-* [systemjs](https://guybedford.com/systemjs-2.0) is a typical module loader to support several module format
-* see [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) for a comparison of module loaders
-
-[*Go to top*](#Javascript)
-
-
-## ES7 Public-Class-Fields
-
-[Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) allow to declare fields without constructor
-* [public or private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Field_declarations)
-* class methods can be writen with class field and arrow functions; it solve problem with `this` with events
-  * see following [blog](https://ui.dev/javascript-private-and-public-class-fields/)
-
-* example
-```
-class Person {
-    firstName = "Mike";
-    
-    getName = () => {
-      return this.firstName;
-    };
-}
-```
-instead of
-```
-class Person {
-  constructor() {
-    this.firstName = "Mike";
-
-    this.getName = () => {
-      return this.firstName;
-    };
-  }
-}
-```
-
-[*Go to top*](#Javascript)
-  
+  * [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
+    ease copy of values from [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) 
+    or properties from [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring) into distinct variables
+    * allow also to set the rest of an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) 
+      or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) 
+      to a variable
+  * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Destructuring_rest_parameters) allows a function to accept an indefinite number of arguments as an array
+  * [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) with ```?.``` operator ease access of object properties
+  * [shorthand property and method names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#new_notations_in_ecmascript_2015)
+    is a shorter way to define object's properties or methods within an [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#new_notations_in_ecmascript_2015)
+  * [nullish coalescing operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator) 
+    ```??``` allow to specify default value if left-hand side operand is null or undefined only
+    * [logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR) ```||``` returns default value also if left-hand side operand if falsy (side-effect possible; e.g. 0)
+  * [field declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#field_declarations) allow to declare 
+      [public](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) or
+      [private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields)
+      fields without constructor
+  * modules
+    * TODO add module loader to tools section?
+    * [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) uses [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description), [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) statements
+      * there are two different types of export: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports)
+    * alternatives to ES6 modules: [CommonJS](https://en.wikipedia.org/wiki/CommonJS) or [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
+    * [systemjs](https://guybedford.com/systemjs-2.0) is a typical module loader to support several module format
+    * see [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) for a comparison of module loaders
 * tools
   * [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler): [Babel](https://babeljs.io/) or [Traceur](https://github.com/google/traceur-compiler) (they support also polyfills)
   * [linters](https://en.wikipedia.org/wiki/Lint_(software)): [ESLint](https://eslint.org/) 
