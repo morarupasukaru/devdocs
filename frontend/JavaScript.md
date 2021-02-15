@@ -5,13 +5,8 @@ TODO structure currently been changed
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
 
-* about JavaScript language
-  * versions: ES3 (prior 2000), ES5 (2009),  ES6 or ES2015 (supported by most modern browser), ES7 or ES2106, etc.
-  * using transpiler and/or polyfills are recommended to be able to use features of latest JS version
-  * a polyfill emulate a certain API (e.g. JSON object support)
-  * transpiler like [Babel](https://babeljs.io/) and [Traceur](https://github.com/google/traceur-compiler) transform the
-    code into a targeted JS version to be able to use new language syntaxes (e.g. arrow function) with old browsers
-  * transpiler support also polyfills
+* language versions: ES3 (prior 2000), ES5 (2009),  ES6 or ES2015 (supported by most modern browser), ES7 or ES2106, etc.
+  * using [transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler) and/or [polyfills](https://en.wikipedia.org/wiki/Polyfill_(programming)) are recommended to be able to use features of latest JS version
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
   variables with [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and constants 
   with [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)
@@ -123,63 +118,162 @@ and is the scripting language for Web pages.
       [Date.parse(dateString)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse)
       (due to browser differences and inconsistencies)
     * [Date.now()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/now) static method and
-      [getMonth()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth),
-      [setMonth()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth), 
-      [getDate()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate),
-      [setDate()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate), 
-      [getDay()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay), 
-      [getFullYear()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear),
-      [setFullYear()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear),
-      [getHours()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours),
-      [setHours()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours), 
-      [getMinutes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes),
-      [setMinutes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes), 
-      [getSeconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getSeconds),
-      [setSeconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setSeconds), 
-      [getMilliseconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds),
-      [setMilliseconds()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds), 
       [getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime),
-      [setTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime) methods
+      [setTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime),
+      [getMonth()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth),
+      [setMonth()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth), etc. methods
   * [JSON](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON) used to convert value from/to JSON with [stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify), [parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse)
   * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent), [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) functions used for URI handling
   * [console](https://developer.mozilla.org/en-US/docs/Web/API/Console) used for debugging purpose
   * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) 
     provide mathematical constants and functions (e.g. [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples))
-  * TODO Regular Expression
-    * [Regular expression literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression)
-    * Methods: [Regexp.exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) / [.test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
-      , [.match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), [.search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), [String.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
-    * [Search flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Advanced_searching_with_flags_2): i, g
-    * [Metacharacters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Using_special_characters)
-      * [Boundaries](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions#boundary-type_assertions) : ^, $ : must ends with
-      * [Escaping](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Escaping) : \
-      * [Groups and Ranges](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Groups_and_Ranges) : [], ()
-      * [Quantifiers](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Quantifiers) : x+, x*, x?, x{n}, x{,n}, x{n,m}
-      * [Types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Character_Classes): ., \d, \D, \s, \S
-      * [Assertions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions/Assertions) : x(?=y), x(?!y)
-* other nice features
+  * [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) with [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) and strings
+    * create regex with [regexp literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression);
+      e.g. ```/ab+c/``` 
+    * [exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec),
+      [test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) RegExp methods and
+      [match()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match), 
+      [search()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/search), 
+      [replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace) String methods
+    * concepts: [search flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags) and
+      [metacharacters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Using_special_characters)
+* other nice language features
+  * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) used for asynchronous operations (replace "old-style" passed-in callbacks)
+    * [then()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then), 
+      [catch()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch),
+      [finally()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally) methods
+    * see [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) guide
+  * async and await to write asynchronous like synchronous code
+    * [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) runs asynchronous via the event loop and returns a Promise
+    * [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator is used to wait for a Promise
+    * async IIFE can be used to use await from top-level code; e.g.
+       ```
+       (async () => {
+         let response = await fetch('https://some-server.com/some-resource');
+         let data = await response.json();
+         ...
+       })();
+       ```
   * [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals) used to build strings efficiently (e.g. dynamic HTML sections)
   * [spread syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax) 
-    with [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals),
-    [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) (and [function calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls))
+    to create easily [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_array_literals)
+    or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_object_literals) with existing ones (see also use in [function calls](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax#spread_in_function_calls))
+  * [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions) to write compact code
+    * advantage: an arrow function inherit *this* if called in an object's method
+
+[*Go to top*](#Javascript)
+    
+    
   * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#object-initializer-shorthand
   * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#destructuring-assignment
   * https://github.com/google/traceur-compiler/wiki/LanguageFeatures#property-method-assignment
   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator
   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining
+  * ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
+  * ES6/7: [Promises](#ES6-Promises), 
+  * [Async & Await](#ES7-Async-and-Await), 
+  * [Arrow Functions](#ES6-Arrow-Functions), 
+  * [Destructuring](#ES6-Destructuring), 
+  * [Modules](#ES6-Modules), 
+  * [Public Class Fields](#Public-Class-Fields)
+
+
 
 [*Go to top*](#Javascript)
 
+
+## ES6 Destructuring
+* [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) available on [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) or [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
+  * and allow to set the [Rest of an Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) to a variable
+  * or set the [Rest of an Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) to a variable
+* [Destructuring rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Destructuring_rest_parameters)
+
+[*Go to top*](#Javascript)
+
+
+## ES6 Modules
+* [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) uses [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description), [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) statements
+    * there are two different types of export: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports)
+* alternatives to ES2015 Modules: [CommonJS](https://en.wikipedia.org/wiki/CommonJS) or [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
+* [systemjs](https://guybedford.com/systemjs-2.0) is a typical module loader to support several module format
+* see [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) for a comparison of module loaders
+
+[*Go to top*](#Javascript)
+
+
+## ES7 Public-Class-Fields
+
+[Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) allow to declare fields without constructor
+* [public or private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Field_declarations)
+* class methods can be writen with class field and arrow functions; it solve problem with `this` with events
+  * see following [blog](https://ui.dev/javascript-private-and-public-class-fields/)
+
+* example
+```
+class Person {
+    firstName = "Mike";
+    
+    getName = () => {
+      return this.firstName;
+    };
+}
+```
+instead of
+```
+class Person {
+  constructor() {
+    this.firstName = "Mike";
+
+    this.getName = () => {
+      return this.firstName;
+    };
+  }
+}
+```
+
+[*Go to top*](#Javascript)
+  
+* tools
+  * [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler): [Babel](https://babeljs.io/) or [Traceur](https://github.com/google/traceur-compiler) (they support also polyfills)
+  * [linters](https://en.wikipedia.org/wiki/Lint_(software)): [ESLint](https://eslint.org/) 
+    or bundled in [standardjs](https://standardjs.com/); see also [airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [google](https://github.com/google/eslint-config-google) presets
+  * [minifiers](https://en.wikipedia.org/wiki/Minification_(programming)): [Closure compiler](https://github.com/google/closure-compiler)
+    or [uglifyjs](http://lisperator.net/uglifyjs/); see also [grunt-json-minify](https://github.com/werk85/grunt-json-minify) JSON minifier
+  * *tools are becoming quick obsolete, please find appropriate tools during development*
+* references: [MDN web docs](https://developer.mozilla.org/en-US/)
+  * courses: [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/) and
+    [JavaScript - The Complete Guide 2020](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
+  * webpages:
+    [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/),
+    [es6 summary](https://github.com/zsolt-nagy/es6-summary),
+    [es6 features](https://github.com/lukehoban/es6features),
+    [ECMAScript 6 - Overview & Comparison](http://es6-features.org/#Constants) and
+    [Good parts of JavaScript in 2014](http://bdadam.com/blog/video-douglas-crockford-about-the-new-good-parts.html)
+  * books:
+    [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do),
+    [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do),
+    [Maintainable JavaScript](http://shop.oreilly.com/product/0636920025245.do),
+    [The principles of Object-Oriented JavaScript](https://leanpub.com/oopinjavascript),
+    [Effective JavaScript](http://effectivejs.com/),
+    [JavaScript, The Definitive Guide](http://shop.oreilly.com/product/9780596805531.do),
+    [Understanding ECMAScript 6](https://leanpub.com/understandinges6) and
+    [ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/es6%20%26%20beyond)
+
+[*Go to parent page*](../README.md)
+
 * TODO
-* [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), [ES6 Inheritance with class](#ES6-Inheritance-with-class), [Class free inheritance](#Class-free-inheritance)
-* ES6/7: [Promises](#ES6-Promises), [Async & Await](#ES7-Async-and-Await), [Arrow Functions](#ES6-Arrow-Functions), [Iterators & Generators](#ES6-Iterators-and-Generators), [Symbols](#ES6-Symbols), [Destructuring](#ES6-Destructuring), [Modules](#ES6-Modules), [Public Class Fields](#Public-Class-Fields)
-* ES11: [Optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining)
-* Miscelleanous
+* [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), 
+  [ES6 Inheritance with class](#ES6-Inheritance-with-class), 
+  [Class free inheritance](#Class-free-inheritance)
+* miscellaneous
   * [JavaScript Patterns](#JavaScript-Patterns):
-[Module](#Module-Pattern), [Revealing Module](#Revealing-Module-Pattern), [Singleton](#Singleton-Pattern), [Factory](#Factory-Pattern), [Observer](#Observer-Pattern), [Mediator](#Mediator-Pattern), [State](#State-Pattern)
-  * [Transpiler](#Transpiler)
-  * [JavaScript Validation](#JavaScript-Validation) and [Minification](#Minification)
-* [References](#References)
+    [Module](#Module-Pattern), 
+    [Revealing Module](#Revealing-Module-Pattern), 
+    [Singleton](#Singleton-Pattern), 
+    [Factory](#Factory-Pattern), 
+    [Observer](#Observer-Pattern), 
+    [Mediator](#Mediator-Pattern), 
+    [State](#State-Pattern)
 
 *(Page mainly written in 2019)*
 
@@ -238,106 +332,6 @@ See [Douglas Crockford explanations](https://www.youtube.com/watch?v=PSGEjv3Tqo0
 [*Go to top*](#Javascript)
 
 
-## ES6 Promises
-* replace "old-style" passed-in callbacks
-* [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) [.then()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then) / [.catch()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/catch)
-* See [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) guide
-
-[*Go to top*](#Javascript)
-
-
-## ES7 Async and Await
-* [*async* function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) runs asynchronous via the event loop and returns a Promise.
-* [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator is used to wait for a Promise.
-```
-async function getUsers() {
-  const response = await fetch('https://jsonplaceholder.typicode.com/users');
-  const data = await response.json();
-  return data;
-}
-```
-* [workaround to allow await with top-level code](https://javascript.info/async-await):
-```
-(async () => {
-  let response = await fetch('ttps://jsonplaceholder.typicode.com/users');
-  let data = await response.json();
-  ...
-})();
-```
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Arrow Functions
-* [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-* advantage of arrow function: provide a lexical "this" in object's method (this must not be saved into that or self)
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Iterators and Generators
-* [iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterators) implements the [iterator protocol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Iteration_protocols#The_iterator_protocol)
-* [generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Generator_functions) is a more general iterator; their state can be modified by calling [next()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Advanced_generators)
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Symbols
-* [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Destructuring
-* [Destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) available on [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) or [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
-  * and allow to set the [Rest of an Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) to a variable
-  * or set the [Rest of an Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) to a variable
-* [Destructuring rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Destructuring_rest_parameters)
-
-[*Go to top*](#Javascript)
-
-
-## ES6 Modules
-* [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) uses [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description), [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) statements
-    * there are two different types of export: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports)
-* alternatives to ES2015 Modules: [CommonJS](https://en.wikipedia.org/wiki/CommonJS) or [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
-* [systemjs](https://guybedford.com/systemjs-2.0) is a typical module loader to support several module format
-* see [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) for a comparison of module loaders
-
-[*Go to top*](#Javascript)
-
-
-## ES7 Public-Class-Fields
-
-[Public class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) allow to declare fields without constructor
-* [public or private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#Field_declarations)
-* class methods can be writen with class field and arrow functions; it solve problem with `this` with events
-  * see following [blog](https://ui.dev/javascript-private-and-public-class-fields/)
-
-* example
-```
-class Person {
-    firstName = "Mike";
-    
-    getName = () => {
-      return this.firstName;
-    };
-}
-```
-instead of
-```
-class Person {
-  constructor() {
-    this.firstName = "Mike";
-
-    this.getName = () => {
-      return this.firstName;
-    };
-  }
-}
-```
-
-[*Go to top*](#Javascript)
 
 ## JavaScript Patterns
 
@@ -669,58 +663,3 @@ const light = new TrafficLight();
 light.start();
 
 ```
-
-[*Go to top*](#Javascript)
-
-
-## Transpiler
-
-[*Go to top*](#Javascript)
-
-## JavaScript Validation
-
-* [ESLint](https://eslint.org/) is current standard tool to validate JavaScript ([JSLint](https://jslint.com/) and [JSHint](https://jshint.com/) are obsolete; they does not support new JS features).
-* ESLint is also bundled with [standardjs](https://standardjs.com/) that provide pretty-print as well.
-* There is also preset of ESLint available: [airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [google](https://github.com/google/eslint-config-google)
-
-*Tools are becoming quick obsolete, please find appropriate tools during development*
-
-[*Go to top*](#Javascript)
-
-
-## Minification
-
-Popular tools for JavaScript [minification](https://en.wikipedia.org/wiki/Minification_(programming)) are:
-* [Closure compiler](https://github.com/google/closure-compiler)
-* [uglifyjs](http://lisperator.net/uglifyjs/)
-
-JSON can also be minified, see e.g. [grunt-json-minify](https://github.com/werk85/grunt-json-minify)
-
-*Tools are becoming quick obsolete, please find appropriate tools during development*
-
-[*Go to top*](#Javascript)
-
-
-## References
-* [MDN web docs](https://developer.mozilla.org/en-US/)
-* Courses
-  * [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/) by Brad Traversy
-  * [JavaScript - The Complete Guide 2020](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) by Maximilian Schwarzmüller
-* Webpages
-  * [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/)
-  * [Summary of ES6 features](https://github.com/zsolt-nagy/es6-summary)
-  * [Examples of everything new in ECMAScript 2016, 2017, and 2018](https://medium.freecodecamp.org/here-are-examples-of-everything-new-in-ecmascript-2016-2017-and-2018-d52fa3b5a70e)
-  * [ECMAScript 6 - Overview & Comparison](http://es6-features.org/#Constants)
-  * [es6 features](https://github.com/lukehoban/es6features)
-  * [Good parts of JavaScript in 2014](http://bdadam.com/blog/video-douglas-crockford-about-the-new-good-parts.html)
-* Books
-  * [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
-  * [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do)
-  * [Maintainable JavaScript](http://shop.oreilly.com/product/0636920025245.do)
-  * [The principles of Object-Oriented JavaScript](https://leanpub.com/oopinjavascript)
-  * [Effective JavaScript](http://effectivejs.com/)
-  * [JavaScript, The Definitive Guide](http://shop.oreilly.com/product/9780596805531.do)
-  * [Understanding ECMAScript 6](https://leanpub.com/understandinges6)
-  * [ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/es6%20%26%20beyond)
-
-[*Go to top*](#Javascript)
