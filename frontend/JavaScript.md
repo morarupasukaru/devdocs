@@ -1,7 +1,5 @@
 # Javascript
 
-TODO structure currently been changed
-
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
 
@@ -40,14 +38,64 @@ and is the scripting language for Web pages.
   * [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE): immediately invoked function expression
   * [default function parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax)
   * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-* [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
-  operator used to check value's type
-  * [typeof variable === 'undefined'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors) 
-    to check if variable is undefined
-* [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator used to 
+* type checks
+  * [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
+    operator used to check value's type
+    * [typeof variable === 'undefined'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors) 
+      to check if variable is undefined
+  * [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator used to 
     check if an object "extends a given class" (test if the presence of constructor.prototype in object's prototype chain)
-* [type conversion](#Type-Conversion)
+  * [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
+  * [Array.isArray()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
+* type conversions
+  * ... to String: 
+    [toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) 
+    , [String()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#String_conversion) function (without new)
+    and [Number.toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) 
+  * ... to Number: [parseInt(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt),
+    [parseFloat(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), 
+    [Number(any type)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) function (without new)
+    and [unary + operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_()) 
+  * ... to Boolean: `myValue === 'true'`
+  * [type coersion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) 
+    happens in several cases in JavaScript and means that when the operands of an operator are different types, 
+    one of them will be converted to an "equivalent" value of the other operand's type.
+    * do not to count on type coersion; e.g. use ```===``` instead of ```==```
+    * ... except to check if an object is [truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)/[falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 * [arithmetic's operations: +, -, *, /, %](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
+* [prototype inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
+  * construct objects [with literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#objects_created_with_syntax_constructs)
+  * ... [with a constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_a_constructor) function
+    and [new](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator
+    * constructor main goal is to specify object properties
+  * ... [with Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_object.create)
+    and a given [prototype](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Understanding_prototype_objects)
+    * [prototype are used mainly to share functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Modifying_prototypes)
+    * see [example of classical inheritance with constructor function, prototype and Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#classical_inheritance_with_object.create)
+  * ... [with class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_the_class_keyword) and 
+    [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor),
+    [static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static),
+    [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends),
+    [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) keywords
+    and [getter/setter](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Getters_and_Setters)
+    * [class](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes) is a syntactic sugar; prototype inheritance remains under the hood
+  * [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) keyword to access object properties
+  * [hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) indicate if an object has the specified property as its own property (as opposed to inheriting it)
+* [class free inheritance](https://www.youtube.com/watch?v=PSGEjv3Tqo0&t=23m15s) (from Douglas Crockford)
+  ```
+  function constructor(spec) {
+    let { member } = spec,
+        { other } = other_constructor(spec),
+        method = function() {
+            // accessing member, other, method, spec
+        };
+  
+    return Object.freeze({
+        method,
+        other
+    });
+  }
+  ```
 * APIs
   * [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
     * create object with [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Creating_objects); e.g. ```{name: 'toto', age: 21}```
@@ -177,13 +225,19 @@ and is the scripting language for Web pages.
       [public](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) or
       [private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields)
       fields without constructor
-  * modules
-    * TODO add module loader to tools section?
-    * [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) uses [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description), [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) statements
-      * there are two different types of export: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports)
-    * alternatives to ES6 modules: [CommonJS](https://en.wikipedia.org/wiki/CommonJS) or [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md)
-    * [systemjs](https://guybedford.com/systemjs-2.0) is a typical module loader to support several module format
-    * see [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) for a comparison of module loaders
+  * [modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ease to compose self-contained piece of codes together
+    * [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) and [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description) statements
+    * features: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports) exports,
+      [dynamic module loading](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#dynamic_module_loading),
+      [top level await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#top_level_await)
+    * JavaScript modules should replace other module format like [CommonJS](https://en.wikipedia.org/wiki/CommonJS), 
+      [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md),
+      [UMD](https://github.com/umdjs/umd) 
+      or module and revealing module patterns (see below)
+      * see also articles [Understand the different javascript modules formats](https://code-trotter.com/web/understand-the-different-javascript-modules-formats/)
+      and [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) 
+      * module loaders like [systemjs](https://github.com/systemjs/systemjs), [requirejs](https://requirejs.org/) load specific format of modules at runtime in browser
+      * module bundlers like [webpack](https://github.com/webpack/webpack), [browserify](http://browserify.org/) bundle all modules together during build
 * tools
   * [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler): [Babel](https://babeljs.io/) or [Traceur](https://github.com/google/traceur-compiler) (they support also polyfills)
   * [linters](https://en.wikipedia.org/wiki/Lint_(software)): [ESLint](https://eslint.org/) 
@@ -191,6 +245,72 @@ and is the scripting language for Web pages.
   * [minifiers](https://en.wikipedia.org/wiki/Minification_(programming)): [Closure compiler](https://github.com/google/closure-compiler)
     or [uglifyjs](http://lisperator.net/uglifyjs/); see also [grunt-json-minify](https://github.com/werk85/grunt-json-minify) JSON minifier
   * *tools are becoming quick obsolete, please find appropriate tools during development*
+* design patterns
+  * *module pattern* as alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+    ```
+    const module = (function () {
+    
+      let privateData = 'some private data';
+    
+      const privateMethod = function(arg) {
+        privateData += arg;
+        console.log(privateData);
+      }
+    
+      return {
+          publicMethod: function(arg) {
+            privateMethod(arg); 
+            console.log('do something else');
+        }
+      }
+    })();
+    
+    module.publicMethod(' and more');
+    ```
+  * *revealing module pattern* as another alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+    ```
+    const module = (function () {
+    
+      let privateData = 'some private data';
+    
+      const privateMethod = function(arg) {
+        privateData += arg;
+        console.log(privateData);
+      }
+    
+      return {
+          publicMethod: privateMethod
+      }
+    })();
+    
+    module.publicMethod(' and more');
+    ```
+    * revealing module pattern is cleaner as module oattern but do not allow to add additional feature to exposed methods (e.g. call other methods; like console.log above)
+  * *singleton pattern*
+    ```
+    const Singleton = (function() {
+      let instance;
+    
+      function createInstance() {
+        const object = { field: 'value', /* ... other fields, methods */ };
+        return object;
+      }
+    
+      return {
+        getInstance: function() {
+          if (!instance) {
+            instance = createInstance();
+          }
+          return instance;
+        }
+      }
+    })();
+    
+    var instance1 = Singleton.getInstance();
+    var instance2 = Singleton.getInstance();
+     
+    console.assert(instance1 === instance2);
+    ```
 * references: [MDN web docs](https://developer.mozilla.org/en-US/)
   * courses: [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/) and
     [JavaScript - The Complete Guide 2020](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
@@ -212,405 +332,4 @@ and is the scripting language for Web pages.
 
 [*Go to parent page*](../README.md)
 
-* TODO
-* [Object Oriented](#Object-Oriented): [ES5 Inheritance with prototype](#ES5-Inheritance-with-prototype), 
-  [ES6 Inheritance with class](#ES6-Inheritance-with-class), 
-  [Class free inheritance](#Class-free-inheritance)
-* miscellaneous
-  * [JavaScript Patterns](#JavaScript-Patterns):
-    [Module](#Module-Pattern), 
-    [Revealing Module](#Revealing-Module-Pattern), 
-    [Singleton](#Singleton-Pattern), 
-    [Factory](#Factory-Pattern), 
-    [Observer](#Observer-Pattern), 
-    [Mediator](#Mediator-Pattern), 
-    [State](#State-Pattern)
-
 *(Page mainly written in 2019)*
-
-[*Go to parent page*](../README.md)
-
-
-## Type Conversion
-* Convert to String: [(...).toString()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) or [String(...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#String_conversion) wihout new operator 
-* Convert to Number: [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) and [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), [Number(any type)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) without new operator
-* Convert to boolean: `myValue === 'true'`
-* [unary + operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_()) can be used to convert something to a number
-* Convert String to Number: [parseInt()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt) or [parseFloat()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat)
-* Convert any Type to Number: [Number(any type)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) without new operator
-* [toFixed()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) [Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)'s method formats a number using fixed-point notation
-* [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
-* Type coersion happens in several cases in JavaScript and means that when the operands of an operator are different types, one of them will be converted to an "equivalent" value of the other operand's type.
-    * It is good practise not to count on type coersion
-
-[*Go to top*](#Javascript)
-
-## Object Oriented  
-### ES5 Inheritance with prototype
-* Construct objects with [new](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) on a [constructor function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects#Using_a_constructor_function)
-* use [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) keyword to access object properties
-* expect for [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date); prefer primitives to build in constructors
-* [Object prototypes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Understanding_prototype_objects)
-* [... are used mainly to share functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Modifying_prototypes)
-* [Object​.prototype​.hasOwnProperty](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty)
-* [Create object with a given prototype by using Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create)
-* [Classical inheritance with Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#classical_inheritance_with_object.create)
-
-### ES6 Inheritance with class
-* [class](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes) syntax
-* [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static)
-* [getter & setter](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Getters_and_Setters)
-* Inheritance with [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends) and [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super)
-
-### Class free inheritance
-
-```
-function constructor(spec) {
-  let { member } = spec,
-      { other } = other_constructor(spec),
-      method = function() {
-          // accessing member, other, method, spec
-      };
-
-  return Object.freeze({
-      method,
-      other
-  });
-}
-```
-See [Douglas Crockford explanations](https://www.youtube.com/watch?v=PSGEjv3Tqo0&t=23m15s)
-
-[*Go to top*](#Javascript)
-
-
-
-## JavaScript Patterns
-
-### Module Pattern
-
-```code
-const module = (function () {
-
-  let privateData = 'some private data';
-
-  const privateMethod = function(arg) {
-    privateData += arg;
-    console.log(privateData);
-  }
-
-  return {
-      publicMethod: function(arg) {
-        privateMethod(arg); 
-        console.log('do something else');
-    }
-  }
-})();
-
-module.publicMethod(' and more');
-```
-
-Alternative available with [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) but required transpiling for support of module non-supporting browser.
-
-[*Go to top*](#Javascript)
-
-
-### Revealing Module Pattern
-
-Revealing Module Pattern is cleaner as Module Pattern but do not allow to add additional feature to exposed methods (e.g. call other methods; like console.log above). 
-
-```
-const module = (function () {
-
-  let privateData = 'some private data';
-
-  const privateMethod = function(arg) {
-    privateData += arg;
-    console.log(privateData);
-  }
-
-  return {
-      publicMethod: privateMethod
-  }
-})();
-
-module.publicMethod(' and more');
-```
-
-[*Go to top*](#Javascript)
-
-
-### Singleton Pattern
-```
-const Singleton = (function() {
-  let instance;
-
-  function createInstance() {
-    const object = { field: 'value', /* ... other fields, methods */ };
-    return object;
-  }
-
-  return {
-    getInstance: function() {
-      if (!instance) {
-        instance = createInstance();
-      }
-      return instance;
-    }
-  }
-})();
-
-var instance1 = Singleton.getInstance();
-var instance2 = Singleton.getInstance();
- 
-console.assert(instance1 === instance2);
-```
-
-[*Go to top*](#Javascript)
-
-
-### Factory Pattern
-```
-function TicketFactory() {
-  this.createTicket = function(type) {
-    let ticket;
-
-    switch (type) {
-      case "child":
-          ticket = new ChildrenTicket();
-        break;
-      case "senior":
-          ticket = new SeniorTicket();
-        break;
-      case "adult":
-          ticket = new AdultTicket();
-          break;
-        default:
-          throw new Error(`unsupported type ${type}`)
-    }
-
-    ticket.type = type;
-
-    ticket.describe = function() {
-      console.log(`${this.type}: ${this.cost}`);
-    };
-
-    return ticket;
-  };
-}
-
-const ChildrenTicket = function() {
-  this.cost = "$2";
-};
-
-const SeniorTicket = function() {
-  this.cost = "$3";
-};
-
-const AdultTicket = function() {
-  this.cost = "$5";
-};
-
-const factory = new TicketFactory();
-factory.createTicket("child").describe();
-factory.createTicket("senior").describe();
-factory.createTicket("adult").describe();
-```
-
-See [Learning JavaScript Design Patterns](https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript)
-
-[*Go to top*](#Javascript)
-
-
-### Observer Pattern
-
-Example with Prototype and function as Observer:
-```
-function Subject() {
-  this.observers = [];
-}
-
-Subject.prototype = {
-  subscribe: function(fn) {
-    this.observers.push(fn);
-  },
-
-  unsubscribe: function(fn) {
-    this.observers = this.observers.filter(function(item) {
-      if (item !== fn) {
-        return item;
-      }
-    });
-  },
-  
-  fire: function(value) {
-    this.observers.forEach(function(item) {
-      item(value);
-    });
-  }
-}
-
-const subject = new Subject();
-subject.subscribe(observer);
-subject.fire('a value');
-
-function observer(value) {
-  console.log(`receive '${value}'`);
-}
-```
-
-Example with ES6 class and Object that implements a given contract as Observer (notify method):
-```
-class Subject {
-  constructor() {
-    this.observers = [];
-  }
-
-  subscribe(observer) {
-    this.observers.push(observer);
-  }
-
-  unsubscribe(observer) {
-    this.observers = this.observers.filter(function(item) {
-      if (item !== observer) {
-        return item;
-      }
-    });
-  }
-
-  fire(value) {
-    this.observers.forEach(function(item) {
-      observer.notify(value);
-    });
-  }
-}
-
-class Observer {
-  notify(value) {
-    console.log(`receive '${value}'`);
-  }
-}
-
-const subject = new Subject();
-const observer = new Observer();
-subject.subscribe(observer);
-subject.fire('a value');
-```
-
-[*Go to top*](#Javascript)
-
-
-### Mediator Pattern
-
-Mediator object encapsulates the communication between multiple objects (e.g. Airport Traffic Control Tower).
-```
-// MEDIATOR
-const Chatroom = function() {
-  let users = {}; // list of users
-
-  return {
-    register: function(user) {
-      users[user.name] = user;
-      user.chatroom = this;
-    },
-
-    send: function(message, from, to) {
-      if (to) {
-        // Single user message
-        to.receive(message, from);
-      } else {
-        // Mass message
-        for (key in users) {
-          if (users[key] !== from) {
-            users[key].receive(message, from);
-          }
-        }
-      }
-    }
-  }
-}
-
-const User = function(name) {
-  this.name = name;
-  this.chatroom = null;
-}
-
-User.prototype = {
-  send: function(message, to) {
-    this.chatroom.send(message, this, to);
-  },
-
-  receive: function(message, from) {
-    console.log(`${from.name} to ${this.name}: ${message}`)
-  }
-}
-
-const user1 = new User('User 1');
-const user2 = new User('User 2');
-const user3 = new User('User 3');
-
-const chatroom = new Chatroom();
-chatroom.register(user1);
-chatroom.register(user2);
-chatroom.register(user3);
-
-user1.send('Hello User 2', user2);
-user3.send('Hello User 1', user1);
-user2.send('Hello everyone');
-```
-
-[*Go to top*](#Javascript)
-
-
-### State Pattern
-
-Allow an object to alter its behavior when its internal state changes. The object will appear to change its class.
-```
-const TrafficLight = function() {
-  let count = 0;
-  let currentState;
-
-  this.change = function(state) {
-    // limits number of changes
-    if (count++ >= 10) {
-      return;
-    }
-    currentState = state;
-    currentState.go();
-  };
-
-  this.start = function() {
-    this.change(new Red(this));
-  };
-};
-
-const Red = function(light) {
-  this.light = light;
-
-  this.go = function() {
-    console.log("Red --> for 1 minute");
-    light.change(new Green(light));
-  };
-};
-
-const Yellow = function(light) {
-  this.light = light;
-
-  this.go = function() {
-    console.log("Yellow --> for 10 seconds");
-    light.change(new Red(light));
-  };
-};
-
-const Green = function(light) {
-  this.light = light;
-
-  this.go = function() {
-    console.log("Green --> for 1 minute");
-    light.change(new Yellow(light));
-  };
-};
-
-const light = new TrafficLight();
-light.start();
-
-```
