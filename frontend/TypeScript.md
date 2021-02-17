@@ -96,7 +96,7 @@ browser.
 * interface can exists without label, see [example](https://www.typescriptlang.org/docs/handbook/interfaces.html#our-first-interface)
 * [optional properties in interface](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties)
 * [readonly properties](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) are modifiable only when the object is created
-* [*string index signature*](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow dynamic not yet known properties in interfaces:
+* [string index signature](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow dynamic not yet known properties in interfaces:
 ```
 interface Person {
     firstName: string;
