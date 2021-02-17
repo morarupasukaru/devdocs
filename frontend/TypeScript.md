@@ -1,15 +1,24 @@
 # Typescript
 
-[TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
-new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript.
+TODO doc restructuring in progress
 
-TypeScript must be [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the 
+[TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
+new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the 
 browser.
 
+* TODO note about versions
+* [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
+* language features in addition to JavaScript
+  * primitive types: TODO
+  * function: TODO
+  * type checks: TODO
+  * inheritance: TODO
+  * APIs: TODO
+  * TODO new features
 * getting started
   * [installation](https://www.typescriptlang.org/#installation)
   * [playground](https://www.typescriptlang.org/play)
-  * TypeScript compiler: tsc CLI
+  * ```tsc``` is TypeScript command line compiler
     * ```tsc --init``` to initialize project
     * ```tsc --watch``` to recompile project on changes
     * see other [options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
@@ -30,10 +39,6 @@ browser.
     * [type search](https://www.typescriptlang.org/dt/search?search=) to find npm packages to integrate in a project
     * or [download](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html#downloading) *TypeScript type definitions* (which are [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) of needed JS library at [DefinitelyTyped](http://definitelytyped.org/)
     * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
-* [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
-* TODO note about versions
-* TypeScript features
-  * TODO new features
 * references
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
@@ -123,5 +128,3 @@ interface Person {
 * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) can be applied to [class (constructor)](https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators), [method](https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators)/[accessor](https://www.typescriptlang.org/docs/handbook/decorators.html#accessor-decorators)([property Descriptor (JS Object)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Description)), [property](https://www.typescriptlang.org/docs/handbook/decorators.html#property-decorators), [parameter](https://www.typescriptlang.org/docs/handbook/decorators.html#parameter-decorators)
 * [factories](https://www.typescriptlang.org/docs/handbook/decorators.html#decorator-factories) allow to customize the used decorator.
 * decorators are an experimental feature that may change in future releases
-
-[*Go to top*](#TypeScript)
