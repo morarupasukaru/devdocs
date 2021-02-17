@@ -239,6 +239,7 @@ and is the scripting language for Web pages.
       * module loaders like [systemjs](https://github.com/systemjs/systemjs), [requirejs](https://requirejs.org/) load specific format of modules at runtime in browser
       * module bundlers like [webpack](https://github.com/webpack/webpack), [browserify](http://browserify.org/) bundle all modules together during build
 * tools
+  * playground: [JSFiddle](https://jsfiddle.net/), [JS Bin](https://jsbin.com/), [Flems](https://flems.io/)
   * [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler): [Babel](https://babeljs.io/) or [Traceur](https://github.com/google/traceur-compiler) (they support also polyfills)
   * [linters](https://en.wikipedia.org/wiki/Lint_(software)): [ESLint](https://eslint.org/) 
     or bundled in [standardjs](https://standardjs.com/); see also [airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [google](https://github.com/google/eslint-config-google) presets
