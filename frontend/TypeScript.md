@@ -1,47 +1,46 @@
 # Typescript
 
-TypeScript is based on [JavaScript](JavaScript.md) features and add new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript.
- TypeScript must be compiled to JavaScript to be run in the browser.
+[TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
+new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript.
 
-* [Installation](#Installation)
-* [Configuration](#Configuration)
-* [Using Javascript libraries](#Using-Javascript-libraries)
-* [ES6 features supported by TypeScript](#ES6-features-supported-by-TypeScript): [Basic features](#Basic-features), [Classes](#Classes), [Modules](#Modules)
-* [TypeScript features](#TypeScript-features): [Interfaces](#Interfaces), [Generics](#Generics), ([Namespaces](#Namespaces), [Decorators](#Decorators))
-* [References](#References)
+TypeScript must be [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the 
+browser.
 
+* getting started
+  * [installation](https://www.typescriptlang.org/#installation)
+  * [playground](https://www.typescriptlang.org/play)
+  * TypeScript compiler: tsc CLI
+    * ```tsc --init``` to initialize project
+    * ```tsc --watch``` to recompile project on changes
+    * see other [options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+  * [build tools integration](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp) 
+    with [gulp](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp), 
+    [webpack 4](https://webpack.js.org/guides/typescript/), etc.
+  * project configuration: [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html); useful flags:
+    * [sourceMap](https://www.typescriptlang.org/tsconfig#sourceMap) : allow to debug typescript code in browser
+    * [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny): force to declare type of variables
+    * [noUnusedParameters](https://www.typescriptlang.org/tsconfig#noUnusedParameters): report errors on unused parameters
+    * [noUnusedLocals](https://www.typescriptlang.org/tsconfig#noUnusedLocals): report errors on unused locals
+    * [include](https://www.typescriptlang.org/tsconfig#include) /
+    [exclude](https://www.typescriptlang.org/tsconfig#exclude): define compiled files
+    * [target](https://www.typescriptlang.org/tsconfig#target): specify target browser (e.g. ES6)
+    * [module](https://www.typescriptlang.org/tsconfig#module): specify module system (e.g. ES6)
+    * see more flags in [tsconfig.json reference](https://www.typescriptlang.org/tsconfig)
+  * use library (JavaScript or TypeScript)
+    * [type search](https://www.typescriptlang.org/dt/search?search=) to find npm packages to integrate in a project
+    * or [download](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html#downloading) *TypeScript type definitions* (which are [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) of needed JS library at [DefinitelyTyped](http://definitelytyped.org/)
+    * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
+* [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
+* TODO note about versions
+* TypeScript features
+  * TODO new features
+* references
+  * [TypeScript documentation](https://www.typescriptlang.org/docs/)
+  * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
+  
 *(Page mainly written in 2019)*
 
 [*Go to parent page*](../README.md)
-
-
-## Installation
-
-* Basic
-  * ```npm -g install typescript```
-  * Init project: ```tsc --init```
-  * Compile: ```tsc --watch``` (allow to recompile TypeScript files on changes)
-* Build-Tools: see [Integrating with Build Tools](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp): [gulp](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp) with [gulp-typescript](https://www.npmjs.com/package/gulp-typescript), [webpack 4](https://webpack.js.org/guides/typescript/), etc.
-
-[*Go to top*](#TypeScript)
-
-
-## Configuration
-* usefull [compiler options](https://www.typescriptlang.org/docs/handbook/compiler-options.html) that can be defined in [tsconfig-json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html):
-  * sourceMap : allow to debug typescript code in browser
-  * noImplicitAny: force to declare type of variables
-  * noUnusedParameters: report errors on unused parameters
-  * noUnusedLocals: report errors on unused locals
-* compiled files can be configured in [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) by defining *include*, *exclude* or *files* properties
-
-[*Go to top*](#TypeScript)
-
-
-## Using Javascript libraries
-* [Download](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html#downloading) *TypeScript type definitions* (which are [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) of needed JS library at [DefinitelyTyped](http://definitelytyped.org/)
-* Alternative (hack): use an [ambient declaration](https://www.typescriptlang.org/docs/handbook/modules.html#shorthand-ambient-modules) to declare a variable already been loaded outside TypeScript "world" => disadvantage: no "types" checks
-
-[*Go to top*](#TypeScript)
 
 
 ## Types
@@ -53,12 +52,6 @@ TypeScript is based on [JavaScript](JavaScript.md) features and add new features
 * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) allow you to specify the exact value a string must have (enum-like)
 
 [*Go to top*](#TypeScript)
-
-
-## ES6 features supported by TypeScript
-
-* see [JavaScript](JavaScript.md) for deeper ES6 features explanations.
-* see [ES6 features supported by TypeScript](http://kangax.github.io/compat-table/es6/)
 
 
 ### Basic features
@@ -130,13 +123,5 @@ interface Person {
 * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) can be applied to [class (constructor)](https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators), [method](https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators)/[accessor](https://www.typescriptlang.org/docs/handbook/decorators.html#accessor-decorators)([property Descriptor (JS Object)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Description)), [property](https://www.typescriptlang.org/docs/handbook/decorators.html#property-decorators), [parameter](https://www.typescriptlang.org/docs/handbook/decorators.html#parameter-decorators)
 * [factories](https://www.typescriptlang.org/docs/handbook/decorators.html#decorator-factories) allow to customize the used decorator.
 * decorators are an experimental feature that may change in future releases
-
-[*Go to top*](#TypeScript)
-
-
-## References
-* [Documentation](https://www.typescriptlang.org/docs/)
-* Course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/) by Maximilian Schwarzmüller
-* [How to Write a TypeScript Library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 
 [*Go to top*](#TypeScript)
