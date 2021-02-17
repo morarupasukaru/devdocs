@@ -15,6 +15,16 @@ browser.
   * inheritance: TODO
   * APIs: TODO
   * TODO new features
+  * https://www.typescriptlang.org/docs/handbook/intro.html
+  * https://www.typescriptlang.org/docs/handbook/utility-types.html
+    * partial
+    * record
+    * readonly
+    * nonnullabletype
+  * Declaration Files
+  * JSDoc 
+  * https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html
+  
 * getting started
   * [installation](https://www.typescriptlang.org/#installation)
   * [playground](https://www.typescriptlang.org/play)
