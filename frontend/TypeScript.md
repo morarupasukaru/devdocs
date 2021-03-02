@@ -1,14 +1,12 @@
 # Typescript
 
-TODO doc restructuring in progress
-
 [TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
-new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the 
-browser.
+new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be 
+[transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
 * [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
-* declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) and constants 
-  with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
+* declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
+  and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
 * types
   * [basic types](https://www.typescriptlang.org/docs/handbook/basic-types.html): 
     [string](https://www.typescriptlang.org/docs/handbook/basic-types.html#string),
@@ -26,26 +24,49 @@ browser.
     declare explicitly a variable to be a given type; e.g. `let x: number;`
   * [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) 
     infer type of variables from its value; e.g. `let x = 1;` 
-  * [type alias](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases) allow to create a new name for a type 
-  * [union types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#use-union-types) allow to accept a given variable to be a of dedicated list of types (more restrictive than *any*)
-  * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) allow you to specify the exact value a string must have (enum-like)
+  * [type alias](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases) 
+    allow to create a new name for a type 
+  * [union types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#use-union-types) 
+    allow to accept a given variable to be a of dedicated list of types (more restrictive than 
+    [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any))
+  * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) 
+    allow you to specify the exact value a string must have (enum-like)
 * functions
-  * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) can be used to specify the signature
-  * [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type) can also be defined directly
-  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) to write compact code
+  * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) 
+    can be used to specify the signature
+  * [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type) 
+    can also be defined directly
+  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) 
+    to write compact code
   * [default parameters](https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters)
   * [rest parameters](https://www.typescriptlang.org/docs/handbook/functions.html#rest-parameters) 
-    available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) as well
-* classes
-  * TODO
-  * [TypeScript classes](https://www.typescriptlang.org/docs/handbook/classes.html) are more powerfull as [ES6 classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), additional features:
-    * access modifiers: [public](https://www.typescriptlang.org/docs/handbook/classes.html#public-by-default) (default), [private](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-typescripts-private), [protected](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-protected), [readonly](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier)
-    * [static properties](https://www.typescriptlang.org/docs/handbook/classes.html#static-properties) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
-    * [abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes)
-    * [private and protected constructors](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#private-and-protected-constructors) => usefull to implement singleton pattern
-    * tip: [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) in constructor is shorthand for declaring a property with the same name as the parameter and initializing it with the value of the parameter
-* interfaces
-  * TODO
+    available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) 
+    as well
+* [classes](https://www.typescriptlang.org/docs/handbook/classes.html) of TypeScript are more powerful as in 
+  [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
+  * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/classes.html#public-by-default) (default), [private](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-typescripts-private), [protected](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-protected), [readonly](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier)
+  * [static properties](https://www.typescriptlang.org/docs/handbook/classes.html#static-properties) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
+  * [abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes)
+  * [private and protected constructors](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#private-and-protected-constructors) 
+    are useful to implement singleton pattern
+  * [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) 
+    in constructor is a shorthand for declaring a property with the same name as the parameter and initializing it 
+    with the value of the parameter
+* [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) are used to define custom types/contracts 
+  to be implemented by [classes](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
+  * see [optional](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties) and 
+    [readonly](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) 
+    properties in interface
+  * [string index signature](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow to define maps in interface:
+    ```
+    interface Person {
+      firstName: string;
+      [propName: string]: any; // string index signature
+    }
+    ```
+  * take care: interface like type are not compiled to JavaScript; there are used only for development purpose
+  * see [interfaces vs types](https://stackoverflow.com/questions/37233735/interfaces-vs-types) 
+    to find out when custom "types" can be created with type or with interface
 * other nice language features
   * [spread](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#spread) 
     operator to create easily array or object from existing one
@@ -54,20 +75,24 @@ browser.
     or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
     into distinct variables
   * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
-  * [TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html) works like [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-  * generics: TODO
-  * decorators: TODO
-* TODO
-  * https://www.typescriptlang.org/docs/handbook/intro.html
-  * https://www.typescriptlang.org/docs/handbook/utility-types.html
-    * partial
-    * record
-    * readonly
-    * nonnullabletype
-  * Declaration Files
-  * JSDoc 
-  * https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html
-  * see [release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
+  * [modules](https://www.typescriptlang.org/docs/handbook/modules.html) 
+    of TypeScript works like 
+    [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+  * [generics](https://www.typescriptlang.org/docs/handbook/generics.html) to build reusable components/APIs
+  * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
+  * [utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) used to transform types; e.g.
+    * [`Partial<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
+      : constructs a type with all properties of *Type* set to optional
+    * [`Readonly<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
+      : constructs a type with all properties of *Type* set to readonly (immutable)
+    * [`Record<Keys,Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype)
+      : constructs an object type whose property keys are *Keys* and whose property values are *Type* (map)
+    * [`NonNullable<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)
+      : constructs a type by excluding null and undefined from *Type*
+    * etc.
+  * [declaration files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#dts-files)
+    `.d.ts` contain only type information
+    * see [creating .d.ts Files from .js files with JSDoc](https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html) 
 * getting started
   * [installation](https://www.typescriptlang.org/#installation)
   * [playground](https://www.typescriptlang.org/play)
@@ -94,41 +119,10 @@ browser.
     * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 * references
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
+  * [JSDoc Reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
   
 *(Page mainly written in 2019)*
 
 [*Go to parent page*](../README.md)
-
-
-### Interfaces
-* [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) of TypeScript are similar to interface of Java
-* interface can exists without label, see [example](https://www.typescriptlang.org/docs/handbook/interfaces.html#our-first-interface)
-* [optional properties in interface](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties)
-* [readonly properties](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) are modifiable only when the object is created
-* [string index signature](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow dynamic not yet known properties in interfaces:
-```
-interface Person {
-    firstName: string;
-    [propName: string]: any; // string index signature
-}
-```
-* [class implementing an interface](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
-* [function types](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) allow to define the signature of a function
-* [interface inheritance](https://www.typescriptlang.org/docs/handbook/interfaces.html#extending-interfaces)
-* interface are not compiled to JavaScript; there are used only for development purpose
-
-### Generics
-* [Generics](https://www.typescriptlang.org/docs/handbook/generics.html) of TypeScript
- are similar to generics of Java and like in java, generics can be quite complex.
-* Concepts
-  * [generic functions and interfaces](https://www.typescriptlang.org/docs/handbook/generics.html#generic-types)
-  * [generic classes](https://www.typescriptlang.org/docs/handbook/generics.html#generic-classes)
-  * [generic constraints](https://www.typescriptlang.org/docs/handbook/generics.html#generic-constraints) (by using *extends* keyword)
-
-
-### Decorators
-* [decorators (es6)](https://github.com/tc39/proposal-decorators) provide a way to add annotations and a meta-programming syntax (e.g. making a class immutable)
-* [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) can be applied to [class (constructor)](https://www.typescriptlang.org/docs/handbook/decorators.html#class-decorators), [method](https://www.typescriptlang.org/docs/handbook/decorators.html#method-decorators)/[accessor](https://www.typescriptlang.org/docs/handbook/decorators.html#accessor-decorators)([property Descriptor (JS Object)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty#Description)), [property](https://www.typescriptlang.org/docs/handbook/decorators.html#property-decorators), [parameter](https://www.typescriptlang.org/docs/handbook/decorators.html#parameter-decorators)
-* [factories](https://www.typescriptlang.org/docs/handbook/decorators.html#decorator-factories) allow to customize the used decorator.
-* decorators are an experimental feature that may change in future releases

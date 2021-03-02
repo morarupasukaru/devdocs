@@ -245,6 +245,8 @@ and is the scripting language for Web pages.
     or bundled in [standardjs](https://standardjs.com/); see also [airbnb](https://www.npmjs.com/package/eslint-config-airbnb), [google](https://github.com/google/eslint-config-google) presets
   * [minifiers](https://en.wikipedia.org/wiki/Minification_(programming)): [Closure compiler](https://github.com/google/closure-compiler)
     or [uglifyjs](http://lisperator.net/uglifyjs/); see also [grunt-json-minify](https://github.com/werk85/grunt-json-minify) JSON minifier
+  * documentation: [JSDoc](https://jsdoc.app/); see also [cheatsheet](https://devhints.io/jsdoc) 
+    (JSDoc is also used in TypeScript to [generate declaration files from JavaScript](https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html))
   * *tools are becoming quick obsolete, please find appropriate tools during development*
 * design patterns
   * *module pattern* as alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
