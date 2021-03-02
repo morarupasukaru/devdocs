@@ -119,7 +119,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 * references
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
-  * [JSDoc Reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
+  * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
   * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
   
