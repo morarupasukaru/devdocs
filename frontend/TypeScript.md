@@ -6,15 +6,58 @@ TODO doc restructuring in progress
 new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the 
 browser.
 
-* TODO note about versions
 * [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
-* language features in addition to JavaScript
-  * primitive types: TODO
-  * function: TODO
-  * type checks: TODO
-  * inheritance: TODO
-  * APIs: TODO
-  * TODO new features
+* declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) and constants 
+  with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
+* types
+  * [basic types](https://www.typescriptlang.org/docs/handbook/basic-types.html): 
+    [string](https://www.typescriptlang.org/docs/handbook/basic-types.html#string),
+    [number and bigint](https://www.typescriptlang.org/docs/handbook/basic-types.html#number),
+    [boolean](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean),
+    [object](https://www.typescriptlang.org/docs/handbook/basic-types.html#object),
+    [array](https://www.typescriptlang.org/docs/handbook/basic-types.html#array),
+    [tuple](https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple), 
+    [enum](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum), 
+    [null and undefined](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined),
+    [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any), 
+    [void](https://www.typescriptlang.org/docs/handbook/basic-types.html#void), 
+    [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never)
+  * [type annotation](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#type-annotations) 
+    declare explicitly a variable to be a given type; e.g. `let x: number;`
+  * [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) 
+    infer type of variables from its value; e.g. `let x = 1;` 
+  * [type alias](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases) allow to create a new name for a type 
+  * [union types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#use-union-types) allow to accept a given variable to be a of dedicated list of types (more restrictive than *any*)
+  * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) allow you to specify the exact value a string must have (enum-like)
+* functions
+  * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) can be used to specify the signature
+  * [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type) can also be defined directly
+  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) to write compact code
+  * [default parameters](https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters)
+  * [rest parameters](https://www.typescriptlang.org/docs/handbook/functions.html#rest-parameters) 
+    available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) as well
+* classes
+  * TODO
+  * [TypeScript classes](https://www.typescriptlang.org/docs/handbook/classes.html) are more powerfull as [ES6 classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), additional features:
+    * access modifiers: [public](https://www.typescriptlang.org/docs/handbook/classes.html#public-by-default) (default), [private](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-typescripts-private), [protected](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-protected), [readonly](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier)
+    * [static properties](https://www.typescriptlang.org/docs/handbook/classes.html#static-properties) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
+    * [abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes)
+    * [private and protected constructors](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#private-and-protected-constructors) => usefull to implement singleton pattern
+    * tip: [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) in constructor is shorthand for declaring a property with the same name as the parameter and initializing it with the value of the parameter
+* interfaces
+  * TODO
+* other nice language features
+  * [spread](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#spread) 
+    operator to create easily array or object from existing one
+  * [destructuring assignment](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#destructuring)
+    ease copy of values from [arrays](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#array-destructuring) 
+    or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
+    into distinct variables
+  * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
+  * [TypeScript modules](https://www.typescriptlang.org/docs/handbook/modules.html) works like [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
+  * generics: TODO
+  * decorators: TODO
+* TODO
   * https://www.typescriptlang.org/docs/handbook/intro.html
   * https://www.typescriptlang.org/docs/handbook/utility-types.html
     * partial
@@ -24,7 +67,7 @@ browser.
   * Declaration Files
   * JSDoc 
   * https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html
-  
+  * see [release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
 * getting started
   * [installation](https://www.typescriptlang.org/#installation)
   * [playground](https://www.typescriptlang.org/play)
@@ -58,49 +101,6 @@ browser.
 [*Go to parent page*](../README.md)
 
 
-## Types
-* basic types: [string](https://www.typescriptlang.org/docs/handbook/basic-types.html#string), [number](https://www.typescriptlang.org/docs/handbook/basic-types.html#number), [boolean](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean), [array](https://www.typescriptlang.org/docs/handbook/basic-types.html#array), [tuple](https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple), [enum](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum), [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any), [void](https://www.typescriptlang.org/docs/handbook/basic-types.html#void), [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never), [null & undefined](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined)
-* assigning types explicitly with *type annotation*: `var x: number;` or implicitly with [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html): `var x = 1;`
-* function: [types of args & return](https://www.typescriptlang.org/docs/handbook/functions.html#function-types), [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type), [optional parameters](https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters)
-* [type alias](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases) allow to create a new name for a type 
-* [union types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#use-union-types) allow to accept a given variable to be a of dedicated list of types (more restrictive than *any*)
-* [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) allow you to specify the exact value a string must have (enum-like)
-
-[*Go to top*](#TypeScript)
-
-
-### Basic features
-* [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) ([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let)), [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const)), [block scope](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#block-scoping)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block))
-* [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions))
-* [default parameters](https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax))
-* [spread parameters (es6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [rest parameters](https://www.typescriptlang.org/docs/handbook/functions.html#rest-parameters)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)) availables on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) as well
-* [destructuring assignment](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#destructuring) : [array](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#array-destructuring)[(es6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring), [tuple](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring), [object](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring)[(es6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring)
-* [template string / literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals))
-* more advanced: [symbols](https://www.typescriptlang.org/docs/handbook/symbols.html)([es6](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol)), [iterator (es6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Iterators), [generators (es6)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators#Generator_functions)
-
-
-### Classes
-[TypeScript classes](https://www.typescriptlang.org/docs/handbook/classes.html) are more powerfull as [ES6 classes](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), additional features:
-* access modifiers: [public](https://www.typescriptlang.org/docs/handbook/classes.html#public-by-default) (default), [private](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-typescripts-private), [protected](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-protected), [readonly](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier)
-* [static properties](https://www.typescriptlang.org/docs/handbook/classes.html#static-properties) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
-* [abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes)
-* [private and protected constructors](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#private-and-protected-constructors) => usefull to implement singleton pattern
-* tip: [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) in constructor is shorthand for declaring a property with the same name as the parameter and initializing it with the value of the parameter
-
-
-### Modules
-[TypeScript Modules](https://www.typescriptlang.org/docs/handbook/modules.html) works like [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules).
-
-#### Code Generation for Modules
-* If *target* property in tsconfig.json is es5 or older, a module loader is required
-* type of module loader is configured in *module* property of tsconfig.json
-* see [Code Generation for Modules](https://www.typescriptlang.org/docs/handbook/modules.html#code-generation-for-modules) for more information
-
-[*Go to top*](#TypeScript)
-
-
-## TypeScript features
-
 ### Interfaces
 * [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) of TypeScript are similar to interface of Java
 * interface can exists without label, see [example](https://www.typescriptlang.org/docs/handbook/interfaces.html#our-first-interface)
@@ -125,12 +125,6 @@ interface Person {
   * [generic functions and interfaces](https://www.typescriptlang.org/docs/handbook/generics.html#generic-types)
   * [generic classes](https://www.typescriptlang.org/docs/handbook/generics.html#generic-classes)
   * [generic constraints](https://www.typescriptlang.org/docs/handbook/generics.html#generic-constraints) (by using *extends* keyword)
-
-
-### Namespaces
-* [namespace](https://www.typescriptlang.org/docs/handbook/namespaces.html) group logically related code; quite similar to *Module Pattern* in JS
-* namespaces could be used for small projects that requires no complex *modules* dependencies; use *modules* otherwise.
-* see also [multi-file namespace](https://www.typescriptlang.org/docs/handbook/namespaces.html#multi-file-namespaces), [alias](https://www.typescriptlang.org/docs/handbook/namespaces.html#aliases)
 
 
 ### Decorators
