@@ -1,18 +1,17 @@
 # Angular
 
 TODO restructuring page in progress
-
-https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
+TODO decide if spliting into several sections afterward (to get a quicker overview)
 
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 * [Angular concepts](https://angular.io/guide/architecture)
-  * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
-    locally, etc.
+  1. [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
+     locally, etc.
     * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
     * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-  * [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
+  2. [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
     * [introduction to modules](https://angular.io/guide/architecture-modules#introduction-to-modules)
     * [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
     * [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
@@ -58,7 +57,7 @@ https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
       * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
       * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
       * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
-  * [@Component](https://angular.io/guide/architecture#components)
+  3. [@Component](https://angular.io/guide/architecture#components)
     is a decorator used to identify a class as a component
     * most important [properties of @Component](https://angular.io/api/core/Component):
       * [selector](https://angular.io/api/core/Directive#selector): 
@@ -72,10 +71,10 @@ https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
         specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
         on service self)
       * creating component with Angular CLI: `ng g c name-of-component`
-  * Templates TODO
-  * Directives
+  4. Templates TODO
+  5. Directives
       * [Directives](#Directives)
-  * Data binding
+  6. Data binding
         * [Databinding](#Databinding)
           * [Custom property & event bindings](#Custom-property-and-event-bindings)
           * [Template reference variables](#Template-reference-variables)
@@ -83,9 +82,9 @@ https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
           * [ng-content](#ng-content)
           * [ng-container](#ng-container)
           * [Lifecycle hooks](#Lifecycle-hooks)
-  * Services and dependency injection
+  7. Services and dependency injection
     * [Services and Dependency Injection](#Services-and-Dependency-Injection)
-  * Routing
+  8. Routing
     * [Routing](#Routing)
       * [Routing configuration](#Routing-configuration)
       * [Navigation](#Navigation)
