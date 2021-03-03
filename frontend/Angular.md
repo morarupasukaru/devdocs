@@ -8,13 +8,6 @@ https://gist.github.com/pierrejoubert73/902cc94d79424356a8d20be2b382e1ab
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 * [Angular concepts](https://angular.io/guide/architecture)
-  * <details>
-<summary>[Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application</summary>
-
-  * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
-  * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-</details>
-
   * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
     locally, etc.
     * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
