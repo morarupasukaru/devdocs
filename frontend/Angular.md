@@ -70,10 +70,10 @@ TODO restructuring page in progress
         specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
         on service self)
       * creating component with Angular CLI: `ng g c name-of-component`
-    * Templates TODO
-    * Directives
+  * Templates TODO
+  * Directives
       * [Directives](#Directives)
-    * Data binding
+  * Data binding
         * [Databinding](#Databinding)
           * [Custom property & event bindings](#Custom-property-and-event-bindings)
           * [Template reference variables](#Template-reference-variables)
@@ -95,20 +95,20 @@ TODO restructuring page in progress
       * [Location strategies](#Location-strategies)
       * [Miscelleanous](#Miscelleanous)
 * Other features
-    * [Forms](#Forms)
-      * [Template-driven forms](#Template-driven-forms)
-      * [Reactive forms](#Reactive-forms)
-    * [Styling](#Styling)
-    * [Animations](#Animations)
-    * [Observables - RxJS](#Observables---RxJS)
-    * [Pipes](#Pipes)
-    * [Http](#Http)
-    * [Authentication](#Authentication)
-    * [Dynamic Components](#Dynamic-Components)
-    * [Optimizations](#Optimizations)
-    * [Deployment](#Deployment)
-    * [Testing](#Testing)
-    * [Debugging](#Debugging)
+  * [Forms](#Forms)
+    * [Template-driven forms](#Template-driven-forms)
+    * [Reactive forms](#Reactive-forms)
+  * [Styling](#Styling)
+  * [Animations](#Animations)
+  * [Observables - RxJS](#Observables---RxJS)
+  * [Pipes](#Pipes)
+  * [Http](#Http)
+  * [Authentication](#Authentication)
+  * [Dynamic Components](#Dynamic-Components)
+  * [Optimizations](#Optimizations)
+  * [Deployment](#Deployment)
+  * [Testing](#Testing)
+  * [Debugging](#Debugging)
 * [References](#References)
 * Ecosystem
   * [NgRx and Redux](#NgRx-and-Redux)
