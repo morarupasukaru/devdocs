@@ -7,11 +7,11 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 * [Angular concepts](https://angular.io/guide/architecture)
-  1. [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
+  * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
      locally, etc.
     * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
     * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-  2. [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
+  * [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
     * [introduction to modules](https://angular.io/guide/architecture-modules#introduction-to-modules)
     * [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
     * [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
@@ -57,7 +57,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
       * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
       * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
-  3. [@Component](https://angular.io/guide/architecture#components)
+  * [@Component](https://angular.io/guide/architecture#components)
     is a decorator used to identify a class as a component
     * most important [properties of @Component](https://angular.io/api/core/Component):
       * [selector](https://angular.io/api/core/Directive#selector): 
@@ -71,10 +71,10 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
         specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
         on service self)
       * creating component with Angular CLI: `ng g c name-of-component`
-  4. Templates TODO
-  5. Directives
+  * Templates TODO
+  * Directives
       * [Directives](#Directives)
-  6. Data binding
+  * Data binding
         * [Databinding](#Databinding)
           * [Custom property & event bindings](#Custom-property-and-event-bindings)
           * [Template reference variables](#Template-reference-variables)
@@ -82,9 +82,9 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
           * [ng-content](#ng-content)
           * [ng-container](#ng-container)
           * [Lifecycle hooks](#Lifecycle-hooks)
-  7. Services and dependency injection
+  * Services and dependency injection
     * [Services and Dependency Injection](#Services-and-Dependency-Injection)
-  8. Routing
+  * Routing
     * [Routing](#Routing)
       * [Routing configuration](#Routing-configuration)
       * [Navigation](#Navigation)
