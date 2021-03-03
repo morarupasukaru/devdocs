@@ -9,6 +9,14 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
      locally, etc.
+     
+<details>
+  <summary>Click to expand!</summary>
+  
+    * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
+    * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
+</details>
+
     * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
     * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
   * [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
