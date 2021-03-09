@@ -107,9 +107,32 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Authentication](#Authentication)
   * [Dynamic Components](#Dynamic-Components)
   * [Optimizations](#Optimizations)
-  * [Deployment](#Deployment)
-  * [Testing](#Testing)
-  * [Debugging](#Debugging)
+  * [Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
+    * [configure application environments](https://angular.io/guide/build#configuring-application-environments)
+      in `environment.ts` like API key
+      * [use environment variables](https://angular.io/guide/build#using-environment-specific-variables-in-your-app):
+       `import { environment } from '../environments/environment';`
+      * [build your production configuration](https://angular.io/guide/build#configure-target-specific-file-replacements):
+        `ng build --prod` ensure to use `/environment/environment.prod.ts` instead of `/environment/environment.ts`
+    * hints
+      * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
+      * it's important to make sure that your server is configured to 
+        [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
+  * [Testing](https://angular.io/guide/testing)
+    * isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
+      * [testing services](https://angular.io/guide/testing-services#testing-services)
+      * [testing pipes](https://angular.io/guide/testing-pipes)
+    * non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
+      to have angular dependency injection
+      * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
+    * hints:
+      * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
+      * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
+      * testing asynchronous code
+        * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
+        * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
+        * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
+        * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Service Workers & PWA](https://angular.io/guide/service-worker-intro) provide a way to have offline web applications 
     and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
@@ -316,14 +339,6 @@ Angular offers various solutions to [components interaction](https://angular.io/
     * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
 * [custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
 * [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using property binding `[hidden]="condition"` on [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
-
-[*Go to top*](#Angular)
-
-
-## Debugging
-* Read carefully Angular Error Message in console and google
-* Use [Angular Augury](https://augury.rangle.io/) DevTools extension
-* Add breakpoint to sourcemaps (e.g. under Sources > webpack:// > . > src > ...)
 
 [*Go to top*](#Angular)
 
@@ -663,31 +678,6 @@ With [Reactive forms](https://angular.io/guide/reactive-forms), Form is created 
 [*Go to top*](#Angular)
 
 
-## Deployment
-* Use & check [environment variables](https://angular.io/guide/build#configuring-application-environments)
-  * `ng build --prod` ensure to use `/environment/environment.prod.ts` instead of `/environment/environment.ts`
-  * store key-value in `environment.ts` like API key
-  * `import { environment } from '../environments/environment';`
-* build app: `ng build --prod`
-  * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
-* deploy to a static website host (without serverside language)
-  * it's important to make sure that your server is configured to [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
-* see [angular docs](https://angular.io/guide/deployment)
-
-[*Go to top*](#Angular)
 
 
-## Testing
-* see mainly [Official Docs](https://angular.io/docs/ts/latest/guide/testing.html)
-* isolated tests: unit test without angular bundle (e.g. testing a pipe or a simple service)
-* non isolated tests: unit test with angular bundle (e.g. with TestBed)
-* [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
-* [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-* test asynchronous code
-  * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
-  * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
-  * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tic methods are an alternative to async
-  * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-    
-[*Go to top*](#Angular)
 
