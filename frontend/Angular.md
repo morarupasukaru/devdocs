@@ -118,7 +118,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
       * it's important to make sure that your server is configured to 
         [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
-  * [Testing](https://angular.io/guide/testing)
+  * [Testing](https://angular.io/guide/testing) to write and run unit tests
     * isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
       * [testing services](https://angular.io/guide/testing-services#testing-services)
       * [testing pipes](https://angular.io/guide/testing-pipes)
