@@ -124,6 +124,27 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
     * we can specify in `ngsw-config.json`
        * which files or urls should be prefetch by the generated service worker
        * caches to be used for rest APIs
+  * [Angular Universal](https://angular.io/guide/universal) provide
+    [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
+    (a web framework for [Node.js](https://nodejs.org/en/))
+    * hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
+      does not have access to several APIs like [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+      * use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check if code is running in the browser or not:
+        ```
+        import { ..., Inject, PLATFORM_ID } from '@angular/core';
+        import { isPlatformBrowser } from '@angular/common';
+
+        export class AppComponent implements OnInit {
+          constructor(@Inject(PLATFORM_ID) private platformId) {}
+
+          ngOnInit() {
+            if (isPlatformBrowser(this.platformId)) {
+              ... call e.g. localStorage
+            }
+            ...
+          }
+        ```
 * [References](#References)
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
@@ -153,8 +174,8 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * NgRx integrate/use RxJS to have Observable
       * NgRx is written in TypeScript
       * NgRx provide a concept *Side Effect* to support asynchronous code (e.g. http requests)
-    * documentations
-      * see [NgRx docs](https://ngrx.io/docs)
+    * docs:
+      * [NgRx docs](https://ngrx.io/docs)
       * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
     * Redux basics
       * lifecycle:
@@ -190,10 +211,40 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
         * npm install --save-dev @ngrx/store-devtools
         * import StoreDevtoolsModule in app.module.ts
         * call .instrument({logOnly: environment.production})
-  * [Angular Flex-Layout](#Angular-Flex-Layout)
-  * [Angular Material](#Angular-Material)
-  * [AngularFire](#AngularFire)
-  * [Angular Universal - NestJS](#Angular-Universal---NestJS)
+  * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API using 
+    [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+    and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+    * basics
+      * use [fxLayout](https://github.com/angular/flex-layout/wiki/fxLayout-API) directive to define flex-direction on the container
+      * use [fxLayoutAlign](https://github.com/angular/flex-layout/wiki/fxLayoutAlign-API) directive to align flex items on the main and cross-axis
+      * use [fxLayoutGap](https://github.com/angular/flex-layout/wiki/fxLayoutGap-API) directive to specify margin gaps on children within a flexbox container
+      * use [fxHide](https://github.com/angular/flex-layout/wiki/fxHide-API) and [fxShow](https://github.com/angular/flex-layout/wiki/fxShow-API) directives to show/hide component in combination with breakpoints;
+        * hide a div on small devices: ```<div fxHide.xs>...</div>```
+        * hide a div on greater than small devices: ```<div fxHide.gt-xs>...</div>```
+    * docs: [Overview of core directives](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
+      and [Responsive API](https://github.com/angular/flex-layout/wiki/Responsive-API)
+  * [Angular Material](https://material.angular.io/) is an Angular components suite based on 
+    [Google Material Design specifications](https://material.io/design/)
+    * [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
+    * Angular Material is based on two packages:
+      * [component dev kit](https://material.angular.io/cdk/categories)(CDK) to develop a component suite (@angular/cdk)
+      * [component suite](https://material.angular.io/components/categories) based on Material Design (@angular/material)
+    * see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
+    * Angular Material provide no grid system; 
+      use [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation)
+  * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
+    [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
+  * [NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
+    [Angular Universal](https://angular.io/guide/universal#universal-in-action) instead of 
+    [ExpressJS](https://expressjs.com/) to provide
+    [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+    * Angular Universal with NestJS vs Angular Universal with ExpressJS:
+      * default Angular Universal only pre-render HTML webpage
+      * NestJS allow to build REST APIs
+      * NestJS is a server-side framework that borrow a lot from Angular and use TypeScript
+      * Angular + NestJS is a full-stack
+    * use [nestjs/ng-universal](https://github.com/nestjs/ng-universal) to integrate NestJS to Angular Universal 
+    * see [NestJS docs](https://docs.nestjs.com/) 
 
 *(Page mainly written in 2019, last update: july 2020)*
 
@@ -639,108 +690,4 @@ With [Reactive forms](https://angular.io/guide/reactive-forms), Form is created 
   * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
     
 [*Go to top*](#Angular)
-
-
-
-
-# Angular ecosystem
-
-
-
-
-## Angular Flex-Layout
-* [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provides a sophisticated layout API using [Flexbox](./CSS.md) CSS + mediaQuery
-  * [Overview of core directives](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
-  * [Overview of Responsive API](https://github.com/angular/flex-layout/wiki/Responsive-API)
-* Basics:
-  * use [fxLayout](https://github.com/angular/flex-layout/wiki/fxLayout-API) directive to define flex-direction on the container
-  * use [fxLayoutAlign](https://github.com/angular/flex-layout/wiki/fxLayoutAlign-API) directive to align flex items on the main and cross-axis
-  * use [fxLayoutGap](https://github.com/angular/flex-layout/wiki/fxLayoutGap-API) directive to specify margin gaps on children within a flexbox container
-  * use [fxHide](https://github.com/angular/flex-layout/wiki/fxHide-API) and [fxShow](https://github.com/angular/flex-layout/wiki/fxShow-API) directives to show/hide component in combination with breakpoints;
-    * hide a div on small devices: ```<div fxHide.xs>...</div>```
-    * hide a div on greater than small devices: ```<div fxHide.gt-xs>...</div>```
-
-[*Go to top*](#Angular)
-
-
-## Angular Material
-* [Angular Material](https://material.angular.io/) is an Angular components suite based on [Google Material Design specifications](https://material.io/design/)
-* [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
-* Angular Material is based on two packages:
-  * [component dev kit](https://material.angular.io/cdk/categories)(CDK) to develop a component suite (@angular/cdk)
-  * [component suite](https://material.angular.io/components/categories) based on Material Design (@angular/material)
-* see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
-* Components
-  * [mat-form-field](https://material.angular.io/components/form-field/overview) works together with other components like [matInput](https://material.angular.io/components/input/overview)
-* Angular Material provide no grid system; use [Angular Flex-Layout](#Angular-Flex-Layout)
-
-[*Go to top*](#Angular)
-
-
-## AngularFire
-* [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to Firebase
-  * alternative: Angular can communicate directly to Firebase directly with REST API
-* [Firebase](https://firebase.google.com/) is a Backend-as-a-Service (BaaS) app development platform that provides hosted backend services such as a realtime database, cloud storage, ... 
-  * Firebase provide Realtime Databases (e.g. [Cloud Firestore](https://firebase.google.com/docs/firestore)) that support WebSocket without server-side code
-  * Firebase provide Authentification
-  * Firebase provide REST APIs
-  * No server-side code are required
-* [Cloud Firestore](https://firebase.google.com/docs/firestore) is a realtime database, see [data model](https://firebase.google.com/docs/firestore/data-model) explanations
-  * stored data in Firestore are like JSON values
-* [Firebase Hosting](https://firebase.google.com/docs/hosting/) allow to deploy web application
-* AngularFire exists in several versions: [AngularFire 2](https://github.com/IdanCo/angularfire2) (deprecated) and [AngularFire](https://github.com/angular/angularfire) (current version)
-* see docs:
-  * [AngularFire Quickstart](https://github.com/angular/angularfire/blob/master/docs/install-and-setup.md) or [AngularFire 2 Quickstart](https://github.com/IdanCo/angularfire2/blob/master/docs/install-and-setup.md) documentation
-  * [Angularfire Official Docs](https://github.com/angular/angularfire/blob/master/docs/firestore/collections.md)
-  
-[*Go to top*](#Angular)
-
-
-## Angular Universal - NestJS
-
-* Angular Universal is used to pre-render the webpages on the server on the fly; technical known as [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
-* No server-side code are executed; the feature is only about pre-rendering webpage on the fly in the server
-* Angular Universal could solve some problems
-  * Ease search-engine
-  * User have a slow network (js files take time to be downloaded)
-* Angular Universal is provided into Angular CLI
-* JavaScript of Angular applications will be executed on the server (in NodeJS) to pre-render HTML pages
-* The JavaScript engine on the server does not have access to several APIs like `localStorage`
-* use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check whether the code is running in the browser or not (to call e.g. localStorage or not)
-```
-import { ..., Inject, PLATFORM_ID } from '@angular/core';
-import { isPlatformBrowser } from '@angular/common';
-
-export class AppComponent implements OnInit {
-  constructor(@Inject(PLATFORM_ID) private platformId) {}
-
-  ngOnInit() {
-    if (isPlatformBrowser(this.platformId)) {
-      ... call e.g. localStorage
-    }
-    ...
-  }
-```
-* see [Angular Documentation](https://angular.io/guide/universal)
-
-[*Go to top*](#Angular)
-
-
-### NestJS
-* Angular Universal use per default ExpressJS as Node.js framework
-* Angular Universal can be integrated with [NestJS](https://nestjs.com/)
-* [NestJS](https://nestjs.com/) is another Node.js framework
-* NestJS is a server-side framework that borrow a lot from Angular and use TypeScript
-* add NestJS
-```
-ng add @nestjs/ng-universal
-```
-* NestJS vs normal Angular Universal
-  * normal Angular Universal only pre-render HTML webpage
-  * NestJS allow to build REST APIs
-  * Angular + NestJS is a fullstack
-* see [NestJS](https://docs.nestjs.com/) documentation
-
-[*Go to top*](#Angular)
-
 
