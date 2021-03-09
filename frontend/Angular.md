@@ -142,7 +142,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
     * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
     * to not loose all important data, some of them are stored in the *persistent state* on backend (db)
     * application state is scattered in several components, services
-      * for big projects, application state can be difficult to manage 
+    * for big projects, application state can be difficult to manage 
     * [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
     * Angular does not force to have a clear structure about application state
     * [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
@@ -157,9 +157,9 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * see [NgRx docs](https://ngrx.io/docs)
       * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
     * Redux basics
-      * Redux lifecycle *(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*
-      
-      ![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
+      * lifecycle:
+        ![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
+        *(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*
       * there is only one application state; the *Store*
       * services and components can interact between themselves but receives their state from the *Store* (with use of subscriptions)
       * change in the store are *dispatched* into *Actions*
@@ -170,14 +170,11 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
         * action.type must be unique in the whole application
       * *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
       * *State* are immutable (or must be immutable)
-      * a JavaScript object can be shallow-copied with spread operator
-        ```
-        const newObject = { ...object };
-        ```
+      * a JavaScript object can be shallow-copied with spread operator: `const newObject = { ...object };`
     * NgRx basics
-      * NgRx Lifecycle *(source: [NgRx](https://ngrx.io/guide/store))*
-
-      ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
+      * lifecycle: 
+        ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
+        *(source: [NgRx](https://ngrx.io/guide/store))*
       * **selector**: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
         * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
       * **feature state**: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
