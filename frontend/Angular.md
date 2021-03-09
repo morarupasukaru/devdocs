@@ -110,15 +110,93 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Deployment](#Deployment)
   * [Testing](#Testing)
   * [Debugging](#Debugging)
+  * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+  * [Service Workers & PWA](https://angular.io/guide/service-worker-intro) provide a way to have offline web applications 
+    and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
+    * Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
+    * JavaScript application run in a single Thread
+    * [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
+    * [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
+    * Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+    * Service workers are decoupled from webpage
+    * Configure Service Workers in an Angular project: `ng add @angular/pwa`
+    * Angular/PWA generate a service worker based on the `ngsw-config.json`
+    * we can specify in `ngsw-config.json`
+       * which files or urls should be prefetch by the generated service worker
+       * caches to be used for rest APIs
 * [References](#References)
+  * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
+  * [TypeScript](TypeScript.md)
+  * [Angular Docs](https://angular.io/docs)
+  * [Angular CLI](https://angular.io/cli)
+  * [Cheatsheet](https://angular.io/guide/cheatsheet)
+  * [Angular Update Guide](https://update.angular.io/)
+  * courses: [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/), 
+    [angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/),
+    [angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
 * Ecosystem
-  * [NgRx and Redux](#NgRx-and-Redux)
+  * [ngx-translate](http://www.ngx-translate.com/) as internationalization library
+  * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
+    or callback-based code
+  * [NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
+    * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
+    * to not loose all important data, some of them are stored in the *persistent state* on backend (db)
+    * application state is scattered in several components, services
+      * for big projects, application state can be difficult to manage 
+    * [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
+    * Angular does not force to have a clear structure about application state
+    * [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
+    * Redux library could be used in Angular
+    * [NgRx](https://ngrx.io/) is an Angular implementation of [Redux](https://redux.js.org/) and is therfore easier to use as Redux directly
+    * Redux vs NgRx
+      * NgRx provide injectable services
+      * NgRx integrate/use RxJS to have Observable
+      * NgRx is written in TypeScript
+      * NgRx provide a concept *Side Effect* to support asynchronous code (e.g. http requests)
+    * documentations
+      * see [NgRx docs](https://ngrx.io/docs)
+      * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
+    * Redux basics
+      * Redux lifecycle *(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*
+      
+      ![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
+      * there is only one application state; the *Store*
+      * services and components can interact between themselves but receives their state from the *Store* (with use of subscriptions)
+      * change in the store are *dispatched* into *Actions*
+      * an *Action* has an type and could have data; the *Payload*
+      * *Actions* are sent to *Reducers* by dispatching them from the *Store*
+      * an Action is dispatched to every *Reducers* no matter whether the reducer could handle the action or not
+        * always provide a default case in reducer that returns the unchanged state
+        * action.type must be unique in the whole application
+      * *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
+      * *State* are immutable (or must be immutable)
+      * a JavaScript object can be shallow-copied with spread operator
+        ```
+        const newObject = { ...object };
+        ```
+    * NgRx basics
+      * NgRx Lifecycle *(source: [NgRx](https://ngrx.io/guide/store))*
+
+      ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
+      * **selector**: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
+        * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
+      * **feature state**: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
+      * **effect**: allow to handle asynchronous events
+        * Effects are long-running services that listen to an observable of every action dispatched from the Store.
+        * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
+        * Effects perform tasks, which are synchronous or asynchronous and return a new action (have to).
+      * **router-store module**: @ngrx/router-store module allow to dispatch events to route navigation (that could be listened in effect e.g.)
+        * npm install --save-dev @ngrx/router-store
+        * import StoreRouterConnectingModule to app.module.ts
+      * **browser redux devtools** extension allow to see dispatched actions and Store changes
+        * search "redux devtools extension" and install it in chrome
+        * npm install --save-dev @ngrx/store-devtools
+        * import StoreDevtoolsModule in app.module.ts
+        * call .instrument({logOnly: environment.production})
   * [Angular Flex-Layout](#Angular-Flex-Layout)
   * [Angular Material](#Angular-Material)
   * [AngularFire](#AngularFire)
   * [Angular Universal - NestJS](#Angular-Universal---NestJS)
-  * [Angular PWA - Service Workers](#Angular-PWA---Service-Workers)
-  * [Angular Elements](#Angular-Elements)
 
 *(Page mainly written in 2019, last update: july 2020)*
 
@@ -566,97 +644,11 @@ With [Reactive forms](https://angular.io/guide/reactive-forms), Form is created 
 [*Go to top*](#Angular)
 
 
-## References
-* see [Changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
-* [TypeScript](TypeScript.md)
-* [Angular Docs](https://angular.io/docs)
-* [Angular CLI](https://angular.io/cli)
-* [Cheatsheet](https://angular.io/guide/cheatsheet)
-* [Angular Update Guide](https://update.angular.io/)
-* Libraries: [ngx-translate (i18n)](http://www.ngx-translate.com/)
-* Videos: 
-  * [Angular 8 - The Complete Guide](https://www.udemy.com/the-complete-guide-to-angular-2/) by Maximilian Schwarzmüller
-  * [Angular (Full App) with Angular Material, Angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
-  * [Angular Styling & Animations (for Angular 2+)](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
-
-[*Go to top*](#Angular)
 
 
 # Angular ecosystem
 
-## NgRx and Redux
-* [NgRx](https://ngrx.io/) is used to manage applicaton state (NgRx is a state management solution)
-* application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
-* to not loose all important data, some of them are stored in the *persistent state* on backend (db)
-* application state is scattered in several components, services
-  * for big projects, application state can be difficult to manage 
-* [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
-* Angular does not force to have a clear structure about application state
-* [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
-* Redux library could be used in Angular
-* [NgRx](https://ngrx.io/) is an Angular implementation of [Redux](https://redux.js.org/) and is therfore easier to use as Redux directly
-* Redux vs NgRx
-  * NgRx provide injectable services
-  * NgRx integrate/use RxJS to have Observable
-  * NgRx is written in TypeScript
-  * NgRx provide a concept *Side Effect* to support asynchronous code (e.g. http requests)
-* documentations
-  * see [NgRx docs](https://ngrx.io/docs)
-  * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
 
-[*Go to top*](#Angular)
-
-
-### Redux basics
-* Redux Lifecycle 
-
-![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
-
-*(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*:
-
-* there is only one application state; the *Store*
-* services and components can interract between themselves but receives their state from the *Store* (with use of subscriptions)
-* change in the store are *dispatched* into *Actions*
-* an *Action* has an type and could have data; the *Payload*
-* *Actions* are sent to *Reducers* by dispatching them from the *Store*
-* an Action is dispatched to every *Reducers* egal whether the reducer could handle the action or not
-  * always provide a default case in reducer that returns the unchanged state
-  * action.type must be unique in the whole application
-* *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
-* *State* are immutable (or must be immutable)
-* a JavaScript object can be shallow-copied with spread operator
-```
-const newObject = { ...object };
-```
-
-[*Go to top*](#Angular)
-
-
-### NgRx specifics
-
-* NgRx Lifecycle 
-
-![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
-
-*(source: [NgRx](https://ngrx.io/guide/store))*:
-
-* **selector**: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
-  * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
-* **feature state**: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
-* **effect**: allow to handle asynchronous events
-  * Effects are long-running services that listen to an observable of every action dispatched from the Store.
-  * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
-  * Effects perform tasks, which are synchronous or asynchronous and return a new action (have to).
-* **router-store module**: @ngrx/router-store module allow to dispatch events to route navigation (that could be listened in effect e.g.)
-  * npm install --save-dev @ngrx/router-store
-  * import StoreRouterConnectingModule to app.module.ts
-* **browser redux devtools** extension allow to see dispatched actions and Store changes
-  * search "redux devtools extension" and install it in chrome
-  * npm install --save-dev @ngrx/store-devtools
-  * import StoreDevtoolsModule in app.module.ts
-  * call .instrument({logOnly: environment.production})
-
-[*Go to top*](#Angular)
 
 
 ## Angular Flex-Layout
@@ -755,26 +747,3 @@ ng add @nestjs/ng-universal
 [*Go to top*](#Angular)
 
 
-## Angular PWA - Service Workers
-* Service Workers provide a way to have offline web applications
-* Service workers as used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
-* Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
-* JavaScript application run in a single Thread
-* [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
-* [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
-* Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
-* Service workers are decoupled from webpage
-* Configure Service Workers in an Angular project: `ng add @angular/pwa`
-* Angular/PWA generate a service worker based on the `ngsw-config.json`
-* we can specify in `ngsw-config.json`
-    * which files or urls should be prefetch by the generated service worker
-    * caches to be used for rest APIs
-* see [Official Angular Service Worker Docs](https://angular.io/guide/service-worker-intro)
-
-[*Go to top*](#Angular)
-
-
-## Angular Elements
-* [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-
-[*Go to top*](#Angular)
