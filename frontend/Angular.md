@@ -102,11 +102,56 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Styling](#Styling)
   * [Animations](#Animations)
   * [Observables - RxJS](#Observables---RxJS)
-  * [Pipes](#Pipes)
-  * [Http](#Http)
-  * [Authentication](#Authentication)
-  * [Dynamic Components](#Dynamic-Components)
-  * [Optimizations](#Optimizations)
+  * [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
+    * [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), 
+      [async](https://angular.io/api/common/AsyncPipe), 
+      [date](https://angular.io/api/common/DatePipe), etc.
+    * [parameterize pipe](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `:` ; e.g. `{{ birthday | date:"MM/dd/yy" }}`
+    * [chaining pipes](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `|` ; e.g. `{{ birthday | date | uppercase}}`
+    * [custom pipe](https://angular.io/guide/pipes#creating-pipes-for-custom-data-transformations) is an exported class that implements [PipeTransform](https://angular.io/api/core/PipeTransform) with [Pipe](https://angular.io/api/core/Pipe) declarator (to specify the name in template)
+    * pipe can be also applied to *ngFor (e.g. filter); [see example](https://angular.io/guide/pipes#how-change-detection-works)
+    * [pure pipes](https://angular.io/guide/pipes#detecting-pure-changes-to-primitives-and-object-references) (default): Angular does not re-render pipes after output changes
+    * [impure pipes](https://angular.io/guide/pipes#detecting-impure-changes-within-composite-objects): Angular executes an impure pipe during every component change detection cycle
+      * make impure pipe: set `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
+      * impure pipes can be called very often and be a performance issue
+  * [HttpClient](https://angular.io/guide/http) provide an API to perform HTTP requests
+    * use HttpClient methods [get()](https://angular.io/api/common/http/HttpClient#get), 
+      [post()](https://angular.io/api/common/http/HttpClient#post),
+      [put()](https://angular.io/api/common/http/HttpClient#put),
+      [delete()](https://angular.io/api/common/http/HttpClient#delete), etc.
+    * request are sent only by subscribing to the [Observable](https://rxjs.dev/api/index/class/Observable) 
+      of http methods'result 
+    * use pipe and [map](https://rxjs.dev/api/operators/map) from [RxJS](https://rxjs.dev/guide/operators) 
+      to convert response to required object
+    * [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
+    * good practise: encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
+    * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
+      rxjs operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
+    * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) rxjs operator to 
+      [performs http calls in parallel](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
+    * [handling request error](https://angular.io/guide/http#handling-request-errors) can be customized
+    * [headers](https://angular.io/api/common/http/HttpHeaders) can be [provided to http requests](https://angular.io/guide/http#adding-and-updating-headers)
+    * [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http#configuring-http-url-parameters)
+      * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params (HttpParams is immutable)
+    * [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) can be used to implicit features like
+      * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
+      * [caching requests](https://angular.io/guide/http#caching)
+      * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
+  * Authentication
+    * Server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
+    * Frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
+      with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
+    * Only the server is able to generate the token with a private key and a given algorithm and his therefore secure
+  * [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
+    * dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
+      by loading component programmatically and pushing into view
+    * ngIf approach is easier and is the best solution in most cases
+    * loading component programmatically could be used in some specific use cases (e.g. custom framework)
+  * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
+    * TypeScript compiler compiles TS into JavaScript and is called in the build process
+    * Angular compiler compile template into JavaScript DOM instructions
+    * Just-in-Time (JiT) compilation is used normally for `ng serve`
+    * Ahead-of-time (AoT) compilation is used for `ng build`
   * [Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
     * [configure application environments](https://angular.io/guide/build#configuring-application-environments)
       in `environment.ts` like API key
@@ -575,107 +620,6 @@ With [Reactive forms](https://angular.io/guide/reactive-forms), Form is created 
 
 [*Go to top*](#Angular)
 
-
-## Pipes
-* [pipes](https://angular.io/guide/pipes) are used to transform output into templates
-* [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), [async](https://angular.io/api/common/AsyncPipe), [date](https://angular.io/api/common/DatePipe), etc.
-  * [async](https://angular.io/api/common/AsyncPipe) pipe wait completion of Promise or Observable to output resolve value
-* [parameterize pipe](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `:` ; e.g. `{{ birthday | date:"MM/dd/yy" }}`
-* [chaining pipes](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `|` ; e.g. `{{ birthday | date | uppercase}}`
-* [custom pipe](https://angular.io/guide/pipes#creating-pipes-for-custom-data-transformations) is an exported class that implements [PipeTransform](https://angular.io/api/core/PipeTransform) with [Pipe](https://angular.io/api/core/Pipe) declarator (to specify the name in template)
-  * custom pipe must be declare in module
-  * custom pipe can be parametrize by adding more than one parameter to [transform](https://angular.io/api/core/PipeTransform#transform) function
-  * generate pipe with cli: `ng g p xyz`
-* pipe can be also applied to *ngFor (e.g. filter); [see example](https://angular.io/guide/pipes#how-change-detection-works)
-* [pure](https://angular.io/guide/pipes#detecting-pure-changes-to-primitives-and-object-references) and [impure](https://angular.io/guide/pipes#detecting-impure-changes-within-composite-objects) pipes
-  * pure pipes (default): Angular does not re-render pipes after output changes
-  * impure pipes: Angular executes an impure pipe during every component change detection cycle
-  * make impure pipe: configure `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
-  * impure pipes can be called very often and be a performance issue
-
-[*Go to top*](#Angular)
-
-
-## Http
-* make requests
-  * to use [http](https://angular.io/guide/http) import [HttpClientModule](https://angular.io/api/common/http/HttpClientModule)
-  * inject [HttpClient](https://angular.io/api/common/http/HttpClient) to controller constructor
-  * use HttpClient.[get()](https://angular.io/api/common/http/HttpClient#get)/[post()](https://angular.io/api/common/http/HttpClient#post)/[put()](https://angular.io/api/common/http/HttpClient#put)/[delete()](https://angular.io/api/common/http/HttpClient#delete) / etc.
-  * request are sent only by subscribing to [Observable](https://rxjs.dev/api/index/class/Observable) in http methods'result 
-  * use `pipe` and [map](https://rxjs.dev/api/operators/map) [rxjs operator](https://rxjs.dev/guide/operators) to convert HttpClient response to required object
-  * we can specify the [type of response of HttpClient methods](https://angular.io/guide/http#requesting-a-typed-response)
-  * it's a good practise to encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
-    * [Observable](https://rxjs.dev/api/index/class/Observable) result of HttpClient methods encapsulated into a custom service can also be returned from it
-    * [Subject](https://rxjs.dev/api/index/class/Subject) can be used if several components are interested in the response
-  * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) rxjs operators to pipe several http calls; [see example](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-  * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) rxjs operator to performs http calls in parallel; [see example](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-* handling error
-  * [Provide a error callback](https://angular.io/guide/http#error-handling) to the [2nd argument of Observable](https://rxjs.dev/api/index/class/Observable#subscribe-) returned when calling subscribe on HttpClient methods
-  * use [catchError](https://rxjs.dev/api/operators/catchError) rxjs operator inside pipe, that will return an Observable created with [throwError](https://rxjs.dev/api/index/function/throwError) rxjs function; [see example](https://angular.io/guide/http#getting-error-details)
-* headers
-  * provide [HttpHeaders](https://angular.io/api/common/http/HttpHeaders) to `headers` field of last arg of HttpClient methods, [see example](https://angular.io/guide/http#adding-and-updating-headers)
-* query parameters
-  * provide [HttpParams](https://angular.io/api/common/http/HttpParams) to `params` field of last arg of HttpClient methods
-  * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params; take care: HttpParams is immutable
-  * see [example](https://angular.io/guide/http#configuring-http-url-parameters)
-* customize requests
-  * access whole response (e.g. http status code) by providing `{ observe: 'response' }` to last arg of HttpClient methods; [see example](https://angular.io/guide/http#reading-the-full-response)
-  * [http events can be listened](https://angular.io/guide/http#report-progress) if a fine granular control over request is required (e.g. download progress)
-  * `responseType` can be customized, [see example](https://angular.io/guide/http#requesting-non-json-data)
-* interceptors
-  * interceptor is a service that have to implement [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor)
-  * interceptor is configured in `app.module.ts` as providers under `HTTP_INTERCEPTORS`
-  * [see example](https://angular.io/guide/http#intercepting-requests-and-responses)
-  * [HttpRequest](https://angular.io/api/common/http/HttpRequest) is immutable but by calling HttpRequest.[clone()](https://angular.io/api/common/http/HttpRequest#clone), interceptor can modify completelly the request (e.g. adding headers)
-  * typical usecase: [set default headers](https://angular.io/guide/http#setting-default-headers)
-  * response can also be modified by calling `pipe` on the response of `HttpHandler`; e.g. [Caching Request](https://angular.io/guide/http#caching)
-  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
-
-[*Go to top*](#Angular)
-
-
-## Authentication
-* Basic concepts
-  * Server validate credentials and deliver a token (e.g. json) to frontend
-  * Frontend save the token (e.g. localStorage) and sent it to any subsecent authorized requests
-  * Only the server is able to generate the token with a private key and a given algorithm and his therefore secure
-* Links
-  * [JWT (JSON Web Tokens)](https://jwt.io/)
-
-[*Go to top*](#Angular)
-
-
-## Dynamic Components
-
-* Dynamic components can be achieve with `ngIf` in templates or by loading component programmatically and pushing into view
-* ngIf approach is easier and is the best solution in most cases
-* loading component programmatically could be used in some specific use cases (e.g. custom framework)
-* Steps to load component programmatically
-  * write an [*anchor* directive](https://angular.io/guide/dynamic-component-loader#the-anchor-directive) to get access to the location (view) in template where to insert component
-  * add anchor directive into template [added to the template](https://angular.io/guide/dynamic-component-loader#loading-components)
-  * add @ViewChild on the anchor directive into controller to access the public property [ViewContainerRef](https://angular.io/api/core/ViewContainerRef)   
-  * [ComponentFactoryResolver](https://angular.io/api/core/ComponentFactoryResolver) allow to retrieve a component factory to create specific component
-  * [ViewContainerRef.clear()](https://angular.io/api/core/ViewContainerRef#clear) called to remove all views (components)
-  * [ViewContainerRef.createComponent()](https://angular.io/api/core/ViewContainerRef#createcomponent) called with the component factory in argument to create the component inside the view
-  * [ViewContainerRef.createComponent()](https://angular.io/api/core/ViewContainerRef#createcomponent) return [ComponentRef](https://angular.io/api/core/ComponentRef) that must be stored to pass data later
-  * access instance of loaded component with [ComponentRef.instance](https://angular.io/api/core/ComponentRef#instance) to access/set @Input/@Output properties
-  * forget not to unsubscribe, e.g. EventEmitter(@Output) before replacing components into view (Subscription to be stored)
-  * dynamic loaded components have to be declared to [entryComponents](https://angular.io/api/core/NgModule#entryComponents) in NgModule
-    * [entryComponents is deprecated](https://angular.io/guide/entry-components#the-entrycomponents-array)
-
-[*Go to top*](#Angular)
-
-
-## Optimizations
-      
-* [Ahead-of-time (AoT) compilation](https://angular.io/guide/aot-compiler)
-  * TypeScript compiler compiles TS into JavaScript and is called in the build process
-  * Angular compiler compile template into JavaScript DOM instructions
-  * Just-in-Time (JiT) compilation: Angular compiler run in the browser (at runtime)
-  * Ahead-of-time (AoT) compilation: Angular compiler run in the build process
-  * `ng build --prod` will perfom the AoT compilation into `dist/` folder
-
-[*Go to top*](#Angular)
 
 
 
