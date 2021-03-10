@@ -99,7 +99,15 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Forms](#Forms) TODO
     * [Template-driven forms](#Template-driven-forms)
     * [Reactive forms](#Reactive-forms)
-  * [Observables - RxJS](#Observables---RxJS) TODO
+  * [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
+    is used extensively within Angular to ease writing of asynchronous calls and event handling
+    * see quick [angular guide about RxJS](https://angular.io/guide/rx-library#the-rxjs-library) or [RxJS summary](./RxJS.md)
+    * Subject vs EventEmitter
+      * [Subject](https://rxjs.dev/guide/subject) is the new approach to 
+        [EventEmitter](https://angular.io/api/core/EventEmitter) for communication between components 
+      * EventEmitter is always used for event binding (with @Output)
+      * Subject are better to be used with services
+      * Subject is an Observable on which we can call next() from outside the observable
   * [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
     * [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), 
       [async](https://angular.io/api/common/AsyncPipe), 
@@ -124,8 +132,8 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
     * [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
     * good practise: encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
     * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
-      rxjs operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-    * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) rxjs operator to 
+      RxJS operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
+    * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) RxJS operator to 
       [performs http calls in parallel](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
     * [handling request error](https://angular.io/guide/http#handling-request-errors) can be customized
     * [headers](https://angular.io/api/common/http/HttpHeaders) can be [provided to http requests](https://angular.io/guide/http#adding-and-updating-headers)
@@ -541,18 +549,6 @@ Angular offers various solutions to [components interaction](https://angular.io/
 * Use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) to preserve query params when navigating between routes
 * [Redirecting and Wildcard routes](https://angular.io/guide/router#setting-up-redirects)
 * [Separate Module for Route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
-
-[*Go to top*](#Angular)
-
-
-## Observables - RxJS
-* [Observables in Angular](https://angular.io/guide/observables-in-angular)
-* [Operators](https://angular.io/guide/rx-library#operators) used with pipe() function
-* [Subject](https://rxjs.dev/guide/subject) is the new approach to [EventEmitter](https://angular.io/api/core/EventEmitter) for communication between components 
-* EventEmitter is always used for event binding (with @Output)
-* Subject are better to be used with services
-* Subject is an Observable on which we can call next() from outside the observable
-* see [RxJS](./RxJS.md) for more informations about RxJS
 
 [*Go to top*](#Angular)
 
