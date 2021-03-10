@@ -96,12 +96,10 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * [Location strategies](#Location-strategies)
       * [Miscelleanous](#Miscelleanous)
 * Other features
-  * [Forms](#Forms)
+  * [Forms](#Forms) TODO
     * [Template-driven forms](#Template-driven-forms)
     * [Reactive forms](#Reactive-forms)
-  * [Styling](#Styling)
-  * [Animations](#Animations)
-  * [Observables - RxJS](#Observables---RxJS)
+  * [Observables - RxJS](#Observables---RxJS) TODO
   * [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
     * [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), 
       [async](https://angular.io/api/common/AsyncPipe), 
@@ -142,6 +140,8 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
     * Frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
       with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
     * Only the server is able to generate the token with a private key and a given algorithm and his therefore secure
+  * [Styling](#Styling) TODO
+  * [Animations](#Animations) TODO
   * [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
     * dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
       by loading component programmatically and pushing into view
