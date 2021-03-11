@@ -143,13 +143,69 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
       * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
       * [caching requests](https://angular.io/guide/http#caching)
       * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
-  * Authentication
-    * Server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
-    * Frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
-      with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
-    * Only the server is able to generate the token with a private key and a given algorithm and his therefore secure
-  * [Styling](#Styling) TODO
-  * [Animations](#Animations) TODO
+    * authentication concepts
+      * server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
+      * frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
+        with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
+      * only the server is able to generate the token with a private key and a given algorithm and his therefore secure
+  * [Styling](https://angular.io/guide/component-styles) of angular applications are made with CSS
+    * application-wide styles can be done by
+      1. add `<link rel="stylesheet" href="...">` into `index.html` with CDN url or local file (should be in assets folder)
+      2. update `styles.css` (default global angular style)
+      3. modify [global style](https://angular.io/guide/workspace-config#styles-and-scripts-configuration) in `angular.json`
+        * typical use-case: `styles` link to a css file of a css framework npm module
+    * component-scoped styles can be done by
+      1. use `styles` or [styleUrls](https://angular.io/api/core/Component#styleurls) of `@Component` decorator
+      2. add `<style>` or `<link>` to component template
+    * [View encapsulation](https://angular.io/guide/view-encapsulation): component styles are applied, by default, 
+      only within the template of that component
+      * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific 
+        attribute value for every html tags of a component; CSS can be applied then by using this attribute in the 
+        CSS selector
+      * see [style scope](https://angular.io/guide/component-styles#style-scope)
+    * default view encapsulation can be overidden by changing [@Component.encapsulation](https://angular.io/api/core/Component#encapsulation)
+    * special selectors
+      * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
+        * function form `:host` component allow to style the host component on given css selector condition 
+          (e.g. `:host(.active)`)
+      * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, 
+        depending on some condition set outside of it
+    * Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) 
+      are common way to dynamic style components
+    * Angular component selector like `app-xyz { ... }` can be used in css
+    * [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
+    * Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without
+      having to touch the DOM directly
+  * [Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
+    * CSS Transitions/CSS Animations vs Angular Animations
+      * allow to style an animation on one step; to keep all the stuff in angular world
+      * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); its very difficult to manage it with CSS Animations
+      * complex animation should be done in Angular Animations
+      * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
+    * concepts
+      * [trigger](https://angular.io/guide/animations#triggering-the-animation) encapsulates a named animation; the transitions between states included in its definition when a change occurs
+      * [state](https://angular.io/guide/animations#animation-state-and-styles) define styles related to a given named state
+      * [transition](https://angular.io/guide/animations#transitions-and-timing) define animation between styles of state
+    * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (evolves over time)
+    * advanced topics
+      * [animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
+        * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
+        * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
+        * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#enter-and-leave-aliases) for `void => *` and `* => void` transitions
+        * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#using-wildcards-with-styles) to use current style value
+      * use [animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) to be informed when animation start/end
+      * [complex animation sequences](https://angular.io/guide/complex-animation-sequences) with 
+        [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) 
+        allow to find and animate inner elements; see also [query](https://angular.io/api/animations/query) in reference
+      * [route transition animations](https://angular.io/guide/route-animations)
+      * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
+    * tip: animations works on block element but per default Angular Component are inline-block element. 
+      Don't forget to add:
+      ```
+      :host {
+        display: block;
+      }
+      ```
   * [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
     * dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
       by loading component programmatically and pushing into view
@@ -396,66 +452,6 @@ Angular offers various solutions to [components interaction](https://angular.io/
 [*Go to top*](#Angular)
 
 
-## Styling
-* application-wide styles can be done by
-  1. add `<link rel="stylesheet" href="...">` into `index.html` with CDN url or local file (should be in assets folder)
-  2. update `styles.css` (default global angular style)
-  3. modify [global style](https://angular.io/guide/workspace-config#styles-and-scripts-configuration) in `angular.json`
-      * typical use-case: `styles` link to a css file of a css framework npm module
-* component-scoped styles can be done by
-  1. use `styles` or [styleUrls](https://angular.io/api/core/Component#styleurls) of `@Component` decorator
-  2. add `<style>` or `<link>` to component template
-* [View encapsulation](https://angular.io/guide/view-encapsulation): component styles are applied, by default, only within the template of that component
-  * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific attribute value for every html tags of a component; CSS can be applied then by using this attribute in the CSS selector
-  * see [style scope](https://angular.io/guide/component-styles#style-scope)
-  * default view encapsulation can be overidden by changing [@Component.encapsulation](https://angular.io/api/core/Component#encapsulation)
-* Special selectors
-  * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
-    * function form `:host` component allow to style the host component on given css selector condition(e.g. `:host(.active)`)
-  * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, depending on some condition set outside of it
-* Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) are common way to dynamic style components
-* Angular component selector like `app-xyz { ... }` can be used in css
-* [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
-* Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without having to touch the DOM directly
-
-[*Go to top*](#Angular)
-
-
-## Animations
-* Angular's Animations system is built on CSS functionality and allow animate HTML elements in complex sequences and choreographies.
-* Angular's Animations are implemented through a DSL language
-* CSS Transitions/CSS Animations vs Angular Animations
-  * allow to style an animation on one step; to keep all the stuff in angular world
-  * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); its very difficult to manage it with CSS Animations
-  * complex animation should be done in Angular Animations
-  * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
-* Concepts
-  * [trigger](https://angular.io/guide/animations#triggering-the-animation) encapsulates a named animation; the transitions between states included in its definition when a change occurs
-  * [state](https://angular.io/guide/animations#animation-state-and-styles) define styles related to a given named state
-  * [transition](https://angular.io/guide/animations#transitions-and-timing) define animation between styles of state
-* [Introduction to Angular Animations](https://angular.io/guide/animations)
-* List of [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (evolves over time)
-* Advanced topics
-  * [Animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
-    * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
-    * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
-    * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#enter-and-leave-aliases) for `void => *` and `alias for * => void`
-    * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#using-wildcards-with-styles) to use current style value
-  * [Animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) (be informed when animation start/end)
-  * [Complex animation sequences](https://angular.io/guide/complex-animation-sequences)
-    * [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) allow to find and animate inner elements; see also [query](https://angular.io/api/animations/query) in reference
-  * [Route transition animations](https://angular.io/guide/route-animations)
-  * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
-  * Animation can be added to component by using [HostBinding](https://angular.io/api/core/HostBinding); see [example](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions)
-* Tips
-  * Animations works on block element but per default Component are inline-block element. Don't forget to add e.g.
-```
-:host {
-    display: block;
-}
-```
-
-[*Go to top*](#Angular)
 
 
 ## Services and Dependency Injection
