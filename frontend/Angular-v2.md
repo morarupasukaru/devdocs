@@ -37,7 +37,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Deployment](#Deployment) to deploy Angular application on remote server
   * [Testing](#Testing) to write and run unit tests
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-  * [Service Workers & PWA](#Service-Workers---PWA) provide a way to have offline web applications
+  * [Service Workers & PWA](#service-workers--pwa) provide a way to have offline web applications
     and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
   * [Angular Universal](#Angular-Universal) provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
