@@ -9,7 +9,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
-  * [@NgModule](#@NgModule) bundle a set of components together
+  * [@NgModule](#-NgModule) bundle a set of components together
   * [@Component](https://angular.io/guide/architecture#components)
     is a decorator used to identify a class as a component
     * most important [properties of @Component](https://angular.io/api/core/Component):
