@@ -6,58 +6,10 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-##### Angular CLI
 * [Angular concepts](https://angular.io/guide/architecture)
-  * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
+  * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
-    * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
-    * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-  * [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
-    * [introduction to modules](https://angular.io/guide/architecture-modules#introduction-to-modules)
-    * [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
-    * [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
-      a container of components
-    * root module is normally `app.module.ts`; the `AppModule`
-    * most important [properties of @NgModule](https://angular.io/guide/architecture-modules#ngmodule-metadata):
-      * [declarations](https://angular.io/api/core/NgModule#declarations): 
-        components that belong to this module
-      * [imports](https://angular.io/api/core/NgModule#imports): 
-        other modules needed by this NgModule (cascade)
-      * [bootstrap](https://angular.io/api/core/NgModule#bootstrap): 
-        configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
-      * [providers](https://angular.io/api/core/NgModule#providers): 
-        specify services available to this module (and submodules)
-      * [entryComponents](https://angular.io/api/core/NgModule#entrycomponents): 
-        specify components that can be dynamically loaded
-      * [exports](https://angular.io/api/core/NgModule#exports): 
-        components, directives, pipes and modules declared in this NgModule that can be used in any component part 
-        of an NgModule that imports this NgModule
-    * [feature modules](https://angular.io/guide/feature-modules) are submodules of AppModule that group components, 
-       directives, etc. of a certain business feature of the application
-      * splitting application in feature modules ease optimizations (like lazy-loaded modules; see optimizations above)
-      * use [CommonModule](https://angular.io/api/common/CommonModule) 
-        instead of [BrowserModule](https://angular.io/api/platform-browser/BrowserModule) 
-        to get access to ngIF or ngFor in feature module 
-        ([BrowserModule](https://angular.io/api/platform-browser/BrowserModule) has to be declared once per application)
-      * use [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-        instead of [.forRoot(...)](https://angular.io/api/router/RouterModule#forroot) to specify feature module routes
-      * using [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-        permit to avoid to have to export inner components of feature module
-    * [shared modules](https://angular.io/guide/sharing-ngmodules) 
-      allow to package components, directives, etc. shared by feature modules 
-      (shared modules export the modules, components, directives in common)
-    * [lazy loading feature modules](https://angular.io/guide/lazy-loading-ngmodules) 
-      are *lazy loaded* when visiting their associated route
-      * lazy loading technical require that feature module provide their own route
-      * a route with [Routes.loadChildren](https://angular.io/api/router/Route#lazy-loading) allow to specify the module to be loaded on demand
-      * angular CLI analyse the routes and will split bundle if `loadChildren` is used
-      * `import` in module impact the size of bundle; it is therefore important to clean-up unused `import`
-      * empty path is required for the root route in the feature module
-      * lazy loaded feature module must not be declared in app module
-      * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
-      * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
-      * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
-      * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
+  * [@NgModule](#@NgModule) bundle a set of components together
   * [@Component](https://angular.io/guide/architecture#components)
     is a decorator used to identify a class as a component
     * most important [properties of @Component](https://angular.io/api/core/Component):
@@ -538,3 +490,68 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 *(Page mainly written in 2019, last update: july 2020)*
 
 [*Go to parent page*](../README.md)
+
+
+## Angular concepts
+
+##### Angular CLI
+
+[Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
+locally, etc.
+* [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
+* [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
+
+[*Go to top*](#Angular)
+
+
+##### @NgModule
+
+[@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
+
+* [introduction to modules](https://angular.io/guide/architecture-modules#introduction-to-modules)
+* [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
+* [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
+  a container of components
+* root module is normally `app.module.ts`; the `AppModule`
+* most important [properties of @NgModule](https://angular.io/guide/architecture-modules#ngmodule-metadata):
+  * [declarations](https://angular.io/api/core/NgModule#declarations): 
+    components that belong to this module
+  * [imports](https://angular.io/api/core/NgModule#imports): 
+    other modules needed by this NgModule (cascade)
+  * [bootstrap](https://angular.io/api/core/NgModule#bootstrap): 
+    configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
+  * [providers](https://angular.io/api/core/NgModule#providers): 
+    specify services available to this module (and submodules)
+  * [entryComponents](https://angular.io/api/core/NgModule#entrycomponents): 
+    specify components that can be dynamically loaded
+  * [exports](https://angular.io/api/core/NgModule#exports): 
+    components, directives, pipes and modules declared in this NgModule that can be used in any component part 
+    of an NgModule that imports this NgModule
+* [feature modules](https://angular.io/guide/feature-modules) are submodules of AppModule that group components, 
+  directives, etc. of a certain business feature of the application
+  * splitting application in feature modules ease optimizations (like lazy-loaded modules; see optimizations above)
+  * use [CommonModule](https://angular.io/api/common/CommonModule) 
+    instead of [BrowserModule](https://angular.io/api/platform-browser/BrowserModule) 
+    to get access to ngIF or ngFor in feature module 
+    ([BrowserModule](https://angular.io/api/platform-browser/BrowserModule) has to be declared once per application)
+  * use [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
+    instead of [.forRoot(...)](https://angular.io/api/router/RouterModule#forroot) to specify feature module routes
+  * using [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
+    permit to avoid to have to export inner components of feature module
+* [shared modules](https://angular.io/guide/sharing-ngmodules) 
+  allow to package components, directives, etc. shared by feature modules 
+  (shared modules export the modules, components, directives in common)
+* [lazy loading feature modules](https://angular.io/guide/lazy-loading-ngmodules) 
+  are *lazy loaded* when visiting their associated route
+  * lazy loading technical require that feature module provide their own route
+  * a route with [Routes.loadChildren](https://angular.io/api/router/Route#lazy-loading) allow to specify the module to be loaded on demand
+  * angular CLI analyse the routes and will split bundle if `loadChildren` is used
+  * `import` in module impact the size of bundle; it is therefore important to clean-up unused `import`
+  * empty path is required for the root route in the feature module
+  * lazy loaded feature module must not be declared in app module
+  * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
+  * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
+  * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
+  * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
+
+[*Go to top*](#Angular)
