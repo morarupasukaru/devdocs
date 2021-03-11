@@ -69,7 +69,7 @@
 
 ## Angular concepts
 
-##### Angular CLI
+#### Angular CLI
 
 [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
 locally, etc.
@@ -79,7 +79,7 @@ locally, etc.
 [*Go to top*](#Angular)
 
 
-##### @NgModule
+#### @NgModule
 
 [@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
 
@@ -132,7 +132,7 @@ locally, etc.
 [*Go to top*](#Angular)
 
 
-##### @Component
+#### @Component
 
 [@Component](https://angular.io/guide/architecture#components) is a decorator used to identify a class as a component
 
@@ -152,7 +152,7 @@ locally, etc.
 [*Go to top*](#Angular)
 
 
-##### Directives
+#### Directives
 
 [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
 
@@ -184,7 +184,7 @@ locally, etc.
 [*Go to top*](#Angular)
 
 
-##### Data bindings
+#### Data bindings
 
 Data bindings ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
 in different use cases
@@ -223,7 +223,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-##### Services
+#### Services
 
 [Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
 
@@ -243,7 +243,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-##### Routing
+#### Routing
 
 [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
 
@@ -305,12 +305,12 @@ in different use cases
 
 ## Other features
 
-##### Forms
+#### Forms
 
 [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
 [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
 
-###### Reactive forms
+##### Reactive forms
 
 [Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
 
@@ -339,7 +339,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-###### Template-driven forms
+##### Template-driven forms
 
 [Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
 
@@ -380,7 +380,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-##### Observables
+#### Observables
 
 [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
 is used extensively within Angular to ease writing of asynchronous calls and event handling
@@ -396,7 +396,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Pipes
+#### Pipes
 
 [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
 
@@ -415,7 +415,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### HttpClient
+#### HttpClient
 
 [HttpClient](https://angular.io/guide/http) provide an API to perform HTTP requests
 
@@ -450,7 +450,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Styling
+#### Styling
 
 [Styling](https://angular.io/guide/component-styles) of angular applications are made with CSS
 
@@ -485,7 +485,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Animations
+#### Animations
 
 [Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
 
@@ -522,7 +522,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Dynamic Components
+#### Dynamic Components
 
 [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
 
@@ -534,7 +534,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
+#### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
 
 [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
 
@@ -546,7 +546,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Deployment
+#### Deployment
 
 [Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
 
@@ -564,7 +564,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Testing
+#### Testing
 
 [Testing](https://angular.io/guide/testing) to write and run unit tests
 
@@ -586,7 +586,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-##### Service Workers & PWA
+#### Service Workers & PWA
 
 [Service Workers & PWA](https://angular.io/guide/service-worker-intro) provide a way to have offline web applications
 and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
@@ -606,7 +606,7 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 [*Go to top*](#Angular)
 
 
-##### Angular Universal
+#### Angular Universal
 
 [Angular Universal](https://angular.io/guide/universal) provide 
 [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
@@ -635,7 +635,7 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 
 ## Ecosystem
 
-##### NgRx and Redux
+#### NgRx and Redux
 
 [NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
 
@@ -694,7 +694,7 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 [*Go to top*](#Angular)
 
 
-##### Angular Flex-Layout
+#### Angular Flex-Layout
 
 [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API using 
 [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
@@ -713,7 +713,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 [*Go to top*](#Angular)
 
 
-##### Angular Material
+#### Angular Material
 
 [Angular Material](https://material.angular.io/) is an Angular components suite based on 
 [Google Material Design specifications](https://material.io/design/)
@@ -729,7 +729,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 [*Go to top*](#Angular)
 
 
-##### NestJS
+#### NestJS
 
 [NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
 [Angular Universal](#Angular-Universal) instead of 
