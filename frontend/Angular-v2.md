@@ -6,11 +6,6 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-
-##### TODO
-
-[*Go to top*](#Angular)
-
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -57,92 +52,18 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [ngx-translate](http://www.ngx-translate.com/) as internationalization library
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
-  * [NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
-    * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
-    * to not loose all important data, some of them are stored in the *persistent state* on backend (db)
-    * application state is scattered in several components, services
-    * for big projects, application state can be difficult to manage 
-    * [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
-    * Angular does not force to have a clear structure about application state
-    * [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
-    * Redux library could be used in Angular
-    * [NgRx](https://ngrx.io/) is an Angular implementation of [Redux](https://redux.js.org/) and is therfore easier to use as Redux directly
-    * Redux vs NgRx
-      * NgRx provide injectable services
-      * NgRx integrate/use RxJS to have Observable
-      * NgRx is written in TypeScript
-      * NgRx provide a concept *Side Effect* to support asynchronous code (e.g. http requests)
-    * docs:
-      * [NgRx docs](https://ngrx.io/docs)
-      * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
-    * Redux basics
-      * lifecycle:
-        ![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
-        *(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*
-      * there is only one application state; the *Store*
-      * services and components can interact between themselves but receives their state from the *Store* (with use of subscriptions)
-      * change in the store are *dispatched* into *Actions*
-      * an *Action* has an type and could have data; the *Payload*
-      * *Actions* are sent to *Reducers* by dispatching them from the *Store*
-      * an Action is dispatched to every *Reducers* no matter whether the reducer could handle the action or not
-        * always provide a default case in reducer that returns the unchanged state
-        * action.type must be unique in the whole application
-      * *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
-      * *State* are immutable (or must be immutable)
-      * a JavaScript object can be shallow-copied with spread operator: `const newObject = { ...object };`
-    * NgRx basics
-      * lifecycle: 
-        ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
-        *(source: [NgRx](https://ngrx.io/guide/store))*
-      * *selector*: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
-        * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
-      * *feature state*: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
-      * *effect*: allow to handle asynchronous events
-        * Effects are long-running services that listen to an observable of every action dispatched from the Store.
-        * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
-        * Effects perform tasks, which are synchronous or asynchronous and return a new action (have to).
-      * *router-store module*: @ngrx/router-store module allow to dispatch events to route navigation (that could be listened in effect e.g.)
-        * npm install --save-dev @ngrx/router-store
-        * import StoreRouterConnectingModule to app.module.ts
-      * *browser redux devtools* extension allow to see dispatched actions and Store changes
-        * search "redux devtools extension" and install it in chrome
-        * npm install --save-dev @ngrx/store-devtools
-        * import StoreDevtoolsModule in app.module.ts
-        * call .instrument({logOnly: environment.production})
-  * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API using 
+  * [NgRx and Redux](#NgRx-and-Redux) are used to manage application state
+  * [Angular Flex-Layout](#Angular-Flex-Layout) provide layout API using 
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-    * basics
-      * use [fxLayout](https://github.com/angular/flex-layout/wiki/fxLayout-API) directive to define flex-direction on the container
-      * use [fxLayoutAlign](https://github.com/angular/flex-layout/wiki/fxLayoutAlign-API) directive to align flex items on the main and cross-axis
-      * use [fxLayoutGap](https://github.com/angular/flex-layout/wiki/fxLayoutGap-API) directive to specify margin gaps on children within a flexbox container
-      * use [fxHide](https://github.com/angular/flex-layout/wiki/fxHide-API) and [fxShow](https://github.com/angular/flex-layout/wiki/fxShow-API) directives to show/hide component in combination with breakpoints;
-        * hide a div on small devices: ```<div fxHide.xs>...</div>```
-        * hide a div on greater than small devices: ```<div fxHide.gt-xs>...</div>```
-    * docs: [Overview of core directives](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
-      and [Responsive API](https://github.com/angular/flex-layout/wiki/Responsive-API)
-  * [Angular Material](https://material.angular.io/) is an Angular components suite based on 
+  * [Angular Material](#Angular Material) is an Angular components suite based on 
     [Google Material Design specifications](https://material.io/design/)
-    * [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
-    * Angular Material is based on two packages:
-      * [component dev kit](https://material.angular.io/cdk/categories)(CDK) to develop a component suite (@angular/cdk)
-      * [component suite](https://material.angular.io/components/categories) based on Material Design (@angular/material)
-    * see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
-    * Angular Material provide no grid system; 
-      use [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation)
   * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
     [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
-  * [NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
-    [Angular Universal](https://angular.io/guide/universal#universal-in-action) instead of 
+  * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
+    [Angular Universal](Angular Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
-    * Angular Universal with NestJS vs Angular Universal with ExpressJS:
-      * default Angular Universal only pre-render HTML webpage
-      * NestJS allow to build REST APIs
-      * NestJS is a server-side framework that borrow a lot from Angular and use TypeScript
-      * Angular + NestJS is a full-stack
-    * use [nestjs/ng-universal](https://github.com/nestjs/ng-universal) to integrate NestJS to Angular Universal 
-    * see [NestJS docs](https://docs.nestjs.com/) 
 
 *(Page mainly written in 2019, last update: july 2020)*
 
@@ -711,5 +632,119 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
         ...
       }
     ```
+
+[*Go to top*](#Angular)
+
+
+## Ecosystem
+
+##### NgRx and Redux
+
+[NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
+
+* application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
+* to not loose all important data, some of them are stored in the *persistent state* on backend (db)
+* application state is scattered in several components, services
+* for big projects, application state can be difficult to manage 
+* [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
+* Angular does not force to have a clear structure about application state
+* [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
+* Redux library could be used in Angular
+* [NgRx](https://ngrx.io/) is an Angular implementation of [Redux](https://redux.js.org/) and is therfore easier to use as Redux directly
+* Redux vs NgRx
+  * NgRx provide injectable services
+  * NgRx integrate/use RxJS to have Observable
+  * NgRx is written in TypeScript
+  * NgRx provide a concept *Side Effect* to support asynchronous code (e.g. http requests)
+* docs:
+  * [NgRx docs](https://ngrx.io/docs)
+  * [example-app of ngrx/platform](https://github.com/ngrx/platform/tree/master/projects/example-app) is a project example with best-practises of NgRx
+* Redux basics
+  * lifecycle:
+    ![Redux Lifecycle](https://res.cloudinary.com/practicaldev/image/fetch/s--fCDvEpjd--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://i.stack.imgur.com/LNQwH.png)
+    *(source: [ABC of Redux](https://dev.to/radiumsharma06/abc-of-redux-5461))*
+  * there is only one application state; the *Store*
+  * services and components can interact between themselves but receives their state from the *Store* (with use of subscriptions)
+  * change in the store are *dispatched* into *Actions*
+  * an *Action* has an type and could have data; the *Payload*
+  * *Actions* are sent to *Reducers* by dispatching them from the *Store*
+  * an Action is dispatched to every *Reducers* no matter whether the reducer could handle the action or not
+    * always provide a default case in reducer that returns the unchanged state
+    * action.type must be unique in the whole application
+  * *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
+  * *State* are immutable (or must be immutable)
+  * a JavaScript object can be shallow-copied with spread operator: `const newObject = { ...object };`
+* NgRx basics
+  * lifecycle: 
+    ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
+    *(source: [NgRx](https://ngrx.io/guide/store))*
+  * *selector*: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
+    * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
+  * *feature state*: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
+  * *effect*: allow to handle asynchronous events
+    * Effects are long-running services that listen to an observable of every action dispatched from the Store.
+    * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
+    * Effects perform tasks, which are synchronous or asynchronous and return a new action (have to).
+  * *router-store module*: @ngrx/router-store module allow to dispatch events to route navigation (that could be listened in effect e.g.)
+    * npm install --save-dev @ngrx/router-store
+    * import StoreRouterConnectingModule to app.module.ts
+  * *browser redux devtools* extension allow to see dispatched actions and Store changes
+    * search "redux devtools extension" and install it in chrome
+    * npm install --save-dev @ngrx/store-devtools
+    * import StoreDevtoolsModule in app.module.ts
+    * call .instrument({logOnly: environment.production})
+
+[*Go to top*](#Angular)
+
+
+##### Angular Flex-Layout
+
+[Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API using 
+[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
+
+* basics
+  * use [fxLayout](https://github.com/angular/flex-layout/wiki/fxLayout-API) directive to define flex-direction on the container
+  * use [fxLayoutAlign](https://github.com/angular/flex-layout/wiki/fxLayoutAlign-API) directive to align flex items on the main and cross-axis
+  * use [fxLayoutGap](https://github.com/angular/flex-layout/wiki/fxLayoutGap-API) directive to specify margin gaps on children within a flexbox container
+  * use [fxHide](https://github.com/angular/flex-layout/wiki/fxHide-API) and [fxShow](https://github.com/angular/flex-layout/wiki/fxShow-API) directives to show/hide component in combination with breakpoints;
+    * hide a div on small devices: ```<div fxHide.xs>...</div>```
+    * hide a div on greater than small devices: ```<div fxHide.gt-xs>...</div>```
+* docs: [Overview of core directives](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
+  and [Responsive API](https://github.com/angular/flex-layout/wiki/Responsive-API)
+
+[*Go to top*](#Angular)
+
+
+##### Angular Material
+
+[Angular Material](https://material.angular.io/) is an Angular components suite based on 
+[Google Material Design specifications](https://material.io/design/)
+
+* [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
+* Angular Material is based on two packages:
+  * [component dev kit](https://material.angular.io/cdk/categories)(CDK) to develop a component suite (@angular/cdk)
+  * [component suite](https://material.angular.io/components/categories) based on Material Design (@angular/material)
+* see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
+* Angular Material provide no grid system; 
+  use [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation)
+
+[*Go to top*](#Angular)
+
+
+##### NestJS
+
+[NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
+[Angular Universal](#Angular-Universal) instead of 
+[ExpressJS](https://expressjs.com/) to provide
+[Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+
+* Angular Universal with NestJS vs Angular Universal with ExpressJS:
+  * default Angular Universal only pre-render HTML webpage
+  * NestJS allow to build REST APIs
+  * NestJS is a server-side framework that borrow a lot from Angular and use TypeScript
+  * Angular + NestJS is a full-stack
+* use [nestjs/ng-universal](https://github.com/nestjs/ng-universal) to integrate NestJS to Angular Universal 
+* see [NestJS docs](https://docs.nestjs.com/) 
 
 [*Go to top*](#Angular)
