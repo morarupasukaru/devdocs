@@ -71,7 +71,8 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
         specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
         on service self)
       * creating component with Angular CLI: `ng g c name-of-component`
-  * Templates TODO
+  * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
+    additional features (e.g. binding with properties of the controller)
   * [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
     * [types of directives](https://angular.io/guide/attribute-directives#directives-overview): 
       [structural](https://angular.io/guide/structural-directives) and 
