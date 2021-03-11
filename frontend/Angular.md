@@ -72,33 +72,188 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
         on service self)
       * creating component with Angular CLI: `ng g c name-of-component`
   * Templates TODO
-  * Directives
-      * [Directives](#Directives)
-  * Data binding
-        * [Databinding](#Databinding)
-          * [Custom property & event bindings](#Custom-property-and-event-bindings)
-          * [Template reference variables](#Template-reference-variables)
-          * [@ViewChild](#ViewChild)
-          * [ng-content](#ng-content)
-          * [ng-container](#ng-container)
-          * [Lifecycle hooks](#Lifecycle-hooks)
-  * Services and dependency injection
-    * [Services and Dependency Injection](#Services-and-Dependency-Injection)
-  * Routing
-    * [Routing](#Routing)
-      * [Routing configuration](#Routing-configuration)
-      * [Navigation](#Navigation)
-      * [Retrieve route datas](#Retrieve-route-datas)
-      * [Child routes](#Child-routes)
-      * [Guards](#Guards)
-      * [Provide static data to route](#Provide-static-data-to-route)
-      * [Resolve](#Resolve)
-      * [Location strategies](#Location-strategies)
-      * [Miscelleanous](#Miscelleanous)
+  * [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
+    * [types of directives](https://angular.io/guide/attribute-directives#directives-overview): 
+      [structural](https://angular.io/guide/structural-directives) and 
+      [attribute](https://angular.io/guide/attribute-directives) directives
+    * built-in structural directives: 
+      [ngIf](https://angular.io/api/common/NgIf), 
+      [ngStyle](https://angular.io/api/common/NgStyle), 
+      [ngClass](https://angular.io/api/common/NgClass), 
+      [ngFor](https://angular.io/api/common/NgForOf), 
+      [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives)
+    * tips: 
+      * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
+        alternative is to write two ngIf
+      * [getting index of ng-for](https://angular.io/api/common/NgForOf#description)
+      * [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using 
+        property binding `[hidden]="condition"` on 
+        [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
+    * see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
+    * [build custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
+      * by using [Renderer2](https://angular.io/api/core/Renderer2)
+      * [@HostListener](https://angular.io/api/core/HostListener) to listen host event
+      * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host properties
+      * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
+      * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
+    * [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
+  * Data bindings ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
+    in different use cases
+    * [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (one-way binding from controller to view)
+    * [Property binding](https://angular.io/guide/property-binding): `[property]="data"` (one-way binding from controller to view)
+    * [Event binding](https://angular.io/guide/event-binding): `(event)="expression"` (one-way binding from view to controller)
+    * [Two-way binding](https://angular.io/guide/two-way-binding): `[(property)]="data"` (two-way binding between view and controller)
+      (two-way binding is a syntactic sugar for a property binding and an event binding)
+    * [ngModel](https://angular.io/guide/built-in-directives#ngModel) directive allow two-way binding for form's inputs 
+    * custom property and event bindings
+      * Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
+      * Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
+      * use [Alias on @Input/@Output](https://angular.io/guide/attribute-directives#bind-to-an-input-alias) to have 
+        different public name than class property
+      * Components communication with @Input & @Output is good if component are not far for themselves (e.g. parent-child)
+    * a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a 
+      DOM element available within in template (could replace bindings with custom properties)
+    * [@ViewChild](https://angular.io/guide/component-interaction#parent-calls-an-viewchild) allow to access template 
+      reference element as [ElementRef](https://angular.io/api/core/ElementRef) in controller
+      (e.g. input field value readable with ElementRef.nativeElement.value)
+    * ng-content allow to project content into a reusable component (e.g. tabs component)
+      * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
+        (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
+      * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element 
+        as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file
+    * [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
+      that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
+    * [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
+      * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
+        [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
+      * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
+        [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
+      * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/), [page 2](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
+  * [Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
+    * services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) 
+      by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
+    * dependency-injection of services can by done with 
+      [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
+      in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
+      [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
+    * [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
+      a given Module/Component will be provided to childs
+      (means that several instance of a service could exists in the application; depending on the DI configuration)
+    * a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
+    * [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
+      [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
+  * [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
+    * [configure router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
+      * [add `<router-outlet>` in template](https://angular.io/guide/router#router-outlet) where routed components will be rendered
+      * [configure route parameters (e.g. id)](https://angular.io/guide/router-tutorial-toh#route-parameters)
+      * [redirects and wildcard routes](https://angular.io/guide/router#setting-up-redirects) can also be configured
+      * a good practise is to have a [separate module for route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
+    * define navigation in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and 
+      following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
+      * add CSS class in template with [routeLinkActive](https://angular.io/guide/router#active-router-links) 
+      (see also routerLinkActiveOptions)
+    * navigate programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: 
+      [NavigationExtras](https://angular.io/api/router/NavigationExtras))
+      * [NavigationExtras](https://angular.io/api/router/NavigationExtras) is used to pass 
+        [queryParams](https://angular.io/api/router/UrlCreationOptions#queryParams), 
+        [fragment](https://angular.io/api/router/UrlCreationOptions#fragment), 
+        [relative route](https://angular.io/api/router/UrlCreationOptions#relativeTo) 
+        (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRouteSnapshot))
+      * tip: use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) 
+        to preserve query params when navigating between routes
+    * retrieve route datas in ngOnInit with 
+      [ActivatedRoute](https://angular.io/api/router/ActivatedRoute).[snapshot](https://angular.io/api/router/ActivatedRoute#snapshot)() 
+      that returns an [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot) 
+      (containing params, queryParams, etc.)
+    * retrieve route datas on every route changes within the component by calling 
+      ["subscribe()"](https://angular.io/guide/observables-in-angular#router) with observables of 
+      [ActivatedRoute](https://angular.io/api/router/ActivatedRoute): 
+      [params](https://angular.io/api/router/ActivatedRoute#params), 
+      [queryParams](https://angular.io/api/router/ActivatedRoute#queryParams), 
+      [fragment](https://angular.io/api/router/ActivatedRoute#fragment), etc.
+    * specify [child (nested) routes](https://angular.io/guide/router#nesting-routes) by setting
+      [children](https://angular.io/api/router/Route#children) routes in app.module.ts
+      * add [`<router-outlet>`](https://angular.io/api/router/RouterOutlet) in the template of the parent component to 
+        specify where children component must be renderer
+    * guards are services that implements interfaces like [CanActivate](https://angular.io/api/router/CanActivate) and
+      are called before component is rendered
+      * guards are configured into Route like e.g. [Route.canActivate](https://angular.io/api/router/Route#canActivate)
+      * examples of guards
+        * [CanActivate could forbid access without authentication](https://angular.io/guide/router-tutorial-toh#canactivate-requiring-authentication)
+        * [CanDeactivate could handle unsaved changes](https://angular.io/guide/router-tutorial-toh#candeactivate-handling-unsaved-changes)
+    * provide static data in [Route.data](https://angular.io/api/router/Route#data) in RouterModule configuration
+      * access data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
+        or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
+    * [provide/pre-fetch dynamic data to component](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data)
+      * a Resolver service must implements [Resolve](https://angular.io/api/router/Resolve)
+      * configure [Route.resolve](https://angular.io/api/router/Route#resolve) in RouterModule configuration
+      * access pre-fetch data inside Component in ngOnInit from 
+        [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
+        or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
+    * define [location strategies](https://angular.io/guide/router#locationstrategy-and-browser-url-styles)
+      if default setting are not sufficient
+      * productive web-server must be configured so that 404 error are redirected to index.html
+      * if that's not possible, [HashLocationStrategy](https://angular.io/guide/router#hashlocationstrategy) 
+        must be used as workaround
 * Other features
-  * [Forms](#Forms) TODO
-    * [Template-driven forms](#Template-driven-forms)
-    * [Reactive forms](#Reactive-forms)
+  * [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
+    [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
+    * [Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
+      * import [FormsModule](https://angular.io/api/forms/FormsModule)
+      * (Angular automatically add an [ngForm](https://angular.io/api/forms/NgForm) directive to the `<form>`)
+      * add [ngModule](https://angular.io/api/forms/NgModel) directive on `<input>`
+      * add [ngSubmit](https://angular.io/api/forms/FormGroupDirective#properties) event emitter on `<form>`
+      * add a [template reference variable `<form #f="ngForm">`](https://angular.io/guide/forms#submit-the-form-with-ngsubmit) 
+        to access the FormGroup / form state inside the template
+      * add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable 
+        of the NgForm inside controller:
+        ```
+          @ViewChild('f', { static: false }) signupForm: NgForm;
+        ```
+      * add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
+      * add styles or *ngIf by using css classes: `ng-untouched`/`ng-touched`, `ng-pristine`/`ng-dirty`, 
+        `ng-valid`/`ng-invalid`, see [Angular docs](https://angular.io/guide/forms#create-visual-feedback-for-states)
+      * custom validator is implemented with [directives](https://angular.io/guide/form-validation#adding-to-template-driven-forms) 
+      * binding with [ngModel](https://angular.io/api/forms/NgModel) directive:
+        * no binding: indicate Angular which input to manage
+        * one-way binding: set default value to input, e.g. `<select [ngModel]="defaultQuestion" ...>`
+        * two-way binding: variable inside controller instantly updated on user-input
+      * use [ngModelGroup](https://angular.io/api/forms/NgModelGroup) directive to group several input into a logical group
+      * call [NgForm.from.patchValue({ key:value })](https://angular.io/api/forms/FormGroup#patchvalue) to override specific form values
+    * [Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
+      * import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
+      * create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
+      * add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template 
+        to one-way bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
+      * add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
+      * add [(ngSubmit)="xxx()"](https://angular.io/guide/reactive-forms#grouping-form-controls) event emitter to `<form>` in template 
+      * validation directive does not work (e.g. `required`)
+      * [Validators](https://angular.io/api/forms/Validators) must be added to the 2nd parameter to 
+        [FormControl](https://angular.io/api/forms/FormControl)
+      * control and form states are available in the template by calling get on bind FormGroup, e.g. 
+        `<span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">...<span>`
+      * `FormGroup` can contains `FormGroup`
+        * add ["formGroupName"="..."](https://angular.io/api/forms/FormGroupName) in template
+        * `"FormGroup.get()"` can contains path with . separator
+      * add [FormArray](https://angular.io/api/forms/FormArray) to `FormGroup`
+        * constructor of [FormArray](https://angular.io/api/forms/FormArray) expect an array
+        * cast is required when retrieving `FormArray` from `FormGroup`: `<FormArray>formGroup.get('xyz')`
+        * add [formArrayName="..."](https://angular.io/api/forms/FormArrayName) directive in template
+        * use index of [*ngFor](https://angular.io/api/common/NgForOf) to set the [formControlName](https://angular.io/api/forms/FormControlName)
+      * [custom validator](https://angular.io/guide/form-validation#custom-validators) are functions in Reactive forms
+        * add custom validator to validator array of the FormControl in 2nd parameter
+        * `.bind(this)` required if `this` is used inside the validator function
+        * validator in error are set on the `.errors` field of the FormControl; can be used in template to customize error message
+      * [async validator](https://angular.io/guide/form-validation#implementing-a-custom-async-validator) are used e.g. 
+        to validate field on the server
+        * async validator return Promise or Observable
+        * async validator are added in FormControl third argument
+        * ng-pending class is set the FormControl while waiting to the async validator result
+      * FormGroup, FormControl have two observables [valueChanges and statusChanges](https://angular.io/api/forms/AbstractControl#properties)
+      * [FormGroup.setValue()](https://angular.io/api/forms/FormGroup#setvalue), 
+        [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
+      * [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form 
+        controls (optional arg allow to set default value; e.g. for radiobuttons)
   * [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
     is used extensively within Angular to ease writing of asynchronous calls and event handling
     * see quick [angular guide about RxJS](https://angular.io/guide/rx-library#the-rxjs-library) or [RxJS summary](./RxJS.md)
@@ -381,239 +536,3 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 *(Page mainly written in 2019, last update: july 2020)*
 
 [*Go to parent page*](../README.md)
-
-
-## Databinding
-Angular offers various solutions to [components interaction](https://angular.io/guide/component-interaction#component-interaction) for different use cases.
-
-* [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (ctrl>view)
-* [Property binding](https://angular.io/guide/property-binding): `[property]="data"` (ctrl>view)
-* [Event binding](https://angular.io/guide/event-binding): `(event)="expression"` (view>ctrl)
-* [Two-way binding](https://angular.io/guide/two-way-binding): `[(property)]="data"` (view<>ctrl)
-  * (two-way binding is a syntactic sugar for a property binding and an event binding)
-* [ngModel](https://angular.io/guide/built-in-directives#ngModel) directive allow two-way binding of form's inputs 
-  
-[*Go to top*](#Angular)
-
-### Custom property and event bindings
-* Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
-* Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
-* [Alias of @Input/@Output](https://angular.io/guide/attribute-directives#bind-to-an-input-alias) to have different public name than class property
-* Components communication with @Input & @Output is good is component are not far for themselves (e.g. parent-child)
-  
-[*Go to top*](#Angular)
-
-### Template reference variables
-* a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a DOM element available within in template (could replace bindings with custom properties)
-  
-[*Go to top*](#Angular)
-
-### ViewChild
-* [@ViewChild](https://angular.io/guide/component-interaction#parent-calls-an-viewchild) allow to access template reference element as [ElementRef](https://angular.io/api/core/ElementRef) from Component ts file (e.g. input field value readable with ElementRef.nativeElement.value)
-  
-[*Go to top*](#Angular)
-
-### ng-content
-* ng-content allow to project content into a reusable component (e.g. tabs component)
-* see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) (ng-content is officialy not documented; [issue](https://github.com/angular/angular/issues/17983))
-* [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file
-  
-[*Go to top*](#Angular)
-
-### ng-container
-* [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue)  is a grouping element that doesn't interfere with styles or layout because Angular doesn't put it in the DOM.
-  
-[*Go to top*](#Angular)
-
-### Lifecycle hooks
-* See [component & directives lifecycle & hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
-* [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on/after [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit); not on [ngOnInit](https://angular.io/api/core/OnInit)
-* [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on/after [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit); not on [ngOnInit](https://angular.io/api/core/OnInit)
-* See article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/), [page 2](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
-
-[*Go to top*](#Angular)
-
-
-## Directives
-* [types of directives](https://angular.io/guide/attribute-directives#directives-overview): components, [structural](https://angular.io/guide/structural-directives) & [attribute](https://angular.io/guide/attribute-directives) directives
-* built-in structural directives: [ngIf](https://angular.io/api/common/NgIf), [ngStyle](https://angular.io/api/common/NgStyle), [ngClass](https://angular.io/api/common/NgClass), [ngFor](https://angular.io/api/common/NgForOf), [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives)
-  * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else) (or write ngIf twice)
-  * [getting index of ng-for](https://angular.io/api/common/NgForOf#description)
-* see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
-* [custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
-  * by using [Renderer2](https://angular.io/api/core/Renderer2)
-  * [@HostListener](https://angular.io/api/core/HostListener) to listen host event
-  * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host properties
-  * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
-    * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
-* [custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
-* [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using property binding `[hidden]="condition"` on [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
-
-[*Go to top*](#Angular)
-
-
-
-
-## Services and Dependency Injection
-* [services](https://angular.io/guide/architecture-services#introduction-to-services-and-dependency-injection) are normally classes and are provided
-  * ... in [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
-  * ... in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
-* [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to a given Module/Component will be provided to childs 
-  * a [singleton service](https://angular.io/guide/singleton-services) is provided at root level
-* [@Injectable](https://angular.io/api/core/Injectable) decorator required on the target service to [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
-* services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) (by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS)
-
-[*Go to top*](#Angular)
-
-
-## Routing
-
-### Routing configuration
-* [Register router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
-* [Add `<router-outlet>` in template](https://angular.io/guide/router#router-outlet) where routed components will be rendered
-* [Configure route parameters (e.g. id)](https://angular.io/guide/router-tutorial-toh#route-parameters)
-
-[*Go to top*](#Angular)
-
-
-### Navigation
-* Navigating in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
-  * Add CSS Class in template with [routeLinkActive](https://angular.io/guide/router#active-router-links) (see also  routerLinkActiveOptions)
-* Navigating programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: [NavigationExtras](https://angular.io/api/router/NavigationExtras))
-  * [NavigationExtras](https://angular.io/api/router/NavigationExtras) used to pass 
-  [queryParams](https://angular.io/api/router/UrlCreationOptions#queryParams), 
-  [fragment](https://angular.io/api/router/UrlCreationOptions#fragment), 
-  [relative route](https://angular.io/api/router/UrlCreationOptions#relativeTo) 
-  (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRouteSnapshot))
-
-[*Go to top*](#Angular)
-
-
-### Retrieve route datas
-* in ngOnInit with [ActivatedRoute](https://angular.io/api/router/ActivatedRoute).[snapshot](https://angular.io/api/router/ActivatedRoute#snapshot)() -> [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot) (contains params, queryParams, etc.)
-* on every route changes within the component by by calling ["subscribe()"](https://angular.io/guide/observables-in-angular#router) with observables of [ActivatedRoute](https://angular.io/api/router/ActivatedRoute): [params](https://angular.io/api/router/ActivatedRoute#params), [queryParams](https://angular.io/api/router/ActivatedRoute#queryParams), [fragment](https://angular.io/api/router/ActivatedRoute#fragment), etc.
-
-[*Go to top*](#Angular)
-
-
-### Child routes
-* [Child (Nested) Routes](https://angular.io/guide/router#nesting-routes):
-  * specify [children](https://angular.io/api/router/Route#children) routes in app.module.ts
-  * add [`<router-outlet>`](https://angular.io/api/router/RouterOutlet) in the template of the parent component to specify where children component must be renderer
-
-[*Go to top*](#Angular)
-
-
-### Guards
-* Guards are services that implements interfaces like [CanActivate](https://angular.io/api/router/CanActivate)
-* Guards are configured into Route, e.g. [Route.canActivate](https://angular.io/api/router/Route#canActivate)
-* Examples of guards:
-  * [CanActivate: requiring authentication
-](https://angular.io/guide/router-tutorial-toh#canactivate-requiring-authentication)
-  * [CanActivateChild: guarding child routes](https://angular.io/guide/router-tutorial-toh#canactivatechild-guarding-child-routes)
-  * [CanDeactivate: handling unsaved changes](https://angular.io/guide/router-tutorial-toh#candeactivate-handling-unsaved-changes)
-
-[*Go to top*](#Angular)
-
-
-### Provide static data to route
-* provide [Route.data](https://angular.io/api/router/Route#data) in RouterModule configuration
-* access data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
-
-[*Go to top*](#Angular)
-
-
-### Resolve
-* [Resolve: pre-fetching component data](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data)
-* a service Resolver must implements [Resolve](https://angular.io/api/router/Resolve)
-* configure [Route.resolve](https://angular.io/api/router/Route#resolve) in RouterModule configuration
-* acess data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
-
-[*Go to top*](#Angular)
-
-
-### Location strategies
-* [Location strategies](https://angular.io/guide/router#locationstrategy-and-browser-url-styles)
-* productive webserver must be configured so that 404 error are redirected to index.html
-* if that's not possible, [HashLocationStrategy
-](https://angular.io/guide/router#hashlocationstrategy) must be used as workaround
-
-[*Go to top*](#Angular)
-
-
-### Miscelleanous
-* Use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) to preserve query params when navigating between routes
-* [Redirecting and Wildcard routes](https://angular.io/guide/router#setting-up-redirects)
-* [Separate Module for Route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
-
-[*Go to top*](#Angular)
-
-
-## Forms
-
-Angular provides two different approaches to handling user input through forms. See [comparison](https://angular.io/guide/forms-overview#key-differences) between [reactive](https://angular.io/guide/reactive-forms) and [template-driven](https://angular.io/guide/forms) approach.
-
-### Template-driven forms
-With [Template-driven forms](https://angular.io/guide/forms), Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM.
-
-Basic steps to implements template-driven forms:
-* import [FormsModule](https://angular.io/api/forms/FormsModule)
-* (Angular automatically add an [ngForm](https://angular.io/api/forms/NgForm) directive to the `<form>`)
-* add [ngModule](https://angular.io/api/forms/NgModel) directive on `<input>`
-* add [ngSubmit](https://angular.io/api/forms/FormGroupDirective#properties) event emitter on `<form>`
-* add a [template reference variable `<form #f="ngForm">`](https://angular.io/guide/forms#submit-the-form-with-ngsubmit) to access the FormGroup / form state inside the template
-* add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable of the NgForm inside controller:
-```
-    @ViewChild('f', { static: false }) signupForm: NgForm;
-```
-* add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
-* add styles or *ngIf by using css classes: `ng-untouched`/`ng-touched`, `ng-pristine`/`ng-dirty`, `ng-valid`/`ng-invalid`, see [Angular docs](https://angular.io/guide/forms#create-visual-feedback-for-states)
-* custom validator is implemented with [directives](https://angular.io/guide/form-validation#adding-to-template-driven-forms) 
-* binding with [ngModel](https://angular.io/api/forms/NgModel) directive:
-  * no binding: indicate Angular which input to manage
-  * one-way binding: set default value to input, e.g. `<select [ngModel]="defaultQuestion" ...>`
-  * two-way binding: variable inside controller instantly updated on user-input
-* use [ngModelGroup](https://angular.io/api/forms/NgModelGroup) directive to group several input into a logical group
-* call [NgForm.from.patchValue({ key:value })](https://angular.io/api/forms/FormGroup#patchvalue) to override specific form values
-
-[*Go to top*](#Angular)
-
-
-### Reactive forms
-With [Reactive forms](https://angular.io/guide/reactive-forms), Form is created programmatically and synchronised with the DOM.
-
-* import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
-* create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
-* add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template to oneway bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
-* add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
-* add [(ngSubmit)="xxx()"](https://angular.io/guide/reactive-forms#grouping-form-controls) event emitter to `<form>` in template 
-* Validation directive does not work (e.g. `required`)
-* [Validators](https://angular.io/api/forms/Validators) must be added to the 2nd parameter to [FormControl](https://angular.io/api/forms/FormControl)
-* control / form state are available in the template by calling get on bind FormGroup, e.g. `<span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">...<span>`
-* `FormGroup` can contains `FormGroup`
-  * add ["formGroupName"="..."](https://angular.io/api/forms/FormGroupName) in template
-  * `"FormGroup.get()"` can contains path with . separator
-* add [FormArray](https://angular.io/api/forms/FormArray) to `FormGroup`
-  * constructor of [FormArray](https://angular.io/api/forms/FormArray) expect an array
-  * cast is required when retrieving `FormArray` from `FormGroup`: `<FormArray>formGroup.get('xyz')`
-  * add [formArrayName="..."](https://angular.io/api/forms/FormArrayName) directive in template
-  * use index of [*ngFor](https://angular.io/api/common/NgForOf) to set the [formControlName](https://angular.io/api/forms/FormControlName)
-* [custom validator](https://angular.io/guide/form-validation#custom-validators) are functions in Reactive forms
-  * add custom validator to validator array of the FormControl in 2nd parameter
-  * `.bind(this)` required if `this` is used inside the validator function
-  * validator in error are set on the `.errors` field of the FormControl; can be used in template to customize error message
-* [async validator](https://angular.io/guide/form-validation#implementing-a-custom-async-validator) are used e.g. to validate field on the server
-  * async validator return Promise or Observable
-  * async validator are added in FormControl third argument
-  * ng-pending class is set the FormControl while waiting to the async validator result
-* FormGroup, FormControl have two observables [valueChanges and statusChanges](https://angular.io/api/forms/AbstractControl#properties)
-* [FormGroup.setValue()](https://angular.io/api/forms/FormGroup#setvalue), [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
-* [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form controls (optional arg allow to set default value; e.g. for radiobuttons)
-
-[*Go to top*](#Angular)
-
-
-
-
-
-
