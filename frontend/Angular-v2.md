@@ -7,93 +7,6 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 
-##### Deployment
-
-[Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
-
-* [configure application environments](https://angular.io/guide/build#configuring-application-environments)
-  in `environment.ts` like API key
-  * [use environment variables](https://angular.io/guide/build#using-environment-specific-variables-in-your-app):
-   `import { environment } from '../environments/environment';`
-  * [build your production configuration](https://angular.io/guide/build#configure-target-specific-file-replacements):
-    `ng build --prod` ensure to use `/environment/environment.prod.ts` instead of `/environment/environment.ts`
-* hints
-  * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
-  * it's important to make sure that your server is configured to 
-    [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
-
-[*Go to top*](#Angular)
-
-
-##### Testing
-
-[Testing](https://angular.io/guide/testing) to write and run unit tests
-
-* isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
-  * [testing services](https://angular.io/guide/testing-services#testing-services)
-  * [testing pipes](https://angular.io/guide/testing-pipes)
-* non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
-  to have angular dependency injection
-  * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
-* hints:
-  * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
-  * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-  * testing asynchronous code
-    * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
-    * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
-    * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
-    * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-
-[*Go to top*](#Angular)
-
-
-##### Service Workers & PWA
-
-[Service Workers & PWA](https://angular.io/guide/service-worker-intro) provide a way to have offline web applications
-and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
-
-* Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
-* JavaScript application run in a single Thread
-* [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
-* [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
-* Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
-* Service workers are decoupled from webpage
-* Configure Service Workers in an Angular project: `ng add @angular/pwa`
-* Angular/PWA generate a service worker based on the `ngsw-config.json`
-* we can specify in `ngsw-config.json`
-   * which files or urls should be prefetch by the generated service worker
-   * caches to be used for rest APIs
-
-[*Go to top*](#Angular)
-
-
-##### Angular Universal
-
-[Angular Universal](https://angular.io/guide/universal) provide 
-[Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
-(pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
-
-* hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
-  does not have access to several APIs like [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-  * use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check if code is running in the browser or not:
-    ```
-    import { ..., Inject, PLATFORM_ID } from '@angular/core';
-    import { isPlatformBrowser } from '@angular/common';
-
-    export class AppComponent implements OnInit {
-      constructor(@Inject(PLATFORM_ID) private platformId) {}
-
-      ngOnInit() {
-        if (isPlatformBrowser(this.platformId)) {
-          ... call e.g. localStorage
-        }
-        ...
-      }
-    ```
-
-[*Go to top*](#Angular)
-
-
 ##### TODO
 
 [*Go to top*](#Angular)
@@ -711,5 +624,92 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 * Angular compiler compile template into JavaScript DOM instructions
 * Just-in-Time (JiT) compilation is used normally for `ng serve`
 * Ahead-of-time (AoT) compilation is used for `ng build`
+
+[*Go to top*](#Angular)
+
+
+##### Deployment
+
+[Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
+
+* [configure application environments](https://angular.io/guide/build#configuring-application-environments)
+  in `environment.ts` like API key
+  * [use environment variables](https://angular.io/guide/build#using-environment-specific-variables-in-your-app):
+   `import { environment } from '../environments/environment';`
+  * [build your production configuration](https://angular.io/guide/build#configure-target-specific-file-replacements):
+    `ng build --prod` ensure to use `/environment/environment.prod.ts` instead of `/environment/environment.ts`
+* hints
+  * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
+  * it's important to make sure that your server is configured to 
+    [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
+
+[*Go to top*](#Angular)
+
+
+##### Testing
+
+[Testing](https://angular.io/guide/testing) to write and run unit tests
+
+* isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
+  * [testing services](https://angular.io/guide/testing-services#testing-services)
+  * [testing pipes](https://angular.io/guide/testing-pipes)
+* non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
+  to have angular dependency injection
+  * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
+* hints:
+  * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
+  * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
+  * testing asynchronous code
+    * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
+    * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
+    * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
+    * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
+
+[*Go to top*](#Angular)
+
+
+##### Service Workers & PWA
+
+[Service Workers & PWA](https://angular.io/guide/service-worker-intro) provide a way to have offline web applications
+and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
+
+* Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
+* JavaScript application run in a single Thread
+* [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
+* [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
+* Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+* Service workers are decoupled from webpage
+* Configure Service Workers in an Angular project: `ng add @angular/pwa`
+* Angular/PWA generate a service worker based on the `ngsw-config.json`
+* we can specify in `ngsw-config.json`
+   * which files or urls should be prefetch by the generated service worker
+   * caches to be used for rest APIs
+
+[*Go to top*](#Angular)
+
+
+##### Angular Universal
+
+[Angular Universal](https://angular.io/guide/universal) provide 
+[Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+(pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
+
+* hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
+  does not have access to several APIs like [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+  * use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check if code is running in the browser or not:
+    ```
+    import { ..., Inject, PLATFORM_ID } from '@angular/core';
+    import { isPlatformBrowser } from '@angular/common';
+
+    export class AppComponent implements OnInit {
+      constructor(@Inject(PLATFORM_ID) private platformId) {}
+
+      ngOnInit() {
+        if (isPlatformBrowser(this.platformId)) {
+          ... call e.g. localStorage
+        }
+        ...
+      }
+    ```
 
 [*Go to top*](#Angular)
