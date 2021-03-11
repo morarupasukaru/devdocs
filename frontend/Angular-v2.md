@@ -1,8 +1,5 @@
 # Angular
 
-TODO restructuring page in progress
-TODO decide if spliting into several sections afterward (to get a quicker overview)
-
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
