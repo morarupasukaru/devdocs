@@ -10,145 +10,14 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
   * [@NgModule](#NgModule) bundle a set of components together
-  * [@Component](https://angular.io/guide/architecture#components)
-    is a decorator used to identify a class as a component
-    * most important [properties of @Component](https://angular.io/api/core/Component):
-      * [selector](https://angular.io/api/core/Directive#selector): 
-        CSS selector (tag, class or attribute name) that tells Angular to create and insert an instance of this 
-        component wherever it finds the corresponding tag in template HTML
-      * [templateUrl](https://angular.io/api/core/Component#templateurl): 
-        module-relative address of this component's HTML template
-      * [styleUrls](https://angular.io/api/core/Component#styleurls): 
-        one or more relative paths or absolute URLs for files containing CSS stylesheets to use in this component
-      * [providers](https://angular.io/api/core/Directive#providers): 
-        specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
-        on service self)
-      * creating component with Angular CLI: `ng g c name-of-component`
+  * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
     additional features like dynamic changes
-  * [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
-    * [types of directives](https://angular.io/guide/attribute-directives#directives-overview): 
-      [structural](https://angular.io/guide/structural-directives) and 
-      [attribute](https://angular.io/guide/attribute-directives) directives
-    * built-in structural directives: 
-      [ngIf](https://angular.io/api/common/NgIf), 
-      [ngStyle](https://angular.io/api/common/NgStyle), 
-      [ngClass](https://angular.io/api/common/NgClass), 
-      [ngFor](https://angular.io/api/common/NgForOf), 
-      [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives)
-    * tips: 
-      * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
-        alternative is to write two ngIf
-      * [getting index of ng-for](https://angular.io/api/common/NgForOf#description)
-      * [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using 
-        property binding `[hidden]="condition"` on 
-        [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
-    * see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
-    * [build custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
-      * by using [Renderer2](https://angular.io/api/core/Renderer2)
-      * [@HostListener](https://angular.io/api/core/HostListener) to listen host event
-      * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host properties
-      * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
-      * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
-    * [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
-  * Data bindings ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
+  * [Directives](#Directives) allow to add features to elements in the DOM
+  * [Data bindings](#Data-bindings) ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
     in different use cases
-    * [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (one-way binding from controller to view)
-    * [Property binding](https://angular.io/guide/property-binding): `[property]="data"` (one-way binding from controller to view)
-    * [Event binding](https://angular.io/guide/event-binding): `(event)="expression"` (one-way binding from view to controller)
-    * [Two-way binding](https://angular.io/guide/two-way-binding): `[(property)]="data"` (two-way binding between view and controller)
-      (two-way binding is a syntactic sugar for a property binding and an event binding)
-    * [ngModel](https://angular.io/guide/built-in-directives#ngModel) directive allow two-way binding for form's inputs 
-    * custom property and event bindings
-      * Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
-      * Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
-      * use [Alias on @Input/@Output](https://angular.io/guide/attribute-directives#bind-to-an-input-alias) to have 
-        different public name than class property
-      * Components communication with @Input & @Output is good if component are not far for themselves (e.g. parent-child)
-    * a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a 
-      DOM element available within in template (could replace bindings with custom properties)
-    * [@ViewChild](https://angular.io/guide/component-interaction#parent-calls-an-viewchild) allow to access template 
-      reference element as [ElementRef](https://angular.io/api/core/ElementRef) in controller
-      (e.g. input field value readable with ElementRef.nativeElement.value)
-    * ng-content allow to project content into a reusable component (e.g. tabs component)
-      * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
-        (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
-      * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element 
-        as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file
-    * [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
-      that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
-    * [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
-      * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
-        [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
-      * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
-        [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
-      * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/), [page 2](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
-  * [Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
-    * services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) 
-      by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
-    * dependency-injection of services can by done with 
-      [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
-      in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
-      [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
-    * [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
-      a given Module/Component will be provided to childs
-      (means that several instance of a service could exists in the application; depending on the DI configuration)
-    * a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
-    * [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
-      [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
-  * [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
-    * [configure router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
-      * [add `<router-outlet>` in template](https://angular.io/guide/router#router-outlet) where routed components will be rendered
-      * [configure route parameters (e.g. id)](https://angular.io/guide/router-tutorial-toh#route-parameters)
-      * [redirects and wildcard routes](https://angular.io/guide/router#setting-up-redirects) can also be configured
-      * a good practise is to have a [separate module for route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
-    * define navigation in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and 
-      following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
-      * add CSS class in template with [routeLinkActive](https://angular.io/guide/router#active-router-links) 
-      (see also routerLinkActiveOptions)
-    * navigate programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: 
-      [NavigationExtras](https://angular.io/api/router/NavigationExtras))
-      * [NavigationExtras](https://angular.io/api/router/NavigationExtras) is used to pass 
-        [queryParams](https://angular.io/api/router/UrlCreationOptions#queryParams), 
-        [fragment](https://angular.io/api/router/UrlCreationOptions#fragment), 
-        [relative route](https://angular.io/api/router/UrlCreationOptions#relativeTo) 
-        (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRouteSnapshot))
-      * tip: use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) 
-        to preserve query params when navigating between routes
-    * retrieve route datas in ngOnInit with 
-      [ActivatedRoute](https://angular.io/api/router/ActivatedRoute).[snapshot](https://angular.io/api/router/ActivatedRoute#snapshot)() 
-      that returns an [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot) 
-      (containing params, queryParams, etc.)
-    * retrieve route datas on every route changes within the component by calling 
-      ["subscribe()"](https://angular.io/guide/observables-in-angular#router) with observables of 
-      [ActivatedRoute](https://angular.io/api/router/ActivatedRoute): 
-      [params](https://angular.io/api/router/ActivatedRoute#params), 
-      [queryParams](https://angular.io/api/router/ActivatedRoute#queryParams), 
-      [fragment](https://angular.io/api/router/ActivatedRoute#fragment), etc.
-    * specify [child (nested) routes](https://angular.io/guide/router#nesting-routes) by setting
-      [children](https://angular.io/api/router/Route#children) routes in app.module.ts
-      * add [`<router-outlet>`](https://angular.io/api/router/RouterOutlet) in the template of the parent component to 
-        specify where children component must be renderer
-    * guards are services that implements interfaces like [CanActivate](https://angular.io/api/router/CanActivate) and
-      are called before component is rendered
-      * guards are configured into Route like e.g. [Route.canActivate](https://angular.io/api/router/Route#canActivate)
-      * examples of guards
-        * [CanActivate could forbid access without authentication](https://angular.io/guide/router-tutorial-toh#canactivate-requiring-authentication)
-        * [CanDeactivate could handle unsaved changes](https://angular.io/guide/router-tutorial-toh#candeactivate-handling-unsaved-changes)
-    * provide static data in [Route.data](https://angular.io/api/router/Route#data) in RouterModule configuration
-      * access data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
-        or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
-    * [provide/pre-fetch dynamic data to component](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data)
-      * a Resolver service must implements [Resolve](https://angular.io/api/router/Resolve)
-      * configure [Route.resolve](https://angular.io/api/router/Route#resolve) in RouterModule configuration
-      * access pre-fetch data inside Component in ngOnInit from 
-        [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
-        or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
-    * define [location strategies](https://angular.io/guide/router#locationstrategy-and-browser-url-styles)
-      if default setting are not sufficient
-      * productive web-server must be configured so that 404 error are redirected to index.html
-      * if that's not possible, [HashLocationStrategy](https://angular.io/guide/router#hashlocationstrategy) 
-        must be used as workaround
+  * [Services](#Services) are normally classes and provide some feature
+  * [Routing](#Routing) define navigation of screens / components and associated url
 * Other features
   * [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
     [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
@@ -553,5 +422,176 @@ locally, etc.
   * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
   * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
   * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
+
+[*Go to top*](#Angular)
+
+
+##### @Component
+
+[@Component](https://angular.io/guide/architecture#components) is a decorator used to identify a class as a component
+
+* most important [properties of @Component](https://angular.io/api/core/Component):
+  * [selector](https://angular.io/api/core/Directive#selector): 
+    CSS selector (tag, class or attribute name) that tells Angular to create and insert an instance of this 
+    component wherever it finds the corresponding tag in template HTML
+  * [templateUrl](https://angular.io/api/core/Component#templateurl): 
+    module-relative address of this component's HTML template
+  * [styleUrls](https://angular.io/api/core/Component#styleurls): 
+    one or more relative paths or absolute URLs for files containing CSS stylesheets to use in this component
+  * [providers](https://angular.io/api/core/Directive#providers): 
+    specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
+    on service self)
+  * creating component with Angular CLI: `ng g c name-of-component`
+
+[*Go to top*](#Angular)
+
+
+##### Directives
+
+[Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
+
+* [types of directives](https://angular.io/guide/attribute-directives#directives-overview): 
+  [structural](https://angular.io/guide/structural-directives) and 
+  [attribute](https://angular.io/guide/attribute-directives) directives
+* built-in structural directives: 
+  [ngIf](https://angular.io/api/common/NgIf), 
+  [ngStyle](https://angular.io/api/common/NgStyle), 
+  [ngClass](https://angular.io/api/common/NgClass), 
+  [ngFor](https://angular.io/api/common/NgForOf), 
+  [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives)
+* tips: 
+  * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
+    alternative is to write two ngIf
+  * [getting index of ng-for](https://angular.io/api/common/NgForOf#description)
+  * [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using 
+    property binding `[hidden]="condition"` on 
+    [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
+* see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
+* [build custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
+  * by using [Renderer2](https://angular.io/api/core/Renderer2)
+  * [@HostListener](https://angular.io/api/core/HostListener) to listen host event
+  * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host properties
+  * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
+  * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
+* [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
+
+[*Go to top*](#Angular)
+
+
+##### Data bindings
+
+Data bindings ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
+in different use cases
+
+* [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (one-way binding from controller to view)
+* [Property binding](https://angular.io/guide/property-binding): `[property]="data"` (one-way binding from controller to view)
+* [Event binding](https://angular.io/guide/event-binding): `(event)="expression"` (one-way binding from view to controller)
+* [Two-way binding](https://angular.io/guide/two-way-binding): `[(property)]="data"` (two-way binding between view and controller)
+  (two-way binding is a syntactic sugar for a property binding and an event binding)
+* [ngModel](https://angular.io/guide/built-in-directives#ngModel) directive allow two-way binding for form's inputs 
+* custom property and event bindings
+  * Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
+  * Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
+  * use [Alias on @Input/@Output](https://angular.io/guide/attribute-directives#bind-to-an-input-alias) to have 
+    different public name than class property
+  * Components communication with @Input & @Output is good if component are not far for themselves (e.g. parent-child)
+* a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a 
+  DOM element available within in template (could replace bindings with custom properties)
+* [@ViewChild](https://angular.io/guide/component-interaction#parent-calls-an-viewchild) allow to access template 
+  reference element as [ElementRef](https://angular.io/api/core/ElementRef) in controller
+  (e.g. input field value readable with ElementRef.nativeElement.value)
+* ng-content allow to project content into a reusable component (e.g. tabs component)
+  * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
+    (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
+  * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element 
+    as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file
+* [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
+  that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
+* [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
+  * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
+    [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
+  * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
+    [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
+  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/), [page 2](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
+
+[*Go to top*](#Angular)
+
+
+##### Services
+
+[Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
+
+* services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) 
+  by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
+* dependency-injection of services can by done with 
+  [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
+  in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
+  [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
+* [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
+  a given Module/Component will be provided to childs
+  (means that several instance of a service could exists in the application; depending on the DI configuration)
+* a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
+* [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
+  [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
+
+[*Go to top*](#Angular)
+
+
+##### Routing
+
+[Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
+
+* [configure router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
+  * [add `<router-outlet>` in template](https://angular.io/guide/router#router-outlet) where routed components will be rendered
+  * [configure route parameters (e.g. id)](https://angular.io/guide/router-tutorial-toh#route-parameters)
+  * [redirects and wildcard routes](https://angular.io/guide/router#setting-up-redirects) can also be configured
+  * a good practise is to have a [separate module for route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
+* define navigation in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and 
+  following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
+  * add CSS class in template with [routeLinkActive](https://angular.io/guide/router#active-router-links) 
+  (see also routerLinkActiveOptions)
+* navigate programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: 
+  [NavigationExtras](https://angular.io/api/router/NavigationExtras))
+  * [NavigationExtras](https://angular.io/api/router/NavigationExtras) is used to pass 
+    [queryParams](https://angular.io/api/router/UrlCreationOptions#queryParams), 
+    [fragment](https://angular.io/api/router/UrlCreationOptions#fragment), 
+    [relative route](https://angular.io/api/router/UrlCreationOptions#relativeTo) 
+    (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRouteSnapshot))
+  * tip: use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) 
+    to preserve query params when navigating between routes
+* retrieve route datas in ngOnInit with 
+  [ActivatedRoute](https://angular.io/api/router/ActivatedRoute).[snapshot](https://angular.io/api/router/ActivatedRoute#snapshot)() 
+  that returns an [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot) 
+  (containing params, queryParams, etc.)
+* retrieve route datas on every route changes within the component by calling 
+  ["subscribe()"](https://angular.io/guide/observables-in-angular#router) with observables of 
+  [ActivatedRoute](https://angular.io/api/router/ActivatedRoute): 
+  [params](https://angular.io/api/router/ActivatedRoute#params), 
+  [queryParams](https://angular.io/api/router/ActivatedRoute#queryParams), 
+  [fragment](https://angular.io/api/router/ActivatedRoute#fragment), etc.
+* specify [child (nested) routes](https://angular.io/guide/router#nesting-routes) by setting
+  [children](https://angular.io/api/router/Route#children) routes in app.module.ts
+  * add [`<router-outlet>`](https://angular.io/api/router/RouterOutlet) in the template of the parent component to 
+    specify where children component must be renderer
+* guards are services that implements interfaces like [CanActivate](https://angular.io/api/router/CanActivate) and
+  are called before component is rendered
+  * guards are configured into Route like e.g. [Route.canActivate](https://angular.io/api/router/Route#canActivate)
+  * examples of guards
+    * [CanActivate could forbid access without authentication](https://angular.io/guide/router-tutorial-toh#canactivate-requiring-authentication)
+    * [CanDeactivate could handle unsaved changes](https://angular.io/guide/router-tutorial-toh#candeactivate-handling-unsaved-changes)
+* provide static data in [Route.data](https://angular.io/api/router/Route#data) in RouterModule configuration
+  * access data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
+    or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
+* [provide/pre-fetch dynamic data to component](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data)
+  * a Resolver service must implements [Resolve](https://angular.io/api/router/Resolve)
+  * configure [Route.resolve](https://angular.io/api/router/Route#resolve) in RouterModule configuration
+  * access pre-fetch data inside Component in ngOnInit from 
+    [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
+    or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
+* define [location strategies](https://angular.io/guide/router#locationstrategy-and-browser-url-styles)
+  if default setting are not sufficient
+  * productive web-server must be configured so that 404 error are redirected to index.html
+  * if that's not possible, [HashLocationStrategy](https://angular.io/guide/router#hashlocationstrategy) 
+    must be used as workaround
 
 [*Go to top*](#Angular)
