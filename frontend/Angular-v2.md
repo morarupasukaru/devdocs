@@ -26,6 +26,11 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 
 [*Go to top*](#Angular)
 
+
+##### TODO
+
+[*Go to top*](#Angular)
+
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -41,123 +46,14 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 * Other features
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
-  * [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
+  * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
     is used extensively within Angular to ease writing of asynchronous calls and event handling
-    * see quick [angular guide about RxJS](https://angular.io/guide/rx-library#the-rxjs-library) or [RxJS summary](./RxJS.md)
-    * Subject vs EventEmitter
-      * [Subject](https://rxjs.dev/guide/subject) is the new approach to 
-        [EventEmitter](https://angular.io/api/core/EventEmitter) for communication between components 
-      * EventEmitter is always used for event binding (with @Output)
-      * Subject are better to be used with services
-      * Subject is an Observable on which we can call next() from outside the observable
-  * [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
-    * [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), 
-      [async](https://angular.io/api/common/AsyncPipe), 
-      [date](https://angular.io/api/common/DatePipe), etc.
-    * [parameterize pipe](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `:` ; e.g. `{{ birthday | date:"MM/dd/yy" }}`
-    * [chaining pipes](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `|` ; e.g. `{{ birthday | date | uppercase}}`
-    * [custom pipe](https://angular.io/guide/pipes#creating-pipes-for-custom-data-transformations) is an exported class that implements [PipeTransform](https://angular.io/api/core/PipeTransform) with [Pipe](https://angular.io/api/core/Pipe) declarator (to specify the name in template)
-    * pipe can be also applied to *ngFor (e.g. filter); [see example](https://angular.io/guide/pipes#how-change-detection-works)
-    * [pure pipes](https://angular.io/guide/pipes#detecting-pure-changes-to-primitives-and-object-references) (default): Angular does not re-render pipes after output changes
-    * [impure pipes](https://angular.io/guide/pipes#detecting-impure-changes-within-composite-objects): Angular executes an impure pipe during every component change detection cycle
-      * make impure pipe: set `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
-      * impure pipes can be called very often and be a performance issue
-  * [HttpClient](https://angular.io/guide/http) provide an API to perform HTTP requests
-    * use HttpClient methods [get()](https://angular.io/api/common/http/HttpClient#get), 
-      [post()](https://angular.io/api/common/http/HttpClient#post),
-      [put()](https://angular.io/api/common/http/HttpClient#put),
-      [delete()](https://angular.io/api/common/http/HttpClient#delete), etc.
-    * request are sent only by subscribing to the [Observable](https://rxjs.dev/api/index/class/Observable) 
-      of http methods'result 
-    * use pipe and [map](https://rxjs.dev/api/operators/map) from [RxJS](https://rxjs.dev/guide/operators) 
-      to convert response to required object
-    * [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
-    * good practise: encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
-    * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
-      RxJS operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-    * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) RxJS operator to 
-      [performs http calls in parallel](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-    * [handling request error](https://angular.io/guide/http#handling-request-errors) can be customized
-    * [headers](https://angular.io/api/common/http/HttpHeaders) can be [provided to http requests](https://angular.io/guide/http#adding-and-updating-headers)
-    * [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http#configuring-http-url-parameters)
-      * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params (HttpParams is immutable)
-    * [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) can be used to implicit features like
-      * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
-      * [caching requests](https://angular.io/guide/http#caching)
-      * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
-    * authentication concepts
-      * server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
-      * frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
-        with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
-      * only the server is able to generate the token with a private key and a given algorithm and his therefore secure
-  * [Styling](https://angular.io/guide/component-styles) of angular applications are made with CSS
-    * application-wide styles can be done by
-      1. add `<link rel="stylesheet" href="...">` into `index.html` with CDN url or local file (should be in assets folder)
-      2. update `styles.css` (default global angular style)
-      3. modify [global style](https://angular.io/guide/workspace-config#styles-and-scripts-configuration) in `angular.json`
-        * typical use-case: `styles` link to a css file of a css framework npm module
-    * component-scoped styles can be done by
-      1. use `styles` or [styleUrls](https://angular.io/api/core/Component#styleurls) of `@Component` decorator
-      2. add `<style>` or `<link>` to component template
-    * [View encapsulation](https://angular.io/guide/view-encapsulation): component styles are applied, by default, 
-      only within the template of that component
-      * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific 
-        attribute value for every html tags of a component; CSS can be applied then by using this attribute in the 
-        CSS selector
-      * see [style scope](https://angular.io/guide/component-styles#style-scope)
-    * default view encapsulation can be overidden by changing [@Component.encapsulation](https://angular.io/api/core/Component#encapsulation)
-    * special selectors
-      * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
-        * function form `:host` component allow to style the host component on given css selector condition 
-          (e.g. `:host(.active)`)
-      * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, 
-        depending on some condition set outside of it
-    * Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) 
-      are common way to dynamic style components
-    * Angular component selector like `app-xyz { ... }` can be used in css
-    * [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
-    * Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without
-      having to touch the DOM directly
-  * [Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
-    * CSS Transitions/CSS Animations vs Angular Animations
-      * allow to style an animation on one step; to keep all the stuff in angular world
-      * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); its very difficult to manage it with CSS Animations
-      * complex animation should be done in Angular Animations
-      * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
-    * concepts
-      * [trigger](https://angular.io/guide/animations#triggering-the-animation) encapsulates a named animation; the transitions between states included in its definition when a change occurs
-      * [state](https://angular.io/guide/animations#animation-state-and-styles) define styles related to a given named state
-      * [transition](https://angular.io/guide/animations#transitions-and-timing) define animation between styles of state
-    * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (evolves over time)
-    * advanced topics
-      * [animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
-        * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
-        * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
-        * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#enter-and-leave-aliases) for `void => *` and `* => void` transitions
-        * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#using-wildcards-with-styles) to use current style value
-      * use [animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) to be informed when animation start/end
-      * [complex animation sequences](https://angular.io/guide/complex-animation-sequences) with 
-        [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) 
-        allow to find and animate inner elements; see also [query](https://angular.io/api/animations/query) in reference
-      * [route transition animations](https://angular.io/guide/route-animations)
-      * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
-    * tip: animations works on block element but per default Angular Component are inline-block element. 
-      Don't forget to add:
-      ```
-      :host {
-        display: block;
-      }
-      ```
-  * [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
-    * dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
-      by loading component programmatically and pushing into view
-    * ngIf approach is easier and is the best solution in most cases
-    * loading component programmatically could be used in some specific use cases (e.g. custom framework)
+  * [Pipes](#Pipes) are used to transform output into templates
+  * [HttpClient](#HttpClient) provide an API to perform HTTP requests
+  * [Styling](#Styling) of angular applications are made with CSS
+  * [Animations](#Animations) provided by Angular is based on CSS features but provide a specific DSL language
+  * [Dynamic Components](#Dynamic-Components) allow to load new components at runtime
   * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
-    * TypeScript compiler compiles TS into JavaScript and is called in the build process
-    * Angular compiler compile template into JavaScript DOM instructions
-    * Just-in-Time (JiT) compilation is used normally for `ng serve`
-    * Ahead-of-time (AoT) compilation is used for `ng build`
   * [Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
     * [configure application environments](https://angular.io/guide/build#configuring-application-environments)
       in `environment.ts` like API key
@@ -634,5 +530,171 @@ in different use cases
   [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
 * [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form 
   controls (optional arg allow to set default value; e.g. for radiobuttons)
+
+[*Go to top*](#Angular)
+
+
+##### Observables
+
+[Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
+is used extensively within Angular to ease writing of asynchronous calls and event handling
+
+* see quick [angular guide about RxJS](https://angular.io/guide/rx-library#the-rxjs-library) or [RxJS summary](./RxJS.md)
+* Subject vs EventEmitter
+  * [Subject](https://rxjs.dev/guide/subject) is the new approach to 
+    [EventEmitter](https://angular.io/api/core/EventEmitter) for communication between components 
+  * EventEmitter is always used for event binding (with @Output)
+  * Subject are better to be used with services
+  * Subject is an Observable on which we can call next() from outside the observable
+
+[*Go to top*](#Angular)
+
+
+##### Pipes
+
+[Pipes](https://angular.io/guide/pipes) are used to transform output into templates
+
+* [built-in pipes](https://angular.io/api?type=pipe): [uppercase](https://angular.io/api/common/UpperCasePipe), 
+  [async](https://angular.io/api/common/AsyncPipe), 
+  [date](https://angular.io/api/common/DatePipe), etc.
+* [parameterize pipe](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `:` ; e.g. `{{ birthday | date:"MM/dd/yy" }}`
+* [chaining pipes](https://angular.io/guide/pipes#transforming-data-with-parameters-and-chained-pipes) with `|` ; e.g. `{{ birthday | date | uppercase}}`
+* [custom pipe](https://angular.io/guide/pipes#creating-pipes-for-custom-data-transformations) is an exported class that implements [PipeTransform](https://angular.io/api/core/PipeTransform) with [Pipe](https://angular.io/api/core/Pipe) declarator (to specify the name in template)
+* pipe can be also applied to *ngFor (e.g. filter); [see example](https://angular.io/guide/pipes#how-change-detection-works)
+* [pure pipes](https://angular.io/guide/pipes#detecting-pure-changes-to-primitives-and-object-references) (default): Angular does not re-render pipes after output changes
+* [impure pipes](https://angular.io/guide/pipes#detecting-impure-changes-within-composite-objects): Angular executes an impure pipe during every component change detection cycle
+  * make impure pipe: set `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
+  * impure pipes can be called very often and be a performance issue
+
+[*Go to top*](#Angular)
+
+
+##### HttpClient
+
+[HttpClient](https://angular.io/guide/http) provide an API to perform HTTP requests
+
+* use HttpClient methods [get()](https://angular.io/api/common/http/HttpClient#get), 
+  [post()](https://angular.io/api/common/http/HttpClient#post),
+  [put()](https://angular.io/api/common/http/HttpClient#put),
+  [delete()](https://angular.io/api/common/http/HttpClient#delete), etc.
+* request are sent only by subscribing to the [Observable](https://rxjs.dev/api/index/class/Observable) 
+  of http methods'result 
+* use pipe and [map](https://rxjs.dev/api/operators/map) from [RxJS](https://rxjs.dev/guide/operators) 
+  to convert response to required object
+* [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
+* good practise: encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
+* use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
+  RxJS operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
+* use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) RxJS operator to 
+  [performs http calls in parallel](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
+* [handling request error](https://angular.io/guide/http#handling-request-errors) can be customized
+* [headers](https://angular.io/api/common/http/HttpHeaders) can be [provided to http requests](https://angular.io/guide/http#adding-and-updating-headers)
+* [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http#configuring-http-url-parameters)
+  * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params (HttpParams is immutable)
+* [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) can be used to implicit features like
+  * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
+  * [caching requests](https://angular.io/guide/http#caching)
+  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
+* authentication concepts
+  * server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
+  * frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
+    with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
+  * only the server is able to generate the token with a private key and a given algorithm and his therefore secure
+
+[*Go to top*](#Angular)
+
+
+##### Styling
+
+[Styling](https://angular.io/guide/component-styles) of angular applications are made with CSS
+
+* application-wide styles can be done by
+  1. add `<link rel="stylesheet" href="...">` into `index.html` with CDN url or local file (should be in assets folder)
+  2. update `styles.css` (default global angular style)
+  3. modify [global style](https://angular.io/guide/workspace-config#styles-and-scripts-configuration) in `angular.json`
+    * typical use-case: `styles` link to a css file of a css framework npm module
+* component-scoped styles can be done by
+  1. use `styles` or [styleUrls](https://angular.io/api/core/Component#styleurls) of `@Component` decorator
+  2. add `<style>` or `<link>` to component template
+* [View encapsulation](https://angular.io/guide/view-encapsulation): component styles are applied, by default, 
+  only within the template of that component
+  * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific 
+    attribute value for every html tags of a component; CSS can be applied then by using this attribute in the 
+    CSS selector
+  * see [style scope](https://angular.io/guide/component-styles#style-scope)
+* default view encapsulation can be overidden by changing [@Component.encapsulation](https://angular.io/api/core/Component#encapsulation)
+* special selectors
+  * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
+    * function form `:host` component allow to style the host component on given css selector condition 
+      (e.g. `:host(.active)`)
+  * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, 
+    depending on some condition set outside of it
+* Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) 
+  are common way to dynamic style components
+* Angular component selector like `app-xyz { ... }` can be used in css
+* [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
+* Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without
+  having to touch the DOM directly
+
+[*Go to top*](#Angular)
+
+
+##### Animations
+
+[Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
+
+* CSS Transitions/CSS Animations vs Angular Animations
+  * allow to style an animation on one step; to keep all the stuff in angular world
+  * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); its very difficult to manage it with CSS Animations
+  * complex animation should be done in Angular Animations
+  * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
+* concepts
+  * [trigger](https://angular.io/guide/animations#triggering-the-animation) encapsulates a named animation; the transitions between states included in its definition when a change occurs
+  * [state](https://angular.io/guide/animations#animation-state-and-styles) define styles related to a given named state
+  * [transition](https://angular.io/guide/animations#transitions-and-timing) define animation between styles of state
+* see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (evolves over time)
+* advanced topics
+  * [animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
+    * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
+    * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
+    * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#enter-and-leave-aliases) for `void => *` and `* => void` transitions
+    * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#using-wildcards-with-styles) to use current style value
+  * use [animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) to be informed when animation start/end
+  * [complex animation sequences](https://angular.io/guide/complex-animation-sequences) with 
+    [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) 
+    allow to find and animate inner elements; see also [query](https://angular.io/api/animations/query) in reference
+  * [route transition animations](https://angular.io/guide/route-animations)
+  * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
+* tip: animations works on block element but per default Angular Component are inline-block element. 
+  Don't forget to add:
+  ```
+  :host {
+    display: block;
+  }
+  ```
+
+[*Go to top*](#Angular)
+
+
+##### Dynamic Components
+
+[Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
+
+* dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
+  by loading component programmatically and pushing into view
+* ngIf approach is easier and is the best solution in most cases
+* loading component programmatically could be used in some specific use cases (e.g. custom framework)
+
+[*Go to top*](#Angular)
+
+
+##### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
+
+[Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
+
+* TypeScript compiler compiles TS into JavaScript and is called in the build process
+* Angular compiler compile template into JavaScript DOM instructions
+* Just-in-Time (JiT) compilation is used normally for `ng serve`
+* Ahead-of-time (AoT) compilation is used for `ng build`
 
 [*Go to top*](#Angular)
