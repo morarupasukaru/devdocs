@@ -6,6 +6,26 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
+
+##### TODO
+
+[*Go to top*](#Angular)
+
+
+##### TODO
+
+[*Go to top*](#Angular)
+
+
+##### TODO
+
+[*Go to top*](#Angular)
+
+
+##### TODO
+
+[*Go to top*](#Angular)
+
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -19,64 +39,8 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
 * Other features
-  * [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
-    [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
-    * [Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
-      * import [FormsModule](https://angular.io/api/forms/FormsModule)
-      * (Angular automatically add an [ngForm](https://angular.io/api/forms/NgForm) directive to the `<form>`)
-      * add [ngModule](https://angular.io/api/forms/NgModel) directive on `<input>`
-      * add [ngSubmit](https://angular.io/api/forms/FormGroupDirective#properties) event emitter on `<form>`
-      * add a [template reference variable `<form #f="ngForm">`](https://angular.io/guide/forms#submit-the-form-with-ngsubmit) 
-        to access the FormGroup / form state inside the template
-      * add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable 
-        of the NgForm inside controller:
-        ```
-          @ViewChild('f', { static: false }) signupForm: NgForm;
-        ```
-      * add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
-      * add styles or *ngIf by using css classes: `ng-untouched`/`ng-touched`, `ng-pristine`/`ng-dirty`, 
-        `ng-valid`/`ng-invalid`, see [Angular docs](https://angular.io/guide/forms#create-visual-feedback-for-states)
-      * custom validator is implemented with [directives](https://angular.io/guide/form-validation#adding-to-template-driven-forms) 
-      * binding with [ngModel](https://angular.io/api/forms/NgModel) directive:
-        * no binding: indicate Angular which input to manage
-        * one-way binding: set default value to input, e.g. `<select [ngModel]="defaultQuestion" ...>`
-        * two-way binding: variable inside controller instantly updated on user-input
-      * use [ngModelGroup](https://angular.io/api/forms/NgModelGroup) directive to group several input into a logical group
-      * call [NgForm.from.patchValue({ key:value })](https://angular.io/api/forms/FormGroup#patchvalue) to override specific form values
-    * [Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
-      * import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
-      * create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
-      * add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template 
-        to one-way bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
-      * add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
-      * add [(ngSubmit)="xxx()"](https://angular.io/guide/reactive-forms#grouping-form-controls) event emitter to `<form>` in template 
-      * validation directive does not work (e.g. `required`)
-      * [Validators](https://angular.io/api/forms/Validators) must be added to the 2nd parameter to 
-        [FormControl](https://angular.io/api/forms/FormControl)
-      * control and form states are available in the template by calling get on bind FormGroup, e.g. 
-        `<span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">...<span>`
-      * `FormGroup` can contains `FormGroup`
-        * add ["formGroupName"="..."](https://angular.io/api/forms/FormGroupName) in template
-        * `"FormGroup.get()"` can contains path with . separator
-      * add [FormArray](https://angular.io/api/forms/FormArray) to `FormGroup`
-        * constructor of [FormArray](https://angular.io/api/forms/FormArray) expect an array
-        * cast is required when retrieving `FormArray` from `FormGroup`: `<FormArray>formGroup.get('xyz')`
-        * add [formArrayName="..."](https://angular.io/api/forms/FormArrayName) directive in template
-        * use index of [*ngFor](https://angular.io/api/common/NgForOf) to set the [formControlName](https://angular.io/api/forms/FormControlName)
-      * [custom validator](https://angular.io/guide/form-validation#custom-validators) are functions in Reactive forms
-        * add custom validator to validator array of the FormControl in 2nd parameter
-        * `.bind(this)` required if `this` is used inside the validator function
-        * validator in error are set on the `.errors` field of the FormControl; can be used in template to customize error message
-      * [async validator](https://angular.io/guide/form-validation#implementing-a-custom-async-validator) are used e.g. 
-        to validate field on the server
-        * async validator return Promise or Observable
-        * async validator are added in FormControl third argument
-        * ng-pending class is set the FormControl while waiting to the async validator result
-      * FormGroup, FormControl have two observables [valueChanges and statusChanges](https://angular.io/api/forms/AbstractControl#properties)
-      * [FormGroup.setValue()](https://angular.io/api/forms/FormGroup#setvalue), 
-        [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
-      * [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form 
-        controls (optional arg allow to set default value; e.g. for radiobuttons)
+  * [Forms](#Forms) can be written in two different ways in Angular:
+    [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
     is used extensively within Angular to ease writing of asynchronous calls and event handling
     * see quick [angular guide about RxJS](https://angular.io/guide/rx-library#the-rxjs-library) or [RxJS summary](./RxJS.md)
@@ -593,5 +557,82 @@ in different use cases
   * productive web-server must be configured so that 404 error are redirected to index.html
   * if that's not possible, [HashLocationStrategy](https://angular.io/guide/router#hashlocationstrategy) 
     must be used as workaround
+
+[*Go to top*](#Angular)
+
+
+## Other features
+
+##### Forms
+
+[Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
+[reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
+
+###### Reactive forms
+
+[Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
+
+* import [FormsModule](https://angular.io/api/forms/FormsModule)
+* (Angular automatically add an [ngForm](https://angular.io/api/forms/NgForm) directive to the `<form>`)
+* add [ngModule](https://angular.io/api/forms/NgModel) directive on `<input>`
+* add [ngSubmit](https://angular.io/api/forms/FormGroupDirective#properties) event emitter on `<form>`
+* add a [template reference variable `<form #f="ngForm">`](https://angular.io/guide/forms#submit-the-form-with-ngsubmit) 
+  to access the FormGroup / form state inside the template
+* add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable 
+  of the NgForm inside controller:
+  ```
+    @ViewChild('f', { static: false }) signupForm: NgForm;
+  ```
+* add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
+* add styles or *ngIf by using css classes: `ng-untouched`/`ng-touched`, `ng-pristine`/`ng-dirty`, 
+  `ng-valid`/`ng-invalid`, see [Angular docs](https://angular.io/guide/forms#create-visual-feedback-for-states)
+* custom validator is implemented with [directives](https://angular.io/guide/form-validation#adding-to-template-driven-forms) 
+* binding with [ngModel](https://angular.io/api/forms/NgModel) directive:
+  * no binding: indicate Angular which input to manage
+  * one-way binding: set default value to input, e.g. `<select [ngModel]="defaultQuestion" ...>`
+  * two-way binding: variable inside controller instantly updated on user-input
+* use [ngModelGroup](https://angular.io/api/forms/NgModelGroup) directive to group several input into a logical group
+* call [NgForm.from.patchValue({ key:value })](https://angular.io/api/forms/FormGroup#patchvalue) to override specific form values
+
+[*Go to top*](#Angular)
+
+
+###### Template-driven forms
+
+[Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
+
+* import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
+* create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
+* add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template 
+  to one-way bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
+* add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
+* add [(ngSubmit)="xxx()"](https://angular.io/guide/reactive-forms#grouping-form-controls) event emitter to `<form>` in template 
+* validation directive does not work (e.g. `required`)
+* [Validators](https://angular.io/api/forms/Validators) must be added to the 2nd parameter to 
+  [FormControl](https://angular.io/api/forms/FormControl)
+* control and form states are available in the template by calling get on bind FormGroup, e.g. 
+  `<span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">...<span>`
+* `FormGroup` can contains `FormGroup`
+  * add ["formGroupName"="..."](https://angular.io/api/forms/FormGroupName) in template
+  * `"FormGroup.get()"` can contains path with . separator
+* add [FormArray](https://angular.io/api/forms/FormArray) to `FormGroup`
+  * constructor of [FormArray](https://angular.io/api/forms/FormArray) expect an array
+  * cast is required when retrieving `FormArray` from `FormGroup`: `<FormArray>formGroup.get('xyz')`
+  * add [formArrayName="..."](https://angular.io/api/forms/FormArrayName) directive in template
+  * use index of [*ngFor](https://angular.io/api/common/NgForOf) to set the [formControlName](https://angular.io/api/forms/FormControlName)
+* [custom validator](https://angular.io/guide/form-validation#custom-validators) are functions in Reactive forms
+  * add custom validator to validator array of the FormControl in 2nd parameter
+  * `.bind(this)` required if `this` is used inside the validator function
+  * validator in error are set on the `.errors` field of the FormControl; can be used in template to customize error message
+* [async validator](https://angular.io/guide/form-validation#implementing-a-custom-async-validator) are used e.g. 
+  to validate field on the server
+  * async validator return Promise or Observable
+  * async validator are added in FormControl third argument
+  * ng-pending class is set the FormControl while waiting to the async validator result
+* FormGroup, FormControl have two observables [valueChanges and statusChanges](https://angular.io/api/forms/AbstractControl#properties)
+* [FormGroup.setValue()](https://angular.io/api/forms/FormGroup#setvalue), 
+  [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
+* [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form 
+  controls (optional arg allow to set default value; e.g. for radiobuttons)
 
 [*Go to top*](#Angular)
