@@ -6,7 +6,7 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-###### Angular CLI
+##### Angular CLI
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
      locally, etc.
