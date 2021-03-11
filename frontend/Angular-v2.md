@@ -56,12 +56,12 @@ TODO decide if spliting into several sections afterward (to get a quicker overvi
   * [Angular Flex-Layout](#Angular-Flex-Layout) provide layout API using 
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-  * [Angular Material](#Angular Material) is an Angular components suite based on 
+  * [Angular Material](#Angular-Material) is an Angular components suite based on 
     [Google Material Design specifications](https://material.io/design/)
   * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
     [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
   * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
-    [Angular Universal](Angular Universal) instead of 
+    [Angular Universal](#Angular-Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
 
