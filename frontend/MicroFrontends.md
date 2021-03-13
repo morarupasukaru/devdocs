@@ -4,8 +4,6 @@
 
 *(Page mainly written in december 2020)*
 
-[*Go to parent page*](../README.md)
-
 * Concepts
   * single page applications are typically frontend monolith above backend micro-services
   * micro frontend web applications are composed of independent features/UI parts that can be develop by different 
@@ -51,4 +49,4 @@
 * References
   * see [micro-frontends.org](https://micro-frontends.org/) and [article on martinfowler site](https://martinfowler.com/articles/micro-frontends.html)
 
-[*Go to top*](#Micro-frontends)
+[*Go to parent page*](../README.md)
