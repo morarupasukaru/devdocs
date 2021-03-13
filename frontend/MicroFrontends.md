@@ -2,8 +2,6 @@
 
 *Micro frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
 
-*(Page mainly written in december 2020)*
-
 * Concepts
   * single page applications are typically frontend monolith above backend micro-services
   * micro frontend web applications are composed of independent features/UI parts that can be develop by different 
@@ -50,3 +48,5 @@
   * see [micro-frontends.org](https://micro-frontends.org/) and [article on martinfowler site](https://martinfowler.com/articles/micro-frontends.html)
 
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in december 2020)*

@@ -62,9 +62,9 @@
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
 
-*(Page mainly written in 2019, last update: july 2020)*
-
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in 2019, last update: july 2020)*
 
 
 ## Angular concepts

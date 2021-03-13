@@ -5,10 +5,6 @@ programming using observables that makes it easier to compose asynchronous or ca
 
 *[Reactive programming using observables](http://reactivex.io/) exists also in various other languages like [RxJava](https://github.com/ReactiveX/RxJava) for java*
 
-*(Page mainly written in september 2020)*
-
-[*Go to parent page*](../README.md)
-
 * read [Angular docs](https://angular.io/guide/rx-library) and [RxJS Primer](https://www.learnrxjs.io/learn-rxjs/concepts/rxjs-primer) for quick intro or see [Understanding RxJS](https://academind.com/tutorials/understanding-rxjs/) YouTube serie
 * [RxJS](https://rxjs.dev/guide/overview) concepts
   * [Observable](https://rxjs.dev/guide/observable) ([video](https://www.youtube.com/watch?v=Tux1nhBPl_w&feature=youtu.be)) represents the idea of an invokable collection of future values or events
@@ -78,4 +74,6 @@ programming using observables that makes it easier to compose asynchronous or ca
   * [callback vs Promises vs RxJS Observables vs async/await](https://academind.com/learn/javascript/callbacks-vs-promises-vs-rxjs-vs-async-awaits/)
   * [Exercices with RxJS](http://reactivex.io/learnrx/)
 
-[*Go to top*](#RxJS)
+*(Page mainly written in september 2020)*
+
+[*Go to parent page*](../README.md)
