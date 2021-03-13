@@ -6,4 +6,5 @@
 * [Javascript](frontend/JavaScript.md)
 * [RxJS](frontend/RxJS.md)
 * [Typescript](frontend/TypeScript.md)
+* [Micro-frontends](frontend/MicroFrontends.md)
 * [JSF](frontend/JSF.md)
