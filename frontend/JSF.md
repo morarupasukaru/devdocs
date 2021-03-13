@@ -47,7 +47,6 @@ Jakarta Server Faces (JSF; previously JavaServer Faces) is the Java EE standard 
   * utility library: [OmniFaces](https://showcase.omnifaces.org/)
 * Resources
   * disclaimer: *it's quite hard to find complete well-written JSF documentation on internet*
-  * [summary of Java EE 6 JSF exam (1Z0-896)](https://bitbucket.org/paulstat/oracle-jsf-expert-1z0-896/wiki/Home)
   * tutorials:
     * [petstore JSF demo](https://github.com/xtremebiker/petstore)
     * [JSF & PrimeFaces tutorials](https://codenotfound.com/jsf-primefaces-tutorials) with [git repo](https://github.com/code-not-found/jsf-primefaces)
@@ -55,7 +54,9 @@ Jakarta Server Faces (JSF; previously JavaServer Faces) is the Java EE standard 
     * [java EE 5](https://docs.oracle.com/javaee/5/tutorial/doc/index.html)
     * [jakarta EE 8](https://eclipse-ee4j.github.io/jakartaee-tutorial/toc.html)
     * [JSF with Spring](https://www.baeldung.com/spring-jsf)
-  * [oracle reference up to JSF 2.2](https://www.oracle.com/java/technologies/javaserverfaces.html)
+  * references
+    * [summary of Java EE 6 JSF exam (1Z0-896)](https://bitbucket.org/paulstat/oracle-jsf-expert-1z0-896/wiki/Home)
+    * [oracle documentation](https://www.oracle.com/java/technologies/javaserverfaces.html)
   * course: [JSF 2.2 - Java Server Faces for Beginners - Build a DB App](https://www.udemy.com/course/jsf-tutorial/)
 
 [*Go to parent page*](../README.md)
