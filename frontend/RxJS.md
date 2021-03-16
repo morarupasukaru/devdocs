@@ -33,7 +33,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [combineLatest](https://rxjs.dev/api/index/function/combineLatest) 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/combination/combinelatest), 
       [demo](https://reactive.how/combinelatest)) : 
-      when any observable emits a valuemit the last emitted value from each
+      when any observable emits a value; emit the last emitted value from each observables
     * [startWith](https://rxjs.dev/api/operators/startWith) 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/combination/startwith), 
       [demo](https://reactive.how/startwith)) : emit given value first
@@ -42,14 +42,14 @@ programming using observables that makes it easier to compose asynchronous or ca
       also provide the last value from another observable
     * [zip](https://rxjs.dev/api/index/function/zip) 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/combination/zip), 
-      [demo](https://reactive.how/zip)) : after all observables emitmit values as an array
+      [demo](https://reactive.how/zip)) : combine and emit n-th value of the any observables
   * [Creation](https://www.learnrxjs.io/learn-rxjs/operators/creation)
     * **[from](https://rxjs.dev/api/index/function/from)** 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/creation/from)) : 
-      turn an array, promiser iterable into an observable
+      turn an array, promise, iterable into an observable
     * **[of](https://rxjs.dev/api/index/function/of)** 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/creation/of)) : 
-      emit variable amount of values in a sequence and then emits a complete notification
+      emit values in a sequence and then emits a complete notification
     * [ajax](https://rxjs.dev/api/ajax/ajax) ([doc](https://www.learnrxjs.io/learn-rxjs/operators/creation/ajax)) : 
       create an observable for an Ajax request
     * [fromEvent](https://rxjs.dev/api/index/function/fromEvent) 
