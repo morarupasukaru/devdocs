@@ -66,7 +66,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [share](https://rxjs.dev/api/operators/share) 
       ([doc](https://www.learnrxjs.io/learn-rxjs/operators/multicasting/share)) : 
       share source among multiple subscribers
-    * [shareReplay](https://www.learnrxjs.io/learn-rxjs/operators/multicasting/sharereplay)) : 
+    * [shareReplay](https://rxjs.dev/api/operators/shareReplay) ([doc](https://www.learnrxjs.io/learn-rxjs/operators/multicasting/sharereplay)) : 
       share source and replay specified number of emissions on subscription
   * [Filtering](https://www.learnrxjs.io/learn-rxjs/operators/filtering)
     * **[filter](https://rxjs.dev/api/operators/filter)** 
