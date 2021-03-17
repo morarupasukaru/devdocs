@@ -3,8 +3,8 @@
 ## Frontend
 
 * *HTML (coming soon)*
-* *CSS (coming later)*
 * [Javascript](frontend/JavaScript.md)
+* *CSS (coming later)*
 * [WebAPIs](frontend/WebAPIs.md)
 * [Typescript](frontend/TypeScript.md)
 * [Angular](frontend/Angular.md)
