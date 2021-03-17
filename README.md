@@ -2,9 +2,10 @@
 
 ## Frontend
 
-* [Angular](frontend/Angular.md)
 * [Javascript](frontend/JavaScript.md)
-* [RxJS](frontend/RxJS.md)
+* [WebAPIs](frontend/WebAPIs.md)
 * [Typescript](frontend/TypeScript.md)
+* [Angular](frontend/Angular.md)
+* [RxJS](frontend/RxJS.md)
 * [Micro-frontends](frontend/MicroFrontends.md)
 * [JSF](frontend/JSF.md)
