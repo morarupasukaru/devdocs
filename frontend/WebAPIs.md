@@ -2,7 +2,8 @@
 
 Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) to develop standard web applications.
 
-* [**DOM - Document Object Model**](#DOM): to manipulate elements of HTML
+* [**DOM - Document Object Model**](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model): 
+  to manipulate elements of HTML
   * [Window Object](#Window-Object) properties are globally available in browser like 
     [document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
   * [DOM Manipulations](#DOM-Manipulations) are mainly available with global object 
