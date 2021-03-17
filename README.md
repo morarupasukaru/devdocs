@@ -9,11 +9,11 @@
 * [Typescript](frontend/TypeScript.md)
 * [Angular](frontend/Angular.md)
 * *RxJS (coming soon)*
+* [Testing](frontend/Testing.md)
 * [Micro-frontends](frontend/MicroFrontends.md)
 * [JSF](frontend/JSF.md)
 * *JAMStack (coming soon)*
 * *Stencil.js (coming soon)*
-* *Testing (coming soon)*
 
 
 ## Backend
