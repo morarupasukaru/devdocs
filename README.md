@@ -2,18 +2,30 @@
 
 ## Frontend
 
+* *HTML (coming soon)*
+* *CSS (coming later)*
 * [Javascript](frontend/JavaScript.md)
 * [WebAPIs](frontend/WebAPIs.md)
 * [Typescript](frontend/TypeScript.md)
 * [Angular](frontend/Angular.md)
-* [RxJS](frontend/RxJS.md)
+* *RxJS (coming soon)*
 * [Micro-frontends](frontend/MicroFrontends.md)
 * [JSF](frontend/JSF.md)
+* *JAMStack (coming soon)*
+* *Stencil.js (coming soon)*
+* *Testing (coming soon)*
 
 
 ## Backend
 
+* *Java (coming later)*
 * [SpringBoot](backend/SpringBoot.md)
+
+
+## Transversal
+
+* *API (coming soon)*
+* *Security (coming soon)*
 
 
 ## Tools
