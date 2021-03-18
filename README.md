@@ -10,7 +10,7 @@
 * [Angular](frontend/Angular.md) is a TypeScipt framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
 * RxJS (Reactive Extensions for JavaScript) is a library for reactive 
-programming using observables - *(coming soon)*
+programming using observables - *(coming later)*
 * [Testing](frontend/Testing.md) contains links about frontend testing
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
 * [JSF](frontend/JSF.md) (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java
