@@ -1,13 +1,13 @@
-# Micro frontends
+# Micro-frontends
 
-*Micro frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
+*Micro-frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
 
 * Concepts
   * single page applications are typically frontend monolith above backend micro-services
   * micro frontend web applications are composed of independent features/UI parts that can be develop by different 
     teams in different technologies
-  * teams develop features/micro frontends end-to-end, from database to user interface
-* Goals of micro frontends
+  * teams develop features/micro-frontends end-to-end, from database to user interface
+* Goals of micro-frontends
   * *independent of technology*: each team could choose a stack without having dependencies to other teams 
   * *isolate team code*: don't share code between team
   * *avoid naming collisions*: define naming conventions (prefix pro team) where isolation is not possible 
@@ -20,16 +20,28 @@
     is typically responsible of rending common elements (toolbar, navigation), owned authentication and
     bundle micro-frontends/pages together
   * there is a micro frontend pro page
-  * integrations of micro frontends 
-    * ... with [iframes](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaIframes)
-    * ... with [web components](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaWebComponents)
-    * ... at [build-time](https://martinfowler.com/articles/micro-frontends.html#Build-timeIntegration)
-    * ([or see other variants](https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches))
-  * [Communication between micro frontends](https://martinfowler.com/articles/micro-frontends.html#Cross-applicationCommunication)
+  * integrations alternatives of micro-frontend
+    * [server-side](https://martinfowler.com/articles/micro-frontends.html#Server-sideTemplateComposition)
+      integration could be too much complex
+    * [build-time](https://martinfowler.com/articles/micro-frontends.html#Build-timeIntegration)
+      integration require to release all micro-frontends order to ship a change in one micro-frontend
+      * build-time approach with e.g. [Angular feature module](https://angular.io/guide/feature-modules) (lazy or not) 
+        could be an alternative for web application that require less isolation between teams 
+        (would be not obviously a micro-frontends architecture)
+    * [JavaScript](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaJavascript) 
+      integration provide no isolation of window global scope populated from different micro-frontends. 
+      Clatches could occurs if e.g. different versions of same library/framework is used
+    * [web components](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaWebComponents)
+      integration is cleaner as with JavaScript but also do not isolate window global scope 
+    * [iframes](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaIframes)
+      integration isolate window global scope but performance issue could occurs and interaction 
+      between micro-frontends could be complex
+  * [Communication between micro-frontends](https://martinfowler.com/articles/micro-frontends.html#Cross-applicationCommunication)
     * with [custom DOM events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events): 
-      increase coupling between micro frontends
-    * with [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage)
-    * it's better to avoid as much as possible communication between micro frontends to prevent coupling between teams
+      increase coupling between micro-frontends and is not available for iframe approach
+    * with [Window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) 
+      is complex but is available for iframe approach
+    * it's better to avoid as much as possible communication between micro-frontends to prevent coupling between teams
   * each micro frontend should have its own backend (known as 
     [BFF pattern (backend for frontend)](https://samnewman.io/patterns/architectural/bff/))
   * [testing](https://martinfowler.com/articles/micro-frontends.html#Testing)
@@ -42,7 +54,8 @@
 * Frameworks / Tools
   * [single-spa](https://single-spa.js.org/): 
     javascript router for micro front-ends that can be written in different framework
-  * [scion](https://github.com/SchweizerischeBundesbahnen/scion-microfrontend-platform/blob/master/docs/site/microfrontend-architecture.md): uses iFrames for isolation and provides custom Intent/Capability solution for shell  and inter-module communication
+  * [scion](https://github.com/SchweizerischeBundesbahnen/scion-microfrontend-platform/blob/master/docs/site/microfrontend-architecture.md): 
+    ease iframes integration approach with a solution for container application and communication between micro-frontends
   * [windowed-observable](https://github.com/luistak/windowed-observable): library for pub/sub messaging using Observables
 * References
   * see [micro-frontends.org](https://micro-frontends.org/) and [article on martinfowler site](https://martinfowler.com/articles/micro-frontends.html)

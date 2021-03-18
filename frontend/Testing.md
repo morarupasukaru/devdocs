@@ -1,6 +1,6 @@
 # Testing
 
-Compilation of links of about frontend testing
+Compilation of links about frontend testing
 
 * test libraries
   * [Jasmine](https://jasmine.github.io/), 

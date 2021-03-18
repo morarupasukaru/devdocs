@@ -2,30 +2,32 @@
 
 ## Frontend
 
-* *HTML (coming soon)*
-* [Javascript](frontend/JavaScript.md)
-* *CSS (coming later)*
-* [WebAPIs](frontend/WebAPIs.md)
-* [Typescript](frontend/TypeScript.md)
-* [Angular](frontend/Angular.md)
-* *RxJS (coming soon)*
-* [Testing](frontend/Testing.md)
-* [Micro-frontends](frontend/MicroFrontends.md)
-* [JSF](frontend/JSF.md)
-* *JAMStack (coming soon)*
-* *Stencil.js (coming soon)*
+* HTML (Hypertext Markup Language) defines the meaning and structure of web pages - *(coming soon)*
+* [Javascript](frontend/JavaScript.md) is the scripting language for web pages
+* CSS (Cascading Style Sheets) is a language to style and present HTML - *(coming later)*
+* [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
+* [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
+* [Angular](frontend/Angular.md) is a TypeScipt framework to build 
+[Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
+* RxJS (Reactive Extensions for JavaScript) is a library for reactive 
+programming using observables - *(coming soon)*
+* [Testing](frontend/Testing.md) contains links about frontend testing
+* [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
+* [JSF](frontend/JSF.md) (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java
+* JAMStack - *(coming soon)*
+* Stencil.js - *(coming soon)*
 
 
 ## Backend
 
-* *Java (coming later)*
-* [SpringBoot](backend/SpringBoot.md)
+* Java is a popular general-purpose language - *(coming later)*
+* [SpringBoot](backend/SpringBoot.md) framework ease writing of web applications in Java
 
 
 ## Transversal
 
-* *API (coming soon)*
-* *Security (coming soon)*
+* API - *(coming soon)*
+* Security - *(coming soon)*
 
 
 ## Tools

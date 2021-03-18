@@ -1,6 +1,6 @@
 # JSF
 
-Jakarta Server Faces (JSF; previously JavaServer Faces) is the Java EE standard framework to build web application in Java.
+JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java.
 
 * Getting Started: 
   checkout JSF & PrimeFaces tutorials at 
