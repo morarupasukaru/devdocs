@@ -80,6 +80,7 @@ in plain JavaScript.
   * [Stencil App Starter](https://github.com/ionic-team/stencil-app-starter)
   * [Stencil Component Starter](https://github.com/ionic-team/stencil-component-starter)
   * [tslint-stencil](https://www.npmjs.com/package/tslint-stencil)
+  * course: [Web Components & Stencil.js - Build Custom HTML Elements](https://www.udemy.com/course/web-components-stenciljs-build-custom-html-elements/)
 * Alternatives to Stencil
   * [svelte.js](https://svelte.dev/)
   * [lit-element](https://github.com/Polymer/lit-element) with use of 
