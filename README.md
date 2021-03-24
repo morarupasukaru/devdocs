@@ -28,8 +28,12 @@ programming using observables - *(coming later)*
 
 ## Transversal
 
-* [REST API guidelines](transversal/REST-API-Guidelines.md) TODO
-* [Security](transversal/Security.md) TODO
+* [REST API guidelines](transversal/REST-API-Guidelines.md) taken from 
+  [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
+  [Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
+  and other sources
+* [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/) and 
+  [MDN web docs](https://developer.mozilla.org/en-US/)
 
 
 ## Tools
