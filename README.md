@@ -28,8 +28,8 @@ programming using observables - *(coming later)*
 
 ## Transversal
 
-* [REST API guidelines](transversal/REST-API-Guidelines.md)
-* Security - *(coming soon)*
+* [REST API guidelines](transversal/REST-API-Guidelines.md) TODO
+* [Security](transversal/Security.md) TODO
 
 
 ## Tools
