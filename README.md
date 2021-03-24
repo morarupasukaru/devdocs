@@ -13,10 +13,11 @@
 programming using observables - *(coming later)*
 * [Testing](frontend/Testing.md) contains links about frontend testing
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
+* [Stencil](frontend/Stencil.md) is a compiler that generates Web Components
+  in plain JavaScript
 * [JSF](frontend/JSF.md) (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
   and prebuilt Markup (static HTML files)
-* Stencil.js - *(coming soon)*
 
 
 ## Backend
