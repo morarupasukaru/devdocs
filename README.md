@@ -2,7 +2,7 @@
 
 ## Frontend
 
-* HTML (Hypertext Markup Language) defines the meaning and structure of web pages - *(coming soon)*
+* [HTML](frontend/HTML.md) (Hypertext Markup Language) defines the meaning and structure of web pages 
 * [Javascript](frontend/JavaScript.md) is the scripting language for web pages
 * CSS (Cascading Style Sheets) is a language to style and present HTML - *(coming later)*
 * [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
