@@ -28,7 +28,7 @@ programming using observables - *(coming later)*
 
 ## Transversal
 
-* [REST API guidelines](misc/REST-API-Guidelines.md)
+* [REST API guidelines](transversal/REST-API-Guidelines.md)
 * Security - *(coming soon)*
 
 
