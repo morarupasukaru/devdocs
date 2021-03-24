@@ -40,7 +40,7 @@ but also from others [sources](#Sources)
 * [MUST write APIs using **U.S. English**](https://opensource.zalando.com/restful-api-guidelines/#103)
 * [SHOULD monitor **API usage**](https://opensource.zalando.com/restful-api-guidelines/#193)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Meta-Information
@@ -48,14 +48,14 @@ but also from others [sources](#Sources)
 * [MUST use **semantic versioning**](https://opensource.zalando.com/restful-api-guidelines/#116)
 * [MUST **provide API immutable identifier**](https://opensource.zalando.com/restful-api-guidelines/#215)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Security
 * [MUST secure endpoints with **OAuth 2.0 + JWT Token**](https://opensource.zalando.com/restful-api-guidelines/#104)
 * [MUST define and assign **permissions**](https://opensource.zalando.com/restful-api-guidelines/#105)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Compatibility and Deprecation
@@ -70,7 +70,7 @@ but also from others [sources](#Sources)
 * [MUST reflect **deprecation** in API specifications](https://opensource.zalando.com/restful-api-guidelines/#187)
 * [SHOULD add **Deprecation and Sunset** header to responses](https://opensource.zalando.com/restful-api-guidelines/#189)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### JSON guidelines and Data formats
@@ -105,7 +105,7 @@ but also from others [sources](#Sources)
   [locale.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/locale.json), etc.
 * [MUST use **common field names** and semantics](https://opensource.zalando.com/restful-api-guidelines/#174)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### API naming
@@ -116,7 +116,7 @@ but also from others [sources](#Sources)
 * [MUST avoid **trailing slashes**](https://opensource.zalando.com/restful-api-guidelines/#136)
 * [MUST stick to **conventional query parameters**](https://opensource.zalando.com/restful-api-guidelines/#137)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Resources
@@ -133,7 +133,7 @@ but also from others [sources](#Sources)
   [Zalando](https://opensource.zalando.com/restful-api-guidelines/#147)
 * MUST NOT expose a large number of small resources to avoid **chatty API**
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### HTTP requests
@@ -145,7 +145,7 @@ but also from others [sources](#Sources)
 * [MUST **repeat query parameter for collections**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#passing-multiple-values-for-the-same-query-parameter), 
   see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#154)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### HTTP status codes and errors
@@ -182,7 +182,7 @@ but also from others [sources](#Sources)
   see patterns of [microsoft](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#asynchronous-operations) 
   or [paypal](https://github.com/paypal/api-standards/blob/master/patterns.md#asynchronous-operations)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Performance and Pagination
@@ -201,7 +201,7 @@ but also from others [sources](#Sources)
   and this [Blog](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#advanced-queries)
 * [MUST support **cursor-based pagination**, avoid offset-based pagination](https://opensource.zalando.com/restful-api-guidelines/#160)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Hypermedia
@@ -210,7 +210,7 @@ but also from others [sources](#Sources)
 * MUST NOT use **[HATEOAS](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#hateoas)**
 * MUST be **Stateless** API
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### HTTP headers
@@ -225,7 +225,7 @@ but also from others [sources](#Sources)
   * see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#230)
 * [MUST support **X-Flow-ID**](https://opensource.zalando.com/restful-api-guidelines/#233)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ## OpenAPI vs JSON Schema vs OData
@@ -239,7 +239,7 @@ but also from others [sources](#Sources)
   * Swagger is an implementation of the OpenAPI standard
 * [OData](https://www.odata.org/) is a protocol for sharing data
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ## Tools
@@ -248,7 +248,7 @@ but also from others [sources](#Sources)
 * [problem](https://github.com/zalando/problem): A Java library that implements application/problem+json
 * [swagger-editor](https://swagger.io/tools/swagger-editor/): editor of OpenAPI APIs
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### CodeGen
@@ -261,7 +261,7 @@ Documentation:
 (alternatives to codegen: [swagger codegen](https://github.com/swagger-api/swagger-codegen), 
 [zalando swagger codegen](https://github.com/zalando-stups/swagger-codegen-tooling))
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ### Documentation
@@ -271,7 +271,7 @@ with [springdoc-openapi](https://springdoc.org/)
 (alternatives to codegen: [redoc](https://github.com/Redocly/redoc), [dapperdox](http://dapperdox.io/), 
 [widdershins](https://github.com/mermade/widdershins))
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
 
 
 ## Sources
@@ -297,4 +297,4 @@ with [springdoc-openapi](https://springdoc.org/)
   [Opendata Swiss](https://opendata.swiss/en/), 
   [Swiss public transport](https://transport.opendata.ch/)
 
-[*Go to top*](#API)
+[*Go to top*](#REST-API-Guidelines)
