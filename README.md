@@ -32,8 +32,8 @@ programming using observables - *(coming later)*
   [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
   [Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
   and other sources
-* [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/) and 
-  [MDN web docs](https://developer.mozilla.org/en-US/)
+* [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/) 
+  and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
 
 
 ## Tools
