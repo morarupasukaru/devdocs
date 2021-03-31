@@ -248,6 +248,9 @@ and is the scripting language for Web pages.
   * documentation: [JSDoc](https://jsdoc.app/); see also [cheatsheet](https://devhints.io/jsdoc) 
     (JSDoc is also used in TypeScript to [generate declaration files from JavaScript](https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html))
   * *tools are becoming quick obsolete, please find appropriate tools during development*
+* libs
+  * [validatejs](http://validatejs.org/) to valide javascript objects 
+  * [marked.js](https://marked.js.org/) to compile markdown to HTML
 * design patterns
   * *module pattern* as alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
     ```
