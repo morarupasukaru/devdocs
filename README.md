@@ -19,6 +19,7 @@ Angular + Spring Boot.
   * alternative stacks / technics
     * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components
       in plain JavaScript
+    * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
     * [JSF](frontend/JSF.md) (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java
     * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
       and prebuilt Markup (static HTML files)
