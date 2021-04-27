@@ -27,7 +27,7 @@ Angular + Spring Boot.
 * **backend**
   * basic
     * Java is a popular general-purpose language - *(coming later)*
-  * **backend stack with SpringBoot**
+  * *backend stack with SpringBoot*
     * [SpringBoot](backend/SpringBoot.md) framework ease writing of web applications in Java
 * **transversal**
   * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
