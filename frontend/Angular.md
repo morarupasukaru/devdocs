@@ -242,7 +242,7 @@ in different use cases
   [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
 * [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
   a given Module/Component will be provided to childs
-  (means that several instance of a service could exists in the application; depending on the DI configuration)
+  (means that several instance of a service could exist in the application; depending on the DI configuration)
 * a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
 * [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
   [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
@@ -420,6 +420,18 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 * [impure pipes](https://angular.io/guide/pipes#detecting-impure-changes-within-composite-objects): Angular executes an impure pipe during every component change detection cycle
   * make impure pipe: set `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
   * impure pipes can be called very often and be a performance issue
+* typical custom pipe: make an unsafe URL as safe
+```
+@Pipe({ name: 'safeUrl' })
+export class SafeUrlPipe implements PipeTransform {
+
+  constructor(private sanitizer: DomSanitizer) {  }
+
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+}
+```
 
 [*Go to top*](#Angular)
 
