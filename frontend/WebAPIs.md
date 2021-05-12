@@ -58,7 +58,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API): 
   to run a script operation in a background thread; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
-* [Service Work API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): 
+* [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): 
   to provide proxy servers between web apps, the browser, and the network; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API): 

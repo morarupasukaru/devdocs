@@ -310,7 +310,8 @@ in different use cases
 [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
 [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
 
-##### Reactive forms
+
+##### Template-driven forms
 
 [Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
 
@@ -339,7 +340,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-##### Template-driven forms
+##### Reactive forms
 
 [Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
 
