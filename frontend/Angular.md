@@ -155,6 +155,17 @@ locally, etc.
   * concepts of smart/presentational components are not specific to Angular but could be applied with 
     every frontend technology
   * see [Angular Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
+* Improvement Angular performance with OnPush Change Detection strategy
+  * angular default [change-detection](https://angular.io/guide/glossary#change-detection) strategy
+    compare current and previous state of every bind data in template and update the DOM if necessary
+  * alternative is to configure OnPush change detection strategy on some components:
+    the change detector runs only when explicitly invoked, when Input changes or new value of observable used
+    by async pipe are emmited
+  * OnPush Change Detection strategy improve performances
+  * OnPush Change Detection strategy can be enabled easily on components using reactive style
+    (template accessing data through observables; with RxJS)
+  * change detection strategy is defined on [@Component.changeDetection](https://angular.io/api/core/Component#changeDetection) options
+  * see [Angular OnPush Change Detection and Component Design - Avoid Common Pitfalls](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
 
 [*Go to top*](#Angular)
 
