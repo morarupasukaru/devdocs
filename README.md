@@ -29,6 +29,9 @@ Angular + Spring Boot.
     * Java is a popular general-purpose language - *(coming later)*
   * **backend stack with SpringBoot**
     * [SpringBoot](backend/SpringBoot.md) framework ease writing of web applications in Java
+  * alternative stacks / technics
+    * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
+      target systems
 * **transversal**
   * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
     [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
