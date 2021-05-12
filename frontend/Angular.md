@@ -148,6 +148,13 @@ locally, etc.
     specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
     on service self)
   * creating component with Angular CLI: `ng g c name-of-component`
+* Smart vs Presentational components
+  * *presentational components* are only responsible to display some data from provided @Input and 
+    returns modified data through @Output
+  * *smart components* are responsible to retrieve/update data from services and pass data to presentational components
+  * concepts of smart/presentational components are not specific to Angular but could be applied with 
+    every frontend technology
+  * see [Angular Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
 
 [*Go to top*](#Angular)
 
