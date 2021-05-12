@@ -13,8 +13,8 @@ Angular + Spring Boot.
     * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
     * [Angular](frontend/Angular.md) is a TypeScript framework to build 
       [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
-    * RxJS (Reactive Extensions for JavaScript) is a library for reactive 
-      programming using observables - *(coming later)*
+    * [RxJS](frontend/RxJS.md) (Reactive Extensions for JavaScript) is a library for reactive
+      programming using observables
     * [Testing](frontend/Testing.md) contains links about frontend testing
   * alternative stacks / technics
     * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components
