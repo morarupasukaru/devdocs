@@ -3,6 +3,8 @@
 Summary of topics about development of web applications with focus on the stack 
 Angular + Spring Boot.
 
+*see also [sandbox](https://github.com/morarupasukaru/sandbox) projects having basic examples of the webstack concepts*
+
 * **frontend**
   * basics
     * [HTML](frontend/HTML.md) (Hypertext Markup Language) defines the meaning and structure of web pages
