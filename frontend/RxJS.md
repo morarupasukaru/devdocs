@@ -173,8 +173,10 @@ programming using observables that makes it easier to compose asynchronous or ca
     });
     ```
 * Design patterns (sandbox applications) - TODO
+  * [debounce user input](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-debounce-user-input/README.md)
+    illustrate a RxJS pattern within an Angular application to delay user inputs submission to avoid
+    unnecessary processing
   * [map-filter-reduce](#TODO-sandbox-project) 
-  * [debounce user input](#TODO-sandbox-project)
   * [error handling strategies](#TODO-sandbox-project):
     [catch and replace](#TODO-sandbox-project),
     [catch and rethrow](#TODO-sandbox-project),
