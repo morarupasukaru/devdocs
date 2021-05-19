@@ -75,7 +75,7 @@
 locally, etc.
 * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
 * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-
+* see [Issue](https://github.com/angular/angular-cli/issues/9160) and [Skipping Tests In Angular CLI](https://tutorialsforangular.com/2019/12/31/skipping-tests-in-angular-cli/) to create a Angular project without testing
 [*Go to top*](#Angular)
 
 
