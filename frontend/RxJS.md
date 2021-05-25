@@ -185,7 +185,6 @@ programming using observables that makes it easier to compose asynchronous or ca
     [delayed retry](#TODO-sandbox-project),
     [circuit breaker](#TODO-sandbox-project)
   * [application state management](#TODO-sandbox-project):
-    [shared service](#TODO-sandbox-project),
     [stateless observable service](#TODO-sandbox-project),
     [store service](#TODO-sandbox-project)
 * Documentation
