@@ -178,15 +178,14 @@ programming using observables that makes it easier to compose asynchronous or ca
     unnecessary processing
   * [map-filter-reduce](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-map-filter-reduce/README.md)
     illustrate an example of map/filter/reduce data with RxJS
+  * [stateless observable service and store service](./rxjs-stateless-observable-and-store-services/README.md)
+    illustrate RxJS patterns that hide complexity betwen a simple API with Observables
   * [error handling strategies](#TODO-sandbox-project):
     [catch and replace](#TODO-sandbox-project),
     [catch and rethrow](#TODO-sandbox-project),
     [immediate retry](#TODO-sandbox-project),
     [delayed retry](#TODO-sandbox-project),
     [circuit breaker](#TODO-sandbox-project)
-  * [application state management](#TODO-sandbox-project):
-    [stateless observable service](#TODO-sandbox-project),
-    [store service](#TODO-sandbox-project)
 * Documentation
   * [RxJS official doc](https://rxjs.dev/guide/overview)
   * [RxJS](https://angular.io/guide/rx-library) from Angular docs   
