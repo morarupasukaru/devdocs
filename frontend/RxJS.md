@@ -172,20 +172,14 @@ programming using observables that makes it easier to compose asynchronous or ca
       ...
     });
     ```
-* Design patterns (sandbox applications) - TODO
+* Design patterns (sandbox applications)
   * [debounce user input](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-debounce-user-input/README.md)
     illustrate a RxJS pattern within an Angular application to delay user inputs submission to avoid
     unnecessary processing
   * [map-filter-reduce](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-map-filter-reduce/README.md)
     illustrate an example of map/filter/reduce data with RxJS
-  * [stateless observable service and store service](./rxjs-stateless-observable-and-store-services/README.md)
+  * [stateless observable service and store service](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-stateless-observable-and-store-services/README.md)
     illustrate RxJS patterns that hide complexity betwen a simple API with Observables
-  * [error handling strategies](#TODO-sandbox-project):
-    [catch and replace](#TODO-sandbox-project),
-    [catch and rethrow](#TODO-sandbox-project),
-    [immediate retry](#TODO-sandbox-project),
-    [delayed retry](#TODO-sandbox-project),
-    [circuit breaker](#TODO-sandbox-project)
 * Documentation
   * [RxJS official doc](https://rxjs.dev/guide/overview)
   * [RxJS](https://angular.io/guide/rx-library) from Angular docs   
