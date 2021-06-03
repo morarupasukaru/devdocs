@@ -181,7 +181,7 @@ programming using observables that makes it easier to compose asynchronous or ca
   * [stateless observable service and store service](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-stateless-observable-and-store-services/README.md)
     illustrate RxJS patterns that hide complexity betwen a simple API with Observables
   * [single data observable](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-single-data-observable/README.md)
-    illustrate RxJS pattern to merge several observables into a single one to ease use
+    illustrate a RxJS pattern to merge several observables into a single one to ease use
     their uses in component's template by calling a unique async pipe    
 * Documentation
   * [RxJS official doc](https://rxjs.dev/guide/overview)
