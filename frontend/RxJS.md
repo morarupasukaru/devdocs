@@ -192,7 +192,7 @@ programming using observables that makes it easier to compose asynchronous or ca
   * [Understanding RxJS](https://academind.com/learn/javascript/understanding-rxjs/) videos
   * [RxJS 6 in practice](https://www.udemy.com/course/rxjs-course/) and 
     [Reactive Angular Course](https://www.udemy.com/course/rxjs-reactive-angular-course/) 
-    courses (contents are overlapping but both courses are nice to follow)
+    courses (contents are overlapping but both courses are great to follow)
   
 *(Page mainly written in september 2020)*
 
