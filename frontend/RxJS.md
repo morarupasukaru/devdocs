@@ -184,6 +184,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     illustrate a RxJS pattern to merge several observables into a single one to ease use
     their uses in component's template by calling a unique async pipe
   * [error handling strategies](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/README.md)
+    show in actions different ways to handle error with RxJS
 * Documentation
   * [RxJS official doc](https://rxjs.dev/guide/overview)
   * [RxJS](https://angular.io/guide/rx-library) from Angular docs   
