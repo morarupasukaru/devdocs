@@ -341,7 +341,7 @@ in different use cases
   to access the FormGroup / form state inside the template
 * add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable 
   of the NgForm inside controller:
-  ```
+  ```typescript
     @ViewChild('f', { static: false }) signupForm: NgForm;
   ```
 * add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
@@ -432,7 +432,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
   * make impure pipe: set `Pipe.`[pure](https://angular.io/api/core/Pipe#pure) property = false
   * impure pipes can be called very often and be a performance issue
 * typical custom pipe: make an unsafe URL as safe
-```
+```typescript
 @Pipe({ name: 'safeUrl' })
 export class SafeUrlPipe implements PipeTransform {
 
@@ -545,7 +545,7 @@ export class SafeUrlPipe implements PipeTransform {
   * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
 * tip: animations works on block element but per default Angular Component are inline-block element. 
   Don't forget to add:
-  ```
+  ```css
   :host {
     display: block;
   }
@@ -647,7 +647,7 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 * hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
   does not have access to several APIs like [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
   * use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check if code is running in the browser or not:
-    ```
+    ```typescript
     import { ..., Inject, PLATFORM_ID } from '@angular/core';
     import { isPlatformBrowser } from '@angular/common';
 

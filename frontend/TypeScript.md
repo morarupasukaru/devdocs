@@ -58,7 +58,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     [readonly](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) 
     properties in interface
   * [string index signature](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow to define maps in interface:
-    ```
+    ```typescript
     interface Person {
       firstName: string;
       [propName: string]: any; // string index signature
