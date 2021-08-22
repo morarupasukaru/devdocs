@@ -47,6 +47,10 @@
     [angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
 * Ecosystem
   * [ngx-translate](http://www.ngx-translate.com/) as internationalization library
+    * [ngx-translate](http://www.ngx-translate.com/) allow changing language at runtime
+    * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to 
+      ease search engine work
+    * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
   * [NgRx and Redux](#NgRx-and-Redux) are used to manage application state
