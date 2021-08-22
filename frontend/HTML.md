@@ -233,7 +233,7 @@ embedding another HTML page into the current one.
   * [polyfills](https://www.webcomponents.org/polyfills) are available for browser without native support
   * light DOM means normal DOM
   * example of autonomous custom elements, `index.html`:
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -251,7 +251,7 @@ embedding another HTML page into the current one.
 </html>
 ```
   * `info-toggle.js`:
-```
+```javascript
 class InfoToggle extends HTMLElement {
     constructor() {
         super();
@@ -315,13 +315,13 @@ customElements.define('info-toggle', InfoToggle);
     CSS function can be used to customized styles of web components or provide themes
      * excepted CSS variables of web components / themes must documented
      * a CSS variable is defined in the light DOM, e.g.
-  ```
+  ```css
   :root {
       --main-bg-color: pink;
   }
   ```
      * value of the CSS variable is read in the style of shadom DOM, e.g.
-  ```
+  ```css
   :host {
       background-color: var(--main-bg-color, blue); /* fallback value blue as second parameter */
   }
@@ -340,7 +340,7 @@ customElements.define('info-toggle', InfoToggle);
   * [defining an element's JavaScript API](https://developers.google.com/web/fundamentals/web-components/customelements#jsapi): 
     to abstract complexity, an API based on public methods & properties of the class of a web component can be defined 
   * slots can be queries in web component with following css query:
-  ```
+  ```javascript
   const slots = this.shadowRoot.querySelectorAll('slot'); // or with id
   ```
   * [`slotchange`](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots) 
@@ -349,7 +349,7 @@ customElements.define('info-toggle', InfoToggle);
     find which elements the slot is rendering
 * Event
   * event listener can be configured in javascript of the DOM
-```  
+```javascript
     const webElement = document.querySelector('my-component');
     webElement.addEventListener('custom', () => {
         console.log('custom event happened');
@@ -360,7 +360,7 @@ customElements.define('info-toggle', InfoToggle);
        can be used to inform event to users of web components
      * alternative is to dispatch event on host element self; event in that case will be fire in 
        the light DOM
-```
+```javascript
     class MyComponent extends HTMLElement {
        ... 
        dispatchEvent() {

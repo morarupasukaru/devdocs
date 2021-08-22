@@ -82,7 +82,7 @@ and is the scripting language for Web pages.
   * [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) keyword to access object properties
   * [hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) indicate if an object has the specified property as its own property (as opposed to inheriting it)
 * [class free inheritance](https://www.youtube.com/watch?v=PSGEjv3Tqo0&t=23m15s) (from Douglas Crockford)
-  ```
+  ```javascript
   function constructor(spec) {
     let { member } = spec,
         { other } = other_constructor(spec),
@@ -195,7 +195,7 @@ and is the scripting language for Web pages.
     * [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) runs asynchronous via the event loop and returns a Promise
     * [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator is used to wait for a Promise
     * async IIFE can be used to use await from top-level code; e.g.
-       ```
+       ```javascript
        (async () => {
          let response = await fetch('https://some-server.com/some-resource');
          let data = await response.json();
@@ -253,7 +253,7 @@ and is the scripting language for Web pages.
   * [marked.js](https://marked.js.org/) to compile markdown to HTML
 * design patterns
   * *module pattern* as alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-    ```
+    ```javascript
     const module = (function () {
     
       let privateData = 'some private data';
@@ -274,7 +274,7 @@ and is the scripting language for Web pages.
     module.publicMethod(' and more');
     ```
   * *revealing module pattern* as another alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-    ```
+    ```javascript
     const module = (function () {
     
       let privateData = 'some private data';
@@ -293,7 +293,7 @@ and is the scripting language for Web pages.
     ```
     * revealing module pattern is cleaner as module oattern but do not allow to add additional feature to exposed methods (e.g. call other methods; like console.log above)
   * *singleton pattern*
-    ```
+    ```javascript
     const Singleton = (function() {
       let instance;
     

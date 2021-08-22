@@ -166,7 +166,7 @@ programming using observables that makes it easier to compose asynchronous or ca
   * [naming conventions](https://angular.io/guide/rx-library#naming-conventions-for-observables) : observables should 
     be named with a trailing $ sign
   * it's possible to unsubscribe to the subscription inside the callback:
-    ```
+    ```typescript
     this.subscription = observable.subscribe(() => {
       this.subscription.unsubscribe();
       ...
