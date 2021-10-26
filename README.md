@@ -28,7 +28,7 @@ Angular + Spring Boot.
     * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
 * **backend**
   * basic
-    * Java is a popular general-purpose language - *(coming later)*
+    * Java is a popular general-purpose language *(coming later)*
   * backend stack with SpringBoot
     * [SpringBoot](backend/SpringBoot.md) framework ease writing of web applications in Java
   * alternative stacks / technics
