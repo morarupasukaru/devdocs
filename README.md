@@ -34,6 +34,8 @@ Angular + Spring Boot.
   * alternative stacks / technics
     * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
       target systems
+    * [Elasticsearch](backend/Elasticsearch.md) is a  RESTful search engine
+
 * **transversal**
   * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
     [Zalando](https://opensource.zalando.com/restful-api-guidelines/),

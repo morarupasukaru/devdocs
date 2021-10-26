@@ -3,6 +3,8 @@
 [Apache Kafka](https://kafka.apache.org/) is an open-source distributed event streaming platform.
 Kafka allow to decouple data streams from target systems (db, emails, logs, etc.).
 
+*Disclaimer: this document cover not all features of Kafka*
+
 * Concepts
   * **topic**: stream of data (without contraints) identified by a **name**
   * **partition**: topics are split in partitions
