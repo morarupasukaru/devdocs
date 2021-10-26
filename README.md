@@ -43,6 +43,7 @@ Angular + Spring Boot.
     and other sources
   * [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/)
     and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
+  * [Communication](transversal/Communication.md) at work (soft-skill)
 * **tools**
   * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
   * [Visual Studio Code](https://code.visualstudio.com/) IDE + 
