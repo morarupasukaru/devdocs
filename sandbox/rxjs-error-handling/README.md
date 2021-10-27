@@ -91,4 +91,4 @@ const delayedRetry$ = source$.pipe(
 * [ulid](https://github.com/ulid/spec) as random id generator
 *(Project mainly written in june 2021)*
 
-[*Go to parent page*](../README.md)
+[*Go to parent page*](../sandbox.md)
