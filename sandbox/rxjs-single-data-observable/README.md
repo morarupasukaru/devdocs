@@ -29,5 +29,5 @@ their uses in component's template by calling a unique async pipe
 
 *(Project mainly written in june 2021)*
 
-[*Go to parent page*](../sandbox.md)
+[*Go to parent page*](../README.md)
 

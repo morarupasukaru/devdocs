@@ -3,7 +3,7 @@
 Summary of topics about development of web applications with focus on the stack 
 Angular + Spring Boot.
 
-*see also [sandbox](sandbox/sandbox.md) projects having basic examples of the webstack concepts*
+*see also [sandbox](sandbox/README.md) projects having basic examples of the webstack concepts*
 
 * **frontend**
   * basics
