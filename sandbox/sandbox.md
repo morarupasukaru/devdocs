@@ -15,13 +15,3 @@ Compilations of sandbox projects (2021 - now) that are basic examples of the web
     their uses in component's template by calling a unique async pipe
   * [error handling strategies](./rxjs-error-handling/README.md)
     show in actions different ways to handle error with RxJS
-
-*coming in following months:*
-* [words](./words/README.md) as example of an [Angular + SpringBoot webstack](https://github.com/morarupasukaru/devdocs) with
-  * [Contract first REST API with OpenAPI 3](./words/words-api/README.md)
-  * [Secure REST API implementation with SpringBoot](./words/words-backend/README.md)
-  * [Secure single page application with Angular](./words/words-frontend/README.md)
-    * including automate testing
-
-*coming later:*
-* Java Stream patterns
