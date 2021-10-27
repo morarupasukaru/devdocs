@@ -17,10 +17,10 @@ complexity betwen a simple API using Observables.
 
 * *store service pattern* is a service hiding a state/data behind a simple API using
 Observables; typically implemented with BehaviourSubject
-  * see [edited-item-store.service.ts](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-stateless-observable-and-store-services/src/app/services/edited-item-store.service.ts)
+  * see [edited-item-store.service.ts](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-stateless-observable-and-store-services/src/app/services/edited-item-store.service.ts)
 * *stateless observable service* is a service providing API using Observables and that 
   does not persist any data (stateless)
-  * see [items.service.ts](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-stateless-observable-and-store-services/src/app/services/items.service.ts)  
+  * see [items.service.ts](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-stateless-observable-and-store-services/src/app/services/items.service.ts)  
 
 ## Credits
 

@@ -17,8 +17,8 @@ their uses in component's template by calling a unique async pipe.
 ## RxJS code snippet
 *single data observable* RxJS pattern to merge several observables into a single one to ease use
 their uses in component's template by calling a unique async pipe
- * see [root-indicator.component.ts](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-single-data-observable/src/app/components/root-indicator/root-indicator.component.ts#L34) for the creation of the single data observable
- * see [root-indicator.component.html](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-single-data-observable/src/app/components/root-indicator/root-indicator.component.html) for the use of the single data observable in an angular template with an unique async pipe
+ * see [root-indicator.component.ts](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-single-data-observable/src/app/components/root-indicator/root-indicator.component.ts#L34) for the creation of the single data observable
+ * see [root-indicator.component.html](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-single-data-observable/src/app/components/root-indicator/root-indicator.component.html) for the use of the single data observable in an angular template with an unique async pipe
 
 
 ## Credits

@@ -17,7 +17,7 @@ Error Handling strategies show in actions different ways to handle error with Rx
 ## RxJS code snippet
 
 Error handling strategies:
-* [catch and rethrow](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L28)
+* [catch and rethrow](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L28)
 ```javascript
 const source$ = this.http.get('...');
 return source$.pipe(
@@ -28,7 +28,7 @@ return source$.pipe(
   )
 );
 ```
-* [catch and replace](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L40)
+* [catch and replace](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L40)
 ```javascript
 const source$ = this.http.get('...');
 return source$.pipe(
@@ -39,14 +39,14 @@ return source$.pipe(
   )
 );
 ```
-* [immediate retry](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L52)
+* [immediate retry](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L52)
 ```javascript
 const source$ = this.http.get('...');
 const immediateRetry$ = source$.pipe(
   retryWhen(errors => errors)
 );
 ```
-* [delayed retry](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L74)
+* [delayed retry](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L74)
 ```javascript
 const source$ = this.http.get('...');
 const delayedRetry$ = source$.pipe(
@@ -60,7 +60,7 @@ const delayedRetry$ = source$.pipe(
   )
 );
 ```
-* [delayed retry (max retry)](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L111)
+* [delayed retry (max retry)](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/src/app/error-handling-strategy.service.ts#L111)
 ```javascript
 const source$ = this.http.get('...');
 const scalingDuration = 1000;

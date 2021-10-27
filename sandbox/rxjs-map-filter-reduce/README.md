@@ -17,7 +17,7 @@ Disclaimer:
 * taken solution depends greatly on the expected result (specifications of the application) 
   and there is no general solution that could be copy-pasted
   
-see [GitHub repo](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-map-filter-reduce/src/app/app.component.ts#L24-L38):
+see [GitHub repo](https://github.com/morarupasukaru/sdevdocs/blob/main/sandbox/rxjs-map-filter-reduce/src/app/app.component.ts#L24-L38):
 ```javascript
 ...
 const text$: Observable<string> = of(this.inputText);

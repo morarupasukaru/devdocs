@@ -14,7 +14,7 @@ submission to avoid unnecessary processing.
 
 ## RxJS code snippet
 
-see [GitHub repo](https://github.com/morarupasukaru/sandbox/blob/main/rxjs-debounce-user-input/src/app/app.component.ts#L26-L37):
+see [GitHub repo](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-debounce-user-input/src/app/app.component.ts#L26-L37):
 ```javascript
 ...
 const searchLines$ = fromEvent<KeyboardEvent>(this.input.nativeElement, 'keyup')
