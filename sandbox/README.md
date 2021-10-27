@@ -15,3 +15,5 @@ Compilations of sandbox projects (2021 - now) that are basic examples of the web
     their uses in component's template by calling a unique async pipe
   * [error handling strategies](./rxjs-error-handling/README.md)
     show in actions different ways to handle error with RxJS
+
+[*Go to parent page*](../README.md)
