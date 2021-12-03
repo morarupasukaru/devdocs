@@ -11,6 +11,7 @@ Angular + Spring Boot.
     * [Javascript](frontend/JavaScript.md) is the scripting language for web pages
     * CSS (Cascading Style Sheets) is a language to style and present HTML - *(coming later)*
     * [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
+    * [UX Design](frontend/UX-design.md)
   * frontend stack with Angular
     * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
     * [Angular](frontend/Angular.md) is a TypeScript framework to build 
