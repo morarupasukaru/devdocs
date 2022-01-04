@@ -609,16 +609,12 @@ export class SafeUrlPipe implements PipeTransform {
   * [testing pipes](https://angular.io/guide/testing-pipes)
 * shallow component tests / non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
   to have angular dependency injection
-  * non isolated test is a "shallow component test" that a component and its template, without its dependencies by mocking them
+  * non isolated test is a "shallow component test" that test a component and its template, without its dependencies by mocking them
   * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
-  * what to test?
-    * TODO
-* integrated tests
-  * TODO
 * hints:
   * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
   * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-  * testing asynchronous code
+* testing asynchronous code
     * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
     * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
     * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
