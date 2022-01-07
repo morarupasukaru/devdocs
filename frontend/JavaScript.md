@@ -192,6 +192,7 @@ and is the scripting language for Web pages.
       [finally()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally) methods
     * see [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) guide
     * see also [Why Promises Are Faster Than setTimeout()?](https://dmitripavlutin.com/javascript-promises-settimeout/)
+    * see also [Microtasks ](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
   * async and await to write asynchronous like synchronous code
     * [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function) runs asynchronous via the event loop and returns a Promise
     * [await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await) operator is used to wait for a Promise
