@@ -22,7 +22,8 @@ Compilation of links about frontend testing
   * Angular testing: [introduction](https://angular.io/guide/testing), 
     [testing services](https://angular.io/guide/testing-services),
     [async services](https://angular.io/guide/testing-components-scenarios#waitForAsync), etc.
-
+* course
+  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/)
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in december 2020)*

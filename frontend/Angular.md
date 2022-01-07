@@ -619,6 +619,8 @@ export class SafeUrlPipe implements PipeTransform {
     * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
     * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
     * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
+* course
+  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/)
   
 [*Go to top*](#Angular)
 
