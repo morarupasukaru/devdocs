@@ -620,7 +620,7 @@ export class SafeUrlPipe implements PipeTransform {
     * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
     * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
 * course
-  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/)
+  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
   
 [*Go to top*](#Angular)
 
