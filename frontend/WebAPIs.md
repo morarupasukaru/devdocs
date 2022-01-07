@@ -113,6 +113,7 @@ main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
 * [window.localStorage/sessionStorage allow to store data](#Web-Storage-API)
 * [window.setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) 
   sets a timer which executes a function once the timer expires
+  * see also [Why Promises Are Faster Than setTimeout()?](https://dmitripavlutin.com/javascript-promises-settimeout/)  
 * [window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage) and 
   [message](https://developer.mozilla.org/en-US/docs/Web/API/Window/message_event) event are used for cross-origin 
   communication, see [Channel Messaging API](https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API)
