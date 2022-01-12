@@ -14,7 +14,10 @@
 * Other resources: 
   [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
-
+* Tools / Library
+  * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
+  * [password-validator](https://github.com/tarunbatra/password-validator) library
+  
 *(Page mainly written in April 2020)*
 
 [*Go to parent page*](../README.md)
@@ -133,7 +136,6 @@ browser.
 * [HTTP Strict Transport Security - HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
 * [Cryptographic](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 * [Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
-  * see e.g. [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
  
 [*Go to top*](#Security)
 
