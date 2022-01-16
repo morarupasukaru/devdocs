@@ -11,10 +11,11 @@
   * [Cookies](#Cookies)
   * [Web Storage](#Web-Storage)
 * [Secure Core Warrior](https://securecodewarrior.com/): great eLearning Security Platform
-* Other resources: 
-  [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
+* Other resources 
+  * [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
-
+  * [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) 
+  
 *(Page mainly written in April 2020)*
 
 [*Go to parent page*](../README.md)
