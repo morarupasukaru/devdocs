@@ -15,7 +15,7 @@
   [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
   * [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) 
-  * [auth0](https://auth0.com/) provide open-source libs to implements JWT and an authentifcation provider
+  * [auth0](https://auth0.com/) provide open-source libs to implements JWT and an authentification provider
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
