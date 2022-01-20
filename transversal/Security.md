@@ -16,6 +16,8 @@
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
   * [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) 
   * [auth0](https://auth0.com/) provide open-source libs to implements JWT and an authentification provider
+    * [jwks](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) aka JSON Web Key Sets is set of keys containing the public keys used to verify any JSON Web Token (JWT) issued by the authorization server
+
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
