@@ -325,7 +325,7 @@ Important security HTTP Headers:
 * [`X-Content-Type-Options: nosniff`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options): 
   prevent [MIME sniffing](https://en.wikipedia.org/wiki/Content_sniffing)
 * [Content-Security-Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy): 
-  helps guard against cross-site scripting attacks (XSS).
+  helps guard against [cross-site scripting attacks (XSS)](https://developer.mozilla.org/en-US/docs/Web/Security/Types_of_attacks#cross-site_scripting_xss).
   * [frame-ancestors 'none'](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-ancestors): 
     permit/forbid framing
 * [`Content-Type: text/html; charset=UTF-8`](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type): 
