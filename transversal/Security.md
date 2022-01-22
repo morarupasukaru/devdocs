@@ -21,7 +21,7 @@
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
-
+  
 *(Page mainly written in April 2020)*
 
 [*Go to parent page*](../README.md)
@@ -343,7 +343,7 @@ Important security HTTP Headers:
 
 
 ## Cookies
-An [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies) is a small piece of 
+An [HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies#Secure_and_HttpOnly_cookies) is a small piece of 
 data that a server sends to the user's web browser. 
 The browser may store it and send it back with the next request to the same server. Typically, 
 it's used to tell if two requests came from the same browser — keeping a user logged-in, for 
