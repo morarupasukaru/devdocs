@@ -1,3 +1,4 @@
+TODO read NgRx documentation once
 
 #### NgRx and Redux
 
