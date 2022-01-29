@@ -12,6 +12,7 @@
 * [Redux](https://redux.js.org/) is a state management pattern (available in ReactJS) and a library
 * Redux library could be used in Angular
 * [NgRx](https://ngrx.io/) is an Angular implementation of [Redux](https://redux.js.org/) and is therfore easier to use as Redux directly
+  * using NgRX (or Redux) can avoid to fetch same data from backend and store them in memory
 * Redux vs NgRx
     * NgRx provide injectable services
     * NgRx integrate/use RxJS to have Observable
