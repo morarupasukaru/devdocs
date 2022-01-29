@@ -54,6 +54,8 @@
         * npm install --save-dev @ngrx/store-devtools
         * import StoreDevtoolsModule in app.module.ts
         * call .instrument({logOnly: environment.production})
+* other concepts
+    * [@ngrx/schematics](https://ngrx.io/guide/schematics) provides Angular CLI commands for generating/updating components/modules with NgRx.
     * [@ngrx/data](https://ngrx.io/guide/data) is an extension TODO
     * devtools
 
