@@ -1,5 +1,3 @@
-TODO read NgRx documentation once
-
 #### NgRx and Redux
 
 [NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
