@@ -1,6 +1,7 @@
 #### NgRx and Redux
 
-[NgRx](https://ngrx.io/) and [Redux](https://redux.js.org/) used to manage application state
+[NgRx](https://ngrx.io/), [Redux](https://redux.js.org/),
+[ngxs](https://www.ngxs.io/), [akita](https://datorama.github.io/akita/) are used to manage application state
 
 * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
 * to not loose all important data, some of them are stored in the *persistent state* on backend (db)
