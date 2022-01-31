@@ -39,24 +39,17 @@
     * lifecycle:
       ![NgRx Lifecycle](https://ngrx.io/generated/images/guide/store/state-management-lifecycle.png)
       *(source: [NgRx](https://ngrx.io/guide/store))*
-    * *selector*: [selectors](https://ngrx.io/guide/store/selectors) are pure functions used for obtaining slices of store state.
+    * [selectors](https://ngrx.io/guide/store/selectors): pure functions used for obtaining slices of store state.
         * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
-    * *feature state*: state associated to a feature module; see [register feature state](https://ngrx.io/guide/store/reducers#register-feature-state)
-    * *effect*: allow to handle asynchronous events
+    * [feature state](https://ngrx.io/guide/store/reducers#register-feature-state): state associated to a feature module
+    * [effect](https://ngrx.io/guide/effects): allow to handle asynchronous events
         * Effects are long-running services that listen to an observable of every action dispatched from the Store.
         * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
         * Effects perform tasks, which are synchronous or asynchronous and return a new action (have to).
-    * *router-store module*: @ngrx/router-store module allow to dispatch events to route navigation (that could be listened in effect e.g.)
-        * npm install --save-dev @ngrx/router-store
-        * import StoreRouterConnectingModule to app.module.ts
-    * *browser redux devtools* extension allow to see dispatched actions and Store changes
-        * search "redux devtools extension" and install it in chrome
-        * npm install --save-dev @ngrx/store-devtools
-        * import StoreDevtoolsModule in app.module.ts
-        * call .instrument({logOnly: environment.production})
 * other concepts
+    * [@ngrx/router-store](https://ngrx.io/guide/router-store): module dispatching actions of route navigation
+    * [@ngrx/store-devtools](https://ngrx.io/guide/store-devtools) extension allow seeing dispatched actions and Store changes
     * [@ngrx/schematics](https://ngrx.io/guide/schematics) provides Angular CLI commands for generating/updating components/modules with NgRx.
-    * [@ngrx/data](https://ngrx.io/guide/data) is an extension TODO
-    * devtools
+    * [@ngrx/data](https://ngrx.io/guide/data): extension for TODO
 
 [*Go to top*](#Angular)
