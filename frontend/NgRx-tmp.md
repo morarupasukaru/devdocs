@@ -50,7 +50,8 @@
     * [@ngrx/router-store](https://ngrx.io/guide/router-store): module dispatching actions of route navigation
     * [@ngrx/store-devtools](https://ngrx.io/guide/store-devtools) extension allow seeing dispatched actions and Store changes
       * navigation can be replayed in combination with router-store with the time-travelling debugger; see following [blog](https://blog.angular-university.io/angular-ngrx-devtools/)
-    * [runtime-check](https://ngrx.io/guide/store/configuration/runtime-checks) : throws errors during development if some NgRx and Redux core concepts and best practices are violated (e.g. state immutability)
+    * [runtime-checks](https://ngrx.io/guide/store/configuration/runtime-checks) : throws errors during development if some NgRx and Redux core concepts and best practices are violated (e.g. state immutability)
+    * [meta-reducers](https://ngrx.io/guide/store/metareducers) are processed before handling the actions & normal reducers
     * [@ngrx/schematics](https://ngrx.io/guide/schematics) provides Angular CLI commands for generating/updating components/modules with NgRx.
     * [@ngrx/data](https://ngrx.io/guide/data): extension for TODO
 
