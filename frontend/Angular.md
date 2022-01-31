@@ -68,7 +68,7 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019, last update: july 2020)*
+*(Page mainly written in 2019, last update: february 2022)*
 
 
 ## Angular concepts
