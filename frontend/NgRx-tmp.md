@@ -53,6 +53,7 @@
     * [runtime-checks](https://ngrx.io/guide/store/configuration/runtime-checks) : throws errors during development if some NgRx and Redux core concepts and best practices are violated (e.g. state immutability)
     * [meta-reducers](https://ngrx.io/guide/store/metareducers) are processed before handling the actions & normal reducers
     * [@ngrx/schematics](https://ngrx.io/guide/schematics) provides Angular CLI commands for generating/updating components/modules with NgRx.
+    * [@ngrx/entity](https://ngrx.io/guide/entity) provides an API to manipulate and query entity collections (reduce the amount of code)
     * [@ngrx/data](https://ngrx.io/guide/data): extension for TODO
 
 [*Go to top*](#Angular)
