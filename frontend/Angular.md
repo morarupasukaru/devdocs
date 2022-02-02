@@ -677,7 +677,8 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 #### NgRx and Redux
 
 [NgRx](https://ngrx.io/), [Redux](https://redux.js.org/),
-[ngxs](https://www.ngxs.io/), [akita](https://datorama.github.io/akita/) are used to manage application state
+[ngxs](https://www.ngxs.io/), [akita](https://datorama.github.io/akita/) are used to manage application state 
+(see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.))
 
 * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
 * to not loose all important data, some of them are stored in the *persistent state* on backend (db)
