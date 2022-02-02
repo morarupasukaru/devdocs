@@ -17,7 +17,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   
 *see also [sandbox](sandbox/README.md) projects having basic examples of the webstack concepts*
 
----
 
 ## Other references
 
