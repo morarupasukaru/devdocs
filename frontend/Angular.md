@@ -197,8 +197,8 @@ locally, etc.
 * see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
 * [build custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
   * by using [Renderer2](https://angular.io/api/core/Renderer2)
-  * [@HostListener](https://angular.io/api/core/HostListener) to listen host event
-  * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host properties
+  * [@HostListener](https://angular.io/api/core/HostListener) to listen host DOM event
+  * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host DOM properties
   * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
   * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
 * [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
@@ -232,7 +232,26 @@ in different use cases
   * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
     (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
   * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element 
-    as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file
+    as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file; see also [Using AfterContent hooks](https://angular.io/guide/lifecycle-hooks#using-aftercontent-hooks)
+  * tips: it's possible to create a [Directive](https://angular.io/api/core/Directive#options) with a css selector and use it to access such element with @ContentChild:
+    ```
+    @Directive({
+      selector: 'app-input input'
+    }
+    export class InputRefDirective {
+    
+      
+    }
+    ```
+    and then
+    ```
+    export class AppInputComponent implements AfterContentInit {
+      @ContentChild(InputRefDirective);
+      input: InputRefDirective;
+    }   
+    ```
+
+    https://angular.io/api/core/Directive#options
 * [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
   that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
 * [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
@@ -511,6 +530,9 @@ export class SafeUrlPipe implements PipeTransform {
       (e.g. `:host(.active)`)
   * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, 
     depending on some condition set outside of it
+  * [::ng-deep](https://angular.io/guide/component-styles#deprecated-deep--and-ng-deep) allow to disables [view-encapsulation](https://angular.io/guide/view-encapsulation) for a given css rule; e.g. allow to style a 
+    projected element with [<ng-content>](https://angular.io/api/core/ng-content)
+    * `:host ::ng-deep input { ... }`: css rule only applied in the projected input element and not an every input of the page
 * Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) 
   are common way to dynamic style components
 * Angular component selector like `app-xyz { ... }` can be used in css
