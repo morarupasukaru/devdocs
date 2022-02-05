@@ -528,8 +528,7 @@ export class SafeUrlPipe implements PipeTransform {
   * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
     * function form `:host` component allow to style the host component on given css selector condition 
       (e.g. `:host(.active)`)
-  * [:hostcontext](https://angular.io/guide/component-styles#host-context) style elements inside a component, 
-    depending on some condition set outside of it
+  * [:host-context](https://angular.io/guide/component-styles#host-context) style elements inside a component, depending on some condition set outside of it; it's usefull to apply css theme
   * [::ng-deep](https://angular.io/guide/component-styles#deprecated-deep--and-ng-deep) allow to disables [view-encapsulation](https://angular.io/guide/view-encapsulation) for a given css rule; e.g. allow to style a 
     projected element with [<ng-content>](https://angular.io/api/core/ng-content)
     * `:host ::ng-deep input { ... }`: css rule only applied in the projected input element and not an every input of the page
