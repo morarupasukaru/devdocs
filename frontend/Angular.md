@@ -35,6 +35,7 @@
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
+  * [Angular Libraries](#Angular-Libraries)  
 * [References](#References)
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
@@ -689,6 +690,15 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
         ...
       }
     ```
+
+[*Go to top*](#Angular)
+
+
+#### Angular Libraries
+
+[Angular Package Format](https://angular.io/guide/angular-package-format) (APF). APF is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages
+
+* [Angular QuickStart Lib](https://github.com/filipesilva/angular-quickstart-lib) is a simple library quickstart for Angular libraries, implementing the Angular Package Format v4.0.
 
 [*Go to top*](#Angular)
 
