@@ -517,7 +517,7 @@ export class SafeUrlPipe implements PipeTransform {
 * component-scoped styles can be done by
   1. use `styles` or [styleUrls](https://angular.io/api/core/Component#styleurls) of `@Component` decorator
   2. add `<style>` or `<link>` to component template
-* [View encapsulation](https://angular.io/guide/view-encapsulation): component styles are applied, by default, 
+* [View encapsulation](https://angular.io/guide/view-encapsulation) (or also named style isolation): component styles are applied, by default, 
   only within the template of that component
   * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific 
     attribute value for every html tags of a component; CSS can be applied then by using this attribute in the 
