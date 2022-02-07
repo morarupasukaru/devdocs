@@ -233,6 +233,7 @@ in different use cases
 * ng-content allow to project content into a reusable component (e.g. tabs component)
   * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
     (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
+  * see [Multi-slot content projection](https://angular.io/guide/content-projection#multi-slot) pattern as well
   * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the single ng-content element or [@ContentChildren](https://angular.io/api/core/ContentChildren#contentchildren) for a list of injected child elements
     as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file; see also [Using AfterContent hooks](https://angular.io/guide/lifecycle-hooks#using-aftercontent-hooks)
   * tips: it's possible to create a [Directive](https://angular.io/api/core/Directive#options) with a css selector and use it to access such element with @ContentChild:
