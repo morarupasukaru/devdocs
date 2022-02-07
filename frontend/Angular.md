@@ -232,7 +232,7 @@ in different use cases
 * ng-content allow to project content into a reusable component (e.g. tabs component)
   * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
     (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
-  * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the ng-content element 
+  * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the single ng-content element or [@ContentChildren](https://angular.io/api/core/ContentChildren#contentchildren) for a list of injected child elements
     as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file; see also [Using AfterContent hooks](https://angular.io/guide/lifecycle-hooks#using-aftercontent-hooks)
   * tips: it's possible to create a [Directive](https://angular.io/api/core/Directive#options) with a css selector and use it to access such element with @ContentChild:
     ```
@@ -255,6 +255,10 @@ in different use cases
     https://angular.io/api/core/Directive#options
 * [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
   that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
+* [ng-template](https://angular.io/api/core/ng-template) defines a template that is not rendered by default
+  * [template variables](https://angular.io/guide/template-reference-variables#template-input-variable) can be defined
+  * [*ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet) can be used to display a template in a ng-container
+  * [TemplateRef](https://angular.io/api/core/TemplateRef) represents an embedded template that can be used to instantiate embedded views
 * [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
   * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
     [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
