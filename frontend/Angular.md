@@ -187,7 +187,8 @@ locally, etc.
   [ngStyle](https://angular.io/api/common/NgStyle), 
   [ngClass](https://angular.io/api/common/NgClass), 
   [ngFor](https://angular.io/api/common/NgForOf), 
-  [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives)
+  [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives),
+  [ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet)
 * tips: 
   * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
     alternative is to write two ngIf
