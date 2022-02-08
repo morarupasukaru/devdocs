@@ -14,5 +14,6 @@ and are used to make a [Progressive Web App (PWA)](https://developers.google.com
 * we can specify in `ngsw-config.json`
     * which files or urls should be prefetch by the generated service worker
     * caches to be used for rest APIs
+* see [Create a Progressive Web App with the Angular CLI](https://web.dev/creating-pwa-with-angular-cli/)
 
 [*Go to top*](#Angular)

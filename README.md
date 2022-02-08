@@ -55,3 +55,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets), 
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials) plugins
+* [http-server](https://github.com/http-party/http-server): a simple static HTTP server (e.g. to serve angular applications in production mode)
