@@ -192,6 +192,7 @@ main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
     [cut](https://developer.mozilla.org/en-US/docs/Web/API/Element/cut_event), 
     [copy](https://developer.mozilla.org/en-US/docs/Web/API/Element/copy_event), 
     [paste](https://developer.mozilla.org/en-US/docs/Web/API/Element/paste_event)
+  * [select](https://developer.mozilla.org/en-US/docs/Web/API/Element/select_event) fires when some text has been selected
   * select input events: [change](https://developer.mozilla.org/en-US/docs/Web/Events/change)
   * [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) vs 
     [load](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
