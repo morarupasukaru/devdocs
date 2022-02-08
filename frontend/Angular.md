@@ -43,9 +43,14 @@
   * [Angular CLI](https://angular.io/cli)
   * [Cheatsheet](https://angular.io/guide/cheatsheet)
   * [Angular Update Guide](https://update.angular.io/)
-  * courses: [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/), 
-    [angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/),
-    [angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
+  * courses: 
+    * [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/), 
+    * [angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/),
+    * [angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/),
+    * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
+    * [Angular Progressive Web Apps (PWA) MasterClass](https://www.udemy.com/course/angular-pwa-course/)
+    * [NgRx (with NgRx Data) - The Complete Guide](https://www.udemy.com/course/ngrx-course/)  
+    * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)  
 * Ecosystem
   * [ngx-translate](http://www.ngx-translate.com/) as internationalization library
     * [ngx-translate](http://www.ngx-translate.com/) allow changing language at runtime
@@ -647,8 +652,6 @@ export class SafeUrlPipe implements PipeTransform {
     * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
     * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
     * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-* course
-  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
   
 [*Go to top*](#Angular)
 
