@@ -44,9 +44,9 @@
   * [Cheatsheet](https://angular.io/guide/cheatsheet)
   * [Angular Update Guide](https://update.angular.io/)
   * courses: 
-    * [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/), 
-    * [angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/),
-    * [angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/),
+    * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
+    * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
+    * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
     * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
     * [Angular Progressive Web Apps (PWA) MasterClass](https://www.udemy.com/course/angular-pwa-course/)
     * [NgRx (with NgRx Data) - The Complete Guide](https://www.udemy.com/course/ngrx-course/)  
