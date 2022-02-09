@@ -29,12 +29,12 @@
   * [Deployment](#Deployment) to deploy Angular application on remote server
   * [Testing](#Testing) to write and run unit tests
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-  * [Service Workers & PWA](#service-workers--pwa) provide a way to have offline web applications
-    and are used to make a [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/)
+  * [Progressive Web App](#Progressive-Web-App) to provide desktop's like applications
   * [Angular Universal](#Angular-Universal) provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
+  * [Web workers](https://angular.io/guide/web-worker) to run CPU-intensive computations in a background thread
   * [Angular Libraries](#Angular-Libraries)  
 * [References](#References)
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
@@ -656,7 +656,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Service Workers & PWA
+#### Progressive Web App
 
 TODO move content of Angular-PWA.md here again
 
