@@ -82,7 +82,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   * more complex than Server-sent Events (could require infrastructure changes)
 * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) (push notifications): allow web notifications in conjunction with 
   [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and 
-  [Service Work API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API); 
+  [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API); 
   (use [web push protocol](https://tools.ietf.org/html/rfc8030) underneath normally)
   * is still *experimental* (at 01.10.2020)
 * [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
