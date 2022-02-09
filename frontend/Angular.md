@@ -34,7 +34,7 @@
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
-  * [Web workers](https://angular.io/guide/web-worker) to run CPU-intensive computations in a background thread
+  * [Web workers](https://angular.io/guide/web-worker) to run computations in a background thread
   * [Angular Libraries](#Angular-Libraries)  
 * [References](#References)
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
