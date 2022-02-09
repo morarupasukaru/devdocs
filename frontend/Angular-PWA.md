@@ -1,10 +1,12 @@
 #### Progressive Web App
 
-[Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) and depends on
+[Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) and depends on ...
 * [Service Workers](https://angular.io/guide/service-worker-intro) to proxy backend requests
-* App Manifests TODO
+* [Web app Manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide web app as downloaded native application on a homescreen of a device (non-specific Angular technology)
+
 * Application Shell TODO
 * Push Notifications TODO
+
 
 ##### Service Workers
 
@@ -35,5 +37,9 @@ TODO
 ##### Push Notifications
 
 TODO
+
+##### Courses
+* [Progressive Web Apps (PWA) - The Complete Guide](https://www.udemy.com/course/progressive-web-app-pwa-the-complete-guide/)
+* [Angular Progressive Web Apps (PWA) MasterClass](https://www.udemy.com/course/angular-pwa-course/)
 
 [*Go to top*](#Angular)
