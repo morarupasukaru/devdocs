@@ -23,6 +23,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 ### Frontend
 
 * [UX Design](frontend/UX-design.md)
+  * [Offline first](https://offlinefirst.org/) design
 * [Testing](frontend/Testing.md) contains links about frontend testing
 * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
