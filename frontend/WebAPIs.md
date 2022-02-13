@@ -61,6 +61,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): 
   to provide proxy servers between web apps, the browser, and the network; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
 * [Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API): 
   to communicate between browsing contexts of same [origin](https://developer.mozilla.org/en-US/docs/Glossary/origin)
 * [Channel Messaging API](https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API): 
