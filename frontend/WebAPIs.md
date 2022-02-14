@@ -61,9 +61,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): 
   to provide proxy servers between web apps, the browser, and the network; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-  * use of [skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) and [Clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim#example) allow to use an activated service worker on clients (tabs) without having to reload the page (could produce subtitle bugs, e.g. with versioning compatiblity of the page)
-  * [ServiceWorkerRegistration.update()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update) attemps to update new version of a service worker (e.g. could be trigger regularly with [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) every minute)
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
+ * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
 * [Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API): 
   to communicate between browsing contexts of same [origin](https://developer.mozilla.org/en-US/docs/Glossary/origin)
 * [Channel Messaging API](https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API): 

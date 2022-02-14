@@ -29,7 +29,7 @@
   * [Deployment](#Deployment) to deploy Angular application on remote server
   * [Testing](#Testing) to write and run unit tests
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-  * [Progressive Web App](#Progressive-Web-App) to provide desktop's like applications
+  * [Progressive Web App](PWA.md) to provide desktop's like applications
   * [Angular Universal](#Angular-Universal) provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
@@ -652,13 +652,6 @@ export class SafeUrlPipe implements PipeTransform {
     * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
     * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
   
-[*Go to top*](#Angular)
-
-
-#### Progressive Web App
-
-TODO move content of Angular-PWA.md here again
-
 [*Go to top*](#Angular)
 
 
