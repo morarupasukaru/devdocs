@@ -55,3 +55,5 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
+
+*(last update 15.02.2022)*
