@@ -4,7 +4,7 @@
 
 * [Spring Initializr](https://start.spring.io/) : wizard to initialize a Spring Boot application
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) is an application framework that 
-  provide [dependency injection (DI) or Inversion of Control (IoC](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction)
+  provide [dependency injection (DI) or Inversion of Control (IoC)](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction)
 * [Spring Boot quickstart guide](https://spring.io/quickstart)
 * [Spring Web MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) 
   is a Java framework which is used to build web applications
@@ -45,13 +45,13 @@
 * Other [tutorials](https://spring.io/guides#getting-started-guides)
   * [managing transactions](https://spring.io/guides/gs/managing-transactions/)
   * [caching data](https://spring.io/guides/gs/caching/): 
-    see [documentation](https://docs.spring.io/spring/docs/4.3.15.RELEASE/spring-framework-reference/html/cache.html)
+    see [documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#cache)
   * [scheduling tasks](https://spring.io/guides/gs/scheduling-tasks/)
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
 
-*(Page mainly written in July 2020)*
+*(Page mainly written in July 2020; linked checked on 15.02.2022)*
 
 
 [*Go to parent page*](../README.md)
