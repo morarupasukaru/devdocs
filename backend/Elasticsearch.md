@@ -127,21 +127,20 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
     * sort does not work on analyzed string field; 
       in that case, additional field with raw value as keyword is required;
       see [multi fields](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html)
-  * autocomplete can be implemented by setting custom [search analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/search-analyzer.html);
+  * autocomplete can be implemented by setting custom [search analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-analyzer.html);
     see also [Index-Time Search-as-You-Type](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_index_time_search_as_you_type.html)
   * [search_as_you_type](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
     field type provide out-of-the-box autocomplete feature
 * Importing data
   * ... with [bulk REST API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html)
-  * ... with client libraries like [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.14/java-rest-high.html)
-      and its [bulk REST API](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.14/java-rest-high-document-bulk.html) support
+  * ... with client libraries like [Java API Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html)
   * ... with [Logstash](https://www.elastic.co/guide/en/logstash/current/introduction.html) and [Beats](https://www.elastic.co/beats/) to import data 
       from many sources (logs, db, etc.) to many destination (elasticsearch, csv, new relic, etc.)
     * Logstash is a tool to collect, process (e.g. anonymize), and forward events and log messages
   * ... with elasticsearch add-ons to AWS, Kafka, spark, etc.
 * SQL: Elasticsearch and OpenSearch are providing SQL API
   * see [OpenSearch SQL](https://opensearch.org/docs/search-plugins/sql/index/)
-  * and [SQL X-Pack](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/xpack-sql.html) for Elasticsearch
+  * and [SQL X-Pack](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-sql.html) for Elasticsearch
 * Links
   * [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
   * course [Elasticsearch 7 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
