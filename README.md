@@ -5,15 +5,15 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
 * [SpringBoot](backend/SpringBoot.md) **backend** framework ease writing of web applications in Java
 * *foundations:*
-  * Java is a popular general-purpose language *(coming later)*
-  * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
-  * [RxJS](frontend/RxJS.md) (Reactive Extensions for JavaScript) is a library for reactive
-    programming using observables
   * [HTML](frontend/HTML.md) (Hypertext Markup Language) defines the meaning and structure of
     web pages
   * [Javascript](frontend/JavaScript.md) is the scripting language for web pages
   * CSS (Cascading Style Sheets) is a language to style and present HTML - *(coming later)*
   * [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
+  * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
+  * [RxJS](frontend/RxJS.md) (Reactive Extensions for JavaScript) is a library for reactive
+    programming using observables
+  * Java is a popular general-purpose language *(coming later)*
 
 *see also [sandbox](sandbox/README.md) projects having basic examples of the webstack concepts*
 
