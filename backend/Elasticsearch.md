@@ -14,7 +14,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * Elasticsearch is part of **[Elastic Stack](https://www.elastic.co/what-is/elk-stack)** ; the stack provide:
     * [Elasticsearch](https://www.elastic.co/elasticsearch/), a scallable search engine
     * [Kibana](https://www.elastic.co/kibana/), a Web UI for searching and visualizing
-    * [Logstash](https://www.elastic.co/guide/en/logstash/current/introduction.html/) and [Beats](https://www.elastic.co/beats/) to feed data into Elasticsearch
+    * [Logstash](https://www.elastic.co/guide/en/logstash/current/introduction.html) and [Beats](https://www.elastic.co/beats/) to feed data into Elasticsearch
     * X-Pack are free and paid advanced proprietary features like security, alerting, monitoring, reporting, machine learning, graph exploration
   * Elasticsearch is used 
     * ... with RESTful API:
