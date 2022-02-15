@@ -36,7 +36,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 
 * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
-* [JSF](frontend/JSF.md) is/was the Java EE standard framework to build web applications in Java
+* [JSF](frontend/JSF.md) is/was the [Java EE](https://en.wikipedia.org/wiki/Jakarta_EE) standard framework to build web applications in Java
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
   and prebuilt Markup (static HTML files)
 * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
