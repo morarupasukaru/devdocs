@@ -20,8 +20,8 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 
 ## Topics
 
-* [Progressive Web App (PWA)](frontend/PWA.md) work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/)
-* [Testing](frontend/Testing.md) contains links about frontend testing
+* [Progressive Web App](frontend/PWA.md) to provide desktop's like applications on the web
+* [Frontend testing](frontend/Testing.md)
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
 * [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/)
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
