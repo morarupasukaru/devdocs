@@ -1,6 +1,6 @@
 # Webstack
 
-Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.io/projects/spring-boot):
+Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.io/projects/spring-boot)
 * [Angular](frontend/Angular.md) is a TypeScript **frontend** framework to build
   [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
 * [SpringBoot](backend/SpringBoot.md) **backend** framework ease writing of web applications in Java
@@ -37,7 +37,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
 * [JSF](frontend/JSF.md) (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE 
-  standard framework to build web application in Java
+  standard framework to build web applications in Java
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
   and prebuilt Markup (static HTML files)
 * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
@@ -54,4 +54,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets), 
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials) plugins
-* [http-server](https://github.com/http-party/http-server) to serve for instance an angular application in production mode
+* [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
