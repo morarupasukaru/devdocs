@@ -49,7 +49,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) and 
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/) 
   for documentation
-* [Visual Studio Code](https://code.visualstudio.com/) IDE + 
+* [Visual Studio Code](https://code.visualstudio.com/) IDE
   * plugins: [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer), 
   [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets), 
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
