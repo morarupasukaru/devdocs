@@ -21,7 +21,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       ```bash
       curl -H 'Content-Type: application/json' -X[GET|POST|PUT|DELETE] <URL> -d '<BODY>`
       ```
-    * ... or with high level client API's like [Java High Level REST Client](https://www.elastic.co/guide/en/elasticsearch/client/java-rest/7.13/java-rest-high.html)
+    * ... or with high level client API's like [Java API Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html)
   * **documents** are the data to search (like db row); they have an unique ID, a type and can be text or JSON data
   * **indices** provide search on documents (like db table); they have [**mapping**](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) (schema definition) and **inverted indices** to provide full-text search
     * only one type of document can be stored in an index
@@ -48,7 +48,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
         * field [*analyzer*](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer.html): define the analyzer used when indexing or searching a text field (e.g. english)
         * see other [mapping parameters](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping-params.html)
       * see [create an index with an explicit mapping](https://www.elastic.co/guide/en/elasticsearch/reference/current/explicit-mapping.html#create-mapping)
-      * mapping exceptions can be ignored with [ignore_malformed](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/ignore-malformed.html)
+      * mapping exceptions can be ignored with [ignore_malformed](https://www.elastic.co/guide/en/elasticsearch/reference/current/ignore-malformed.html)
         mapping parameter; but it's not good practise to ignore exceptions...
     * [Analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html)
       * [character filters](https://www.elastic.co/guide/en/elasticsearch/reference/current/analyzer-anatomy.html#analyzer-anatomy-character-filters): e.g. remove HTML encoding, convert & to and.
@@ -76,9 +76,9 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       or cluster down (too many synchronization of mappings between cluster's nodes)
     * flattened field type add search limitations as subfields are indexed as keyword (no analyzer)
 * Searching
-  * *query-line* (called [URI-search](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/search-uri-request.html)): specify search in URL without JSON body; can be usefull for expirement
-    * see [q request parameter of search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/search-search.html)
-      and [query string syntax](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-query-string-query.html#query-string-syntax)
+  * *query-line* (called [URI-search](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html)): specify search in URL without JSON body; can be usefull for expirement
+    * see [q request parameter of search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html)
+      and [query string syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
     * e.g. `http://localhost:9200/myindex/_search?q=myfield:TEST&pretty`
     * not to use on production due to security issues & limitations
   * normal search query are done with GET request with [JSON body](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html#search-search-api-request-body)
@@ -87,7 +87,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       is used for filtering data
     * [query context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-context)
       return data in terms of relevance
-    * see example of mix-in of [filter & query context]  (https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-filter-context-ex)
+    * see example of mix-in of [filter & query context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-filter-context-ex)
   * common filters:
     * [term](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-term-query.html)
       filter by exact values
@@ -97,13 +97,13 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       find numbers or dates in a given range
     * [exists](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-exists-query.html)
       find documents where a field exists
-    * [fuzzy query](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-fuzzy-query.html)
+    * [fuzzy query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-fuzzy-query.html)
       returns documents that contain terms similar to the search term (e.g. typos)
-    * [prefix](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-prefix-query.html)
+    * [prefix](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-prefix-query.html)
       returns documents that contain a specific prefix in a provided field
-    * [wildcard](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-wildcard-query.html)
+    * [wildcard](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-wildcard-query.html)
       returns documents that contain terms matching a wildcard pattern
-    * [regexp](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-regexp-query.html)
+    * [regexp](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-regexp-query.html)
       returns documents that contain terms matching a regular expression
   * common queries:
     * [match](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query.html)
@@ -114,10 +114,10 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       must find all terms, in the right order
       * slop parameter can be used to specify how strict the query has to be; 
         "Maximum number of positions allowed between matching tokens (defaults: 0)"
-    * [match_phrase_prefix](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-match-query-phrase-prefix.html)    
+    * [match_phrase_prefix](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase-prefix.html)    
       must find all terms, in the right order. The last term of the provided text is treated as a prefix, 
       matching any words that begin with that term
-      * see [explanation](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/query-dsl-match-query-phrase-prefix.html#match-phrase-prefix-autocomplete)
+      * see [explanation](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-match-query-phrase-prefix.html#match-phrase-prefix-autocomplete)
         why is match_phrase_prefix for autocompletion not always good for
   * common compound queries: 
     * [boolean query](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-bool-query.html): combine filters and queries with boolean logic
@@ -126,10 +126,10 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * [sorting](https://www.elastic.co/guide/en/elasticsearch/reference/current/sort-search-results.html)  
     * sort does not work on analyzed string field; 
       in that case, additional field with raw value as keyword is required;
-      see [multi fields](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/multi-fields.html)
+      see [multi fields](https://www.elastic.co/guide/en/elasticsearch/reference/current/multi-fields.html)
   * autocomplete can be implemented by setting custom [search analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/search-analyzer.html);
     see also [Index-Time Search-as-You-Type](https://www.elastic.co/guide/en/elasticsearch/guide/2.x/_index_time_search_as_you_type.html)
-  * [search_as_you_type](https://www.elastic.co/guide/en/elasticsearch/reference/7.13/search-as-you-type.html)
+  * [search_as_you_type](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
     field type provide out-of-the-box autocomplete feature
 * Importing data
   * ... with [bulk REST API](https://www.elastic.co/guide/en/elasticsearch/reference/current/docs-bulk.html)
