@@ -11,8 +11,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * CSS (Cascading Style Sheets) is a language to style and present HTML - *(coming later)*
   * [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
   * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
-  * [RxJS](frontend/RxJS.md) (Reactive Extensions for JavaScript) is a library for reactive
-    programming using observables
+  * [RxJS](frontend/RxJS.md) is a JavaScript library for reactive programming using observables
   * Java is a popular general-purpose language *(coming later)*
 
 *see also [sandbox](sandbox/README.md) projects having basic examples of the webstack concepts*
