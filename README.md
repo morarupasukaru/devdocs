@@ -38,7 +38,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
 * [JSF](frontend/JSF.md) is/was the [Java EE](https://en.wikipedia.org/wiki/Jakarta_EE) standard framework to build web applications in Java
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
-  and prebuilt Markup (static HTML files)
+  and static HTML (prebuild)
 * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
   target systems
 * [Elasticsearch](backend/Elasticsearch.md) is a RESTful search engine
