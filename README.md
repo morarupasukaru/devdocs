@@ -14,8 +14,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [RxJS](frontend/RxJS.md) is a JavaScript library for reactive programming using observables
   * Java is a popular general-purpose language *(coming later)*
 
-*see also [sandbox](sandbox/README.md) projects having basic examples of the webstack concepts*
-
 
 ## Topics
 
