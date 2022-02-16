@@ -173,17 +173,17 @@ programming using observables that makes it easier to compose asynchronous or ca
     });
     ```
 * Design patterns (sandbox applications)
-  * [debounce user input](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-debounce-user-input/README.md)
+  * [debounce user input](https://github.com/morarupasukaru/rxjs-patterns/blob/master/rxjs-debounce-user-input/README.md)
     illustrate a RxJS pattern within an Angular application to delay user inputs submission to avoid
     unnecessary processing
-  * [map-filter-reduce](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-map-filter-reduce/README.md)
+  * [map-filter-reduce](https://github.com/morarupasukaru/rxjs-patterns/blob/master/rxjs-map-filter-reduce/README.md)
     illustrate an example of map/filter/reduce data with RxJS
-  * [stateless observable service and store service](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-stateless-observable-and-store-services/README.md)
+  * [stateless observable service and store service](https://github.com/morarupasukaru/rxjs-patterns/blob/master/rxjs-stateless-observable-and-store-services/README.md)
     illustrate RxJS patterns that hide complexity betwen a simple API with Observables
-  * [single data observable](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-single-data-observable/README.md)
+  * [single data observable](https://github.com/morarupasukaru/rxjs-patterns/blob/master/rxjs-single-data-observable/README.md)
     illustrate a RxJS pattern to merge several observables into a single one to ease use
     their uses in component's template by calling a unique async pipe
-  * [error handling strategies](https://github.com/morarupasukaru/devdocs/blob/main/sandbox/rxjs-error-handling/README.md)
+  * [error handling strategies](https://github.com/morarupasukaru/rxjs-patterns/blob/master/rxjs-error-handling/README.md)
     show in actions different ways to handle error with RxJS
 * Documentation
   * [RxJS official doc](https://rxjs.dev/guide/overview)
