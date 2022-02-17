@@ -170,4 +170,4 @@ customElements.define('info-toggle', InfoToggle);
        ...
 ```
 
-[*Go to top*](#Web-Component)
+[*Go to top*](#Web-Components)
