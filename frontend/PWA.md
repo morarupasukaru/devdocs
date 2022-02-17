@@ -29,7 +29,7 @@
 [*Go to top*](#Progressive-Web-App)
 
 
-## Angular ecosystem
+## PWA with Angular
 
 
 * [Service Workers](https://angular.io/guide/service-worker-intro)

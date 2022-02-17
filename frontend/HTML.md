@@ -22,7 +22,7 @@ between websites.
   * [Block vs inline elements](#Block-vs-inline-elements)
   * [Quirks vs standards mode](#Quirks-vs-standards-mode)
   * [iframe](#iframe)
-  * [Web Components](#Web-Components)
+  * [Web Components](WebComponents.md)
   * [Responsive images](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)
   * [Vector graphics](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Adding_vector_graphics_to_the_Web)
   * [`lang` attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Setting_the_primary_language_of_the_document)
