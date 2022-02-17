@@ -108,6 +108,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [takeUntil](https://rxjs.dev/api/operators/takeUntil)
       emits the values emitted by the source observable until a notifier observable emits its first value, 
       then completes
+      * see [destroy subject pattern](https://barista.dynatrace.com/components/best-practices-and-patterns) to unsubscribe several subscriptions with takeUntil
     * [throttle](https://rxjs.dev/api/operators/throttle)
       emits a value from the source observable, then ignores subsequent source values for a duration determined by
       another observable, then repeats this process;
