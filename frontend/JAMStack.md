@@ -21,7 +21,7 @@ JavaScript, reusable APIs, and prebuilt Markup (static HTML files)"
   * project getting started should consist only of git clone + npm install (no db, no complex config) 
   * automate builds with webhooks to build & deploy on CDN automatically
 * getting started
-  * static site generator: [Scully](https://scully.io/) for Angular or see [other SSGs](https://jamstack.org/generators/)
+  * static site generator: [Scully](https://scully.io/) for *Angular* or see [other SSGs](https://jamstack.org/generators/)
   * deployment: [Github Pages](https://pages.github.com/), etc.
 * articles
   * [What is the JAMStack?](https://academind.com/learn/javascript/what-is-the-jamstack/)
