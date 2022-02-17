@@ -28,14 +28,14 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and other sources
 * [UX Design](frontend/UX-design.md)
 * [Web components](frontend/WebComponents.md) to develop custom web elements
-
+* [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
+  and *static HTML (pre-rendered)*
+  
 ## Other technologies
 
 * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
 * [JSF](frontend/JSF.md) is/was the [Java EE](https://en.wikipedia.org/wiki/Jakarta_EE) standard framework to build web applications in Java
-* [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs 
-  and static HTML (prebuild)
 * [Kafka](backend/Kafka.md) is an event streaming platform that decouple data streams from 
   target systems
 * [Elasticsearch](backend/Elasticsearch.md) is a RESTful search engine

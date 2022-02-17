@@ -25,8 +25,15 @@ JavaScript, reusable APIs, and prebuilt Markup (static HTML files)"
   * deployment: [Github Pages](https://pages.github.com/), etc.
 * articles
   * [What is the JAMStack?](https://academind.com/learn/javascript/what-is-the-jamstack/)
-  * [Introduction about Scully](https://academind.com/tutorials/scully-introduction/)
-  * [Angular Universal vs Scully](https://medium.com/joolsoftware/angular-pre-rendering-scully-io-vs-angular-universal-6f026150f341)
+
+
+## JAMStack in Angular
+
+JAMStack can be implemented in [Angular](Angular.md) with [Scully](https://scully.io/) or [Angular Universal](https://angular.io/guide/universal) (with pre-rendering)
+
+* [Introduction about Scully](https://academind.com/tutorials/scully-introduction/)
+* [Angular Universal vs Scully](https://medium.com/joolsoftware/angular-pre-rendering-scully-io-vs-angular-universal-6f026150f341)
+
 
 [*Go to parent page*](../README.md)
 
