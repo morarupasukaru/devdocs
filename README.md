@@ -27,7 +27,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
   and other sources
 * [UX Design](frontend/UX-design.md)
-* [Web components](frontend/WebComponents.md) TODO
+* [Web components](frontend/WebComponents.md) to develop custom web elements
 
 ## Other technologies
 
