@@ -51,4 +51,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
 
-*(last update 15.02.2022)*
+*(last update 17.02.2022)*
