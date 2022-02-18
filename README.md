@@ -28,7 +28,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and other sources
 * [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/)
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
-* [UX Design](frontend/UXDesign.md)s links
+* [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
   
 ## Other technologies
