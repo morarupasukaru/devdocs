@@ -17,7 +17,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 
 ## Topics
 
-* [Frontend testing](frontend/Testing.md)
+* [Frontend testing](frontend/FrontendTesting.md)
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
   and *static HTML (pre-rendered)*
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development

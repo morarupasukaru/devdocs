@@ -27,7 +27,7 @@
   * [Dynamic Components](#Dynamic-Components) allow to load new components at runtime
   * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](#ahead-of-time-aot-or-just-in-time-jit-compilation) happens at runtime (JiT) or during build (AoT)
   * [Deployment](#Deployment) to deploy Angular application on remote server
-  * [Testing](#Testing) to write and run unit tests
+  * [Testing](FrontendTesting.md) to write and run unit tests
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
   * [Angular Universal](#Angular-Universal) provide
@@ -629,29 +629,6 @@ export class SafeUrlPipe implements PipeTransform {
   * it's important to make sure that your server is configured to 
     [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
 
-[*Go to top*](#Angular)
-
-
-#### Testing
-
-[Testing](https://angular.io/guide/testing) to write and run unit tests
-
-* isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
-  * [testing services](https://angular.io/guide/testing-services#testing-services)
-  * [testing pipes](https://angular.io/guide/testing-pipes)
-* shallow component tests / non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
-  to have angular dependency injection
-  * non isolated test is a "shallow component test" that test a component and its template, without its dependencies by mocking them
-  * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
-* hints:
-  * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
-  * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-* testing asynchronous code
-    * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
-    * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
-    * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
-    * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-  
 [*Go to top*](#Angular)
 
 
