@@ -17,7 +17,7 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
     * JSF Web pages are HTML with JSF tag from tag libraries
     * [various tag libraries are supported by Facelets](https://www.javatpoint.com/facelets) 
       like `xmlns:h="http://xmlns.jcp.org/jsf/html"` to integrate UI components; e.g. `<h:inputText>`
-    * [JSF expression language](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-el.html#GJDDD) 
+    * [JSF expression language](https://eclipse-ee4j.github.io/jakartaee-tutorial/#expression-language) 
       is used to access properties of managed beans (e.g. `#{myBean.property}`) and other functions
   * [managed beans](https://www.javatpoint.com/jsf-managed-beans) are POJO and are registered/managed by JSF 
     * managed beans are normally the model of web page and contains business logic
@@ -25,19 +25,18 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
     * properties must be available public with getter/setter
     * [@ManagedBean](https://docs.oracle.com/javaee/6/api/javax/faces/bean/ManagedBean.html) 
       annotation register automatically the bean with a given name
-    * [managed beans scope](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-configure002.html#GIRCR) define the 
+    * [managed beans scope](https://eclipse-ee4j.github.io/jakartaee-tutorial/#using-managed-bean-scopes) define the 
       scope within a managed beans is stored: application scope (all user), session scope (session, current user), etc.
       request scope (web request; default scope)
       * scope are define by setting an annotation like @ApplicationScoped on the managed beans
   * web.xml: a web deployment descriptor contains the configuration of servlets required to process JSF requests
-  * [faces-config.xml: application configuration files](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-configure003.html#BNAWP)
-    can configure object that cannot be annotated like i18n bundle
+  * [faces-config.xml: application configuration files](https://eclipse-ee4j.github.io/jakartaee-tutorial/#application-configuration-resource-file) can configure object that cannot be annotated like i18n bundle
   * [validation](https://www.javatpoint.com/jsf-validation) tags are provided with `xmlns:f="http://xmlns.jcp.org/jsf/core"`
-    * custom validation with [method in managed beans](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-develop003.html#BNAVE)
-      or with a [custom Validator](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-custom012.html#BNATV)
-  * navigation by written an [action method on managed beans](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-develop003.html#BNAVC)
+    * custom validation with [method in managed beans](https://eclipse-ee4j.github.io/jakartaee-tutorial/#bean-validation) 
+      or with a [custom Validator](https://eclipse-ee4j.github.io/jakartaee-tutorial/#registering-a-custom-validator)
+  * navigation by written an [action method on managed beans](https://eclipse-ee4j.github.io/jakartaee-tutorial/#writing-a-method-to-handle-navigation) 
     that returns a String containing of the new page to display
-  * [h:outputScript or h:outputStylesheet](https://eclipse-ee4j.github.io/jakartaee-tutorial/jsf-page002.html#GJGEP)
+  * [h:outputScript or h:outputStylesheet](https://eclipse-ee4j.github.io/jakartaee-tutorial/#resource-relocation-using-houtputscript-and-houtputstylesheet-tags)
     allow to load external JavaScript or CSS file
   * etc. (current doc is a quick JSF summary)
 * Ecosystem 
@@ -52,7 +51,7 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
     * [JSF & PrimeFaces tutorials](https://codenotfound.com/jsf-primefaces-tutorials) with [git repo](https://github.com/code-not-found/jsf-primefaces)
     * [javatpoint](https://www.javatpoint.com/jsf-tutorial)
     * [java EE 5](https://docs.oracle.com/javaee/5/tutorial/doc/index.html)
-    * [jakarta EE 8](https://eclipse-ee4j.github.io/jakartaee-tutorial/toc.html)
+    * [jakarta EE 9](https://eclipse-ee4j.github.io/jakartaee-tutorial/)
     * [JSF with Spring](https://www.baeldung.com/spring-jsf)
   * references
     * [summary of Java EE 6 JSF exam (1Z0-896)](https://bitbucket.org/paulstat/oracle-jsf-expert-1z0-896/wiki/Home)
@@ -61,4 +60,4 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in march 2021)*
+*(Page mainly written in March 2021; links checked on 18.02.2022)*
