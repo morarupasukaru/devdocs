@@ -32,3 +32,5 @@ alternative to popular framework like Angular.
   * [online sandbox](https://svelte.dev/repl/hello-world?version=3.35.0)
   * [examples](https://svelte.dev/examples#hello-world) from [Svelte website](https://svelte.dev/)
   * course: [Svelte.js - The Complete Guide (incl. Sapper.js)](https://www.udemy.com/sveltejs-the-complete-guide/)
+
+*(Page mainly written in april 2021; links checked on 17.02.2022)*
