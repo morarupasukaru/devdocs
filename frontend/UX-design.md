@@ -9,7 +9,6 @@ Compilations of links about UX design
   * [Design Systems Repo](https://designsystemsrepo.com/) - Collection of Design Systems
     * [Fluent Design System](https://www.microsoft.com/design/fluent/#/) from Microsoft
 * Articles  
-  * [Newflux](https://newflux.fr/) - articles in french about UX design
   * [UX Myths](https://uxmyths.com/) - collection of the most frequent user experience misconceptions
   * [Top 17 Web Design and UI Trends for 2019](https://designmodo.com/web-design-trends-2019/)
   * [User Onboarding Best Practices](https://designwebkit.com/web-design/onboarding-ux/)
@@ -18,6 +17,6 @@ Compilations of links about UX design
   * [sketchize](https://www.sketchize.com/) - Sketch sheets on which you can draw mocks
   * [Lunacy](https://icons8.com/lunacy) - Free design software
 
-*(Page mainly written in december 2021)*
+*(Page mainly written in december 2021; links checked on 17.02.2022)*
 
 [*Go to parent page*](../README.md)
