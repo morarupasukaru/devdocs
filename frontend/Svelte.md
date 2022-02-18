@@ -17,7 +17,7 @@ alternative to popular framework like Angular.
   * risk of changes / unwanted migrations to do
   * examples of success stories are missing (popular companies use Svelte but without concrete examples)
 * follow [official tutorial](https://svelte.dev/tutorial/basics) to learn Svelte (no summary is required here)
-* [SvelteKit](https://kit.svelte.dev/) / [Sapper](https://sapper.svelte.dev/) (deprecated)
+* [SvelteKit](https://kit.svelte.dev/) (or [Sapper](https://sapper.svelte.dev/) is deprecated)
     are web applications framework based on Svelte
   * Sapper/SvelteKit provide routing and server-side rendering (require Node.JS server)
   * prerendering on server side is done only with first HTTP request (for site scrawler)
