@@ -14,7 +14,7 @@ between websites.
     [forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
   * [beginner](https://www.htmldog.com/guides/html/beginner/), 
     [intermediate](https://www.htmldog.com/guides/html/intermediate/), 
-    [advanced](https://www.htmldog.com/guides/html/advanced/) tutorials
+    [advanced](https://www.htmldog.com/guides/html/advanced/) tutorials >>> TODO not working currently
   * [getting started HTML5](https://academind.com/learn/html/beginner-s-guide/), see also 
     [part 2: CSS](https://academind.com/learn/css/beginner-s-guide/), 
     [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/)
@@ -28,7 +28,6 @@ between websites.
   * [`lang` attribute](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML#Setting_the_primary_language_of_the_document)
   * [`data-*` attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
   * [Optimizations of HTML loading](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Author_fast-loading_HTML_pages)
-  * [Accessibility](./Accessibility.md)
   * [Favicon](#Favicon)
   * [HTML Validation](#HTML-Validation)
   * [HTML Minification](#HTML-Minification)
@@ -96,7 +95,7 @@ List of most important [HTML elements](https://developer.mozilla.org/en-US/docs/
     represents metadata such as
     * charset: `<meta charset="utf-8">`
     * page description: `<meta name="description" content="...">`
-    * [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name): 
+    * [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name#standard_metadata_names_defined_in_other_specifications): 
       gives hints about the size of the initial size of the viewport. Used by mobile devices only.
 * [content sectioning](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
   * [`<h1>` - `<h6>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements): 
