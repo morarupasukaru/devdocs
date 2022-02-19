@@ -173,7 +173,7 @@ between websites.
 ```
 
 Notes:
-* `<!DOCTYPE html>`: is required to ensure that the browser will work in [standard mode](#Quirks-vs-standards-mode)
+* `<!DOCTYPE html>`: is required to ensure that the browser will work in [standard mode](https://developer.mozilla.org/en-US/docs/Web/HTML/Quirks_Mode_and_Standards_Mode)
 * [`<meta charset="utf-8">`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta): 
   declares the document's character encoding, UTF-8 is the only valid encoding for HTML5
 * [`<title>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/title): set title of the 
