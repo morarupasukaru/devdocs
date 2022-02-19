@@ -239,7 +239,7 @@ and is the scripting language for Web pages.
       * see also articles [Understand the different javascript modules formats](https://code-trotter.com/web/understand-the-different-javascript-modules-formats/)
       and [JavaScript Module Systems Showdown](https://auth0.com/blog/javascript-module-systems-showdown/) 
       * module loaders like [systemjs](https://github.com/systemjs/systemjs), [requirejs](https://requirejs.org/) load specific format of modules at runtime in browser
-      * module bundlers like [webpack](https://github.com/webpack/webpack), [browserify](http://browserify.org/) bundle all modules together during build
+      * module bundlers like [webpack](https://github.com/webpack/webpack), [browserify](http://browserify.org/), [parcel](https://parceljs.org/) bundle all modules together during build
 * tools
   * playground: [JSFiddle](https://jsfiddle.net/), [JS Bin](https://jsbin.com/), [Flems](https://flems.io/)
   * [transpilers](https://en.wikipedia.org/wiki/Source-to-source_compiler): [Babel](https://babeljs.io/) or [Traceur](https://github.com/google/traceur-compiler) (they support also polyfills)
