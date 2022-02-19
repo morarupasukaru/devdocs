@@ -43,8 +43,8 @@ programming using observables that makes it easier to compose asynchronous or ca
       to new subscribers by emitting them when they first subscribe (even after observable completion)
   * [Scheduler](https://rxjs.dev/guide/scheduler) are centralized dispatchers to control concurrency, allowing us to 
     coordinate when computation happens on e.g. setTimeout or requestAnimationFrame or others
-  * [Marble diagrams](https://rxjs.dev/guide/operators) are visual representations of how operators work over time
-* [Common operators](https://angular.io/guide/rx-library#common-operators) grouped by [categories](https://rxjs.dev/guide/operators)
+  * [Marble diagrams](https://rxjs.dev/guide/operators#marble-diagrams) are visual representations of how operators work over time
+* [Common operators](https://angular.io/guide/rx-library#common-operators) grouped by [categories](https://rxjs.dev/guide/operators#categories-of-operators)
   * Creation operators (*not pipeable*)
     * [from](https://rxjs.dev/api/index/function/from)
       converts array, promise, iterable into an observable
@@ -108,7 +108,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [takeUntil](https://rxjs.dev/api/operators/takeUntil)
       emits the values emitted by the source observable until a notifier observable emits its first value, 
       then completes
-      * see [destroy subject pattern](https://barista.dynatrace.com/components/best-practices-and-patterns) to unsubscribe several subscriptions with takeUntil
+      * see [destroy subject pattern](https://barista.dynatrace.com/components/best-practices-and-patterns#destroy-subject-pattern) to unsubscribe several subscriptions with takeUntil
     * [throttle](https://rxjs.dev/api/operators/throttle)
       emits a value from the source observable, then ignores subsequent source values for a duration determined by
       another observable, then repeats this process;
@@ -196,6 +196,6 @@ programming using observables that makes it easier to compose asynchronous or ca
     [Reactive Angular Course](https://www.udemy.com/course/rxjs-reactive-angular-course/) 
     courses (contents are overlapping but both courses are great to follow)
   
-*(Page mainly written in september 2020)*
+*(Page mainly written in september 2020; links checked on 19.02.2022)*
 
 [*Go to parent page*](../README.md)
