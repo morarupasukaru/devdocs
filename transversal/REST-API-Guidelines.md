@@ -287,10 +287,5 @@ with [springdoc-openapi](https://springdoc.org/)
   * [A Guide to What’s New in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
   * [Swagger Editor](https://editor.swagger.io/) has a "Convert to OpenAPI 3" option
 * Example of OpenAPI 3.0: [swagger-petstore](https://github.com/swagger-api/swagger-petstore)
-* various APIs: [randomuser](https://randomuser.me/), [chuck norris db](http://www.icndb.com/api/), 
-  [GitHub](https://developer.github.com/v3/),
-  [OpenWeatherMap](https://openweathermap.org/api), 
-  [Opendata Swiss](https://opendata.swiss/en/), 
-  [Swiss public transport](https://transport.opendata.ch/)
 
 [*Go to top*](#REST-API-Guidelines)
