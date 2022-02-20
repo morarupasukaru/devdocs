@@ -3,19 +3,7 @@
 Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) and
 [Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md) REST API guidelines
 
-* [Guidelines](#Guidelines)
-  * [General](#General)
-  * [Meta-Information](#Meta-Information)
-  * [Security](#Security)
-  * [Compatibility and Deprecation](#Compatibility-and-Deprecation)
-  * [JSON guidelines and Data formats](#JSON-guidelines-and-Data-formats)
-  * [API naming](#API-naming)
-  * [Resources](#Resources)
-  * [HTTP requests](#HTTP-requests)
-  * [HTTP status codes and errors](#HTTP-status-codes-and-errors)
-  * [Performance and Pagination](#Performance-and-Pagination)
-  * [Hypermedia](#Hypermedia)
-  * [HTTP headers](#HTTP-headers)
+* TODO Guidelines
 * [OpenAPI vs JSON Schema vs OData](#OpenAPI-vs-JSON-Schema-vs-OData)
 * Tools
   * list of [OpenAPI tools](https://openapi.tools/)
@@ -73,60 +61,40 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [MUST contain API **meta information**](https://opensource.zalando.com/restful-api-guidelines/#218)
     * [MUST use **semantic versioning**](https://opensource.zalando.com/restful-api-guidelines/#116)
     * [MUST **provide API immutable identifier**](https://opensource.zalando.com/restful-api-guidelines/#215)
-  * Security
-    * [MUST secure endpoints with **JWT Token**](https://opensource.zalando.com/restful-api-guidelines/#104) (see [jwt.io](https://jwt.io/))
-    * [MUST define and assign **permissions**](https://opensource.zalando.com/restful-api-guidelines/#105)
+  * Security: [MUST secure endpoints](https://opensource.zalando.com/restful-api-guidelines/#104) with [JWT](https://jwt.io/) tokens
   * Compatibility and Deprecation
     * [MUST NOT break **backward compatibility**](https://opensource.zalando.com/restful-api-guidelines/#106)
     * [MUST always return **JSON objects as top-level data structures**](https://opensource.zalando.com/restful-api-guidelines/#110)
     * MUST use **major URI Versioning** to provide [explorability](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#versioning)
     * [MUST reflect **deprecation** in API specifications](https://opensource.zalando.com/restful-api-guidelines/#187)
     * [SHOULD add **Deprecation and Sunset** header to responses](https://opensource.zalando.com/restful-api-guidelines/#189)
-
-TODO
-
-### JSON guidelines and Data formats
-* MUST use **snake_case** for [property names](https://opensource.zalando.com/restful-api-guidelines/#118) 
-  and [query parameters](https://opensource.zalando.com/restful-api-guidelines/#130)
-* [MUST declare **enum** values using **UPPER_SNAKE_CASE** format](https://opensource.zalando.com/restful-api-guidelines/#118)
-* [MUST define maps using **additionalProperties**](https://opensource.zalando.com/restful-api-guidelines/#216)
-* [MUST **pluralize array names**](https://opensource.zalando.com/restful-api-guidelines/#120)
-* [MUST NOT use **null**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#null)
-* [MUST name date/time properties with **_at suffix**](https://opensource.zalando.com/restful-api-guidelines/#235)
-* MUST use [**date** common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#date-common-types); 
-  see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#169)
-* MUST use [**time_duration**.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/time_duration.json); 
-  see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#127)
-* [MUST use **standardized property formats**](https://opensource.zalando.com/restful-api-guidelines/#238)
-* [MUST define **format for integer** types](https://opensource.zalando.com/restful-api-guidelines/#171)
-* [MUST define **minLength** and **maxLength** for **string**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#string)
-* [MUST NOT use **number**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
-* MUST use **string** use string to represent a **decimal value**
-* [MUST define **minimum** and a **maximum** for **integer**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
-* [MUST define **minItems** and **maxItems** (default choice 32767) for **array**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#array)
-* MUST use [**country_code**.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/country_code.json), 
-  [**language**.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/language.json), 
-  [**currency_code**.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/currency_code.json); 
-  see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#170)
-* MUST use [**money**.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/money.json) 
-  (see also [Zalando](https://opensource.zalando.com/restful-api-guidelines/#173), 
-  [jackson-datatype-money](https://github.com/zalando/jackson-datatype-money), 
-  [JavaMoney](https://github.com/JavaMoney/jsr354-api))
-* MUST use other **[common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#common-types)** 
-  like [percentage.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/percentage.json), 
-  [locale.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/locale.json), etc.
-* [MUST use **common field names** and semantics](https://opensource.zalando.com/restful-api-guidelines/#174)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### API naming
-* [MUST use **lowercase separate words with hyphens** for path segments](https://opensource.zalando.com/restful-api-guidelines/#129)
-* [MUST use **Hyphenated-Pascal-Case** for HTTP header fields](https://opensource.zalando.com/restful-api-guidelines/#132)
-* [MUST **pluralize** resource names](https://opensource.zalando.com/restful-api-guidelines/#134)
-* [MUST NOT use **/api** as base path](https://opensource.zalando.com/restful-api-guidelines/#135)
-* [MUST avoid **trailing slashes**](https://opensource.zalando.com/restful-api-guidelines/#136)
-* [MUST stick to **conventional query parameters**](https://opensource.zalando.com/restful-api-guidelines/#137)
+  * JSON guidelines and Data formats
+    * MUST use **snake_case** for [property](https://opensource.zalando.com/restful-api-guidelines/#118) 
+      and [query parameters](https://opensource.zalando.com/restful-api-guidelines/#130)
+    * [MUST declare **enum** values using **UPPER_SNAKE_CASE** format](https://opensource.zalando.com/restful-api-guidelines/#118)
+    * [MUST **pluralize array names**](https://opensource.zalando.com/restful-api-guidelines/#120)
+    * [MUST use **common field names** and semantics](https://opensource.zalando.com/restful-api-guidelines/#174)
+    * [MUST use **standard data formats**](https://opensource.zalando.com/restful-api-guidelines/#238)
+    * [MUST use **string** to represent a **floating point numbers**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
+    * [MUST define **format for integer** types](https://opensource.zalando.com/restful-api-guidelines/#171)
+    * [SHOULD define **minimum** and a **maximum** for **integer**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
+    * [SHOULD define **minLength** and **maxLength** for **string**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#string)
+    * [SHOULD define **minItems** and **maxItems** for **array**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#array)
+    * [MUST name date/time properties with **_at suffix**](https://opensource.zalando.com/restful-api-guidelines/#235)
+    * **[MUST use common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#common-types)**
+      like [percentage.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/percentage.json),
+      [locale.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/locale.json),
+      [date common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#date-common-types), 
+      [time_duration.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/time_duration.json), 
+      [country_code.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/country_code.json), 
+      [language.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/language.json), 
+      [currency_code.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/currency_code.json),
+      [money.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/money.json)
+  * API naming
+    * [MUST use **kebab-case** for path segments](https://opensource.zalando.com/restful-api-guidelines/#129)
+    * [MUST use **Kebab-Case** with uppercase separate words for HTTP header](https://opensource.zalando.com/restful-api-guidelines/#132)
+    * [MUST **pluralize** resource names](https://opensource.zalando.com/restful-api-guidelines/#134)
+    * [MUST stick to **conventional query parameters**](https://opensource.zalando.com/restful-api-guidelines/#137)
 
 [*Go to top*](#REST-API-Guidelines)
 
