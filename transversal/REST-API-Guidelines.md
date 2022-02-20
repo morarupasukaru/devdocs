@@ -1,5 +1,8 @@
 # REST API Guidelines
 
+Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) and
+[Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md) REST API guidelines
+
 * [Guidelines](#Guidelines)
   * [General](#General)
   * [Meta-Information](#Meta-Information)
@@ -14,64 +17,73 @@
   * [Hypermedia](#Hypermedia)
   * [HTTP headers](#HTTP-headers)
 * [OpenAPI vs JSON Schema vs OData](#OpenAPI-vs-JSON-Schema-vs-OData)
-* [Tools](#Tools)
-  * [CodeGen](#CodeGen)
-  * [Documentation](#Documentation)
-* [Sources](#Sources)
+* Tools
+  * list of [OpenAPI tools](https://openapi.tools/)
+  * [json-server](https://github.com/typicode/json-server):     fake REST API
+  * [problem](https://github.com/zalando/problem): 
+    A Java library that implements application/problem+json
+  * [swagger-editor](https://swagger.io/tools/swagger-editor/): 
+    editor of OpenAPI APIs  
+  * code generators
+    * [OpenAPI Generator](https://github.com/openapitools/openapi-generator); see [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md) and [Migration from swagger-codegen](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/migration-from-swagger-codegen.md)
+    * alternatives: [swagger codegen](https://github.com/swagger-api/swagger-codegen),
+  [zalando swagger codegen](https://github.com/zalando-stups/swagger-codegen-tooling)
+  * documentation generators
+    * [Swagger UI](https://swagger.io/tools/swagger-ui/) documentation can be generated with [springdoc-openapi](https://springdoc.org/)
+    * alternatives: [redoc](https://github.com/Redocly/redoc), [dapperdox](http://dapperdox.io/),
+  [widdershins](https://github.com/mermade/widdershins)
+* OpenAPI vs JSON Schema vs OData
+  * [JSON Schema](http://json-schema.org/) describes JSON documents
+  * JSON Schema focuses on data modeling and is more flexible as OpenAPI and could be
+    used to implement [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
+  * [Open API](https://www.openapis.org/) describes APIs
+    * OpenAPI provide more tooling as JSON Schema
+    * OpenAPI has lot of rules to follow but ease homegeanous APIs
+    * Open API is based on an extended version of the JSON Schema
+    * Swagger is an implementation of the OpenAPI standard
+  * [OData](https://www.odata.org/) is a protocol for sharing data
+* Documentations
+  * REST API
+    * [Zalando API Guidelines](https://opensource.zalando.com/restful-api-guidelines/)
+    * [Paypal API Guidelines](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
+    and [Design Patterns](https://github.com/paypal/api-standards/blob/master/patterns.md)
+    * [Microsoft Web API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
+    * [The Web API Checklist](https://mathieu.fenniak.net/the-api-checklist/)
+    * [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
+    * [REST API Error Handling - Problem Details Response](https://blog.restcase.com/rest-api-error-handling-problem-details-response/)
+  * OpenAPI
+    * [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/)
+    * [OpenAPI Mindmap](https://openapi-map.apihandyman.io/)
+    * [A Guide to What’s New in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
+    * [Swagger Editor](https://editor.swagger.io/) has a "Convert to OpenAPI 3" option
+    * [swagger-petstore](https://github.com/swagger-api/swagger-petstore) as OpenAPI 3.0 example
 
 *(Page mainly written in May 2020; links checked on 20.02.2022)*
 
 [*Go to parent page*](../README.md)
 
 
-## Guidelines
+* Guidelines
+  * General
+    * [MUST provide API specification using **OpenAPI**](https://opensource.zalando.com/restful-api-guidelines/#101)
+    * SHOULD write **self-contained** API specification without references
+    * [MUST write APIs using **U.S. English**](https://opensource.zalando.com/restful-api-guidelines/#103)
+    * [SHOULD monitor **API usage**](https://opensource.zalando.com/restful-api-guidelines/#193)
+  * Meta-Information
+    * [MUST contain API **meta information**](https://opensource.zalando.com/restful-api-guidelines/#218)
+    * [MUST use **semantic versioning**](https://opensource.zalando.com/restful-api-guidelines/#116)
+    * [MUST **provide API immutable identifier**](https://opensource.zalando.com/restful-api-guidelines/#215)
+  * Security
+    * [MUST secure endpoints with **JWT Token**](https://opensource.zalando.com/restful-api-guidelines/#104) (see [jwt.io](https://jwt.io/))
+    * [MUST define and assign **permissions**](https://opensource.zalando.com/restful-api-guidelines/#105)
+  * Compatibility and Deprecation
+    * [MUST NOT break **backward compatibility**](https://opensource.zalando.com/restful-api-guidelines/#106)
+    * [MUST always return **JSON objects as top-level data structures**](https://opensource.zalando.com/restful-api-guidelines/#110)
+    * MUST use **major URI Versioning** to provide [explorability](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#versioning)
+    * [MUST reflect **deprecation** in API specifications](https://opensource.zalando.com/restful-api-guidelines/#187)
+    * [SHOULD add **Deprecation and Sunset** header to responses](https://opensource.zalando.com/restful-api-guidelines/#189)
 
-Following guidelines are personal choices of many 
-[Zalando](https://opensource.zalando.com/restful-api-guidelines/#) and
-[Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md) REST API guidelines
-but also from others [sources](#Sources)
-
-### General
-* [MUST provide API specification using **OpenAPI**](https://opensource.zalando.com/restful-api-guidelines/#101); 
-  see also [OpenAPI Mindmap](https://openapi-map.apihandyman.io/), 
-  [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/)
-* MUST write **self-contained** API specification without references; stricter than 
-  [Zalando](https://opensource.zalando.com/restful-api-guidelines/#234)
-* [MUST write APIs using **U.S. English**](https://opensource.zalando.com/restful-api-guidelines/#103)
-* [SHOULD monitor **API usage**](https://opensource.zalando.com/restful-api-guidelines/#193)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### Meta-Information
-* [MUST contain API **meta information**](https://opensource.zalando.com/restful-api-guidelines/#218)
-* [MUST use **semantic versioning**](https://opensource.zalando.com/restful-api-guidelines/#116)
-* [MUST **provide API immutable identifier**](https://opensource.zalando.com/restful-api-guidelines/#215)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### Security
-* [MUST secure endpoints with **OAuth 2.0 + JWT Token**](https://opensource.zalando.com/restful-api-guidelines/#104)
-* [MUST define and assign **permissions**](https://opensource.zalando.com/restful-api-guidelines/#105)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### Compatibility and Deprecation
-* [MUST NOT break **backward compatibility**](https://opensource.zalando.com/restful-api-guidelines/#106)
-* [MUST always return **JSON objects as top-level data structures**](https://opensource.zalando.com/restful-api-guidelines/#110)
-* [MUST treat Open API specification as **open for extension by default**](https://opensource.zalando.com/restful-api-guidelines/#111)
-* [MUST represent **enumerations as strings**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#enumeration); 
-  see also [*x-extensible-enum*](https://opensource.zalando.com/restful-api-guidelines/#112), 
-  [Zalando](https://opensource.zalando.com/restful-api-guidelines/#125)
-* MUST use **major URI Versioning** to provide [explorability](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#versioning); 
-  is contrary of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#115)
-* [MUST reflect **deprecation** in API specifications](https://opensource.zalando.com/restful-api-guidelines/#187)
-* [SHOULD add **Deprecation and Sunset** header to responses](https://opensource.zalando.com/restful-api-guidelines/#189)
-
-[*Go to top*](#REST-API-Guidelines)
-
+TODO
 
 ### JSON guidelines and Data formats
 * MUST use **snake_case** for [property names](https://opensource.zalando.com/restful-api-guidelines/#118) 
@@ -224,68 +236,5 @@ but also from others [sources](#Sources)
     application/json; charset=utf-8' in the response by the server
   * see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#230)
 * [MUST support **X-Flow-ID**](https://opensource.zalando.com/restful-api-guidelines/#233)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-## OpenAPI vs JSON Schema vs OData
-* [JSON Schema](http://json-schema.org/) describes JSON documents
-  * JSON Schema focuses on data modeling and is more flexible as OpenAPI and could be used to 
-    implement [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
-* [Open API](https://www.openapis.org/) describes APIs
-  * OpenAPI provide more tooling as JSON Schema
-  * OpenAPI has lot of rules to follow but ease homegeanous APIs     
-  * Open API is based on an extended version of the JSON Schema
-  * Swagger is an implementation of the OpenAPI standard
-* [OData](https://www.odata.org/) is a protocol for sharing data
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-## Tools
-* list of [OpenAPI tools](https://openapi.tools/)
-* [json-server](https://github.com/typicode/json-server)
-* [problem](https://github.com/zalando/problem): A Java library that implements application/problem+json
-* [swagger-editor](https://swagger.io/tools/swagger-editor/): editor of OpenAPI APIs
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### CodeGen
-Code should be generated with [OpenAPI Generator](https://github.com/openapitools/openapi-generator)
-
-Documentation:
-  * [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md)
-  * [Migration from swagger-codegen](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/migration-from-swagger-codegen.md)
-  * alternatives: [swagger codegen](https://github.com/swagger-api/swagger-codegen), 
-[zalando swagger codegen](https://github.com/zalando-stups/swagger-codegen-tooling))
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### Documentation
-Documentation should be provided in [Swagger UI](https://swagger.io/tools/swagger-ui/) 
-with [springdoc-openapi](https://springdoc.org/)
-* alternatives: [redoc](https://github.com/Redocly/redoc), [dapperdox](http://dapperdox.io/), 
-[widdershins](https://github.com/mermade/widdershins)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-## Sources
-* Sources of the guidelines:
-  * [Zalando API Guidelines](https://opensource.zalando.com/restful-api-guidelines/)
-  * [Paypal API Guidelines](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines) 
-    and [Design Patterns](https://github.com/paypal/api-standards/blob/master/patterns.md)
-  * [Microsoft Web API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
-  * [The Web API Checklist](https://mathieu.fenniak.net/the-api-checklist/)
-  * [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
-  * [REST API Error Handling - Problem Details Response](https://blog.restcase.com/rest-api-error-handling-problem-details-response/)
-* OpenAPI documentations:
-  * [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/)
-  * [OpenAPI Mindmap](https://openapi-map.apihandyman.io/)
-  * [A Guide to What’s New in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
-  * [Swagger Editor](https://editor.swagger.io/) has a "Convert to OpenAPI 3" option
-* Example of OpenAPI 3.0: [swagger-petstore](https://github.com/swagger-api/swagger-petstore)
 
 [*Go to top*](#REST-API-Guidelines)
