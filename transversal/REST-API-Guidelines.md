@@ -257,8 +257,7 @@ Code should be generated with [OpenAPI Generator](https://github.com/openapitool
 Documentation:
   * [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md)
   * [Migration from swagger-codegen](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/migration-from-swagger-codegen.md)
-  
-(alternatives to codegen: [swagger codegen](https://github.com/swagger-api/swagger-codegen), 
+  * alternatives: [swagger codegen](https://github.com/swagger-api/swagger-codegen), 
 [zalando swagger codegen](https://github.com/zalando-stups/swagger-codegen-tooling))
 
 [*Go to top*](#REST-API-Guidelines)
@@ -267,9 +266,8 @@ Documentation:
 ### Documentation
 Documentation should be provided in [Swagger UI](https://swagger.io/tools/swagger-ui/) 
 with [springdoc-openapi](https://springdoc.org/)
-
-(alternatives to codegen: [redoc](https://github.com/Redocly/redoc), [dapperdox](http://dapperdox.io/), 
-[widdershins](https://github.com/mermade/widdershins))
+* alternatives: [redoc](https://github.com/Redocly/redoc), [dapperdox](http://dapperdox.io/), 
+[widdershins](https://github.com/mermade/widdershins)
 
 [*Go to top*](#REST-API-Guidelines)
 
@@ -284,7 +282,6 @@ with [springdoc-openapi](https://springdoc.org/)
   * [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
   * [REST API Error Handling - Problem Details Response](https://blog.restcase.com/rest-api-error-handling-problem-details-response/)
 * OpenAPI documentations:
-  * [OpenAPI and JSON Schema Divergence](https://apisyouwonthate.com/blog/openapi-and-json-schema-divergence)
   * [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/)
   * [OpenAPI Mindmap](https://openapi-map.apihandyman.io/)
   * [A Guide to What’s New in OpenAPI 3.0](https://swagger.io/blog/news/whats-new-in-openapi-3-0/)
@@ -293,7 +290,6 @@ with [springdoc-openapi](https://springdoc.org/)
 * various APIs: [randomuser](https://randomuser.me/), [chuck norris db](http://www.icndb.com/api/), 
   [GitHub](https://developer.github.com/v3/),
   [OpenWeatherMap](https://openweathermap.org/api), 
-  [Star Wars](https://swapi.dev/), 
   [Opendata Swiss](https://opendata.swiss/en/), 
   [Swiss public transport](https://transport.opendata.ch/)
 
