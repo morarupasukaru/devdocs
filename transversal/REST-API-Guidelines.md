@@ -95,40 +95,41 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [MUST use **Kebab-Case** with uppercase separate words for HTTP header](https://opensource.zalando.com/restful-api-guidelines/#132)
     * [MUST **pluralize** resource names](https://opensource.zalando.com/restful-api-guidelines/#134)
     * [MUST stick to **conventional query parameters**](https://opensource.zalando.com/restful-api-guidelines/#137)
+  * Resources
+    * [MUST **avoid actions** - think about resources](https://opensource.zalando.com/restful-api-guidelines/#138)
+    * SHOULD use **[controller resources](https://github.com/paypal/api-standards/blob/master/patterns.md#controller-resources)**
+      if a resource cannot be designed
+    * [SHOULD keep URLs **verb-free**](https://opensource.zalando.com/restful-api-guidelines/#141)
+    * [MUST identify resources and sub-resources via **path segments**](https://opensource.zalando.com/restful-api-guidelines/#143)
+    * [MUST limit number of sub-resource levels](https://opensource.zalando.com/restful-api-guidelines/#147)
+      (e.g. collection/item/collection)
+    * [MAY consider using **(non-)nested URLs**](https://opensource.zalando.com/restful-api-guidelines/#145)
+    * ... but MUST NOT expose a large number of small resources to avoid **chatty API**
+    * SHOULD use [**ULID**](https://github.com/ulid/javascript) instead of [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier); 
+      see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#144)
+    * MUST use UUID or ULID instead of integer as **resource id**
+  * HTTP requests
+    * [MUST use **HTTP methods** correctly](https://opensource.zalando.com/restful-api-guidelines/#148); 
+      see [paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-methods-headers-and-statuses)
+    * [MUST fulfill **safe, idempotent, cacheable** properties of HTTP methods](https://opensource.zalando.com/restful-api-guidelines/#149)
+    * [SHOULD design **idempotent POST**](https://github.com/paypal/api-standards/blob/master/patterns.md#idempotency-for-post-requests); 
+      see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#229) and [Idempotency-Key](https://opensource.zalando.com/restful-api-guidelines/#230)
+  * HTTP headers
+    * [SHOULD use only following **standard headers**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-standard-headers)
+      * '[Accept](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept):
+        application/json' (in request)
+      * '[Accept-Charset](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Charset):
+        utf-8' (in request)
+      * '[Content-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language)'
+        (in request/response)
+     * '[Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type):
+        application/json; charset=utf-8' (in response)
+    * [MAY consider to support **Idempotency-Key** header](https://opensource.zalando.com/restful-api-guidelines/#230)
+    * [MUST support **X-Flow-ID** header](https://opensource.zalando.com/restful-api-guidelines/#233)
 
-[*Go to top*](#REST-API-Guidelines)
+TODO
 
-
-### Resources
-* [MUST **avoid actions** - think about resources](https://opensource.zalando.com/restful-api-guidelines/#138)
-* SHOULD use **[controller resources](https://github.com/paypal/api-standards/blob/master/patterns.md#controller-resources)** 
-  if a resource cannot be designed
-* [MUST keep URLs **verb-free**](https://opensource.zalando.com/restful-api-guidelines/#141)
-* [MUST identify resources and sub-resources via **path segments**](https://opensource.zalando.com/restful-api-guidelines/#143)
-* [MAY consider using **(non-)nested URLs**](https://opensource.zalando.com/restful-api-guidelines/#145)
-* SHOULD use [**ULID**](https://github.com/ulid/javascript) instead of [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier); 
-  see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#144)
-* MUST have non-numeric non-sequential value as **resource id** (e.g. ULID)
-* MUST NOT have **resource URIs** more complex than collection/item/collection, 
-  [Zalando](https://opensource.zalando.com/restful-api-guidelines/#147)
-* MUST NOT expose a large number of small resources to avoid **chatty API**
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### HTTP requests
-* [MUST use **HTTP methods** correctly](https://opensource.zalando.com/restful-api-guidelines/#148); 
-  see [paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-methods-headers-and-statuses) 
-* [MUST follow expected **safe, idempotent, cacheable** support of HTTP methods](https://opensource.zalando.com/restful-api-guidelines/#149)
-* SHOULD have [**idempotent POST**](https://github.com/paypal/api-standards/blob/master/patterns.md#idempotency-for-post-requests) 
-  operations; see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#229), [Idempotency-Key](https://opensource.zalando.com/restful-api-guidelines/#230)
-* [MUST **repeat query parameter for collections**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#passing-multiple-values-for-the-same-query-parameter), 
-  see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#154)
-
-[*Go to top*](#REST-API-Guidelines)
-
-
-### HTTP status codes and errors
+### HTTP responses
 * MUST use following **[HTTP Status Codes](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#allowed-status-codes-list)**
     * for API dev: 
       [200 *OK*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200), 
@@ -192,17 +193,3 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
 
 [*Go to top*](#REST-API-Guidelines)
 
-
-### HTTP headers
-* SHOULD use only following **[standard headers](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-standard-headers)**
-  * SHOULD send header '[Accept](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept): 
-    application/json', '[Accept-Charset](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Charset): 
-    utf-8', '[Content-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language)' 
-    in the request by client
-  * MUST send '[Content-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Language)', 
-    '[Content-Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Type): 
-    application/json; charset=utf-8' in the response by the server
-  * see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#230)
-* [MUST support **X-Flow-ID**](https://opensource.zalando.com/restful-api-guidelines/#233)
-
-[*Go to top*](#REST-API-Guidelines)
