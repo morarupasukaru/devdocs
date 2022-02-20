@@ -19,7 +19,7 @@
   * [Documentation](#Documentation)
 * [Sources](#Sources)
 
-*(Page mainly written in May 2020)*
+*(Page mainly written in May 2020; links checked on 20.02.2022)*
 
 [*Go to parent page*](../README.md)
 
