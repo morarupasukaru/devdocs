@@ -4,14 +4,14 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 
 * [**DOM - Document Object Model**](#dom---document-object-model): 
   to manipulate elements of HTML
-  * [Window Object](#Window-Object) properties are globally available in browser like 
+  * [Window Object](#Window-Object) properties are globally available in the browser; e.g.
     [document](https://developer.mozilla.org/en-US/docs/Web/API/Document)
   * [DOM Manipulations](#DOM-Manipulations) are mainly available with global object 
     [document](https://developer.mozilla.org/en-US/docs/Web/API/Document) or
     [Element](https://developer.mozilla.org/en-US/docs/Web/API/Element) /
     [Node](https://developer.mozilla.org/en-US/docs/Web/API/Node) objects
-  * [Events](#Events) can be triggered by user actions or programmatically and can be listen 
-    by [event-handlers](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events#dom_event_handler_list)
+  * [Events](#Events) can be triggered by user actions or programmatically and can be listened by
+    [event-handlers](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events#dom_event_handler_list)
 * [**Web Storage API**](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API): 
   to store data locally within user's browser; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API/Using_the_Web_Storage_API)
@@ -95,12 +95,11 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 
 ## DOM - Document Object Model
 
-The [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) allow to 
-manipulate elements of HTML documents.
+The [Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) (DOM) allow manipulating elements of HTML documents.
 
 ### Window Object
 
-main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) Object 
+Main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Window) Object 
 * [window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location) returns a 
   [Location](https://developer.mozilla.org/en-US/docs/Web/API/Location) object. You can also assign a String.
 * [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history) returns a 
@@ -126,6 +125,10 @@ main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
 
 ### DOM Manipulations
 
+DOM Manipulations are mainly available with global object
+[document](https://developer.mozilla.org/en-US/docs/Web/API/Document) or
+[Element](https://developer.mozilla.org/en-US/docs/Web/API/Element) /
+[Node](https://developer.mozilla.org/en-US/docs/Web/API/Node) objects:
 * single element selectors: [document.getElementById()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementById) /
   [querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector), 
   [Element.querySelector()](https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector)
@@ -168,6 +171,9 @@ main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
 
 ### Events
 
+Events can be triggered by user actions or programmatically and can be listened by
+  [event-handlers](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events#dom_event_handler_list)
+  
 * [EventTarget.addEventListener('evt', function)](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) / 
   [removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
 * [Events](https://developer.mozilla.org/en-US/docs/Web/Events):
