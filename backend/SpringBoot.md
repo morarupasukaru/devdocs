@@ -51,7 +51,9 @@
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
 
-*(Page mainly written in July 2020; linked checked on 15.02.2022)*
-
+----
+* *Page mainly written in July 2020; linked checked on 15.02.2022*
+* *Disclaimer: notes should remain valid to latest SprintBoot version; stable version at February 2022 is 2.6.3*
+----
 
 [*Go to parent page*](../README.md)

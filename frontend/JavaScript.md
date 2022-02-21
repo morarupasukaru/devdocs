@@ -341,4 +341,7 @@ and is the scripting language for Web pages.
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019)*
+
+----
+* *Page mainly written in 2019*
+----

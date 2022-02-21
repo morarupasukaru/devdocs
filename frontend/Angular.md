@@ -73,8 +73,6 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019, last update: february 2022)*
-
 
 ## Angular concepts
 
@@ -784,3 +782,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 * see [NestJS docs](https://docs.nestjs.com/) 
 
 [*Go to top*](#Angular)
+
+----
+* *Page mainly written in 2019, last update: february 2022*
+----
