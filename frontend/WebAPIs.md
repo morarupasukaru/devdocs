@@ -89,7 +89,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 * [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
-*(Page mainly written in 2019, last update: september 2020)*
+*(Page mainly written in 2019, last update: september 2020; links checked on 21.02.2022)*
 
 [*Go to parent page*](../README.md)
 
