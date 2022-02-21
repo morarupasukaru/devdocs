@@ -30,7 +30,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   to perform server requests (and replace 
   [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest));
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-* [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console_API) 
+* [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console_API): 
   to ease debugging by using the methods of the [Console](https://developer.mozilla.org/en-US/docs/Web/API/Console) 
   global object
 * [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API): to compose and manipulate 
@@ -38,13 +38,14 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   * [window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location) 
       returns a [Location](https://developer.mozilla.org/en-US/docs/Web/API/Location) 
       to manipulate actual display URL
-  * [JavaScript](./JavaScript.md) provide methods to encode/decode URI: 
-      [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) / 
-      [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent)
+  * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) / 
+    [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) 
+    [JavaScript](./JavaScript.md) methods
 * [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API): 
   to display a specific Element in full-screen mode; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
-* [Presentation](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API): to support dual-screen
+* [Presentation](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API): 
+  to support dual-screen
 * [Page Visibility](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API): 
   to know when a document becomes visible or hidden
   (see also [stackoverflow question](https://stackoverflow.com/questions/1060008/is-there-a-way-to-detect-if-a-browser-window-is-not-currently-active/9502074#9502074)
@@ -52,24 +53,26 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API): 
   to support e.g. infinite-scrolling; 
   see [scroll-aware navigation bar](https://academind.com/learn/javascript/scroll-aware-navigation/)
-* [Constraint validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation) 
+* [Constraint validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation): 
   to apply custom validation on user inputs; 
   see [guide](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#Validating_forms_using_JavaScript)
 * [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API): 
   to run a script operation in a background thread; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 * [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API): 
-  to provide proxy servers between web apps, the browser, and the network; 
+  to proxy servers between web apps, the browser and the network; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
- * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
+* [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API):
+  allow web workers to notify messages to end user;
+  see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache): 
+   to provide a cache of HTTP requests/responses (e.g. for offline 
+   capability with service workers)
 * [Broadcast Channel API](https://developer.mozilla.org/en-US/docs/Web/API/Broadcast_Channel_API): 
   to communicate between browsing contexts of same [origin](https://developer.mozilla.org/en-US/docs/Glossary/origin)
 * [Channel Messaging API](https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API): 
   to communicate between browsing contexts of different origins; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Channel_Messaging_API/Using_channel_messaging)
-* [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API): 
-  allow web workers to notifications to end user; 
-  see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
 * [Server-sent Events (SSE)](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events): 
   enable push communication from server to client (one way communication) with an always open HTTP connection, 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
@@ -81,11 +84,9 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   see [client](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications)
   and [server](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers) guides
   * more complex than Server-sent Events (could require infrastructure changes)
-* [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) (push notifications): allow web notifications in conjunction with 
+* [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API): allow push notifications in conjunction with 
   [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and 
-  [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API); 
-  (use [web push protocol](https://tools.ietf.org/html/rfc8030) underneath normally)
-  * is still *experimental* (at 01.10.2020)
+  [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 * [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 
 *(Page mainly written in 2019, last update: september 2020)*

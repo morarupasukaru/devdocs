@@ -31,7 +31,6 @@
 
 ## PWA with Angular
 
-
 * [Service Workers](https://angular.io/guide/service-worker-intro)
   * [Create a Progressive Web App with the Angular CLI](https://web.dev/creating-pwa-with-angular-cli/):
     * Configure Service Workers in an Angular project: `ng add @angular/pwa`
