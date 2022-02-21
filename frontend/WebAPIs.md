@@ -138,16 +138,15 @@ DOM Manipulations are mainly available with global object
   [getElementsByTagName()](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByTagName) /
   [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll), 
   [Element.getElementsByClassName()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName) /
-  [getElementsByTagName()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName) /
-  [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/querySelectorAll)
+  [getElementsByTagName()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName)
 * traversing the DOM: element.[children](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) /
   [firstElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) /
   [lastElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/lastElementChild) /
   [parentElement](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement) /
   [nextElementSibling](https://developer.mozilla.org/en-US/docs/Web/API/NonDocumentTypeChildNode/nextElementSibling) /
   [previousElementSibling](https://developer.mozilla.org/en-US/docs/Web/API/NonDocumentTypeChildNode/previousElementSibling)
-* creating element: [document.createElement()](https://developer.mozilla.org/fr/docs/Web/API/Document/createElement) / 
-  [createTextNode()](https://developer.mozilla.org/fr/docs/Web/API/Document/createTextNode), 
+* creating element: [document.createElement()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) / 
+  [createTextNode()](https://developer.mozilla.org/en-US/docs/Web/API/Document/createTextNode), 
   [Node.appendChild()](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild) / 
   [insertBefore()](https://developer.mozilla.org/en-US/docs/Web/API/Node/insertBefore)
 * replace element: [Node.replaceChild(newElement, oldElement)](https://developer.mozilla.org/en-US/docs/Web/API/Node/replaceChild)
