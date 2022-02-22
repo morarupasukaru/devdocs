@@ -56,7 +56,7 @@ and is the scripting language for Web pages.
   * ... to Number: [parseInt(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt),
     [parseFloat(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), 
     [Number(any type)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) function (without new)
-    and [unary + operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Unary_plus_()) 
+    and [unary + operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators) 
   * ... to Boolean: `myValue === 'true'`
   * [type coersion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) 
     happens in several cases in JavaScript and means that when the operands of an operator are different types, 
@@ -78,7 +78,7 @@ and is the scripting language for Web pages.
     [static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static),
     [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends),
     [super](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super) keywords
-    and [getter/setter](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#Getters_and_Setters)
+    and [getter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get)/[setter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set)
     * [class](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes) is a syntactic sugar; prototype inheritance remains under the hood
   * [this](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this) keyword to access object properties
   * [hasOwnProperty()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty) indicate if an object has the specified property as its own property (as opposed to inheriting it)
@@ -106,7 +106,7 @@ and is the scripting language for Web pages.
     * see shorter syntax of [method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
     * [**this** refer to object's properties within an object method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#As_an_object_method)
   * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-    * create array with [array literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#common_operations); e.g. ```[1, 2, 3]```
+    * create array with [array literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array#array_literal_notation); e.g. ```[1, 2, 3]```
     * [access with index](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#common_operations); e.g. ```array[2]```
     * [length](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/length) property,
       [Array.isArray()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray),
