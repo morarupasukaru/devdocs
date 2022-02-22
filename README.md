@@ -21,6 +21,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
   and *static HTML (pre-rendered)*
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
+* [NgRx](frontend/NgRx.md) to manage application state
 * [Progressive Web App](frontend/PWA.md) to provide desktop's like applications on the web (fast, installable, offline)
 * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
   [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
