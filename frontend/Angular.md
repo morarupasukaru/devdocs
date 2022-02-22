@@ -35,6 +35,7 @@
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
+  * [Angular Internationalization](https://angular.io/guide/i18n-overview) with [@angular/localize](https://angular.io/api/localize)
   * [Web workers](https://angular.io/guide/web-worker) to run computations in a background thread
   * [Angular Libraries](#Angular-Libraries)  
 * [References](#References)
