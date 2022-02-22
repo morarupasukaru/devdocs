@@ -226,8 +226,6 @@ in different use cases
 * custom property and event bindings
   * Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
   * Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
-  * use [Alias on @Input/@Output](https://angular.io/guide/attribute-directives#bind-to-an-input-alias) to have 
-    different public name than class property
   * Components communication with @Input & @Output is good if component are not far for themselves (e.g. parent-child)
 * a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a 
   DOM element available within in template (could replace bindings with custom properties)
@@ -257,9 +255,7 @@ in different use cases
       input: InputRefDirective;
     }   
     ```
-
-    https://angular.io/api/core/Directive#options
-* [ng-container](https://angular.io/guide/structural-directives#ng-container-to-the-rescue) is a grouping element 
+* [ng-container](https://angular.io/api/core/ng-container) is a grouping element 
   that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
 * [ng-template](https://angular.io/api/core/ng-template) defines a template that is not rendered by default
   * [template variables](https://angular.io/guide/template-reference-variables#template-input-variable) can be defined
@@ -270,7 +266,7 @@ in different use cases
     [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
   * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
     [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
-  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/), [page 2](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
+  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
 
 [*Go to top*](#Angular)
 
