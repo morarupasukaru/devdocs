@@ -32,7 +32,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
     allow you to specify the exact value a string must have (enum-like); 
     * e.g. `type Alignment = "left" | "right" | "center";`
-* functions
+* TODO functions
   * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) 
     can be used to specify the signature
   * [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type) 
@@ -43,15 +43,15 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [rest parameters](https://www.typescriptlang.org/docs/handbook/functions.html#rest-parameters) 
     available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) 
     as well
-* [classes](https://www.typescriptlang.org/docs/handbook/classes.html) of TypeScript are more powerful as in 
+* [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
-  * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/classes.html#public-by-default) (default), [private](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-typescripts-private), [protected](https://www.typescriptlang.org/docs/handbook/classes.html#understanding-protected), [readonly](https://www.typescriptlang.org/docs/handbook/classes.html#readonly-modifier)
-  * [static properties](https://www.typescriptlang.org/docs/handbook/classes.html#static-properties) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
-  * [abstract classes](https://www.typescriptlang.org/docs/handbook/classes.html#abstract-classes)
+  * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/2/classes.html#public) (default), [private](https://www.typescriptlang.org/docs/handbook/2/classes.html#private), [protected](https://www.typescriptlang.org/docs/handbook/2/classes.html#protected), [readonly](https://www.typescriptlang.org/docs/handbook/2/classes.html#readonly)
+  * [static members](https://www.typescriptlang.org/docs/handbook/2/classes.html#static-members) (es6 supports only [static methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static))
+  * [abstract classes](https://www.typescriptlang.org/docs/handbook/2/classes.html#abstract-classes-and-members)
   * [private and protected constructors](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-0.html#private-and-protected-constructors) 
     are useful to implement singleton pattern
-  * [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) 
-    in constructor is a shorthand for declaring a property with the same name as the parameter and initializing it 
+  * [parameter property declaration](https://www.typescriptlang.org/docs/handbook/2/classes.html#parameter-properties) 
+    in a constructor is a shorthand for declaring a property with the same name as the parameter and initializing it 
     with the value of the parameter
 * [interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces) are used to define custom types/contracts 
   to be implemented by [classes](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
