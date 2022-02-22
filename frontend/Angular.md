@@ -3,6 +3,7 @@
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
+* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 13 (11.2021)
 * [Angular concepts](https://angular.io/guide/architecture)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -785,4 +786,5 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
 ----
 * *Page mainly written in 2019, last update: february 2022*
+* *Disclaimer: notes concern up to Angular 8 (5.2018) but should be valid for latest version*
 ----
