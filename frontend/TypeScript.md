@@ -32,17 +32,15 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
     allow you to specify the exact value a string must have (enum-like); 
     * e.g. `type Alignment = "left" | "right" | "center";`
-* TODO functions
-  * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) 
-    can be used to specify the signature
-  * [function type](https://www.typescriptlang.org/docs/handbook/functions.html#writing-the-function-type) 
+* [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+  * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
-  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) 
-    to write compact code
-  * [default parameters](https://www.typescriptlang.org/docs/handbook/functions.html#optional-and-default-parameters)
-  * [rest parameters](https://www.typescriptlang.org/docs/handbook/functions.html#rest-parameters) 
-    available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions) 
+  * [optional and default parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#optional-parameters)
+  * [rest parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#rest-parameters)
+    available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions)
     as well
+  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) TODO
+    to write compact code
 * [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
   * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/2/classes.html#public) (default), [private](https://www.typescriptlang.org/docs/handbook/2/classes.html#private), [protected](https://www.typescriptlang.org/docs/handbook/2/classes.html#protected), [readonly](https://www.typescriptlang.org/docs/handbook/2/classes.html#readonly)
