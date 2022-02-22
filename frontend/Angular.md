@@ -59,7 +59,7 @@
     [Angular Universal](#Angular-Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
-* [References](#References)
+* References
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
   * [Angular Docs](https://angular.io/docs)
