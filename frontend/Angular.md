@@ -44,19 +44,6 @@
     * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to
       ease search engine work
     * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
-* [References](#References)
-  * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
-  * [TypeScript](TypeScript.md)
-  * [Angular Docs](https://angular.io/docs)
-  * [Angular CLI](https://angular.io/cli)
-  * [Cheatsheet](https://angular.io/guide/cheatsheet)
-  * [Angular Update Guide](https://update.angular.io/)
-  * courses: 
-    * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
-    * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
-    * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
-    * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
-    * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)  
 * [Ecosystem](#Ecosystem)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
@@ -72,6 +59,19 @@
     [Angular Universal](#Angular-Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+* [References](#References)
+  * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
+  * [TypeScript](TypeScript.md)
+  * [Angular Docs](https://angular.io/docs)
+  * [Angular CLI](https://angular.io/cli)
+  * [Cheatsheet](https://angular.io/guide/cheatsheet)
+  * [Angular Update Guide](https://update.angular.io/)
+* Courses
+  * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
+  * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
+  * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
+  * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
+  * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)
 
 [*Go to parent page*](../README.md)
 
