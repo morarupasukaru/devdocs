@@ -56,7 +56,6 @@
     * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
     * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
     * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
-    * [NgRx (with NgRx Data) - The Complete Guide](https://www.udemy.com/course/ngrx-course/)  
     * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)  
 * Ecosystem
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
