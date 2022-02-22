@@ -28,9 +28,9 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     allow to create a new name for a type 
   * [union types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) 
     allow to accept a given variable to be a of dedicated list of types (more restrictive than 
-    [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any))
-  * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) 
-    allow you to specify the exact value a string must have (enum-like)
+    [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any))
+  * [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
+    allow you to specify the exact value a string must have (enum-like); e.g. `type Alignment = "left" | "right" | "center";`
 * functions
   * [interface of function type](https://www.typescriptlang.org/docs/handbook/interfaces.html#function-types) 
     can be used to specify the signature
