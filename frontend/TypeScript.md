@@ -126,6 +126,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   
 
 ----
-* *Page mainly written in 2019*
+* *Page mainly written in 2019* TODO
 * *Disclaimer: notes concern up to Typescript 3.x*
 ----
