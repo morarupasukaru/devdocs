@@ -14,12 +14,12 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     [bigint](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#bigint),
     [object](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types),
     [array](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays),
-    [tuple](https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple), 
+    [tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types), 
     [enum](https://www.typescriptlang.org/docs/handbook/enums.html), 
     [null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined),
     [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any), 
-    [void](https://www.typescriptlang.org/docs/handbook/basic-types.html#void), 
-    [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never)
+    [void](https://www.typescriptlang.org/docs/handbook/2/functions.html#void), 
+    [never](https://www.typescriptlang.org/docs/handbook/2/functions.html#never)
   * [type annotation](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#type-annotations) 
     declare explicitly a variable to be a given type; e.g. `let x: number;`
   * [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) 
