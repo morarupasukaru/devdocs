@@ -4,7 +4,7 @@
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 13 (11.2021)
-* [Angular concepts](https://angular.io/guide/architecture)
+* [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
   * [@NgModule](#NgModule) bundle a set of components together
