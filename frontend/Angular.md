@@ -35,9 +35,15 @@
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
-  * [Angular Internationalization](https://angular.io/guide/i18n-overview) with [@angular/localize](https://angular.io/api/localize)
   * [Web workers](https://angular.io/guide/web-worker) to run computations in a background thread
   * [Angular Libraries](#Angular-Libraries)  
+  * [Angular Internationalization](https://angular.io/guide/i18n-overview)
+    with [@angular/localize](https://angular.io/api/localize)
+    or [ngx-translate](http://www.ngx-translate.com/)
+    * [ngx-translate](http://www.ngx-translate.com/) allow changing language at runtime
+    * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to
+      ease search engine work
+    * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
 * [References](#References)
   * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
@@ -53,11 +59,6 @@
     * [NgRx (with NgRx Data) - The Complete Guide](https://www.udemy.com/course/ngrx-course/)  
     * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)  
 * Ecosystem
-  * [ngx-translate](http://www.ngx-translate.com/) as internationalization library
-    * [ngx-translate](http://www.ngx-translate.com/) allow changing language at runtime
-    * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to 
-      ease search engine work
-    * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
   * [NgRx and Redux](#NgRx-and-Redux) are used to manage application state
