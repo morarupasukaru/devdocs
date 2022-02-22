@@ -9,25 +9,24 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
 * types
-  * [basic types](https://www.typescriptlang.org/docs/handbook/basic-types.html): 
-    [string](https://www.typescriptlang.org/docs/handbook/basic-types.html#string),
-    [number and bigint](https://www.typescriptlang.org/docs/handbook/basic-types.html#number),
-    [boolean](https://www.typescriptlang.org/docs/handbook/basic-types.html#boolean),
-    [object](https://www.typescriptlang.org/docs/handbook/basic-types.html#object),
-    [array](https://www.typescriptlang.org/docs/handbook/basic-types.html#array),
+  * [basic types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html): 
+    [string, number, boolean](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean),
+    [bigint](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#bigint),
+    [object](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#object-types),
+    [array](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays),
     [tuple](https://www.typescriptlang.org/docs/handbook/basic-types.html#tuple), 
-    [enum](https://www.typescriptlang.org/docs/handbook/basic-types.html#enum), 
-    [null and undefined](https://www.typescriptlang.org/docs/handbook/basic-types.html#null-and-undefined),
-    [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any), 
+    [enum](https://www.typescriptlang.org/docs/handbook/enums.html), 
+    [null and undefined](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#null-and-undefined),
+    [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any), 
     [void](https://www.typescriptlang.org/docs/handbook/basic-types.html#void), 
     [never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never)
   * [type annotation](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#type-annotations) 
     declare explicitly a variable to be a given type; e.g. `let x: number;`
   * [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) 
     infer type of variables from its value; e.g. `let x = 1;` 
-  * [type alias](https://www.typescriptlang.org/docs/handbook/advanced-types.html#type-aliases) 
+  * [type alias](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases) 
     allow to create a new name for a type 
-  * [union types](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#use-union-types) 
+  * [union types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) 
     allow to accept a given variable to be a of dedicated list of types (more restrictive than 
     [any](https://www.typescriptlang.org/docs/handbook/basic-types.html#any))
   * [string literal types](https://www.typescriptlang.org/docs/handbook/literal-types.html#string-literal-types) 
@@ -53,7 +52,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [parameter property declaration](https://www.typescriptlang.org/docs/handbook/classes.html#parameter-properties) 
     in constructor is a shorthand for declaring a property with the same name as the parameter and initializing it 
     with the value of the parameter
-* [interfaces](https://www.typescriptlang.org/docs/handbook/interfaces.html) are used to define custom types/contracts 
+* [interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces) are used to define custom types/contracts 
   to be implemented by [classes](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
   * see [optional](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties) and 
     [readonly](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) 
