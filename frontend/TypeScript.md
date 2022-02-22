@@ -54,11 +54,11 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     in a constructor is a shorthand for declaring a property with the same name as the parameter and initializing it 
     with the value of the parameter
 * [interfaces](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#interfaces) are used to define custom types/contracts 
-  to be implemented by [classes](https://www.typescriptlang.org/docs/handbook/interfaces.html#class-types)
-  * see [optional](https://www.typescriptlang.org/docs/handbook/interfaces.html#optional-properties) and 
-    [readonly](https://www.typescriptlang.org/docs/handbook/interfaces.html#readonly-properties) 
+  to be implemented by [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
+  * see [optional](https://www.typescriptlang.org/docs/handbook/2/objects.html#optional-properties) and 
+    [readonly](https://www.typescriptlang.org/docs/handbook/2/objects.html#readonly-properties) 
     properties in interface
-  * [string index signature](https://www.typescriptlang.org/docs/handbook/interfaces.html#indexable-types) allow to define maps in interface:
+  * [string index signature](https://www.typescriptlang.org/docs/handbook/2/objects.html#index-signatures) allow defining maps in interface:
     ```typescript
     interface Person {
       firstName: string;
