@@ -184,7 +184,7 @@ locally, etc.
 
 [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
 
-* [types of directives](https://angular.io/guide/attribute-directives#directives-overview): 
+* [types of directives](https://angular.io/guide/built-in-directives): 
   [structural](https://angular.io/guide/structural-directives) and 
   [attribute](https://angular.io/guide/attribute-directives) directives
 * built-in structural directives: 
@@ -192,7 +192,7 @@ locally, etc.
   [ngStyle](https://angular.io/api/common/NgStyle), 
   [ngClass](https://angular.io/api/common/NgClass), 
   [ngFor](https://angular.io/api/common/NgForOf), 
-  [ngSwitch](https://angular.io/guide/structural-directives#inside-ngswitch-directives),
+  [ngSwitch](https://angular.io/api/common/NgSwitch),
   [ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet)
 * tips: 
   * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
@@ -206,8 +206,7 @@ locally, etc.
   * by using [Renderer2](https://angular.io/api/core/Renderer2)
   * [@HostListener](https://angular.io/api/core/HostListener) to listen host DOM event
   * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host DOM properties
-  * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#pass-values-into-the-directive-with-an-input-data-binding)
-  * [Use alias to avoid extra attribute](https://angular.io/guide/attribute-directives#bind-to-an-input-alias)
+  * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#passing-values-into-an-attribute-directive)
 * [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
 
 [*Go to top*](#Angular)
