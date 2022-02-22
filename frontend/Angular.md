@@ -293,6 +293,8 @@ in different use cases
 
 #### Routing
 
+TODO
+
 [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
 
 * [configure router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
