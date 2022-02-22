@@ -39,7 +39,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [rest parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#rest-parameters)
     available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions)
     as well
-  * [arrow function](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions) TODO
+  * [this and arrow functions](https://www.typescriptlang.org/docs/handbook/2/classes.html#arrow-functions) TODO
     to write compact code
 * [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
