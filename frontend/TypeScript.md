@@ -4,6 +4,7 @@
 new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be 
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
+* [language versions](https://en.wikipedia.org/wiki/TypeScript): 0.8 (2012) to 4.5 (11.2021)
 * [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
@@ -110,7 +111,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * [noUnusedLocals](https://www.typescriptlang.org/tsconfig#noUnusedLocals): report errors on unused locals
     * [include](https://www.typescriptlang.org/tsconfig#include) /
     [exclude](https://www.typescriptlang.org/tsconfig#exclude): define compiled files
-    * [target](https://www.typescriptlang.org/tsconfig#target): specify target browser (e.g. ES6)
+    * [target](https://www.typescriptlang.org/tsconfig#target): specify target ECMAScript version (e.g. ES6)
     * [module](https://www.typescriptlang.org/tsconfig#module): specify module system (e.g. ES6)
     * see more flags in [tsconfig.json reference](https://www.typescriptlang.org/tsconfig)
   * use library (JavaScript or TypeScript)
@@ -128,4 +129,5 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
 
 ----
 * *Page mainly written in 2019*
+* *Disclaimer: notes concern up to Typescript 3.x*
 ----
