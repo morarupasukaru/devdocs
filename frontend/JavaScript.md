@@ -3,7 +3,7 @@
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
 
-* [language versions](https://en.wikipedia.org/wiki/ECMAScript): 
+* [language versions](https://en.wikipedia.org/wiki/ECMAScript#History): 
   * ES1 1997, ES2 1998, ES3 1999, ..., ES12 2021 and ES.Next for next version  
   * using [transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler) and/or [polyfills](https://en.wikipedia.org/wiki/Polyfill_(programming)) are recommended to be able to use features of latest JS version
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 

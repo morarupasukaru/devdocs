@@ -1,10 +1,10 @@
 # Typescript
 
 [TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
-new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and must be 
+new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and TypeScript must be 
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
-* [language versions](https://en.wikipedia.org/wiki/TypeScript): 0.8 (2012) to 4.5 (11.2021)
+* [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 4.5 (11.2021)
 * [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
