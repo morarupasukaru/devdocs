@@ -16,7 +16,7 @@
     in different use cases
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
-* Other features
+* [Other features](#Other-features)
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
@@ -57,7 +57,7 @@
     * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
     * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
     * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)  
-* Ecosystem
+* [Ecosystem](#Ecosystem)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
   * [NgRx](NgRx.md) used to manage application state
