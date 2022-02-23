@@ -37,7 +37,7 @@ that works to improve the security of software
 * [Injection](#Injection)
 * [Broken Authentication](#Broken-Authentication)
 * [Sensitive Data Exposure](#Sensitive-Data-Exposure)
-* [XML External Entities (XXE)](#XML-External-Entities-(XXE))
+* [XML External Entities (XXE)](#xml-external-entities-xxe)
 * [Broken Access Control](#Broken-Access-Control)
 * [Security Misconfiguration](#Security-Misconfiguration)
 * [Cross-Site Scripting XSS](#Cross-Site-Scripting-XSS)
