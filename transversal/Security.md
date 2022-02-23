@@ -1,7 +1,5 @@
 # Security
 
-TODO
-
 * [OWASP](#OWASP)
   * [Top 10 Web Application Security Risks](#Top-10-Web-Application-Security-Risks)
   * [Top 10 Proactive Controls](#Top-10-Proactive-Controls)
@@ -16,15 +14,14 @@ TODO
 * Other resources: 
   [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
-  * [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) 
-  * [auth0](https://auth0.com/) provide open-source libs to implements JWT and an authentification provider
+  * [auth0](https://auth0.com/) provide open-source libs to implements JWT [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) and an authentification provider
     * [jwks](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) aka JSON Web Key Sets is set of keys containing the public keys used to verify any JSON Web Token (JWT) issued by the authorization server
   * [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) Role-based access control is normally sufficient authorization for most applications
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
   
-*(Page mainly written in April 2020)*
+*(Page mainly written in April 2020; links checked on TODO.02.2022)*
 
 [*Go to parent page*](../README.md)
 
