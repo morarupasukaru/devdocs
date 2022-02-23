@@ -293,18 +293,16 @@ in different use cases
 
 #### Routing
 
-TODO
-
 [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
 
-* [configure router and Routes](https://angular.io/guide/router#configuration) in app.module.ts
-  * [add `<router-outlet>` in template](https://angular.io/guide/router#router-outlet) where routed components will be rendered
+* [configure router and Routes](https://angular.io/guide/router#defining-a-basic-route) in app.module.ts
+  * [add `<router-outlet>` in template](https://angular.io/guide/router#defining-a-basic-route) where routed components will be rendered
   * [configure route parameters (e.g. id)](https://angular.io/guide/router-tutorial-toh#route-parameters)
-  * [redirects and wildcard routes](https://angular.io/guide/router#setting-up-redirects) can also be configured
+  * [redirects and wildcard routes](https://angular.io/guide/router#setting-up-wildcard-routes) can also be configured
   * a good practise is to have a [separate module for route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
 * define navigation in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and 
   following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
-  * add CSS class in template with [routeLinkActive](https://angular.io/guide/router#active-router-links) 
+  * add CSS class in template with [routerLinkActive](https://angular.io/guide/router#defining-a-basic-route) 
   (see also routerLinkActiveOptions)
 * navigate programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: 
   [NavigationExtras](https://angular.io/api/router/NavigationExtras))
@@ -492,7 +490,7 @@ export class SafeUrlPipe implements PipeTransform {
 * use pipe and [map](https://rxjs.dev/api/operators/map) from [RxJS](https://rxjs.dev/guide/operators) 
   to convert response to required object
 * [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
-* good practise: encapsulate HttpClient calls inside a custom service, [see example](https://angular.io/guide/http#requesting-a-typed-response)
+* good practise: encapsulate HttpClient calls inside a custom service
 * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
   RxJS operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
 * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) RxJS operator to 
@@ -531,7 +529,7 @@ export class SafeUrlPipe implements PipeTransform {
   * Angular emulate [shadow DOM](https://en.wikipedia.org/wiki/Web_Components#Shadow_DOM) by giving a specific 
     attribute value for every html tags of a component; CSS can be applied then by using this attribute in the 
     CSS selector
-  * see [style scope](https://angular.io/guide/component-styles#style-scope)
+  * see [style scope](https://angular.io/guide/view-encapsulation)
 * default view encapsulation can be overidden by changing [@Component.encapsulation](https://angular.io/api/core/Component#encapsulation)
 * special selectors
   * [:host](https://angular.io/guide/component-styles#host) targets the element which host the component
