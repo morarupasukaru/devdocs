@@ -43,7 +43,7 @@ that works to improve the security of software
 * [Cross-Site Scripting XSS](#Cross-Site-Scripting-XSS)
 * [Insecure Deserialization](#Insecure-Deserialization)
 * [Using Components with Known Vulnerabilities](#Using-Components-with-Known-Vulnerabilities)
-* [Insufficient Logging & Monitoring](#Insufficient-Logging-&-Monitoring)
+* [Insufficient Logging & Monitoring](#insufficient-logging--monitoring)
 
 *source: [OWASP Top Ten](https://owasp.org/www-project-top-ten/)*
 
