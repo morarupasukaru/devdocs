@@ -168,7 +168,7 @@ other users’ accounts, view sensitive files, modify other users’ data, chang
 
 ***Preventions***: [Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
 
-***Cheatsheets:*** [Access Control](https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html)
+***Cheatsheets:*** [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 
 [*Go to top*](#Security)
 
