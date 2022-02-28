@@ -8,15 +8,27 @@
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
   see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
   * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
+* [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be run in a service worker until the user has a stable network connection.
+* Responsive Design (TODO add link to CSS summary)
+* [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
+* Media API to access device camera and microphone >>> TODO add correct link later
 
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in 2019, last update: february 2022)*
 
+## Application Manifest
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+
 
 ## Service Workers
 
 * Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+* see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
 * [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
 * Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
@@ -25,6 +37,44 @@
 * use of [skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) and [Clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim#example) allow to use an activated service worker on clients (tabs) without having to reload the page (could produce subtitle bugs, e.g. with versioning compatiblity of the page)
 * [ServiceWorkerRegistration.update()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update) attemps to update new version of a service worker (e.g. could be trigger regularly with [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) every minute)
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
+
+[*Go to top*](#Progressive-Web-App)
+
+
+## Caching Assets with Service Workers
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+
+## Caching Dynamic data with IndexedDB
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+## Background Sync
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+## Web Push Notifications
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+## Media API
+
+TODO
+
+[*Go to top*](#Progressive-Web-App)
+
+## Geolocation
+
+TODO
 
 [*Go to top*](#Progressive-Web-App)
 
