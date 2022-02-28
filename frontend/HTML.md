@@ -144,9 +144,10 @@ between websites.
     [tutorials](https://developer.mozilla.org/en-US/docs/Learn/HTML), 
     [tables](https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables), 
     [forms](https://developer.mozilla.org/en-US/docs/Learn/Forms)
-  * [htmldog tutorial beginner](https://htmldog.com/guides/html/beginner/), 
+  * [beginner](https://htmldog.com/guides/html/beginner/), 
     [intermediate](https://htmldog.com/guides/html/intermediate/), 
     [advanced](https://htmldog.com/guides/html/advanced/) tutorials
+    (from [htmldog](https://www.htmldog.com/))
   * [getting started HTML5](https://academind.com/learn/html/beginner-s-guide/), see also 
     [part 2: CSS](https://academind.com/learn/css/beginner-s-guide/), 
     [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/)

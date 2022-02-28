@@ -324,9 +324,10 @@ and is the scripting language for Web pages.
 * references: [MDN web docs](https://developer.mozilla.org/en-US/)
   * courses: [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/) and
     [JavaScript - The Complete Guide 2020](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
-  * [htmldog tutorial beginner](https://htmldog.com/guides/javascript/beginner/),
+  * tutorial [beginner](https://htmldog.com/guides/javascript/beginner/),
     [intermediate](https://htmldog.com/guides/javascript/intermediate/),
     [advanced](https://htmldog.com/guides/javascript/advanced/)
+    (from [htmldog](https://www.htmldog.com/))
   * webpages:
     [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/),
     [es6 summary](https://github.com/zsolt-nagy/es6-summary),
