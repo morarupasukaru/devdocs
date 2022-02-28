@@ -51,5 +51,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets), 
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
+* [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 
 *(last update 17.02.2022)*
