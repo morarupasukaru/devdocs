@@ -327,7 +327,7 @@ and is the scripting language for Web pages.
   * tutorial [beginner](https://htmldog.com/guides/javascript/beginner/),
     [intermediate](https://htmldog.com/guides/javascript/intermediate/),
     [advanced](https://htmldog.com/guides/javascript/advanced/)
-    (from [htmldog](https://www.htmldog.com/))
+    (from [htmldog](https://htmldog.com/))
   * webpages:
     [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/),
     [es6 summary](https://github.com/zsolt-nagy/es6-summary),
