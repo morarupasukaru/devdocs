@@ -91,6 +91,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be run in a service worker until the user has a stable network connection.
 * [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
 * Media API to access device camera and microphone --> TODO add correct link later
+* [Screen Orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API): change screen orientation at runtime; see [guide](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 
 *(Page mainly written in 2019, last update: september 2020; links checked on 21.02.2022)*
 
