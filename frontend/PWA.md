@@ -4,7 +4,7 @@
 
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web application installable
-  * [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) to proxy backend requests
+  * [Service Workers](#Service-Workers) to proxy backend requests
   * **Push Notifications** is used to notify the device/browser even when the   application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
@@ -84,23 +84,83 @@ Links:
 
 ## Service Workers
 
-* Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+* [Service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
 * see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
 * [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
 * [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
-* Offline can be simulated in chrome in devtools > Application > Service Workers > select "Offline"
+* Offline can be simulated in chrome in DevTools > Application > Service Workers > select "Offline"
 * JavaScript's application run in a single Thread
 * Service workers are decoupled from webpage
-* use of [skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting) and [Clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim#example) allow to use an activated service worker on clients (tabs) without having to reload the page (could produce subtitle bugs, e.g. with versioning compatiblity of the page)
-* [ServiceWorkerRegistration.update()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update) attemps to update new version of a service worker (e.g. could be trigger regularly with [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) every minute)
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) to provide a cache of HTTP requests/responses (e.g. for offline capability with service workers)
+* Service workers only work with https (and localhost as exception)
+* [Lifecycle](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#basic_architecture)
+  * javascript of window context **register** a service worker
+  * browser will **install** the service worker asynchronously and sent a `install` event to installed service worker on completion
+    * install of a Service Worker happens not with every registration, but with the first time or
+      if the code of service worker changes (`sw.js`)
+  * browser decide when the installed service worker (or new version) is **activated**
+    * default: if existing version is running, user has to close tab and then the new version is activated
+    * when a service worker is activated a `activate` event to the service worker is sent
+  * It means that with normal behaviours, user has to close/reload the application several times to have a new version of service worker working on the application
+    * default behaviours can be overriden, see TODO
+* Service workers re-acts on events
+* [Available events](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#basic_architecture)
+  * `install`, `activate` events from service worker lifecycle
+  * `fetch` events from requests made with [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) or assets download by the browser
+    * service worker does not support http requests made with [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) (old api)
+  * `sync` events made by [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API)
+  * `push` events made by push notifications
+* [Register a service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#registering_your_worker)
+  * location of the service worker sourcecode (`sw.js`) is important because it impacted pages on which the service worker is used
+    * best-practise: put `sw.js` in root folder beside root index.html
+    * code for the service worker registration can be located in a subfolder
+  * service worker registration code:
+    ```javascript
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then((reg) => {
+          console.log('Registration succeeded. Scope is ' + reg.scope);
+        })
+        .catch((error) => {
+          console.log('Registration failed with ' + error);
+        });
+    }
+    ```
+* Service workers code
+  * use [self](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/self) to access the global scope ([self](https://developer.mozilla.org/en-US/docs/Web/API/Window/self) exists also for Window)
+  * skeleton of service worker code `sw.js`:
+    ```javascript
+    self.addEventListener('install', (event) => {
+      // installing service worker
+    });
+    self.addEventListener('activate', (event) => {
+      // activating service worker
+    });
+    self.addEventListener('fetch', (event) => {
+      console.log('service worker fetching', event);
+    });
+    ```
+* Lifecycle hooks
+  * use of [skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting#example) and [Clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim#example)
+    allow to use an activated service worker on clients (tabs) without having to reload the page 
+    * changing default behaviour can produce subtle bugs; e.g. if pending save operation is waiting for available network or if there is breaking changes in APIs
+* Tips  
+  * [ServiceWorkerRegistration.update()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/update) 
+    attemps to update new version of a service worker (e.g. could be trigger 
+    regularly with [setInterval()](https://developer.mozilla.org/en-US/docs/Web/API/setInterval) every minute)
+
+see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers/sw101.png)
+
 
 [*Go to top*](#Progressive-Web-App)
 
+### Service Workers Lifecycle hooks
 
 ## Caching Assets with Service Workers
 
 TODO
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+  to provide a cache of HTTP requests/responses (e.g. for offline
+  capability with service workers)
 
 [*Go to top*](#Progressive-Web-App)
 
