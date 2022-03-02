@@ -54,4 +54,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 
-*(last update 17.02.2022)*
+*(last update 02.03.2022)*
