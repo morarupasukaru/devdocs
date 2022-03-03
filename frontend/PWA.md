@@ -19,6 +19,9 @@
     Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
   * [android studio](https://developer.android.com/studio) 
     to test PWA on emulated device
+* links    
+  * [remote debug Android devices](https://developer.chrome.com/docs/devtools/remote-debugging/)  
+    to test PWA on real android device
 * courses
   * [Progressive Web Apps (PWA) - The Complete Guide](https://www.udemy.com/course/progressive-web-app-pwa-the-complete-guide/)
   * [Angular Progressive Web Apps (PWA) MasterClass](https://www.udemy.com/course/angular-pwa-course/)
