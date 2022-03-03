@@ -65,6 +65,8 @@ Important manifest properties:
   native applications that user can install as alternative to web application
 * ([description](https://developer.mozilla.org/en-US/docs/Web/Manifest/description):
   explain what the application does; e.g. display in browser favorites)
+  
+App Install Banner require dedicated change in ui to catch events (e.g. `beforeinstallprompt`) and display the App Install Banner to user; see [How to provide your own in-app install experience  ](https://web.dev/customize-install/)
 
 [*Go to top*](#Progressive-Web-App)
 
