@@ -90,7 +90,10 @@ Links:
 ## Service Workers
 
 * [Service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
-* see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+* links
+  * [Guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
+  * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
+  * [Are Service Workers Ready? - Check Browser Support](https://jakearchibald.github.io/isserviceworkerready/)
 * [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) are executed in another Thread (in background; perform tasks without interfering with the user interface)
 * [Service Workers](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API) are a special types of Web workers
 * Offline can be simulated in chrome in DevTools > Application > Service Workers > select "Offline"
