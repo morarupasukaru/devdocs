@@ -55,3 +55,5 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 
 *(last update 02.03.2022)*
+
+test
