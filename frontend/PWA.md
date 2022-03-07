@@ -5,7 +5,8 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web application installable
   * [Service Workers](#Service-Workers) to proxy backend requests
-  * **Push Notifications** is used to notify the device/browser even when the apFplication is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
+    * e.g. [caching assets](#Caching-Assets-with-Service-Workers)
+  * **Push Notifications** is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
     see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
@@ -165,10 +166,19 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 
 ## Caching Assets with Service Workers
 
-TODO
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+ [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
   to provide a cache of HTTP requests/responses (e.g. for offline
-  capability with service workers)
+  capability with service workers).
+
+* It exists already server caching (depending on the server) and browser caching that cannot be configured/handled by web application.
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API allow to define fine-granular caching in browser, e.g. of assets, through service workers
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript
+* [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) global read-only property returns [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+* see complete [example of assets caching](https://developer.mozilla.org/en-US/docs/Web/API/Cache#examples)
+* Caching strategies
+  * TODO
+* see [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests)
+* see [Cache Persistence](https://jakearchibald.com/2014/offline-cookbook/#cache-persistence)
 
 [*Go to top*](#Progressive-Web-App)
 
