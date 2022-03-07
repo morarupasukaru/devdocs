@@ -5,7 +5,7 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web application installable
   * [Service Workers](#Service-Workers) to proxy backend requests
-  * **Push Notifications** is used to notify the device/browser even when the   application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
+  * **Push Notifications** is used to notify the device/browser even when the apFplication is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
     see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)

@@ -122,6 +122,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     A Java library that implements application/problem+json
   * [swagger-editor](https://swagger.io/tools/swagger-editor/): 
     editor of OpenAPI APIs  
+  * [httpbin](https://httpbin.org/#) a simple HTTP Request & Response Service that test typical Http Request (e.g. downloading image)
   * code generators
     * [OpenAPI Generator](https://github.com/openapitools/openapi-generator); see [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/blob/master/modules/openapi-generator-maven-plugin/README.md) and [Migration from swagger-codegen](https://github.com/OpenAPITools/openapi-generator/blob/master/docs/migration-from-swagger-codegen.md)
     * alternatives: [swagger codegen](https://github.com/swagger-api/swagger-codegen),
