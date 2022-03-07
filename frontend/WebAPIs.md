@@ -28,8 +28,10 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
     must be used to store/retrieve object or array from Storage
 * [**Fetch API**](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API): 
   to perform server requests (and replace 
-  [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest));
-  see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+  [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest))
+  * see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+  * or [Introduction to fetch()](https://developers.google.com/web/updates/2015/03/introduction-to-fetch) by google
+  * or [Detailed Usage Guide with comparison with XMLHttpRequest](https://davidwalsh.name/fetch)
 * [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console_API): 
   to ease debugging by using the methods of the [Console](https://developer.mozilla.org/en-US/docs/Web/API/Console) 
   global object
