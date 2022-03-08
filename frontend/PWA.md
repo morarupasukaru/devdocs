@@ -174,7 +174,84 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API allow to define fine-granular caching in browser, e.g. of assets, through service workers
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript
 * [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) global read-only property returns [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
-* see complete [example of assets caching](https://developer.mozilla.org/en-US/docs/Web/API/Cache#examples)
+* Precaching is to cache known request; e.g. example
+  ```javascript
+  const CACHE_STATIC_NAME = 'static-v123';
+  self.addEventListener('install', function(event) {
+    event.waitUntil(
+      caches.open(CACHE_STATIC_NAME).then(function(cache) {
+        return cache.addAll([
+          '/', // for index.html of homepage
+          '/index.html',
+          '/assets/style.css',
+          '/assets/app.js',
+          '/assets/logo.jpg'
+        ]);
+      })
+    );
+  });
+
+  self.addEventListener('fetch', function(event) {
+    event.respondWith(
+      caches.match(event.request).then(function(response) {
+        if (response !== undefined) {
+          return response;
+        } else {
+          return fetch(event.request):
+        }
+    }));
+  });
+  ```
+* Dynamic caching 
+  * Dynamic caching aims to reduce precaching by filling the cache with download assets later
+  * Dynamic caching is filled from `fetch` listener, see example:
+  ```javascript
+    // this code is missing error handling and should prevent to cache every requests 
+    // but only static assets for example
+    const CACHE_DYNAMIC_NAME = 'dynamic-v456';
+    self.addEventListener('fetch', function(event) {
+      event.respondWith(
+        caches.match(event.request).then(function(response) {
+          if (response) {
+            return response;
+          } else {
+            return fetch(event.request)
+              .then(function(res) {
+                return caches.open(CACHE_DYNAMIC_NAME)
+                  .then(function(cache) {
+                    // response must be clone because response may be used only once
+                    cache.put(event.request.url, res.clone());
+                    return res;
+                  })
+                  .catch(function(err) {
+                    // do nothing
+                  });
+              });
+          }
+      })
+  );
+  ```
+* Cache Versioning
+  * In order to serve updated assets, new version of the cache must be created
+  * Old versions of the cache must be deleted because [Cache.match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match) returns first found entry in the cache and is certainly the wrong version
+  * Cleanup of old cache versions in `activate` listener
+  ```javascript
+  self.addEventListener('activate', function(event) {
+    event.waitUntil(
+      caches.keys()
+        .then(function(keyList) {
+          return Promise.all(keyList.map(function(key) {
+            // defined constants
+            if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) { 
+              return caches.delete(key);
+            }
+          }));
+        })
+    );
+    return self.clients.claim();
+  });
+  ```
+* see complete [example of assets caching](https://developer.mozilla.org/en-US/docs/Web/API/Cache#examples) or another simple [example](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage#examples)
 * Caching strategies
   * TODO
 * see [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests)
