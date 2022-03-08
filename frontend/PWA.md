@@ -195,7 +195,7 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     event.respondWith(
       caches.match(event.request).then(function(response) {
         if (response !== undefined) {
-          return response;
+          return response; // return response from cache
         } else {
           return fetch(event.request):
         }
@@ -213,10 +213,16 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
       event.respondWith(
         caches.match(event.request).then(function(response) {
           if (response) {
-            return response;
+            return response; // return response from cache
           } else {
             return fetch(event.request)
               .then(function(res) {
+                // Check if we received a valid response
+                if(!res || res.status !== 200 || 
+                    // requests of third party assets aren't cached (with type 'cors')
+                    res.type !== 'basic') { 
+                  return res;
+                }
                 return caches.open(CACHE_DYNAMIC_NAME)
                   .then(function(cache) {
                     // response must be clone because response may be used only once
@@ -237,13 +243,14 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
   * Cleanup of old cache versions in `activate` listener
   ```javascript
   self.addEventListener('activate', function(event) {
+    var cacheList = [CACHE_STATIC_NAME, CACHE_DYNAMIC_NAME];
     event.waitUntil(
       caches.keys()
         .then(function(keyList) {
-          return Promise.all(keyList.map(function(key) {
+          return Promise.all(keyList.map(function(cacheName) {
             // defined constants
-            if (key !== CACHE_STATIC_NAME && key !== CACHE_DYNAMIC_NAME) { 
-              return caches.delete(key);
+            if (cacheList.indexOf(cacheName) === -1) {
+              return caches.delete(cacheName);
             }
           }));
         })
@@ -256,6 +263,7 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
   * TODO
 * see [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests)
 * see [Cache Persistence](https://jakearchibald.com/2014/offline-cookbook/#cache-persistence)
+* see [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
 
 [*Go to top*](#Progressive-Web-App)
 
