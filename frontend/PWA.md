@@ -258,12 +258,11 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     return self.clients.claim();
   });
   ```
-* see complete [example of assets caching](https://developer.mozilla.org/en-US/docs/Web/API/Cache#examples) or another simple [example](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage#examples)
 * Caching strategies
   * TODO
-* see [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests)
-* see [Cache Persistence](https://jakearchibald.com/2014/offline-cookbook/#cache-persistence)
-* see [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
+* other articles: [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests), 
+  [Cache Persistence](https://jakearchibald.com/2014/offline-cookbook/#cache-persistence) and
+  [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
 
 [*Go to top*](#Progressive-Web-App)
 
