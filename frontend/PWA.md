@@ -4,8 +4,9 @@
 
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web application installable
-  * [Service Workers](#Service-Workers) to proxy backend requests
-    * e.g. [caching assets](#Caching-Assets-with-Service-Workers)
+  * [Service Workers](#Service-Workers) to proxy backend requests mainly used for implementing caching of static data
+  * [Cache API](#Caching-Basis) available to service worker or frontend javascript to implements different [caching strategies](#Caching-Advanced) of static data
+  * [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#Caching-Dynamic-data)
   * **Push Notifications** is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
@@ -162,18 +163,18 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 
 [*Go to top*](#Progressive-Web-App)
 
-### Service Workers Lifecycle hooks
 
-## Caching Assets with Service Workers
+## Caching Static data - basis
 
- [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
+[Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
   to provide a cache of HTTP requests/responses (e.g. for offline
-  capability with service workers).
-
+  capability with service workers) of static data (application assets) with GET HTTP request.
+* Cache API cannot cache dynamic data or mutating requests; e.g. from REST API; see [Caching Advanced](#Caching-Advanced)
 * It exists already server caching (depending on the server) and browser caching that cannot be configured/handled by web application.
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API allow to define fine-granular caching in browser, e.g. of assets, through service workers
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript
+* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript (in Window context)
 * [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) global read-only property returns [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+* caches of a Web-application/given scope are shared between 'frontend' JS and Service Workers
 * Precaching is to cache known request; e.g. example
   ```javascript
   const CACHE_STATIC_NAME = 'static-v123';
@@ -258,6 +259,15 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     return self.clients.claim();
   });
   ```
+
+[*Go to top*](#Progressive-Web-App)
+
+
+## Caching Static data - advanced
+
+* Its exists several cache strategies depends on the use case
+** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
+
 * Caching strategies
   * TODO
 * other articles: [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests), 
@@ -267,9 +277,16 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 [*Go to top*](#Progressive-Web-App)
 
 
-## Caching Dynamic data with IndexedDB
+## Caching Dynamic data
+
+
+
+* [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) cannot cache dynamic data from REST API because it does not know the sequences of the calls and does know not what to do in error cases
+* Caching dynamic data require JavaScript code in Window context that save the changes (with sequences) and know what to do in offline mode or what to save when network is available again (by saving data in [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or in [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API))
 
 TODO
+
+* see [Overriding Angular’s Service Worker to handle POST requests](https://javascript.tutorialink.com/overriding-angulars-service-worker-to-handle-post-requests/)
 
 [*Go to top*](#Progressive-Web-App)
 
