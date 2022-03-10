@@ -5,8 +5,8 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web application installable
   * [Service Workers](#Service-Workers) to proxy backend requests mainly used for implementing caching of static data
-  * [Cache API](#Caching-Basis) available to service worker or frontend javascript to implements different [caching strategies](#Caching-Advanced) of static data
-  * [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#Caching-Dynamic-data)
+  * [Cache API](#caching-static-data---basis) available to service worker or frontend javascript to implements different [caching strategies](#caching-static-data---advanced) of static data
+  * [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
   * **Push Notifications** is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
@@ -169,7 +169,7 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
   to provide a cache of HTTP requests/responses (e.g. for offline
   capability with service workers) of static data (application assets) with GET HTTP request.
-* Cache API cannot cache dynamic data or mutating requests; e.g. from REST API; see [Caching Advanced](#Caching-Advanced)
+* Cache API cannot cache dynamic data or mutating requests; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
 * It exists already server caching (depending on the server) and browser caching that cannot be configured/handled by web application.
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API allow to define fine-granular caching in browser, e.g. of assets, through service workers
 * [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript (in Window context)
@@ -203,7 +203,7 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     }));
   });
   ```
-* Dynamic caching 
+* Cache on demand of static data (dynamic caching)
   * Dynamic caching aims to reduce precaching by filling the cache with download assets later
   * Dynamic caching is filled from `fetch` listener, see example:
   ```javascript
@@ -238,6 +238,7 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
       })
   );
   ```
+  * dynamic caching of static data can be better handle from JavaScript in Window context (logic know really in which cases, data must be cached or not); see [Caching Static data - advanced](#caching-static-data---advanced)
 * Cache Versioning
   * In order to serve updated assets, new version of the cache must be created
   * Old versions of the cache must be deleted because [Cache.match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match) returns first found entry in the cache and is certainly the wrong version
@@ -259,6 +260,11 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     return self.clients.claim();
   });
   ```
+* Links
+  * [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests) 
+  * [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
+  * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/)
+
 
 [*Go to top*](#Progressive-Web-App)
 
@@ -266,14 +272,31 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 ## Caching Static data - advanced
 
 * Its exists several cache strategies depends on the use case
+
+* **Cache on demand**
+  * frontend javascript add request urls to 'dynamic' cache that Service Worker will serve later on in offline mode
+  ```javascript
+  if ('caches' in window) {
+    caches.open('frontend-static-data')
+      .then(function(cache) {
+        cache.add('/assets/pageXyz.html');
+        cache.add('/assets/imageXyz.jpg');
+      });
+  }
+  ```
+
 ** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
 
 * Caching strategies
   * TODO
-* other articles: [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests), 
-  [Cache Persistence](https://jakearchibald.com/2014/offline-cookbook/#cache-persistence) and
-  [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
 
+
+* Links
+  * [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/)
+  * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
+  * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook)
+  * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker)
+  
 [*Go to top*](#Progressive-Web-App)
 
 
