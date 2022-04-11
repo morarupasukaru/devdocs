@@ -284,11 +284,50 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
       });
   }
   ```
+* **Offline fallback page**
+  * offline fallback page goal is to have a default "offline.html" in the caches and provide it as fallback if the requested page is not available in the cache
+    ```javascript
+    self.addEventListener('install', function(event) {
+      event.waitUntil(
+        caches.open(CACHE_STATIC_NAME)
+          .then(function(cache) {
+            cache.addAll([
+              ...
+              '/offline.html',
+              ...
+          ]);
+        }))});
 
-** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
+    self.addEventListener('fetch', function(event) {
+      event.respondWith(
+        caches.match(event.request).then(function(response) {
+          if (response) {
+            return response;
+          } else {
+            return fetch(event.request)
+              .then(function(res) {
+                return caches.open(CACHE_DYNAMIC_NAME)
+                  .then(function(cache) {
+                    cache.put(event.request.url, res.clone());
+                    return res;
+                  })
+              })
+              .catch(function(err) {
+                // maybe to configure only for html content
+                return caches.open(CACHE_STATIC_NAME)
+                  .then(function(cache) {
+                    return cache.match('/offline.html'); 
+                  });
+              });
+          }
+        })
+      );
+    });
+    ```
 
 * Caching strategies
-  * TODO
+  * previous example was the strategy "cache with network fallback"  
+** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
 
 
 * Links
