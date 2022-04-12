@@ -166,6 +166,8 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 
 ## Caching Static data - basis
 
+TODO cleanup / simplify with link to resources like https://jakearchibald.com/2014/offline-cookbook
+
 [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
   to provide a cache of HTTP requests/responses (e.g. for offline
   capability with service workers) of static data (application assets) with GET HTTP request.
@@ -326,10 +328,14 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
     ```
 
 * Caching strategies
-  * previous example was the strategy "cache with network fallback"  
+  * [Cache, falling back to network](https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network) is ideal for resources not updating frequently (see previous examples)
 ** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
-
-
+  * [Cache only](https://jakearchibald.com/2014/offline-cookbook/#cache-only) strategy might be usefull for static data 
+  * [Network only](https://jakearchibald.com/2014/offline-cookbook/#network-only) strategy to be used for non-offline request (e.g. pings)
+  * [Network falling back to cache](https://jakearchibald.com/2014/offline-cookbook/#network-falling-back-to-cache) strategy could beused for resources updating frequently (e.g. articles)
+    * on slow connection, user has to wait long before seeing something, it's better to use for example [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy
+  * [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy is often the best one to choose for frequently updated resources (something is provided quickly to user and cache is updated aftwerwards)
+* Different caching strategy can be used for different kind of request (e.g. static data vs dynamic data)
 * Links
   * [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/)
   * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
