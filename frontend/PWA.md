@@ -342,6 +342,7 @@ TODO cleanup / simplify with link to resources like https://jakearchibald.com/20
   * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook)
   * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker)
   * [Storage for the web](https://web.dev/storage-for-the-web/)
+  * Caching strategies in [Service Worker Cookbook](https://serviceworke.rs/caching-strategies.html)
 
 [*Go to top*](#Progressive-Web-App)
 
