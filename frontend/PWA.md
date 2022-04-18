@@ -335,13 +335,14 @@ TODO cleanup / simplify with link to resources like https://jakearchibald.com/20
   * [Network falling back to cache](https://jakearchibald.com/2014/offline-cookbook/#network-falling-back-to-cache) strategy could beused for resources updating frequently (e.g. articles)
     * on slow connection, user has to wait long before seeing something, it's better to use for example [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy
   * [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy is often the best one to choose for frequently updated resources (something is provided quickly to user and cache is updated aftwerwards)
-* Different caching strategy can be used for different kind of request (e.g. static data vs dynamic data)
+* [Different caching strategies](https://jakearchibald.com/2014/offline-cookbook/#putting-it-together) can be used for different kinds of request (e.g. static data vs dynamic data); 
 * Links
   * [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/)
   * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
   * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook)
   * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker)
-  
+  * [Storage for the web](https://web.dev/storage-for-the-web/)
+
 [*Go to top*](#Progressive-Web-App)
 
 
