@@ -5,17 +5,17 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
   * [Service workers](#Service-Workers) proxy requests between web applications and network (e.g. for caching)
-  * [Cache API](#caching-static-data---basis) allow service workers or frontend javascript to implements different [caching strategies](#caching-static-data---advanced) of static data
-  * [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
-  * Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
+  * [Cache API](#caching-static-data---basis) allow service workers or frontend javascript to implements [caching strategies](#caching-static-data---advanced) (mainly for static data)
+  * TODO [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
+  * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
     see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
     * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
-  * [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be   run in a service worker until the user has a stable network connection.
-  * Responsive Design (TODO add link to CSS summary)
-  * [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
-  * Media API to access device camera and microphone >>> TODO add correct link later
+  * TODO [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be   run in a service worker until the user has a stable network connection.
+  * TODO Responsive Design (TODO add link to CSS summary)
+  * TODO [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
+  * TODO Media API to access device camera and microphone >>> TODO add correct link later
 * tools
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
     Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
@@ -40,36 +40,39 @@ make web applications installable like native application on a homescreen of a d
 * **prerequisite**: require a running service worker
 * links
   * [Web App Manifest Explanation by Google](https://web.dev/add-manifest/)
-  * [How to provide your own in-app install experience](https://web.dev/customize-install/) to make web application installable
+  * [How to provide your own in-app install experience](https://web.dev/customize-install/) 
+    to make web application installable
   * [Can I use: Add to home screen](https://caniuse.com/web-app-manifest) 
   * see [How to provide your own in-app install experience](https://web.dev/customize-install/)  
-
-Major manifest properties:
-* [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name): 
-  long name of the web application
-* [short_name](https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name): 
-  short name of the web application; e.g. displayed on phone home screen
-* [start_url](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url): 
-  start URL of the web application (could be overwridden)
-* [scope](https://developer.mozilla.org/en-US/docs/Web/Manifest/scope):
-  restricts which web pages are displayed inside PWA context. If the user navigates outside the scope, it reverts to a normal web page inside a browser tab or window
-* [display](https://developer.mozilla.org/en-US/docs/Web/Manifest/display):
-  specify how much of browser UI is shown to the user; e.g. use `standalone` to make web app like native application
-* [background_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color):
-  background color while loading and an splashscreen
-* [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color):
-  define theme color used for several ui elements
-* [lang](https://developer.mozilla.org/en-US/docs/Web/Manifest/lang):
-  specifies the primary language
-* [orientation](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation):
-  defines the default screen orientation
-  * tip: it's better to support both portrait /landscape orientation instead of restrict users
-* [icons](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons):
-  defines icons that can be used for different context; e.g. on homescreen
-* [related_applications](https://developer.mozilla.org/en-US/docs/Web/Manifest/related_applications):
-  native applications that user can install as alternative to web application
-* ([description](https://developer.mozilla.org/en-US/docs/Web/Manifest/description):
-  explain what the application does; e.g. display in browser favorites)
+* major manifest properties:
+  * [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name): 
+    long name of the web application
+  * [short_name](https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name): 
+    short name of the web application; e.g. displayed on phone home screen
+  * [start_url](https://developer.mozilla.org/en-US/docs/Web/Manifest/start_url): 
+    start URL of the web application (could be overwridden)
+  * [scope](https://developer.mozilla.org/en-US/docs/Web/Manifest/scope):
+    restricts which web pages are displayed inside PWA context. 
+    If the user navigates outside the scope, it reverts to a normal web page inside a browser 
+    tab or window
+  * [display](https://developer.mozilla.org/en-US/docs/Web/Manifest/display):
+    specify how much of browser UI is shown to the user; e.g. use `standalone` to make web app 
+    like native application
+  * [background_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color):
+    background color while loading and an splashscreen
+  * [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color):
+    define theme color used for several ui elements
+  * [lang](https://developer.mozilla.org/en-US/docs/Web/Manifest/lang):
+    specifies the primary language
+  * [orientation](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation):
+    defines the default screen orientation
+    * tip: it's better to support both portrait /landscape orientation instead of restrict users
+  * [icons](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons):
+    defines icons that can be used for different context; e.g. on homescreen
+  * [related_applications](https://developer.mozilla.org/en-US/docs/Web/Manifest/related_applications):
+    native applications that user can install as alternative to web application
+  * ([description](https://developer.mozilla.org/en-US/docs/Web/Manifest/description):
+    explain what the application does; e.g. display in browser favorites)
   
 [*Go to top*](#Progressive-Web-App)
 
@@ -81,8 +84,7 @@ Safari does not yet App Manifest but meta tags can be used as alternatives.
 * links
   * [Safari supported Meta Tags](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
   * [Don’t use iOS meta tags irresponsibly in your Progressive Web Apps](https://firt.dev/ios-meta/)
-
-* Major meta tags
+* major meta tags:
   * `<meta name="apple-mobile-web-app-capable" content="yes">`: 
     enable web application as mobile web application
   * `<meta name="apple-mobile-web-app-status-bar-style" content="black">`: 
@@ -176,6 +178,8 @@ see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/We
 
 
 ## Caching Static data - basis
+
+[Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) allow service workers or frontend javascript to implements [caching strategies](#caching-static-data---advanced) (mainly for static data).
 
 TODO cleanup / simplify with link to resources like https://jakearchibald.com/2014/offline-cookbook
 
