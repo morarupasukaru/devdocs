@@ -16,6 +16,7 @@
   * TODO Responsive Design (TODO add link to CSS summary)
   * TODO [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
   * TODO Media API to access device camera and microphone >>> TODO add correct link later
+* [PWA with Angular](#PWA-with-Angular)
 * tools
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
     Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
