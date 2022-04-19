@@ -3,11 +3,11 @@
 [Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
 
 * PWA is a bundle of technologies
-  * [Web app Manifests](#Application-Manifest) make web application installable
-  * [Service Workers](#Service-Workers) to proxy backend requests mainly used for implementing caching of static data
-  * [Cache API](#caching-static-data---basis) available to service worker or frontend javascript to implements different [caching strategies](#caching-static-data---advanced) of static data
+  * [Web app Manifests](#Application-Manifest) make web applications installable
+  * [Service workers](#Service-Workers) proxy requests between web applications and network (e.g. for caching)
+  * [Cache API](#caching-static-data---basis) allow service workers or frontend javascript to implements different [caching strategies](#caching-static-data---advanced) of static data
   * [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
-  * **Push Notifications** is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
+  * Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
     see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
@@ -22,7 +22,7 @@
   * [android studio](https://developer.android.com/studio) 
     to test PWA on emulated device
 * links    
-  * [remote debug Android devices](https://developer.chrome.com/docs/devtools/remote-debugging/)  
+  * [remote debug Android devices](https://developer.chrome.com/docs/devtools/remote-debugging/) 
     to test PWA on real android device
 * courses
   * [Progressive Web Apps (PWA) - The Complete Guide](https://www.udemy.com/course/progressive-web-app-pwa-the-complete-guide/)
@@ -35,13 +35,16 @@
 
 ## Application Manifest
 
-[Web app Manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide web app as downloaded native application on a homescreen of a device (require running service worker)
+[Web app Manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+make web applications installable like native application on a homescreen of a device
+* **prerequisite**: require a running service worker
+* links
+  * [Web App Manifest Explanation by Google](https://web.dev/add-manifest/)
+  * [How to provide your own in-app install experience](https://web.dev/customize-install/) to make web application installable
+  * [Can I use: Add to home screen](https://caniuse.com/web-app-manifest) 
+  * see [How to provide your own in-app install experience](https://web.dev/customize-install/)  
 
-* [Web App Manifest Explanation by Google](https://web.dev/add-manifest/)
-* [How to provide your own in-app install experience](https://web.dev/customize-install/) to check pre-requisites required to get browser prompt to install the application
-* [Can I use](https://caniuse.com/) for [Add to home screen](https://caniuse.com/web-app-manifest)
-
-Important manifest properties:
+Major manifest properties:
 * [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name): 
   long name of the web application
 * [short_name](https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name): 
@@ -68,8 +71,6 @@ Important manifest properties:
 * ([description](https://developer.mozilla.org/en-US/docs/Web/Manifest/description):
   explain what the application does; e.g. display in browser favorites)
   
-App Install Banner require dedicated change in ui to catch events (e.g. `beforeinstallprompt`) and display the App Install Banner to user; see [How to provide your own in-app install experience  ](https://web.dev/customize-install/)
-
 [*Go to top*](#Progressive-Web-App)
 
 
@@ -77,21 +78,31 @@ App Install Banner require dedicated change in ui to catch events (e.g. `beforei
 
 Safari does not yet App Manifest but meta tags can be used as alternatives.
 
-* `<meta name="apple-mobile-web-app-capable" content="yes">`: enable web application as mobile web application
-* `<meta name="apple-mobile-web-app-status-bar-style" content="black">`: somewhat equivalent to [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)
-* `<meta name="apple-mobile-web-app-title" content="Applicatin name">`: equivalent to [short_name](https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name)
-* `<link rel="apple-touch-icon" href="..." size="..x..">`: define the used icon for homescreen like [icons](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)
+* links
+  * [Safari supported Meta Tags](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+  * [Don’t use iOS meta tags irresponsibly in your Progressive Web Apps](https://firt.dev/ios-meta/)
 
-Links:
-* [Safari supported Meta Tags](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
-* [Don’t use iOS meta tags irresponsibly in your Progressive Web Apps](https://firt.dev/ios-meta/)
+* Major meta tags
+  * `<meta name="apple-mobile-web-app-capable" content="yes">`: 
+    enable web application as mobile web application
+  * `<meta name="apple-mobile-web-app-status-bar-style" content="black">`: 
+    somewhat equivalent to 
+    [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color)
+  * `<meta name="apple-mobile-web-app-title" content="Applicatin name">`: 
+    equivalent to 
+    [short_name](https://developer.mozilla.org/en-US/docs/Web/Manifest/short_name)
+  * `<link rel="apple-touch-icon" href="..." size="..x..">`: 
+    define the used icon for homescreen like 
+    [icons](https://developer.mozilla.org/en-US/docs/Web/Manifest/icons)
 
 [*Go to top*](#Progressive-Web-App)
 
 
 ## Service Workers
 
-* [Service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+[Service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorker) 
+proxy requests between web applications and network (e.g. for caching).
+
 * links
   * [Guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
   * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
