@@ -32,7 +32,7 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019, last update: february 2022)*
+*(Page mainly written in 2019, last update: april 2022)*
 
 ## Application Manifest
 
