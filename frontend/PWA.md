@@ -4,8 +4,8 @@
 
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
-  * [Service workers](#Service-Workers) proxy requests between web applications and network (e.g. for caching)
-  * [Cache API](#caching-static-data---basis) allow service workers or frontend javascript to implements [caching strategies](#caching-static-data---advanced) (mainly for static data)
+  * [Service workers](#Service-Workers) proxy requests between web applications and network
+  * [Cache API](#Cache-API) is used to provide a cache of HTTP requests/responses of static data
   * TODO [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
   * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
@@ -161,117 +161,49 @@ proxy requests between web applications and network (e.g. for caching).
 [*Go to top*](#Progressive-Web-App)
 
 
-## Caching Static data - basis
+## Cache API
 
-[Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) allow service workers or frontend javascript to implements [caching strategies](#caching-static-data---advanced) (mainly for static data).
-
-TODO cleanup / simplify with link to resources like https://jakearchibald.com/2014/offline-cookbook
-
-[Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API is used
-  to provide a cache of HTTP requests/responses (e.g. for offline
-  capability with service workers) of static data (application assets) with GET HTTP request.
-* Cache API cannot cache dynamic data or mutating requests; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
-* It exists already server caching (depending on the server) and browser caching that cannot be configured/handled by web application.
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) API allow to define fine-granular caching in browser, e.g. of assets, through service workers
-* [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache) is available to service worker or normal javascript (in Window context)
-* [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) global read-only property returns [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
-* caches of a Web-application/given scope are shared between 'frontend' JS and Service Workers
-* Precaching is to cache known request; e.g. example
-  ```javascript
-  const CACHE_STATIC_NAME = 'static-v123';
-  self.addEventListener('install', function(event) {
-    event.waitUntil(
-      caches.open(CACHE_STATIC_NAME).then(function(cache) {
-        return cache.addAll([
-          '/', // for index.html of homepage
-          '/index.html',
-          '/assets/style.css',
-          '/assets/app.js',
-          '/assets/logo.jpg'
-        ]);
-      })
-    );
-  });
-
-  self.addEventListener('fetch', function(event) {
-    event.respondWith(
-      caches.match(event.request).then(function(response) {
-        if (response !== undefined) {
-          return response; // return response from cache
-        } else {
-          return fetch(event.request):
-        }
-    }));
-  });
-  ```
-* Cache on demand of static data (dynamic caching)
-  * Dynamic caching aims to reduce precaching by filling the cache with download assets later
-  * Dynamic caching is filled from `fetch` listener, see example:
-  ```javascript
-    // this code is missing error handling and should prevent to cache every requests 
-    // but only static assets for example
-    const CACHE_DYNAMIC_NAME = 'dynamic-v456';
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        caches.match(event.request).then(function(response) {
-          if (response) {
-            return response; // return response from cache
-          } else {
-            return fetch(event.request)
-              .then(function(res) {
-                // Check if we received a valid response
-                if(!res || res.status !== 200 || 
-                    // requests of third party assets aren't cached (with type 'cors')
-                    res.type !== 'basic') { 
-                  return res;
-                }
-                return caches.open(CACHE_DYNAMIC_NAME)
-                  .then(function(cache) {
-                    // response must be clone because response may be used only once
-                    cache.put(event.request.url, res.clone());
-                    return res;
-                  })
-                  .catch(function(err) {
-                    // do nothing
-                  });
-              });
-          }
-      })
-  );
-  ```
-  * dynamic caching of static data can be better handle from JavaScript in Window context (logic know really in which cases, data must be cached or not); see [Caching Static data - advanced](#caching-static-data---advanced)
-* Cache Versioning
-  * In order to serve updated assets, new version of the cache must be created
-  * Old versions of the cache must be deleted because [Cache.match()](https://developer.mozilla.org/en-US/docs/Web/API/Cache/match) returns first found entry in the cache and is certainly the wrong version
-  * Cleanup of old cache versions in `activate` listener
-  ```javascript
-  self.addEventListener('activate', function(event) {
-    var cacheList = [CACHE_STATIC_NAME, CACHE_DYNAMIC_NAME];
-    event.waitUntil(
-      caches.keys()
-        .then(function(keyList) {
-          return Promise.all(keyList.map(function(cacheName) {
-            // defined constants
-            if (cacheList.indexOf(cacheName) === -1) {
-              return caches.delete(cacheName);
-            }
-          }));
-        })
-    );
-    return self.clients.claim();
-  });
-  ```
-* Links
-  * [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests) 
+[Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 
+is used to provide a cache of HTTP requests/responses of static data (e.g. application assets) with GET HTTP requests
+* links
+  * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/) and [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/) (tutorial)
+  * [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests) (tutorial)
+  * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/) (caching strategies; great reference)
+  * [Storage for the web](https://web.dev/storage-for-the-web/) (checkout available storage quota)
   * [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
-  * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/)
+  * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook) (examples)
+  * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker) (examples)
+* concepts
+  * caches are generally created to store application assets and provide offline mode
+  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 
+    is available for frontend javascript and service workers
+  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+    is not designed to requests/responses of REST API because caches is based on the URL only
+    (cache cannot be based on request parameters, like a transaction-id, or request payload)
+    * see [Caching Dynamic data](#caching-dynamic-data) for caches of REST API
+  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) differs from
+    [HTTP Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)  
+    by providing a way to service workers and frontend javascript to implements
+    [caching strategies](#caching-strategies)
+    * caches of a web-application for a given scope can be shared between 
+      frontend javascript and service workers
+  * api: [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) 
+    global read-only property returns 
+    [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); 
+    an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
+* pre-caching is used to cache assets ahead of time during; e.g. 
+  [install event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-install---as-a-dependency) 
+* cache versioning require versioned cache name and 
+  clean-up of old versions typically during
+  [activate event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-activate)
+* runtime/dynamic caching or cache assets on demand during
+  * [user interactions](https://jakearchibald.com/2014/offline-cookbook/#on-user-interaction)
+    (from frontend javascript event-listener)
+  * [fetch event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-network-response)
+* TODO
+* strategies TODO
 
-
-[*Go to top*](#Progressive-Web-App)
-
-
-## Caching Static data - advanced
-
+* TODO clean-up following part
 * Its exists several cache strategies depends on the use case
 
 * **Cache on demand**
@@ -335,13 +267,6 @@ TODO cleanup / simplify with link to resources like https://jakearchibald.com/20
     * on slow connection, user has to wait long before seeing something, it's better to use for example [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy
   * [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy is often the best one to choose for frequently updated resources (something is provided quickly to user and cache is updated aftwerwards)
 * [Different caching strategies](https://jakearchibald.com/2014/offline-cookbook/#putting-it-together) can be used for different kinds of request (e.g. static data vs dynamic data); 
-* Links
-  * [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/)
-  * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/)
-  * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook)
-  * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker)
-  * [Storage for the web](https://web.dev/storage-for-the-web/)
-  * Caching strategies in [Service Worker Cookbook](https://serviceworke.rs/caching-strategies.html)
 
 [*Go to top*](#Progressive-Web-App)
 
