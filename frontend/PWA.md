@@ -191,82 +191,31 @@ is used to provide a cache of HTTP requests/responses of static data (e.g. appli
     global read-only property returns 
     [CacheStorage](https://developer.mozilla.org/en-US/docs/Web/API/CacheStorage); 
     an interface to manage [Cache](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
-* pre-caching is used to cache assets ahead of time during; e.g. 
+* *pre-caching* is used to cache assets ahead of time during; e.g. 
   [install event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-install---as-a-dependency) 
-* cache versioning require versioned cache name and 
-  clean-up of old versions typically during
+* *cache versioning* require versioned cache name and 
+  *clean-up* of old versions typically during
   [activate event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-activate)
-* runtime/dynamic caching or cache assets on demand during
+* *runtime/dynamic caching* or cache assets on demand during
   * [user interactions](https://jakearchibald.com/2014/offline-cookbook/#on-user-interaction)
     (from frontend javascript event-listener)
   * [fetch event of service worker](https://jakearchibald.com/2014/offline-cookbook/#on-network-response)
-* TODO
-* strategies TODO
-
-* TODO clean-up following part
-* Its exists several cache strategies depends on the use case
-
-* **Cache on demand**
-  * frontend javascript add request urls to 'dynamic' cache that Service Worker will serve later on in offline mode
-  ```javascript
-  if ('caches' in window) {
-    caches.open('frontend-static-data')
-      .then(function(cache) {
-        cache.add('/assets/pageXyz.html');
-        cache.add('/assets/imageXyz.jpg');
-      });
-  }
-  ```
-* **Offline fallback page**
-  * offline fallback page goal is to have a default "offline.html" in the caches and provide it as fallback if the requested page is not available in the cache
-    ```javascript
-    self.addEventListener('install', function(event) {
-      event.waitUntil(
-        caches.open(CACHE_STATIC_NAME)
-          .then(function(cache) {
-            cache.addAll([
-              ...
-              '/offline.html',
-              ...
-          ]);
-        }))});
-
-    self.addEventListener('fetch', function(event) {
-      event.respondWith(
-        caches.match(event.request).then(function(response) {
-          if (response) {
-            return response;
-          } else {
-            return fetch(event.request)
-              .then(function(res) {
-                return caches.open(CACHE_DYNAMIC_NAME)
-                  .then(function(cache) {
-                    cache.put(event.request.url, res.clone());
-                    return res;
-                  })
-              })
-              .catch(function(err) {
-                // maybe to configure only for html content
-                return caches.open(CACHE_STATIC_NAME)
-                  .then(function(cache) {
-                    return cache.match('/offline.html'); 
-                  });
-              });
-          }
-        })
-      );
-    });
-    ```
-
-* Caching strategies
-  * [Cache, falling back to network](https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network) is ideal for resources not updating frequently (see previous examples)
-** for example, create data in UI can be saved in the cache from the Javascript in the Window context if network is unavailable (in that case, caching from Service Workers does not help)
-  * [Cache only](https://jakearchibald.com/2014/offline-cookbook/#cache-only) strategy might be usefull for static data 
-  * [Network only](https://jakearchibald.com/2014/offline-cookbook/#network-only) strategy to be used for non-offline request (e.g. pings)
-  * [Network falling back to cache](https://jakearchibald.com/2014/offline-cookbook/#network-falling-back-to-cache) strategy could beused for resources updating frequently (e.g. articles)
-    * on slow connection, user has to wait long before seeing something, it's better to use for example [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy
-  * [Cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) strategy is often the best one to choose for frequently updated resources (something is provided quickly to user and cache is updated aftwerwards)
-* [Different caching strategies](https://jakearchibald.com/2014/offline-cookbook/#putting-it-together) can be used for different kinds of request (e.g. static data vs dynamic data); 
+* [generic fallback](https://jakearchibald.com/2014/offline-cookbook/#generic-fallback) to returns an offline version of the asset (e.g. offline.html)
+* major caching strategies
+  * [cache only](https://jakearchibald.com/2014/offline-cookbook/#cache-only)
+    strategy to be used for static data
+  * [network only](https://jakearchibald.com/2014/offline-cookbook/#network-only) 
+    strategy to be used for non-offline request (e.g. REST API)
+  * [cache, falling back to network](https://jakearchibald.com/2014/offline-cookbook/#cache-falling-back-to-network) 
+    strategy to be used to mix *cache only* for static data (in the cache) and *network only* (not present in the cache)
+  * [cache then network](https://jakearchibald.com/2014/offline-cookbook/#cache-then-network) 
+    strategy to be used for resources updating frequently (e.g. articles)
+    * "something is provided quickly to user and cache is updated aftwerwards"
+    * cache API used from frontend javascript & service workers
+  * etc. (see [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/))
+* [different caching strategies](https://jakearchibald.com/2014/offline-cookbook/#putting-it-together) 
+  can be mixed together 
+  * choosen strategy can depend on request URL or content type  
 
 [*Go to top*](#Progressive-Web-App)
 
