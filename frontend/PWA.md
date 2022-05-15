@@ -227,8 +227,9 @@ is used to provide a cache of HTTP requests/responses of **static data** (e.g. a
 
 ## Cache dynamic data with IndexedDB
 
-[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) is a transactional Key-Value database in the browser and is used to store dynamic data;
-e.g. GET requests of REST APIs 
+[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) 
+is a transactional Key-Value database in the browser and is used to store dynamic data
+(e.g. response of GET requests of REST APIs) 
 * links
   * [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) and 
     [IndexedDB key characteristics](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology)
