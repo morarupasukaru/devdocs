@@ -50,10 +50,10 @@
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
-* alternatives to SpringBoot - TODO
-  * [Quarkus](https://quarkus.io/): TODO
-  * [Micronaut](https://micronaut.io/): TODO
-  * ([NodeJS](https://nodejs.org/), [Deno](https://deno.land/): TODO)
+* alternatives to SpringBoot:
+  [Quarkus](https://quarkus.io/),
+  [Micronaut](https://micronaut.io/), 
+   ([NodeJS](https://nodejs.org/), [Deno](https://deno.land/))
   * see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
 ----
 * *Page mainly written in July 2020; linked checked on 15.02.2022*
