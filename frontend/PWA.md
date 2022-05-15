@@ -255,6 +255,11 @@ is a transactional Key-Value database in the browser and is used to store dynami
 [*Go to top*](#Progressive-Web-App)
 
 
+## Responsive Design
+
+TODO move to CSS 
+
+
 ## Background Sync
 
 TODO
