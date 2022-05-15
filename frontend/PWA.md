@@ -5,8 +5,9 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
   * [Service workers](#Service-Workers) proxy requests between web applications and network
-  * [Cache API](#Cache-API) is used to provide a cache of HTTP requests/responses of static data
-  * TODO [IndexedDB API](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) to implement caching of dynamic data; e.g. from REST API; see [Caching Dynamic data](#caching-dynamic-data)
+  * [Cache API](#Cache-static-data-with-Cache-API) is used to provide a cache of HTTP requests/responses of static data
+  * [IndexedDB](#Cache-dynamic-data-with-IndexedDB) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+    are used to provide a cache of dynamic data; e.g. from REST API
   * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
@@ -161,10 +162,10 @@ proxy requests between web applications and network (e.g. for caching).
 [*Go to top*](#Progressive-Web-App)
 
 
-## Cache API
+## Cache static data with Cache API
 
 [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 
-is used to provide a cache of HTTP requests/responses of static data (e.g. application assets) with GET HTTP requests
+is used to provide a cache of HTTP requests/responses of **static data** (e.g. application assets) with GET HTTP requests
 * links
   * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/) and [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/) (tutorial)
   * [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests) (tutorial)
@@ -220,9 +221,16 @@ is used to provide a cache of HTTP requests/responses of static data (e.g. appli
 [*Go to top*](#Progressive-Web-App)
 
 
-## Caching Dynamic data
+## Cache dynamic data with IndexedDB
 
+[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)) is a key-value DB and is used to store dynamic data from REST API (e.g. json) 
 
+* dynamic data are changing frequently and coming from typically from APIs
+* [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) vs 
+  [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
+  * Cache API caches HTTP requests / responses
+  * IndexedDB caches key-value pairs under control of the web application
+    * (e.g. version of data can be part of the key, transformed json can be stored as value)  
 
 * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) cannot cache dynamic data from REST API because it does not know the sequences of the calls and does know not what to do in error cases
 * Caching dynamic data require JavaScript code in Window context that save the changes (with sequences) and know what to do in offline mode or what to save when network is available again (by saving data in [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or in [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API))
