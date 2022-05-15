@@ -5,9 +5,10 @@
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
   * [Service workers](#Service-Workers) proxy requests between web applications and network
-  * [Cache API](#Cache-static-data-with-Cache-API) is used to provide a cache of HTTP requests/responses of static data
-  * [IndexedDB](#Cache-dynamic-data-with-IndexedDB) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-    are used to provide a cache of dynamic data; e.g. from REST APIs
+  * [Cache API](#Cache-static-data-with-Cache-API) 
+    is used to provide a cache of HTTP requests/responses of static data
+  * [IndexedDB](#Cache-dynamic-data-with-IndexedDB) 
+    is used to provide a cache of dynamic data; e.g. from REST APIs
   * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
