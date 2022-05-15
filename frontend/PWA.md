@@ -7,7 +7,7 @@
   * [Service workers](#Service-Workers) proxy requests between web applications and network
   * [Cache API](#Cache-static-data-with-Cache-API) is used to provide a cache of HTTP requests/responses of static data
   * [IndexedDB](#Cache-dynamic-data-with-IndexedDB) or evt. [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-    are used to provide a cache of dynamic data; e.g. from REST API
+    are used to provide a cache of dynamic data; e.g. from REST APIs
   * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
@@ -158,6 +158,9 @@ proxy requests between web applications and network (e.g. for caching).
   * use of [skipWaiting()](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/skipWaiting#example) and [Clients.claim()](https://developer.mozilla.org/en-US/docs/Web/API/Clients/claim#example)
     allow to use an activated service worker on clients (tabs) without having to reload the page
     * changing default behaviour can produce subtle bugs; e.g. if pending save operation is waiting for available network or if there is breaking changes in APIs
+  * call [importScripts()](https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope/importScripts)
+    to imports external js file in service workers (e.g. 3rd-party library like 
+    [idb](https://github.com/jakearchibald/idb#readme))
 
 [*Go to top*](#Progressive-Web-App)
 
@@ -217,29 +220,38 @@ is used to provide a cache of HTTP requests/responses of **static data** (e.g. a
 * [different caching strategies](https://jakearchibald.com/2014/offline-cookbook/#putting-it-together) 
   can be mixed together 
   * choosen strategy can depend on request URL or content type  
-
+  
 [*Go to top*](#Progressive-Web-App)
 
 
 ## Cache dynamic data with IndexedDB
 
-[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)) is a key-value DB and is used to store dynamic data from REST API (e.g. json) 
-
-* dynamic data are changing frequently and coming from typically from APIs
-* [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) vs 
-  [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API)
-  * Cache API caches HTTP requests / responses
-  * IndexedDB caches key-value pairs under control of the web application
-    * (e.g. version of data can be part of the key, transformed json can be stored as value)  
-
-* [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) cannot cache dynamic data from REST API because it does not know the sequences of the calls and does know not what to do in error cases
-* Caching dynamic data require JavaScript code in Window context that save the changes (with sequences) and know what to do in offline mode or what to save when network is available again (by saving data in [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) or in [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API))
-
-TODO
-
-* see [Overriding Angular’s Service Worker to handle POST requests](https://javascript.tutorialink.com/overriding-angulars-service-worker-to-handle-post-requests/)
+[IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) is a transactional Key-Value database in the browser and is used to store dynamic data;
+e.g. GET requests of REST APIs 
+* links
+  * [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) and 
+    [IndexedDB key characteristics](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology)
+  * see [idb](https://github.com/jakearchibald/idb#readme), [idb-keyval](https://github.com/jakearchibald/idb-keyval), [Dexie.js](https://dexie.org/) and other [libraries](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API#see_also) to simplify the quite complex IndexedDB API
+  * [Best Practices for Using IndexedDB](https://web.dev/indexeddb-best-practices/)
+* concepts
+  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) vs 
+    [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API):
+    * Cache API caches HTTP requests / responses
+      * Cache API cannot cache dynamic data from REST APIs because it does not know the sequences of 
+      the calls and does know not what to do in error cases
+    * IndexedDB caches Key-Value pairs under control of the web application
+      * (e.g. version of data can be part of the key, transformed json can be stored as value)  
+  * [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) vs 
+    [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage):
+    * IndexedDB can be accessed from normal JS and Service Workers; localStorage is available only in normal JS
+    * IndexedDB can store much more data as localStorage
+  * [caching strategies](https://jakearchibald.com/2014/offline-cookbook) 
+    can also be used with [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) to cache GET REST APIs request
+  * [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) in conjunction with Background sync allow to support offline capabilities with "update" REST APIs requests --> TODO to confirm
+  * **take care**: caching dynamic data is complex and produce subtle bugs; see [Best Practices for Using IndexedDB](https://web.dev/indexeddb-best-practices/)
 
 [*Go to top*](#Progressive-Web-App)
+
 
 ## Background Sync
 
