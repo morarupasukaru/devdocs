@@ -9,13 +9,15 @@
     is used to provide a cache of HTTP requests/responses of static data
   * [IndexedDB](#Cache-dynamic-data-with-IndexedDB) 
     is used to provide a cache of dynamic data; e.g. from REST APIs
+  * [Background Sync](#Background-Sync) defer tasks to be run in a service worker until
+    the user has a stable network connection 
+    (e.g. sending saved POST requests saved temporary in IndexedDB)
   * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
       [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
       [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
     see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
     * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
-  * TODO [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be   run in a service worker until the user has a stable network connection.
-  * TODO Responsive Design (TODO add link to CSS summary)
+  * Responsive Design to make the web application look like a native app on all devices --> see CSS summary (TODO add link)
   * TODO [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
   * TODO Media API to access device camera and microphone >>> TODO add correct link later
 * [PWA with Angular](#PWA-with-Angular)
@@ -255,14 +257,12 @@ is a transactional Key-Value database in the browser and is used to store dynami
 [*Go to top*](#Progressive-Web-App)
 
 
-## Responsive Design
-
-TODO move to CSS 
-
-
 ## Background Sync
 
-TODO
+[Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) 
+can be used to defer tasks to be run in a service worker until the user has a stable network 
+connection (e.g. sending saved POST requests saved temporary in IndexedDB).
+
 
 [*Go to top*](#Progressive-Web-App)
 
