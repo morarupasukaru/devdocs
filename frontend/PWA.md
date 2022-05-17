@@ -263,6 +263,11 @@ is a transactional Key-Value database in the browser and is used to store dynami
 can be used to defer tasks to be run in a service worker until the user has a stable network 
 connection (e.g. sending saved POST requests saved temporary in IndexedDB).
 
+* links
+  * [Introducing Background Sync](https://developer.chrome.com/blog/background-sync/)
+  * [ServiceWorker: A Basic Guide to BackgroundSync](https://ponyfoo.com/articles/backgroundsync)
+  * [Background Sync – PWA’s Backbone](https://www.excellarate.com/blogs/background-sync-pwas-backbone/)
+  * [Supercharge Your Website Using PWA: Background Sync](https://dev.to/ruppysuppy/supercharge-your-website-using-pwa-background-sync-1m23)
 
 [*Go to top*](#Progressive-Web-App)
 
