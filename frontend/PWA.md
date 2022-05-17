@@ -270,10 +270,6 @@ connection (e.g. sending saved POST requests saved temporary in IndexedDB).
   * [Supercharge Your Website Using PWA: Background Sync](https://dev.to/ruppysuppy/supercharge-your-website-using-pwa-background-sync-1m23)
   * see also [Web Periodic Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Periodic_Background_Synchronization_API) 
     that allows web applications to make any fetches/updates, at a periodic time interval
-    
-
-to allow to fetch data
-  from service workers even if web application is closed
 
 [*Go to top*](#Progressive-Web-App)
 
