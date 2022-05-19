@@ -277,7 +277,6 @@ to user/device to go back to the web page with new content.
 
 * links
   * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/push-notifications/)
-  * TODO
   * TODO VAPID - https://blog.mozilla.org/services/2016/04/04/using-vapid-with-webpush/
   * TODO VAPID - https://developer.chrome.com/blog/web-push-interop-wins/
   * https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
