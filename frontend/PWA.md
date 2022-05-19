@@ -12,14 +12,10 @@
   * [Background Sync](#Background-Sync) defer tasks to be run in a service worker until
     the user has a stable network connection 
     (e.g. sending saved POST requests saved temporary in IndexedDB)
-  * TODO Push Notifications is used to notify the device/browser even when the application is loaded using WebAPIs [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) in conjunction with
-      [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and a running
-      [Service Worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API);
-    see [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
-    * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
-  * Responsive Design to make the web application look like a native app on all devices --> see CSS summary (TODO add link)
+  * [Web Push Notifications](#Web-Push-Notifications) allow web applications to notify messages to user/device to go back to the web page with new content
   * TODO [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
   * TODO Media API to access device camera and microphone >>> TODO add correct link later
+  * [Responsive Design](TODO-add-link-to-css-summary) makes web applications look like native apps
 * [PWA with Angular](#PWA-with-Angular)
 * tools
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
@@ -276,9 +272,25 @@ allows web applications to make any fetches/updates, at a periodic time interval
 
 ## Web Push Notifications
 
-TODO
+[Web Push Notifications](#Web-Push-Notifications) allow web applications to notify messages 
+to user/device to go back to the web page with new content.
 
+* links
+  * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/push-notifications/)
+  * TODO
+  * TODO VAPID - https://blog.mozilla.org/services/2016/04/04/using-vapid-with-webpush/
+  * TODO VAPID - https://developer.chrome.com/blog/web-push-interop-wins/
+  * https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
+  * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
+    and [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
+  * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
+* concepts
+  * web push notifications can be displayed even if web app/browser is closed (depending on the browser)
+  * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
+  * web push notifications required a running service worker
+    
 [*Go to top*](#Progressive-Web-App)
+
 
 ## Media API
 
