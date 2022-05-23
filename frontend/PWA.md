@@ -283,10 +283,46 @@ to user/device to go back to the web page with new content.
   * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
     and [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
   * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
+    gives web applications the ability to receive messages pushed to them from a server,
+    whether or not the web app is in the foreground, or even currently loaded, on a user agent. 
+    This lets developers deliver asynchronous notifications and updates to users that opt in, resulting in better engagement with timely new content.
 * concepts
-  * web push notifications can be displayed even if web app/browser is closed (depending on the browser)
-  * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
-  * web push notifications required a running service worker
+  * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
+    lets a web app ([frontend javascript](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API#creating_a_notification) or 
+    [service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification#examples)) 
+    send notifications that are displayed *outside the webpage* at the system level; 
+    even if the application is idle or in the background
+    * notifications can triggered from frontend javascript or from service workers 
+      (e.g. to support web push notification)
+    * web application [request user to enable notifications](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API#requesting_permission)
+    * notifications might be available on the device/accepted by user. 
+      Do not depend on Notification to display important informations
+    * apperance of [Notification](https://developer.mozilla.org/en-US/docs/Web/API/Notification#properties) 
+      are set with properties like
+      [icon](https://developer.mozilla.org/en-US/docs/Web/API/Notification/icon),
+      [image](https://developer.mozilla.org/en-US/docs/Web/API/Notification/image),
+      [lang](https://developer.mozilla.org/en-US/docs/Web/API/Notification/lang),
+      [actions](https://developer.mozilla.org/en-US/docs/Web/API/Notification/actions),
+      etc.
+    * [service workers can listen notification click](https://developer.mozilla.org/en-US/docs/Web/API/NotificationEvent#example) or 
+      custom [actions](https://developer.mozilla.org/en-US/docs/Web/API/Notification/actions)
+      or [listen notification close](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/notificationclose_event#example)
+    * opening a page upon user interaction: TODO  
+  * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
+    allow web push notifications
+    * web push notifications can be displayed even if web app/browser is closed (depending on the browser)
+    * web push notifications required a running service worker
+    * web app create/re-use push subscription (for a given browser-device) to service worker
+    * push subscription is related to a push server owned by browser vendor  
+    * every browser vendor has a specific push server (e.g. handled by google for chrome)  
+    * push subscription can be stored on the web app backend server and can be used to 
+    send notifications
+    * notification from web app backend with be send to browser vendor push server and
+      browser vendor push server will forward the notification as "push" event to service worker
+      of the corresponding browser-device
+    * "push" events of service worker are displayed to user
+      with [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
+    * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
     
 [*Go to top*](#Progressive-Web-App)
 
