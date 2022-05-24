@@ -276,16 +276,15 @@ allows web applications to make any fetches/updates, at a periodic time interval
 to user/device to go back to the web page with new content.
 
 * links
+  * [Web Push Book](https://web-push-book.gauntface.com/); a really nice reference >>> TODO read
   * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/push-notifications/)
-  * TODO VAPID - https://blog.mozilla.org/services/2016/04/04/using-vapid-with-webpush/
-  * TODO VAPID - https://developer.chrome.com/blog/web-push-interop-wins/
-  * https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification
-  * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
-    and [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API)
-  * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
-    gives web applications the ability to receive messages pushed to them from a server,
-    whether or not the web app is in the foreground, or even currently loaded, on a user agent. 
-    This lets developers deliver asynchronous notifications and updates to users that opt in, resulting in better engagement with timely new content.
+  * MDN: [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
+    and [guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API); [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
+  * VAPID for server identification
+    * [Using VAPID with WebPush](https://blog.mozilla.org/services/2016/04/04/using-vapid-with-webpush/)
+    * [Web Push Interoperability Wins](https://developer.chrome.com/blog/web-push-interop-wins/)
+  * backend library [web-push](https://github.com/web-push-libs/web-push) for NodeJS or [webpush-java](https://github.com/web-push-libs/webpush-java)
+  * [ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook) with web push examples
 * concepts
   * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
     lets a web app send notifications that are displayed *outside the webpage* at the system level; 
@@ -311,18 +310,30 @@ to user/device to go back to the web page with new content.
     allow web push notifications
     * web push notifications can be displayed even if web app/browser is closed (depending on the browser)
     * web push notifications required a running service worker
-    * web app create/re-use push subscription (for a given browser-device) to service worker
+    * web app 
+      [re-use](https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription#example) or 
+      [subscribe](https://developer.mozilla.org/en-US/docs/Web/API/PushManager/subscribe#examples) 
+      new [PushSubscription](https://developer.mozilla.org/en-US/docs/Web/API/PushSubscription) 
+      for a given browser-device to service worker
+      * userVisibleOnly and applicationServerKey options of 
+        [PushManager.subscribe()](https://developer.mozilla.org/en-US/docs/Web/API/PushManager/subscribe#syntax)
+        allow securing notifications
+    * [VAPID](https://blog.mozilla.org/services/2016/04/04/using-vapid-with-webpush/) is 
+        provided to `applicationServerKey` to identify subscription
+      * VAPID can be generated with [webpush-java](https://github.com/web-push-libs/webpush-java#cli) or [web-push](https://github.com/web-push-libs/web-push#command-line)
     * push subscription is related to a push server owned by browser vendor  
-    * every browser vendor has a specific push server (e.g. handled by google for chrome)  
+      * every browser vendor has a specific push server (e.g. handled by google for chrome)  
     * push subscription can be stored on the web app backend server and can be used to 
     send notifications
-    * notification from web app backend with be send to browser vendor push server and
+    * backend need also library to be able to push notifications;
+      e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS or
+      [webpush-java](https://github.com/web-push-libs/webpush-java)
+    * notification from web app backend will be sent to browser vendor push server and
       browser vendor push server will forward the notification as "push" event to service worker
       of the corresponding browser-device
     * "push" events of service worker are displayed to user
       with [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
-    * backend need also library to able to push notifications; e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS
-    
+
 [*Go to top*](#Progressive-Web-App)
 
 
