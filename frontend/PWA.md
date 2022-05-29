@@ -276,7 +276,7 @@ allows web applications to make any fetches/updates, at a periodic time interval
 to user/device to go back to the web page with new content.
 
 * links
-  * [Web Push Book](https://web-push-book.gauntface.com/); a really nice reference >>> TODO read
+  * [Web Push Book](https://web-push-book.gauntface.com/); a really nice reference
   * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/push-notifications/)
   * MDN: [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
     and [guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API); [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
@@ -302,6 +302,7 @@ to user/device to go back to the web page with new content.
       [image](https://developer.mozilla.org/en-US/docs/Web/API/Notification/image),
       [lang](https://developer.mozilla.org/en-US/docs/Web/API/Notification/lang),
       [actions](https://developer.mozilla.org/en-US/docs/Web/API/Notification/actions),
+      [data](https://developer.mozilla.org/en-US/docs/Web/API/Notification/data),
       etc.
     * [service workers can listen notification click](https://developer.mozilla.org/en-US/docs/Web/API/NotificationEvent#example), custom [actions](https://developer.mozilla.org/en-US/docs/Web/API/Notification/actions)
       or [notification close](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/notificationclose_event#example)
