@@ -32,6 +32,8 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   * see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
   * or [Introduction to fetch()](https://developers.google.com/web/updates/2015/03/introduction-to-fetch) by google
   * or [Detailed Usage Guide with comparison with XMLHttpRequest](https://davidwalsh.name/fetch)
+  * use [FormData.append()](https://developer.mozilla.org/en-US/docs/Web/API/FormData/append)
+    to send data/files as "multipart/form-data".
 * [Console API](https://developer.mozilla.org/en-US/docs/Web/API/Console_API): 
   to ease debugging by using the methods of the [Console](https://developer.mozilla.org/en-US/docs/Web/API/Console) 
   global object
