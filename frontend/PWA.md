@@ -13,9 +13,13 @@
     the user has a stable network connection 
     (e.g. sending saved POST requests saved temporary in IndexedDB)
   * [Web Push Notifications](#Web-Push-Notifications) allow web applications to notify messages to user/device to go back to the web page with new content
-  * TODO [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
-  * TODO Media API to access device camera and microphone >>> TODO add correct link later
   * [Responsive Design](TODO-add-link-to-css-summary) makes web applications look like native apps
+  * [Media Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API)
+    allow web applications to stream audio and video with device camera and microphone; 
+    see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API/Constraints)
+  * [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) 
+    to access user location; 
+    see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
 * [PWA with Angular](#PWA-with-Angular)
 * tools
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
@@ -334,19 +338,6 @@ to user/device to go back to the web page with new content.
       of the corresponding browser-device
     * "push" events of service worker are displayed to user
       with [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
-
-[*Go to top*](#Progressive-Web-App)
-
-
-## Media API
-
-TODO
-
-[*Go to top*](#Progressive-Web-App)
-
-## Geolocation
-
-TODO
 
 [*Go to top*](#Progressive-Web-App)
 
