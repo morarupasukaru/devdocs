@@ -12,7 +12,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [WebAPIs](frontend/WebAPIs.md) are available in browser and typically used in JavaScript
   * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
   * [RxJS](frontend/RxJS.md) is a JavaScript library for reactive programming using observables
-  * Java is a popular general-purpose language *(coming later)*
+  * [Java](backend/Java.md) is a popular general-purpose language *(in progress)*
 
 
 ## Topics
@@ -55,4 +55,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 
-*(last update 02.03.2022)*
+*(last update 31.05.2022)*
