@@ -254,7 +254,7 @@ is a transactional Key-Value database in the browser and is used to store dynami
     * IndexedDB can store much more data as localStorage
   * [caching strategies](https://jakearchibald.com/2014/offline-cookbook) 
     can also be used with [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) to cache GET REST APIs request
-  * [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) in conjunction with Background sync allow to support offline capabilities with "update" REST APIs requests --> TODO to confirm
+  * [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) in conjunction with Background sync allow to support offline capabilities with "update" REST APIs requests
   * **take care**: caching dynamic data is complex and produce subtle bugs; see [Best Practices for Using IndexedDB](https://web.dev/indexeddb-best-practices/)
 
 [*Go to top*](#Progressive-Web-App)
@@ -313,7 +313,6 @@ to user/device to go back to the web page with new content.
       etc.
     * [service workers can listen notification click](https://developer.mozilla.org/en-US/docs/Web/API/NotificationEvent#example), custom [actions](https://developer.mozilla.org/en-US/docs/Web/API/Notification/actions)
       or [notification close](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/notificationclose_event#example)
-    * opening a page upon user interaction: TODO  
   * [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
     allow web push notifications
     * web push notifications can be displayed even if web app/browser is closed (depending on the browser)
