@@ -4,7 +4,7 @@
 
 *(Page mainly written in TODO 2022)*
 
-[*Go to parent page*](../../README.md)
+[*Go to parent page*](../README.md)
 
 
 ## TODO
@@ -104,12 +104,8 @@ https://en.wikipedia.org/wiki/List_of_Java_APIs
 * TODO: sumary of 'java in action' ?
 * TODO: summary of 'effective java' ?
 
-*(Page mainly written in TODO)*
-
 * good course on pluralsigh --> new from java xyz?
 * check out whyzlab, certifications tools & learning path
-
-[*Go to parent page*](../README.md)
 
  language
   * TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
@@ -181,5 +177,5 @@ TODO add section about reactive programming and java
   * https://www.nurkiewicz.com/2019/02/rxjava-vs-reactor.html
   * https://hmh.engineering/spring-web-flux-project-reactor-a645c8f50c8d?gi=e3fe9f1b41b5
   * https://www.baeldung.com/rxjava-vs-java-flow-api
-  
-[*Go to parent page*](../../README.md)
+
+[*Go to top*](#Java)
