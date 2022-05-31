@@ -22,7 +22,9 @@
     see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
 * [PWA with Angular](#PWA-with-Angular)
 * tools
-  * Workbox --> add link TODO
+  * [Workbox](https://developer.chrome.com/docs/workbox/) 
+    ease implementation of PWA features like caching (hide complex
+    aspect through easier API / JavaScript libs)
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
     Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
   * [android studio](https://developer.android.com/studio) 
@@ -342,17 +344,6 @@ to user/device to go back to the web page with new content.
 
 [*Go to top*](#Progressive-Web-App)
 
-
-## Workbox
-
-TODO
-https://developer.chrome.com/docs/workbox/
-https://github.com/GoogleChrome/workbox
-https://workboxjs.org/reference-docs/latest/module-workbox-build.html#.Configuration --> TODO broken link
-https://workboxjs.org/reference-docs/latest/module-workbox-sw.Strategies.html#main --> TODO broken link
-https://developers.google.com/web/tools/workbox/ --> TODO broken link
-
-[*Go to top*](#Progressive-Web-App)
 
 ## PWA with Angular
 
