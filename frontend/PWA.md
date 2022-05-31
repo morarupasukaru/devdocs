@@ -39,7 +39,7 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019, last update: april 2022)* --> TODO update date
+*(Page mainly written in 2019, last update: mai 2022)*
 
 ## Application Manifest
 
@@ -347,7 +347,7 @@ to user/device to go back to the web page with new content.
 ## PWA with Angular
 
 * [Service Workers](https://angular.io/guide/service-worker-intro)
-  * [Create a Progressive Web App with the Angular CLI](https://web.dev/creating-pwa-with-angular-cli/):
+  * see [Create a Progressive Web App with the Angular CLI](https://web.dev/creating-pwa-with-angular-cli/) and [Precaching with the Angular service worker](https://web.dev/precaching-with-the-angular-service-worker/):
     * Configure Service Workers in an Angular project: `ng add @angular/pwa`
     * Angular/PWA generate a service worker based on the `ngsw-config.json`
     * we can specify in `ngsw-config.json`
