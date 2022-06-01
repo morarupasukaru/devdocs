@@ -39,7 +39,7 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2022)*
+*(Page mainly written in spring 2022)*
 
 ## Application Manifest
 

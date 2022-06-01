@@ -2,26 +2,39 @@
 
 [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is a popular general-purpose language.
 
-*(Page mainly written in TODO 2022)*
+This document try to summarize best of Java to develop REST APIs (or batches).
+
+* Language features --> TODO add link above
+* Standard APIs
+* Third-party APIs
+* Tools
+* Web frameworks
+* Design patterns
+* Reactive programming
+* Alternatives
+* Links
+
+*(Page mainly written in spring 2022; in progress)*
 
 [*Go to parent page*](../README.md)
 
 
-## TODO
+## Language features
 
-This document try to summarize best of Java to develop REST APIs or batches.
+* TODO: *javalight / good parts of java* with latest versions of java
 
+* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
 * Versions of java language and Java SE are coupled together
 * [History of Java SE and major updates for the stack](https://en.wikipedia.org/wiki/Java_version_history)
   * 1996/1997 - JDK 1.0 / JDK 1.1: JDBC
-  * 1998 - J2SE 1.2: [Collections framework](https://en.wikipedia.org/wiki/Java_collections_framework) --> TODO add sections 
+  * 1998 - J2SE 1.2: [Collections framework](https://en.wikipedia.org/wiki/Java_collections_framework) --> TODO add sections
   * 2000 - J2SE 1.3: nothing interesting
   * 2002 - J2SE 1.4: [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression)
   * 2004 - Java SE 5
     * [Generics](https://en.wikipedia.org/wiki/Generics_in_Java)
     * [Annotation](https://en.wikipedia.org/wiki/Java_annotation)
     * `enum`
-    * [varargs](https://en.wikipedia.org/wiki/Java_syntax#Varargs)  
+    * [varargs](https://en.wikipedia.org/wiki/Java_syntax#Varargs)
     * [for each loop](https://en.wikipedia.org/wiki/Foreach_loop#Java)
     * [static import](https://en.wikipedia.org/wiki/Static_import)
     * [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
@@ -48,39 +61,35 @@ This document try to summarize best of Java to develop REST APIs or batches.
   * [Java language updates from 9](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) from Java 9
 
 * Platforms
-  * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition) 
+  * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition)
   * [Java EE or Jakarta EE](https://en.wikipedia.org/wiki/Jakarta_EE) (Enterprise Edition) extends Java SE with some entreprise feature
     * most features are no usefull with modern frameworks
     * important features: [Bean Validation](https://en.wikipedia.org/wiki/Bean_Validation),
       [JPA](https://en.wikipedia.org/wiki/Jakarta_Persistence)
       [Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet)
-    * package renaming happens with transfer of Java EE from Orace to Eclipse Foundation  
+    * package renaming happens with transfer of Java EE from Orace to Eclipse Foundation
   * out of scope:
     [Java ME](https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition),
     [Java Card](https://en.wikipedia.org/wiki/JavaFX),
     [JavaFX](https://en.wikipedia.org/wiki/Java_Card)
 * Java Virtual Machine
   * ...
-* Popular APIs
-  * JPA
-  * Bean Validation
-  * Logging
-  * ...
-* J2EE takeaway
-  * Servlet?
-* Frameworks
-  * SpringBoot -> Servlet based?
-  * Dropwizard
-  * Micronaut
-  * Quarkus
-  * etc.
-* Other JVM languages
-  * Scala
-  * Kotlin
-  * ...
-  
-* concept: [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object)
-## Java SE APIs
+
+language
+* TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
+  * maybe https://mitpress.mit.edu/books/java-precisely-third-edition TODO
+* quick history of change in java version, feature and APIs
+* types, structures, enum, interfaces, classes, package, exception
+* annotations, generics
+* lambda
+* tools: java, javac, jar
+* java 12, 13, 14: TODO
+  * TODO complete with https://www.manning.com/books/modern-java-in-action
+
+[*Go to top*](#Java)
+
+
+## Standard APIs
 
 * Collections framework
 * Regexp
@@ -88,35 +97,6 @@ This document try to summarize best of Java to develop REST APIs or batches.
 * Concurrency - [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
 * JDBC (modern way)
 
-## External APIs
-
-* Logging
-* JSON
-* Lombok --> lib? extension?
-
-https://en.wikipedia.org/wiki/List_of_Java_APIs
-
-* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)  
-* [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
-
-* TODO: high-overview of java
-* TODO: *javalight / good parts of java* with latest versions of java
-* TODO: sumary of 'java in action' ?
-* TODO: summary of 'effective java' ?
-
-* good course on pluralsigh --> new from java xyz?
-* check out whyzlab, certifications tools & learning path
-
- language
-  * TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
-    * maybe https://mitpress.mit.edu/books/java-precisely-third-edition TODO
-  * quick history of change in java version, feature and APIs
-  * types, structures, enum, interfaces, classes, package, exception
-  * annotations, generics
-  * lambda
-  * tools: java, javac, jar
-  * java 12, 13, 14: TODO
-    * TODO complete with https://www.manning.com/books/modern-java-in-action
 * API
   * TODO link to javadocs
   * TODO link to https://docs.oracle.com/javase/tutorial/
@@ -136,36 +116,63 @@ https://en.wikipedia.org/wiki/List_of_Java_APIs
         * uri
         * uuid, ulid?
   * misc: typical useful annotation (@VisibleForTesting, @Immutable, @Safe)
-* ecosystems
-  * libraries
-    * TODO check spring boot and quarkus list of libs to find best of them
-  * frameworks: [SpringBoot](./SpringBoot.md), [Quarkus](https://quarkus.io/get-started/)
-  * tools: jprofiler, visualvm, mvn
-* references
-  * [language specifications](https://docs.oracle.com/javase/specs/index.html)
-    *   * https://docs.oracle.com/javase/specs/jls/se16/html/index.html
-  * books:
-    TODO https://mitpress.mit.edu/books/java-precisely-third-edition ? (suggestion effective java)
-    [Modern Java in Action](https://www.manning.com/books/modern-java-in-action), 
-    [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/)
-  * [Lambdas and Streams Master Class Part 1](https://www.youtube.com/watch?v=ePXnCezwRuw) and [Part 2](https://www.youtube.com/watch?v=2c_KNH3s2S0)
-  * [exam java se 11](https://education.oracle.com/fr/upgrade-ocp-java-6-7-8-to-java-se-11-developer/pexam_1Z0-817): [learning path](https://enthuware.com/pass-java-1z0-817-certification-exam), [preparation](https://www.whizlabs.com/blog/ocp-java-11-upgrade-1z0-817-exam-preparation/)
-    
-*(Page not yet completed)*
+
+[*Go to top*](#Java)
 
 
-## Summary Effective Java 3d Edition
+## Third-party APIs
 
-* TODO
+* Popular APIs
+  * JPA
+  * Bean Validation
+  * Logging
+  * ...
+* J2EE takeaway
+  * Servlet?
+
+* Logging
+* JSON
+* Lombok --> lib? extension?
+
+https://en.wikipedia.org/wiki/List_of_Java_APIs
+
+* libraries
+  * TODO check spring boot and quarkus list of libs to find best of them
+
+[*Go to top*](#Java)
 
 
-## Summary Modern Java in Action
-
-* TODO
+## Tools
 
 TODO maven
+* tools: jprofiler, visualvm, mvn
 
-## Reactive Programming
+[*Go to top*](#Java)
+
+
+## Web frameworks
+
+* Frameworks
+  * SpringBoot -> Servlet based?
+  * Dropwizard
+  * Micronaut
+  * Quarkus
+  * etc.
+
+* ecosystems
+  * frameworks: [SpringBoot](./SpringBoot.md), [Quarkus](https://quarkus.io/get-started/)
+
+[*Go to top*](#Java)
+
+
+## Design patterns
+
+* TODO: summary of 'effective java' ?
+
+[*Go to top*](#Java)
+
+
+## Reactive programming
 
 TODO add section about reactive programming and java
 
@@ -177,5 +184,38 @@ TODO add section about reactive programming and java
   * https://www.nurkiewicz.com/2019/02/rxjava-vs-reactor.html
   * https://hmh.engineering/spring-web-flux-project-reactor-a645c8f50c8d?gi=e3fe9f1b41b5
   * https://www.baeldung.com/rxjava-vs-java-flow-api
+
+[*Go to top*](#Java)
+
+
+## Alternatives
+
+Other languages running on JVM
+
+* Other JVM languages
+  * Scala --> course?
+  * Kotlin --> course?
+  * Groovy
+  * ...
+
+* concept: [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object)
+
+[*Go to top*](#Java)
+
+
+## Links
+* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
+* [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
+* good course on pluralsigh --> new from java xyz?
+* check out whyzlab, certifications tools & learning path
+* references
+  * [language specifications](https://docs.oracle.com/javase/specs/index.html)
+    *   * https://docs.oracle.com/javase/specs/jls/se16/html/index.html
+  * books:
+    TODO https://mitpress.mit.edu/books/java-precisely-third-edition ? (suggestion effective java)
+    [Modern Java in Action](https://www.manning.com/books/modern-java-in-action),
+    [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/)
+  * [Lambdas and Streams Master Class Part 1](https://www.youtube.com/watch?v=ePXnCezwRuw) and [Part 2](https://www.youtube.com/watch?v=2c_KNH3s2S0)
+  * [exam java se 11](https://education.oracle.com/fr/upgrade-ocp-java-6-7-8-to-java-se-11-developer/pexam_1Z0-817): [learning path](https://enthuware.com/pass-java-1z0-817-certification-exam), [preparation](https://www.whizlabs.com/blog/ocp-java-11-upgrade-1z0-817-exam-preparation/)
 
 [*Go to top*](#Java)
