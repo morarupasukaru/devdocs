@@ -4,15 +4,15 @@
 
 This document try to summarize best of Java to develop REST APIs (or batches).
 
-* Language features --> TODO add link above
-* Standard APIs
-* Third-party APIs
-* Tools
-* Web frameworks
-* Design patterns
-* Reactive programming
-* Alternatives
-* Links
+* [Language features](#Language-features)
+* [Standard APIs](#Standard-APIs)
+* [Third-party APIs](#Third-party-APIs)
+* [Tools](#Tools)
+* [Web frameworks](#Web-frameworks)
+* [Design patterns](#Design-patterns)
+* [Reactive programming](#Reactive-programming)
+* [Alternatives](#Alternatives)
+* [Links](#Links)
 
 *(Page mainly written in spring 2022; in progress)*
 
