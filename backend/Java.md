@@ -92,6 +92,7 @@ language
 ## Standard APIs
 
 * Collections framework
+  https://en.wikipedia.org/wiki/Java_collections_framework
 * Regexp
 * I/O (way to do in 2022)
 * Concurrency - [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
@@ -137,7 +138,53 @@ language
 https://en.wikipedia.org/wiki/List_of_Java_APIs
 
 * libraries
-  * TODO check spring boot and quarkus list of libs to find best of them
+    * TODO check spring boot and quarkus list of libs to find best of them
+  dropwizard
+
+https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html
+
+JPA: https://jakarta.ee/specifications/persistence/
+https://en.wikipedia.org/wiki/Jackson_(API)
+https://en.wikipedia.org/wiki/Apache_Commons
+Commons Lang3
+https://en.wikipedia.org/wiki/List_of_Java_frameworks
+
+https://en.wikipedia.org/wiki/SLF4J
+https://en.wikipedia.org/wiki/Log4j
+https://logback.qos.ch/
+
+https://en.wikipedia.org/wiki/Gson
+https://en.wikipedia.org/wiki/Google_Guava
+https://en.wikipedia.org/wiki/Google_Guice
+https://en.wikipedia.org/wiki/Hibernate_(framework)
+
+https://en.wikipedia.org/wiki/Spring_Integration
+https://en.wikipedia.org/wiki/Spring_Security
+
+https://en.wikipedia.org/wiki/Thymeleaf
+
+https://beanvalidation.org/
+
+Test
+https://en.wikipedia.org/wiki/JUnit
+junit-jupiter
+https://en.wikipedia.org/wiki/Mockito
+http://hamcrest.org/JavaHamcrest/
+EasyMock
+
+https://github.com/ReactiveX/RxJava
+
+Aspect java?
+https://www.eclipse.org/aspectj/
+https://en.wikipedia.org/wiki/Aspect-oriented_programming
+
+cache
+https://www.ehcache.org/
+https://cache2k.org/
+
+Jakarta Servlet
+
+Lombok
 
 [*Go to top*](#Java)
 
@@ -146,6 +193,16 @@ https://en.wikipedia.org/wiki/List_of_Java_APIs
 
 TODO maven
 * tools: jprofiler, visualvm, mvn
+
+https://en.wikipedia.org/wiki/HSQLDB
+https://www.h2database.com/html/main.html
+https://db.apache.org/derby/
+
+Flyway
+
+https://en.wikipedia.org/wiki/Apache_Tomcat
+https://en.wikipedia.org/wiki/Jetty_(web_server)
+https://undertow.io/
 
 [*Go to top*](#Java)
 
