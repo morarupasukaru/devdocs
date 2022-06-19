@@ -115,7 +115,7 @@ language
         * properties
         * locale
         * uri
-        * uuid, ulid?
+        * uuid
   * misc: typical useful annotation (@VisibleForTesting, @Immutable, @Safe)
 
 [*Go to top*](#Java)
@@ -123,68 +123,34 @@ language
 
 ## Third-party APIs
 
-* Popular APIs
-  * JPA
-  * Bean Validation
-  * Logging
-  * ...
-* J2EE takeaway
-  * Servlet?
+* [commons-lang](https://commons.apache.org/proper/commons-lang/)
+  * [RandomUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/RandomUtils.html) and [RandomStringUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/RandomStringUtils.html) for random values
+  * [StringUtils](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/StringUtils.html) for [isBlank(...)](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/StringUtils.html#isBlank-java.lang.CharSequence-), etc.
+  * [ToStringBuilder](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/builder/ToStringBuilder.html),
+    [EqualsBuilder](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/builder/EqualsBuilder.html), 
+    [HashCodeBuilder](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/builder/HashCodeBuilder.html) for simplier toString(), equals(), hashCode() implementation
+  * [Pair](https://commons.apache.org/proper/commons-lang/javadocs/api-release/org/apache/commons/lang3/tuple/Pair.html) tuple
+* [guava](https://github.com/google/guava) provide core Java libraries from Google
+* [JPA](https://jakarta.ee/specifications/persistence/) and [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language) to persist and query data with [EclipseLink](https://www.eclipse.org/eclipselink/) or [hibernate](https://hibernate.org/) as JPA implementation
+* [Jakarta Bean Validation](https://beanvalidation.org/) to validate objects
+* [SLF4J](https://www.slf4j.org/) and [logback](https://logback.qos.ch/index.html) to logs
+* JSON support with [Jakson](https://github.com/FasterXML/jackson),
+  [Gson](https://github.com/google/gson), 
+  [JSON](https://github.com/stleary/JSON-java)
+  ; see also [article on compare of libs](https://www.innoq.com/en/articles/2022/02/java-json/)
+* caching with [ehcache](https://www.ehcache.org/), [cache2k](https://cache2k.org/) or [guava](https://github.com/google/guava/wiki/CachesExplained); see [comparisons](https://blog.actorsfit.com/a?ID=01250-d3d1718a-1629-447f-ac7b-d9afc18ef2c1)
+* testing with [junit5](https://junit.org/junit5/),
+  * [Java Hamcrest](http://hamcrest.org/JavaHamcrest/) to have better matchers
+  * [mockito](https://site.mockito.org/) to have mocks; see also [Mockito vs EasyMock vs JMockit](https://www.baeldung.com/mockito-vs-easymock-vs-jmockit)
+* [Jakarta Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet) to provide web applications (usually hidden behind a framework)
+* dependency injection with [Guice](https://github.com/google/guice) or [spring-context](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
+  ; see also [comparison](https://www.baeldung.com/guice-spring-dependency-injection)
 
-* Logging
-* JSON
-* Lombok --> lib? extension?
+### Out of scope
 
-https://en.wikipedia.org/wiki/List_of_Java_APIs
-
-* libraries
-    * TODO check spring boot and quarkus list of libs to find best of them
-  dropwizard
-
-https://docs.spring.io/spring-boot/docs/current/reference/html/dependency-versions.html
-
-JPA: https://jakarta.ee/specifications/persistence/
-https://en.wikipedia.org/wiki/Jackson_(API)
-https://en.wikipedia.org/wiki/Apache_Commons
-Commons Lang3
-https://en.wikipedia.org/wiki/List_of_Java_frameworks
-
-https://en.wikipedia.org/wiki/SLF4J
-https://en.wikipedia.org/wiki/Log4j
-https://logback.qos.ch/
-
-https://en.wikipedia.org/wiki/Gson
-https://en.wikipedia.org/wiki/Google_Guava
-https://en.wikipedia.org/wiki/Google_Guice
-https://en.wikipedia.org/wiki/Hibernate_(framework)
-
-https://en.wikipedia.org/wiki/Spring_Integration
-https://en.wikipedia.org/wiki/Spring_Security
-
-https://en.wikipedia.org/wiki/Thymeleaf
-
-https://beanvalidation.org/
-
-Test
-https://en.wikipedia.org/wiki/JUnit
-junit-jupiter
-https://en.wikipedia.org/wiki/Mockito
-http://hamcrest.org/JavaHamcrest/
-EasyMock
-
-https://github.com/ReactiveX/RxJava
-
-Aspect java?
-https://www.eclipse.org/aspectj/
-https://en.wikipedia.org/wiki/Aspect-oriented_programming
-
-cache
-https://www.ehcache.org/
-https://cache2k.org/
-
-Jakarta Servlet
-
-Lombok
+Libraries that should be avoided because adding extra complexity:
+  * [lombok](https://projectlombok.org/) 
+  * [aspectj](https://www.eclipse.org/aspectj/) ([aspect-oriented programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming))
 
 [*Go to top*](#Java)
 
@@ -232,6 +198,7 @@ https://undertow.io/
 ## Reactive programming
 
 TODO add section about reactive programming and java
+https://github.com/ReactiveX/RxJava
 
 * reactive programming
   * http://reactivex.io/
