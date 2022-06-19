@@ -182,6 +182,7 @@ https://undertow.io/
   * Quarkus
   * etc.
 
+https://en.wikipedia.org/wiki/Thymeleaf
 * ecosystems
   * frameworks: [SpringBoot](./SpringBoot.md), [Quarkus](https://quarkus.io/get-started/)
 
