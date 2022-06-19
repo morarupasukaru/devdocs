@@ -86,6 +86,11 @@ language
 * java 12, 13, 14: TODO
   * TODO complete with https://www.manning.com/books/modern-java-in-action
 
+
+* TODO link to java tutorial with java feature? e.g. new "for loop"
+** like JavaScript.md?
+
+
 [*Go to top*](#Java)
 
 
