@@ -16,6 +16,7 @@ Compilations of links about UX design
 * Tools
   * [sketchize](https://www.sketchize.com/) - Sketch sheets on which you can draw mocks
   * [Lunacy](https://icons8.com/lunacy) - Free design software
+  * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) google chrome devtools to record and optimize user flow
 
 *(Page mainly written in december 2021; links checked on 17.02.2022)*
 
