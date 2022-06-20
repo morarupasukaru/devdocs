@@ -16,6 +16,7 @@
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
   * [auth0](https://auth0.com/) provide open-source libs to implements JWT [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) and an authentification provider
     * [jwks](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) aka JSON Web Key Sets is set of keys containing the public keys used to verify any JSON Web Token (JWT) issued by the authorization server
+    * see also [Anatomy of a JWT](https://fusionauth.io/learn/expert-advice/tokens/anatomy-of-jwt) - TODO read
   * [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) Role-based access control is normally sufficient authorization for most applications
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
