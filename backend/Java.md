@@ -165,18 +165,18 @@ Libraries that should be avoided because adding extra complexity:
 
 ## Tools
 
-TODO maven
-* tools: jprofiler, visualvm, mvn
-
-https://en.wikipedia.org/wiki/HSQLDB
-https://www.h2database.com/html/main.html
-https://db.apache.org/derby/
-
-Flyway
-
-https://en.wikipedia.org/wiki/Apache_Tomcat
-https://en.wikipedia.org/wiki/Jetty_(web_server)
-https://undertow.io/
+* [maven](https://maven.apache.org/),
+  [gradle](https://gradle.org/) as build process and dependencies management
+* [hsql](http://hsqldb.org/), 
+  [H2](https://www.h2database.com/html/main.html),
+  [Apache Derby](https://db.apache.org/derby/) as in-memory databases
+* [flyway](https://flywaydb.org/) as database version control
+* [tomcat](https://tomcat.apache.org/),
+  [jetty](https://www.eclipse.org/jetty/),
+  [undertow](https://undertow.io/) as web containers
+* [visualvm](https://visualvm.github.io/) as java profiler
+* [jmeter](https://jmeter.apache.org/) to test performance of web apps
+* [selenium](https://www.selenium.dev/) to automate testing of web apps
 
 [*Go to top*](#Java)
 
