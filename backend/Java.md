@@ -150,6 +150,9 @@ language
 * [Jakarta Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet) to provide web applications (usually hidden behind a framework)
 * dependency injection with [Guice](https://github.com/google/guice) or [spring-context](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
   ; see also [comparison](https://www.baeldung.com/guice-spring-dependency-injection)
+* [Thymeleaf](https://www.thymeleaf.org/) :
+  HTML template engine for web/non-web environments as substitute for JSP
+  * see `spring-boot-starter-thymeleaf` for Spring Framework integration
 
 ### Out of scope
 
@@ -180,16 +183,18 @@ https://undertow.io/
 
 ## Web frameworks
 
-* Frameworks
-  * SpringBoot -> Servlet based?
-  * Dropwizard
-  * Micronaut
-  * Quarkus
-  * etc.
-
-https://en.wikipedia.org/wiki/Thymeleaf
-* ecosystems
-  * frameworks: [SpringBoot](./SpringBoot.md), [Quarkus](https://quarkus.io/get-started/)
+* [Spring Boot](SpringBoot.md) :
+  framework ease writing of web applications in Java
+* [Dropwizard](https://www.dropwizard.io/en/latest/) :
+  Java framework for rapid development of RESTful web services
+* [Quarkus](https://quarkus.io/) : 
+  Cloudnative microservices oriented Java stack 
+* [Micronaut](https://micronaut.io/)  
+  Cloudnative microservice/serverless full-stack framework
+* [JHipster](https://www.jhipster.tech/) :
+  microservice web application generator using Angular or React and the Spring Framework
+* see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
+  * Cloudnative solutions requires a cloud container (docker), SpringBoot/Dropwizard provide embedded server
 
 [*Go to top*](#Java)
 
