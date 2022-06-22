@@ -225,15 +225,11 @@ https://github.com/ReactiveX/RxJava
 
 ## Alternatives
 
-Other languages running on JVM
-
-* Other JVM languages
-  * Scala --> course?
-  * Kotlin --> course?
-  * Groovy
-  * ...
-
-* concept: [POJO](https://en.wikipedia.org/wiki/Plain_old_Java_object)
+Other popular JVM languages:
+* [Kotlin](https://kotlinlang.org/),
+* [Scala](https://www.scala-lang.org/),
+* [Groovy](https://groovy-lang.org/),
+* [Clojure](https://clojure.org/)
 
 [*Go to top*](#Java)
 
