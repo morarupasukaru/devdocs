@@ -177,6 +177,7 @@ Libraries that should be avoided because adding extra complexity:
 * [visualvm](https://visualvm.github.io/) as java profiler
 * [jmeter](https://jmeter.apache.org/) to test performance of web apps
 * [selenium](https://www.selenium.dev/) to automate testing of web apps
+* [jenkins](https://www.jenkins.io/) for continuous integration
 
 [*Go to top*](#Java)
 
