@@ -101,36 +101,47 @@ https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 
 ## Standard APIs
 
-* [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html) : 
-  for file i/o support 
-* [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html) :
-  for regular expressions support
-* [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html) :
+* [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
+  for file i/o 
+  * typical classes:
+    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html
+    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html
+    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html
+    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html
+    
+* [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
+  for regular expressions
+* [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html)
   for high-level concurrency features
-* [java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html) : TODO package
-  for common data structures support (list, map, etc.)
+  * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html
+* [java.util | java.util.concurrent - java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
+  for common data structures (list, map, etc.)
   * see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
-  
-  TODO
+* [java.time](https://docs.oracle.com/javase/tutorial/datetime/index.html)
+  for date/time
+* [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
+  for database access (jdbc)
+* [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
+  for networking
+  * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html)   
+    for high-level client interfaces to HTTP (new HTTP client API)
+  * typical classes: 
+    [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html), 
+    [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
 
-* Collections framework
-  https://en.wikipedia.org/wiki/Java_collections_framework
-* Concurrency - [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
-* JDBC (modern way)
 
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html  
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html ?
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html ?
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html ?  
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html
+* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html  
 * API
   * TODO link to javadocs
-  * TODO link to https://docs.oracle.com/javase/tutorial/
-  * jse: collections, datetime, jdbc, concurrency, regexp, java stream api, file i/o, localization
     * java.base
-    * java.sql
-      * collections
-      * (concurrency)
-      * i/o
       * math
-      * jdbc
-      * date and time
-      * regexp
       * misc
         * properties
         * locale
