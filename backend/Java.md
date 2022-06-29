@@ -13,6 +13,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Reactive programming](#Reactive-programming)
 * [Alternatives](#Alternatives)
 * [Links](#Links)
+  TODO clean-up TOC
 
 *(Page mainly written in spring 2022; in progress)*
 
@@ -20,6 +21,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 
 ## Language features
+TODO
 
 * TODO: *javalight / good parts of java* with latest versions of java
 
@@ -90,16 +92,29 @@ language
 * TODO link to java tutorial with java feature? e.g. new "for loop"
 ** like JavaScript.md?
 
+https://jenkov.com/tutorials/java/index.html#new-in-java-9
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 
 [*Go to top*](#Java)
 
 
 ## Standard APIs
 
+* [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html) : 
+  for file i/o support 
+* [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html) :
+  for regular expressions support
+* [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html) :
+  for high-level concurrency features
+* [java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html) : TODO package
+  for common data structures support (list, map, etc.)
+  * see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
+  
+  TODO
+
 * Collections framework
   https://en.wikipedia.org/wiki/Java_collections_framework
-* Regexp
-* I/O (way to do in 2022)
 * Concurrency - [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
 * JDBC (modern way)
 
@@ -208,6 +223,7 @@ Libraries that should be avoided because adding extra complexity:
 
 
 ## Reactive programming
+TODO
 
 TODO add section about reactive programming and java
 https://github.com/ReactiveX/RxJava
@@ -236,6 +252,8 @@ Other popular JVM languages:
 
 
 ## Links
+
+TODO
 * [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
 * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
 * good course on pluralsigh --> new from java xyz?
