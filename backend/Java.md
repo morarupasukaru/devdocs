@@ -127,39 +127,30 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
     modules
     * [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
       for database access (jdbc) 
-
 * Packages & Classes
-  * typical classes:
-    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html
-    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html
-    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html
-    https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html
-   https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html
-  * typical classes:
-    [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html),
-    [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
-
-
-
-
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html  
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html ?
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html ?
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html ?  
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html
-* https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html  
-* API
-  * TODO link to javadocs
-    * java.base
-      * math
-      * misc
-        * properties
-        * locale
-        * uri
-        * uuid
-  * misc: typical useful annotation (@VisibleForTesting, @Immutable, @Safe)
+  * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html)
+    * [java.io.Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html)
+  * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html)
+  * [java.math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html)
+  * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
+    * [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html)
+    * [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
+  * [java.nio.file](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
+    * [java.nio.file.Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html)
+    * [java.nio.file.Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html)
+    * [java.nio.file.Paths](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html)
+  * [java.text](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html)
+  * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
+    * [java.util.Locale](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Locale.html)
+    * [java.util.Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html)
+    * [java.util.UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
+  * [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+  * [java.util.concurrent.atomic](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html)
+  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
+  * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) ?
+  * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) ?
+  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) ?  
+* see also [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 
 [*Go to top*](#Java)
 
