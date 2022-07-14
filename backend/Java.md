@@ -101,32 +101,34 @@ https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 
 ## Standard APIs
 
-* [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
-  for file i/o 
+* Overview
+  * [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
+    for file i/o
+  * [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
+    for regular expressions
+  * [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html)
+    for high-level concurrency features
+  * [java.util | java.util.concurrent - java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
+    for common data structures (list, map, etc.)
+    ; see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
+  * [java.time](https://docs.oracle.com/javase/tutorial/datetime/index.html)
+    for date/time
+  * [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
+    for database access (jdbc)
+  * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
+    for networking
+  * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html)
+    for high-level client interfaces to HTTP (new HTTP client API)
+
+* Packages & Classes
   * typical classes:
     https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html
     https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html
     https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html
     https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html
-    
-* [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
-  for regular expressions
-* [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html)
-  for high-level concurrency features
-  * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html
-* [java.util | java.util.concurrent - java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
-  for common data structures (list, map, etc.)
-  * see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
-* [java.time](https://docs.oracle.com/javase/tutorial/datetime/index.html)
-  for date/time
-* [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
-  for database access (jdbc)
-* [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
-  for networking
-  * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html)   
-    for high-level client interfaces to HTTP (new HTTP client API)
-  * typical classes: 
-    [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html), 
+   https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html
+  * typical classes:
+    [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html),
     [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
 
 
