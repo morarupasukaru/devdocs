@@ -149,7 +149,7 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
   * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
   * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) ?
   * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) ?
-  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) ?  
+  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
 * see also [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 
 [*Go to top*](#Java)
