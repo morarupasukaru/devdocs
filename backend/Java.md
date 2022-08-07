@@ -147,11 +147,20 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
     * [java.util.Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html)
     * [java.util.UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
   * [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
-  * [java.util.concurrent.atomic](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html)
-  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
-  * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) ?
-  * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html): generic API for random number generation
-  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
+  * [java.util.concurrent.atomic](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html) TODO
+  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html):
+    for functional interfaces to be used in lambda expressions and method references; e.g.
+    * [java.util.function.Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html)
+    * [java.util.function.Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html)
+    * [java.util.function.Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html)
+    * [java.util.function.Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html)
+  * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) 
+    to package/unpack java libs
+    * [java.util.jar.Manifest](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/Manifest.html)
+  * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) 
+    for stream based random number generation
+  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) 
+    for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
 * see also [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 
 [*Go to top*](#Java)
@@ -209,6 +218,7 @@ Libraries that should be avoided because adding extra complexity:
 * [jmeter](https://jmeter.apache.org/) to test performance of web apps
 * [selenium](https://www.selenium.dev/) to automate testing of web apps
 * [jenkins](https://www.jenkins.io/) for continuous integration
+* [jar](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) to package programs
 
 [*Go to top*](#Java)
 
