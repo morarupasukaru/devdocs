@@ -246,6 +246,12 @@ Libraries that should be avoided because adding extra complexity:
 
 ## Tools
 
+* [java](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) to launch a Java application
+* [jar](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jar.html) to package programs/libs; see [tutorial](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html)
+* [javac](https://docs.oracle.com/en/java/javase/17/docs/specs/man/javac.html) to compile java into class files / bytecode
+* [javadoc](https://docs.oracle.com/en/java/javase/17/docs/specs/man/javadoc.html)
+  to generate API documentation as HTML pages; see
+  [standard doclet specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
 * [maven](https://maven.apache.org/),
   [gradle](https://gradle.org/) as build process and dependencies management
 * [hsql](http://hsqldb.org/), 
@@ -259,7 +265,6 @@ Libraries that should be avoided because adding extra complexity:
 * [jmeter](https://jmeter.apache.org/) to test performance of web apps
 * [selenium](https://www.selenium.dev/) to automate testing of web apps
 * [jenkins](https://www.jenkins.io/) for continuous integration
-* [jar](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html) to package programs
 
 [*Go to top*](#Java)
 
@@ -321,13 +326,16 @@ Other popular JVM languages:
 ## Links
 
 TODO
+* [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
+* [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)  
+* [Specification for the Standard Doclet (for javadoc)](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)  
 * [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
 * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
 * good course on pluralsigh --> new from java xyz?
 * check out whyzlab, certifications tools & learning path
 * references
   * [language specifications](https://docs.oracle.com/javase/specs/index.html)
-    *   * https://docs.oracle.com/javase/specs/jls/se16/html/index.html
+    * https://docs.oracle.com/javase/specs/jls/se17/html
   * books:
     TODO https://mitpress.mit.edu/books/java-precisely-third-edition ? (suggestion effective java)
     [Modern Java in Action](https://www.manning.com/books/modern-java-in-action),
