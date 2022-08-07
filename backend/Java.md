@@ -295,7 +295,8 @@ Libraries that should be avoided because adding extra complexity:
 
 
 ## Reactive programming
-TODO
+
+TODO part of Third-party APIs ?
 
 TODO add section about reactive programming and java
 https://github.com/ReactiveX/RxJava
