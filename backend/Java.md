@@ -129,32 +129,75 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
       for database access (jdbc) 
 * Packages & Classes
   * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html)
-    * TODO
     * [java.io.Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html)
+    * [java.io.Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html)
+    * [java.io.File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html)
+    * [java.io.InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html)
+    * [java.io.OutputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/OutputStream.html)
+    * [java.io.Reader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Reader.html)
+    * [java.io.Writer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Writer.html)
   * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html)
     * TODO
     * [java.lang.AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html)
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html
+    * [java.lang.Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html
+    * [java.lang.Math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html): [random()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html#random())
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/OutOfMemoryError.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ProcessBuilder.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html  
     * [java.lang.String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)
       * [matches(regex)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#matches(java.lang.String))
       * [split(regex)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#split(java.lang.String))
-    * [java.lang.Math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html): [random()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html#random())
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadLocal.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html
   * [java.math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html)
-    * TODO
+    * [java.math.BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html)
+    * [java.math.BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
   * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
-    * TODO
     * [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html)
+    * [java.net.URLDecoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html)
+    * [java.net.URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) 
     * [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
-    * java.net.http
-      * TODO
-  * [java.nio.file](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
-    * TODO
+    * [java.net.http.HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html)
+    * [java.net.http.HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html)
+    * [java.net.http.HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html)
+    * [java.net.http.HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html)
+  * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
+    * [java.nio.charset.StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html)  
+    * [java.nio.file.FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html)
+    * [java.nio.file.FileSystem](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileSystem.html)
     * [java.nio.file.Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html)
     * [java.nio.file.Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html)
     * [java.nio.file.Paths](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html)
+    * [java.nio.file.StandardOpenOption](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/StandardOpenOption.html)
   * [java.text](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html)
-    * TODO
+    * [java.text.DecimalFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html)
+    * [java.text.NumberFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/NumberFormat.html)
   * [java.time](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html)  
-    * TODO
+    * [java.time.Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html)
+    * [java.time.LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html)
+    * [java.time.LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html)
+    * [java.time.LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html)
+    * [java.time.ZonedDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/ZonedDateTime.html)
+    * [java.time.format.DateTimeFormatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html)
   * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html) for DB API
     * [java.sql.Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html)
     * [java.sql.ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html)
@@ -171,9 +214,31 @@ https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html
         that can be disconnected and serializable
   * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
     * TODO
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Currency.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumMap.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Iterator.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashMap.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashSet.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedList.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html
     * [java.util.Locale](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Locale.html)
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html  
     * [java.util.Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html)
     * [java.util.Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html)
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html  
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html
+    * https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html  
     * [java.util.UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
   * [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
     for high-level concurrency features like
