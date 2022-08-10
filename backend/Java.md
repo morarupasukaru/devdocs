@@ -10,10 +10,8 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Tools](#Tools)
 * [Web frameworks](#Web-frameworks)
 * [Design patterns](#Design-patterns)
-* [Reactive programming](#Reactive-programming)
 * [Alternatives](#Alternatives)
 * [Links](#Links)
-  TODO clean-up TOC
 
 *(Page mainly written in spring 2022; in progress)*
 
@@ -79,18 +77,13 @@ TODO
 
 language
 * TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
-  * maybe https://mitpress.mit.edu/books/java-precisely-third-edition TODO
 * quick history of change in java version, feature and APIs
 * types, structures, enum, interfaces, classes, package, exception
 * annotations, generics
 * lambda
-* tools: java, javac, jar
 * java 12, 13, 14: TODO
-  * TODO complete with https://www.manning.com/books/modern-java-in-action
-
-
 * TODO link to java tutorial with java feature? e.g. new "for loop"
-** like JavaScript.md?
+  * like JavaScript.md?
 
 https://jenkov.com/tutorials/java/index.html#new-in-java-9
 
@@ -294,6 +287,13 @@ https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 * [Thymeleaf](https://www.thymeleaf.org/) :
   HTML template engine for web/non-web environments as substitute for JSP
   * see `spring-boot-starter-thymeleaf` for Spring Framework integration
+* reactive programming
+  * [ReactiveX](https://reactivex.io/)
+  * [Project Reactor](https://projectreactor.io/) internally used by
+    [Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html)
+  * ([java.util.concurrent.Flow](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Flow.html)
+    API is used by JDK internally to have reactive-streams without external dependency like ReactiveX or Project Reactor)
+  * see [RxJava vs Reactor](https://www.nurkiewicz.com/2019/02/rxjava-vs-reactor.html)
 
 ### Out of scope
 
@@ -354,26 +354,12 @@ Libraries that should be avoided because adding extra complexity:
 [*Go to top*](#Java)
 
 
-## Reactive programming
-
-TODO part of Third-party APIs ?
-
-* reactive programming
-  * [ReactiveX](https://reactivex.io/)
-  * [Project Reactor](https://projectreactor.io/) internally used by 
-    [Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html)
-  * https://www.nurkiewicz.com/2019/02/rxjava-vs-reactor.html
-  * https://hmh.engineering/spring-web-flux-project-reactor-a645c8f50c8d?gi=e3fe9f1b41b5
-
-[*Go to top*](#Java)
-
-
 ## Alternatives
 
 Other popular JVM languages:
-* [Kotlin](https://kotlinlang.org/),
-* [Scala](https://www.scala-lang.org/),
-* [Groovy](https://groovy-lang.org/),
+* [Kotlin](https://kotlinlang.org/)
+* [Scala](https://www.scala-lang.org/)
+* [Groovy](https://groovy-lang.org/)
 * [Clojure](https://clojure.org/)
 
 [*Go to top*](#Java)
@@ -381,22 +367,11 @@ Other popular JVM languages:
 
 ## Links
 
-TODO
+* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
 * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
 * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)  
-* [Specification for the Standard Doclet (for javadoc)](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)  
-* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
+* [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
 * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
-* good course on pluralsigh --> new from java xyz?
-* check out whyzlab, certifications tools & learning path
-* references
-  * [language specifications](https://docs.oracle.com/javase/specs/index.html)
-    * https://docs.oracle.com/javase/specs/jls/se17/html
-  * books:
-    TODO https://mitpress.mit.edu/books/java-precisely-third-edition ? (suggestion effective java)
-    [Modern Java in Action](https://www.manning.com/books/modern-java-in-action),
-    [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/)
-  * [Lambdas and Streams Master Class Part 1](https://www.youtube.com/watch?v=ePXnCezwRuw) and [Part 2](https://www.youtube.com/watch?v=2c_KNH3s2S0)
-  * [exam java se 11](https://education.oracle.com/fr/upgrade-ocp-java-6-7-8-to-java-se-11-developer/pexam_1Z0-817): [learning path](https://enthuware.com/pass-java-1z0-817-certification-exam), [preparation](https://www.whizlabs.com/blog/ocp-java-11-upgrade-1z0-817-exam-preparation/)
+* [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) (book)
 
 [*Go to top*](#Java)
