@@ -20,8 +20,8 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 ## Language features
 
-* [Java version history](https://en.wikipedia.org/wiki/Java_version_history)
-  and [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9):
+* [Java history](https://en.wikipedia.org/wiki/Java_version_history)
+  and [updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html):
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
     to restrict classes/interfaces inheritance
