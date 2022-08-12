@@ -4,7 +4,8 @@
 
 This document try to summarize best of Java to develop REST APIs (or batches).
 
-* [Language features](#Language-features)
+* [Language](#Language)
+* [History](#History)
 * [Standard APIs](#Standard-APIs)
 * [Third-party APIs](#Third-party-APIs)
 * [Tools](#Tools)
@@ -17,8 +18,29 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 [*Go to parent page*](../README.md)
 
+## Language
 
-## Language features
+TODO
+language
+* TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
+* quick history of change in java version, feature and APIs
+* types, structures, enum, interfaces, classes, package, exception
+* annotations, generics
+* lambda
+* java 12, 13, 14: TODO
+* TODO link to java tutorial with java feature? e.g. new "for loop"
+  * like JavaScript.md?
+
+https://jenkov.com/tutorials/java/index.html#new-in-java-9
+
+https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
+
+...
+
+[*Go to top*](#Java)
+
+
+## History
 
 * [Java history](https://en.wikipedia.org/wiki/Java_version_history)
   and [updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html):
@@ -80,20 +102,6 @@ TODO continue here
     [JavaFX](https://en.wikipedia.org/wiki/Java_Card)
 * Java Virtual Machine
   * ...
-
-language
-* TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
-* quick history of change in java version, feature and APIs
-* types, structures, enum, interfaces, classes, package, exception
-* annotations, generics
-* lambda
-* java 12, 13, 14: TODO
-* TODO link to java tutorial with java feature? e.g. new "for loop"
-  * like JavaScript.md?
-
-https://jenkov.com/tutorials/java/index.html#new-in-java-9
-
-https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
 
 [*Go to top*](#Java)
 
