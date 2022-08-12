@@ -19,47 +19,53 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 
 ## Language features
-TODO
 
-* TODO: *javalight / good parts of java* with latest versions of java
-
-* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
-* Versions of java language and Java SE are coupled together
-* [History of Java SE and major updates for the stack](https://en.wikipedia.org/wiki/Java_version_history)
-  * 1996/1997 - JDK 1.0 / JDK 1.1: JDBC
-  * 1998 - J2SE 1.2: [Collections framework](https://en.wikipedia.org/wiki/Java_collections_framework) --> TODO add sections
-  * 2000 - J2SE 1.3: nothing interesting
-  * 2002 - J2SE 1.4: [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression)
-  * 2004 - Java SE 5
-    * [Generics](https://en.wikipedia.org/wiki/Generics_in_Java)
-    * [Annotation](https://en.wikipedia.org/wiki/Java_annotation)
-    * `enum`
-    * [varargs](https://en.wikipedia.org/wiki/Java_syntax#Varargs)
-    * [for each loop](https://en.wikipedia.org/wiki/Foreach_loop#Java)
-    * [static import](https://en.wikipedia.org/wiki/Static_import)
-    * [java.util.concurrent](https://docs.oracle.com/javase/1.5.0/docs/guide/concurrency/overview.html)
-  * 2006 - Java SE 6 : nothing interesting
-  * 2011 - Java SE 7
-    * switch support String
-    * try-with-resources
-    * diamond operator `<>`
+* [Java version history](https://en.wikipedia.org/wiki/Java_version_history)
+  and [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9):
+  * 2022 - Java SE 17 :
+    [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
+    to restrict classes/interfaces inheritance
+  * 2021 - Java SE 16 :
+    [records](https://docs.oracle.com/en/java/javase/16/language/records.html) as immutable tuple
+  * 2019-2020 - Java SE 13-15 : nothing interesting
+  * 2019 - Java SE 12 : 
+    [switch expressions](https://docs.oracle.com/en/java/javase/14/language/switch-expressions.html)
+  * 2018 - Java SE 11 :
+      [java.net.http.HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html)
+      as new HTTP client API
+  * 2018 - Java SE 10 : 
+    [local variable type inference](https://docs.oracle.com/en/java/javase/17/language/local-variable-type-inference.html)
+    (not to overused!)
+  * 2017 - Java SE 9:
+    [Java platform module system](https://www.oracle.com/ch-de/corporate/features/understanding-java-9-modules.html)
+    ([Project Jigsaw](https://openjdk.org/projects/jigsaw/))
   * 2014 - Java SE 8
-    * [lambda expression](https://en.wikipedia.org/wiki/Anonymous_function#Java)
-    * stream API / optional
-    * [date and time API](https://openjdk.java.net/jeps/150)
-  * 2017 - Java SE 9
-    * [Java platform module system](https://en.wikipedia.org/wiki/Java_Platform_Module_System) / Jigsaw
-  * 2018 - Java SE 10 : nothing interesting
-  * 2018 - Java SE 11 : nothing interesting
-    * [HTTP Client](https://openjdk.java.net/jeps/321) - https://openjdk.java.net/groups/net/httpclient/intro.html
-  * 2019 - Java SE 12 : nothing interesting
-  * 2019 - Java SE 13 : nothing interesting
-  * 2020 - Java SE 14 : nothing interesting
-  * 2020 - Java SE 15 : nothing interesting
-  * 2021 - Java SE 16 : [records](https://openjdk.java.net/jeps/395) as immutable Tuple -> checkout if really usefull in contrast to lombok
-  * 2022 - Java SE 17 : nothing interesting
-  * [Java language updates from 9](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) from Java 9
+    [lambda expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html),
+    [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html),
+    [java.util.Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html)
+    [date and time API](https://docs.oracle.com/javase/tutorial/datetime/index.html)
+  * 2011 - Java SE 7
+    [Strings in switch](https://docs.oracle.com/javase/8/docs/technotes/guides/language/strings-switch.html),
+    [try-with-resources](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html),
+    [diamond operator <> in generics](https://docs.oracle.com/javase/tutorial/java/generics/types.html#diamond),
+  * 2006 - Java SE 6 : nothing interesting
+  * 2004 - Java SE 5
+    [Generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html),
+    [Annotation](https://docs.oracle.com/javase/tutorial/java/annotations/index.html),
+    [enum](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html),
+    [varargs](https://docs.oracle.com/javase/8/docs/technotes/guides/language/varargs.html),
+    [for each loop](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html),
+    [static import](https://docs.oracle.com/javase/8/docs/technotes/guides/language/static-import.html),
+    [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+  * 2002 - J2SE 1.4: 
+    [Regular expressions](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
+    and [Chained exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html)
+  * 2000 - J2SE 1.3: nothing interesting
+  * 1998 - J2SE 1.2: 
+   [Collections framework](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/doc-files/coll-overview.html)
+  * 1996/1997 - JDK 1.0 / JDK 1.1: JDBC
 
+TODO continue here
 * Platforms
   * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition)
   * [Java EE or Jakarta EE](https://en.wikipedia.org/wiki/Jakarta_EE) (Enterprise Edition) extends Java SE with some entreprise feature
@@ -253,6 +259,8 @@ https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
     for matching character sequences against regular expressions
     * [java.util.regex.Pattern](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html) as regular expression
     * [java.util.regex.Matcher](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Matcher.html) as regex engine
+  * [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html)
+    for streams API based on lambda expressions
   * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) 
     for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
 * see also [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
@@ -367,7 +375,7 @@ Other popular JVM languages:
 
 ## Links
 
-* [JDK Release Notes](https://www.oracle.com/java/technologies/javase/jdk-relnotes-index.html)
+* [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9)
 * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
 * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)  
 * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
