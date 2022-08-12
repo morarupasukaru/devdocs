@@ -42,7 +42,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * 2014 - Java SE 8
     [lambda expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html),
     [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html),
-    [java.util.Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html)
+    [java.util.Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html),
     [date and time API](https://docs.oracle.com/javase/tutorial/datetime/index.html)
   * 2011 - Java SE 7
     [Strings in switch](https://docs.oracle.com/javase/8/docs/technotes/guides/language/strings-switch.html),
@@ -58,8 +58,8 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [static import](https://docs.oracle.com/javase/8/docs/technotes/guides/language/static-import.html),
     [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
   * 2002 - J2SE 1.4: 
-    [Regular expressions](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
-    and [Chained exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html)
+    [Regular expressions](https://docs.oracle.com/javase/tutorial/essential/regex/index.html),
+    [Chained exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html)
   * 2000 - J2SE 1.3: nothing interesting
   * 1998 - J2SE 1.2: 
    [Collections framework](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/doc-files/coll-overview.html)
