@@ -155,56 +155,55 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     * [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
       for database access (jdbc) 
 * Packages & Classes
-  * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html)
-    * [java.io.Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html)
-    * [java.io.Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html)
-    * [java.io.File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html)
-    * [java.io.InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html)
-    * [java.io.OutputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/OutputStream.html)
-    * [java.io.Reader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Reader.html)
-    * [java.io.Writer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Writer.html)
-  * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html)
-    * [java.lang.AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html)
-    * [java.lang.Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html)
-    * [java.lang.Class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html)
-    * [java.lang.Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
-    * [java.lang.Enum](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html)
-    * [java.lang.Float](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html)
-    * [java.lang.FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html)
-    * [java.lang.IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html)
-    * [java.lang.IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html)
-    * [java.lang.Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html)
-    * [java.lang.Iterable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html)
-    * [java.lang.Long](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html)
-    * [java.lang.Math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html): [random()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html#random())
-    * [java.lang.NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html)
-    * [java.lang.NumberFormatException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html)
-    * [java.lang.OutOfMemoryError](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/OutOfMemoryError.html)
-    * [java.lang.Process](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html)
-    * [java.lang.ProcessBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ProcessBuilder.html)
-    * [java.lang.Runnable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html)
-    * [java.lang.RuntimeException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html)
-    * [java.lang.String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html)
-      * [matches(regex)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#matches(java.lang.String))
-      * [split(regex)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html#split(java.lang.String))
-    * [java.lang.StringBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html)
-    * [java.lang.System](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html)
-    * [java.lang.Thread](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html)
-    * [java.lang.ThreadLocal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadLocal.html)
-    * [java.lang.UnsupportedOperationException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html)
-    * [java.lang.Void](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html)
-  * [java.math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html)
-    * [java.math.BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html)
-    * [java.math.BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
-  * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
-    * [java.net.URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html)
-    * [java.net.URLDecoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html)
-    * [java.net.URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) 
-    * [java.net.URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
-    * [java.net.http.HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html)
-    * [java.net.http.HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html)
-    * [java.net.http.HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html)
-    * [java.net.http.HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html)
+  * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html):
+    [Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html),
+    [Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html),
+    [File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html),
+    [InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html),
+    [OutputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/OutputStream.html),
+    [Reader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Reader.html),
+    [Writer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Writer.html)
+  * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html):
+    [AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html),
+    [Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html),
+    [Class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html),
+    [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html),
+    [Enum](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html),
+    [Float](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html),
+    [FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html),
+    [IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html),
+    [IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html),
+    [Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html),
+    [Iterable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html),
+    [Long](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html),
+    [Math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html),
+    [NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
+    [NumberFormatException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html),
+    [OutOfMemoryError](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/OutOfMemoryError.html),
+    [Process](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html),
+    [ProcessBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ProcessBuilder.html),
+    [Runnable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html),
+    [RuntimeException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html),
+    [String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html),
+    [StringBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html),
+    [System](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html),
+    [Thread](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html),
+    [ThreadLocal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadLocal.html),
+    [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html),
+    [Void](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html)
+  * [java.math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html):
+    [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html),
+    [BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
+  * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html):
+    [URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html),
+    [URLDecoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html),
+    [URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) ,
+    [URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
+    * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html):
+      [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
+      [HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
+      [HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html),
+      [HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html)
   * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
     * [java.nio.charset.StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html)  
     * [java.nio.file.FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html)
