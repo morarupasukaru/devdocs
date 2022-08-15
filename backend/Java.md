@@ -156,7 +156,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
       for database access (jdbc) 
 * Major packages & classes
   * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html):
-    [Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html),
+    * [Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html),
     [Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html),
     [File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html),
     [InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html),
@@ -164,7 +164,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [Reader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Reader.html),
     [Writer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Writer.html)
   * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html):
-    [AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html),
+    * [AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html),
     [Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html),
     [Class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html),
     [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html),
@@ -195,7 +195,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html),
     [BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
   * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html):
-    [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
+    * [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
     [HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
     [HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html),
     [HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html),
@@ -204,7 +204,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) ,
     [URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
   * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html):
-    [StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html),
+    * [StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html),
     [FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html),
     [FileSystem](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileSystem.html),
     [Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html),
@@ -215,14 +215,14 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [DecimalFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html),
     [NumberFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/NumberFormat.html)
   * [java.time](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html):
-    [Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html),
+    * [Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html),
     [LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html),
     [LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html),
     [LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html),
     [ZonedDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/ZonedDateTime.html),
     [DateTimeFormatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html)
   * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html) for DB API:
-    [Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html),
+    * [Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html),
     [ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html),
     [Statement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Statement.html),
     [PreparedStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html),
@@ -231,7 +231,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [DataSource](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html),
     [RowSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/RowSet.html) and its subclasses
   * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html):
-    [ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html),
+    * [ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html),
     [Arrays](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html),
     [Base64](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html),
     [Collection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html),
