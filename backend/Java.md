@@ -11,8 +11,19 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Tools](#Tools)
 * [Web frameworks](#Web-frameworks)
 * [Design patterns](#Design-patterns)
-* [Alternative JVM languages](#Alternative-JVM-languages)
-* [Links](#Links)
+* Alternative JVM languages:
+  [Kotlin](https://kotlinlang.org/),
+  [Scala](https://www.scala-lang.org/),
+  [Groovy](https://groovy-lang.org/),
+  [Clojure](https://clojure.org/)
+* Links
+  * [Java SE javadoc](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
+  * [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9)
+  * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
+  * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)
+  * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
+  * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
+  * [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) (book)
 
 *(Page mainly written in spring 2022; in progress)*
 
@@ -376,29 +387,5 @@ Libraries that should be avoided because adding extra complexity:
 ## Design patterns
 
 * TODO: summary of 'effective java' ?
-
-[*Go to top*](#Java)
-
-
-## Alternative JVM languages
-
-Other popular JVM languages:
-* [Kotlin](https://kotlinlang.org/)
-* [Scala](https://www.scala-lang.org/)
-* [Groovy](https://groovy-lang.org/)
-* [Clojure](https://clojure.org/)
-
-[*Go to top*](#Java)
-
-
-## Links
-
-* [Java SE javadoc](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
-* [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9)
-* [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
-* [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)  
-* [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
-* [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
-* [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) (book)
 
 [*Go to top*](#Java)
