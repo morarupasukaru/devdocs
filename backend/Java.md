@@ -11,7 +11,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Tools](#Tools)
 * [Web frameworks](#Web-frameworks)
 * [Design patterns](#Design-patterns)
-* [Alternatives](#Alternatives)
+* [Alternative JVM languages](#Alternative-JVM-languages)
 * [Links](#Links)
 
 *(Page mainly written in spring 2022; in progress)*
@@ -118,6 +118,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 ## Standard APIs
 
+* [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 * [Overview](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html#packages-summary)
   * [java.base](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html#packages-summary) module
     * [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
@@ -281,7 +282,6 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     for streams API based on lambda expressions
   * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) 
     for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
-* see also [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 
 [*Go to top*](#Java)
 
@@ -380,7 +380,7 @@ Libraries that should be avoided because adding extra complexity:
 [*Go to top*](#Java)
 
 
-## Alternatives
+## Alternative JVM languages
 
 Other popular JVM languages:
 * [Kotlin](https://kotlinlang.org/)
@@ -393,6 +393,7 @@ Other popular JVM languages:
 
 ## Links
 
+* [Java SE javadoc](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
 * [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9)
 * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
 * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)  
