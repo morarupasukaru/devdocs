@@ -20,22 +20,36 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 ## Language
 
-TODO
-language
-* TODO summary of [language specifications](https://docs.oracle.com/javase/specs/index.html) or a book
-* quick history of change in java version, feature and APIs
-* types, structures, enum, interfaces, classes, package, exception
-* annotations, generics
-* lambda
-* java 12, 13, 14: TODO
-* TODO link to java tutorial with java feature? e.g. new "for loop"
-  * like JavaScript.md?
-
-https://jenkov.com/tutorials/java/index.html#new-in-java-9
-
-https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
-
-...
+* [basic concepts](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
+  * [variables](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
+    as [primitive data types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
+    or [array](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
+  * [operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html)
+  * [expressions, statements, and blocks](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/expressions.html)
+  * [control flow](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/flow.html)
+    with [if-then-else](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html), 
+    [switch](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html),  
+    [while and do-while loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html),
+    [for loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html),
+    [break, continue, return](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html)
+* [object oriented](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
+  * [classes](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)
+  * [objects](https://docs.oracle.com/javase/tutorial/java/javaOO/objects.html)
+  * [nested classes](https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html)
+  * [lambda expressions](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html)
+    and [method references](https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html)
+  * [enums](https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html)
+  * [interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
+  * [inheritance / subclasses](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
+* other concepts
+  * [package](https://docs.oracle.com/javase/tutorial/java/package/index.html)
+  * [numbers](https://docs.oracle.com/javase/tutorial/java/data/numbers.html)
+  * [strings](https://docs.oracle.com/javase/tutorial/java/data/strings.html)
+  * [annotations](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
+  * [autoboxing and unboxing](https://docs.oracle.com/javase/tutorial/java/data/autoboxing.html)
+  * [generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
+    (see also [changes from Java SE 5](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)) 
+  * [exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
 
 [*Go to top*](#Java)
 
@@ -86,8 +100,6 @@ https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
   * 1998 - J2SE 1.2: 
    [Collections framework](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/doc-files/coll-overview.html)
   * 1996/1997 - JDK 1.0 / JDK 1.1: JDBC
-
-TODO continue here
 * Platforms
   * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition)
   * [Java EE or Jakarta EE](https://en.wikipedia.org/wiki/Jakarta_EE) (Enterprise Edition) extends Java SE with some entreprise feature
@@ -100,8 +112,6 @@ TODO continue here
     [Java ME](https://en.wikipedia.org/wiki/Java_Platform,_Micro_Edition),
     [Java Card](https://en.wikipedia.org/wiki/JavaFX),
     [JavaFX](https://en.wikipedia.org/wiki/Java_Card)
-* Java Virtual Machine
-  * ...
 
 [*Go to top*](#Java)
 
