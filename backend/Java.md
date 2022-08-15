@@ -137,7 +137,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     * [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
       for regular expressions
     * [java.util.concurrent](https://docs.oracle.com/javase/tutorial/essential/concurrency/highlevel.html)
-      for high-level concurrency features
+      for high-level concurrency APIs
     * [java.util | java.util.concurrent - java collection frameworks](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html)
       for common data structures (list, map, etc.)
       ; see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
@@ -154,7 +154,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     modules
     * [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
       for database access (jdbc) 
-* Packages & Classes
+* Major packages & classes
   * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html):
     [Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html),
     [Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html),
@@ -195,99 +195,90 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html),
     [BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
   * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html):
+    [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
+    [HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
+    [HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html),
+    [HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html),
     [URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html),
     [URLDecoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html),
     [URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) ,
     [URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
-    * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html):
-      [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
-      [HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
-      [HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html),
-      [HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html)
-  * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html)
-    * [java.nio.charset.StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html)  
-    * [java.nio.file.FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html)
-    * [java.nio.file.FileSystem](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileSystem.html)
-    * [java.nio.file.Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html)
-    * [java.nio.file.Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html)
-    * [java.nio.file.Paths](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html)
-    * [java.nio.file.StandardOpenOption](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/StandardOpenOption.html)
-  * [java.text](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html)
-    * [java.text.DecimalFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html)
-    * [java.text.NumberFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/NumberFormat.html)
-  * [java.time](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html)  
-    * [java.time.Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html)
-    * [java.time.LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html)
-    * [java.time.LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html)
-    * [java.time.LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html)
-    * [java.time.ZonedDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/ZonedDateTime.html)
-    * [java.time.format.DateTimeFormatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html)
-  * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html) for DB API
-    * [java.sql.Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html)
-    * [java.sql.ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html)
-    * [java.sql.Statement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Statement.html)
-    * [java.sql.PreparedStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html)
-    * [java.sql.CallableStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/CallableStatement.html)
-  * [javax.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/package-summary.html) to supplements java.sql
-    * [javax.sql.DataSource](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html) for factory for db connections factory (better alternative than
-      [java.sql.DriverManager](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/DriverManager.html))
-    * [javax.sql.RowSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/RowSet.html)
-      (and subinterfaces in [javax.sql.rowset](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql.rowset/javax/sql/rowset/package-summary.html))
-      as a wrapper around a
-      [ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html)
-        that can be disconnected and serializable
-  * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html)
-    * [java.util.ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)
-    * [java.util.Arrays](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html)
-    * [java.util.Base64](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html)
-    * [java.util.Collection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html)
-    * [java.util.Collections](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html)
-    * [java.util.Currency](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Currency.html)
-    * [java.util.EnumMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumMap.html)
-    * [java.util.EnumSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html)
-    * [java.util.Formatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html)
-    * [java.util.HashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html)
-    * [java.util.HashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html)
-    * [java.util.Iterator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Iterator.html)
-    * [java.util.LinkedHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashMap.html)
-    * [java.util.LinkedHashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashSet.html)
-    * [java.util.LinkedList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedList.html)
-    * [java.util.List](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html)
-    * [java.util.Locale](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Locale.html)
-    * [java.util.Map](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html)
-    * [java.util.Objects](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html)
-    * [java.util.Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html)
-    * [java.util.Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html)
-    * [java.util.Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html)
-    * [java.util.Set](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html)
-    * [java.util.TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html)
-    * [java.util.TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html)
-    * [java.util.UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
+  * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html):
+    [StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html),
+    [FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html),
+    [FileSystem](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileSystem.html),
+    [Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html),
+    [Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html),
+    [Paths](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html),
+    [StandardOpenOption](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/StandardOpenOption.html)
+  * [java.text](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html):
+    [DecimalFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html),
+    [NumberFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/NumberFormat.html)
+  * [java.time](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html):
+    [Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html),
+    [LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html),
+    [LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html),
+    [LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html),
+    [ZonedDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/ZonedDateTime.html),
+    [DateTimeFormatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html)
+  * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html) for DB API:
+    [Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html),
+    [ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html),
+    [Statement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Statement.html),
+    [PreparedStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html),
+    [CallableStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/CallableStatement.html)
+  * [javax.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/package-summary.html) to supplements java.sql:
+    [DataSource](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html),
+    [RowSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/RowSet.html) and its subclasses
+  * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html):
+    [ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html),
+    [Arrays](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html),
+    [Base64](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html),
+    [Collection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html),
+    [Collections](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html),
+    [Currency](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Currency.html),
+    [EnumMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumMap.html),
+    [EnumSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html),
+    [Formatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html),
+    [HashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html),
+    [HashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html),
+    [Iterator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Iterator.html),
+    [LinkedHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashMap.html),
+    [LinkedHashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashSet.html),
+    [LinkedList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedList.html),
+    [List](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html),
+    [Locale](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Locale.html),
+    [Map](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html),
+    [Objects](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html),
+    [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html),
+    [Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html),
+    [Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html),
+    [Set](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html),
+    [TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html),
+    [TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html),
+    [UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
   * [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
-    for high-level concurrency features like
-    * [java.util.concurrent.Executor](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executor.html) for launching and managing threads
-    * [java.util.concurrent.ConcurrentLinkedQueue](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html)
-    * [java.util.concurrent.ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html)
-  * [java.util.concurrent.atomic](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/package-summary.html)
-    for thread-safe classes to managed single variable like
-    * [java.util.concurrent.atomic.AtomicBoolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html)
-    * [java.util.concurrent.atomic.AtomicInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html)
-    * [java.util.concurrent.atomic.AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html)
-  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html):
-    for functional interfaces to be used in lambda expressions and method references; e.g.
-    * [java.util.function.Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html)
-    * [java.util.function.Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html)
-    * [java.util.function.Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html)
-    * [java.util.function.Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html)
+    for high-level concurrency APIs:
+    * [Executor](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executor.html),
+      [ConcurrentLinkedQueue](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html),
+      [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html),
+      [AtomicBoolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html),
+      [AtomicInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html),
+      [AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html)
+  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
+    for functional interfaces to be used in lambda expressions/method references:
+    * [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
+      [Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html),
+      [Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html),
+      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html), ...
   * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) 
-    to package/unpack java libs
-    * [java.util.jar.Manifest](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/Manifest.html)
+    to package/unpack java libs:
+    [Manifest](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/Manifest.html)
   * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) 
     for stream based random number generation
-  * [java.util.regex](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/package-summary.html)
-    for matching character sequences against regular expressions
-    * [java.util.regex.Pattern](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html) as regular expression
-    * [java.util.regex.Matcher](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Matcher.html) as regex engine
+  * [java.util.regex](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/package-summary.html):
+    [Pattern](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html),
+    [Matcher](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Matcher.html)
   * [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html)
     for streams API based on lambda expressions
   * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) 
