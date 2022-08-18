@@ -379,7 +379,7 @@ Libraries that should be avoided because adding extra complexity:
 Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
 
 
-* creating & destroying objects
+* _Creating & Destroying objects_
   * consider static factory methods instead of constructor (item 1)
     * [Date.from(instant)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html#from(java.time.Instant)),
       [EnumSet.of(...)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html#of(E,E...)),
@@ -395,7 +395,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * ... by using static factory methods (item 1)
   * prefer [try-with-resources](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) 
     to try-finally (item 9)
-* methods common to all objects
+* _Methods common to all objects_
   * obey the general 
     [contract](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) 
     when overring 
@@ -420,19 +420,19 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
       static construction methods like 
       [Comparator.comparing()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function))
       ; see [tutorial](https://www.baeldung.com/java-8-comparator-comparing)
-  * classes & interfaces 
-    * minimize mutability (item 17)
-      * classes should be immutable unless there's a very good reason to make them mutable
-      * limit class mutability as much as possible
-      * use [record](https://docs.oracle.com/en/java/javase/16/language/records.html)
-        to design immutable classes (java 16 feature)
-    * favor composition over inheritance (item 18)
-    * prefer interfaces to abstract classes (item 20)
-    * design interface for posterity (item 21)
-      * avoid [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) unless the need is critical
-        (because it can break implementations)
-    * favor static member classes over nonstatic (item 24)
-  * generics
-    * TODO
+* _Classes & Interfaces_ 
+  * minimize mutability (item 17)
+    * classes should be immutable unless there's a very good reason to make them mutable
+    * limit class mutability as much as possible
+    * use [record](https://docs.oracle.com/en/java/javase/16/language/records.html)
+      to design immutable classes (java 16 feature)
+  * favor composition over inheritance (item 18)
+  * prefer interfaces to abstract classes (item 20)
+  * design interface for posterity (item 21)
+    * avoid [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) unless the need is critical
+      (because it can break implementations)
+  * favor static member classes over nonstatic (item 24)
+* _Generics_
+  * TODO
 
 [*Go to top*](#Java)
