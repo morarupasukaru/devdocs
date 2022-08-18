@@ -376,6 +376,63 @@ Libraries that should be avoided because adding extra complexity:
 
 ## Design patterns
 
-* TODO: summary of 'effective java' ?
+Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
+
+
+* creating & destroying objects
+  * consider static factory methods instead of constructor (item 1)
+    * [Date.from(instant)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html#from(java.time.Instant)),
+      [EnumSet.of(...)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html#of(E,E...)),
+      [BigInteger.valueOf(long)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html#valueOf(long)),
+      ...
+  * consider a builder when faced many constructor parameters (item 2)
+  * prefer dependency injection to hardwiring resources (item 5)
+    * use a dependency injection framework like
+      [Spring](https://spring.io/),
+      [Guice](https://github.com/google/guice),
+      [Dagger](https://dagger.dev/)
+  * avoid creating unnecessary objects (item 6)
+    * ... by using static factory methods (item 1)
+  * prefer [try-with-resources](https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html) 
+    to try-finally (item 9)
+* methods common to all objects
+  * obey the general 
+    [contract](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) 
+    when overring 
+    [equals](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 10)
+  * always override [hashCode](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()) 
+    when you override
+    [equals](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 11)
+  * always override 
+    [toString](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString())
+    (item 12)
+    * use IDE to generate equals, hashCode and toString
+  * consider implementing 
+    [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
+    (item 14) 
+    * follow 
+      [compareTo](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
+      [contract](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
+      to not break other comparison-dependent classes like
+      [TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html) or
+      [TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html)
+    * use [Comparator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Comparator.html) 
+      static construction methods like 
+      [Comparator.comparing()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function))
+      ; see [tutorial](https://www.baeldung.com/java-8-comparator-comparing)
+  * classes & interfaces 
+    * minimize mutability (item 17)
+      * classes should be immutable unless there's a very good reason to make them mutable
+      * limit class mutability as much as possible
+      * use [record](https://docs.oracle.com/en/java/javase/16/language/records.html)
+        to design immutable classes (java 16 feature)
+    * favor composition over inheritance (item 18)
+    * prefer interfaces to abstract classes (item 20)
+    * design interface for posterity (item 21)
+      * avoid [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) unless the need is critical
+        (because it can break implementations)
+    * favor static member classes over nonstatic (item 24)
+  * generics
+    * TODO
 
 [*Go to top*](#Java)
