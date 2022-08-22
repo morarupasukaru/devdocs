@@ -10,7 +10,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Third-party APIs](#Third-party-APIs)
 * [Tools](#Tools)
 * [Web frameworks](#Web-frameworks)
-* [Effecive java](#Effective-java)
+* [Effective java](#Effective-java)
 * Alternative JVM languages:
   [Kotlin](https://kotlinlang.org/),
   [Scala](https://www.scala-lang.org/),
@@ -386,7 +386,7 @@ Libraries that should be avoided because adding extra complexity:
 [*Go to top*](#Java)
 
 
-## Effecive java
+## Effective java
 
 Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
 
