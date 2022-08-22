@@ -170,7 +170,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html),
     [Enum](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html),
     [Float](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html),
-    [FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html),
+    [@FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html),
     [IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html),
     [IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html),
     [Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html),
@@ -180,12 +180,15 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
     [NumberFormatException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html),
     [OutOfMemoryError](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/OutOfMemoryError.html),
+    [@Override](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Override.html),
     [Process](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html),
     [ProcessBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ProcessBuilder.html),
     [Runnable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html),
     [RuntimeException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html),
+    [@SafeVarargs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SafeVarargs.html)
     [String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html),
     [StringBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html),
+    [@SuppressWarning](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SuppressWarnings.html),
     [System](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html),
     [Thread](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html),
     [ThreadLocal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadLocal.html),
@@ -432,7 +435,30 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * avoid [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) unless the need is critical
       (because it can break implementations)
   * favor static member classes over nonstatic (item 24)
-* _Generics_
-  * TODO
+* _Generics_ >>> TODO to many items?
+  * don't use raw types (item 26)
+  * eliminate unchecked warnings (item 27)
+    * if you can't, suppress it with 
+      [@SuppressWarning("unchecked)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SuppressWarnings.html) 
+      annotation on the smallest scope possible
+  * prefer lists to arrays (item 28)
+  * favor designing generic types (item 29) and generic methods (30) 
+  * use bounded wildcards (<? extends T>, <? super T>) to increase API flebility (item 31)
+    * see [guidelines for wildcard use](https://docs.oracle.com/javase/tutorial/java/generics/wildcardGuidelines.html)
+  * combine generics and varargs judiciously (item 32)
+    * see [@SafeVarargs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SafeVarargs.html)
+    * a generic varags method is safe if
+      * it doesn't store anything in the varags paramater array
+      * it doesn't make the array (or a clone) visible to untrusted code
+* _Enums and Annotations_
+  * use enums instead of int constants (item 34)
+  * don't use 
+    [ordinal()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html#ordinal())
+    as value will change with enum reorder (item 35)
+  * prefer annotations to naming patterns (item 39)
+  * consistently use the
+    [@Override](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Override.html) 
+    annotation (item 40)
+  * use marker interfaces to define types (item 41)
 
 [*Go to top*](#Java)
