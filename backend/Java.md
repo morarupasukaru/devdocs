@@ -22,8 +22,13 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
   * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)
   * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
+    * [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.) 
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
   * [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) (book)
+  * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+  * [JSON](https://www.json.org/json-en.html) or
+    [protobuf](https://developers.google.com/protocol-buffers) as alternative to
+    [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
 
 *(Page mainly written in spring 2022; in progress)*
 
@@ -42,6 +47,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [switch](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/switch.html),  
     [while and do-while loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html),
     [for loop](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html),
+    [for each loop](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html),
     [break, continue, return](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/branch.html)
 * [object oriented](https://docs.oracle.com/javase/tutorial/java/javaOO/index.html)
   * [classes](https://docs.oracle.com/javase/tutorial/java/javaOO/classes.html)
@@ -84,7 +90,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [local variable type inference](https://docs.oracle.com/en/java/javase/17/language/local-variable-type-inference.html)
     (not to overused!)
   * 2017 - Java SE 9:
-    [Java platform module system](https://www.oracle.com/ch-de/corporate/features/understanding-java-9-modules.html)
+    [Java platform module system](https://www.oracle.com/corporate/features/understanding-java-9-modules.html)
     ([Project Jigsaw](https://openjdk.org/projects/jigsaw/))
   * 2014 - Java SE 8
     [lambda expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html),
@@ -255,7 +261,6 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [Objects](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html),
     [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html),
     [Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html),
-    [Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html),
     [Set](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html),
     [TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html),
     [TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html),
@@ -267,7 +272,8 @@ This document try to summarize best of Java to develop REST APIs (or batches).
       [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html),
       [AtomicBoolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html),
       [AtomicInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html),
-      [AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html)
+      [AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html),
+      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html) 
   * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
     for functional interfaces to be used in lambda expressions/method references:
     * [BinaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html),
@@ -508,6 +514,59 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * collections, maps, streams, arrays and optionals should not be wrapped in optionals
     * return Optional<T> if it might not be able to return a result and clients have
       to perform special processing if no result is returned
+  * write javadocs for all exposed API elements (item 56)
+    * see [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html))
+    * and [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.)
+* _General Programming_
+  * minimize the scope of local variables (item 57)
+    * declare local variable where it first used
+    * nearly every local variable declaration should contain an initializer
+    * keep methods small and focused
+  * prefer [for each loops](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html)
+    to traditional loops (item 58) 
+  * know and use the libraries (item 59)
+    * use
+      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html)
+      instead of 
+      [Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html)
+    * every programmer should be familiar with the basics of
+      [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html), 
+      [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html), 
+      [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html),
+      [collections framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html), 
+      [streams library](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html) and 
+      high-level parts of 
+      [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+    * use [guava](https://github.com/google/guava) if you can't find standard feature
+  * avoid float and double if exact answers are required (item 60)
+    * use [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html), 
+      int or long for monetary calculations
+  * prefer primitive types to boxed primitives (item 61)
+  * refer to objects by their interfaces (item 64)
+  * prefer interfaces to reflection (item 65) 
+  * optimize judiciously (item 67)
+    * [Jackson's rules](https://softwarequotes.com/quote/jackson-s-rules-of-optimization--rule-1--don-t-do-):
+      * Rule 1: don't do it
+      * Rule 2: (for experts only). Don't do it yet - that is, not until you have a perfectly clear and unoptimized solution
+    * strive to write good programs; speed will follow
+    * avoid design decisions that limit performance (APIs, protocols, persistent data)
+    * measure performance before and after each optimization
+  * adhere to generally accepted naming conventions (item 68)
+    * see [Google Java Style guide](https://google.github.io/styleguide/javaguide.html#s5-naming):
+      * package: lower dot case (org.junit.jupiter.api)
+      * class/interface: upper camel case (Stream)
+      * method/field/local variable: lower camel case (remove)
+      * constant field: screaming snake case (MIN_VALUE)
+      * type parameter: single capital letter (T, E, K, T1, T2, V)
+* _Exceptions_
   * TODO
+* _Concurrency_
+  * TODO
+* _Serialization_
+  * prefer alternatives to
+    [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
+    like [JSON](https://www.json.org/json-en.html) or 
+    [protobuf](https://developers.google.com/protocol-buffers) (item 85)
+  
 
 [*Go to top*](#Java)
