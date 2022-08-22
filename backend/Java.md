@@ -10,7 +10,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Third-party APIs](#Third-party-APIs)
 * [Tools](#Tools)
 * [Web frameworks](#Web-frameworks)
-* [Design patterns](#Design-patterns)
+* [Effecive java](#Effective-java)
 * Alternative JVM languages:
   [Kotlin](https://kotlinlang.org/),
   [Scala](https://www.scala-lang.org/),
@@ -270,10 +270,13 @@ This document try to summarize best of Java to develop REST APIs (or batches).
       [AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html)
   * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
     for functional interfaces to be used in lambda expressions/method references:
-    * [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
+    * [BinaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html),
+      [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
       [Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html),
       [Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html),
-      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html), ...
+      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html),
+      [UnaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html),
+      ...
   * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) 
     to package/unpack java libs:
     [Manifest](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/Manifest.html)
@@ -377,7 +380,7 @@ Libraries that should be avoided because adding extra complexity:
 [*Go to top*](#Java)
 
 
-## Design patterns
+## Effecive java
 
 Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
 
@@ -460,5 +463,51 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     [@Override](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Override.html) 
     annotation (item 40)
   * use marker interfaces to define types (item 41)
+* _Lambdas and Streams_
+  * prefer lambdas to anonymous classes (item 42)
+    * lambda lack names and documentation; if a computation isn't self-explanatory, 
+      or exceeds a few lines, don't put it in a lambda
+  * favor the use of standard functional interfaces (item 44)
+    * e.g. [BinaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html),
+      [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
+      [Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html),
+      [Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html),
+      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html),
+      [UnaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html),
+      ...
+    * annotate custom functional interfaces with
+      [@FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html)
+  * use streams judiciously (item 45)
+    * overusing streams makes programs hard to read and maintain
+    * good name for lambda parameters ease streams readability
+    * helper methods could ease streams readability
+  * prefer side-effect-free functions ([pure function](https://en.wikipedia.org/wiki/Pure_function)) in streams (item 46)
+    * [forEach](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html#forEach(java.util.function.Consumer)) 
+      operation should be used only to report the result of a stream computation, 
+      not to perform the computation
+  * use caution when making streams parallel (item 48)
+* _Methods_
+  * check parameters for validity (item 49)
+    * use [@throws](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
+      javadoc tag to document the exception  
+  * make defensive copies when needed (item 50)
+    * make defensive copy of each mutable parameter to constructors
+    * returns defensive copies of mutable internal fields
+  * design method signatures carefully (item 51)
+    * choose method nmes carefully
+    * don't go overboard in providing convenience methods
+      * when in doubt, leave a method out
+    * avoid long parameter lists
+    * favor interface to class as parameter type
+    * favor enum to boolean parameters
+  * use overloading judiciously (item 52)
+    * you can always give methods different names instead of overloading them to avoid confusion
+  * return empty collections or arrays not nulls (item 54)
+  * return optionals judiciously (item 55)
+    * never return null from an Optional
+    * collections, maps, streams, arrays and optionals should not be wrapped in optionals
+    * return Optional<T> if it might not be able to return a result and clients have
+      to perform special processing if no result is returned
+  * TODO
 
 [*Go to top*](#Java)
