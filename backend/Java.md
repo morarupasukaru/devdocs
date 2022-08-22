@@ -435,7 +435,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * avoid [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html) unless the need is critical
       (because it can break implementations)
   * favor static member classes over nonstatic (item 24)
-* _Generics_ >>> TODO to many items?
+* _Generics_
   * don't use raw types (item 26)
   * eliminate unchecked warnings (item 27)
     * if you can't, suppress it with 
