@@ -30,7 +30,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
     [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
 
-*(Page mainly written in spring 2022; in progress)*
+*(Page mainly written in 2022)*
 
 [*Go to parent page*](../README.md)
 
@@ -496,6 +496,8 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
   * check parameters for validity (item 49)
     * use [@throws](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
       javadoc tag to document the exception  
+    * use [Objects.requireNonNull](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#requireNonNull(T,java.lang.String))
+      to perform null checks
   * make defensive copies when needed (item 50)
     * make defensive copy of each mutable parameter to constructors
     * returns defensive copies of mutable internal fields
@@ -559,14 +561,42 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
       * constant field: screaming snake case (MIN_VALUE)
       * type parameter: single capital letter (T, E, K, T1, T2, V)
 * _Exceptions_
-  * TODO
+  * use exceptions only for exceptional conditions (item 69)
+    * exceptions should never be used for ordinary control flow
+  * favor the use of standar exceptions (item 72)
+    * [IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html),
+      [IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html),
+      [NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
+      [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html)
+  * document all exceptions thrown by each method  
+    with [@throws](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
+    javadoc tag (item 74) 
 * _Concurrency_
-  * TODO
+  * prefer executors, tasks and streams to threads (item 80)
+    * use high-level API
+      [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+    * prefer concurrency utilities to wait and notify (item 81) 
+      * use [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html)
+        instead of 
+        [Collections.synchronizedMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map))
+      * use 
+        [System.nanoTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#nanoTime()) 
+        instead of
+        [System.currentTimeMillis](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#currentTimeMillis())
+    * document thread safety (item 82)
+      * use [ThreadSafe](https://github.com/amaembo/jsr-305/blob/master/ri/src/main/java/javax/annotation/concurrent/ThreadSafe.java),
+        [NotThreadSafe](https://github.com/amaembo/jsr-305/blob/master/ri/src/main/java/javax/annotation/concurrent/NotThreadSafe.java),
+        [Immutable](https://github.com/amaembo/jsr-305/blob/master/ri/src/main/java/javax/annotation/concurrent/Immutable.java)
+        annotations from [JSR-305 home page](https://code.google.com/archive/p/jsr-305/)
+    * use lazy initialization judiciously (item 83)
+      * in most cases, normal initialization is preferable to lazy initialization
+      * lazy initialization is an optimization, don't do it unless you need to
+    * don't depend on the thread scheduler (item 84)
+      * thread priorities are among the least portable feature of Java
 * _Serialization_
   * prefer alternatives to
     [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
     like [JSON](https://www.json.org/json-en.html) or 
     [protobuf](https://developers.google.com/protocol-buffers) (item 85)
   
-
 [*Go to top*](#Java)
