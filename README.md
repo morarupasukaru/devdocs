@@ -17,7 +17,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 
 ## Topics
 
-* Accessibility is the practice of making information, activities, and/or environments sensible, meaningful, and usable for as many people as possible *(coming later)*
+* Web Accessibility means that websites are accessible to everyone regardless of disability *(coming later)*
 * [Frontend testing](frontend/FrontendTesting.md)
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
   and *static HTML (pre-rendered)*
