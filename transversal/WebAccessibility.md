@@ -33,4 +33,4 @@ Web Accessibility means that websites are accessible to everyone regardless of d
   * [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/)
   * [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
   
-[*Go to parent page*](../../README.md)
+[*Go to parent page*](../README.md)
