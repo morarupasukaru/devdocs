@@ -17,7 +17,8 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 
 ## Topics
 
-* Web Accessibility means that websites are accessible to everyone regardless of disability *(coming later)*
+* [Web Accessibility](transversal/WebAccessibility.md)
+  means that websites are accessible to everyone regardless of disability *(in progress)*
 * [Frontend testing](frontend/FrontendTesting.md)
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
   and *static HTML (pre-rendered)*
