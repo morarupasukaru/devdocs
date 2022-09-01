@@ -4,15 +4,39 @@
 (Cascading Style Sheets) is a language to style and present HTML.
 
 * Language
-* History?
-* API?
-* Tools / Frameworks / Libs
+* API
+* [Tools / Frameworks / Libs](#tools--frameworks--libs)
 * Alternatives: [Sass](#Sass), Less
+* Responsive design
+* Mobile-first design
 * Links
   * https://2021.stateofcss.com/en-US/
   * https://almanac.httparchive.org/en/2021/
   * https://web.dev/state-of-css-2022/
   * [BEM - Block Element Modifier](http://getbem.com/): methodology to name/organize elements
+* Tutorials
+  * [beginner](https://htmldog.com/guides/css/beginner/), 
+    [intermediate](https://htmldog.com/guides/css/intermediate/)
+   [advanced](https://htmldog.com/guides/css/advanced/) [htmldog](https://htmldog.com/) tutorials
+  * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) 
+    [academind](https://academind.com/) video, 
+  * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) 
+    [udemy](https://www.udemy.com/) course
+  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
+    [udemy](https://www.udemy.com/) course
+  * forms styling:
+    * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
+    * [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
+    * [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) >>> TODO delete?
+* [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+  * properties
+    * TODO
+    * font properties
+    * text formatting
+    * layout
+      * position property
+      * display property
+      * min/max properties
 
 *(Page started in 2020; in progress)*
 
@@ -22,9 +46,71 @@
 # Tools / Frameworks / Libs
 
 * icons: [fontawesome](https://fontawesome.com/)
-* frameworks: [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Pure.css](https://purecss.io/), [Picnic CSS](https://picnicss.com/), [Skeleton](http://getskeleton.com/)
+* frameworks: 
+  [Bootstrap](https://getbootstrap.com/),
+  [Materialize](https://materializecss.com/), 
+  [Pure.css](https://purecss.io/), 
+  [Picnic CSS](https://picnicss.com/), 
+  [Skeleton](http://getskeleton.com/)
 * utility frameworks: [tailwind css](https://tailwindcss.com/)
 * embedded fonts: [google fonts](https://fonts.google.com/)
+* feature detection: https://modernizr.com/
+* css validation: 
+  [w3c CSS validation service](https://jigsaw.w3.org/css-validator/),  
+  [stylelint](https://stylelint.io/)
+* css minification:
+  [purgecss](https://purgecss.com/),
+  [clean-css](https://github.com/jakubpawlowicz/clean-css)
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+# Responsive Design
+
+[Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+TODO
+
+* CSS media queries to adjust layout & design
+* mobile first
+* images responsive
+* https://web.dev/responsive-web-design-basics/
+* https://web.dev/learn/design/
+* https://web.dev/responsive-images/
+* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+* https://css-tricks.com/responsive-images-css/
+* https://learn.shayhowe.com/advanced-html-css/transitions-animations/
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+# Mobile-first design
+
+Mobile-first design means to design web pages for mobile (small screens) first and adapt then to desktop (larger screens).
+
+* Reasons:
+  * There is more mobile than desktop nowadays
+  * It's easier to develop than "Desktop-first"
+* Recipes:
+  * choose the smallest device to be supported e.g. 320px width seem good choice
+    * see [viewportsizes](https://viewportsizes.com/) to find out used mobile resolutions
+  * standard css styles of the webpage must be the mobile version
+  * css styles of *desktop* version must be specified with [Media Queries](#Media-Queries)
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+# Alternatives
+
+## Sass
+
+* [Sass](https://sass-lang.com/) features
+  * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
+  * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
+  * ...
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
 
 * Integrate CSS to HTML
 * Concepts
@@ -122,15 +208,6 @@
     * [Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
     * [Legacy layout methods](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods)
     * [Supporting older browsers](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
-* [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-  * properties
-    * TODO
-    * font properties
-    * text formatting
-    * layout
-      * position property
-      * display property
-      * min/max properties
 * Miscellaneous
   * viewport
   * grids, e.g. https://purecss.io/grids/, https://getbootstrap.com/docs/4.0/layout/grid/, https://picnicss.com/documentation#grids
@@ -139,17 +216,7 @@
   * CSS Validation
   * CSS Minification
   * CSS Normalizer
-  * Feature detection
   * [CSS vs utility frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
-* Tutorials
-  * forms styling:
-    * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
-    * [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
-    * [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
-  * [beginner](https://htmldog.com/guides/css/beginner/), [intermediate](https://htmldog.com/guides/css/intermediate/), [advanced](https://htmldog.com/guides/css/advanced/) tutorials (from [htmldog](https://htmldog.com/))
-  * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (from [academind](https://academind.com/), see also [part 1: HTML](https://academind.com/learn/html/beginner-s-guide/), [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/))
-  * [CSS - The Complete Guide 2020](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) (on [udemy](https://www.udemy.com/) or [academind](https://academind.com/))
-  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
 
 ## Integrate CSS to HTML
 
@@ -408,20 +475,6 @@ TODO
 [*Go to top*](#Cascading-Style-Sheets)
 
 
-## Mobile-first design
-
-Mobile-first design means to design web pages for mobile (small screens) first and adapt then to desktop (larger screens).
-
-* Reasons:
-  * There is more mobile than desktop nowadays
-  * It's easier to develop than "Desktop-first"
-* Recipes:
-  * choose the smallest device to be supported e.g. 320px width seem good choice
-    * see [viewportsizes](https://viewportsizes.com/) to find out used mobile resolutions
-  * standard css styles of the webpage must be the mobile version
-  * css styles of *desktop* version must be specified with [Media Queries](#Media-Queries)
-
-[*Go to top*](#Cascading-Style-Sheets)
 
 
 ## viewport
@@ -438,9 +491,6 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 
 
 
-## Feature detection
-
-https://modernizr.com/
 
 
 ## Grid Layout
@@ -516,38 +566,8 @@ see [video about position property](https://academind.com/learn/css/understandin
 [*Go to top*](#Cascading-Style-Sheets)
 
 
-## CSS Validation
-
-TODO complete if needed
-
-* [w3c CSS validation service](https://jigsaw.w3.org/css-validator/)
-* [stylelint](https://stylelint.io/): CSS/SCSS linter
-
-*Tools are becoming quick obsolete, please find appropriate tools during development*
-
-[*Go to top*](#Cascading-Style-Sheets)
 
 
-## CSS Minification
-
-TODO complete if needed
-
-* [purgecss](https://purgecss.com/) allow to remove unused css
-* [clean-css](https://github.com/jakubpawlowicz/clean-css)
-
-*Tools are becoming quick obsolete, please find appropriate tools during development*
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Sass
-
-* [Sass](https://sass-lang.com/) features
-  * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
-  * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * ...
-
-[*Go to top*](#Cascading-Style-Sheets)
 
 
 ## Animations
@@ -568,18 +588,3 @@ TODO complete if needed
 
 [*Go to top*](#Cascading-Style-Sheets)
 
-## Responsive Design
-
-[Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-
-* CSS media queries to adjust layout & design
-* mobile first
-* images responsive
-* https://web.dev/responsive-web-design-basics/
-* https://web.dev/learn/design/
-* https://web.dev/responsive-images/
-* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
-* https://css-tricks.com/responsive-images-css/
-* https://learn.shayhowe.com/advanced-html-css/transitions-animations/
-
-[*Go to top*](#Cascading-Style-Sheets)
