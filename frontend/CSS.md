@@ -3,12 +3,13 @@
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 
-* Language
-* API
-* [Tools / Frameworks / Libs](#tools--frameworks--libs)
-* [Responsive design](#responsive-design)
-* [Mobile-first design](#mobile-first-design)
+* [Language](#language)
+* API >>> TODO delete if not needed
+* [Tools / Frameworks / Libs](#tools--frameworks--libs) >>> TODO intergrate if section is small
+* [Responsive design](#responsive-design) >>> TODO add link instead of section
+* [Mobile-first design](#mobile-first-design) >>> TODO add link instead of section
 * Alternatives: [Sass](#Sass), Less
+  * TODO dedicated Sass, Less markdown
 * Links
   * https://2021.stateofcss.com/en-US/
   * https://almanac.httparchive.org/en/2021/
@@ -17,9 +18,10 @@
 * Tutorials
   * [beginner](https://htmldog.com/guides/css/beginner/), 
     [intermediate](https://htmldog.com/guides/css/intermediate/)
-   [advanced](https://htmldog.com/guides/css/advanced/) [htmldog](https://htmldog.com/) tutorials
+   [advanced](https://htmldog.com/guides/css/advanced/)
   * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) 
-    [academind](https://academind.com/) video, 
+  * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
+    article
   * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) 
     [udemy](https://www.udemy.com/) course
   * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
@@ -61,6 +63,12 @@
 * css minification:
   [purgecss](https://purgecss.com/),
   [clean-css](https://github.com/jakubpawlowicz/clean-css)
+* css normalizer: TODO
+* grids:
+  [purecss.io](https://purecss.io/grids/)
+  [bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
+  [picnicss](https://picnicss.com/documentation#grids)
+  * TODO relationship with grid layout (TODO: best not to use?)
 
 [*Go to top*](#Cascading-Style-Sheets)
 
@@ -111,6 +119,9 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 [*Go to top*](#Cascading-Style-Sheets)
 
 
+# Language
+
+TODO move to top section
 
 * Integrate CSS to HTML
 * Concepts
@@ -210,13 +221,6 @@ Mobile-first design means to design web pages for mobile (small screens) first a
     * [Supporting older browsers](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
 * Miscellaneous
   * viewport
-  * grids, e.g. https://purecss.io/grids/, https://getbootstrap.com/docs/4.0/layout/grid/, https://picnicss.com/documentation#grids
-    * relationship with grid layout
-  * Mobile-first design
-  * CSS Validation
-  * CSS Minification
-  * CSS Normalizer
-  * [CSS vs utility frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
 
 ## Integrate CSS to HTML
 
