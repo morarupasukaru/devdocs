@@ -3,9 +3,28 @@
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 
-[*Go to parent page*](../README.md)
+* Language
+* History?
+* API?
+* Tools / Frameworks / Libs
+* Alternatives: [Sass](#Sass), Less
+* Links
+  * https://2021.stateofcss.com/en-US/
+  * https://almanac.httparchive.org/en/2021/
+  * https://web.dev/state-of-css-2022/
+  * [BEM - Block Element Modifier](http://getbem.com/): methodology to name/organize elements
 
 *(Page started in 2020; in progress)*
+
+[*Go to parent page*](../README.md)
+
+
+# Tools / Frameworks / Libs
+
+* icons: [fontawesome](https://fontawesome.com/)
+* frameworks: [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Pure.css](https://purecss.io/), [Picnic CSS](https://picnicss.com/), [Skeleton](http://getskeleton.com/)
+* utility frameworks: [tailwind css](https://tailwindcss.com/)
+* embedded fonts: [google fonts](https://fonts.google.com/)
 
 * Integrate CSS to HTML
 * Concepts
@@ -121,8 +140,6 @@
   * CSS Minification
   * CSS Normalizer
   * Feature detection
-  * [Sass](#Sass)
-  * Less
   * [CSS vs utility frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
 * Tutorials
   * forms styling:
@@ -133,16 +150,6 @@
   * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (from [academind](https://academind.com/), see also [part 1: HTML](https://academind.com/learn/html/beginner-s-guide/), [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/))
   * [CSS - The Complete Guide 2020](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) (on [udemy](https://www.udemy.com/) or [academind](https://academind.com/))
   * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
-* Links
-  * https://2021.stateofcss.com/en-US/
-  * https://almanac.httparchive.org/en/2021/
-  * https://web.dev/state-of-css-2022/
-  * [BEM - Block Element Modifier](http://getbem.com/): methodology to name/organize elements
-* Tools
-  * icons: [fontawesome](https://fontawesome.com/)
-  * frameworks: [Bootstrap](https://getbootstrap.com/), [Materialize](https://materializecss.com/), [Pure.css](https://purecss.io/), [Picnic CSS](https://picnicss.com/), [Skeleton](http://getskeleton.com/)
-  * utility frameworks: [tailwind css](https://tailwindcss.com/)
-  * embedded fonts: [google fonts](https://fonts.google.com/)
 
 ## Integrate CSS to HTML
 
