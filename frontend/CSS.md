@@ -8,7 +8,7 @@
 * [Tools / Frameworks / Libs](#tools--frameworks--libs) >>> TODO intergrate if section is small
 * [Responsive design](#responsive-design) >>> TODO add link instead of section
 * [Mobile-first design](#mobile-first-design) >>> TODO add link instead of section
-* Alternatives: [Sass](#Sass), Less
+* alternatives (preprocessor languages): [Sass](#Sass), Less
   * TODO dedicated Sass, Less markdown
 * Links
   * https://2021.stateofcss.com/en-US/
