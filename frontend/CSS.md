@@ -11,6 +11,7 @@
 * alternatives (preprocessor languages): [Sass](#Sass), Less
   * TODO dedicated Sass, Less markdown
 * Links
+  * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) from [MDN](https://developer.mozilla.org/en-US/)
   * https://2021.stateofcss.com/en-US/
   * https://almanac.httparchive.org/en/2021/
   * https://web.dev/state-of-css-2022/
@@ -30,15 +31,6 @@
     * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
     * [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
     * [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) >>> TODO delete?
-* [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
-  * properties
-    * TODO
-    * font properties
-    * text formatting
-    * layout
-      * position property
-      * display property
-      * min/max properties
 
 *(Page started in 2020; in progress)*
 
