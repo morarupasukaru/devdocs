@@ -5,7 +5,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
 * [SpringBoot](backend/SpringBoot.md) **backend** framework ease writing of web applications in Java
 * *foundations:*
-  * CSS (Cascading Style Sheets) is a language to style and present HTML *(coming later)*
+  * [CSS](frontend/CSS.md) (Cascading Style Sheets) is a language to style and present HTML *(in progress)*
   * [HTML](frontend/HTML.md) (Hypertext Markup Language) defines the meaning and structure of
     web pages
   * [Javascript](frontend/JavaScript.md) is the scripting language for web pages
@@ -56,4 +56,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 
-*(last update 23.08.2022)*
+*(last update 01.09.2022)*
