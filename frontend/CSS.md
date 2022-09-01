@@ -6,9 +6,9 @@
 * Language
 * API
 * [Tools / Frameworks / Libs](#tools--frameworks--libs)
+* [Responsive design](#responsive-design)
+* [Mobile-first design](#mobile-first-design)
 * Alternatives: [Sass](#Sass), Less
-* Responsive design
-* Mobile-first design
 * Links
   * https://2021.stateofcss.com/en-US/
   * https://almanac.httparchive.org/en/2021/
