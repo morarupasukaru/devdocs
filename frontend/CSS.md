@@ -4,18 +4,46 @@
 (Cascading Style Sheets) is a language to style and present HTML.
 
 * [Language](#language)
-* API >>> TODO delete if not needed
-* [Tools / Frameworks / Libs](#tools--frameworks--libs) >>> TODO intergrate if section is small
-* [Responsive design](#responsive-design) >>> TODO add link instead of section
-* [Mobile-first design](#mobile-first-design) >>> TODO add link instead of section
-* alternatives (preprocessor languages): [Sass](#Sass), Less
-  * TODO dedicated Sass, Less markdown
+* [CSSOM (CSS Object Model)](#cssom--css-object-model-)
+  to manipulate CSS from JavaScript
+* Other concepts
+  * [Responsive design](#responsive-design)
+    that allows websites work on different screen widths, resolutions, etc.
+  * [Mobile-first design](#mobile-first-design)
+    to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
+  * Preprocessor languages [Sass](#Sass) or [Less](https://lesscss.org/)
+    as alternatives to vanilla CSS
+  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
+* Tools / Frameworks / Libs
+  * frameworks:
+    [Bootstrap](https://getbootstrap.com/),
+    [Materialize](https://materializecss.com/),
+    [Pure.css](https://purecss.io/),
+    [Picnic CSS](https://picnicss.com/),
+    [Skeleton](http://getskeleton.com/)
+  * utility frameworks: [tailwind css](https://tailwindcss.com/)
+  * icons:
+    [Feather](https://feathericons.com/),
+    [Line Awesome](https://icons8.com/line-awesome),
+    [fontawesome](https://fontawesome.com/),
+    [Material Design Icons](https://materialdesignicons.com/),
+    [Noun Project](https://thenounproject.com/)
+  * embedded fonts: [google fonts](https://fonts.google.com/)
+  * feature detection: [Modernizr](https://modernizr.com/)
+  * css validation:
+    [stylelint](https://stylelint.io/),
+    [w3c CSS validation service](https://jigsaw.w3.org/css-validator/)
+  * css minification:
+    [purgecss](https://purgecss.com/),
+    [clean-css](https://github.com/jakubpawlowicz/clean-css)
+  * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
 * Links
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) from [MDN](https://developer.mozilla.org/en-US/)
-  * https://2021.stateofcss.com/en-US/
+  * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
+    for summary of used tools, features, etc.
+  * [State of CSS 2022](https://web.dev/state-of-css-2022/)
+    for actual css features (google article)
   * https://almanac.httparchive.org/en/2021/
-  * https://web.dev/state-of-css-2022/
-  * [BEM - Block Element Modifier](http://getbem.com/): methodology to name/organize elements
 * Tutorials
   * [beginner](https://htmldog.com/guides/css/beginner/), 
     [intermediate](https://htmldog.com/guides/css/intermediate/)
@@ -37,38 +65,10 @@
 [*Go to parent page*](../README.md)
 
 
-# Tools / Frameworks / Libs
-
-* icons: [fontawesome](https://fontawesome.com/)
-* frameworks: 
-  [Bootstrap](https://getbootstrap.com/),
-  [Materialize](https://materializecss.com/), 
-  [Pure.css](https://purecss.io/), 
-  [Picnic CSS](https://picnicss.com/), 
-  [Skeleton](http://getskeleton.com/)
-* utility frameworks: [tailwind css](https://tailwindcss.com/)
-* embedded fonts: [google fonts](https://fonts.google.com/)
-* feature detection: https://modernizr.com/
-* css validation: 
-  [w3c CSS validation service](https://jigsaw.w3.org/css-validator/),  
-  [stylelint](https://stylelint.io/)
-* css minification:
-  [purgecss](https://purgecss.com/),
-  [clean-css](https://github.com/jakubpawlowicz/clean-css)
-* css normalizer: TODO
-* grids:
-  [purecss.io](https://purecss.io/grids/)
-  [bootstrap](https://getbootstrap.com/docs/4.0/layout/grid/)
-  [picnicss](https://picnicss.com/documentation#grids)
-  * TODO relationship with grid layout (TODO: best not to use?)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
 # Responsive Design
 
 [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-TODO
+that allows websites work on different screen widths, resolutions, etc.
 
 * CSS media queries to adjust layout & design
 * mobile first
@@ -99,9 +99,7 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 [*Go to top*](#Cascading-Style-Sheets)
 
 
-# Alternatives
-
-## Sass
+# Sass
 
 * [Sass](https://sass-lang.com/) features
   * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
@@ -157,19 +155,6 @@ TODO move to top section
     * [Replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
     * [Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     * [Visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
-* DOM-CSS / CSSOM
-  * Major object types
-    * [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
-      * [styleSheets[i].cssRules](https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList)
-      * [cssRules[i].cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText)
-      * [cssRules[i].selectorText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText)
-    * [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
-    * [HTMLElement.style.cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText)
-    * [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
-    * [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
-  * Important methods
-    * [CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule)
-    * [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * [Learn CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
   * [CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
     * [What is CSS?](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
@@ -213,6 +198,29 @@ TODO move to top section
     * [Supporting older browsers](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
 * Miscellaneous
   * viewport
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+## CSSOM (CSS Object Model)
+
+[CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
+to manipulate CSS from JavaScript.
+
+* [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
+  * [styleSheets[i].cssRules](https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList)
+  * [cssRules[i].cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText)
+  * [cssRules[i].selectorText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText)
+* [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
+* [HTMLElement.style.cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText)
+* [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
+* [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+* Important methods
+  * [CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule)
+  * [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
+
+[*Go to top*](#Cascading-Style-Sheets)
+
 
 ## Integrate CSS to HTML
 
@@ -554,16 +562,6 @@ see [video about position property](https://academind.com/learn/css/understandin
   * multiple background images
 
 [*Go to top*](#Cascading-Style-Sheets)
-
-
-## Animation
-* css transitions: **animation**
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-
-
 
 
 ## Animations
