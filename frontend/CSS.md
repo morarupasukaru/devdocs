@@ -4,7 +4,7 @@
 (Cascading Style Sheets) is a language to style and present HTML.
 
 * [Language](#language)
-* [CSSOM (CSS Object Model)](#cssom--css-object-model-)
+* [CSSOM (CSS Object Model)](#cssom-css-object-model)
   to manipulate CSS from JavaScript
 * Other concepts
   * [Responsive design](#responsive-design)
