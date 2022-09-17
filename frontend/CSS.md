@@ -91,7 +91,6 @@ TODO move to top section after reducing size on section
     * [CSS selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
       * [Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Selectors)
     * [Media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
-    * [Animation](#Animation)
   * Values
     * [Actual value](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value)
     * [Computed value](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value)
