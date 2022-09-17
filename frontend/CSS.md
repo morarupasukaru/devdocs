@@ -70,50 +70,6 @@
 [*Go to parent page*](../README.md)
 
 
-# Responsive Design
-
-[Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-that allows websites work on different screen widths, resolutions, etc.
-
-* CSS media queries to adjust layout & design
-* mobile first
-* images responsive
-* https://web.dev/responsive-web-design-basics/
-* https://web.dev/learn/design/
-* https://web.dev/responsive-images/
-* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
-* https://css-tricks.com/responsive-images-css/
-* https://learn.shayhowe.com/advanced-html-css/transitions-animations/
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-# Mobile-first design
-
-Mobile-first design means to design web pages for mobile (small screens) first and adapt then to desktop (larger screens).
-
-* Reasons:
-  * There is more mobile than desktop nowadays
-  * It's easier to develop than "Desktop-first"
-* Recipes:
-  * choose the smallest device to be supported e.g. 320px width seem good choice
-    * see [viewportsizes](https://viewportsizes.com/) to find out used mobile resolutions
-  * standard css styles of the webpage must be the mobile version
-  * css styles of *desktop* version must be specified with [Media Queries](#Media-Queries)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-# Sass
-
-* [Sass](https://sass-lang.com/) features
-  * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
-  * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * TODO ...
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
 # Language
 
 TODO move to top section after reducing size on section
@@ -308,3 +264,47 @@ to manipulate CSS from JavaScript.
 
 [*Go to top*](#Cascading-Style-Sheets)
 
+
+
+# Responsive Design
+
+[Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+that allows websites work on different screen widths, resolutions, etc.
+
+* CSS media queries to adjust layout & design
+* mobile first
+* images responsive
+* https://web.dev/responsive-web-design-basics/
+* https://web.dev/learn/design/
+* https://web.dev/responsive-images/
+* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+* https://css-tricks.com/responsive-images-css/
+* https://learn.shayhowe.com/advanced-html-css/transitions-animations/
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+# Mobile-first design
+
+Mobile-first design means to design web pages for mobile (small screens) first and adapt then to desktop (larger screens).
+
+* Reasons:
+  * There is more mobile than desktop nowadays
+  * It's easier to develop than "Desktop-first"
+* Recipes:
+  * choose the smallest device to be supported e.g. 320px width seem good choice
+    * see [viewportsizes](https://viewportsizes.com/) to find out used mobile resolutions
+  * standard css styles of the webpage must be the mobile version
+  * css styles of *desktop* version must be specified with [Media Queries](#Media-Queries)
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+# Sass
+
+* [Sass](https://sass-lang.com/) features
+  * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
+  * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
+  * TODO ...
+
+[*Go to top*](#Cascading-Style-Sheets)
