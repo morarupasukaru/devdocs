@@ -104,7 +104,7 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 * [Sass](https://sass-lang.com/) features
   * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
   * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * ...
+  * TODO ...
 
 [*Go to top*](#Cascading-Style-Sheets)
 
@@ -113,7 +113,6 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 
 TODO move to top section
 
-* Integrate CSS to HTML
 * Concepts
   * [Syntax and semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts)
     * [Syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
@@ -142,6 +141,7 @@ TODO move to top section
   * Layout
     * [Block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
     * [Box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+      * see also [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) CSS property
     * [Containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
     * [Layout mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
       * [Normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
@@ -166,7 +166,19 @@ TODO move to top section
     * [CSS selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
       * [Type, class, and ID selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors)
       * [Attribute selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Attribute_selectors)
-      * [Pseudo-classes and pseudo-elements](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements)
+      * [Pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes)
+        * [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active): when element is activated (*mouse button is pressed down*)
+        * [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover): when the user hovers over an element with the cursor (requires a mouse pointer).
+        * [:focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus): element (such as a form input) that has received focus (triggered when the user select the element)
+        * [a:link](https://developer.mozilla.org/en-US/docs/Web/CSS/:link): link that has not yet been visited
+        * [a:visited](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited): link that the user has already visited
+        * [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child): represents the first element among a group of sibling elements
+        * [:last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child): last element among a group of sibling elements
+        * [:nth-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child): matches elements based on their position in a group of siblings
+          * condition of selection can be quite complex, e.g. [:nth-child(odd) or :nth-child(even)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Keyword_values) childs can be selected
+        * [:optional](https://developer.mozilla.org/en-US/docs/Web/CSS/:optional)/[:required](https://developer.mozilla.org/en-US/docs/Web/CSS/:required), [:enabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled)/[:disabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled) inputs
+        * [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate)/[:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked) radio/checkbox/option
+      * [Pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
       * [Combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
     * [The box model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model)
     * [Backgrounds and borders](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders)
@@ -198,156 +210,6 @@ TODO move to top section
     * [Supporting older browsers](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
 * Miscellaneous
   * viewport
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## CSSOM (CSS Object Model)
-
-[CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
-to manipulate CSS from JavaScript.
-
-* [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
-  * [styleSheets[i].cssRules](https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList)
-  * [cssRules[i].cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText)
-  * [cssRules[i].selectorText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText)
-* [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
-* [HTMLElement.style.cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText)
-* [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
-* [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
-* Important methods
-  * [CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule)
-  * [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Integrate CSS to HTML
-
-* only valid way to integrate css is by linking CSS:
-```
-  <head>
-    ...
-    <link rel="stylesheet" href="styles.css">
-    ...
-  </head>
-```
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Syntax
-
-* CSS is a rule-based language
-* rule consist of a selector + declarations which are pairs of property and value, e.g.
-```
-p {
-    color: black;
-}
-```
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Selectors
-
-TODO
-* tag selector
-* class and ID selector is commonly used
-* group selectors with commas
-* nesting selectors with space
-
-
-## Pseudo-classes
-
-[pseudo-class](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) selector specifies a special state of the selected element(s).
-
-Examples of pseudo-class
-* [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active): when element is activated (*mouse button is pressed down*)
-* [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover): when the user hovers over an element with the cursor (requires a mouse pointer).
-* [:focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus): element (such as a form input) that has received focus (triggered when the user select the element)
-* [a:link](https://developer.mozilla.org/en-US/docs/Web/CSS/:link): link that has not yet been visited
-* [a:visited](https://developer.mozilla.org/en-US/docs/Web/CSS/:visited): link that the user has already visited
-* [:first-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:first-child): represents the first element among a group of sibling elements
-* [:last-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:last-child): last element among a group of sibling elements
-* [:nth-child](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child): matches elements based on their position in a group of siblings
-  * condition of selection can be quite complex, e.g. [:nth-child(odd) or :nth-child(even)](https://developer.mozilla.org/en-US/docs/Web/CSS/:nth-child#Keyword_values) childs can be selected
-* [:optional](https://developer.mozilla.org/en-US/docs/Web/CSS/:optional)/[:required](https://developer.mozilla.org/en-US/docs/Web/CSS/:required), [:enabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled)/[:disabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled) inputs
-* [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate)/[:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked) radio/checkbox/option
-* ...
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Pseudo-elements
-* first-letter, first-line
-* content property and before, after pseudo elements
-* universal selectors `*`
-* child selectors `>`
-* adjacent selectors `+`
-* attribute selectors with/without value
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## media queries
-
-[media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries) (`@media`) allow to adapt web page to available devices and characteristics.
-* css properties inside media queries are the properties that will changes according to default css rules
-* see [guide about media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-* media queries allow to specify conditions with lot of [media types](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_types) and [features](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#Media_features)
-* most useful condition media feature for mobile first design approach are:
-  * [`min-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/width): e.g. `@media (min-width: 400px) { ... }`
-  * [`orientation`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/orientation) (landscape or portrait)
-* [responsive breakpoints of bootstrap 4](https://getbootstrap.com/docs/4.5/layout/overview/#responsive-breakpoints)
-```
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
-```
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## @import
-
-[@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) allow to import style rules from another css.
-* could be useful to use @import inside @media instead of defined the whole styles inside @media
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Box Model
-
-* CSS refer [inline](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) and [block-level HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) as boxes
-* [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model): [ [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) [ [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border) [ [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) [ content ] ] ] ]
-* box model is visible in browser devtools
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Box sizing
-
-There are several modes to size box (calculate width/height).
-
-* [`box-sizing: content-box|border-box;`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) property define box size *model*
-* content-box: width/height is applied to the content element of the [box model](#Box-Model)
-  * is default mode
-* border-box: width/height is applied to the border box of the box model
-  * content box will shrink is needed
-  * it ease to size element (e.g. to have precise width: 50%)
-  * border and padding are taken in account but not the margin; set `margin: 0;` if required
 
 [*Go to top*](#Cascading-Style-Sheets)
 
@@ -579,6 +441,27 @@ see [video about position property](https://academind.com/learn/css/understandin
     * animation cannot be prevented with CSS Transitions
   * animation of CSS Animations must triggered manually by setting the `animation` property on it
 * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (list evolves over time)
+
+[*Go to top*](#Cascading-Style-Sheets)
+
+
+
+# CSSOM (CSS Object Model)
+
+[CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
+to manipulate CSS from JavaScript.
+
+* [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
+  * [styleSheets[i].cssRules](https://developer.mozilla.org/en-US/docs/Web/API/CSSRuleList)
+  * [cssRules[i].cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSRule/cssText)
+  * [cssRules[i].selectorText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleRule/selectorText)
+* [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/ElementCSSInlineStyle/style)
+* [HTMLElement.style.cssText](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText)
+* [Element.className](https://developer.mozilla.org/en-US/docs/Web/API/Element/className)
+* [Element.classList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList)
+* Important methods
+  * [CSSStyleSheet.insertRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/insertRule)
+  * [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 
 [*Go to top*](#Cascading-Style-Sheets)
 
