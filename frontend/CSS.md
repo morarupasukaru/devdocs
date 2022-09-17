@@ -12,7 +12,7 @@
   * [Mobile-first design](#mobile-first-design)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
   * Preprocessor languages [Sass](#Sass) or [Less](https://lesscss.org/)
-    as alternatives to vanilla CSS
+    alternatives to vanilla CSS
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
 * Tools / Frameworks / Libs
   * frameworks:
