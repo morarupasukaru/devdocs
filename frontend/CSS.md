@@ -9,10 +9,12 @@
 * Other concepts
   * [Responsive design](#responsive-design)
     that allows websites work on different screen widths, resolutions, etc.
-  * [Mobile-first design](#mobile-first-design)
+  * [Mobile-first design](#mobile-first-design) >>> TODO nice explanation article and remove section
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
-  * Preprocessor languages [Sass](#Sass) or [Less](https://lesscss.org/)
-    alternatives to vanilla CSS
+  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
+    alternatives to vanilla CSS with additional features like
+    * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
+    * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
 * Tools / Frameworks / Libs
   * frameworks:
@@ -296,15 +298,5 @@ Mobile-first design means to design web pages for mobile (small screens) first a
   * standard css styles of the webpage must be the mobile version
   * css styles of *desktop* version must be specified with 
     [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-# Sass
-
-* [Sass](https://sass-lang.com/) features
-  * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
-  * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * TODO ...
 
 [*Go to top*](#Cascading-Style-Sheets)
