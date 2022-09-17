@@ -55,10 +55,15 @@
     [udemy](https://www.udemy.com/) course
   * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
     [udemy](https://www.udemy.com/) course
-  * forms styling:
-    * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
-    * [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
-    * [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) >>> TODO delete?
+  * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
+  * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
+  * flexbox
+    * [CSS Grid vs Flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
+    * see [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (from [CSS-TRICKS](https://css-tricks.com/))
+    * see [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and other guides (from [MDN](https://developer.mozilla.org/en-US/))
+    * [Flexbox: Basics & Container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/), [part 2](https://academind.com/learn/css/understanding-css/flexbox-flex-items/) (from [academind](https://academind.com/))
+    * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
+    * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
 
 *(Page started in 2020; in progress)*
 
@@ -111,7 +116,7 @@ Mobile-first design means to design web pages for mobile (small screens) first a
 
 # Language
 
-TODO move to top section
+TODO move to top section after reducing size on section
 
 * Concepts
   * [Syntax and semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts)
@@ -141,7 +146,6 @@ TODO move to top section
   * Layout
     * [Block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
     * [Box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-      * see also [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) CSS property
     * [Containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
     * [Layout mode](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode)
       * [Normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
@@ -151,11 +155,69 @@ TODO move to top section
       * [Multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns)
       * [Flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
       * [Grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+        * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * [Margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
     * [Replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
     * [Stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     * [Visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
-* [Learn CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS)
+* Popular CSS properties:
+  * layout properties:
+    [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing),
+    [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width),
+    [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width),
+    [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height),
+    [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
+    [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length),
+    [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage),
+    [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index),
+    [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position),
+    [top](https://developer.mozilla.org/en-US/docs/Web/CSS/top),
+    [right](https://developer.mozilla.org/en-US/docs/Web/CSS/right),
+    [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom),
+    [left](https://developer.mozilla.org/en-US/docs/Web/CSS/left),
+    [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display),
+    [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin),
+    [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding),
+    [flex-direction;](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction),
+    [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content),
+    [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items),
+    [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex),
+    [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap),
+    [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow),
+    [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order),
+    [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
+    [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+  * font properties:
+    [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font),
+    [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size),
+    [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family),
+    [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight),
+    [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style),
+    [font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+      * see [google fonts](https://fonts.google.com/) allow to easy embed font (@font-face is used internally in downloaded google css)
+  * text formatting:
+    [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align),
+    [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align),
+    [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing), 
+    [word-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing), 
+    [line-height](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height), 
+    [text-indent](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent),
+    [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration),
+    [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+  * others visual properties:
+    [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color),
+    [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color),
+    [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image),
+    [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border),
+    [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius),
+    [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
+    [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow),
+  * animation properties:
+    [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
+    [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition),
+    [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation),
+    [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+* [Learn CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) >>> TODO split in link / tutorial and concepts
   * [CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
     * [What is CSS?](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/What_is_CSS)
     * [Getting started with CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/Getting_started)
@@ -208,242 +270,23 @@ TODO move to top section
     * [Beginner's guide to media queries](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries)
     * [Legacy layout methods](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods)
     * [Supporting older browsers](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Supporting_Older_Browsers)
+  * forms styling
+    * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms)
+    * [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling)
+    * [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
+* Animations
+  * [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
+    is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
+  * [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
+    is a module of CSS that lets you animate the values of CSS properties over time, using keyframes
+    * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+    * see [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
 * Miscellaneous
-  * viewport
+  * [meta tag viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name) 
+   gives hint about the size of the initial size of the 
+   [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport)
 
 [*Go to top*](#Cascading-Style-Sheets)
-
-
-## Layout and containing block
-
-Size and position of an element are often impacted by its [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block).
-
-* e.g. computed width of an element with `width: 50%;` depend on the containing block
-* containing block depends on the position property of the element
-* basic rules to [identify containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block#Identifying_the_containing_block) (is more complex)
-  * if position: static, relative, sticky, containing block = content box of nearest block level element/ancestor
-  * if position: absolute, containing block = padding box of nearest ancestor having position != static
-  * if position: fixed, the containing block is the [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport)
-* [computed values with percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_Block#Calculating_percentage_values_from_the_containing_block)
-  * height, top, bottom are computed from the height of the containing block
-  * width, left, right, margin are computed from the width of the containing block
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## min/max properties
-
-[min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width), [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width), [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height), [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height) properties allow to specify limitations.
-
-can be useful to prevent to display an image too small on small device if width of the image is set in percentage.
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## length and percentage types
-
-[length](https://developer.mozilla.org/en-US/docs/Web/CSS/length) and [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage) data types are used by many CSS properties like width, height, margin, etc.
-* length data type: number + unit, e.g. 0.5em
-  * unit is optional for `0` value
-  * unit can be [relative](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Relative_length_units) (to another distance) or [absolute](https://developer.mozilla.org/en-US/docs/Web/CSS/length#Absolute_length_units) (fix)
-  * physical length on a device of an absolute length depend on the resolution
-  * to avoid accessibility problems, use only relative units (users can increase font-size and layout could be broken)
-* recommended units:
-  * **%**: percentage, relative to the same property of the parent element
-  * **rem**: relative to font size of the root element (default: 16px; can be override by user)
-  * em: relative to font size of the element or inherited; be careful of cascading impact, see [em vs rem](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units#ems_and_rems)
-  * px: for border only (that do not require to scale)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-
-## position property
-
-* [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position) property sets how an element is positioned in a document:
-  * static: default value; renders a box in the normal order of things; as they appear in the HTML.
-  * relative: is much like static but the box can be offset from its original position with the properties [top](https://developer.mozilla.org/en-US/docs/Web/CSS/top), [right](https://developer.mozilla.org/en-US/docs/Web/CSS/right), [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom) and [left](https://developer.mozilla.org/en-US/docs/Web/CSS/left)
-  * absolute: the box can be placed anywhere on the page using [top](https://developer.mozilla.org/en-US/docs/Web/CSS/top), [right](https://developer.mozilla.org/en-US/docs/Web/CSS/right), [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom) and [left](https://developer.mozilla.org/en-US/docs/Web/CSS/left).
-  * fixed: behaves like absolute, but fixed boxes should stay exactly where they are on the screen even when the page is scrolled.
-* see also [CSS Positioning Tutorial for Beginners](https://academind.com/learn/css/understanding-css/the-position-property/) (from [academind](https://academind.com/)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## display property
-
-* [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) property sets whether an element is treated as a block or inline element and the layout used for its children, such as flow layout, grid or flex.
-  * block: generates a block element box, generating line breaks both before and after the element when in the normal flow
-    * allow to change width
-  * inline: generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space
-    * do not allow to change width
-  * inline-block: generates a block element box that will be flowed with surrounding content as if it were a single inline box (without line break)
-    * allow to change width of element
-  * none: turns off the display of an element so that it has no effect on layout (takes the element’s box completely out of play)
-    * vs "visibility: hidden; " : keeps the box and its flow in place without visually representing its contents
-  * flex: see [Flexbox](#Flexbox)
-
-TODO
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Flexbox
-
-[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) (Flexible Box Module) is an one-dimensional layout mode to arrange items in a container; is quite easy to use and responsive.
-
-* flexbox allow to place [flex items](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#Properties_applied_to_flex_items) (children elements) in a [flex container](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#The_flex_container) (the *one dimension*) according to two axes; the [main](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#The_main_axis), [cross](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox#The_cross_axis) axis.
-* basis uses
-  * [`display: flex|inline-flex;`](https://developer.mozilla.org/en-US/docs/Web/CSS/display): activate flexbox; set on container (inline-flex make container as inline element, flex as block element)
-  * [`flex-direction: row|column|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction): defines the main axis (default: row); set on container
-  * [`justify-content: flex-start|center|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content): align items on main axis (default: flex-start); set on container
-  * [`align-items: stretch|center|...;` ](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items): align items on cross axis (default: stretch); set on container
-  * [`flex`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex): define width and how item will grow or shrink to fit available space in container (default: 0 1 auto); set on item; (is a [shorthand](#Shorthand-properties) for [flex-grow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow), [flex-shrink](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink), [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis))
-* other properties
-  * [`flex-wrap: wrap|nowrap|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap): to wrap items into multi-lines (default: nowrap); set on container
-  * [`flex-flow`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow): [shorthand](#Shorthand-properties) property for [`flex-direction: row|column|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction) and [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap); set on container
-  * [`order: <integer>;`](https://developer.mozilla.org/en-US/docs/Web/CSS/order): define order of item in container (default: 0); items are sorted by ascending order; set on container
-  * [`align-self: stretch|center|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self): override align-items for specific items (on cross axis); set on item
-  * [`align-content: stretch|center|...;`](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content): define spacing between lines of in cross-axis (has not effect without wrapping); set on container
-* resources
-  * see [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (from [CSS-TRICKS](https://css-tricks.com/))
-  * see [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and other guides (from [MDN](https://developer.mozilla.org/en-US/))
-  * TODO [Flexbox: Basics & Container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/), [part 2](https://academind.com/learn/css/understanding-css/flexbox-flex-items/) (from [academind](https://academind.com/))
-  * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
-  * [Flexbox Froggy](https://flexboxfroggy.com/): game for learning CSS flexbox
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## font properties
-
-* [`font-size`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size): sets size of the font
-  * it's good to set `hmtl { font-size: 100%; }` to indicate that browser font size is taken
-* [`font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family): specify prioritized list of fonts to used
-  * safe fonts are Arial, Verdana and Times New Roman
-* [`font-weight`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight): set whether the text is bold or not
-* [`font-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style): set whether the text is italic or not
-* [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face): use an embedding font that could be downloaded
-  * see [google fonts](https://fonts.google.com/) allow to easy embed font (@font-face is used internally in downloaded google css)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## text formatting
-
-* text spacing
-  * [`text-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align): sets horizontal alignment of block element or table cell
-  * [`vertical-align`](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align): sets vertical alignment of an inline, inline-block or table-cell box; does not work for block-level elements
-  * see also [`letter-spacing`](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing), [`word-spacing`](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing), [`line-height`](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height), [`text-indent`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
-* [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration): set whether the text got a line (under, over, through it or none)
-* [`text-transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform): set the case of the text
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-
-
-## viewport
-
-[`<meta name="viewport" content="...">](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta/name) gives hint about the size of the initial size of the [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport).
-
-* most useful setting is to tell browser that the viewport must be the size of the device:
-```css
-<meta name="viewport" content="width=device-width">
-```
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-
-
-
-
-## Grid Layout
-
-* [Gridlayout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) is an two-dimensional layout mode
-* https://academind.com/learn/css/understanding-css/css-grid-vs-flexbox/
-* https://github.com/thomaspark/gridgarden/
-* [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
-
-TODO
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Flow Layout
-
-* normal flow
-  https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout
-
-TODO
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## properties
-
-* layout related
-  * [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index): specify order of displayed overlapping elements
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## basic layout with position and display property
-* basic **page layout**
-  * floating: floating a box will shift it to the right or left of a line, with surrounding content flowing around i
-    * use `float` property
-    * use `clear` property to stop the float for next box
-
-see [video about position property](https://academind.com/learn/css/understanding-css/the-position-property/)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-
-## TODO
-* **properties**
-  * color
-    * predefined color names (not usefull except black and white, rgb, or hexcode
-    * `color` and `background-color` css properties
-    * advanced colors: CSS3 allow HSL (hue, saturation, and lightness) and transparency (rgba)
-  * **shorthand properties**
-    * margin instead of margin-top, margin-right, margin-bottom, and margin-left
-    * padding instead of ...
-    * border instead of border-width, border-color, and border-style
-    * font instead of font-style, font-weight, font-size, line-height, and font-family
-  * CSS background images with `background` css property
-  * border radius
-    * border-radius property (or border-top-left-radius, border-top-right-radius, border-bottom-right-radius, and border-bottom-left-radius)
-    * ellipses available, e.g. `border-radius: 50px/100px;`
-  * shadows
-    * box-shadow property: add shadow for box
-    * text-shadow property: add shadow to text
-  * gradients: allow lineal and radial gradients
-  * tranformation: `transform` allowe to rotate, skewe, scale, translate elements
-  * multiple background images
-
-[*Go to top*](#Cascading-Style-Sheets)
-
-
-## Animations
-
-* [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
-  * see [Using CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions) shorthand property
-  * configure the timing, duration with [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition)
-* [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) is a module of CSS that lets you animate the values of CSS properties over time, using keyframes.
-  * configure the timing, duration, etc. with [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation) shorthand property
-  * configure the appearance of the animation with [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
-  * see [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-* CSS Transitions vs CSS Animations
-  * CSS Animations provide finer control than CSS Transitions over animated properties; allow more complex animations
-  * animation of CSS Transitions happen automatically whenever a change of a property happened
-    * animation cannot be prevented with CSS Transitions
-  * animation of CSS Animations must triggered manually by setting the `animation` property on it
-* see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (list evolves over time)
-
-[*Go to top*](#Cascading-Style-Sheets)
-
 
 
 # CSSOM (CSS Object Model)
