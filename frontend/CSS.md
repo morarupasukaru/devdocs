@@ -294,7 +294,8 @@ Mobile-first design means to design web pages for mobile (small screens) first a
   * choose the smallest device to be supported e.g. 320px width seem good choice
     * see [viewportsizes](https://viewportsizes.com/) to find out used mobile resolutions
   * standard css styles of the webpage must be the mobile version
-  * css styles of *desktop* version must be specified with [Media Queries](#Media-Queries)
+  * css styles of *desktop* version must be specified with 
+    [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
 
 [*Go to top*](#Cascading-Style-Sheets)
 
