@@ -3,22 +3,21 @@
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 
-* Language & concepts
-  * [syntax and semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) - TODO
-    * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
-    * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
-      [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
-    * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
-    * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
-    * [descriptor](https://developer.mozilla.org/en-US/docs/Glossary/Descriptor_(CSS))
-    * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
-    * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
-    * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-    * [value definition syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
-    * [values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units)
-    * [functional Notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
-    * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
-    * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+* [concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
+  * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
+  * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
+    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) - TODO
+  * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+  * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
+  * [descriptor](https://developer.mozilla.org/en-US/docs/Glossary/Descriptor_(CSS))
+  * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
+  * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
+  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  * [value definition syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+  * [values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units)
+  * [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
+  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) vs
     [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value) vs
     [initial](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value) vs
