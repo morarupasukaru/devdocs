@@ -3,7 +3,7 @@
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 
-* [concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
+* [Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
   * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) - TODO
