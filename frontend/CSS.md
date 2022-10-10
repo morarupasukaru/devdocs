@@ -4,7 +4,7 @@
 (Cascading Style Sheets) is a language to style and present HTML.
 
 * Language & concepts
-  * [syntax and semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts)
+  * [syntax and semantics](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) - TODO
     * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
     * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
       [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
