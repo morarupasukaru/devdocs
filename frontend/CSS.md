@@ -6,13 +6,12 @@
 * [Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
   * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
-    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) - TODO
+    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
   * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
   * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
-  * [descriptor](https://developer.mozilla.org/en-US/docs/Glossary/Descriptor_(CSS))
   * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
-  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) - TODO
   * [value definition syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
   * [values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units)
   * [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
