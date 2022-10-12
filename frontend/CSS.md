@@ -5,14 +5,13 @@
 
 * [Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
   * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
+  * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
+  * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
+  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
-  * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
-  * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
-  * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
-  * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
-  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) - TODO
-  * [value definition syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax)
+  * [value definition syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Value_definition_syntax) - TODO
   * [values and units](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units)
   * [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
   * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
@@ -40,6 +39,7 @@
     * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
     * [stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     * [visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
+  * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
   * animations
     * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
       is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
