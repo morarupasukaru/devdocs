@@ -14,7 +14,8 @@
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
-  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and
+    [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
   * [initial](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value),
     [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value),
     [used](https://developer.mozilla.org/en-US/docs/Web/CSS/used_value),
@@ -35,12 +36,6 @@
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
   * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
-  * animations
-    * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
-      is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
-    * [css animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
-      is a module of CSS that lets you animate the values of CSS properties over time, using keyframes
-      * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
   * popular [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes):
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
@@ -57,7 +52,6 @@
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
     [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-  * [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
   * popular CSS properties:
     * layout properties:
       [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing),
@@ -115,6 +109,12 @@
       [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition),
       [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation),
       [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+  * animations
+    * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
+      is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
+    * [css animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
+      is a module of CSS that lets you animate the values of CSS properties over time, using keyframes
+      * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
 * [CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
   to manipulate CSS from JavaScript
   * [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
