@@ -198,7 +198,7 @@
       * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
       * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
     * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
-  * responsive design
+  * [responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
     * [Responsive web design basics](https://web.dev/responsive-web-design-basics/)
     * [Learn Responsive Design](https://web.dev/learn/design/)
     * [Responsive images](https://web.dev/responsive-images/)
