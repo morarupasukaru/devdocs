@@ -22,7 +22,6 @@
     [specified](https://developer.mozilla.org/en-US/docs/Web/CSS/specified_value) vs
     [used](https://developer.mozilla.org/en-US/docs/Web/CSS/used_value) values
   * layout
-    * [block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
     * [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
     * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
     * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
