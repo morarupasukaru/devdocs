@@ -14,29 +14,26 @@
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
-  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) TODO
-  * [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) vs
-    [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value) vs
-    [initial](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value) vs
-    [resolved](https://developer.mozilla.org/en-US/docs/Web/CSS/resolved_value) vs
-    [specified](https://developer.mozilla.org/en-US/docs/Web/CSS/specified_value) vs
-    [used](https://developer.mozilla.org/en-US/docs/Web/CSS/used_value) values
-  * layout
-    * [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
-    * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
-    * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
-      [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout),
-      [table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table),
-      [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
-      [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
-      [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-      [flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
-      [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-      * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
-    * [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
-    * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-    * [stacking context](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
-    * [visual formatting model](https://developer.mozilla.org/en-US/docs/Web/CSS/Visual_formatting_model)
+  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  * [initial](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value),
+    [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value),
+    [used](https://developer.mozilla.org/en-US/docs/Web/CSS/used_value),
+    [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) values
+  * [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+    and [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+  * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
+  * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
+    and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
+  * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
+  * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
+    [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout),
+    [table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table),
+    [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
+    [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
+    [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
+    [flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
+    [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
   * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
   * animations
     * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
