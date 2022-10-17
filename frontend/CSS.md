@@ -11,9 +11,9 @@
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
-  * [values and units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-  * [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions) TODO
-  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors)
+  * [values, units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+    and [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
+  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) TODO
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) vs
     [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value) vs
