@@ -36,7 +36,7 @@
     [flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
-  * popular [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes):
+  * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
     [:focus](https://developer.mozilla.org/en-US/docs/Web/CSS/:focus),
@@ -52,7 +52,7 @@
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
     [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
-  * popular CSS properties:
+  * properties like
     * layout properties:
       [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing),
       [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width),
