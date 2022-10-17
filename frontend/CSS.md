@@ -4,7 +4,8 @@
 (Cascading Style Sheets) is a language to style and present HTML.
 
 * [Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
-  * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
+  * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax) and
+    [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
   * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade),
     [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance) and
     [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
@@ -35,7 +36,6 @@
     [flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
-  * [comments](https://developer.mozilla.org/en-US/docs/Web/CSS/Comments)
   * popular [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes):
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
