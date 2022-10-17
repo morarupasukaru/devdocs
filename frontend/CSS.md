@@ -5,16 +5,16 @@
 
 * [Concepts](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#Concepts) 
   * [syntax](https://developer.mozilla.org/en-US/docs/Web/CSS/Syntax)
-  * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade)
-  * [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
-  * [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade),
+    [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance) and
+    [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
+  * [values, units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
+    and [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
-  * [values, units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-    and [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
-  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) TODO
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
+  * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) TODO
   * [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) vs
     [computed](https://developer.mozilla.org/en-US/docs/Web/CSS/computed_value) vs
     [initial](https://developer.mozilla.org/en-US/docs/Web/CSS/initial_value) vs
