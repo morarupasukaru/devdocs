@@ -37,6 +37,7 @@
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
+    * _TODO_ move some links of tutorial sections "flex" here
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
@@ -185,7 +186,7 @@
       [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
       [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
     * [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-  * layout 
+  * layout --> _TODO_ move at top
     * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
     * flexbox
       * [CSS Grid vs Flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
