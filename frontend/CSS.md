@@ -171,7 +171,7 @@
   * [Web Almanac](https://almanac.httparchive.org/en/2021/) with reports of most used features of websites on the web
   * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
     article
-* Tutorials
+* Tutorials --> _TODO_ links at top, leave only general tutorial or courses here
   * general
     * [beginner](https://htmldog.com/guides/css/beginner/), 
       [intermediate](https://htmldog.com/guides/css/intermediate/),
