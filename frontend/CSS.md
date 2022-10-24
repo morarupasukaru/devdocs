@@ -27,15 +27,16 @@
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-  * _TODO_ [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
-    [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout),
+  * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
+    **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**,
     [table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table),
     [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
     [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-    [flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout),
+    **[flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**,
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-    * see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
+    * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
+    * see guides about [flex layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides)
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
