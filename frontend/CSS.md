@@ -131,7 +131,7 @@
     [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-    that allows websites work on different screen widths, resolutions, etc.
+    that allows websites work on different screen widths, resolutions, etc. --> _TODO_ dupplicate topic
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
   * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
@@ -196,7 +196,7 @@
       * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
       * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
     * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
-  * [responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
+  * [responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design) --> _TODO_ dupplicate topic, move above
     * [Responsive web design basics](https://web.dev/responsive-web-design-basics/)
     * [Learn Responsive Design](https://web.dev/learn/design/)
     * [Responsive images](https://web.dev/responsive-images/)
