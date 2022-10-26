@@ -9,11 +9,16 @@
   * [cascade](https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade),
     [inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance) and
     [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity)
-  * [values, units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units)
-    and [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
+  * [values, units](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units), 
+    [functional notation](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Functions)
+    and [data types](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Types) like
+      [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length),
+      [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
-  * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) and
-    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import)
+  * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
+    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
+    [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
+    * see [google fonts](https://fonts.google.com/) allow to easy embed font (@font-face is used internally in downloaded google css)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and
     [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
@@ -37,6 +42,7 @@
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
+    * _TODO_ [css flexible box layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) guide
     * _TODO_ move some links of tutorial sections "flex" here
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
@@ -61,34 +67,19 @@
       [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width),
       [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height),
       [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
-      [length](https://developer.mozilla.org/en-US/docs/Web/CSS/length),
-      [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage),
       [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index),
       [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position),
-      [top](https://developer.mozilla.org/en-US/docs/Web/CSS/top),
-      [right](https://developer.mozilla.org/en-US/docs/Web/CSS/right),
-      [bottom](https://developer.mozilla.org/en-US/docs/Web/CSS/bottom),
-      [left](https://developer.mozilla.org/en-US/docs/Web/CSS/left),
       [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display),
       [margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin),
       [padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding),
-      [flex-direction;](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction),
       [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content),
       [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items),
       [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex),
-      [flex-wrap](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap),
       [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow),
       [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order),
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
       [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
-    * font properties:
-      [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font),
-      [font-size](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size),
-      [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family),
-      [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight),
-      [font-style](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style),
-      [font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
-      * see [google fonts](https://fonts.google.com/) allow to easy embed font (@font-face is used internally in downloaded google css)
+    * [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) shorthand property
     * text formatting:
       [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align),
       [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align),
@@ -153,7 +144,6 @@
     [fontawesome](https://fontawesome.com/),
     [Material Design Icons](https://materialdesignicons.com/),
     [Noun Project](https://thenounproject.com/)
-  * embedded fonts: [google fonts](https://fonts.google.com/)
   * feature detection: [Modernizr](https://modernizr.com/)
   * css validation:
     [stylelint](https://stylelint.io/),
