@@ -16,9 +16,9 @@
       [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
-    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
+    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) and
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
-    * see [google fonts](https://fonts.google.com/) allow to easy embed font (@font-face is used internally in downloaded google css)
+    * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and
     [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
