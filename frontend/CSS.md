@@ -34,11 +34,11 @@
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
   * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
     **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**,
+    **[flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)** (flex),
     [table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table),
     [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
     [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-    **[flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**,
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
