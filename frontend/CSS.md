@@ -41,11 +41,11 @@
       * guides: [other MDN guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox),
         [a complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
         [flexbox: basics & container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/) / 
-        [flex-Items](https://academind.com/learn/css/understanding-css/flexbox-flex-items/),
+        [flex-Items](https://academind.com/learn/css/understanding-css/flexbox-flex-items/)
       * [flexbox froggy](https://flexboxfroggy.com/) learning game
-      * [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
     * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), see also
-      * [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
+      * articles: [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
+        and [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox)
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
     * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
     * [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
