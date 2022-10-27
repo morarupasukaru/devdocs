@@ -98,8 +98,8 @@
       [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius),
       [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
       [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow),
+      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
     * animation properties:
-      * [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
       * [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
         used by [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) 
         module to create gradual transitions between the values of specific CSS properties
