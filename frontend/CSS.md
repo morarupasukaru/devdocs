@@ -34,27 +34,23 @@
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-  * [layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout):
-    **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**,
-    **[flexible](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**,
-    [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
-    [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
-    [positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
-    [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-      _>>> TODO read_
+  * [layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read_
     * _TODO_ clean up link guides
-    * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
-    * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
-    * _TODO_ [css flexible box layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) guide
-    * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
-    * flexbox
+    * **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**
+    * **[flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)** 
+      * [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)
       * [CSS Grid vs Flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
       * see [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (from [CSS-TRICKS](https://css-tricks.com/))
       * see [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and other guides (from [MDN](https://developer.mozilla.org/en-US/))
       * [Flexbox: Basics & Container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/), [part 2](https://academind.com/learn/css/understanding-css/flexbox-flex-items/) (from [academind](https://academind.com/))
       * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
       * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
-    * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
+    * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+      * [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
+      * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
+    * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
+    * [positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning)
+      * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
