@@ -36,8 +36,8 @@
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
   * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read_
     * _TODO_ clean up link guides
-    * **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)** (including guides)
-    * **[flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)** (including guides), see also
+    * **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**
+    * **[flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**, see also
       * guides: [other MDN guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox),
         [a complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
         [flexbox: basics & container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/) / 
