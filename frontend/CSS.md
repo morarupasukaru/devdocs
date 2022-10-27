@@ -34,15 +34,14 @@
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-  * [layout modes](https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode):
+  * [layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout):
     **[normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)**,
-    **[flexible box layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)** (flex),
-    [table layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Table),
-    [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
-    [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
+    **[flexible](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)**,
+    [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
+    [positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-    [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)  _>>> TODO read_
-    * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode ?
+      _>>> TODO read_
     * _TODO_ clean up link guides
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
