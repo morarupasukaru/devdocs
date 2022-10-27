@@ -36,13 +36,13 @@
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
   * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read_
     * [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
-    * [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), see also
+    * [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), see also:
       * guides: [other MDN guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox),
         [a complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
         [flexbox: basics & container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/) / 
         [flex-Items](https://academind.com/learn/css/understanding-css/flexbox-flex-items/)
       * [flexbox froggy](https://flexboxfroggy.com/) learning game
-    * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), see also
+    * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), see also:
       * articles: [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
         and [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox)
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
