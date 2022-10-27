@@ -99,15 +99,14 @@
       [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
       [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow),
     * animation properties:
-      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
-      [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition),
-      [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
-  * animations
-    * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
-      is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
-    * [css animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations)
-      is a module of CSS that lets you animate the values of CSS properties over time, using keyframes
-      * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+      * [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
+      * [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
+        used by [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) 
+        module to create gradual transitions between the values of specific CSS properties
+      * [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
+        used by [CSS Animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations) module
+        that lets you animate the values of CSS properties over time, using [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+      * see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) by CSS Transitions/Animations modules
 * [CSSOM](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model)
   to manipulate CSS from JavaScript
   * [DocumentOrShadowRoot.styleSheets](https://developer.mozilla.org/en-US/docs/Web/API/DocumentOrShadowRoot/styleSheets)
