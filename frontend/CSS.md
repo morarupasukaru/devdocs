@@ -17,6 +17,7 @@
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
+    [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media),
     [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) or
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
     * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
@@ -41,10 +42,20 @@
     [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    * _TODO_ read articles
+    * _TODO_ clean up link guides
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
     * _TODO_ [css flexible box layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox) guide
-    * _TODO_ move some links of tutorial sections "flex" here
+    * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
+    * flexbox
+      * [CSS Grid vs Flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
+      * see [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (from [CSS-TRICKS](https://css-tricks.com/))
+      * see [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and other guides (from [MDN](https://developer.mozilla.org/en-US/))
+      * [Flexbox: Basics & Container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/), [part 2](https://academind.com/learn/css/understanding-css/flexbox-flex-items/) (from [academind](https://academind.com/))
+      * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
+      * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
+    * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) like
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
@@ -121,7 +132,18 @@
     [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-    that allows websites work on different screen widths, resolutions, etc. --> _TODO_ dupplicate topic
+    that allows websites work on different screen widths, resolutions, etc.
+    * _TODO_ read articles
+    * _TODO_ clean up links
+    * [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+    * [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
+    * [responsive web design basics](https://web.dev/responsive-web-design-basics/)
+    * [learn responsive design](https://web.dev/learn/design/)
+    * [responsive images](https://web.dev/responsive-images/)
+    * [responsive images in CSS](https://css-tricks.com/responsive-images-css/)
+    * [responsive web design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
+      gives hint about the size of the initial size of the
+      [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport)
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
   * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
@@ -175,26 +197,6 @@
       [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
       [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
     * [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-  * layout --> _TODO_ move at top
-    * [The Position Property](https://academind.com/learn/css/understanding-css/the-position-property/) article
-    * flexbox
-      * [CSS Grid vs Flexbox](https://academind.com/tutorials/css-grid-vs-flexbox) article
-      * see [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) (from [CSS-TRICKS](https://css-tricks.com/))
-      * see [Basic concepts of flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) and other guides (from [MDN](https://developer.mozilla.org/en-US/))
-      * [Flexbox: Basics & Container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/), [part 2](https://academind.com/learn/css/understanding-css/flexbox-flex-items/) (from [academind](https://academind.com/))
-      * [Flexbox CSS In 20 Minutes](https://www.youtube.com/watch?v=JJSoEo8JSnc&list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU&index=4) (from (TraversyMedia)[https://www.traversymedia.com/])
-      * [Flexbox Froggy](https://flexboxfroggy.com/) game for learning CSS flexbox
-    * [gridgarden](https://github.com/thomaspark/gridgarden/) game for learning CSS grid layout
-  * [responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design) --> _TODO_ dupplicate topic, move above
-    * [Responsive web design basics](https://web.dev/responsive-web-design-basics/)
-    * [Learn Responsive Design](https://web.dev/learn/design/)
-    * [Responsive images](https://web.dev/responsive-images/)
-    * [Using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-    * [Responsive Images in CSS](https://css-tricks.com/responsive-images-css/)
-    * [Responsive Web Design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
-    * [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
-      gives hint about the size of the initial size of the
-      [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport)
   * video courses
     * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/)
     * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
