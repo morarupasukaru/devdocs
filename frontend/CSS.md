@@ -135,16 +135,11 @@
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
     that allows websites work on different screen widths, resolutions, etc.
     * _TODO_ read
-    * _TODO_ clean up links
-    * [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
-    * [viewport meta tag](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag)
-    * [responsive web design basics](https://web.dev/responsive-web-design-basics/)
-    * [learn responsive design](https://web.dev/learn/design/)
-    * [responsive images](https://web.dev/responsive-images/)
-    * [responsive images in CSS](https://css-tricks.com/responsive-images-css/)
-    * [responsive web design](https://learn.shayhowe.com/advanced-html-css/responsive-web-design/)
-      gives hint about the size of the initial size of the
-      [viewport](https://developer.mozilla.org/en-US/docs/Glossary/viewport)
+    * see [responsive web design basics](https://web.dev/responsive-web-design-basics/),
+      [learn responsive design](https://web.dev/learn/design/),
+      [responsive images](https://web.dev/responsive-images/),
+      [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
+      [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
   * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
