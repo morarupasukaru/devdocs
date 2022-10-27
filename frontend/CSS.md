@@ -41,9 +41,8 @@
     [float layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats),
     [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
-    [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)  _>>> TODO read_
     * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode ?
-    * _TODO_ read
     * _TODO_ clean up link guides
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
     * _TODO_ see guides about [normal](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout#guides) and [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout#guides) layouts
@@ -133,9 +132,8 @@
     [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-    that allows websites work on different screen widths, resolutions, etc.
-    * _TODO_ read
-    * see [responsive web design basics](https://web.dev/responsive-web-design-basics/),
+    that allows websites work on different screen widths, resolutions, etc.  _>>> TODO read_
+    * see guides [responsive web design basics](https://web.dev/responsive-web-design-basics/),
       [learn responsive design](https://web.dev/learn/design/),
       [responsive images](https://web.dev/responsive-images/),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
@@ -147,8 +145,7 @@
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
-* Tutorials
-  * _TODO_ read
+* Tutorials  _>>> TODO read_
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
@@ -159,8 +156,7 @@
   * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (academind)
   * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course
   * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course
-* Links
-  * _TODO_ read
+* Links  _>>> TODO read_
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
   * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
     for summary of used tools, features, etc.
