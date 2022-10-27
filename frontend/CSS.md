@@ -42,6 +42,7 @@
     [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
     [multi-column layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns),
     [grid layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout)
+    * https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout or https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_mode ?
     * _TODO_ read articles
     * _TODO_ clean up link guides
     * _TODO_ see also [Relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
@@ -151,6 +152,25 @@
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
+* Tutorials
+  * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
+  * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
+    [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
+    [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
+  * [beginner](https://htmldog.com/guides/css/beginner/), 
+    [intermediate](https://htmldog.com/guides/css/intermediate/),
+    [advanced](https://htmldog.com/guides/css/advanced/) tutorials (htmldog)
+  * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (academind)
+  * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course
+  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course
+* Links
+  * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
+  * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
+    for summary of used tools, features, etc.
+  * [State of CSS 2022](https://web.dev/state-of-css-2022/)
+    for actual css features
+  * [Web Almanac](https://almanac.httparchive.org/en/2021/) with reports of most used features of websites on the web
+  * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
 * Tools / Frameworks / Libs
   * frameworks:
     [Bootstrap](https://getbootstrap.com/),
@@ -173,33 +193,6 @@
     [purgecss](https://purgecss.com/),
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
   * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
-* Links
-  * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) from [MDN](https://developer.mozilla.org/en-US/)
-  * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
-    for summary of used tools, features, etc.
-  * [State of CSS 2022](https://web.dev/state-of-css-2022/)
-    for actual css features (google article)
-  * [Web Almanac](https://almanac.httparchive.org/en/2021/) with reports of most used features of websites on the web
-  * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
-    article
-* Tutorials --> _TODO_ links at top, leave only general tutorial or courses here
-  * general
-    * [beginner](https://htmldog.com/guides/css/beginner/), 
-      [intermediate](https://htmldog.com/guides/css/intermediate/),
-      [advanced](https://htmldog.com/guides/css/advanced/) tutorials
-    * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) 
-  * [learn CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) MDN courses
-    * [CSS first steps](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps)
-    * [CSS building blocks](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks)
-    * [Styling text](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text)
-    * [CSS layout](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout)
-    * [Styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
-      [Advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
-      [UI pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes)
-    * [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-  * video courses
-    * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/)
-    * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/)
 
 *(Page started in 2020; in progress)*
 
