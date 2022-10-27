@@ -133,7 +133,7 @@
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
     that allows websites work on different screen widths, resolutions, etc.  _>>> TODO read_
-    * see guides [responsive web design basics](https://web.dev/responsive-web-design-basics/),
+    * guides: [responsive web design basics](https://web.dev/responsive-web-design-basics/),
       [learn responsive design](https://web.dev/learn/design/),
       [responsive images](https://web.dev/responsive-images/),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
