@@ -16,7 +16,8 @@
       [percentage](https://developer.mozilla.org/en-US/docs/Web/CSS/percentage)
   * [shorthand properties](https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties)
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
-    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import) and
+    [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
+    [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) or
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
     * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
@@ -80,7 +81,7 @@
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
       [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
     * [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) shorthand property
-    * _TODO_ text formatting:
+    * text formatting:
       [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align),
       [vertical-align](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align),
       [letter-spacing](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing),
@@ -100,8 +101,7 @@
     * animation properties:
       [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
       [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition),
-      [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation),
-      [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes)
+      [animation](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
   * animations
     * [css transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions)
       is a module of CSS that lets you create gradual transitions between the values of specific CSS properties
