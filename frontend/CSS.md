@@ -139,7 +139,7 @@
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
 * Tutorials _>>> TODO read 1_
-  * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
+  * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) _>>> TODO next_
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
