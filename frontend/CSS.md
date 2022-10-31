@@ -155,7 +155,7 @@
     for summary of used tools, features, etc.
   * [State of CSS 2022](https://web.dev/state-of-css-2022/)
     for actual css features
-  * [Web Almanac](https://almanac.httparchive.org/en/2021/) with reports of most used features of websites on the web
+  * [Web Almanac](https://almanac.httparchive.org/en/2022/) with reports of most used features of websites on the web
   * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
 * Tools / Frameworks / Libs
   * frameworks:
