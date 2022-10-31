@@ -34,7 +34,7 @@
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-  * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read 2_
+  * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read 3_
     * [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
     * [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), see also:
       * guides: [other MDN guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox),
@@ -125,7 +125,7 @@
     [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-    that allows websites work on different screen widths, resolutions, etc.  _>>> TODO read_
+    that allows websites work on different screen widths, resolutions, etc.  _>>> TODO read 2_
     * guides: [responsive web design basics](https://web.dev/responsive-web-design-basics/),
       [learn responsive design](https://web.dev/learn/design/),
       [responsive images](https://web.dev/responsive-images/),
@@ -138,7 +138,7 @@
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
-* Tutorials  _>>> TODO read 1_
+* Tutorials _>>> TODO read 1_
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
@@ -147,8 +147,8 @@
     [intermediate](https://htmldog.com/guides/css/intermediate/),
     [advanced](https://htmldog.com/guides/css/advanced/) tutorials (htmldog)
   * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (academind)
-  * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course
-  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course
+  * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course _>>> TODO follow 4_
+  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course _>>> TODO follow 5_
 * Links
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
   * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
