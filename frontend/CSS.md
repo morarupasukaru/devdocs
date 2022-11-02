@@ -142,7 +142,7 @@
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) _>>> TODO next_
-    * currently: https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured 
+    * currently: https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks 
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
