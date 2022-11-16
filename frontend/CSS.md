@@ -132,18 +132,18 @@
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
       [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
-    to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
-  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
+    to design websites for mobile (small screens) first and adapt then to desktop (larger screens)  _>>> TODO read 2_
+  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)  _>>> TODO read 4_
     alternatives to vanilla CSS with additional features like
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements
+  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements  _>>> TODO read 4_
 * Tutorials _>>> TODO read 1_
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) _>>> TODO next_
     * currently:
-      https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS
+      https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
