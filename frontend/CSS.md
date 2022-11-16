@@ -137,7 +137,9 @@
     alternatives to vanilla CSS with additional features like
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements  _>>> TODO read 4_
+  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements; 
+    see also [BEM 101](https://css-tricks.com/bem-101/)
+    _>>> TODO read 4_
 * Tutorials _>>> TODO read 1_
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
