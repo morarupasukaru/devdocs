@@ -45,6 +45,7 @@
     * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), see also:
       * articles: [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
         and [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox)
+      * [a complete guide to css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
     * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
     * [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
@@ -145,7 +146,7 @@
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) _>>> TODO next_
     * currently:
-      https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text
+      https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods
   * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
