@@ -33,7 +33,9 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
 * [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
-  
+* [NEXT.js](/frontend/Next.js.md) as [React](https://reactjs.org/)
+  framework for production *(in progress)*
+
 ## Other technologies
 
 * [Elasticsearch](backend/Elasticsearch.md) is a RESTful search engine
@@ -49,7 +51,9 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
 * [Visual Studio Code](https://code.visualstudio.com/) IDE
-  * plugins: [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer), 
+  * plugins: 
+  [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
+  [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer), 
   [JavaScript (ES6) code snippets](https://marketplace.visualstudio.com/items?itemName=xabikos.JavaScriptSnippets), 
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
