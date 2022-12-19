@@ -28,7 +28,7 @@
 * third-party add-on
   * [React Router](https://reactrouter.com/en/main) to add routing to React application
     * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically
-* react alternatives
+* React vs alternative frameworks
   * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
   * [Angular](https://angular.io/): complete component-based UI frameworks that use TypeScript language
   * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
