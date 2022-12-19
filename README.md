@@ -50,6 +50,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
+* [json-server](https://github.com/typicode/json-server): fake REST API
 * [Visual Studio Code](https://code.visualstudio.com/) IDE
   * plugins: 
   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
