@@ -20,7 +20,11 @@ web applications.
   * ReactJS refresher
   * NextJS summary
 
-# React.JS
+[*Go to parent page*](../README.md)
+
+*(Page mainly written in december 2022)*
+
+## React refresher
 
 [React](https://reactjs.org/) is a client-side JavaScript library for building user interfaces.
 
@@ -50,18 +54,18 @@ web applications.
 * third-party add-on
   * [React Router](https://reactrouter.com/en/main) to add routing to React application
     * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically
-* React alternatives
- * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
- * [Angular](https://angular.io/): complete component-based UI frameworks that use TypeScript language
- * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
- * [Remix](https://remix.run/): similar to Next.JS but always with server-side rendering and more recent, better, etc. 
+* react alternatives
+  * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
+  * [Angular](https://angular.io/): complete component-based UI frameworks that use TypeScript language
+  * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
+  * [Remix](https://remix.run/): similar to Next.JS but always with server-side rendering and more recent, better, etc. 
 
-# Links
+[*Go to top*](#nextjs)
+
+## Links
 
 * [Remix](https://remix.run/) is a full stack web framework that lets you focus on the user interface and work back through web standards to deliver a fast, slick, and resilient user experience. People are gonna love using your stuff.
 * React
   * [Image Upload](https://academind.com/tutorials/reactjs-image-upload) with React
 
-[*Go to parent page*](../README.md)
-
-*(Page mainly written in december 2022)*
+[*Go to top*](#nextjs)
