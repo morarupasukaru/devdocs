@@ -1,6 +1,6 @@
-# NEXT.js
+# Next.js
 
-[NEXT.js](https://nextjs.org/) is a framework to ease development of [React](./ReactJS.md) 
+[Next.js](https://nextjs.org/) is a framework to ease development of [React](./ReactJS.md) 
 web applications.
 
 * concepts
@@ -11,14 +11,14 @@ web applications.
 * basics & foundations
   * file-based routing
   * server-side page (pre-)rendering & data fetching
-  * combine standard react with NextJS
+  * combine standard react with Next.js
   * API routes & fullstack capabilities
 * advanced concepts
   * optimization
   * deployment & configuration
   * authentification
 * links
-  * [Remix](https://remix.run/): alternative to Next.JS but always with server-side rendering. Framework is more recent, better, etc. 
+  * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
 
 [*Go to parent page*](../README.md)
 
@@ -27,7 +27,7 @@ web applications.
 ## File-based routing
 
 [File-based routing](https://nextjs.org/docs/routing/introduction)
-is the Next.JS feature that infer the routes of pages from the folder structure
+is the Next.js feature that infer the routes of pages from the folder structure
 
 * [useRouter](https://nextjs.org/docs/routing/dynamic-routes) hook allow to access value of [dynamic routes](https://nextjs.org/docs/routing/introduction#dynamic-route-segments)
 * [catch all routes](https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes) is a dynamic route that support non fixed number of dynamic values in url
