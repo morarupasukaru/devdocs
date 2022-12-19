@@ -19,6 +19,7 @@ web applications.
   * authentification
 * links
   * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
+  * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
 
 [*Go to parent page*](../README.md)
 

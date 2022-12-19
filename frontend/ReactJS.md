@@ -34,6 +34,8 @@
   * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
 * links:
   * [Image Upload](https://academind.com/tutorials/reactjs-image-upload) with React
+  * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
+  * [React - The Complete Guide](https://www.udemy.com/course/react-the-complete-guide-incl-redux/) video course
 
 [*Go to parent page*](../README.md)
 
