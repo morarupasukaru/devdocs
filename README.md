@@ -60,5 +60,13 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
+* images: [unsplash.com](https://unsplash.com/)
+* icons:
+  [heroicons](https://heroicons.com/),
+  [Feather](https://feathericons.com/),
+  [Line Awesome](https://icons8.com/line-awesome),
+  [fontawesome](https://fontawesome.com/),
+  [Material Design Icons](https://materialdesignicons.com/),
+   [Noun Project](https://thenounproject.com/)
 
 *(last update december 2022)*

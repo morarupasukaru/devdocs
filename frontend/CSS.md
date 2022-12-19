@@ -172,12 +172,6 @@
     [Picnic CSS](https://picnicss.com/),
     [Skeleton](http://getskeleton.com/)
   * utility frameworks: [tailwind css](https://tailwindcss.com/)
-  * icons:
-    [Feather](https://feathericons.com/),
-    [Line Awesome](https://icons8.com/line-awesome),
-    [fontawesome](https://fontawesome.com/),
-    [Material Design Icons](https://materialdesignicons.com/),
-    [Noun Project](https://thenounproject.com/)
   * feature detection: [Modernizr](https://modernizr.com/)
   * css validation:
     [stylelint](https://stylelint.io/),

@@ -10,7 +10,7 @@
   * [handling events](https://reactjs.org/docs/handling-events.html) is very similar to handling events on DOM elements
   * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook allow to re-render component/ui with new state/value;
     see also [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
-  * [css modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for having scoping component styles; see also [css module feature documentation](https://github.com/css-modules/css-modules)
+  * [css modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for having scoping component styles (require _.module.css_ suffix); see also [css module feature documentation](https://github.com/css-modules/css-modules)
   * [basic list component](https://reactjs.org/docs/lists-and-keys.html#basic-list-component) use map javascript array function to map data to React tag component (JSX element)
   * [wrapper component](https://reactjs.org/docs/composition-vs-inheritance.html#containment) by using children prop
   * Forms
@@ -25,6 +25,7 @@
   * [useEffect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect) to execute imperative code that can be fire only when certain values are changed (or once by empty arrays as second argument, `useEffect(..., [])`); see also [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)    
   * [context](https://reactjs.org/docs/context.html) provides a way to pass data through the component tree without having to pass props down manually at every level; 
     see also [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) hook
+  * [fragments](https://reactjs.org/docs/fragments.html) allow a component to return multiple elements
 * third-party add-on
   * [React Router](https://reactrouter.com/en/main) to add routing to React application
     * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically

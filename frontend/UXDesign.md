@@ -13,12 +13,12 @@ Compilations of links about UX design
   * [Top 17 Web Design and UI Trends for 2019](https://designmodo.com/web-design-trends-2019/)
   * [User Onboarding Best Practices](https://designwebkit.com/web-design/onboarding-ux/)
   * [Form Field Usability: Should You Use Single or Multi-Column Forms?](https://cxl.com/research-study/form-field-usability/)
-  * [Interaction to Next Paint](https://web.dev/inp/) - TODO read
-  * [The Duality of CLS with Lazy Loading Components](https://wicki.io/posts/2022-03-cls-with-lazy-loading-components/) - TODO read
+  * [Interaction to Next Paint](https://web.dev/inp/)
+  * [The Duality of CLS with Lazy Loading Components](https://wicki.io/posts/2022-03-cls-with-lazy-loading-components/)
 * Tools
   * [sketchize](https://www.sketchize.com/) - Sketch sheets on which you can draw mocks
   * [Lunacy](https://icons8.com/lunacy) - Free design software
-  * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) google chrome devtools to record and optimize user flow - TODO read
+  * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) google chrome devtools to record and optimize user flow
 
 *(Page mainly written in december 2021; links checked on 17.02.2022)*
 
