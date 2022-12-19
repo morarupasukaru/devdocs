@@ -4,8 +4,8 @@
 web applications.
 
 * concepts
-  * [file-based routing](#file-based.routing) infer the routes of pages from the folder structure
-  * [server-side page (pre-)rendering & data fetching]() TODO
+  * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
+  * [server-side page (pre-)rendering & data fetching](server-side-page-pre-rendering--data-fetching) TODO
   * build fullstack react apps (nodejs backend)
 * other 
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
@@ -20,6 +20,7 @@ web applications.
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in december 2022)*
+
 
 ## file-based routing
 
