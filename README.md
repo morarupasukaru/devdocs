@@ -50,7 +50,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
-* [json-server](https://github.com/typicode/json-server): fake REST API
+* [json-server](https://github.com/typicode/json-server) to fake REST API
 * [Visual Studio Code](https://code.visualstudio.com/) IDE
   * plugins: 
   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
@@ -61,4 +61,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 
-*(last update 01.09.2022)*
+*(last update december 2022)*
