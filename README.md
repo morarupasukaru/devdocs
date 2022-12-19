@@ -33,7 +33,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
 * [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
-* [NEXT.js](/frontend/Next.js.md) as [React](https://reactjs.org/)
+* [NEXT.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
   framework for production *(in progress)*
 
 ## Other technologies
