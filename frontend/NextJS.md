@@ -6,13 +6,15 @@ web applications.
 * concepts
   * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
   * [pre-rendering & client-side rendering](#pre-rendering--client-side-rendering)
-  * build fullstack react apps (nodejs backend)
-* other 
-  * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
-  * API routes & fullstack capabilities
-  * optimization
+  * [API routes](#api-routes) & fullstack capabilities 
   * deployment & configuration
   * authentification
+* misc
+  * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
+  * [Head](https://nextjs.org/docs/api-reference/next/head) component allow to add meta and <head> tags
+  * [page/_app.js](https://nextjs.org/docs/advanced-features/custom-app) custom app can override the default App, e.g. to add default <Head> to available to all pages
+  * [pages/_document.js](https://nextjs.org/docs/advanced-features/custom-document) custom document can override the default Document (whole HTML document), e.g. to add lang to html tag
+  * [Image](https://nextjs.org/docs/api-reference/next/image#required-props) component must be used instead of `<img>` to enable [image optimization](https://nextjs.org/docs/basic-features/image-optimization) like lazy loading and providing multiple version of the images depend on the browser 
 * links
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
   * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
@@ -34,7 +36,6 @@ is the Next.js feature that infer the routes of pages from the folder structure
 * add [custom 404 page](https://nextjs.org/docs/advanced-features/custom-error-page#404-page) by adding `pages/404.js`
 
 [*Go to top*](#nextjs)
-
 
 
 ## pre-rendering & client-side rendering
@@ -81,5 +82,12 @@ is the Next.js feature that infer the routes of pages from the folder structure
   hook as standard React component OR with
   * [useSWR ](https://nextjs.org/docs/basic-features/data-fetching/client-side#client-side-data-fetching-with-swr) hook from [SWR](https://swr.vercel.app/) (recommended)
     *  SWR handles caching, revalidation, focus tracking, refetching on intervals, and more
+
+[*Go to top*](#nextjs)
+
+
+## API routes
+
+TODO
 
 [*Go to top*](#nextjs)
