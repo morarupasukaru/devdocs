@@ -7,7 +7,7 @@ web applications.
   * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
   * [pre-rendering & client-side rendering](#pre-rendering--client-side-rendering)
   * [API routes](#api-routes) to create an API endpoint as a Node.js serverless function
-  * deployment & configuration
+  * [deployment & configuration](#deployment--configuration)
   * authentification
 * misc
   * use [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to create new Next.js application
@@ -99,3 +99,19 @@ is the Next.js feature that infer the routes of pages from the folder structure
   * ... but of course, pages with client-side rendering can perform REST requests to API routes to get data 
 
 [*Go to top*](#nextjs)
+
+
+## deployment & configuration
+
+* [deployment](https://nextjs.org/docs/deployment) options
+  * [standard build](https://nextjs.org/docs/deployment#nextjs-build-api) with `next build` that require NodeJS server
+  * [full static build](https://nextjs.org/docs/advanced-features/static-html-export) with `next export` to produce static app. no NodeJS server required
+    * API routes, service-side page, page revalidation, etc. won't be supported
+* see [next.config.js](https://nextjs.org/docs/api-reference/next.config.js/introduction) on how to configure [environment variables](https://nextjs.org/docs/basic-features/environment-variables) for development, production or other _phases_
+
+[*Go to top*](#nextjs)
+
+
+## authentification
+
+* https://nextjs.org/docs/authentication
