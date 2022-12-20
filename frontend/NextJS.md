@@ -5,7 +5,7 @@ web applications.
 
 * concepts
   * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
-  * [server-side page (pre-)rendering & data fetching](#server-side-page-pre-rendering--data-fetching) TODO
+  * [pre-rendering & client-side rendering](#server-side-page-pre-rendering--data-fetching)
   * build fullstack react apps (nodejs backend)
 * other 
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
@@ -36,8 +36,50 @@ is the Next.js feature that infer the routes of pages from the folder structure
 [*Go to top*](#nextjs)
 
 
-## server-side page (pre-)rendering & data fetching
 
-TODO 
+## pre-rendering & client-side rendering
+
+* disadvantage with normal SPA:
+  * user has to wait the loaded data (ui is rendered and then has to fetch additional dynamic data)
+  * search engine optimization does not support SPA
+* [pre-rendering](https://nextjs.org/docs/basic-features/pages#pre-rendering)
+  used by Next.js generates HTML for pages in advance
+  * when the page is loaded by the browser, JavaScript make it fully interactive (hydration)
+* Next.js support two forms of pre-rendering
+  * [static generation](https://nextjs.org/docs/basic-features/pages#static-generation) :
+    the HTML is generated at build time and will be reused on each request (recommended)
+  * [server-side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) (SSR) :
+    the HTML is generated on each request
+* static generation is recommend for performance reason (can be stored in CDN)
+* Next.js pre-render by default pages without dynamic data
+* Next.js pre-render mode is defined at page level and therefore is quite flexible
+* [client-side rendering](https://nextjs.org/docs/basic-features/data-fetching/client-side) (CSR) 
+  is used to hydrate pre-render pages
+* [static generation](https://nextjs.org/docs/basic-features/pages#static-generation) 
+  with [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
+  and [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths)
+  * Next.js will pre-render _at build time_ (static generation) a page having [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) using the props returned by getStaticProps
+    * sourcecode of getStaticProps is not send to client and can contains critical data (as long as critical data are not provided in returned props)
+  * [incremental static generation](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) (ISR) allow to re-generate a page on request at most every X seconds; 
+  see [revalidate](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#revalidate) property of getStaticProps return values
+    * see also [notfound](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#notfound) and [redirect](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#redirect) properties of getStaticProps return values
+  * [context](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#context-parameter) parameter is provided to getStaticProps; e.g. `context.params` contains _dynamic_ route parameters
+  * [dynamic routes](https://nextjs.org/docs/routing/dynamic-routes) are not pre-render by default
+  * [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) define a list of paths to be statically generated
+  * getStaticPaths can returns paths of a dynamic route for specific ids if data are available at pre-render time
+  * [fallback](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-false) of getStaticPaths return values is usefull too avoid to pre-render to many pages or unfrequent read pages
+* [server-side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) (SSR)
+  with [getServerSideProps](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props)
+  * SSR allow to pre-render the page on each request on the server
+  * SSR is useful if data changes often (e.g. fetch data from db required for every request)
+  * SSR allow to access to incoming request (e.g. cookies)
+    * [context](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props#context-parameter) parameter of 
+      [getServerSideProps](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props) allow access to NodeJS request & response  
+  * [getServerSideProps](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props) and [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)/[getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) should not be used on the same page
+* [client-side rendering](https://nextjs.org/docs/basic-features/data-fetching/client-side) (CSR) can perform with
+  * [useEffect ](https://nextjs.org/docs/basic-features/data-fetching/client-side#client-side-data-fetching-with-useeffect) 
+  hook as standard React component OR with
+  * [useSWR ](https://nextjs.org/docs/basic-features/data-fetching/client-side#client-side-data-fetching-with-swr) hook from [SWR](https://swr.vercel.app/) (recommended)
+    *  SWR handles caching, revalidation, focus tracking, refetching on intervals, and more
 
 [*Go to top*](#nextjs)
