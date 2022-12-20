@@ -6,15 +6,17 @@ web applications.
 * concepts
   * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
   * [pre-rendering & client-side rendering](#pre-rendering--client-side-rendering)
-  * [API routes](#api-routes) & fullstack capabilities 
+  * [API routes](#api-routes) to create an API endpoint as a Node.js serverless function
   * deployment & configuration
   * authentification
 * misc
+  * use [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to create new Next.js application
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
   * [Head](https://nextjs.org/docs/api-reference/next/head) component allow to add meta and <head> tags
   * [page/_app.js](https://nextjs.org/docs/advanced-features/custom-app) custom app can override the default App, e.g. to add default <Head> to available to all pages
   * [pages/_document.js](https://nextjs.org/docs/advanced-features/custom-document) custom document can override the default Document (whole HTML document), e.g. to add lang to html tag
   * [Image](https://nextjs.org/docs/api-reference/next/image#required-props) component must be used instead of `<img>` to enable [image optimization](https://nextjs.org/docs/basic-features/image-optimization) like lazy loading and providing multiple version of the images depend on the browser 
+  * [building forms with Next.js](https://nextjs.org/docs/guides/building-forms#part-6-form-submission-with-javascript-enabled)
 * links
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
   * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
@@ -88,6 +90,12 @@ is the Next.js feature that infer the routes of pages from the folder structure
 
 ## API routes
 
-TODO
+[API Routes](https://nextjs.org/docs/api-routes/introduction) to create an API endpoint as a Node.js serverless function
+* pages/api folder contains handler functions of API routes
+* [dynamic API routes](https://nextjs.org/docs/api-routes/dynamic-api-routes) are equivalent as 
+  [dynamic routes](https://nextjs.org/docs/routing/introduction#dynamic-route-segments)
+* see example of [API routes with REST](https://github.com/vercel/next.js/tree/canary/examples/api-routes-rest)
+* don't perform REST requests to API routes for pre-render pages but share logic to access data; e.g. by exporting some helper functions
+  * ... but of course, pages with client-side rendering can perform REST requests to API routes to get data 
 
 [*Go to top*](#nextjs)
