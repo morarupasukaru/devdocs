@@ -5,7 +5,7 @@ web applications.
 
 * concepts
   * [file-based routing](#file-based-routing) infer the routes of pages from the folder structure
-  * [pre-rendering & client-side rendering](#server-side-page-pre-rendering--data-fetching)
+  * [pre-rendering & client-side rendering](#pre-rendering--client-side-rendering)
   * build fullstack react apps (nodejs backend)
 * other 
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
