@@ -8,7 +8,7 @@ web applications.
   * [pre-rendering & client-side rendering](#pre-rendering--client-side-rendering)
   * [API routes](#api-routes) to create an API endpoint as a Node.js serverless function
   * [deployment & configuration](#deployment--configuration)
-  * authentification
+  * [authentification](https://nextjs.org/docs/authentication) with third-party lib [next-auth](https://authjs.dev/)
 * misc
   * use [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to create new Next.js application
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
@@ -114,4 +114,3 @@ is the Next.js feature that infer the routes of pages from the folder structure
 
 ## authentification
 
-* https://nextjs.org/docs/authentication
