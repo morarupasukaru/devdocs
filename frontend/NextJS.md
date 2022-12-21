@@ -9,6 +9,7 @@ web applications.
   * [API routes](#api-routes) to create an API endpoint as a Node.js serverless function
   * [deployment & configuration](#deployment--configuration)
   * [authentification](https://nextjs.org/docs/authentication) with third-party lib [next-auth](https://authjs.dev/)
+    ; see also [guide](https://authjs.dev/getting-started/oauth-tutorial)
 * misc
   * use [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to create new Next.js application
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
@@ -20,6 +21,7 @@ web applications.
 * links
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
   * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
+  * [react-markdown](https://remarkjs.github.io/react-markdown/): third-party lib to provide add React component to render markdown
 
 [*Go to parent page*](../README.md)
 
