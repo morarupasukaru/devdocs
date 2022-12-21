@@ -20,10 +20,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Web Accessibility](transversal/WebAccessibility.md)
   means that websites are accessible to everyone regardless of disability *(in progress)*
 * [Frontend testing](frontend/FrontendTesting.md)
-* [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
-  and static HTML (pre-rendered)
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
-* [NgRx](frontend/NgRx.md) to manage application state
 * [Progressive Web App](frontend/PWA.md) to provide desktop's like applications on the web (fast, installable, offline)
 * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
   [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
@@ -33,8 +30,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
 * [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
-* [Next.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
-  framework for production
 
 ## Other technologies
 
@@ -44,6 +39,11 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   target systems
 * [Stencil](frontend/Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Svelte](frontend/Svelte.md) is a compiler that generate SPA web applications
+* [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
+  and static HTML (pre-rendered)
+* [NgRx](frontend/NgRx.md) to manage application state
+* [Next.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
+  framework for production
 
 
 ## Tools
