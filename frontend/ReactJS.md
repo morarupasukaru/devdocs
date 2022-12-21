@@ -26,6 +26,8 @@
   * [context](https://reactjs.org/docs/context.html) provides a way to pass data through the component tree without having to pass props down manually at every level; 
     see also [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) hook
   * [fragments](https://reactjs.org/docs/fragments.html) allow a component to return multiple elements
+  * [portals](https://reactjs.org/docs/portals.html) used to render children into a DOM node that exists outside the DOM hierarchy of the parent component
+    * could be usefull to render component corresponding to its HTML semantics instead of nested in the generated HTML code 
 * React vs alternative frameworks
   * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
   * [Angular](https://angular.io/): complete component-based UI frameworks that use TypeScript language
