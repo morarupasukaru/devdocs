@@ -26,13 +26,16 @@
   * [context](https://reactjs.org/docs/context.html) provides a way to pass data through the component tree without having to pass props down manually at every level; 
     see also [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) hook
   * [fragments](https://reactjs.org/docs/fragments.html) allow a component to return multiple elements
-* third-party add-on
-  * [React Router](https://reactrouter.com/en/main) to add routing to React application
-    * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically
 * React vs alternative frameworks
   * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
   * [Angular](https://angular.io/): complete component-based UI frameworks that use TypeScript language
   * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
+* libraries
+  * [React Router](https://reactrouter.com/en/main) to add routing to React application
+    * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically
+  * [react-markdown](https://remarkjs.github.io/react-markdown/): React component to render markdown
+  * [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+  : Syntax highlighting React component
 * links:
   * [Image Upload](https://academind.com/tutorials/reactjs-image-upload) with React
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
