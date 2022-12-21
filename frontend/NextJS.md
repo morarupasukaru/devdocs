@@ -21,7 +21,10 @@ web applications.
 * links
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
   * [Remix](https://remix.run/): alternative to Next.js but always with server-side rendering. Framework is more recent, better, etc. 
-  * [react-markdown](https://remarkjs.github.io/react-markdown/): third-party lib to provide add React component to render markdown
+* libraries
+  * [react-markdown](https://remarkjs.github.io/react-markdown/): React component to render markdown
+  * [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+  : Syntax highlighting React component
 
 [*Go to parent page*](../README.md)
 
