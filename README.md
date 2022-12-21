@@ -49,6 +49,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 ## Tools
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
+  * [gray-matter](https://github.com/jonschlinkert/gray-matter) JS lib to parse yalm [front-matter](https://jekyllrb.com/docs/front-matter/), e.g. in markdown into javascript object
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
 * [json-server](https://github.com/typicode/json-server) to fake REST API
 * [Visual Studio Code](https://code.visualstudio.com/) IDE
