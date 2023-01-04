@@ -26,6 +26,7 @@ Web Accessibility means that websites are accessible to everyone regardless of d
   * [Accessibility in Angular Applications](https://blog.angular.io/accessibility-in-angular-e84f73a223f)
   * [Angular a11y: 11 tips on how to make your apps more accessible](https://indepth.dev/angular-a11y-11-tips-on-how-to-make-your-apps-more-accessible/)
   * [Patterns & Strategies for accessible web-apps](https://accessible-app.com/)
+  * [a11yjson](https://sozialhelden.github.io/a11yjson)
 * Tools
   * [Testing Web Pages with NVDA](https://www.unimelb.edu.au/accessibility/tools/testing-web-pages-with-nvda)
   * [Tools recommanded by CivicActions](https://accessibility.civicactions.com/guide/tools)
