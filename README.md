@@ -69,5 +69,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [fontawesome](https://fontawesome.com/),
   [Material Design Icons](https://materialdesignicons.com/),
    [Noun Project](https://thenounproject.com/)
+* [Storybook](https://storybook.js.org/) is a frontend workshop for building UI components and pages in isolation
 
 *(last update december 2022)*
