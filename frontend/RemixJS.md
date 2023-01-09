@@ -3,8 +3,9 @@
 [Remix](https://remix.run/) is a [React](./ReactJS.md) full stack web framework like [Next.js](./NextJS.md)
 
 * concepts
-  * file-based routing
+  * [file-based routing](https://remix.run/docs/en/v1/file-conventions/routes-files) like [Next.js](./NextJS.md)
   * TODO
+  * [styling](https://remix.run/docs/en/v1/guides/styling) TODO read
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
