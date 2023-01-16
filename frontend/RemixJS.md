@@ -14,6 +14,19 @@
   * [surfacing styles](https://remix.run/docs/en/v1/guides/styling#surfacing-styles)
     for styling a component with individual css file
     * take care: surfacing styles is not using [css module](https://github.com/css-modules/css-modules). css is gobal and css conflicts can happen
+  * [loader](https://remix.run/docs/en/v1/route/loader)
+    server side function provides data to the route when rendering
+    * [useLoaderData](https://remix.run/docs/en/v1/hooks/use-loader-data)
+      hook returns the JSON parsed data from your route loader function
+      * useLoaderData hook can be called in any component of a route
+  * [action](https://remix.run/docs/en/v1/route/action)
+    server side function handle data mutations on a page e.g. triggered from 
+    child [Form](https://remix.run/docs/en/v1/components/form#action) component request
+    * [useActionData](https://remix.run/docs/en/v1/hooks/use-action-data) 
+      hook returns the JSON parsed data from your route action
+      * useActionData hook can be called in any component of a route
+  * [useTransition](https://remix.run/docs/en/v1/hooks/use-transition)
+    hook allow to build pending navigation indicators and optimistic UI on data mutations
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
