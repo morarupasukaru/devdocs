@@ -1,4 +1,4 @@
-# React
+# Remix
 
 [Remix](https://remix.run/) is a [React](./ReactJS.md) full stack web framework like [Next.js](./NextJS.md)
 
@@ -23,10 +23,13 @@
     server side function handle data mutations on a page e.g. triggered from 
     child [Form](https://remix.run/docs/en/v1/components/form#action) component request
     * [useActionData](https://remix.run/docs/en/v1/hooks/use-action-data) 
-      hook returns the JSON parsed data from your route action
+      hook returns the JSON parsed data from your route action; e.g. of form validation errors
       * useActionData hook can be called in any component of a route
   * [useTransition](https://remix.run/docs/en/v1/hooks/use-transition)
     hook allow to build pending navigation indicators and optimistic UI on data mutations
+  * [Error-Boundary](https://remix.run/docs/en/v1/route/error-boundary) is used for error handling
+    and is is a React component that renders whenever there is an error anywhere on the route, 
+    either during rendering or during data loading
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
