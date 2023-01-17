@@ -27,9 +27,15 @@
       * useActionData hook can be called in any component of a route
   * [useTransition](https://remix.run/docs/en/v1/hooks/use-transition)
     hook allow to build pending navigation indicators and optimistic UI on data mutations
-  * [Error-Boundary](https://remix.run/docs/en/v1/route/error-boundary) is used for error handling
-    and is is a React component that renders whenever there is an error anywhere on the route, 
+  * [Error handling](https://remix.run/docs/en/v1/guides/errors) is using 
+    [Error-Boundary](https://remix.run/docs/en/v1/route/error-boundary)
+    ; a React component that renders whenever there is (unexcepted) error anywhere on the route, 
     either during rendering or during data loading
+    * e.g. adding Error-Boundary to root.tsx to catch all unexcepted error in single place
+  * [CatchBoundary](https://remix.run/docs/en/v1/route/catch-boundary)
+    is a React component that renders whenever an action or loader throws a Response 
+    (expected errors)
+    * see [not found (404) handling](https://remix.run/docs/en/v1/guides/not-found)
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
