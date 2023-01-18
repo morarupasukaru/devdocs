@@ -50,6 +50,7 @@
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
+* tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/), 
