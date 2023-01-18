@@ -144,10 +144,8 @@
 * Tutorials _>>> TODO read 1_
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
-  * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) _>>> TODO next_
-    * currently:
-      https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Legacy_Layout_Methods
-  * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
+  * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
+  * TODO next:[styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
   * [beginner](https://htmldog.com/guides/css/beginner/), 
