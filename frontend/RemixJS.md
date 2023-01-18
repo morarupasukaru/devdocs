@@ -4,6 +4,8 @@
 
 * concepts
   * [file-based routing](https://remix.run/docs/en/v1/file-conventions/routes-files) like [Next.js](./NextJS.md)
+    * [dynamic routes](https://remix.run/docs/en/v1/file-conventions/routes-files#dynamic-route-parameters) 
+    * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
   * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route) 
     containing a [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet) 
     * add components to root page to make available on all *pages* (e.g. navigation)
@@ -36,6 +38,8 @@
     is a React component that renders whenever an action or loader throws a Response 
     (expected errors)
     * see [not found (404) handling](https://remix.run/docs/en/v1/guides/not-found)
+  * [meta](https://remix.run/docs/en/v1/route/meta) 
+    export will set meta tags for your html document
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
