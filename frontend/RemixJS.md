@@ -40,6 +40,7 @@
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
 * links
+  * https://stateful.com/blog/remix-react-framework
   * [Remix.js - The Practical Guide](https://www.udemy.com/course/remix-course/) video course
 
 [*Go to parent page*](../README.md)
