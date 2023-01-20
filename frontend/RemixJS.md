@@ -19,6 +19,9 @@
       * add components to root page to make available on all *pages* (e.g. navigation)
     * [Link](https://remix.run/docs/en/v1/components/link) to use for anchor tag
       * `..` can be used to got to parent path, (feature of React [Link](https://reactrouter.com/en/main/components/link))
+    * [useNavigate](https://reactrouter.com/en/6.7.0/hooks/use-navigate) 
+      hook used for programmatically navigation 
+      (from [React Router v6](https://remix.run/docs/en/v1/other-api/react-router))
   * [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet)
     to render child routes in parent component
   * styling
