@@ -4,9 +4,16 @@
 
 * concepts
   * [file-based routing](https://remix.run/docs/en/v1/file-conventions/routes-files) like [Next.js](./NextJS.md)
+    supporting:
+    * [nested routing](https://remix.run/docs/en/v1/guides/routing#what-is-nested-routing)
     * [dynamic routes](https://remix.run/docs/en/v1/file-conventions/routes-files#dynamic-route-parameters) 
+    * [optional segments](https://remix.run/docs/en/v1/file-conventions/routes-files#optional-segments)
+    * [layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#layout-routes)
+    * [splat routes](https://remix.run/docs/en/v1/file-conventions/routes-files#splat-routes) "catch-all routes"
+    * ...
     * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
-  * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route) 
+    * take care: [route file naming convention is changing in v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2)
+  * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route)
     containing a [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet) 
     * add components to root page to make available on all *pages* (e.g. navigation)
   * [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet)
