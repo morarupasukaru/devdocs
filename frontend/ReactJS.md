@@ -38,6 +38,7 @@
   * [react-markdown](https://remarkjs.github.io/react-markdown/): React component to render markdown
   * [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
   : Syntax highlighting React component
+  * [React Icons](https://react-icons.github.io/react-icons) for popular icons
 * links:
   * [Image Upload](https://academind.com/tutorials/reactjs-image-upload) with React
   * [Next.js & React - The Complete Guide](https://www.udemy.com/course/nextjs-react-the-complete-guide/) video course
