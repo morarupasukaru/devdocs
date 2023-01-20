@@ -11,7 +11,11 @@
       * [optional segments](https://remix.run/docs/en/v1/file-conventions/routes-files#optional-segments)
       * [layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#layout-routes)
       * [splat routes](https://remix.run/docs/en/v1/file-conventions/routes-files#splat-routes) "catch-all routes"
-      * ...
+        * [pathless layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#pathless-layout-routes)
+          to share e.g. layout, styles over several routes without adding new route segment 
+      * [resource routes](https://remix.run/docs/en/v1/guides/api-routes#resource-routes)
+        to render e.g. PDF documents (non application's UI route)
+      * ... 
       * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
       * take care: [route file naming convention is changing in v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2)
     * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route)
