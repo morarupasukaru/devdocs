@@ -10,11 +10,15 @@
       * [dynamic routes](https://remix.run/docs/en/v1/file-conventions/routes-files#dynamic-route-parameters) 
       * [optional segments](https://remix.run/docs/en/v1/file-conventions/routes-files#optional-segments)
       * [layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#layout-routes)
-      * [splat routes](https://remix.run/docs/en/v1/file-conventions/routes-files#splat-routes) "catch-all routes"
-        * [pathless layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#pathless-layout-routes)
-          to share e.g. layout, styles over several routes without adding new route segment 
+      * [splat routes](https://remix.run/docs/en/v1/file-conventions/routes-files#splat-routes) 
+        "catch-all routes" e.g. to [redirect](https://remix.run/docs/en/v1/utils/redirect) to on given url 
+      * [pathless layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#pathless-layout-routes)
+        to share e.g. layout, styles over several routes without adding new route segment 
       * [resource routes](https://remix.run/docs/en/v1/guides/api-routes#resource-routes)
         to render e.g. PDF documents (non application's UI route)
+      * [useSearchParams](https://remix.run/docs/en/v1/guides/data-loading#search-params-in-components) 
+        hook to access URL search params 
+        (based on URL API [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams))
       * ... 
       * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
       * take care: [route file naming convention is changing in v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2)
