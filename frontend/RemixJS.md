@@ -61,6 +61,10 @@
       is a React component that renders whenever an action or loader throws a Response 
       (expected errors)
       * see [not found (404) handling](https://remix.run/docs/en/v1/guides/not-found)
+    * javascript/typescript file having ".server." in name are only available on the server 
+    * adding .server js/ts filename is a hint to the compiler that file will be only 
+      served on the backend
+      (see [module constraints](https://remix.run/docs/en/v1/guides/constraints#no-module-side-effects))
   * [meta](https://remix.run/docs/en/v1/route/meta) 
     export will set meta tags for your html document
 * Remix vs [Next.js](./NextJS.md)
