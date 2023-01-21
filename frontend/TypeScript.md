@@ -119,6 +119,8 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
   * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
+* libraries
+  * [Prisma](https://www.prisma.io/) is a Node.js and TypeScript ORM
 
 [*Go to parent page*](../README.md)
   

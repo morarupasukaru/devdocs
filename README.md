@@ -30,6 +30,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
 * [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
+* [Databases](backend/Databases.md) links
 
 ## Other technologies
 
