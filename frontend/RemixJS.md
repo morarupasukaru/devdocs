@@ -44,6 +44,9 @@
       * [useLoaderData](https://remix.run/docs/en/v1/hooks/use-loader-data)
         hook returns the JSON parsed data from your route loader function
         * useLoaderData hook can be called in any component of a route
+      * [useMatches](https://remix.run/docs/en/v1/hooks/use-matches) returns 
+        all routes matching on the page
+        * can be used to access parent route data from nested route 
     * [action](https://remix.run/docs/en/v1/route/action)
       server side function handle data mutations on a page e.g. triggered from 
       child [Form](https://remix.run/docs/en/v1/components/form#action) component request
@@ -65,8 +68,15 @@
     * adding .server js/ts filename is a hint to the compiler that file will be only 
       served on the backend
       (see [module constraints](https://remix.run/docs/en/v1/guides/constraints#no-module-side-effects))
+    * code of Component is run on client and server (for pre-rendering). 
+      Put server-side code only in
+      [loader](https://remix.run/docs/en/v1/route/loader) or
+     [action](https://remix.run/docs/en/v1/route/action)
   * [meta](https://remix.run/docs/en/v1/route/meta) 
     export will set meta tags for your html document
+  * misc
+    * [defaultValue](https://reactjs.org/docs/uncontrolled-components.html#default-values) 
+      React-specific attribute can be used to set a default value to e.g. input field
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
