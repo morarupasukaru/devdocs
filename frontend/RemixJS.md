@@ -53,6 +53,8 @@
       * [useActionData](https://remix.run/docs/en/v1/hooks/use-action-data) 
         hook returns the JSON parsed data from your route action; e.g. of form validation errors
         * useActionData hook can be called in any component of a route
+      * use [Form](https://remix.run/docs/en/v1/components/form#method) Remix component allow to use
+        `delete` method (altough non-standard in HTML) 
     * [useTransition](https://remix.run/docs/en/v1/hooks/use-transition)
       hook allow to build pending navigation indicators and optimistic UI on data mutations
     * [Error handling](https://remix.run/docs/en/v1/guides/errors) is using 
