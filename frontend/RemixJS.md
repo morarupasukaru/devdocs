@@ -19,7 +19,7 @@
       * [useSearchParams](https://remix.run/docs/en/v1/guides/data-loading#search-params-in-components) 
         hook to access URL search params 
         (based on URL API [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams))
-      * ... 
+      * ...
       * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
       * take care: [route file naming convention is changing in v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2)
     * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route)
@@ -55,6 +55,11 @@
         * useActionData hook can be called in any component of a route
       * use [Form](https://remix.run/docs/en/v1/components/form#method) Remix component allow to use
         `delete` method (altough non-standard in HTML) 
+    * [useSubmit](https://remix.run/docs/en/v1/hooks/use-submit) 
+      hook can be used to programmatically submit a form
+    * [useFetcher](https://remix.run/docs/en/v1/hooks/use-fetcher) 
+      hook can be used to programmatically load/submit without subsequent navigations
+      (e.g. highly interactive app)
     * [useTransition](https://remix.run/docs/en/v1/hooks/use-transition)
       hook allow to build pending navigation indicators and optimistic UI on data mutations
     * [Error handling](https://remix.run/docs/en/v1/guides/errors) is using 
