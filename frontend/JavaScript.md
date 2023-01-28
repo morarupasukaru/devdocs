@@ -258,6 +258,7 @@ and is the scripting language for Web pages.
   * [validatejs](http://validatejs.org/) to valide javascript objects 
   * [marked.js](https://marked.js.org/) to compile markdown to HTML
   * [lodash](https://lodash.com/) or [underscore](https://underscorejs.org/) for utility librairies (needed in some cases; frameworks & current javascript version is often enough)
+  * [bcryptjs](https://github.com/dcodeIO/bcrypt.js) to hash password and compare hash with plain password
 * design patterns
   * *module pattern* as alternative to [module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
     ```javascript
