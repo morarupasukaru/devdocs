@@ -82,6 +82,8 @@
   * [meta](https://remix.run/docs/en/v1/route/meta) 
     export will set meta tags for your html document
   * authentification
+    * [createCookieSessionStorage](https://remix.run/docs/en/v1/utils/sessions#createcookiesessionstorage)
+      to create session cookies
     * TODO
   * optimization & deploying
     * TODO
