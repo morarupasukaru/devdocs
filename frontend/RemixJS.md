@@ -81,6 +81,10 @@
      [action](https://remix.run/docs/en/v1/route/action)
   * [meta](https://remix.run/docs/en/v1/route/meta) 
     export will set meta tags for your html document
+  * authentification
+    * TODO
+  * optimization & deploying
+    * TODO
   * misc
     * [defaultValue](https://reactjs.org/docs/uncontrolled-components.html#default-values) 
       React-specific attribute can be used to set a default value to e.g. input field
