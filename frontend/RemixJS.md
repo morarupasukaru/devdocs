@@ -79,13 +79,21 @@
       Put server-side code only in
       [loader](https://remix.run/docs/en/v1/route/loader) or
      [action](https://remix.run/docs/en/v1/route/action)
-  * [meta](https://remix.run/docs/en/v1/route/meta) 
-    export will set meta tags for your html document
   * authentification
     * [createCookieSessionStorage](https://remix.run/docs/en/v1/utils/sessions#createcookiesessionstorage)
       to create session cookies
+    * protecting routes can be achieved by throwing [redirect](https://remix.run/docs/en/v1/utils/redirect) 
+      in [loader](https://remix.run/docs/en/v1/route/loader);
+      see [explanations in FAQ](https://remix.run/docs/en/v1/pages/faq#how-can-i-have-a-parent-route-loader-validate-the-user-and-protect-all-child-routes)
+  * optimization
+    * [meta](https://remix.run/docs/en/v1/route/meta)
+      export will set meta tags (metadata) for your html document
+    * custom response headers
+      * by using [headers](https://remix.run/docs/en/v1/route/headers) 
+        function to define response headers pro route
+      * by adding responseHeaders in `entry.server.jsx` that is provided to all responses
     * TODO
-  * optimization & deploying
+  * deploying
     * TODO
   * misc
     * [defaultValue](https://reactjs.org/docs/uncontrolled-components.html#default-values) 
