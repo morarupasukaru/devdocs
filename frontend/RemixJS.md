@@ -88,10 +88,10 @@
   * optimization
     * [meta](https://remix.run/docs/en/v1/route/meta)
       export will set meta tags (metadata) for your html document
-    * custom response headers
-      * by using [headers](https://remix.run/docs/en/v1/route/headers) 
+    * custom response headers can be defined...
+      * ...by using [headers](https://remix.run/docs/en/v1/route/headers) 
         function to define response headers pro route
-      * by adding responseHeaders in `entry.server.jsx` that is provided to all responses
+      * ...by adding responseHeaders in `entry.server.jsx` that is provided to all responses
     * TODO
   * deploying
     * TODO
