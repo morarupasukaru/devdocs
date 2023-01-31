@@ -92,9 +92,13 @@
       * ...by using [headers](https://remix.run/docs/en/v1/route/headers) 
         function to define response headers pro route
       * ...by adding responseHeaders in `entry.server.jsx` that is provided to all responses
-    * TODO
-  * deploying
-    * TODO
+    * [disabling JavaScript](https://remix.run/docs/en/v1/guides/disabling-javascript) 
+      for some static pages prevent to download unnecessary JavaScript files
+    * [remix.config.js](https://remix.run/docs/en/v1/file-conventions/remix-config)
+      to override default Remix project configuration
+  * [deploying](https://remix.run/docs/en/v1/guides/deployment) 
+      Remix app on different platform using 
+      [server adapter](https://remix.run/docs/en/v1/other-api/adapter)
   * misc
     * [defaultValue](https://reactjs.org/docs/uncontrolled-components.html#default-values) 
       React-specific attribute can be used to set a default value to e.g. input field
