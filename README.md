@@ -46,7 +46,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Next.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
   framework for production
 * [Remix](/frontend/RemixJS.md) as another (better) [React](./ReactJS.md) full stack web framework
-  *(in progress)*
 
 ## Tools
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
