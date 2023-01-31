@@ -5,6 +5,7 @@
 * Remix vs [Next.js](./NextJS.md)
   * Remix: always use server-side rendering; server is called for every request
   * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
+  * Remix is faster than Next.js 
   * more info with [Remix vs Next.js](https://remix.run/blog/remix-vs-next)
 * concepts
   * routing 
