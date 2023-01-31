@@ -2,6 +2,10 @@
 
 [Remix](https://remix.run/) is a [React](./ReactJS.md) full stack web framework like [Next.js](./NextJS.md)
 
+* Remix vs [Next.js](./NextJS.md)
+  * Remix: always use server-side rendering; server is called for every request
+  * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
+  * more info with [Remix vs Next.js](https://remix.run/blog/remix-vs-next)
 * concepts
   * routing 
     * [file-based routing](https://remix.run/docs/en/v1/file-conventions/routes-files) like [Next.js](./NextJS.md)
@@ -102,10 +106,6 @@
   * misc
     * [defaultValue](https://reactjs.org/docs/uncontrolled-components.html#default-values) 
       React-specific attribute can be used to set a default value to e.g. input field
-* Remix vs [Next.js](./NextJS.md)
-  * Remix: always use server-side rendering; server is called for every request
-  * [Next.js](./NextJS.md): server-side rendering supported but static site generation is default/recommended
-  * more info with [Remix vs Next.js](https://remix.run/blog/remix-vs-next)
 * links
   * [Remix.js - The Practical Guide](https://www.udemy.com/course/remix-course/) video course
 
