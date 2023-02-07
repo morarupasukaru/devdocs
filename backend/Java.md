@@ -30,7 +30,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
     [Java serialization](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html)
 
-*(Page mainly written in 2022; links checked on TODO)*
+*(Page mainly written in 2022; links checked on 07.02.2023)*
 
 [*Go to parent page*](../README.md)
 
@@ -331,7 +331,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [Java Hamcrest](http://hamcrest.org/JavaHamcrest/) to have better matchers
   * [mockito](https://site.mockito.org/) to have mocks; see also [Mockito vs EasyMock vs JMockit](https://www.baeldung.com/mockito-vs-easymock-vs-jmockit)
 * [Jakarta Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet) to provide web applications (usually hidden behind a framework)
-* dependency injection with [Guice](https://github.com/google/guice) or [spring-context](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring)
+* dependency injection with [Guice](https://github.com/google/guice), [spring-context](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring) or [dagger](https://dagger.dev/)
   ; see also [comparison](https://www.baeldung.com/guice-spring-dependency-injection)
 * [Thymeleaf](https://www.thymeleaf.org/) :
   HTML template engine for web/non-web environments as substitute for JSP
@@ -527,7 +527,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * return Optional<T> if it might not be able to return a result and clients have
       to perform special processing if no result is returned
   * write javadocs for all exposed API elements (item 56)
-    * see [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html))
+    * see [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html)
     * and [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.)
 * _General Programming_
   * minimize the scope of local variables (item 57)
