@@ -32,4 +32,4 @@ that prioritizes giving clients exactly the data they request and no more.
   
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 01.2023; links checked on TODO)*
+*(Page mainly written in 01.2023; links checked on 07.02.2023)*
