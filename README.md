@@ -44,7 +44,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [NgRx](frontend/NgRx.md) to manage application state
 * [Next.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
   framework for production
-* [Remix](/frontend/RemixJS.md) as another (better) [React](./ReactJS.md) full stack web framework
+* [Remix](/frontend/RemixJS.md) as another (better) [React](/frontend/ReactJS.md) full stack web framework
 * [GraphQL](/backend/GraphQL.md) is a query language for APIs as alternative to SOAP and REST APIs
 
 ## Tools
