@@ -8,7 +8,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
 * Install
   * [Download Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and install it as Windows service
   * or install Elasticsearch on [LTS Ubuntu Server](https://ubuntu.com/download) 
-  with [VirtualBox](https://www.virtualbox.org/) on Windows: see [Elasticsearch 7 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/) course and the [Setup Instructions](https://sundog-education.com/elasticsearch/)
+  with [VirtualBox](https://www.virtualbox.org/) on Windows: see [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/) course and the [Setup Instructions](https://sundog-education.com/elasticsearch/)
   * (use SSH or [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) to access virtual OS: `ssh username@127.0.0.1 -p 22`)
 * Concepts
   * Elasticsearch is part of **[Elastic Stack](https://www.elastic.co/what-is/elk-stack)** ; the stack provide:
@@ -76,14 +76,14 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       or cluster down (too many synchronization of mappings between cluster's nodes)
     * flattened field type add search limitations as subfields are indexed as keyword (no analyzer)
 * Searching
-  * *query-line* (called [URI-search](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-uri-request.html)): specify search in URL without JSON body; can be usefull for expirement
-    * see [q request parameter of search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html)
+  * *query-line*: specify search in URL without JSON body; can be usefull for expirement
+    * see [q request parameter of search APIs](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html#search-api-query-params-q)
       and [query string syntax](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-query-string-query.html#query-string-syntax)
     * e.g. `http://localhost:9200/myindex/_search?q=myfield:TEST&pretty`
     * not to use on production due to security issues & limitations
   * normal search query are done with GET request with [JSON body](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html#search-search-api-request-body)
   * [query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-filter-context)
-    * [filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#filter-context)
+    * [filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#filter-context) TODO check
       is used for filtering data
     * [query context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-context)
       return data in terms of relevance
@@ -143,12 +143,10 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * and [SQL X-Pack](https://www.elastic.co/guide/en/elasticsearch/reference/current/xpack-sql.html) for Elasticsearch
 * Links
   * [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
-  * course [Elasticsearch 7 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
+  * course [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
   * [OpenSearch](https://www.opensearch.org) is a fork of version 7.10.2 of the Elasticsearch because new releases of Elasticsearch are under private license with limitations
   * [elasticsearch-head](http://mobz.github.io/elasticsearch-head/): web front end for for Elasticsearch
-    (see also [Chrome extension](https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm))
-  * (see [movielens](https://grouplens.org/datasets/movielens/) datasets to test with some data)
 
-*(Page mainly written in july 2021; links checked on TODO)*
+*(Page mainly written in july 2021; links checked on 07.02.2023)*
 
 [*Go to parent page*](../README.md)
