@@ -70,4 +70,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Noun Project](https://thenounproject.com/)
 * [Storybook](https://storybook.js.org/) is a frontend workshop for building UI components and pages in isolation
 
-*(last update january 2023)*
+*(last update february 2023)*

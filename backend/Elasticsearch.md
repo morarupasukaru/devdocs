@@ -149,6 +149,6 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
     (see also [Chrome extension](https://chrome.google.com/webstore/detail/elasticsearch-head/ffmkiejjmecolpfloofpjologoblkegm))
   * (see [movielens](https://grouplens.org/datasets/movielens/) datasets to test with some data)
 
-*(Page mainly written in july 2021; links checked on 15.02.2022)*
+*(Page mainly written in july 2021; links checked on TODO)*
 
 [*Go to parent page*](../README.md)

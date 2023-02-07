@@ -126,6 +126,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   
 
 ----
-* *Page mainly written in 2019; links checked on 22.02.2022*
+* *Page mainly written in 2019; links checked on TODO*
 * *Disclaimer: notes concern up to Typescript 3.x but should be valid for latest version*
 ----

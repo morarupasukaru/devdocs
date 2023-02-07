@@ -64,5 +64,5 @@
 [*Go to parent page*](../README.md)
 
 ----
-* *Page mainly written in 2019, last update: february 2022*
+* *Page mainly written in 2019, last update: february 2022; links checked on TODO*
 ----

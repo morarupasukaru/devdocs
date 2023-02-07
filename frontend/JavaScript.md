@@ -352,6 +352,6 @@ and is the scripting language for Web pages.
 
 
 ----
-* *Page mainly written in 2019; links checked on 22.02.2022*
+* *Page mainly written in 2019; links checked on TODO*
 * *Disclaimer: notes concern up to ES11 2020 but should be valid for latest version*
 ----

@@ -20,6 +20,6 @@ Compilations of links about UX design
   * [Lunacy](https://icons8.com/lunacy) - Free design software
   * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) google chrome devtools to record and optimize user flow
 
-*(Page mainly written in december 2021; links checked on 17.02.2022)*
+*(Page mainly written in december 2021; links checked on TODO)*
 
 [*Go to parent page*](../README.md)

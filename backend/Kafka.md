@@ -138,7 +138,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
   * see article [The Kafka API Battle: Producer vs Consumer vs Kafka Connect vs Kafka Streams vs KSQL !](https://medium.com/@stephane.maarek/the-kafka-api-battle-producer-vs-consumer-vs-kafka-connect-vs-kafka-streams-vs-ksql-ef584274c1e)
   * course [Learn Apache Kafka for Beginners](https://www.udemy.com/course/apache-kafka/)
 
-*(Page mainly written in mai 2021; links checked on 15.02.2022)*
+*(Page mainly written in mai 2021; links checked on TODO)*
 
 [*Go to parent page*](../README.md)
 

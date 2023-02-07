@@ -44,4 +44,4 @@ Compilation of links about frontend testing
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on 19.02.2022)*
+*(Page mainly written in december 2020; links checked on TODO)*

@@ -195,7 +195,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     courses (contents are overlapping but both courses are great to follow)
 
 ----
-* *Page mainly written in september 2020; links checked on 19.02.2022*
+* *Page mainly written in september 2020; links checked on TODO*
 * *Disclaimer: notes concern RxJS version 6 but should be valid for stable version 7 at February 2022; see [RxJS 6.x to 7.x Detailed Change List](https://rxjs.dev/6-to-7-change-summary)*
 ----
 

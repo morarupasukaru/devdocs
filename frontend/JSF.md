@@ -60,4 +60,4 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in March 2021; links checked on 18.02.2022)*
+*(Page mainly written in March 2021; links checked on TODO)*

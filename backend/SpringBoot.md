@@ -57,7 +57,7 @@
    ([NodeJS](https://nodejs.org/), [Deno](https://deno.land/))
   * see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
 ----
-* *Page mainly written in July 2020; linked checked on 15.02.2022*
+* *Page mainly written in July 2020; links checked on TODO*
 * *Disclaimer: notes should remain valid to latest SprintBoot version; stable version at February 2022 is 2.6.3*
 ----
 

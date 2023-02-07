@@ -37,4 +37,4 @@ JAMStack can be implemented in [Angular](Angular.md) with [Scully](https://scull
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on 17.02.2022)*
+*(Page mainly written in december 2020; links checked on TODO)*

@@ -97,7 +97,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * Media API to access device camera and microphone --> TODO add correct link later
 * [Screen Orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API): change screen orientation at runtime; see [guide](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 
-*(Page mainly written in 2019, last update: september 2020; links checked on 21.02.2022)*
+*(Page mainly written in 2019, last update: september 2020; links checked on TODO)*
 
 [*Go to parent page*](../README.md)
 

@@ -2,7 +2,7 @@
 
 Web Accessibility means that websites are accessible to everyone regardless of disability. 
 
-*(Page mainly written in 2022; in progress)*
+*(Page mainly written in 2022, still in progress; links checked on TODO)*
 
 * Links
   * [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) from MDN 

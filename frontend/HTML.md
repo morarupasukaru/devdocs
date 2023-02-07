@@ -152,7 +152,7 @@ between websites.
     [part 2: CSS](https://academind.com/learn/css/beginner-s-guide/), 
     [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/)
 
-*(Page mainly written in september 2020; links checked on 19.02.2022)*
+*(Page mainly written in september 2020; links checked on TODO)*
 
 [*Go to parent page*](../README.md)
 

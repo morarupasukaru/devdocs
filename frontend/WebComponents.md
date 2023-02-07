@@ -6,7 +6,7 @@
 * [Stencil](Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
-*(Page mainly written in september 2020; links checked on 17.02.2022)*
+*(Page mainly written in september 2020; links checked on TODO)*
 
 [*Go to parent page*](../README.md)
 

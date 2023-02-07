@@ -24,7 +24,7 @@ web applications.
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2022)*
+*(Page mainly written in december 2022; links checked on TODO)*
 
 
 ## file-based routing

@@ -22,7 +22,7 @@
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
   
-*(Page mainly written in April 2020; links checked on 23.02.2022)*
+*(Page mainly written in April 2020; links checked on TODO)*
 
 [*Go to parent page*](../README.md)
 
