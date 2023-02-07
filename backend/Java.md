@@ -37,7 +37,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 ## Language
 
 * [basic concepts](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
-  * [variables](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/index.html)
+  * [variables](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/variables.html)
     as [primitive data types](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html)
     or [array](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html)
   * [operators](https://docs.oracle.com/javase/tutorial/java/nutsandbolts/operators.html)
@@ -76,6 +76,15 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 * [Java history](https://en.wikipedia.org/wiki/Java_version_history)
   and [updates](https://docs.oracle.com/en/java/javase/19/language/java-language-changes.html):
+  * _future features_:
+    * [value objects](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
+      with [project valhalla](https://openjdk.org/projects/valhalla/) for better performances
+    * _improved interoperability with native code_
+      with [project panama](https://openjdk.org/projects/panama/) for better performances
+    * _virtual threads_ with [project loom](https://openjdk.org/projects/loom/)
+      for lightweight concurrency and better performances
+  * 2022 - Java SE 19 : nothing interesting
+  * 2022 - Java SE 18 : nothing interesting
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
     to restrict classes/interfaces inheritance
