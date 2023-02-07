@@ -68,6 +68,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     (see also [changes from Java SE 5](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)) 
   * [exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
   * [java preview features](https://www.baeldung.com/java-preview-features)
+  * see also [history](#History) for other language/API features
 
 [*Go to top*](#Java)
 
@@ -83,8 +84,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
       with [project panama](https://openjdk.org/projects/panama/) for better performances
     * _virtual threads_ with [project loom](https://openjdk.org/projects/loom/)
       for lightweight concurrency and better performances
-  * 2022 - Java SE 19 : nothing interesting
-  * 2022 - Java SE 18 : nothing interesting
+  * 2022 - Java SE 18-19 : nothing interesting
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
     to restrict classes/interfaces inheritance
@@ -101,7 +101,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     (not to overused!)
   * 2017 - Java SE 9:
     [Java platform module system](https://www.oracle.com/corporate/features/understanding-java-9-modules.html)
-    ([Project Jigsaw](https://openjdk.org/projects/jigsaw/))
+    ([project jigsaw](https://openjdk.org/projects/jigsaw/))
   * 2014 - Java SE 8
     [lambda expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html),
     [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html),
