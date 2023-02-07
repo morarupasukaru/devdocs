@@ -3,7 +3,7 @@
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 13 (11.2021)
+* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 15 (11.2022)
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -107,8 +107,6 @@ locally, etc.
     configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
   * [providers](https://angular.io/api/core/NgModule#providers): 
     specify services available to this module (and submodules)
-  * [entryComponents](https://angular.io/api/core/NgModule#entrycomponents): 
-    specify components that can be dynamically loaded
   * [exports](https://angular.io/api/core/NgModule#exports): 
     components, directives, pipes and modules declared in this NgModule that can be used in any component part 
     of an NgModule that imports this NgModule
@@ -137,7 +135,7 @@ locally, etc.
   * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
   * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
   * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
-  * a guard that implements [CanLoad](https://angular.io/api/router/CanLoad) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
+  * a guard that implements [CanMatch](https://angular.io/api/router/CanMatch) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
 
 [*Go to top*](#Angular)
 
@@ -280,13 +278,13 @@ in different use cases
 * dependency-injection of services can by done with 
   [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
   in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
-  [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#component-level-injectors)
+  [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#elementinjector)
 * [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
   a given Module/Component will be provided to childs
   (means that several instance of a service could exist in the application; depending on the DI configuration)
 * a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
 * [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
-  [inject services into services](https://angular.io/guide/dependency-injection#using-services-in-other-services)
+  [inject services into services](https://angular.io/guide/creating-injectable-service#injecting-services)
 
 [*Go to top*](#Angular)
 
@@ -302,15 +300,15 @@ in different use cases
   * a good practise is to have a [separate module for route configuration](https://angular.io/guide/router-tutorial-toh#milestone-2-routing-module)
 * define navigation in templates with [routerLink](https://angular.io/api/router/RouterLink) directive and 
   following [properties](https://angular.io/api/router/RouterLink#description): queryParams, fragment
-  * add CSS class in template with [routerLinkActive](https://angular.io/guide/router#defining-a-basic-route) 
-  (see also routerLinkActiveOptions)
+  * add CSS class in template with [routerLinkActive](https://angular.io/api/router/RouterLinkActive) 
+  (see also [routerLinkActiveOptions](https://angular.io/api/router/RouterLinkActive#properties))
 * navigate programmatically with [Router.navigate](https://angular.io/api/router/Router#navigate)(paths: any[], extras: 
   [NavigationExtras](https://angular.io/api/router/NavigationExtras))
   * [NavigationExtras](https://angular.io/api/router/NavigationExtras) is used to pass 
     [queryParams](https://angular.io/api/router/UrlCreationOptions#queryParams), 
     [fragment](https://angular.io/api/router/UrlCreationOptions#fragment), 
     [relative route](https://angular.io/api/router/UrlCreationOptions#relativeTo) 
-    (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRouteSnapshot))
+    (e.g. [ActivatedRoute](https://angular.io/api/router/ActivatedRoute))
   * tip: use [router.navigate(..., { queryParamsHandling: ...})](https://angular.io/api/router/UrlCreationOptions#queryParamsHandling) 
     to preserve query params when navigating between routes
 * retrieve route datas in ngOnInit with 
@@ -318,7 +316,7 @@ in different use cases
   that returns an [ActivatedRouteSnapshot](https://angular.io/api/router/ActivatedRouteSnapshot) 
   (containing params, queryParams, etc.)
 * retrieve route datas on every route changes within the component by calling 
-  ["subscribe()"](https://angular.io/guide/observables-in-angular#router) with observables of 
+  `subscribe()` with observables of 
   [ActivatedRoute](https://angular.io/api/router/ActivatedRoute): 
   [params](https://angular.io/api/router/ActivatedRoute#params), 
   [queryParams](https://angular.io/api/router/ActivatedRoute#queryParams), 
@@ -336,7 +334,7 @@ in different use cases
 * provide static data in [Route.data](https://angular.io/api/router/Route#data) in RouterModule configuration
   * access data inside Component in ngOnInit from [ActivatedRoute.snapshot.data](https://angular.io/api/router/ActivatedRouteSnapshot#data) 
     or by subscribing to [ActivatedRoute.data](https://angular.io/api/router/ActivatedRoute#data) Observable
-* [provide/pre-fetch dynamic data to component](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data)
+* [provide/pre-fetch dynamic data to component](https://angular.io/guide/router-tutorial-toh#resolve-pre-fetching-component-data) with resolvers
   * a Resolver service must implements [Resolve](https://angular.io/api/router/Resolve)
   * configure [Route.resolve](https://angular.io/api/router/Route#resolve) in RouterModule configuration
   * access pre-fetch data inside Component in ngOnInit from 
@@ -394,6 +392,7 @@ in different use cases
 
 * import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
 * create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
+  by using [FormBuilder](https://angular.io/guide/reactive-forms#using-the-formbuilder-service-to-generate-controls)
 * add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template 
   to one-way bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
 * add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
@@ -567,8 +566,8 @@ export class SafeUrlPipe implements PipeTransform {
   * [animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
     * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
     * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
-    * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#enter-and-leave-aliases) for `void => *` and `* => void` transitions
-    * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#using-wildcards-with-styles) to use current style value
+    * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#aliases-enter-and-leave) for `void => *` and `* => void` transitions
+    * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#use-wildcards-with-styles) to use current style value
   * use [animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) to be informed when animation start/end
   * [complex animation sequences](https://angular.io/guide/complex-animation-sequences) with 
     [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) 
@@ -623,7 +622,7 @@ export class SafeUrlPipe implements PipeTransform {
 * hints
   * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
   * it's important to make sure that your server is configured to 
-    [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fallback-to-indexhtml) file (and not returning 404)
+    [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fall-back-to-indexhtml) file (and not returning 404)
 
 [*Go to top*](#Angular)
 
@@ -719,6 +718,6 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 [*Go to top*](#Angular)
 
 ----
-* *Page mainly written in 2019, last update: february 2022; links checked on TODO*
+* *Page mainly written in 2019, last update: february 2022; links checked on 07.02.2023*
 * *Disclaimer: notes concern up to Angular 8 (5.2018) but should be valid for latest version*
 ----
