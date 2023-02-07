@@ -8,4 +8,4 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly started in january 2023; links checked on TODO)*
+*(Page mainly started in january 2023; links checked on 07.02.2023)*
