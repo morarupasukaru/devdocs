@@ -23,8 +23,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
 * [Progressive Web App](frontend/PWA.md) to provide desktop's like applications on the web (fast, installable, offline)
 * [REST API guidelines](transversal/REST-API-Guidelines.md) taken from
-  [Zalando](https://opensource.zalando.com/restful-api-guidelines/),
-  [Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
+  [Zalando](https://opensource.zalando.com/restful-api-guidelines/)
   and other sources
 * [Security](transversal/Security.md) risks from [OWASP](https://owasp.org/)
   and documentation from [MDN Web Docs](https://developer.mozilla.org/en-US/)
