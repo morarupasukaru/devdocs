@@ -17,18 +17,18 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   [Groovy](https://groovy-lang.org/),
   [Clojure](https://clojure.org/)
 * Links
-  * [Java SE javadoc](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
-  * [Java language updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html) (from Java SE 9)
-  * [JDK 17 Documentation](https://docs.oracle.com/en/java/javase/17/)
-  * [JDK 17 Tool Specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/man/index.html)
-  * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
+  * [Java SE javadoc](https://docs.oracle.com/en/java/javase/19/docs/api/new-list.html)
+  * [Java language updates](https://docs.oracle.com/en/java/javase/19/language/java-language-changes.html) (from Java SE 9)
+  * [JDK 19 Documentation](https://docs.oracle.com/en/java/javase/19/)
+  * [JDK 19 Tool Specifications](https://docs.oracle.com/en/java/javase/19/docs/specs/man/index.html)
+  * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
     * [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.) 
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)
   * [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) (book)
   * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
   * [JSON](https://www.json.org/json-en.html) or
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
-    [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
+    [Java serialization](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html)
 
 *(Page mainly written in 2022; links checked on TODO)*
 
@@ -67,6 +67,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
     (see also [changes from Java SE 5](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)) 
   * [exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
+  * [java preview features](https://www.baeldung.com/java-preview-features)
 
 [*Go to top*](#Java)
 
@@ -74,7 +75,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 ## History
 
 * [Java history](https://en.wikipedia.org/wiki/Java_version_history)
-  and [updates](https://docs.oracle.com/en/java/javase/17/language/java-language-changes.html):
+  and [updates](https://docs.oracle.com/en/java/javase/19/language/java-language-changes.html):
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
     to restrict classes/interfaces inheritance
@@ -84,18 +85,18 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * 2019 - Java SE 12 : 
     [switch expressions](https://docs.oracle.com/en/java/javase/14/language/switch-expressions.html)
   * 2018 - Java SE 11 :
-      [java.net.http.HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html)
+      [java.net.http.HttpClient](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpClient.html)
       as new HTTP client API
   * 2018 - Java SE 10 : 
-    [local variable type inference](https://docs.oracle.com/en/java/javase/17/language/local-variable-type-inference.html)
+    [local variable type inference](https://docs.oracle.com/en/java/javase/19/language/local-variable-type-inference.html)
     (not to overused!)
   * 2017 - Java SE 9:
     [Java platform module system](https://www.oracle.com/corporate/features/understanding-java-9-modules.html)
     ([Project Jigsaw](https://openjdk.org/projects/jigsaw/))
   * 2014 - Java SE 8
     [lambda expression](https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html),
-    [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html),
-    [java.util.Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html),
+    [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html),
+    [java.util.Optional](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Optional.html),
     [date and time API](https://docs.oracle.com/javase/tutorial/datetime/index.html)
   * 2011 - Java SE 7
     [Strings in switch](https://docs.oracle.com/javase/8/docs/technotes/guides/language/strings-switch.html),
@@ -109,13 +110,13 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [varargs](https://docs.oracle.com/javase/8/docs/technotes/guides/language/varargs.html),
     [for each loop](https://docs.oracle.com/javase/8/docs/technotes/guides/language/foreach.html),
     [static import](https://docs.oracle.com/javase/8/docs/technotes/guides/language/static-import.html),
-    [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+    [java.util.concurrent](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/package-summary.html)
   * 2002 - J2SE 1.4: 
     [Regular expressions](https://docs.oracle.com/javase/tutorial/essential/regex/index.html),
     [Chained exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/chained.html)
   * 2000 - J2SE 1.3: nothing interesting
   * 1998 - J2SE 1.2: 
-   [Collections framework](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/doc-files/coll-overview.html)
+   [Collections framework](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/doc-files/coll-overview.html)
   * 1996/1997 - JDK 1.0 / JDK 1.1: JDBC
 * Platforms
   * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition)
@@ -135,9 +136,9 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 
 ## Standard APIs
 
-* [New API since JDK 11](https://docs.oracle.com/en/java/javase/17/docs/api/new-list.html)
-* [Overview](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html#packages-summary)
-  * [java.base](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/module-summary.html#packages-summary) module
+* [New API since JDK 11](https://docs.oracle.com/en/java/javase/19/docs/api/new-list.html)
+* [Overview](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/module-summary.html#packages-summary)
+  * [java.base](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/module-summary.html#packages-summary) module
     * [java.nio.file](https://docs.oracle.com/javase/tutorial/essential/io/fileio.html)
       for file i/o 
     * [java.util.regex](https://docs.oracle.com/javase/tutorial/essential/regex/index.html)
@@ -149,151 +150,151 @@ This document try to summarize best of Java to develop REST APIs (or batches).
       ; see [tutorial](https://docs.oracle.com/javase/tutorial/collections/index.html)
     * [java.time](https://docs.oracle.com/javase/tutorial/datetime/index.html)
       for date/time
-    * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html)
+    * [java.net](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/package-summary.html)
       for networking
-  * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/module-summary.html)
+  * [java.net.http](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/module-summary.html)
     module  
-    * [java.net.http](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/package-summary.html)
+    * [java.net.http](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/package-summary.html)
       for new HTTP client API
-  * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/module-summary.html),
-    [java.sql.rowset](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql.rowset/module-summary.html)
+  * [java.sql](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/module-summary.html),
+    [java.sql.rowset](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql.rowset/module-summary.html)
     modules
     * [java.sql | javax.sql](https://docs.oracle.com/javase/tutorial/jdbc/basics/index.html)
       for database access (jdbc) 
 * Major packages & classes
-  * [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html):
-    * [Closeable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Closeable.html),
-    [Console](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Console.html),
-    [File](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/File.html),
-    [InputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/InputStream.html),
-    [OutputStream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/OutputStream.html),
-    [Reader](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Reader.html),
-    [Writer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Writer.html)
-  * [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html):
-    * [AutoCloseable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/AutoCloseable.html),
-    [Boolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Boolean.html),
-    [Class](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Class.html),
-    [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html),
-    [Enum](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html),
-    [Float](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Float.html),
-    [@FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html),
-    [IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html),
-    [IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html),
-    [Integer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Integer.html),
-    [Iterable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Iterable.html),
-    [Long](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Long.html),
-    [Math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Math.html),
-    [NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
-    [NumberFormatException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NumberFormatException.html),
-    [OutOfMemoryError](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/OutOfMemoryError.html),
-    [@Override](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Override.html),
-    [Process](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Process.html),
-    [ProcessBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ProcessBuilder.html),
-    [Runnable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Runnable.html),
-    [RuntimeException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/RuntimeException.html),
-    [@SafeVarargs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SafeVarargs.html)
-    [String](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/String.html),
-    [StringBuilder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/StringBuilder.html),
-    [@SuppressWarning](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SuppressWarnings.html),
-    [System](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html),
-    [Thread](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Thread.html),
-    [ThreadLocal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/ThreadLocal.html),
-    [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html),
-    [Void](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Void.html)
-  * [java.math](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/package-summary.html):
-    [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html),
-    [BigInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html)
-  * [java.net](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/package-summary.html):
-    * [HttpClient](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.html),
-    [HttpClient.Builder](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
-    [HttpResponse](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpResponse.html),
-    [HttpRequest](https://docs.oracle.com/en/java/javase/17/docs/api/java.net.http/java/net/http/HttpRequest.html),
-    [URL](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URL.html),
-    [URLDecoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLDecoder.html),
-    [URLEncoder](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URLEncoder.html) ,
-    [URI](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/net/URI.html)
-  * [java.nio](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/package-summary.html):
-    * [StandardCharsets](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/charset/StandardCharsets.html),
-    [FileStore](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileStore.html),
-    [FileSystem](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/FileSystem.html),
-    [Files](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Files.html),
-    [Path](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Path.html),
-    [Paths](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/Paths.html),
-    [StandardOpenOption](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/nio/file/StandardOpenOption.html)
-  * [java.text](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/package-summary.html):
-    [DecimalFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/DecimalFormat.html),
-    [NumberFormat](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/text/NumberFormat.html)
-  * [java.time](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/package-summary.html):
-    * [Duration](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/Duration.html),
-    [LocalDate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDate.html),
-    [LocalDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalDateTime.html),
-    [LocalTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/LocalTime.html),
-    [ZonedDateTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/ZonedDateTime.html),
-    [DateTimeFormatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/time/format/DateTimeFormatter.html)
-  * [java.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/package-summary.html) for DB API:
-    * [Connection](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Connection.html),
-    [ResultSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/ResultSet.html),
-    [Statement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/Statement.html),
-    [PreparedStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/PreparedStatement.html),
-    [CallableStatement](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/java/sql/CallableStatement.html)
-  * [javax.sql](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/package-summary.html) to supplements java.sql:
-    [DataSource](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/DataSource.html),
-    [RowSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.sql/javax/sql/RowSet.html) and its subclasses
-  * [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html):
-    * [ArrayList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html),
-    [Arrays](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Arrays.html),
-    [Base64](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Base64.html),
-    [Collection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collection.html),
-    [Collections](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html),
-    [Currency](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Currency.html),
-    [EnumMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumMap.html),
-    [EnumSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html),
-    [Formatter](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Formatter.html),
-    [HashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashMap.html),
-    [HashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/HashSet.html),
-    [Iterator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Iterator.html),
-    [LinkedHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashMap.html),
-    [LinkedHashSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedHashSet.html),
-    [LinkedList](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/LinkedList.html),
-    [List](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html),
-    [Locale](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Locale.html),
-    [Map](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html),
-    [Objects](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html),
-    [Optional](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Optional.html),
-    [Properties](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Properties.html),
-    [Set](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html),
-    [TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html),
-    [TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html),
-    [UUID](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/UUID.html)
-  * [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+  * [java.io](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/package-summary.html):
+    * [Closeable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Closeable.html),
+    [Console](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Console.html),
+    [File](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/File.html),
+    [InputStream](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/InputStream.html),
+    [OutputStream](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/OutputStream.html),
+    [Reader](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Reader.html),
+    [Writer](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Writer.html)
+  * [java.lang](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/package-summary.html):
+    * [AutoCloseable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/AutoCloseable.html),
+    [Boolean](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Boolean.html),
+    [Class](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Class.html),
+    [Comparable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html),
+    [Enum](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Enum.html),
+    [Float](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Float.html),
+    [@FunctionalInterface](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/FunctionalInterface.html),
+    [IllegalArgumentException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalArgumentException.html),
+    [IllegalStateException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalStateException.html),
+    [Integer](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Integer.html),
+    [Iterable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Iterable.html),
+    [Long](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Long.html),
+    [Math](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Math.html),
+    [NullPointerException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html),
+    [NumberFormatException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NumberFormatException.html),
+    [OutOfMemoryError](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/OutOfMemoryError.html),
+    [@Override](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Override.html),
+    [Process](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Process.html),
+    [ProcessBuilder](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ProcessBuilder.html),
+    [Runnable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Runnable.html),
+    [RuntimeException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/RuntimeException.html),
+    [@SafeVarargs](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/SafeVarargs.html)
+    [String](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/String.html),
+    [StringBuilder](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/StringBuilder.html),
+    [@SuppressWarning](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/SuppressWarnings.html),
+    [System](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/System.html),
+    [Thread](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Thread.html),
+    [ThreadLocal](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/ThreadLocal.html),
+    [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/UnsupportedOperationException.html),
+    [Void](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Void.html)
+  * [java.math](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/package-summary.html):
+    [BigDecimal](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html),
+    [BigInteger](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigInteger.html)
+  * [java.net](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/package-summary.html):
+    * [HttpClient](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpClient.html),
+    [HttpClient.Builder](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpClient.Builder.html),
+    [HttpResponse](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpResponse.html),
+    [HttpRequest](https://docs.oracle.com/en/java/javase/19/docs/api/java.net.http/java/net/http/HttpRequest.html),
+    [URL](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/URL.html),
+    [URLDecoder](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/URLDecoder.html),
+    [URLEncoder](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/URLEncoder.html) ,
+    [URI](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/net/URI.html)
+  * [java.nio](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/package-summary.html):
+    * [StandardCharsets](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/charset/StandardCharsets.html),
+    [FileStore](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/FileStore.html),
+    [FileSystem](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/FileSystem.html),
+    [Files](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/Files.html),
+    [Path](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/Path.html),
+    [Paths](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/Paths.html),
+    [StandardOpenOption](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/nio/file/StandardOpenOption.html)
+  * [java.text](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/package-summary.html):
+    [DecimalFormat](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/DecimalFormat.html),
+    [NumberFormat](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/text/NumberFormat.html)
+  * [java.time](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/package-summary.html):
+    * [Duration](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/Duration.html),
+    [LocalDate](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/LocalDate.html),
+    [LocalDateTime](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/LocalDateTime.html),
+    [LocalTime](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/LocalTime.html),
+    [ZonedDateTime](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/ZonedDateTime.html),
+    [DateTimeFormatter](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/time/format/DateTimeFormatter.html)
+  * [java.sql](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/package-summary.html) for DB API:
+    * [Connection](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/Connection.html),
+    [ResultSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/ResultSet.html),
+    [Statement](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/Statement.html),
+    [PreparedStatement](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/PreparedStatement.html),
+    [CallableStatement](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/java/sql/CallableStatement.html)
+  * [javax.sql](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/javax/sql/package-summary.html) to supplements java.sql:
+    [DataSource](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/javax/sql/DataSource.html),
+    [RowSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.sql/javax/sql/RowSet.html) and its subclasses
+  * [java.util](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/package-summary.html):
+    * [ArrayList](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/ArrayList.html),
+    [Arrays](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Arrays.html),
+    [Base64](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Base64.html),
+    [Collection](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collection.html),
+    [Collections](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collections.html),
+    [Currency](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Currency.html),
+    [EnumMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/EnumMap.html),
+    [EnumSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/EnumSet.html),
+    [Formatter](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Formatter.html),
+    [HashMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashMap.html),
+    [HashSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/HashSet.html),
+    [Iterator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Iterator.html),
+    [LinkedHashMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashMap.html),
+    [LinkedHashSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedHashSet.html),
+    [LinkedList](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/LinkedList.html),
+    [List](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/List.html),
+    [Locale](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Locale.html),
+    [Map](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Map.html),
+    [Objects](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Objects.html),
+    [Optional](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Optional.html),
+    [Properties](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Properties.html),
+    [Set](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Set.html),
+    [TreeMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/TreeMap.html),
+    [TreeSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/TreeSet.html),
+    [UUID](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/UUID.html)
+  * [java.util.concurrent](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/package-summary.html)
     for high-level concurrency APIs:
-    * [Executor](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Executor.html),
-      [ConcurrentLinkedQueue](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html),
-      [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html),
-      [AtomicBoolean](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html),
-      [AtomicInteger](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html),
-      [AtomicLong](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html),
-      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html) 
-  * [java.util.fonction](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/package-summary.html)
+    * [Executor](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Executor.html),
+      [ConcurrentLinkedQueue](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentLinkedQueue.html),
+      [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html),
+      [AtomicBoolean](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/atomic/AtomicBoolean.html),
+      [AtomicInteger](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/atomic/AtomicInteger.html),
+      [AtomicLong](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/atomic/AtomicLong.html),
+      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html) 
+  * [java.util.fonction](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/package-summary.html)
     for functional interfaces to be used in lambda expressions/method references:
-    * [BinaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html),
-      [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
-      [Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html),
-      [Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html),
-      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html),
-      [UnaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html),
+    * [BinaryOperator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/BinaryOperator.html),
+      [Consumer](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html),
+      [Function](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Function.html),
+      [Predicate](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Predicate.html),
+      [Supplier](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Supplier.html),
+      [UnaryOperator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/UnaryOperator.html),
       ...
-  * [java.util.jar](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/package-summary.html) 
+  * [java.util.jar](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/jar/package-summary.html) 
     to package/unpack java libs:
-    [Manifest](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/jar/Manifest.html)
-  * [java.util.random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/random/package-summary.html) 
+    [Manifest](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/jar/Manifest.html)
+  * [java.util.random](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/random/package-summary.html) 
     for stream based random number generation
-  * [java.util.regex](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/package-summary.html):
-    [Pattern](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Pattern.html),
-    [Matcher](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/regex/Matcher.html)
-  * [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html)
+  * [java.util.regex](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/regex/package-summary.html):
+    [Pattern](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/regex/Pattern.html),
+    [Matcher](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/regex/Matcher.html)
+  * [java.util.stream.Stream](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html)
     for streams API based on lambda expressions
-  * [java.util.zip](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/zip/package-summary.html) 
+  * [java.util.zip](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/zip/package-summary.html) 
     for zipping/unzipping; see [tutorial](https://www.baeldung.com/java-compress-and-uncompress)
 
 [*Go to top*](#Java)
@@ -330,7 +331,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [ReactiveX](https://reactivex.io/)
   * [Project Reactor](https://projectreactor.io/) internally used by
     [Spring WebFlux](https://docs.spring.io/spring-framework/docs/current/reference/html/web-reactive.html)
-  * ([java.util.concurrent.Flow](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/Flow.html)
+  * ([java.util.concurrent.Flow](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/Flow.html)
     API is used by JDK internally to have reactive-streams without external dependency like ReactiveX or Project Reactor)
   * see [RxJava vs Reactor](https://www.nurkiewicz.com/2019/02/rxjava-vs-reactor.html)
 
@@ -345,12 +346,12 @@ Libraries that should be avoided because adding extra complexity:
 
 ## Tools
 
-* [java](https://docs.oracle.com/en/java/javase/17/docs/specs/man/java.html) to launch a Java application
-* [jar](https://docs.oracle.com/en/java/javase/17/docs/specs/man/jar.html) to package programs/libs; see [tutorial](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html)
-* [javac](https://docs.oracle.com/en/java/javase/17/docs/specs/man/javac.html) to compile java into class files / bytecode
-* [javadoc](https://docs.oracle.com/en/java/javase/17/docs/specs/man/javadoc.html)
+* [java](https://docs.oracle.com/en/java/javase/19/docs/specs/man/java.html) to launch a Java application
+* [jar](https://docs.oracle.com/en/java/javase/19/docs/specs/man/jar.html) to package programs/libs; see [tutorial](https://docs.oracle.com/javase/tutorial/deployment/jar/index.html)
+* [javac](https://docs.oracle.com/en/java/javase/19/docs/specs/man/javac.html) to compile java into class files / bytecode
+* [javadoc](https://docs.oracle.com/en/java/javase/19/docs/specs/man/javadoc.html)
   to generate API documentation as HTML pages; see
-  [standard doclet specifications](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
+  [standard doclet specifications](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html)
 * [maven](https://maven.apache.org/),
   [gradle](https://gradle.org/) as build process and dependencies management
 * [hsql](http://hsqldb.org/), 
@@ -393,9 +394,9 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
 
 * _Creating & Destroying objects_
   * consider static factory methods instead of constructor (item 1)
-    * [Date.from(instant)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Date.html#from(java.time.Instant)),
-      [EnumSet.of(...)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/EnumSet.html#of(E,E...)),
-      [BigInteger.valueOf(long)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigInteger.html#valueOf(long)),
+    * [Date.from(instant)](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Date.html#from(java.time.Instant)),
+      [EnumSet.of(...)](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/EnumSet.html#of(E,E...)),
+      [BigInteger.valueOf(long)](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigInteger.html#valueOf(long)),
       ...
   * consider a builder when faced many constructor parameters (item 2)
   * prefer dependency injection to hardwiring resources (item 5)
@@ -409,28 +410,28 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     to try-finally (item 9)
 * _Methods common to all objects_
   * obey the general 
-    [contract](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) 
+    [contract](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) 
     when overring 
-    [equals](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 10)
+    [equals](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 10)
   * always override [hashCode](https://docs.oracle.com/javase/7/docs/api/java/lang/Object.html#hashCode()) 
     when you override
-    [equals](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 11)
+    [equals](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)) (item 11)
   * always override 
-    [toString](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Object.html#toString())
+    [toString](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Object.html#toString())
     (item 12)
     * use IDE to generate equals, hashCode and toString
   * consider implementing 
-    [Comparable](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html)
+    [Comparable](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html)
     (item 14) 
     * follow 
-      [compareTo](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
-      [contract](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
+      [compareTo](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
+      [contract](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Comparable.html#compareTo(T)) 
       to not break other comparison-dependent classes like
-      [TreeSet](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeSet.html) or
-      [TreeMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/TreeMap.html)
-    * use [Comparator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Comparator.html) 
+      [TreeSet](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/TreeSet.html) or
+      [TreeMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/TreeMap.html)
+    * use [Comparator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html) 
       static construction methods like 
-      [Comparator.comparing()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function))
+      [Comparator.comparing()](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Comparator.html#comparing(java.util.function.Function))
       ; see [tutorial](https://www.baeldung.com/java-8-comparator-comparing)
 * _Classes & Interfaces_ 
   * minimize mutability (item 17)
@@ -448,25 +449,25 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
   * don't use raw types (item 26)
   * eliminate unchecked warnings (item 27)
     * if you can't, suppress it with 
-      [@SuppressWarning("unchecked)](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SuppressWarnings.html) 
+      [@SuppressWarning("unchecked)](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/SuppressWarnings.html) 
       annotation on the smallest scope possible
   * prefer lists to arrays (item 28)
   * favor designing generic types (item 29) and generic methods (30) 
   * use bounded wildcards (<? extends T>, <? super T>) to increase API flebility (item 31)
     * see [guidelines for wildcard use](https://docs.oracle.com/javase/tutorial/java/generics/wildcardGuidelines.html)
   * combine generics and varargs judiciously (item 32)
-    * see [@SafeVarargs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/SafeVarargs.html)
+    * see [@SafeVarargs](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/SafeVarargs.html)
     * a generic varags method is safe if
       * it doesn't store anything in the varags paramater array
       * it doesn't make the array (or a clone) visible to untrusted code
 * _Enums and Annotations_
   * use enums instead of int constants (item 34)
   * don't use 
-    [ordinal()](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Enum.html#ordinal())
+    [ordinal()](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Enum.html#ordinal())
     as value will change with enum reorder (item 35)
   * prefer annotations to naming patterns (item 39)
   * consistently use the
-    [@Override](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/Override.html) 
+    [@Override](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/Override.html) 
     annotation (item 40)
   * use marker interfaces to define types (item 41)
 * _Lambdas and Streams_
@@ -474,29 +475,29 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * lambda lack names and documentation; if a computation isn't self-explanatory, 
       or exceeds a few lines, don't put it in a lambda
   * favor the use of standard functional interfaces (item 44)
-    * e.g. [BinaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/BinaryOperator.html),
-      [Consumer](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Consumer.html),
-      [Function](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Function.html),
-      [Predicate](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Predicate.html),
-      [Supplier](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/Supplier.html),
-      [UnaryOperator](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/function/UnaryOperator.html),
+    * e.g. [BinaryOperator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/BinaryOperator.html),
+      [Consumer](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Consumer.html),
+      [Function](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Function.html),
+      [Predicate](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Predicate.html),
+      [Supplier](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/Supplier.html),
+      [UnaryOperator](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/function/UnaryOperator.html),
       ...
     * annotate custom functional interfaces with
-      [@FunctionalInterface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/FunctionalInterface.html)
+      [@FunctionalInterface](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/FunctionalInterface.html)
   * use streams judiciously (item 45)
     * overusing streams makes programs hard to read and maintain
     * good name for lambda parameters ease streams readability
     * helper methods could ease streams readability
   * prefer side-effect-free functions ([pure function](https://en.wikipedia.org/wiki/Pure_function)) in streams (item 46)
-    * [forEach](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html#forEach(java.util.function.Consumer)) 
+    * [forEach](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html#forEach(java.util.function.Consumer)) 
       operation should be used only to report the result of a stream computation, 
       not to perform the computation
   * use caution when making streams parallel (item 48)
 * _Methods_
   * check parameters for validity (item 49)
-    * use [@throws](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
+    * use [@throws](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html)
       javadoc tag to document the exception  
-    * use [Objects.requireNonNull](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Objects.html#requireNonNull(T,java.lang.String))
+    * use [Objects.requireNonNull](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Objects.html#requireNonNull(T,java.lang.String))
       to perform null checks
   * make defensive copies when needed (item 50)
     * make defensive copy of each mutable parameter to constructors
@@ -517,7 +518,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * return Optional<T> if it might not be able to return a result and clients have
       to perform special processing if no result is returned
   * write javadocs for all exposed API elements (item 56)
-    * see [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html))
+    * see [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html))
     * and [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.)
 * _General Programming_
   * minimize the scope of local variables (item 57)
@@ -528,20 +529,20 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     to traditional loops (item 58) 
   * know and use the libraries (item 59)
     * use
-      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html)
+      [ThreadLocalRandom](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ThreadLocalRandom.html)
       instead of 
-      [Random](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Random.html)
+      [Random](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Random.html)
     * every programmer should be familiar with the basics of
-      [java.lang](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/package-summary.html), 
-      [java.util](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/package-summary.html), 
-      [java.io](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/package-summary.html),
+      [java.lang](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/package-summary.html), 
+      [java.util](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/package-summary.html), 
+      [java.io](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/package-summary.html),
       [collections framework](https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html), 
-      [streams library](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/stream/Stream.html) and 
+      [streams library](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/stream/Stream.html) and 
       high-level parts of 
-      [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+      [java.util.concurrent](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/package-summary.html)
     * use [guava](https://github.com/google/guava) if you can't find standard feature
   * avoid float and double if exact answers are required (item 60)
-    * use [BigDecimal](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/math/BigDecimal.html), 
+    * use [BigDecimal](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/math/BigDecimal.html), 
       int or long for monetary calculations
   * prefer primitive types to boxed primitives (item 61)
   * refer to objects by their interfaces (item 64)
@@ -564,25 +565,25 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
   * use exceptions only for exceptional conditions (item 69)
     * exceptions should never be used for ordinary control flow
   * favor the use of standar exceptions (item 72)
-    * [IllegalArgumentException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalArgumentException.html),
-      [IllegalStateException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/IllegalStateException.html),
-      [NullPointerException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/NullPointerException.html),
-      [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/UnsupportedOperationException.html)
+    * [IllegalArgumentException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalArgumentException.html),
+      [IllegalStateException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalStateException.html),
+      [NullPointerException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html),
+      [UnsupportedOperationException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/UnsupportedOperationException.html)
   * document all exceptions thrown by each method  
-    with [@throws](https://docs.oracle.com/en/java/javase/17/docs/specs/javadoc/doc-comment-spec.html)
+    with [@throws](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html)
     javadoc tag (item 74) 
 * _Concurrency_
   * prefer executors, tasks and streams to threads (item 80)
     * use high-level API
-      [java.util.concurrent](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/package-summary.html)
+      [java.util.concurrent](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/package-summary.html)
     * prefer concurrency utilities to wait and notify (item 81) 
-      * use [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html)
+      * use [ConcurrentHashMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/concurrent/ConcurrentHashMap.html)
         instead of 
-        [Collections.synchronizedMap](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map))
+        [Collections.synchronizedMap](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/util/Collections.html#synchronizedMap(java.util.Map))
       * use 
-        [System.nanoTime](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#nanoTime()) 
+        [System.nanoTime](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/System.html#nanoTime()) 
         instead of
-        [System.currentTimeMillis](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/System.html#currentTimeMillis())
+        [System.currentTimeMillis](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/System.html#currentTimeMillis())
     * document thread safety (item 82)
       * use [ThreadSafe](https://github.com/amaembo/jsr-305/blob/master/ri/src/main/java/javax/annotation/concurrent/ThreadSafe.java),
         [NotThreadSafe](https://github.com/amaembo/jsr-305/blob/master/ri/src/main/java/javax/annotation/concurrent/NotThreadSafe.java),
@@ -595,7 +596,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
       * thread priorities are among the least portable feature of Java
 * _Serialization_
   * prefer alternatives to
-    [Java serialization](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/io/Serializable.html)
+    [Java serialization](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/io/Serializable.html)
     like [JSON](https://www.json.org/json-en.html) or 
     [protobuf](https://developers.google.com/protocol-buffers) (item 85)
   
