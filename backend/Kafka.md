@@ -43,8 +43,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
     * only one consumer can read a given partition at the same time
     * if there are more consumers than partitions, some consumers will be inactive
   * **consumer offsets**: kafka know at which partition offsets a consumer group has been reading
-    * such "bookmarks" offsets are stored in a topic __consumer_offsets
-    * when a consumer in a group proceed data, it should commit the offset in the __consumer_offsets topic
+    * such "bookmarks" offsets are stored in a topic _consumer_offsets_
+    * when a consumer in a group proceed data, it should commit the offset in the _consumer_offsets_ topic
       (done automatically but can be also customized)
     * ([offsets.retention.minutes](https://kafka.apache.org/documentation/#brokerconfigs_offsets.retention.minutes) 
       specify how long offsets are kept if consumers are missing)
@@ -64,8 +64,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
     * as number of servers increase, number of zookeeper server should increase as well
     * if there are several zookeeper servers, one has the lead (informs kafka) and other are followers 
       (communicate with the leader)
-  * **controlling consumer liveliness**: a thread on the broker checks if consumers are alive/ if he receives heartbeats 
-    from consumers)
+  * **controlling consumer liveliness**: a thread on the broker checks if consumers are alive
+    (if he receives heartbeats from consumers)
   * **kafka guarantees**:
     * messages are appended to a topic-partition in the order they are sent
     * consumers read messages in the order stored in a topic-partition
@@ -98,8 +98,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
 * APIs
   * [producer API](https://kafka.apache.org/documentation/#producerapi) 
     allows applications to send streams of data to topics in the Kafka cluster
-    * see example in javadocs of [KafkaProducer.java](https://kafka.apache.org/28/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
-    * see [ProducerConfig.java](https://kafka.apache.org/28/javadoc/org/apache/kafka/clients/producer/ProducerConfig.html)
+    * see example in javadocs of [KafkaProducer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
+    * see [ProducerConfig.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/producer/ProducerConfig.html)
     and related [explanations](http://kafka.apache.org/documentation.html#producerconfigs)
       * [enable.idempotence](https://kafka.apache.org/documentation/#producerconfigs_enable.idempotence) to have
         an idempotent producer (avoid dupplicate of data)
@@ -109,8 +109,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
         [linger.ms](https://kafka.apache.org/documentation/#producerconfigs_linger.ms) having impact on batch processing
   * [consumer API](https://kafka.apache.org/documentation/#consumerapi) 
     allows applications to read streams of data from topics in the Kafka cluster
-    * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/28/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
-    * see [ConsumerConfig.java](https://kafka.apache.org/28/javadoc/org/apache/kafka/clients/consumer/ConsumerConfig.html)
+    * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+    * see [ConsumerConfig.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/ConsumerConfig.html)
       and related [explanation](https://kafka.apache.org/documentation/#consumerconfigs)
       * [auto.offset.reset](https://kafka.apache.org/documentation/#consumerconfigs_auto.offset.reset) to specify consumer offset reset behaviour
     * consumers are polling new data from topics (polling can be configured with 
@@ -122,7 +122,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
     * consumer offset commit strategies
       * [enable.auto.commit](https://kafka.apache.org/documentation/#consumerconfigs_enable.auto.commit) = true & synchronous processing of batches
       * [enable.auto.commit](https://kafka.apache.org/documentation/#consumerconfigs_enable.auto.commit) = false & manual commit of offsets
-      * see examples of javadocs of [KafkaConsumer.java](https://kafka.apache.org/28/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+      * see examples of javadocs of [KafkaConsumer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
   * [connect API](https://kafka.apache.org/documentation/#connectapi)
     simplify reading/writing of data but re-using working out-of-box connectors for various sources or sinks.
     * normally user won't dev custom connectors but use a pre-built connectors without writing code
@@ -130,7 +130,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
     * search available connectors at https://www.confluent.io/hub/
   * [streams API](https://kafka.apache.org/documentation/#streamsapi)
     ease data processing and transformation from input topics to output topics (within kafka)
-    * see [tutorial about kafka streams](https://kafka.apache.org/28/documentation/streams/)
+    * see [tutorial about kafka streams](https://kafka.apache.org/34/documentation/streams/)
   * [admin API](https://kafka.apache.org/documentation/#adminapi) 
     allows managing and inspecting topics, brokers, and other Kafka objects
 * Links
@@ -138,7 +138,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
   * see article [The Kafka API Battle: Producer vs Consumer vs Kafka Connect vs Kafka Streams vs KSQL !](https://medium.com/@stephane.maarek/the-kafka-api-battle-producer-vs-consumer-vs-kafka-connect-vs-kafka-streams-vs-ksql-ef584274c1e)
   * course [Learn Apache Kafka for Beginners](https://www.udemy.com/course/apache-kafka/)
 
-*(Page mainly written in mai 2021; links checked on TODO)*
+*(Page mainly written in mai 2021; links checked on 13.02.2023)*
 
 [*Go to parent page*](../README.md)
 
