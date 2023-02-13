@@ -6,7 +6,7 @@
 * [Stencil](Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
-*(Page mainly written in september 2020; links checked on TODO)*
+*(Page mainly written in september 2020; links checked on 13.02.2023)*
 
 [*Go to parent page*](../README.md)
 
@@ -15,15 +15,15 @@
 
 * Concepts
     * [Custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements),
-      see also [google article](https://developers.google.com/web/fundamentals/web-components/customelements)
+      see also [google article](https://web.dev/custom-elements-v1/)
         * [Autonomous custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Autonomous_custom_elements)
         * [Customized built-in elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Customized_built-in_elements)
     * [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM),
-      see also [google article](https://developers.google.com/web/fundamentals/web-components/shadowdom)
+      see also [google article](https://web.dev/shadowdom-v1/)
     * [HTML templates](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
         * [slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots)
           are placeholders inside your component that users can fill with their own markup,
-          see also [google article](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots)
+          see also [google article](https://web.dev/shadowdom-v1/#slots)
         * named slots are specific holes in your shadow DOM that users reference by name
 * Basics
     * Web Components vs Frameworks: Web components are just components; there is no routing, state management, etc.
@@ -101,14 +101,14 @@ customElements.define('info-toggle', InfoToggle);
     * slot content defined in DOM can be styled in light DOM itself
     * [::slotted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted) CSS pseudo-element
       is used to style slot content from shadow DOM
-        * see also [Styling distributed nodes](https://developers.google.com/web/fundamentals/web-components/shadowdom#stylinglightdom)
+        * see also [Styling distributed nodes](https://web.dev/shadowdom-v1/#styling-distributed-nodes)
         * only first-level element of the slot can be styled from within the shadow DOM
         * child elements of the slot must be styled from the light DOM
     * [:host](https://developer.mozilla.org/en-US/docs/Web/CSS/:host) selector is used to style
       element that hosts the component in the shadow DOM
     * [:host()](https://developer.mozilla.org/en-US/docs/Web/CSS/:host()) selector is used to style
       element that hosts the component in the shadow DOM if a css selector on the host component matches in the light DOM
-    * [:host-context()](https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context()) selector
+    * [:host-context()](https://developer.mozilla.org/en-US/docs/Web/CSS/:host-context) selector
       looks for a CSS class in any ancestor of the component host element, up to the document root in the light DOM
     * [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and
       [var()](https://developer.mozilla.org/en-US/docs/Web/CSS/var()#Using_a_custom_property_set_on_root)
@@ -137,7 +137,7 @@ customElements.define('info-toggle', InfoToggle);
 * Tips
     * It's a good practise to keep shadow & light DOM updates inside a single `_render()` method
       that acts differently depending on states
-    * [defining an element's JavaScript API](https://developers.google.com/web/fundamentals/web-components/customelements#jsapi):
+    * [defining an element's JavaScript API](https://web.dev/custom-elements-v1/#defining-an-elements-javascript-api):
       to abstract complexity, an API based on public methods & properties of the class of a web component can be defined
     * slots can be queries in web component with following css query:
   ```javascript
@@ -145,7 +145,7 @@ customElements.define('info-toggle', InfoToggle);
   ```
     * [`slotchange`](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots)
       event fires when a slot's distributed nodes changes
-    * [slot.assignedNodes()](https://developers.google.com/web/fundamentals/web-components/shadowdom#slotnodes) :
+    * [slot.assignedNodes()](https://web.dev/shadowdom-v1/#what-elements-are-being-rendering-in-a-slot) :
       find which elements the slot is rendering
 * Event
     * event listener can be configured in javascript of the DOM
@@ -156,7 +156,7 @@ customElements.define('info-toggle', InfoToggle);
     });
 ```  
 * event can be dispatch fro web component in two ways:
-    * [custom events](https://developers.google.com/web/fundamentals/web-components/shadowdom#customevents)
+    * [custom events](https://web.dev/shadowdom-v1/#using-custom-events)
       can be used to inform event to users of web components
     * alternative is to dispatch event on host element self; event in that case will be fire in
       the light DOM
