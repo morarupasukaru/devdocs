@@ -11,7 +11,6 @@
   * tutorials: [producing](https://spring.io/guides/gs/rest-service/) and 
   [consuming a REST web service](https://spring.io/guides/gs/consuming-rest/), 
   [uploading files](https://spring.io/guides/gs/uploading-files/), 
-  [circuit breaker](https://spring.io/guides/gs/circuit-breaker/), 
   [testing web layer](https://spring.io/guides/gs/testing-web/), 
   [building RESTful service](https://spring.io/guides/tutorials/rest/)
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
@@ -53,12 +52,12 @@
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
-  [Micronaut](https://micronaut.io/), 
-   ([NodeJS](https://nodejs.org/), [Deno](https://deno.land/))
+  [Micronaut](https://micronaut.io/),
+  [Dropwizard](https://www.dropwizard.io/en/latest/),
+  [NodeJS](https://nodejs.org/) (JS), 
+  [Deno](https://deno.land/) (JS)
   * see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
-----
-* *Page mainly written in July 2020; links checked on TODO*
-* *Disclaimer: notes should remain valid to latest SprintBoot version; stable version at February 2022 is 2.6.3*
-----
+
+*(Page mainly written in july 2020; links checked on 13.02.2023)*
 
 [*Go to parent page*](../README.md)
