@@ -2,8 +2,6 @@
 
 Web Accessibility means that websites are accessible to everyone regardless of disability. 
 
-*(Page mainly written in 2022, still in progress; links checked on TODO)*
-
 * Links
   * [What is accessibility?](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility) from MDN 
   * [Web Accessibility](https://www.udacity.com/course/web-accessibility--ud891) google course
@@ -33,5 +31,7 @@ Web Accessibility means that websites are accessible to everyone regardless of d
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to audit accessibilty, performance, etc. of a website
   * [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/)
   * [Firefox Accessibility Inspector](https://developer.mozilla.org/en-US/docs/Tools/Accessibility_inspector)
-  
+
+*(Page mainly written in 2022, still in progress; links checked on 13.02.2023)*
+
 [*Go to parent page*](../README.md)
