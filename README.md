@@ -42,10 +42,10 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [JAMStack](frontend/JAMStack.md) is webstack based on client-side JavaScript, reusable APIs
   and static HTML (pre-rendered)
 * [NgRx](frontend/NgRx.md) to manage application state
-* [Next.js](/frontend/NextJS.md) as [React](/frontend/ReactJS.md)
+* [Next.js](frontend/NextJS.md) as [React](frontend/ReactJS.md)
   framework for production
-* [Remix](/frontend/RemixJS.md) as another (better) [React](/frontend/ReactJS.md) full stack web framework
-* [GraphQL](/backend/GraphQL.md) is a query language for APIs as alternative to SOAP and REST APIs
+* [Remix](frontend/RemixJS.md) as another (better) [React](frontend/ReactJS.md) full stack web framework
+* [GraphQL](backend/GraphQL.md) is a query language for APIs as alternative to SOAP and REST APIs
 
 ## Tools
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
@@ -70,4 +70,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Noun Project](https://thenounproject.com/)
 * [Storybook](https://storybook.js.org/) is a frontend workshop for building UI components and pages in isolation
 
-*(last update february 2023)*
+*(last update february 2023; links checked on 13.02.2023)*
