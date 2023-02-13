@@ -13,11 +13,11 @@ Compilation of links about frontend testing
   * jest
 * e2e tests: [Selenium](https://www.selenium.dev/), [Puppeteer](https://pptr.dev/), [Cypress](https://www.cypress.io/)
 * angular libs
-  * [ng-mocks](https://github.com/ike18t/ng-mocks) as alternative to spy
+  * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
   * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
 * documentation:
-  * Jest: [Testing JavaScript code with Jest](https://academind.com/learn/javascript/javascript-testing-introduction/), 
-    [Mocking Async Code](https://academind.com/learn/javascript/javascript-testing-mocking-async-code/)
+  * [JavaScript Testing Introduction (with Jest)](https://academind.com/tutorials/javascript-testing-introduction), 
+    [Mocking Async Code](https://academind.com/tutorials/javascript-testing-mocking-async-code)
   * Mocha & Chai: [Testing JavaScript Promises with Mocha and Chai](https://www.sitepoint.com/promises-in-javascript-unit-tests-the-definitive-guide/)
 
 
@@ -44,4 +44,4 @@ Compilation of links about frontend testing
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on TODO)*
+*(Page mainly written in december 2020; links checked on 13.02.2023)*
