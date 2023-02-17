@@ -13,7 +13,7 @@
     the user has a stable network connection 
     (e.g. sending saved POST requests saved temporary in IndexedDB)
   * [Web Push Notifications](#Web-Push-Notifications) allow web applications to notify messages to user/device to go back to the web page with new content
-  * [Responsive Design](TODO-add-link-to-css-summary) makes web applications look like native apps
+  * [Responsive Design](./CSS.md) makes web applications look like native apps
   * [Media Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API)
     allow web applications to stream audio and video with device camera and microphone; 
     see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Media_Streams_API/Constraints)
