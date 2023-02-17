@@ -14,7 +14,7 @@
     (e.g. css, localStorage, etc.)
   * *use native browser features instead of custom APIs*
   * *be resilient*: feature should be useful even if JavaScript failed or has not executed yet with 
-    [server-side rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+    [server-side rendering](https://web.dev/rendering-on-the-web/#server-rendering)
 * Implementation approaches
   * the [container application](https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches)
     is typically responsible of rending common elements (toolbar, navigation), owned authentication and
@@ -62,4 +62,4 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on TODO)*
+*(Page mainly written in december 2020; links checked on 17.02.2023)*
