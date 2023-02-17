@@ -30,7 +30,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   to perform server requests (and replace 
   [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest))
   * see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
-  * or [Introduction to fetch()](https://developers.google.com/web/updates/2015/03/introduction-to-fetch) by google
+  * or [Introduction to fetch()](https://web.dev/introduction-to-fetch/) by google
   * or [Detailed Usage Guide with comparison with XMLHttpRequest](https://davidwalsh.name/fetch)
   * use [FormData.append()](https://developer.mozilla.org/en-US/docs/Web/API/FormData/append)
     to send data/files as "multipart/form-data".
@@ -44,7 +44,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
       to manipulate actual display URL
   * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) / 
     [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) 
-    [JavaScript](./JavaScript.md) methods
+    methods
 * [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API): 
   to display a specific Element in full-screen mode; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
@@ -56,10 +56,9 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   and [ifvisible.js](https://github.com/serkanyersen/ifvisible.js) JS lib)
 * [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API): 
   to support e.g. infinite-scrolling; 
-  see [scroll-aware navigation bar](https://academind.com/learn/javascript/scroll-aware-navigation/)
-* [Constraint validation API](https://developer.mozilla.org/en-US/docs/Web/API/Constraint_validation): 
-  to apply custom validation on user inputs; 
-  see [guide](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#Validating_forms_using_JavaScript)
+  see [scroll-aware navigation bar](https://academind.com/tutorials/scroll-aware-navigation)
+* [Constraint validation API](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#the_constraint_validation_api): 
+  to apply custom validation on user inputs
 * [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API): 
   to run a script operation in a background thread; 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
@@ -94,10 +93,12 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 * [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be run in a service worker until the user has a stable network connection.
 * [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
-* Media API to access device camera and microphone --> TODO add correct link later
+* [Media Capture and Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API) 
+  and [MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API) 
+  to access device camera and microphone
 * [Screen Orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API): change screen orientation at runtime; see [guide](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 
-*(Page mainly written in 2019, last update: september 2020; links checked on TODO)*
+*(Page mainly written in 2019, last update: september 2020; links checked on 17.02.2023)*
 
 [*Go to parent page*](../README.md)
 
@@ -113,7 +114,8 @@ Main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
   [Location](https://developer.mozilla.org/en-US/docs/Web/API/Location) object. You can also assign a String.
 * [window.history](https://developer.mozilla.org/en-US/docs/Web/API/Window/history) returns a 
   [History](https://developer.mozilla.org/en-US/docs/Web/API/History) object which allow to navigate in session history 
-  with [back/forward()](https://developer.mozilla.org/en-US/docs/Web/API/History#Methods)
+  with [back()](https://developer.mozilla.org/en-US/docs/Web/API/History/back)/
+  [forward()](https://developer.mozilla.org/en-US/docs/Web/API/History/forward)
 * [window.navigator](https://developer.mozilla.org/en-US/docs/Web/API/Window/navigator) returns a 
   [Navigator](https://developer.mozilla.org/en-US/docs/Web/API/Navigator) object.
 * [window.document](https://developer.mozilla.org/en-US/docs/Web/API/Window/document) returns a 
@@ -180,7 +182,7 @@ DOM Manipulations are mainly available with global object
 ### Events
 
 Events can be triggered by user actions or programmatically and can be listened by
-  [event-handlers](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Events#dom_event_handler_list)
+  [event-handlers](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
   
 * [EventTarget.addEventListener('evt', function)](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener) / 
   [removeEventListener()](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/removeEventListener)
@@ -212,7 +214,7 @@ Events can be triggered by user actions or programmatically and can be listened 
   * select input events: [change](https://developer.mozilla.org/en-US/docs/Web/Events/change)
   * [DOMContentLoaded](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event) vs 
     [load](https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event)
-  * [custom events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events) 
+  * [custom events](https://developer.mozilla.org/en-US/docs/Web/Events/Creating_and_triggering_events#creating_custom_events) 
     can be useful, e.g. to provide API of [Web-component](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 * [Event.preventDefault()](https://developer.mozilla.org/en-US/docs/Web/API/Event/preventDefault#Blocking_default_click_handling) 
   to prevent default behaviour
@@ -223,7 +225,8 @@ Events can be triggered by user actions or programmatically and can be listened 
   [clientX](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX)
 * Other properties: [Event.type](https://developer.mozilla.org/en-US/docs/Web/API/Event/type), 
   [Event.timeStamp](https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp)
-* [Event bubbling (vs capturing)](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#Event_bubbling_and_capture)
+* Event [bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling)
+  vs [capture](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_capture)
 * [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) : 
   prevent further bubbling
 * [Event delegation](https://davidwalsh.name/event-delegate) : 
