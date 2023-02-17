@@ -83,8 +83,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
     * not to use on production due to security issues & limitations
   * normal search query are done with GET request with [JSON body](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-search.html#search-search-api-request-body)
   * [query and filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-filter-context)
-    * [filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#filter-context) TODO check
-      is used for filtering data
+    * [filter context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#filter-context) to filter data
     * [query context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-context)
       return data in terms of relevance
     * see example of mix-in of [filter & query context](https://www.elastic.co/guide/en/elasticsearch/reference/current/query-filter-context.html#query-filter-context-ex)
