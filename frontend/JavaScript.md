@@ -333,11 +333,12 @@ and is the scripting language for Web pages.
     [advanced](https://htmldog.com/guides/javascript/advanced/)
     (from [htmldog](https://htmldog.com/))
   * webpages:
-    [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/),
-    [es6 summary](https://github.com/zsolt-nagy/es6-summary),
-    [es6 features](https://github.com/lukehoban/es6features),
-    [ECMAScript 6 - Overview & Comparison](http://es6-features.org/#Constants) and
-    [Good parts of JavaScript in 2014](http://bdadam.com/blog/video-douglas-crockford-about-the-new-good-parts.html)
+    * [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/)
+    * [es6 summary](https://github.com/zsolt-nagy/es6-summary)
+    * [es6 features](https://github.com/lukehoban/es6features)
+    * [ECMAScript 6 - Overview & Comparison](http://es6-features.org/#Constants)
+    * [Good parts of JavaScript in 2014](http://bdadam.com/blog/video-douglas-crockford-about-the-new-good-parts.html)
+    * [state of JS 2022](https://2022.stateofjs.com/en-US/)
   * books:
     [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do),
     [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do),

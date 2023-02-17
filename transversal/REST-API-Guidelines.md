@@ -12,6 +12,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
   * Meta-Information
     * [MUST contain API **meta information**](https://opensource.zalando.com/restful-api-guidelines/#218)
     * [MUST use **semantic versioning**](https://opensource.zalando.com/restful-api-guidelines/#116)
+      * see [Semantic Versioning](https://semver.org/) 
     * [MUST **provide API immutable identifier**](https://opensource.zalando.com/restful-api-guidelines/#215)
   * Security: [MUST secure endpoints](https://opensource.zalando.com/restful-api-guidelines/#104) with [JWT](https://jwt.io/) tokens
   * Compatibility and Deprecation

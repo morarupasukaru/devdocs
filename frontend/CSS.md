@@ -156,7 +156,7 @@
   * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course _>>> TODO follow 5_
 * Links
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
-  * [State of CSS 2021](https://2021.stateofcss.com/en-US/technologies)
+  * [State of CSS 2022](https://2022.stateofcss.com/en-US)
     for summary of used tools, features, etc.
   * [State of CSS 2022](https://web.dev/state-of-css-2022/)
     for actual css features
