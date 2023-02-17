@@ -24,7 +24,7 @@ JavaScript, reusable APIs, and prebuilt Markup (static HTML files)"
   * static site generator: [Scully](https://scully.io/) for *Angular* or see [other SSGs](https://jamstack.org/generators/)
   * deployment: [Github Pages](https://pages.github.com/), etc.
 * articles
-  * [What is the JAMStack?](https://academind.com/learn/javascript/what-is-the-jamstack/)
+  * [What is the JAMStack?](https://academind.com/tutorials/what-is-the-jamstack)
 
 
 ## JAMStack in Angular
@@ -37,4 +37,4 @@ JAMStack can be implemented in [Angular](Angular.md) with [Scully](https://scull
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on TODO)*
+*(Page mainly written in december 2020; links checked on 17.02.2023)*
