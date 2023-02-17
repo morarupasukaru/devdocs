@@ -30,7 +30,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * [UX design](frontend/UXDesign.md) links
 * [Web components](frontend/WebComponents.md) to develop custom web elements
 * [Databases](backend/Databases.md) links
-* frontend links:
+* annual retrospective links:
   * [state of JS 2022](https://2022.stateofjs.com/en-US/)
   * [state of CSS 2022](https://2022.stateofcss.com/en-US)
   * [state of frontend 2022](https://tsh.io/state-of-frontend/)
