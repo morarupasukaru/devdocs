@@ -38,7 +38,9 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   to ease debugging by using the methods of the [Console](https://developer.mozilla.org/en-US/docs/Web/API/Console) 
   global object
 * [URL API](https://developer.mozilla.org/en-US/docs/Web/API/URL_API): to compose and manipulate 
-  [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL); see also: 
+  [URL](https://developer.mozilla.org/en-US/docs/Web/API/URL); see also:
+  * [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams)
+    having utility methods to work with the query string of a URL
   * [window.location](https://developer.mozilla.org/en-US/docs/Web/API/Window/location) 
       returns a [Location](https://developer.mozilla.org/en-US/docs/Web/API/Location) 
       to manipulate actual display URL
