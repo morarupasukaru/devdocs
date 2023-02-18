@@ -71,22 +71,21 @@ in plain JavaScript.
   * Integration of Stencil web components into
     * ... [Angular](https://stenciljs.com/docs/angular) applications
     * ... [vanilla JavaScript](https://stenciljs.com/docs/javascript) applications
+    * ... [and others](https://stenciljs.com/docs/overview)
 * Other references
   * building SPA with Stencil only will required following two features
     * routing with [stencil-router](https://github.com/ionic-team/stencil-router)
-    * state management with [stencil-state-tunnel](https://github.com/ionic-team/stencil-state-tunnel) 
-      or [stencil-redux](https://github.com/ionic-team/stencil-redux)
   * see [Using RxJS Observables with StencilJS and Ionic](https://www.joshmorony.com/using-observables-with-stencil-js-and-ionic/) 
-  * [Stencil App Starter](https://github.com/ionic-team/stencil-app-starter)
+  * [Stencil App Starter](https://github.com/stencil-community/stencil-app-starter)
   * [Stencil Component Starter](https://github.com/ionic-team/stencil-component-starter)
   * [tslint-stencil](https://www.npmjs.com/package/tslint-stencil)
   * course: [Web Components & Stencil.js - Build Custom HTML Elements](https://www.udemy.com/course/web-components-stenciljs-build-custom-html-elements/)
 * Alternatives to Stencil
   * [svelte.js](https://svelte.dev/)
-  * [lit-element](https://github.com/Polymer/lit-element) with use of 
-    [lit-html](https://lit-html.polymer-project.org/) for templating
+  * [lit-element](https://github.com/lit/lit-element) with use of 
+    [lit-html](https://lit.dev/) for templating
   * [skatejs](https://github.com/skatejs/skatejs)
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on TODO)*
+*(Page mainly written in december 2020; links checked on 18.02.2023)*
