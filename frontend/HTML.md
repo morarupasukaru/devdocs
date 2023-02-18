@@ -148,11 +148,11 @@ between websites.
     [intermediate](https://htmldog.com/guides/html/intermediate/), 
     [advanced](https://htmldog.com/guides/html/advanced/) tutorials
     (from [htmldog](https://htmldog.com/))
-  * [getting started HTML5](https://academind.com/learn/html/beginner-s-guide/), see also 
-    [part 2: CSS](https://academind.com/learn/css/beginner-s-guide/), 
-    [part 3: JavaScript](https://academind.com/learn/javascript/javascript-beginner-s-guide/)
+  * [getting started HTML5](https://academind.com/tutorials/html-beginner-s-guide), see also 
+    [part 2: CSS](https://academind.com/tutorials/css-beginner-s-guide), 
+    [part 3: JavaScript](https://academind.com/tutorials/javascript-beginner-s-guide)
 
-*(Page mainly written in september 2020; links checked on TODO)*
+*(Page mainly written in september 2020; links checked on 18.02.2023)*
 
 [*Go to parent page*](../README.md)
 
