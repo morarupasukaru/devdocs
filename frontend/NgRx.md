@@ -1,7 +1,7 @@
 # NgRx
 
 [NgRx](https://ngrx.io/), [Redux](https://redux.js.org/),
-[ngxs](https://www.ngxs.io/), [akita](https://datorama.github.io/akita/) are used to manage application state
+[ngxs](https://www.ngxs.io/), [akita](https://github.com/salesforce/akita) are used to manage application state
 (see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.))
 
 * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
@@ -63,6 +63,4 @@
 
 [*Go to parent page*](../README.md)
 
-----
-* *Page mainly written in 2019, last update: february 2022; links checked on TODO*
-----
+*(Page mainly written in 2019, last update: february 2022; links checked on 18.02.2023)*
