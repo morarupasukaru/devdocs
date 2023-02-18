@@ -46,4 +46,4 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2022; links checked on TODO)*
+*(Page mainly written in december 2022; links checked on 18.02.2023)*
