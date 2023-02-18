@@ -24,7 +24,7 @@ web applications.
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2022; links checked on TODO)*
+*(Page mainly written in december 2022; links checked on 18.02.2023)*
 
 
 ## file-based routing
@@ -111,7 +111,3 @@ is the Next.js feature that infer the routes of pages from the folder structure
 * see [next.config.js](https://nextjs.org/docs/api-reference/next.config.js/introduction) on how to configure [environment variables](https://nextjs.org/docs/basic-features/environment-variables) for development, production or other _phases_
 
 [*Go to top*](#nextjs)
-
-
-## authentification
-
