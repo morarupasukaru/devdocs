@@ -97,6 +97,9 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   and [MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API) 
   to access device camera and microphone
 * [Screen Orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API): change screen orientation at runtime; see [guide](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
+* [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
+  for speech recognition (recognize voice context from an audio input) & 
+  synthesis (text-to-speech component that allows programs to read out their text content)
 
 *(Page mainly written in 2019, last update: september 2020; links checked on 17.02.2023)*
 
