@@ -112,4 +112,4 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 12.2022 - 01.2023; links checked on TODO)*
+*(Page mainly written in 12.2022 - 01.2023; links checked on 18.02.2023)*
