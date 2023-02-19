@@ -1,6 +1,6 @@
 # Progressive Web App
 
-[Progressive Web App (PWA)](https://developers.google.com/web/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
+[Progressive Web App (PWA)](https://web.dev/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
 
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
@@ -39,7 +39,7 @@
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in spring 2022; links checked on TODO)*
+*(Page mainly written in spring 2022; links checked on 19.02.2023)*
 
 ## Application Manifest
 
@@ -115,9 +115,8 @@ proxy requests between web applications and network (e.g. for caching).
 
 * links
   * [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers)
-  * [Service Workers: an Introduction](https://developers.google.com/web/fundamentals/primers/service-workers)
+  * [Service Workers: an Introduction](https://developer.chrome.com/docs/workbox/service-worker-overview/)
   * [Are Service Workers Ready? - Check Browser Support](https://jakearchibald.github.io/isserviceworkerready/)
-  * see [Service Workers 101 cheatsheet](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers/sw101.png)
 * concepts
   * JavaScript's application run in a single thread
   * [Web workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers) 
@@ -177,7 +176,7 @@ proxy requests between web applications and network (e.g. for caching).
 is used to provide a cache of HTTP requests/responses of **static data** (e.g. application assets) with GET HTTP requests
 * links
   * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/) and [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/) (tutorial)
-  * [Cache and return requests](https://developers.google.com/web/fundamentals/primers/service-workers#cache_and_return_requests) (tutorial)
+  * [Cache and return requests](https://developer.chrome.com/docs/workbox/service-worker-overview/#cache_and_return_requests) (tutorial)
   * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/) (caching strategies; great reference)
   * [Storage for the web](https://web.dev/storage-for-the-web/) (checkout available storage quota)
   * [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
@@ -190,11 +189,10 @@ is used to provide a cache of HTTP requests/responses of **static data** (e.g. a
   * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
     is not designed to requests/responses of REST API because caches is based on the URL only
     (cache cannot be based on request parameters, like a transaction-id, or request payload)
-    * see [Caching Dynamic data](#caching-dynamic-data) for caches of REST API
+    * see [Caching Dynamic data](#cache-dynamic-data-with-indexeddb) for caches of REST API
   * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) differs from
     [HTTP Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)  
-    by providing a way to service workers and frontend javascript to implements
-    [caching strategies](#caching-strategies)
+    by providing a way to service workers and frontend javascript to implements caching strategies
     * caches of a web-application for a given scope can be shared between 
       frontend javascript and service workers
   * api: [caches](https://developer.mozilla.org/en-US/docs/Web/API/caches) 
@@ -279,7 +277,7 @@ allows web applications to make any fetches/updates, at a periodic time interval
 
 ## Web Push Notifications
 
-[Web Push Notifications](#Web-Push-Notifications) allow web applications to notify messages 
+Web Push Notifications allow web applications to notify messages 
 to user/device to go back to the web page with new content.
 
 * links
