@@ -23,7 +23,7 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
     * managed beans are normally the model of web page and contains business logic
     * public no-arg constructor is required
     * properties must be available public with getter/setter
-    * [@ManagedBean](https://docs.oracle.com/javaee/6/api/javax/faces/bean/ManagedBean.html) 
+    * [@ManagedBean](https://javaee.github.io/javaee-spec/javadocs/javax/faces/bean/ManagedBean.html) 
       annotation register automatically the bean with a given name
     * [managed beans scope](https://eclipse-ee4j.github.io/jakartaee-tutorial/#using-managed-bean-scopes) define the 
       scope within a managed beans is stored: application scope (all user), session scope (session, current user), etc.
@@ -56,8 +56,10 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
   * references
     * [summary of Java EE 6 JSF exam (1Z0-896)](https://bitbucket.org/paulstat/oracle-jsf-expert-1z0-896/wiki/Home)
     * [oracle documentation](https://www.oracle.com/java/technologies/javaserverfaces.html)
+    * [legacy Java EE archives](https://javaee.github.io/)
+      for anyone who wishes to browse the extensive history, prior to contribution to Eclipse
   * course: [JSF 2.2 - Java Server Faces for Beginners - Build a DB App](https://www.udemy.com/course/jsf-tutorial/)
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in March 2021; links checked on TODO)*
+*(Page mainly written in March 2021; links checked on 19.02.2023)*
