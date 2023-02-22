@@ -25,7 +25,7 @@ and is the scripting language for Web pages.
     [do ... while](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while),
     [for ... of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of),
     [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) 
-    ([not for Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#array_iteration_and_for...in)),
+    ([not for Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#array_iteration_and_for...in)
     see also [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 
     and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 * error handling with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) 
@@ -43,8 +43,7 @@ and is the scripting language for Web pages.
 * type checks
   * [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
     operator used to check value's type
-    * [typeof variable === 'undefined'](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#Errors) 
-      to check if variable is undefined
+    * `typeof variable === 'undefined'` to check if variable is undefined
   * [instanceof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/instanceof) operator used to 
     check if an object "extends a given class" (test if the presence of constructor.prototype in object's prototype chain)
   * [Number.isInteger()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/isInteger)
@@ -57,7 +56,7 @@ and is the scripting language for Web pages.
   * ... to Number: [parseInt(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt),
     [parseFloat(string)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat), 
     [Number(any type)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) function (without new)
-    and [unary + operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators) 
+    and [+ unary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#unary_operators) 
   * ... to Boolean: `myValue === 'true'`
   * [type coersion](https://developer.mozilla.org/en-US/docs/Glossary/Type_coercion) 
     happens in several cases in JavaScript and means that when the operands of an operator are different types, 
@@ -67,12 +66,12 @@ and is the scripting language for Web pages.
 * [arithmetic's operations: +, -, *, /, %](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators)
 * [prototype inheritance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
   * construct objects [with literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#objects_created_with_syntax_constructs)
-  * ... [with a constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_a_constructor) function
+  * ... [with a constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_constructor_functions) function
     and [new](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/new) operator
     * constructor main goal is to specify object properties
   * ... [with Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_object.create)
     and a given [prototype](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Understanding_prototype_objects)
-    * [prototype are used mainly to share functions](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Modifying_prototypes)
+    * prototype are used mainly to share functions
     * see [example of classical inheritance with constructor function, prototype and Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#classical_inheritance_with_object.create)
   * ... [with class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_the_class_keyword) and 
     [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor),
@@ -105,7 +104,7 @@ and is the scripting language for Web pages.
       with [dot](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#dot_notation)
       or [bracket](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#bracket_notation) notation (e.g. ```object.name``` or ```object['name']```)
     * see shorter syntax of [method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
-    * [**this** refer to object's properties within an object method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#As_an_object_method)
+    * [**this** refer to object's properties within an object method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#class_context)
   * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     * create array with [array literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array#array_literal_notation); e.g. ```[1, 2, 3]```
     * [access with index](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#access_an_array_item_by_its_index); e.g. ```array[2]```
@@ -135,9 +134,9 @@ and is the scripting language for Web pages.
       [values()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/values), 
       [entries()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/entries), 
       [size](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size) methods
-    * iterate with [for..of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#iterating_map_with_for..of)
+    * iterate with [for..of](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#iterating_map_with_for...of)
       or [forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#iterating_map_with_foreach)
-    * [convert maps from/to arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#Relation_with_Array_objects)
+    * [convert maps from/to arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map#relation_with_array_objects)
   * [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
     * [add()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add), 
       [has()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has), 
@@ -217,6 +216,7 @@ and is the scripting language for Web pages.
   * [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
     ease copy of values from [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) 
     or properties from [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring) into distinct variables
+    * TODO continue here link checks 
     * allow also to set the rest of an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) 
       or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) 
       to a variable
@@ -353,6 +353,6 @@ and is the scripting language for Web pages.
 
 
 ----
-* *Page mainly written in 2019; links checked on TODO*
+* *(Page mainly written in 2019; links checked on TODO)*
 * *Disclaimer: notes concern up to ES11 2020 but should be valid for latest version*
 ----
