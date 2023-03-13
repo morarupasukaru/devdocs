@@ -1,7 +1,6 @@
 # REST API Guidelines
 
-Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) and
-[Paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md) REST API guidelines
+Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) REST API guidelines
 
 * Guidelines
   * General
