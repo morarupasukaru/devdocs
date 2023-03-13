@@ -34,13 +34,13 @@
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
   * [replaced elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Replaced_element)
-  * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like _>>> TODO read 3_
+  * [layouts](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout) like
     * [normal flow](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout)
     * [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), see also:
       * guides: [other MDN guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox),
-        [a complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-        [flexbox: basics & container](https://academind.com/learn/css/understanding-css/flexbox-basics-container/) / 
-        [flex-Items](https://academind.com/learn/css/understanding-css/flexbox-flex-items/)
+        [a complete guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/),
+        [flexbox: basics & container](https://academind.com/tutorials/flexbox-basics-container) / 
+        [flex-Items](https://academind.com/tutorials/flexbox-flex-items)
       * [flexbox froggy](https://flexboxfroggy.com/) learning game
     * [grids](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout), see also:
       * articles: [relationship of grid layout to other layout methods](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout#:~:text=already%20be%20using.-,Grid%20and%20flexbox,columns%20at%20the%20same%20time.)
@@ -49,7 +49,7 @@
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
     * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
     * [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
-      see also [position property's article](https://academind.com/learn/css/understanding-css/the-position-property/) 
+      see also [position property's article](https://academind.com/tutorials/the-position-property) 
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) css property
     [:active](https://developer.mozilla.org/en-US/docs/Web/CSS/:active),
     [:hover](https://developer.mozilla.org/en-US/docs/Web/CSS/:hover),
@@ -72,7 +72,7 @@
       [min-width](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width),
       [max-width](https://developer.mozilla.org/en-US/docs/Web/CSS/max-width),
       [min-height](https://developer.mozilla.org/en-US/docs/Web/CSS/min-height),
-      [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height)
+      [max-height](https://developer.mozilla.org/en-US/docs/Web/CSS/max-height),
       [z-index](https://developer.mozilla.org/en-US/docs/Web/CSS/z-index),
       [position](https://developer.mozilla.org/en-US/docs/Web/CSS/position),
       [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display),
@@ -126,34 +126,33 @@
     [CSSStyleSheet.deleteRule()](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleSheet/deleteRule)
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-    that allows websites work on different screen widths, resolutions, etc.  _>>> TODO read 2_
+    that allows websites work on different screen widths, resolutions, etc.
     * guides: [responsive web design basics](https://web.dev/responsive-web-design-basics/),
       [learn responsive design](https://web.dev/learn/design/),
       [responsive images](https://web.dev/responsive-images/),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
       [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
-    to design websites for mobile (small screens) first and adapt then to desktop (larger screens)  _>>> TODO read 2_
-  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)  _>>> TODO read 4_
+    to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
+  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
     alternatives to vanilla CSS with additional features like
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements; 
     see also [BEM 101](https://css-tricks.com/bem-101/)
-    _>>> TODO read 4_
-* Tutorials _>>> TODO read 1_
+* Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
   * [learn to style HTML using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS) (MDN) 
-  * TODO next:[styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
+  * [styling web forms](https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms),
     [advanced form styling](https://developer.mozilla.org/en-US/docs/Learn/Forms/Advanced_form_styling),
     [ui pseudo-classes](https://developer.mozilla.org/en-US/docs/Learn/Forms/UI_pseudo-classes) (MDN)
   * [beginner](https://htmldog.com/guides/css/beginner/), 
     [intermediate](https://htmldog.com/guides/css/intermediate/),
     [advanced](https://htmldog.com/guides/css/advanced/) tutorials (htmldog)
-  * [getting started CSS](https://academind.com/learn/css/beginner-s-guide/) (academind)
-  * [CSS - The Complete Guide 2022](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course _>>> TODO follow 4_
-  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course _>>> TODO follow 5_
+  * [getting started CSS](https://academind.com/tutorials/css-beginner-s-guide/) (academind)
+  * [CSS - The Complete Guide 2023](https://www.udemy.com/course/css-the-complete-guide-incl-flexbox-grid-sass/) video course
+  * [Advanced CSS and Sass: Flexbox, Grid, Animations and More!](https://www.udemy.com/course/advanced-css-and-sass/) video course
 * Links
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
   * [State of CSS 2022](https://2022.stateofcss.com/en-US)
@@ -161,7 +160,7 @@
   * [State of CSS 2022](https://web.dev/state-of-css-2022/)
     for actual css features
   * [Web Almanac](https://almanac.httparchive.org/en/2022/) with reports of most used features of websites on the web
-  * [Vanilla CSS vs Frameworks](https://academind.com/learn/css/understanding-css/vanilla-css-vs-frameworks/)
+  * [Vanilla CSS vs Frameworks](https://academind.com/tutorials/vanilla-css-vs-frameworks)
 * Tools / Frameworks / Libs
   * frameworks:
     [Bootstrap](https://getbootstrap.com/),
@@ -179,6 +178,6 @@
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
   * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
 
-*(Page started in 2020; in progress; links checked on TODO)*
+*(Page started in 2020; in progress; links checked on 13.03.2023)*
 
 [*Go to parent page*](../README.md)
