@@ -4,7 +4,7 @@
 new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and TypeScript must be 
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
-* [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 4.5 (11.2021)
+* [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 4.9 (11.2022)
 * [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
@@ -99,7 +99,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * see other [options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
   * [build tools integration](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp) 
     with [gulp](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp), 
-    [webpack 4](https://webpack.js.org/guides/typescript/), etc.
+    [webpack](https://webpack.js.org/guides/typescript/), etc.
   * project configuration: [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html); useful flags:
     * [sourceMap](https://www.typescriptlang.org/tsconfig#sourceMap) : allow to debug typescript code in browser
     * [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny): force to declare type of variables
@@ -111,13 +111,13 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * [module](https://www.typescriptlang.org/tsconfig#module): specify module system (e.g. ES6)
     * see more flags in [tsconfig.json reference](https://www.typescriptlang.org/tsconfig)
   * use library (JavaScript or TypeScript)
-    * [type search](https://www.typescriptlang.org/dt/search?search=) to find npm packages to integrate in a project
-    * or [download](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html#downloading) *TypeScript type definitions* (which are [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) of needed JS library at [DefinitelyTyped](http://definitelytyped.org/)
+    * [download](https://www.typescriptlang.org/docs/handbook/declaration-files/consumption.html#downloading) *TypeScript type definitions* (which are [declaration files](https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html)) 
+    * of needed JS library at [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
     * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 * references
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
   * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
-  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/overview.html) to check out new features
+  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 * libraries
   * [Prisma](https://www.prisma.io/) is a Node.js and TypeScript ORM
@@ -126,6 +126,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   
 
 ----
-* *Page mainly written in 2019; links checked on TODO*
+* *Page mainly written in 2019; links checked on 13.03.2023*
 * *Disclaimer: notes concern up to Typescript 3.x but should be valid for latest version*
 ----
