@@ -1,283 +1,52 @@
 # Security
 
-* [OWASP](#OWASP)
-  * [Top 10 Web Application Security Risks](#Top-10-Web-Application-Security-Risks)
-  * [Top 10 Proactive Controls](#Top-10-Proactive-Controls)
-  * [Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
+The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a nonprofit foundation
+  that works to improve the security of software
+
+* [Top 10 Web Application Security Risks - 2021](https://owasp.org/www-project-top-ten/)
+  * [Broken Access Control](https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+  * [Cryptographic Failures](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/)
+  * [Injection](https://owasp.org/Top10/A03_2021-Injection/)
+  * [Insecure Design](https://owasp.org/Top10/A04_2021-Insecure_Design/)
+  * [Security Misconfiguration](https://owasp.org/Top10/A05_2021-Security_Misconfiguration/)
+  * [Vulnerable and Outdated Components](https://owasp.org/Top10/A06_2021-Vulnerable_and_Outdated_Components/)
+  * [Identification and Authentication Failures](https://owasp.org/Top10/A07_2021-Identification_and_Authentication_Failures/)
+  * [Software and Data Integrity Failures](https://owasp.org/Top10/A08_2021-Software_and_Data_Integrity_Failures/)
+  * [Security Logging and Monitoring Failures](https://owasp.org/Top10/A09_2021-Security_Logging_and_Monitoring_Failures/)
+  * [Server-Side Request Forgery (SSRF)](https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
+* [Top 10 Proactive Controls - 2018](https://cheatsheetseries.owasp.org/IndexProactiveControls.html)
+  * [Define Security Requirements](https://owasp.org/www-project-proactive-controls/v3/en/c1-security-requirements)
+  * [Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
+  * [Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
+  * [Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
+  * [Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
+  * [Implement Digital Identity](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity)
+  * [Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
+  * [Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
+  * [Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
+  * [Handle All Errors and Exceptions](https://owasp.org/www-project-proactive-controls/v3/en/c10-errors-exceptions)
+* [Cheat Sheet Series](https://cheatsheetseries.owasp.org/)
 * [Other Security Risks](#Other-Security-Risks)
 * [MDN web docs](#MDN-web-docs)
   * [Web security](#Web-security)
   * [HTTP Headers](#HTTP-Headers)
   * [Cookies](#Cookies)
   * [Web Storage](#Web-Storage)
-* [Secure Core Warrior](https://securecodewarrior.com/): great eLearning Security Platform
 * Other resources: 
-  [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
+  * [Top 10000 worst passwords](https://github.com/danielmiessler/SecLists/blob/master/Passwords/darkweb2017-top10000.txt) 
   from [SecLists](https://github.com/danielmiessler/SecLists) GitHub project
   * [auth0](https://auth0.com/) provide open-source libs to implements JWT [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) and an authentification provider
     * [jwks](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) aka JSON Web Key Sets is set of keys containing the public keys used to verify any JSON Web Token (JWT) issued by the authorization server
-    * see also [Anatomy of a JWT](https://fusionauth.io/learn/expert-advice/tokens/anatomy-of-jwt)
+    * see also [Anatomy of a JWT](https://fusionauth.io/learn/expert-advice/tokens/jwt-components-explained)
   * [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) Role-based access control is normally sufficient authorization for most applications
+  * [Secure Core Warrior](https://securecodewarrior.com/): great eLearning Security Platform
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
   
-*(Page mainly written in April 2020; links checked on TODO)*
+*(Page mainly written in April 2020; links checked on 13.03.2023)*
 
 [*Go to parent page*](../README.md)
-
-
-# OWASP
-
-The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a nonprofit foundation
-that works to improve the security of software
-
-
-## Top 10 Web Application Security Risks
-
-* [Injection](#Injection)
-* [Broken Authentication](#Broken-Authentication)
-* [Sensitive Data Exposure](#Sensitive-Data-Exposure)
-* [XML External Entities (XXE)](#xml-external-entities-xxe)
-* [Broken Access Control](#Broken-Access-Control)
-* [Security Misconfiguration](#Security-Misconfiguration)
-* [Cross-Site Scripting XSS](#Cross-Site-Scripting-XSS)
-* [Insecure Deserialization](#Insecure-Deserialization)
-* [Using Components with Known Vulnerabilities](#Using-Components-with-Known-Vulnerabilities)
-* [Insufficient Logging & Monitoring](#insufficient-logging--monitoring)
-
-*source: [OWASP Top Ten](https://owasp.org/www-project-top-ten/)*
-
-
-## Injection
-
-[Injection](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection) 
-flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an 
-interpreter as part of a command or query. The attacker’s hostile data can trick the interpreter 
-into executing unintended commands or accessing data without proper authorization.
-
-***Preventions:***
-* [Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
-* [Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
-* [Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
-* ([OWASP ESAPI lib for Java or JavaScript](https://owasp.org/www-project-enterprise-security-api/) 
-  seems to be obsolete or no more maintain)
-  
-
-***Cheatsheets:***
-* [Injection prevention rules](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html#injection-prevention-rules), 
-  [Prevention in Java](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet_in_Java.html)
-* [Input validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
-* [Query parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)
-* Injection with... 
-  * [SQL ](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
-  * [LDAP](https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html)
-  * [XPath](https://owasp.org/www-community/attacks/XPATH_Injection)
-  * [Scripting languages](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html#scripting-languages)
-  * [OS command](https://cheatsheetseries.owasp.org/cheatsheets/OS_Command_Injection_Defense_Cheat_Sheet.html)
-  * [NoSQL](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html#nosql)
-  * [Log](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html#log-injection)
-  * [HTML/JavaScript/CSS](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html#htmljavascriptcss)
-  * [Path Traversal](https://owasp.org/www-community/attacks/Path_Traversal)
-  * [Email Header](https://en.wikipedia.org/wiki/Email_injection)
-  * [CSS](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection), 
-    see also [Secure CSS](https://cheatsheetseries.owasp.org/cheatsheets/Securing_Cascading_Style_Sheets_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Broken Authentication
-
-[Broken Authentication](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication) : 
-Application functions related to authentication and session management are often implemented 
-incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit 
-other implementation flaws to assume other users’ identities temporarily or permanently.
-
-***Other known risks:***
-* [Insufficient Session Expiration](https://cwe.mitre.org/data/definitions/613.html)
-* [Weak Session Token Generation](https://owasp.org/www-community/attacks/Session_Prediction)
-* [Exposed Session Tokens](https://owasp.org/www-community/attacks/Session_hijacking_attack)
-
-
-***Preventions:*** [Implement Digital Identity](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity)
-
-***Cheatsheets:*** 
-* [Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html), 
-  [Email Address Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html#email-address-validation),
-  [Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html), 
-  [Choosing and Using Security Questions](https://cheatsheetseries.owasp.org/cheatsheets/Choosing_and_Using_Security_Questions_Cheat_Sheet.html#choosing-security-questions), 
-  [Error handling](https://cheatsheetseries.owasp.org/cheatsheets/Error_Handling_Cheat_Sheet.html), 
-  [Multifactor authentication](https://cheatsheetseries.owasp.org/cheatsheets/Multifactor_Authentication_Cheat_Sheet.html), 
-  [Credential Stuffing Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html), 
-  [Cross-Site Request Forgery (CSRF) Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html), 
-  [Session Management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Sensitive Data Exposure
-
-[Sensitive Data Exposure](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure) : 
-Many web applications and APIs do not properly protect sensitive data, such as financial, 
-healthcare, and PII. Attackers may steal or modify such weakly protected data to conduct credit card 
-fraud, identity theft, or other crimes. Sensitive data may be compromised without extra protection, 
-such as encryption at rest or in transit, and requires special precautions when exchanged with the 
-browser.
-
-***Other known risks:***
-* [Unprotected Transport of Credentials](https://cwe.mitre.org/data/definitions/523.html)
-* [Cleartext Transmission of Sensitive Information](https://cwe.mitre.org/data/definitions/319.html)
-* [Using a broken or risky cryptographic algorithm](https://owasp.org/www-community/vulnerabilities/Using_a_broken_or_risky_cryptographic_algorithm) 
-* [Insecure Randomness](https://owasp.org/www-community/vulnerabilities/Insecure_Randomness)
-* [Password Plaintext Storage](https://owasp.org/www-community/vulnerabilities/Password_Plaintext_Storage)
-
-***Preventions:*** [Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
-
-***Cheatsheets:*** 
-* [User Privacy Protection](https://cheatsheetseries.owasp.org/cheatsheets/User_Privacy_Protection_Cheat_Sheet.html)
-* [Transport Layer Protection](https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html)
-* [TLS Cipher String](https://cheatsheetseries.owasp.org/cheatsheets/TLS_Cipher_String_Cheat_Sheet.html)
-* [HTTP Strict Transport Security - HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)
-* [Cryptographic](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
-* [Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
- 
-[*Go to top*](#Security)
-
-
-## XML External Entities (XXE)
-
-[XML External Entities (XXE)](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A4-XML_External_Entities_(XXE)) : 
-Many older or poorly configured XML processors evaluate external entity references within XML 
-documents. External entities can be used to disclose internal files using the file URI handler, 
-internal file shares, internal port scanning, remote code execution, and denial of service attacks.
-
-***Preventions:*** The safest way to prevent XXE is always to disable DTDs (External Entities) completely
-
-***Cheatsheets:*** 
-* [XML External Entity Prevention](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)
-* [XML Security](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Broken Access Control
-
-[Broken Access Control](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A5-Broken_Access_Control) : 
-Restrictions on what authenticated users are allowed to do are often not properly enforced. 
-Attackers can exploit these flaws to access unauthorized functionality and/or data, such as access 
-other users’ accounts, view sensitive files, modify other users’ data, change access rights, etc.
-
-***Preventions***: [Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
-
-***Cheatsheets:*** [Authorization](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Security Misconfiguration
-
-[Security Misconfiguration](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A6-Security_Misconfiguration) 
-is the most commonly seen issue. This is commonly a result of insecure default configurations, 
-incomplete or ad hoc configurations, open cloud storage, misconfigured HTTP headers, and verbose 
-error messages containing sensitive information. Not only must all operating systems, frameworks, 
-libraries, and applications be securely configured, but they must be patched/upgraded in a 
-timely fashion.
-
-***Preventions:***
-* [Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
-* Use [OWASP Dependency-Check](https://owasp.org/www-project-dependency-check/) 
-  (see also [dependency-check-maven](https://jeremylong.github.io/DependencyCheck/dependency-check-maven/index.html)) 
-  and [retire.js](https://retirejs.github.io/retire.js/) to detect libraries with vulnerabilities
-* Remove or do not install unused features and frameworks
-* Ensure debug mode is not enabled on production
-
-[*Go to top*](#Security)
-
-
-## Cross-Site Scripting XSS
-
-[Cross-Site Scripting XSS](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A7-Cross-Site_Scripting_(XSS)) : 
-XSS flaws occur whenever an application includes untrusted data in a new web page without proper 
-validation or escaping, or updates an existing web page with user-supplied data using a browser 
-API that can create HTML or JavaScript. XSS allows attackers to execute scripts in the victim’s 
-browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.
-
-***Preventions:*** 
-* [Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
-* [Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
-* [Use Subresource Integrity (integrity attribute of `<script>`)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity)
-* [X-CSS-Protection HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-XSS-Protection)
-
-***Cheatsheets:***
-* [Cross Site Scripting Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
-* [DOM based XSS Prevention](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Insecure Deserialization
-
-[Insecure Deserialization](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A8-Insecure_Deserialization) 
-often leads to remote code execution. Even if deserialization flaws do not result in remote 
-code execution, they can be used to perform attacks, including replay attacks, injection attacks, 
-and privilege escalation attacks.
-
-***Preventions:*** Avoiding native (de)serialization formats; use data format like JSON or XML
-
-***Cheatsheets:*** [Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Using Components with Known Vulnerabilities
-
-[Using Components with Known Vulnerabilities](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities) : 
-Components, such as libraries, frameworks, and other software modules, run with the same privileges 
-as the application. If a vulnerable component is exploited, such an attack can facilitate serious 
-data loss or server takeover. Applications and APIs using components with known vulnerabilities 
-may undermine application defenses and enable various attacks and impacts.
-
-***Other known risks:***
-* [Using Components From Untrusted Source](https://cwe.mitre.org/data/definitions/829.html)
-
-***Preventions:*** [Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
-
-[*Go to top*](#Security)
-
-
-## Insufficient Logging & Monitoring
-
-[Insufficient Logging & Monitoring](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring), 
-coupled with missing or ineffective integration with incident response, allows attackers to 
-further attack systems, maintain persistence, pivot to more systems, and tamper, extract, or 
-destroy data. Most breach studies show time to detect a breach is over 200 days, typically detected 
-by external parties rather than internal processes or monitoring.
-
-***Preventions:*** [Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
-
-***Cheatsheets:*** [Logging](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
-
-[*Go to top*](#Security)
-
-
-## Top 10 Proactive Controls
-
-* [Define Security Requirements](https://owasp.org/www-project-proactive-controls/v3/en/c1-security-requirements)
-* [Leverage Security Frameworks and Libraries](https://owasp.org/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
-* [Secure Database Access](https://owasp.org/www-project-proactive-controls/v3/en/c3-secure-database)
-* [Encode and Escape Data](https://owasp.org/www-project-proactive-controls/v3/en/c4-encode-escape-data)
-* [Validate All Inputs](https://owasp.org/www-project-proactive-controls/v3/en/c5-validate-inputs)
-* [Implement Digital Identity](https://owasp.org/www-project-proactive-controls/v3/en/c6-digital-identity)
-* [Enforce Access Controls](https://owasp.org/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
-* [Protect Data Everywhere](https://owasp.org/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
-* [Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
-* [Handle All Errors and Exceptions](https://owasp.org/www-project-proactive-controls/v3/en/c10-errors-exceptions)
-
-[Cheatsheets related to Proactive Controls](https://cheatsheetseries.owasp.org/IndexProactiveControls.html)
-
-*source: [OWASP Proactive Controls](https://owasp.org/www-project-proactive-controls/)*
-
-[*Go to top*](#Security)
 
 
 # Other Security Risks
