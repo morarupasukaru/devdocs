@@ -216,21 +216,16 @@ and is the scripting language for Web pages.
   * [destructuring assignment](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) 
     ease copy of values from [arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Array_destructuring) 
     or properties from [objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Object_destructuring) into distinct variables
-    * TODO continue here link checks 
-    * allow also to set the rest of an [array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Assigning_the_rest_of_an_array_to_a_variable) 
-      or [object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#Rest_in_Object_Destructuring) 
-      to a variable
-  * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters#Destructuring_rest_parameters) allows a function to accept an indefinite number of arguments as an array
+    * allow also to set the [rest of an array or object to a variable](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment#rest_property) 
+  * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters) allows a function to accept an indefinite number of arguments as an array
   * [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) with ```?.``` operator ease access of object properties
-  * [shorthand property and method names](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#new_notations_in_ecmascript_2015)
-    is a shorter way to define object's properties or methods within an [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#new_notations_in_ecmascript_2015)
+  * [shorthand property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions)
+    and [shorthand method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#method_definitions)
+  * names is a shorter way to define object's properties or methods within an 
+    [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
   * [nullish coalescing operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator) 
     ```??``` allow to specify default value if left-hand side operand is null or undefined only
     * [logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR) ```||``` returns default value also if left-hand side operand if falsy (side-effect possible; e.g. 0)
-  * [field declarations](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes#field_declarations) allow to declare 
-      [public](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields) or
-      [private](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_class_fields)
-      fields without constructor
   * [modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ease to compose self-contained piece of codes together
     * [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) and [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description) statements
     * features: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports) exports,
@@ -331,7 +326,6 @@ and is the scripting language for Web pages.
   * tutorial [beginner](https://htmldog.com/guides/javascript/beginner/),
     [intermediate](https://htmldog.com/guides/javascript/intermediate/),
     [advanced](https://htmldog.com/guides/javascript/advanced/)
-    (from [htmldog](https://htmldog.com/))
   * webpages:
     * [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/)
     * [es6 summary](https://github.com/zsolt-nagy/es6-summary)
@@ -353,6 +347,6 @@ and is the scripting language for Web pages.
 
 
 ----
-* *(Page mainly written in 2019; links checked on TODO)*
+* *(Page mainly written in 2019; links checked on 13.03.2023)*
 * *Disclaimer: notes concern up to ES11 2020 but should be valid for latest version*
 ----
