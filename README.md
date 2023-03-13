@@ -5,7 +5,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA)
 * [SpringBoot](backend/SpringBoot.md) **backend** framework ease writing of web applications in Java
 * *foundations:*
-  * [CSS](frontend/CSS.md) (Cascading Style Sheets) is a language to style and present HTML *(in progress)*
+  * [CSS](frontend/CSS.md) (Cascading Style Sheets) is a language to style and present HTML
   * [HTML](frontend/HTML.md) (Hypertext Markup Language) defines the meaning and structure of
     web pages
   * [Javascript](frontend/JavaScript.md) is the scripting language for web pages
@@ -18,7 +18,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 ## Topics
 
 * [Web Accessibility](transversal/WebAccessibility.md)
-  means that websites are accessible to everyone regardless of disability *(in progress)*
+  means that websites are accessible to everyone regardless of disability
 * [Frontend testing](frontend/FrontendTesting.md)
 * [Micro-frontends](frontend/MicroFrontends.md) is a microservice approach to front-end web development
 * [Progressive Web App](frontend/PWA.md) to provide desktop's like applications on the web (fast, installable, offline)

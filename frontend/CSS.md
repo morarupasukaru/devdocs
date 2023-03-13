@@ -178,6 +178,6 @@
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
   * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
 
-*(Page started in 2020; in progress; links checked on 13.03.2023)*
+*(Page started in 2020; links checked on 13.03.2023)*
 
 [*Go to parent page*](../README.md)
