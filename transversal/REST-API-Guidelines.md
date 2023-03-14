@@ -27,21 +27,12 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [MUST **pluralize array names**](https://opensource.zalando.com/restful-api-guidelines/#120)
     * [MUST use **common field names** and semantics](https://opensource.zalando.com/restful-api-guidelines/#174)
     * [MUST use **standard data formats**](https://opensource.zalando.com/restful-api-guidelines/#238)
-    * [MUST use **string** to represent a **floating point numbers**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
+    * MUST use **string** to represent a **floating point numbers**
     * [MUST define **format for integer** types](https://opensource.zalando.com/restful-api-guidelines/#171)
-    * [SHOULD define **minimum** and a **maximum** for **integer**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#number)
-    * [SHOULD define **minLength** and **maxLength** for **string**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#string)
-    * [SHOULD define **minItems** and **maxItems** for **array**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#array)
+    * SHOULD define **minimum** and a **maximum** for **integer**
+    * SHOULD define **minLength** and **maxLength** for **string**
+    * SHOULD define **minItems** and **maxItems** for **array**
     * [MUST name date/time properties with **_at suffix**](https://opensource.zalando.com/restful-api-guidelines/#235)
-    * **[MUST use common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#common-types)**
-      like [percentage.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/percentage.json),
-      [locale.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/locale.json),
-      [date common types](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#date-common-types),
-      [time_duration.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/time_duration.json),
-      [country_code.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/country_code.json),
-      [language.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/language.json),
-      [currency_code.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/currency_code.json),
-      [money.json](https://github.com/paypal/api-standards/blob/master/v1/schema/json/draft-04/money.json)
   * API naming
     * [MUST use **kebab-case** for path segments](https://opensource.zalando.com/restful-api-guidelines/#129)
     * [MUST use **Kebab-Case** with uppercase separate words for HTTP header](https://opensource.zalando.com/restful-api-guidelines/#132)
@@ -49,8 +40,6 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [MUST stick to **conventional query parameters**](https://opensource.zalando.com/restful-api-guidelines/#137)
   * Resources
     * [MUST **avoid actions** - think about resources](https://opensource.zalando.com/restful-api-guidelines/#138)
-    * SHOULD use **[controller resources](https://github.com/paypal/api-standards/blob/master/patterns.md#controller-resources)**
-      if a resource cannot be designed
     * [SHOULD keep URLs **verb-free**](https://opensource.zalando.com/restful-api-guidelines/#141)
     * [MUST identify resources and sub-resources via **path segments**](https://opensource.zalando.com/restful-api-guidelines/#143)
     * [MUST limit number of sub-resource levels](https://opensource.zalando.com/restful-api-guidelines/#147)
@@ -61,13 +50,12 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
       see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#144)
     * MUST use UUID or ULID instead of integer as **resource id**
   * HTTP requests
-    * [MUST use **HTTP methods** correctly](https://opensource.zalando.com/restful-api-guidelines/#148);
-      see [paypal](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-methods-headers-and-statuses)
+    * [MUST use **HTTP methods** correctly](https://opensource.zalando.com/restful-api-guidelines/#148)
     * [MUST fulfill **safe, idempotent, cacheable** properties of HTTP methods](https://opensource.zalando.com/restful-api-guidelines/#149)
-    * [SHOULD design **idempotent POST**](https://github.com/paypal/api-standards/blob/master/patterns.md#idempotency-for-post-requests);
-      see [Zalando](https://opensource.zalando.com/restful-api-guidelines/#229) and [Idempotency-Key](https://opensource.zalando.com/restful-api-guidelines/#230)
+    * [SHOULD design **idempotent POST**](https://opensource.zalando.com/restful-api-guidelines/#229);
+      see [Idempotency-Key](https://opensource.zalando.com/restful-api-guidelines/#230)
   * HTTP headers
-    * [SHOULD use only following **standard headers**](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#http-standard-headers)
+    * SHOULD use only following **standard headers**
       * '[Accept](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept):
         application/json' (in request)
       * '[Accept-Charset](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Charset):
@@ -114,7 +102,6 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [MUST use **REST maturity level 2**](https://opensource.zalando.com/restful-api-guidelines/#162) : HTTP resources responding to HTTP verbs (GET, POST, etc.)
     * and therefore MUST NOT use **[HATEOAS](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#hateoas)**
     * MUST be **Stateless** API
-* [OpenAPI vs JSON Schema vs OData](#OpenAPI-vs-JSON-Schema-vs-OData)
 * Tools
   * list of [OpenAPI tools](https://openapi.tools/)
   * [json-server](https://github.com/typicode/json-server): fake REST API
@@ -145,8 +132,6 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
 * Documentations
   * REST API
     * [Zalando API Guidelines](https://opensource.zalando.com/restful-api-guidelines/)
-    * [Paypal API Guidelines](https://github.com/paypal/api-standards/blob/master/api-style-guide.md#api-design-guidelines)
-    and [Design Patterns](https://github.com/paypal/api-standards/blob/master/patterns.md)
     * [Microsoft Web API design](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)
     * [The Web API Checklist](https://mathieu.fenniak.net/the-api-checklist/)
     * [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
@@ -158,6 +143,6 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [Swagger Editor](https://editor.swagger.io/) has a "Convert to OpenAPI 3" option
     * [swagger-petstore](https://github.com/swagger-api/swagger-petstore) as OpenAPI 3.0 example
 
-*(Page mainly written in May 2020; links checked on TODO)*
+*(Page mainly written in May 2020; links checked on 14.03.2023)*
 
 [*Go to parent page*](../README.md)
