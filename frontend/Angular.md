@@ -44,6 +44,7 @@
     * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to
       ease search engine work
     * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
+    * [angular-t9n](https://github.com/kyubisation/angular-t9n) tool to manage .xlf translation files
 * [Ecosystem](#Ecosystem)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
