@@ -13,6 +13,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
   * [RxJS](frontend/RxJS.md) is a JavaScript library for reactive programming using observables
   * [Java](backend/Java.md) is a popular general-purpose language
+  * [SQL and PostgreSQL](backend/PostgreSQL.md)
 
 
 ## Topics
