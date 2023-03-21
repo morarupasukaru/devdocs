@@ -10,6 +10,10 @@
   * [queries](https://www.postgresql.org/docs/current/queries.html)    
     * [queries with JOIN](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) (inner join, left outer join, right outer join, full join)
     * [grouping with GROUP BY and HAVING](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-GROUP)
+    * [sort with ORDER BY](https://www.postgresql.org/docs/current/queries-order.html)
+    * [retrieve a portion of rows with LIMIT and OFFSET](https://www.postgresql.org/docs/current/queries-limit.html)
+    * [combining with UNION [ALL], (INTERSECT, EXCEPT)](https://www.postgresql.org/docs/current/queries-union.html)
+    * [eliminate dupplicate rows with DISTINCT](https://www.postgresql.org/docs/current/queries-select-lists.html#QUERIES-DISTINCT)
   * [data types](https://www.postgresql.org/docs/current/datatype.html)
     * [numeric types](https://www.postgresql.org/docs/current/datatype-numeric.html)
       * [serial](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL) like SERIAL (PostgreSQL specific)
@@ -24,6 +28,11 @@
       * `@` for absolut value
       * `|/` for square root
     * [aggregate functions](https://www.postgresql.org/docs/current/functions-aggregate.html)
+      like max, avg, sum
+    * [conditional expressions](https://www.postgresql.org/docs/15/functions-conditional.html)
+      like [GREATEST and LEAST](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-GREATEST-LEAST), 
+      [CASE](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-CASE), 
+      [COALESCE](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL)
 
 
 Links
