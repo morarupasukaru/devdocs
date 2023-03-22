@@ -93,7 +93,7 @@
       * PostgreSQL does not automatically create an index for foreign key
       * see [Should I Create an Index on Foreign Keys in PostgreSQL?](https://www.percona.com/blog/should-i-create-an-index-on-foreign-keys-in-postgresql/)
       * and [ARE YOUR FOREIGN KEYS INDEXED?](https://www.cybertec-postgresql.com/en/index-your-foreign-key/)
-      * <details>
+      <details>
         <summary>query to find missing index on (click me)</summary>
 
         ```sql
