@@ -58,6 +58,8 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
 * documentation with [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
   [AsciiDoc ](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
   * [gray-matter](https://github.com/jonschlinkert/gray-matter) JS lib to parse yalm [front-matter](https://jekyllrb.com/docs/front-matter/), e.g. in markdown into javascript object
+* [PlantText](https://www.planttext.com/) or
+  [diagrams.net](https://www.diagrams.net) for diagram editors
 * [http-server](https://github.com/http-party/http-server) to serve angular applications in production mode
 * [json-server](https://github.com/typicode/json-server) to fake REST API
 * [Visual Studio Code](https://code.visualstudio.com/) IDE
@@ -65,6 +67,8 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer), 
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials)
+* [dbeaver](https://dbeaver.io/) : Universal Database Tool
+* [pgAdmin](https://www.pgadmin.org/) : PostgreSQL Database Tool (provided also in [PostgreSQL installer](https://www.postgresql.org/download/))
 * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) Chrome DevTools to audit for performance, accessibility, PWA, SEO of websites
 * [android studio](https://developer.android.com/studio) to test PWA on emulated device
 * images: [unsplash.com](https://unsplash.com/)
