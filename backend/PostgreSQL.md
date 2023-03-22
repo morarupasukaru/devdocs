@@ -19,13 +19,13 @@
     * [retrieve a portion of rows with LIMIT and OFFSET](https://www.postgresql.org/docs/current/queries-limit.html)
     * [combining with UNION [ALL], (INTERSECT, EXCEPT)](https://www.postgresql.org/docs/current/queries-union.html)
     * [eliminate dupplicate rows with DISTINCT](https://www.postgresql.org/docs/current/queries-select-lists.html#QUERIES-DISTINCT)
-    * [subquery in FROM or JOIN = returns rows](https://www.postgresql.org/docs/15/queries-table-expressions.html#QUERIES-FROM)
+    * [subquery in FROM or JOIN = returns rows](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM)
       ; must have an alias
-    * [subquery in WHERE = returns values](https://www.postgresql.org/docs/15/queries-table-expressions.html#QUERIES-WHERE)
+    * [subquery in WHERE = returns values](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-WHERE)
     * [correlated subqueries](https://en.wikipedia.org/wiki/Correlated_subquery) uses values from the outer query 
       * subquery may be evaluated once for each row processed by the outer query, it can be slow
       * correlated subqueries appear in SELECT or WHERE clauses
-      * [subquery in SELECT are called scalar subqueries and returns single value](https://www.postgresql.org/docs/15/sql-expressions.html#SQL-SYNTAX-SCALAR-SUBQUERIES)
+      * [subquery in SELECT are called scalar subqueries and returns single value](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-SCALAR-SUBQUERIES)
     * select without FROM clauses used to returns single value of a subquery,
       e.g. `SELECT (SELECT xyz FROM ...)`
     * [select without FROM clauses used as calculator](https://www.postgresql.org/docs/current/queries-overview.html)
@@ -60,7 +60,7 @@
       user-defined data types
       [composite](https://www.postgresql.org/docs/current/rowtypes.html) and 
       [domain](https://www.postgresql.org/docs/current/domains.html), ...
-  * [type casts](https://www.postgresql.org/docs/15/sql-expressions.html#SQL-SYNTAX-TYPE-CASTS) `::`, e.g. `SELECT 10::BOOLEAN` or `SELECT CAST(10 AS BOOLEAN)` (sql conform)   
+  * [type casts](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-TYPE-CASTS) `::`, e.g. `SELECT 10::BOOLEAN` or `SELECT CAST(10 AS BOOLEAN)` (sql conform)   
   * [functions & operators](https://www.postgresql.org/docs/current/functions.html)
     * [comparison functions and operators](https://www.postgresql.org/docs/current/functions-comparison.html)
       like `BETWEEN`
@@ -73,18 +73,18 @@
       * `|/` for square root
     * [aggregate functions](https://www.postgresql.org/docs/current/functions-aggregate.html)
       like max, avg, sum
-    * [date/time functions & operators](https://www.postgresql.org/docs/current/functions-datetime.html) like `current_timestamp`
-    * [conditional expressions](https://www.postgresql.org/docs/15/functions-conditional.html)
-      like [GREATEST and LEAST](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-GREATEST-LEAST), 
-      [CASE](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-CASE), 
-      [COALESCE](https://www.postgresql.org/docs/15/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL)
+    * [date/time functions & operators](https://www.postgresql.org/docs/current/functions-datetime.html) like `current_timestamp`, `date_trunc`
+    * [conditional expressions](https://www.postgresql.org/docs/current/functions-conditional.html)
+      like [GREATEST and LEAST](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-GREATEST-LEAST), 
+      [CASE](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-CASE), 
+      [COALESCE](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL)
       * tip: `COALESCE(value::BOOLEAN::INTEGER, 0)` to convert value to [0|1] number that can be used in CHECK or aggregate functions
-    * [subquery expressions](https://www.postgresql.org/docs/15/functions-subquery.html)
-      like [EXISTS](https://www.postgresql.org/docs/15/functions-subquery.html#FUNCTIONS-SUBQUERY-EXISTS),
-      [IN](https://www.postgresql.org/docs/15/functions-subquery.html#FUNCTIONS-SUBQUERY-IN),
-      [ANY/SOME](https://www.postgresql.org/docs/15/functions-subquery.html#FUNCTIONS-SUBQUERY-ANY-SOME),
-      [ALL](https://www.postgresql.org/docs/15/functions-subquery.html#FUNCTIONS-SUBQUERY-ALL),
-      [single-row comparison](https://www.postgresql.org/docs/15/functions-subquery.html#id-1.5.8.29.15)
+    * [subquery expressions](https://www.postgresql.org/docs/current/functions-subquery.html)
+      like [EXISTS](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-EXISTS),
+      [IN](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-IN),
+      [ANY/SOME](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-ANY-SOME),
+      [ALL](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-ALL),
+      [single-row comparison](https://www.postgresql.org/docs/current/functions-subquery.html#id-1.5.8.29.15)
   * [indexes](https://www.postgresql.org/docs/current/indexes.html)
     * [index-types](https://www.postgresql.org/docs/current/indexes-types.html): [B-Tree](https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-BTREE) [index type](https://www.postgresql.org/docs/current/indexes-types.html) is 99% used and is for general purpose; see [other index types](https://www.postgresql.org/docs/current/indexes-types.html) if needed
     * see tips in [examining index usage](https://www.postgresql.org/docs/current/indexes-examine.html) on when to create indexes
@@ -128,6 +128,17 @@
         ORDER BY pg_catalog.pg_relation_size(c.conrelid) DESC;
         ```
       </details>
+* [views](https://www.postgresql.org/docs/current/tutorial-views.html)
+  * views allow to reuse query
+  * views allow you to encapsulate the details of the structure of your tables, which might change as your application evolves, behind consistent interfaces
+  * view vs materialized view
+    * views: query is executed every time
+    * materialized views are _caches_; query is executed at specific time to renew the _cache_
+    * materialized views are useful for expensive queries
+    * disadvantage of materialized views: have to be updated _MANUALLY_ with [REFRESH MATERIALIZED VIEW](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)
+* transactions
+  * PostgreSQL has autocommit by default
+  * call [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) to disable autocommit
 * [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
   * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
   [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
@@ -135,14 +146,19 @@
   [DELETE](https://www.postgresql.org/docs/current/sql-delete.html),
   * [[CREATE](https://www.postgresql.org/docs/current/sql-createtable.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altertable.html)|[DROP](https://www.postgresql.org/docs/current/sql-droptable.html)]
   TABLE
-  * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|
-[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
+  * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
     INDEX
+  * [[CREATE](https://www.postgresql.org/docs/current/sql-createview.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropview.html)]
+    VIEW
+    * `CREATE OR REPLACE VIEW`: if a view of the same name already exists, it is replaced (might be better then `ALTER VIEW`)
+  * [[CREATE](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altermaterializedview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropmaterializedview.html)|[REFRESH](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)]
+     MATERIALIZED VIEW
+  * transaction: [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) (or [BEGIN](https://www.postgresql.org/docs/current/sql-begin.html)), [COMMIT](https://www.postgresql.org/docs/current/sql-commit.html), [ROLLBACK](https://www.postgresql.org/docs/current/sql-rollback.html) 
   * [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) for benchmarking query
     * `EXPLAIN`: info about query plan
     * `EXPLAIN ANALYZE`: info about runned query
       * take care: `EXPLAIN ANALYZE` execute query and could update data!
-    * see [Using EXPLAIN](https://www.postgresql.org/docs/15/using-explain.html)
+    * see [Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
   * ...
 * query tuning
   * use [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) to benchmark query
@@ -154,6 +170,7 @@
   * steps of query plan have `(cost=...)`
   * goal is to identify which steps are expensive
   * existing index might be not used if sequential readings is more performant than lot of random accesses  
+* [Server Programming](https://www.postgresql.org/docs/current/server-programming.html)
 * Links & Tools
   * https://pg-sql.com/: temporary online Postgres Database
   * [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres) : compilations of links about PostgreSQL
