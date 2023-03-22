@@ -366,7 +366,8 @@ Libraries that should be avoided because adding extra complexity:
 * [hsql](http://hsqldb.org/), 
   [H2](https://www.h2database.com/html/main.html),
   [Apache Derby](https://db.apache.org/derby/) as in-memory databases
-* [flyway](https://flywaydb.org/) as database version control
+* [flyway](https://flywaydb.org/), 
+  [liquibase](https://www.liquibase.com/) as database version control; see [liquibase vs flyway](https://www.liquibase.com/liquibase-vs-flyway)
 * [tomcat](https://tomcat.apache.org/),
   [jetty](https://www.eclipse.org/jetty/),
   [undertow](https://undertow.io/) as web containers

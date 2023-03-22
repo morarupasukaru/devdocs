@@ -139,6 +139,16 @@
 * transactions
   * PostgreSQL has autocommit by default
   * call [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) to disable autocommit
+* schema/data migration
+  * schema migration file: precise change to make to database and its counterpart to revert the change
+  * library for schema migration:
+    [flyway](https://flywaydb.org/) or
+    [liquibase](https://www.liquibase.com/)
+    * see [database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
+    * see [liquibase vs flyway](https://www.liquibase.com/liquibase-vs-flyway)
+    * see [liquibase works with Plain Old SQL](https://www.liquibase.com/blog/plain-sql)
+* schema vs data migration
+  * TODO
 * [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
   * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
   [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
@@ -180,7 +190,8 @@
     * [diagrams.net](https://www.diagrams.net/) : diagrams editor
   * sql schema designers
     * https://ondras.zarovi.cz/sql/demo/ for wiziwig editor
-    * [dbdiagram.i](https://dbdiagram.io/home) for code first editor using [DBML](https://www.dbml.org/home/)
+    * [dbdiagram.io](https://dbdiagram.io/home) for code first editor using [DBML](https://www.dbml.org/home/)
+  * database version control: [flyway](https://flywaydb.org/), [liquibase](https://www.liquibase.com/)
 
 *(Page mainly started in march 2023)*
 

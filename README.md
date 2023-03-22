@@ -13,7 +13,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [Typescript](frontend/TypeScript.md) is a strongly typed language based on JavaScript
   * [RxJS](frontend/RxJS.md) is a JavaScript library for reactive programming using observables
   * [Java](backend/Java.md) is a popular general-purpose language
-  * [SQL and PostgreSQL](backend/PostgreSQL.md)
+  * [PostgreSQL](backend/PostgreSQL.md) is a powerful, open source object-relational database
 
 
 ## Topics
@@ -81,4 +81,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Noun Project](https://thenounproject.com/)
 * [Storybook](https://storybook.js.org/) is a frontend workshop for building UI components and pages in isolation
 
-*(last update february 2023; links checked on 13.02.2023)*
+*(last update march 2023; links checked on 13.02.2023)*
