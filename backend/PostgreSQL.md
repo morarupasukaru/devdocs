@@ -191,6 +191,7 @@
     * see [database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
     * see [liquibase vs flyway](https://www.liquibase.com/liquibase-vs-flyway)
     * see [liquibase works with Plain Old SQL](https://www.liquibase.com/blog/plain-sql)
+    * see [guide of migrations with flyway](https://documentation.red-gate.com/fd/migrations-184127470.html)
 * [server programming](https://www.postgresql.org/docs/current/server-programming.html):
   [functions](https://www.postgresql.org/docs/current/xfunc-sql.html),
   [triggers](https://www.postgresql.org/docs/current/triggers.html), etc.
