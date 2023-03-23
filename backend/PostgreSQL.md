@@ -229,6 +229,7 @@
   * [flyway](https://flywaydb.org/) or
     [liquibase](https://www.liquibase.com/) 
     as database version control / for schema migration
+  * [SQL and PostgreSQL: The Complete Developer's Guide](https://www.udemy.com/course/sql-and-postgresql/) course
 
 *(Page mainly started in march 2023)*
 
