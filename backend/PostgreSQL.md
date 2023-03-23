@@ -141,14 +141,30 @@
   * call [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) to disable autocommit
 * schema/data migration
   * schema migration file: precise change to make to database and its counterpart to revert the change
+  * schema/data migration file should be done in separate steps (over a few days/weeks) along with changes in applications (consumers/producers), e.g.
+    * step 1: add new column (_schema migration_)
+    * step 2: applications write in old/new column
+    * step 3: copy values from old to new (_data migration_, might take time)
+    * step 4: applications write only in new column
+    * step 5: drop old column (_schema migration_)
+  * if lot of rows must be updated, update should be done in several transaction 
+    to prevent **transaction locks**
+    ```sql
+    UPDATE ... LIMIT 5000; COMMIT; -- (to repeat)
+    ```
   * library for schema migration:
     [flyway](https://flywaydb.org/) or
     [liquibase](https://www.liquibase.com/)
     * see [database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
     * see [liquibase vs flyway](https://www.liquibase.com/liquibase-vs-flyway)
     * see [liquibase works with Plain Old SQL](https://www.liquibase.com/blog/plain-sql)
-* schema vs data migration
-  * TODO
+  * [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)
+    * a database contains one or more named schemas, which in turn contain tables. Schemas also contain other kinds of named objects, including data types, functions, and operators
+    * unlike databases, schemas are not rigidly separated: a user can access objects in any of the schemas in the database they are connected to, if they have privileges to do so
+    * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH)
+      * schema search path define order of schemas look for if query does not have schema prefix
+      * `SHOW search_path;` allow to display current schema search path
+      * `SET search_path TO myschema,public;` allow to define schema search path 
 * [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
   * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
   [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
@@ -169,6 +185,8 @@
     * `EXPLAIN ANALYZE`: info about runned query
       * take care: `EXPLAIN ANALYZE` execute query and could update data!
     * see [Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
+  * [SHOW](https://www.postgresql.org/docs/current/sql-show.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
+  * [SET](https://www.postgresql.org/docs/current/sql-set.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
   * ...
 * query tuning
   * use [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) to benchmark query
@@ -181,6 +199,10 @@
   * goal is to identify which steps are expensive
   * existing index might be not used if sequential readings is more performant than lot of random accesses  
 * [Server Programming](https://www.postgresql.org/docs/current/server-programming.html)
+* Other database concepts
+  * [ACID (atomicity, consistency, isolation, durability)](https://en.wikipedia.org/wiki/ACID)
+  * [type of locks](https://www.geeksforgeeks.org/levels-of-locking-in-dbms/)
+  * [isolation levels](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29)
 * Links & Tools
   * https://pg-sql.com/: temporary online Postgres Database
   * [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres) : compilations of links about PostgreSQL
@@ -192,6 +214,7 @@
     * https://ondras.zarovi.cz/sql/demo/ for wiziwig editor
     * [dbdiagram.io](https://dbdiagram.io/home) for code first editor using [DBML](https://www.dbml.org/home/)
   * database version control: [flyway](https://flywaydb.org/), [liquibase](https://www.liquibase.com/)
+  * [Prisma](https://www.prisma.io/) is a Node.js and TypeScript ORM
 
 *(Page mainly started in march 2023)*
 

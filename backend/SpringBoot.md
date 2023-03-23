@@ -49,6 +49,9 @@
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
+* concepts
+  * [spring bean scope](https://www.baeldung.com/spring-bean-scopes)
+  * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),

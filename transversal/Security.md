@@ -26,6 +26,8 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a non
   * [Implement Security Logging and Monitoring](https://owasp.org/www-project-proactive-controls/v3/en/c9-security-logging)
   * [Handle All Errors and Exceptions](https://owasp.org/www-project-proactive-controls/v3/en/c10-errors-exceptions)
 * Non exhausted list of other security risks
+  * [Cross Site Request Forgery (CSRF)](https://owasp.org/www-community/attacks/csrf)
+    is an attack that forces an end user to execute unwanted actions on a web application in which they’re currently authenticated
   * [Unvalidated Redirects and Forwards](https://cheatsheetseries.owasp.org/cheatsheets/Unvalidated_Redirects_and_Forwards_Cheat_Sheet.html)
   * [File Upload Threats](https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html#file-upload-threats)
   * [Denial of Service](https://cheatsheetseries.owasp.org/cheatsheets/Denial_of_Service_Cheat_Sheet.html),
@@ -53,7 +55,9 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a non
   * [auth0](https://auth0.com/) provide open-source libs to implements JWT [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) and an authentification provider
     * [jwks](https://auth0.com/docs/secure/tokens/json-web-tokens/json-web-key-sets) aka JSON Web Key Sets is set of keys containing the public keys used to verify any JSON Web Token (JWT) issued by the authorization server
     * see also [Anatomy of a JWT](https://fusionauth.io/learn/expert-advice/tokens/jwt-components-explained)
+  * [OAuth 2.0](https://oauth.net/2/) protocol for authorization
   * [RBAC](https://en.wikipedia.org/wiki/Role-based_access_control) Role-based access control is normally sufficient authorization for most applications
+  * [symmetric vs asymmetric encryption](https://www.geeksforgeeks.org/difference-between-symmetric-and-asymmetric-key-encryption/)
   * [Secure Core Warrior](https://securecodewarrior.com/): great eLearning Security Platform
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
