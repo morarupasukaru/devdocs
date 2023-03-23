@@ -14,87 +14,42 @@
         [NOT NULL](https://www.postgresql.org/docs/current/ddl-constraints.html#id-1.5.4.6.6),
         [UNIQUE](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-UNIQUE-CONSTRAINTS)
     * [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)
-      * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH) for used schemas during execution of queries without schema prefix
-
-
-
+      * a database contains one or more named schemas, which in turn contain tables. Schemas also contain other kinds of named objects, including data types, functions, and operators
+      * unlike databases, schemas are not rigidly separated: a user can access objects in any of the schemas in the database they are connected to, if they have privileges to do so
+      * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH)
+        define order of schemas look for if query does not have schema prefix
   * [insert, update, delete](https://www.postgresql.org/docs/current/dml.html)  
   * [queries](https://www.postgresql.org/docs/current/queries.html)
-    * TODO
-  * [types](https://www.postgresql.org/docs/current/datatype.html)
-    * TODO
-  * [functions & operators](https://www.postgresql.org/docs/current/functions.html)
-    * TODO
-  * [indexes](https://www.postgresql.org/docs/current/indexes.html)
-    * TODO
-* Concurrency
-  * ACID: 
-    [Atomicity](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ATOMICITY),
-    [Consistency](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-CONSISTENCY),
-    [Isolation](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ISOLATION),
-    [Durability](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-DURABILITY)
-  * [type of locks](https://www.postgresql.org/docs/current/explicit-locking.html)
-  * [transaction isolation](https://www.postgresql.org/docs/current/transaction-iso.html)
-* [Server Programming](https://www.postgresql.org/docs/current/server-programming.html):
-  [functions](https://www.postgresql.org/docs/current/xfunc-sql.html),
-  [triggers](https://www.postgresql.org/docs/current/triggers.html), etc.
-* [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
-  * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
-    [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
-    [UPDATE](https://www.postgresql.org/docs/current/sql-update.html),
-    [DELETE](https://www.postgresql.org/docs/current/sql-delete.html),
-  * transaction handling: [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) (or [BEGIN](https://www.postgresql.org/docs/current/sql-begin.html)), [COMMIT](https://www.postgresql.org/docs/current/sql-commit.html), [ROLLBACK](https://www.postgresql.org/docs/current/sql-rollback.html) 
-  * [DDL / data definition](https://www.postgresql.org/docs/current/ddl.html):
-    * [[CREATE](https://www.postgresql.org/docs/current/sql-createtable.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altertable.html)|[DROP](https://www.postgresql.org/docs/current/sql-droptable.html)]
-      TABLE
-    * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
-        INDEX
-    * [[CREATE OR REPLACE VIEW](https://www.postgresql.org/docs/current/sql-createview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropview.html)]
-        VIEW
-    * [[CREATE](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropmaterializedview.html)|[REFRESH](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)]
-        MATERIALIZED VIEW
-  * [query tuning](https://www.postgresql.org/docs/current/using-explain.html): 
-    * [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html): info about query plan
-    * `EXPLAIN ANALYZE`: info about runned query (take care with update query!)
-  * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH):
-    [SHOW](https://www.postgresql.org/docs/current/sql-show.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH) and [SET](https://www.postgresql.org/docs/current/sql-set.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
-
-
------
-
-
-
-* Concepts
-  * [queries](https://www.postgresql.org/docs/current/queries.html)    
-    * [queries with JOIN](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) (inner join, left outer join, right outer join, full join)
-    * [grouping with GROUP BY and HAVING](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-GROUP)
-    * [sort with ORDER BY](https://www.postgresql.org/docs/current/queries-order.html)
-    * [retrieve a portion of rows with LIMIT and OFFSET](https://www.postgresql.org/docs/current/queries-limit.html)
-    * [combining with UNION [ALL], (INTERSECT, EXCEPT)](https://www.postgresql.org/docs/current/queries-union.html)
-    * [eliminate dupplicate rows with DISTINCT](https://www.postgresql.org/docs/current/queries-select-lists.html#QUERIES-DISTINCT)
-    * [subquery in FROM or JOIN = returns rows](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM)
-      ; must have an alias
-    * [subquery in WHERE = returns values](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-WHERE)
-    * [correlated subqueries](https://en.wikipedia.org/wiki/Correlated_subquery) uses values from the outer query 
-      * subquery may be evaluated once for each row processed by the outer query, it can be slow
-      * correlated subqueries appear in SELECT or WHERE clauses
-      * [subquery in SELECT are called scalar subqueries and returns single value](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-SCALAR-SUBQUERIES)
-    * select without FROM clauses used to returns single value of a subquery,
-      e.g. `SELECT (SELECT xyz FROM ...)`
-    * [select without FROM clauses used as calculator](https://www.postgresql.org/docs/current/queries-overview.html)
-      like `SELECT random();`
+    * [JOIN _tables_](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) : inner join, left outer join, right outer join, full join
+    * [GROUP BY and HAVING _for grouping_](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-GROUP)
+    * [ORDER BY _to sort_](https://www.postgresql.org/docs/current/queries-order.html)
+    * [LIMIT and OFFSET _to retrieve a portion of rows_](https://www.postgresql.org/docs/current/queries-limit.html)
+    * [UNION [ALL], (INTERSECT, EXCEPT) _to combine rows_](https://www.postgresql.org/docs/current/queries-union.html)
+    * [DISTINCT _to eliminate dupplicate_](https://www.postgresql.org/docs/current/queries-select-lists.html#QUERIES-DISTINCT)
+    * subqueries
+      * [... in FROM/JOIN](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) returns rows and MUST have an alias
+      * [... in WHERE](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-WHERE) returns values
+      * ... without FROM clauses 
+        * ... returns single value of a subquery; e.g. `SELECT (SELECT xyz FROM ...)`
+        * ... or are used as [calculator](https://www.postgresql.org/docs/current/queries-overview.html);
+        like `SELECT random()`
+      * ... using values from outer query are 
+        [correlated subqueries](https://en.wikipedia.org/wiki/Correlated_subquery) /
+        [scalar subqueries](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-SCALAR-SUBQUERIES)
+        * correlated subqueries can be slow because they may be evaluated for each row
+        * correlated subqueries appear in SELECT or WHERE clauses
   * [common table expessions (CTE) / WITH queries](https://www.postgresql.org/docs/current/queries-with.html)
-    * `WITH` query always to extract subquery into temporary table that exist just for one query
+    * `WITH` query allows to extract a subquery into temporary table used by the whole query
     * advantages
       * make complex query easier to understand
-      * produce a table that we can refer to anywhere else (clauses)
-      * allow recursive query 
-      * might be more performant: `WITH` query are normally evaluated only once per execution of the parent query, even if they are referred to more than once by the parent query or sibling `WITH` queries
+      * produce a temporary table that we can refer to several times/places in query
+      * allow recursive query
+      * (might be more performant: `WITH` query are normally evaluated only once per execution of the parent query, even if they are referred to more than once by the parent query or sibling `WITH` queries)
     * [recursive common table expessions](https://www.postgresql.org/docs/current/queries-with.html#QUERIES-WITH-RECURSIVE)
       * recursive CTE are quite different and more complex than normal CTE
       * recursive CTE are usefull to parse a tree or graph
     * see also [SQL CTE Explained](https://learnsql.com/blog/what-is-sql-cte/) and [What Is a Recursive CTE in SQL?](https://learnsql.com/blog/sql-recursive-cte/)$
-  * [data types](https://www.postgresql.org/docs/current/datatype.html)
+  * [types](https://www.postgresql.org/docs/current/datatype.html)
     * [numbers](https://www.postgresql.org/docs/current/datatype-numeric.html);
       important types are
       * [serial](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL) for autoincrementing ID/PK
@@ -114,41 +69,49 @@
       user-defined data types
       [composite](https://www.postgresql.org/docs/current/rowtypes.html) and 
       [domain](https://www.postgresql.org/docs/current/domains.html), ...
-  * [type casts](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-TYPE-CASTS) `::`, e.g. `SELECT 10::BOOLEAN` or `SELECT CAST(10 AS BOOLEAN)` (sql conform)   
+  * [type casts](https://www.postgresql.org/docs/current/sql-expressions.html#SQL-SYNTAX-TYPE-CASTS) with `::` or `CAST(...)`
+      * `SELECT 10::BOOLEAN` (PostgreSQL specific)
+      * `SELECT CAST(10 AS BOOLEAN)` (sql standard)
+      * tip: `COALESCE(value::BOOLEAN::INTEGER, 0)` to convert value to [0|1] number that can be used 
+        in CHECK or aggregate functions
   * [functions & operators](https://www.postgresql.org/docs/current/functions.html)
-    * [comparison functions and operators](https://www.postgresql.org/docs/current/functions-comparison.html)
-      like `BETWEEN`
-    * [string functions and operators](https://www.postgresql.org/docs/current/functions-string.html)
-      like `||` for concat
-    * [mathematical functions and operators](https://www.postgresql.org/docs/current/functions-math.html)
-      like 
-      * `^` for exponent
-      * `@` for absolut value
-      * `|/` for square root
-    * [aggregate functions](https://www.postgresql.org/docs/current/functions-aggregate.html)
-      like max, avg, sum
-    * [date/time functions & operators](https://www.postgresql.org/docs/current/functions-datetime.html) like `current_timestamp`, `date_trunc`
-    * [conditional expressions](https://www.postgresql.org/docs/current/functions-conditional.html)
-      like [GREATEST and LEAST](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-GREATEST-LEAST), 
+    * [logical](https://www.postgresql.org/docs/current/functions-logical.html): 
+      `AND`, `OR`, `NOT`
+    * [comparison](https://www.postgresql.org/docs/current/functions-comparison.html):
+      `<`, `>=`, `=`, `<>`, `BETWEEN`, `IS NULL`, `IS TRUE`, etc.
+    * [mathematical](https://www.postgresql.org/docs/current/functions-math.html): 
+      `+`, `*`, `%`, `abs`, `round`, etc.
+    * [string](https://www.postgresql.org/docs/current/functions-string.html): 
+      `||`, `lower`, `substring`, `trim`, etc.
+    * [pattern matching](https://www.postgresql.org/docs/current/functions-matching.html):
+      `LIKE`, etc. 
+    * [data type formatting](https://www.postgresql.org/docs/current/functions-formatting.html):
+      `to_char`, `to_date`, etc.
+    * [date/time](https://www.postgresql.org/docs/current/functions-datetime.html):
+      `+`, `-`, `current_date`, `current_timestamp` (or `now()`), `date_trunc`, etc.
+    * [conditional](https://www.postgresql.org/docs/current/functions-conditional.html):
       [CASE](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-CASE), 
-      [COALESCE](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL)
-      * tip: `COALESCE(value::BOOLEAN::INTEGER, 0)` to convert value to [0|1] number that can be used in CHECK or aggregate functions
-    * [subquery expressions](https://www.postgresql.org/docs/current/functions-subquery.html)
-      like [EXISTS](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-EXISTS),
+      [COALESCE](https://www.postgresql.org/docs/current/functions-conditional.html#FUNCTIONS-COALESCE-NVL-IFNULL), etc.
+    * [aggregate](https://www.postgresql.org/docs/current/functions-aggregate.html):
+      `count`, `max`, `avg`, `sum`, etc.
+    * [subquery expressions](https://www.postgresql.org/docs/current/functions-subquery.html):
+      [EXISTS](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-EXISTS),
       [IN](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-IN),
       [ANY/SOME](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-ANY-SOME),
-      [ALL](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-ALL),
-      [single-row comparison](https://www.postgresql.org/docs/current/functions-subquery.html#id-1.5.8.29.15)
-  * [indexes](https://www.postgresql.org/docs/current/indexes.html)
-    * [index-types](https://www.postgresql.org/docs/current/indexes-types.html): [B-Tree](https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-BTREE) [index type](https://www.postgresql.org/docs/current/indexes-types.html) is 99% used and is for general purpose; see [other index types](https://www.postgresql.org/docs/current/indexes-types.html) if needed
-    * see tips in [examining index usage](https://www.postgresql.org/docs/current/indexes-examine.html) on when to create indexes
-    * PostgreSQL automatically create an index for primary key and UNIQUE constraint (invisible in pgAdmin)
-    * index and foreign key
-      * PostgreSQL does not automatically create an index for foreign key
+      [ALL](https://www.postgresql.org/docs/current/functions-subquery.html#FUNCTIONS-SUBQUERY-ALL), etc.
+    * other: 
+      [sequence manipulation](https://www.postgresql.org/docs/current/functions-sequence.html),
+      [enum](https://www.postgresql.org/docs/current/functions-enum.html),
+      [UUID](https://www.postgresql.org/docs/current/functions-uuid.html),
+      [JSON](https://www.postgresql.org/docs/current/functions-json.html), ...
+
+  * [indexes](https://www.postgresql.org/docs/current/indexes.html) allows to find rows much faster
+    * [B-Tree](https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-BTREE) is most used [index type](https://www.postgresql.org/docs/current/indexes-types.html)
+    * index are automatically created for primary key and UNIQUE constraints but not foreign keys
       * see [Should I Create an Index on Foreign Keys in PostgreSQL?](https://www.percona.com/blog/should-i-create-an-index-on-foreign-keys-in-postgresql/)
-      * and [ARE YOUR FOREIGN KEYS INDEXED?](https://www.cybertec-postgresql.com/en/index-your-foreign-key/)
+      * and [Are your foreign keys indexed?](https://www.cybertec-postgresql.com/en/index-your-foreign-key/)
       <details>
-        <summary>query to find missing index on (click me)</summary>
+        <summary>Click to see a query to find missing index on foreign keys</summary>
 
         ```sql
         SELECT c.conrelid::regclass AS "table",
@@ -182,20 +145,37 @@
         ORDER BY pg_catalog.pg_relation_size(c.conrelid) DESC;
         ```
       </details>
-* [views](https://www.postgresql.org/docs/current/tutorial-views.html)
-  * views allow to reuse query
-  * views allow you to encapsulate the details of the structure of your tables, which might change as your application evolves, behind consistent interfaces
-  * view vs materialized view
-    * views: query is executed every time
-    * materialized views are _caches_; query is executed at specific time to renew the _cache_
-    * materialized views are useful for expensive queries
-    * disadvantage of materialized views: have to be updated _MANUALLY_ with [REFRESH MATERIALIZED VIEW](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)
-* transactions
+  * [views](https://www.postgresql.org/docs/current/tutorial-views.html)
+    allow to reuse query (DRY)
+    * views allow you to encapsulate the details of the structure of your tables, which might change as your application evolves, behind consistent interfaces
+    * view vs materialized view
+      * query is executed every time for view but not for materialized views
+      * materialized views are _caches_ populated manually with [REFRESH MATERIALIZED VIEW](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)
+      * materialized views are useful for expensive queries
+* transactions handling
   * PostgreSQL has autocommit by default
-  * call [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) to disable autocommit
+  * disable autocommit with [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html)
+* query tuning
+  * use [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) to benchmark query
+  * see [planner cost constants](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS) used by query planner
+    * cost of a disk page fetch is 1.0 is used as reference
+  * EXPLAIN provide two costs, e.g. `(cost=left..right )`
+    * left value = _startup_ cost for this step to produce the first row
+    * right value = _total_ cost for this step to produce all rows
+  * goal is to identify which steps are expensive
+  * tip: existing index might be not used if sequential readings is more performant than lot of random accesses (and maybe index could be removed if never used)
+* concurrency
+  * ACID: 
+    [Atomicity](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ATOMICITY),
+    [Consistency](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-CONSISTENCY),
+    [Isolation](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ISOLATION),
+    [Durability](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-DURABILITY)
+  * [type of locks](https://www.postgresql.org/docs/current/explicit-locking.html)
+  * [transaction isolation](https://www.postgresql.org/docs/current/transaction-iso.html)
+  * [CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem)
 * schema/data migration
-  * schema migration file: precise change to make to database and its counterpart to revert the change
-  * schema/data migration file should be done in separate steps (over a few days/weeks) along with changes in applications (consumers/producers), e.g.
+  * schema migration file: precise change to make to database and its counterpart to revert the change (up/down)
+  * **best-practise**: schema and data migration files should be done in separate steps (over a few days/weeks) along with changes in applications (consumers/producers), e.g.
     * step 1: add new column (_schema migration_)
     * step 2: applications write in old/new column
     * step 3: copy values from old to new (_data migration_, might take time)
@@ -212,24 +192,31 @@
     * see [database migrations with Flyway](https://www.baeldung.com/database-migrations-with-flyway)
     * see [liquibase vs flyway](https://www.liquibase.com/liquibase-vs-flyway)
     * see [liquibase works with Plain Old SQL](https://www.liquibase.com/blog/plain-sql)
-  * [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)
-    * a database contains one or more named schemas, which in turn contain tables. Schemas also contain other kinds of named objects, including data types, functions, and operators
-    * unlike databases, schemas are not rigidly separated: a user can access objects in any of the schemas in the database they are connected to, if they have privileges to do so
-    * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH)
-      * schema search path define order of schemas look for if query does not have schema prefix
-      * `SHOW search_path;` allow to display current schema search path
-      * `SET search_path TO myschema,public;` allow to define schema search path 
-* query tuning
-  * use [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) to benchmark query
-  * see [planner cost constants](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS) used by query planner
-    * cost of a disk page fetch is 1.0 is used as reference
-  * explain provide two costs, e.g. `(cost=8.31..1756.11 ...)`
-    * left value = _startup_ cost for this step to produce the first row
-    * right value = _total_ cost for this step to produce all rows
-  * steps of query plan have `(cost=...)`
-  * goal is to identify which steps are expensive
-  * existing index might be not used if sequential readings is more performant than lot of random accesses  
-
+* [server programming](https://www.postgresql.org/docs/current/server-programming.html):
+  [functions](https://www.postgresql.org/docs/current/xfunc-sql.html),
+  [triggers](https://www.postgresql.org/docs/current/triggers.html), etc.
+* [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
+  * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
+    [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
+    [UPDATE](https://www.postgresql.org/docs/current/sql-update.html),
+    [DELETE](https://www.postgresql.org/docs/current/sql-delete.html),
+  * transactions
+   handling: [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) (or [BEGIN](https://www.postgresql.org/docs/current/sql-begin.html)), [COMMIT](https://www.postgresql.org/docs/current/sql-commit.html), [ROLLBACK](https://www.postgresql.org/docs/current/sql-rollback.html) 
+  * [DDL / data definition](https://www.postgresql.org/docs/current/ddl.html):
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-createtable.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altertable.html)|[DROP](https://www.postgresql.org/docs/current/sql-droptable.html)]
+      TABLE
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
+        INDEX
+    * [[CREATE OR REPLACE VIEW](https://www.postgresql.org/docs/current/sql-createview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropview.html)]
+        VIEW
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropmaterializedview.html)|[REFRESH](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)]
+        MATERIALIZED VIEW
+  * [query tuning](https://www.postgresql.org/docs/current/using-explain.html): 
+    * [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html): info about query plan
+    * `EXPLAIN ANALYZE`: info about runned query (take care with update query!)
+  * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH)
+    * [SHOW](https://www.postgresql.org/docs/current/sql-show.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH): allow to display current schema search path
+    * [SET](https://www.postgresql.org/docs/current/sql-set.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH): allow to define schema search path 
 * References
   * [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres) : 
     compilations of links about PostgreSQL
