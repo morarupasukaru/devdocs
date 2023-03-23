@@ -2,16 +2,69 @@
 
 [PostgreSQL](https://www.postgresql.org/) is a powerful, open source object-relational database.
 
-[PostgreSQL Documentation](https://www.postgresql.org/docs/current/index.html)
 * [Tutorial](https://www.postgresql.org/docs/current/tutorial.html)
-* [SQL Language](https://www.postgresql.org/docs/current/sql.html)
-  * [data definition (ddl)](https://www.postgresql.org/docs/current/ddl.html)
+* [Language](https://www.postgresql.org/docs/current/sql.html)
+  * [data definition](https://www.postgresql.org/docs/current/ddl.html)
+    * [table](https://www.postgresql.org/docs/current/ddl-basics.html)
+    * [DEFAULT](https://www.postgresql.org/docs/current/ddl-default.html) column value
     * [constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
       * [PRIMARY KEY](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-PRIMARY-KEYS)
-      * foreign keys with [REFERENCES](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-FK) and `ON DELETE` *referential_action* (see [CREATE TABLE](https://www.postgresql.org/docs/current/sql-createtable.html))
-      * [CHECK](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-CHECK-CONSTRAINTS)
-      * [NOT NULL](https://www.postgresql.org/docs/current/ddl-constraints.html#id-1.5.4.6.6)
-      * [UNIQUE](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-UNIQUE-CONSTRAINTS)
+      * foreign-key with [REFERENCES ... [ON DELETE [NO ACTION |RESTRICT |CASCADE |SET NULL]]](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-FK)
+      * [CHECK](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-CHECK-CONSTRAINTS),
+        [NOT NULL](https://www.postgresql.org/docs/current/ddl-constraints.html#id-1.5.4.6.6),
+        [UNIQUE](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-UNIQUE-CONSTRAINTS)
+    * [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)
+      * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH) for used schemas during execution of queries without schema prefix
+
+
+
+  * [insert, update, delete](https://www.postgresql.org/docs/current/dml.html)  
+  * [queries](https://www.postgresql.org/docs/current/queries.html)
+    * TODO
+  * [types](https://www.postgresql.org/docs/current/datatype.html)
+    * TODO
+  * [functions & operators](https://www.postgresql.org/docs/current/functions.html)
+    * TODO
+  * [indexes](https://www.postgresql.org/docs/current/indexes.html)
+    * TODO
+* Concurrency
+  * ACID: 
+    [Atomicity](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ATOMICITY),
+    [Consistency](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-CONSISTENCY),
+    [Isolation](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ISOLATION),
+    [Durability](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-DURABILITY)
+  * [type of locks](https://www.postgresql.org/docs/current/explicit-locking.html)
+  * [transaction isolation](https://www.postgresql.org/docs/current/transaction-iso.html)
+* [Server Programming](https://www.postgresql.org/docs/current/server-programming.html):
+  [functions](https://www.postgresql.org/docs/current/xfunc-sql.html),
+  [triggers](https://www.postgresql.org/docs/current/triggers.html), etc.
+* [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
+  * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
+    [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
+    [UPDATE](https://www.postgresql.org/docs/current/sql-update.html),
+    [DELETE](https://www.postgresql.org/docs/current/sql-delete.html),
+  * transaction handling: [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) (or [BEGIN](https://www.postgresql.org/docs/current/sql-begin.html)), [COMMIT](https://www.postgresql.org/docs/current/sql-commit.html), [ROLLBACK](https://www.postgresql.org/docs/current/sql-rollback.html) 
+  * [DDL / data definition](https://www.postgresql.org/docs/current/ddl.html):
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-createtable.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altertable.html)|[DROP](https://www.postgresql.org/docs/current/sql-droptable.html)]
+      TABLE
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
+        INDEX
+    * [[CREATE OR REPLACE VIEW](https://www.postgresql.org/docs/current/sql-createview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropview.html)]
+        VIEW
+    * [[CREATE](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropmaterializedview.html)|[REFRESH](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)]
+        MATERIALIZED VIEW
+  * [query tuning](https://www.postgresql.org/docs/current/using-explain.html): 
+    * [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html): info about query plan
+    * `EXPLAIN ANALYZE`: info about runned query (take care with update query!)
+  * [schema search path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH):
+    [SHOW](https://www.postgresql.org/docs/current/sql-show.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH) and [SET](https://www.postgresql.org/docs/current/sql-set.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
+
+
+-----
+
+
+
+* Concepts
   * [queries](https://www.postgresql.org/docs/current/queries.html)    
     * [queries with JOIN](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-FROM) (inner join, left outer join, right outer join, full join)
     * [grouping with GROUP BY and HAVING](https://www.postgresql.org/docs/current/queries-table-expressions.html#QUERIES-GROUP)
@@ -40,7 +93,8 @@
     * [recursive common table expessions](https://www.postgresql.org/docs/current/queries-with.html#QUERIES-WITH-RECURSIVE)
       * recursive CTE are quite different and more complex than normal CTE
       * recursive CTE are usefull to parse a tree or graph
-    * see also [SQL CTE Explained](https://learnsql.com/blog/what-is-sql-cte/) and [What Is a Recursive CTE in SQL?](https://learnsql.com/blog/sql-recursive-cte/)  * [data types](https://www.postgresql.org/docs/current/datatype.html)
+    * see also [SQL CTE Explained](https://learnsql.com/blog/what-is-sql-cte/) and [What Is a Recursive CTE in SQL?](https://learnsql.com/blog/sql-recursive-cte/)$
+  * [data types](https://www.postgresql.org/docs/current/datatype.html)
     * [numbers](https://www.postgresql.org/docs/current/datatype-numeric.html);
       important types are
       * [serial](https://www.postgresql.org/docs/current/datatype-numeric.html#DATATYPE-SERIAL) for autoincrementing ID/PK
@@ -165,29 +219,6 @@
       * schema search path define order of schemas look for if query does not have schema prefix
       * `SHOW search_path;` allow to display current schema search path
       * `SET search_path TO myschema,public;` allow to define schema search path 
-* [SQL Commands](https://www.postgresql.org/docs/current/sql-commands.html)
-  * CRUD: [SELECT](https://www.postgresql.org/docs/current/sql-select.html),
-  [INSERT](https://www.postgresql.org/docs/current/sql-insert.html),
-  [UPDATE](https://www.postgresql.org/docs/current/sql-update.html),
-  [DELETE](https://www.postgresql.org/docs/current/sql-delete.html),
-  * [[CREATE](https://www.postgresql.org/docs/current/sql-createtable.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altertable.html)|[DROP](https://www.postgresql.org/docs/current/sql-droptable.html)]
-  TABLE
-  * [[CREATE](https://www.postgresql.org/docs/current/sql-createindex.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterindex.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropindex.html)]
-    INDEX
-  * [[CREATE](https://www.postgresql.org/docs/current/sql-createview.html)|[ALTER](https://www.postgresql.org/docs/current/sql-alterview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropview.html)]
-    VIEW
-    * `CREATE OR REPLACE VIEW`: if a view of the same name already exists, it is replaced (might be better then `ALTER VIEW`)
-  * [[CREATE](https://www.postgresql.org/docs/current/sql-creatematerializedview.html)|[ALTER](https://www.postgresql.org/docs/current/sql-altermaterializedview.html)|[DROP](https://www.postgresql.org/docs/current/sql-dropmaterializedview.html)|[REFRESH](https://www.postgresql.org/docs/current/sql-refreshmaterializedview.html)]
-     MATERIALIZED VIEW
-  * transaction: [START TRANSACTION](https://www.postgresql.org/docs/current/sql-start-transaction.html) (or [BEGIN](https://www.postgresql.org/docs/current/sql-begin.html)), [COMMIT](https://www.postgresql.org/docs/current/sql-commit.html), [ROLLBACK](https://www.postgresql.org/docs/current/sql-rollback.html) 
-  * [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) for benchmarking query
-    * `EXPLAIN`: info about query plan
-    * `EXPLAIN ANALYZE`: info about runned query
-      * take care: `EXPLAIN ANALYZE` execute query and could update data!
-    * see [Using EXPLAIN](https://www.postgresql.org/docs/current/using-explain.html)
-  * [SHOW](https://www.postgresql.org/docs/current/sql-show.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
-  * [SET](https://www.postgresql.org/docs/current/sql-set.html) [search_path](https://www.postgresql.org/docs/current/ddl-schemas.html#DDL-SCHEMAS-PATH);
-  * ...
 * query tuning
   * use [EXPLAIN](https://www.postgresql.org/docs/current/sql-explain.html) to benchmark query
   * see [planner cost constants](https://www.postgresql.org/docs/current/runtime-config-query.html#RUNTIME-CONFIG-QUERY-CONSTANTS) used by query planner
@@ -198,23 +229,20 @@
   * steps of query plan have `(cost=...)`
   * goal is to identify which steps are expensive
   * existing index might be not used if sequential readings is more performant than lot of random accesses  
-* [Server Programming](https://www.postgresql.org/docs/current/server-programming.html)
-* Other database concepts
-  * [ACID (atomicity, consistency, isolation, durability)](https://en.wikipedia.org/wiki/ACID)
-  * [type of locks](https://www.geeksforgeeks.org/levels-of-locking-in-dbms/)
-  * [isolation levels](https://en.wikipedia.org/wiki/Isolation_%28database_systems%29)
+
+* References
+  * [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres) : 
+    compilations of links about PostgreSQL
 * Links & Tools
   * https://pg-sql.com/: temporary online Postgres Database
-  * [Awesome Postgres](https://github.com/dhamaniasad/awesome-postgres) : compilations of links about PostgreSQL
-  * db tools
-    * [dbeaver](https://dbeaver.io/) : Universal Database Tool
-    * [pgAdmin](https://www.pgadmin.org/) : PostgreSQL Database Tool (provided also in [PostgreSQL installer](https://www.postgresql.org/download/))
-    * [diagrams.net](https://www.diagrams.net/) : diagrams editor
-  * sql schema designers
-    * https://ondras.zarovi.cz/sql/demo/ for wiziwig editor
-    * [dbdiagram.io](https://dbdiagram.io/home) for code first editor using [DBML](https://www.dbml.org/home/)
-  * database version control: [flyway](https://flywaydb.org/), [liquibase](https://www.liquibase.com/)
-  * [Prisma](https://www.prisma.io/) is a Node.js and TypeScript ORM
+  * [dbeaver](https://dbeaver.io/) or 
+    [pgAdmin](https://www.pgadmin.org/) as db tool
+  * https://ondras.zarovi.cz/sql/demo/ or  
+    [dbdiagram.io](https://dbdiagram.io/home) as sql schema designers
+    * see [DBML](https://www.dbml.org/home/)
+  * [flyway](https://flywaydb.org/) or
+    [liquibase](https://www.liquibase.com/) 
+    as database version control / for schema migration
 
 *(Page mainly started in march 2023)*
 

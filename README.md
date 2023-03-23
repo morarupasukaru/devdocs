@@ -69,16 +69,22 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to audit website performance, accessibility, etc.
   * [Storybook](https://storybook.js.org/) for building UI components and pages in isolation
   * [Stencil](frontend/Stencil.md) as web components compiler
-  
-## Alternatives
+  * [pg-sql](https://pg-sql.com/) as temporary online Postgres Database
+  * https://ondras.zarovi.cz/sql/demo/ or
+    [dbdiagram.io](https://dbdiagram.io/home) for sql schema designers
 
+
+## Alternatives
 * frontend frameworks:
   [Svelte](frontend/Svelte.md),
   [Next.js](frontend/NextJS.md) (based on [React](frontend/ReactJS.md)),
   [Remix](frontend/RemixJS.md) (based on [React](frontend/ReactJS.md)),
   ([JSF](frontend/JSF.md) _legacy_)
 * application state management: [NgRx](frontend/NgRx.md)
-* JPA: [JOOQ](https://www.jooq.org/), [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc)
+* JPA: 
+  [JOOQ](https://www.jooq.org/), 
+  [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
+  [Prisma](https://www.prisma.io/) (Typescript)
 * backend frameworks:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
@@ -102,7 +108,9 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [Feather](https://feathericons.com/),
   [Line Awesome](https://icons8.com/line-awesome),
   [fontawesome](https://fontawesome.com/),
-  [Material Design Icons](https://pictogrammers.com/library/mdi/),[Noun Project](https://thenounproject.com/) for icons
+  [Material Design Icons](https://pictogrammers.com/library/mdi/),
+  [Noun Project](https://thenounproject.com/),
+  [React Icons](https://react-icons.github.io/react-icons) for icons
 * [Star Wars API](https://pipedream.com/apps/swapi) to do some quick testing
 
 
