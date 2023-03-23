@@ -104,7 +104,6 @@
       [enum](https://www.postgresql.org/docs/current/functions-enum.html),
       [UUID](https://www.postgresql.org/docs/current/functions-uuid.html),
       [JSON](https://www.postgresql.org/docs/current/functions-json.html), ...
-
   * [indexes](https://www.postgresql.org/docs/current/indexes.html) allows to find rows much faster
     * [B-Tree](https://www.postgresql.org/docs/current/indexes-types.html#INDEXES-TYPES-BTREE) is most used [index type](https://www.postgresql.org/docs/current/indexes-types.html)
     * index are automatically created for primary key and UNIQUE constraints but not foreign keys
