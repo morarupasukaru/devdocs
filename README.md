@@ -45,7 +45,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [agile manifesto](https://agilemanifesto.org/),
   [kafka](backend/Kafka.md),
   [clean code rules](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29),
-  cloud computing (_TODO_)
+  _cloud computing_
 * *servers*  
   * [tomcat](https://tomcat.apache.org/),
     [jetty](https://www.eclipse.org/jetty/),
