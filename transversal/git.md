@@ -2,13 +2,20 @@
 
 [Git](https://git-scm.com/) is a popuplar version control system.
 
-TODO
+* concepts
+  * working directory vs repository
+  * [branchs](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell): master (default), feature branchs, develop, bugfixes branchs, etc.
+
 * link to commands
+  * TODO
 * best-practises
+  * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
+
+* references
+  * online [Pro Git book](https://git-scm.com/book/en/v2)
 
 
 
-## Github
+*(Page mainly started in April 2023)*
 
-[Github](https://github.com/) 
-is a cloud hosting for software development and version control using Git.
+[*Go to parent page*](../README.md)

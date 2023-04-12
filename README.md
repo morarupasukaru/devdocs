@@ -22,7 +22,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language)), 
   [PostgreSQL](backend/PostgreSQL.md) db
 * *continuous integration* with [jenkins](https://www.jenkins.io/)
-  * [git](https://git-scm.com/) with [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching model
+  * [Git](transversal/Git.md) with [GitHub](transversal/GitHub.md)
   * [maven](https://maven.apache.org/), [gradle](https://gradle.org/) and [npm](https://www.npmjs.com/) as build process and dependencies management; see [gradle vs maven](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)
   * linters: [ESLint](https://eslint.org/), 
     [stylelint](https://stylelint.io/), 
