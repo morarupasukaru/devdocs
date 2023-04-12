@@ -2,6 +2,11 @@
 
 [Git](https://git-scm.com/) is a popuplar version control system.
 
+TODO
+* link to commands
+* best-practises
+
+
 
 ## Github
 
