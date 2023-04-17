@@ -16,6 +16,6 @@
 
 
 
-*(Page mainly started in April 2023)*
+*(Page mainly written in April 2023)*
 
 [*Go to parent page*](../README.md)
