@@ -1,6 +1,6 @@
 # Git
 
-[Git](https://git-scm.com/) is a popuplar version control system.
+[Git](https://git-scm.com/) is a popular version control system.
 
 * concepts
   * working directory vs repository
