@@ -33,9 +33,6 @@
     to list, create, or delete branches
   * [git merge](https://git-scm.com/docs/git-merge)
     to join two or more development histories together
-
-* link to commands
-  * TODO
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) 
 
