@@ -40,7 +40,7 @@
     to join two or more development histories together
   * [git ls-files](https://git-scm.com/docs/git-ls-files)
     to show information about files in the index and the working tree
-  * delete 
+  * delete commands
     * [git rm](https://git-scm.com/docs/git-rm)
       to remove files from the index after having deleted from working directory
     * [git restore](https://git-scm.com/docs/git-restore)
@@ -52,10 +52,15 @@
     * [git restore --staged filename](https://git-scm.com/docs/git-restore)
       to remove file(s) from staging area
       * `git restore --staged .` to remove all file from staging area
-    * [git reset [--soft|--hard] HEAD~1](https://git-scm.com/docs/git-reset)  
+    * [git reset [--soft|--hard] HEAD~1](https://git-scm.com/docs/git-reset)
       to undo latest commit
     * [git branch -D branchname](https://git-scm.com/docs/git-branch)
       to remove branch
+  * [git stash [push]](https://git-scm.com/docs/git-stash)
+    to saves your local modifications away
+    * `git stash list` list the modifications stashed away
+    * `git stash show` inspect the stashed modifications
+    * `git stash apply` restore modification
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
 * [references](https://git-scm.com/docs)
