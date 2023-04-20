@@ -66,8 +66,10 @@
 * [references](https://git-scm.com/docs)
   * [tutorial](https://git-scm.com/docs/gittutorial)
   * online [Pro Git book](https://git-scm.com/book/en/v2)
-
-
+* TODO
+  * [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
+  * git merge vs [git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) ?
+  * [git hooks](https://githooks.com/) useful?
 
 *(Page mainly written in April 2023)*
 
