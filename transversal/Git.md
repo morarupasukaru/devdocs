@@ -36,8 +36,22 @@
     to create/switch branches (similar to git checkout but for branches only)    
   * [git branch](https://git-scm.com/docs/git-branch)
     to list, create, or delete branches
-  * [git merge](https://git-scm.com/docs/git-merge)
-    to join two or more development histories together
+  * merge commands  
+    * [git merge](https://git-scm.com/docs/git-merge)
+      to join two or more development histories together
+      * `git merge --abort` to abort a merge (in case of conflict)
+      * most common [merge strategies](https://git-scm.com/docs/merge-strategies):
+        * [fast-forward](https://git-scm.com/docs/git-merge#_fast_forward_merge) happens by merging on a branch having no changes; only the HEAD is updated (without any additional commit)
+        * recursive merge (non fast-forward): happens by merging on a branch having already commits. An additional commit is required
+      * see [merge conflicts](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging#_advanced_merging)  
+    * [git-rebase](https://git-scm.com/docs/git-rebase)
+      change the base (parent commit) & reapply commits
+      * rebase is not recommended for shared repositories because it rewrite the history
+      * see [git merge vs rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+    * [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
+      to apply the changes introduced by some existing commits
+  * [git diff](https://git-scm.com/docs/git-diff)
+    to show changes between commits, commit and working tree, etc
   * [git ls-files](https://git-scm.com/docs/git-ls-files)
     to show information about files in the index and the working tree
   * delete commands
@@ -63,6 +77,16 @@
     * `git stash list` list the modifications stashed away
     * `git stash show` inspect the stashed modifications
   * [git reflog](https://git-scm.com/docs/git-reflog) display reference logs; usefull id of lost commits
+  * [git tag](https://git-scm.com/docs/git-tag)
+    create, list, delete or verify a tag; e.g. a release
+  * remote commands
+    * [git remote](https://git-scm.com/docs/git-remote)
+      to manage set of "remote" repositories
+      * `git remote add name url` to add an alias of the URL of the remote repository (origin is often used as default name)
+    * [git push](https://git-scm.com/docs/git-push)
+      to update remote with local changes
+    * [git pull](https://git-scm.com/docs/git-pull)
+      to incorporates changes from a remote repository into the current branch
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
 * [references](https://git-scm.com/docs)
@@ -70,7 +94,6 @@
   * online [Pro Git book](https://git-scm.com/book/en/v2)
   * [getting started](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
 * TODO
-  * git merge vs [git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) ?
   * [git hooks](https://githooks.com/) useful?
 
 *(Page mainly written in April 2023)*
