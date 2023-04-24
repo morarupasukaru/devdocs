@@ -58,16 +58,18 @@
       to remove branch
   * [git stash [push]](https://git-scm.com/docs/git-stash)
     to saves your local modifications away
+    * `git stash pop` removes the changes from your stash and reapplies them to your working copy
+    * `git stash apply` reapply the changes to your working copy and keep them in your stash
     * `git stash list` list the modifications stashed away
     * `git stash show` inspect the stashed modifications
-    * `git stash apply` restore modification
+  * [git reflog](https://git-scm.com/docs/git-reflog) display reference logs; usefull id of lost commits
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
 * [references](https://git-scm.com/docs)
   * [tutorial](https://git-scm.com/docs/gittutorial)
   * online [Pro Git book](https://git-scm.com/book/en/v2)
+  * [getting started](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
 * TODO
-  * [git stash](https://www.atlassian.com/git/tutorials/saving-changes/git-stash)
   * git merge vs [git rebase](https://www.atlassian.com/git/tutorials/rewriting-history/git-rebase) ?
   * [git hooks](https://githooks.com/) useful?
 
