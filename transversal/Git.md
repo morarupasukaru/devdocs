@@ -10,6 +10,8 @@
   * [.gitignore](https://git-scm.com/docs/gitignore)
     to specifies intentionally untracked files to ignore
   * staging area: is a place to record things that will be commit
+  * remote-tracking branch; is a local read-only branch that is connected to a remote branch
+    * when you push and pull on that branch, it automatically pushes and pulls to the remote branch that it is connected with
 * commands
   * [git init](https://git-scm.com/docs/git-init) 
     to create an empty Git repository
@@ -87,6 +89,8 @@
       to update remote with local changes
     * [git pull](https://git-scm.com/docs/git-pull)
       to incorporates changes from a remote repository into the current branch
+    * [git branch -a](https://git-scm.com/docs/git-branch)
+      to list both remote-tracking branches and local branches.
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
 * [references](https://git-scm.com/docs)
