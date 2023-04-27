@@ -10,13 +10,20 @@
   * [.gitignore](https://git-scm.com/docs/gitignore)
     to specifies intentionally untracked files to ignore
   * staging area: is a place to record things that will be commit
-  * remote-tracking branch; is a local read-only branch that is connected to a remote branch
-    * when you push and pull on that branch, it automatically pushes and pulls to the remote branch that it is connected with
+  * branch types
+    * _local_ branch:
+      branch on your machine only
+    * _remote_ branch:
+      branch in remote repository (e.g. GitHub)
+    * _remote-tracking_ branch:
+      local (read-only) copy of connected remote branch
+      ; use `git fetch` to update with remote states
+    * _local-tracking_ branch:
+      editable branch on your machine connected to remote branch
+      ; use `git pull` / `push` to get/update remote branch
 * commands
   * [git init](https://git-scm.com/docs/git-init) 
     to create an empty Git repository
-  * [git clone](https://git-scm.com/docs/git-clone) 
-    to clone a repository into a new directory
   * [git config](https://git-scm.com/docs/git-config) 
     to get and set repository or global options
     * e.g. `git config --global user.email "yourEmail@xyz.com"`
@@ -85,12 +92,26 @@
     * [git remote](https://git-scm.com/docs/git-remote)
       to manage set of "remote" repositories
       * `git remote add name url` to add an alias of the URL of the remote repository (origin is often used as default name)
+      * `git remote` to show servers
+    * [git clone](https://git-scm.com/docs/git-clone) 
+      to clone a repository into a new directory
+    * [git branch -a](https://git-scm.com/docs/git-branch)
+      to list all local, local/remote-tracking branches
+    * [git branch --track](https://git-scm.com/docs/git-branch)
+      `feature-remote origin/feature-remote`
+      to create a local-tracking branch
     * [git push](https://git-scm.com/docs/git-push)
       to update remote with local changes
+      * [git push](https://git-scm.com/docs/git-push) `-u origin feature-local` to push local branch to remote repository (non existing yet remote) and make it as local-tracking branch
     * [git pull](https://git-scm.com/docs/git-pull)
       to incorporates changes from a remote repository into the current branch
-    * [git branch -a](https://git-scm.com/docs/git-branch)
-      to list both remote-tracking branches and local branches.
+    * [git fetch](https://git-scm.com/docs/git-fetch)
+      to update remote tracking branches (local) by downloading
+      states on remote repository (e.g. new branches);
+      * `git fetch` does not update local branches, use `git pull` to do it
+      * [git branch --delete --remotes](https://git-scm.com/docs/git-branch) `origin/feature` to delete remote-tracking branch
+      * [git push](https://git-scm.com/docs/git-push) `origin --delete feature`
+        to delete remote branch (and remote-tracking branch as well)
 * best-practises
   * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
 * [references](https://git-scm.com/docs)
