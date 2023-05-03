@@ -21,6 +21,8 @@
     * _local-tracking_ branch:
       editable branch on your machine connected to remote branch
       ; use `git pull` / `push` to get/update remote branch
+  * [githooks](https://git-scm.com/docs/githooks)
+    are programs you can place in a hooks directory to trigger actions at certain points in git’s execution; see [Git Hooks guide](https://githooks.com/)
 * commands
   * [git init](https://git-scm.com/docs/git-init) 
     to create an empty Git repository
@@ -126,8 +128,6 @@
   * [tutorial](https://git-scm.com/docs/gittutorial)
   * online [Pro Git book](https://git-scm.com/book/en/v2)
   * [getting started](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
-* TODO
-  * [git hooks](https://githooks.com/) useful?
 
 *(Page mainly written in April 2023)*
 
