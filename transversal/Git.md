@@ -113,7 +113,10 @@
       * [git push](https://git-scm.com/docs/git-push) `origin --delete feature`
         to delete remote branch (and remote-tracking branch as well)
 * best-practises
-  * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow
+  * [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) workflow mainly used with entreprise enviroment, having bugfix branches, release, etc.
+  * [Trunk-based development](https://www.atlassian.com/continuous-delivery/continuous-integration/trunk-based-development)
+    where developers merge small, frequent updates to a core “trunk” or main branch to is part of continuous integration/[continuous deployment](https://www.atlassian.com/continuous-delivery); [feature toggle/flag](https://www.atlassian.com/continuous-delivery/principles/feature-flags) are used to prevent to use new feature too early
+  * [Forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) TODO
 * [references](https://git-scm.com/docs)
   * [tutorial](https://git-scm.com/docs/gittutorial)
   * online [Pro Git book](https://git-scm.com/book/en/v2)
