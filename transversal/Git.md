@@ -119,7 +119,12 @@
     where developers merge small, frequent updates to a core “trunk” or main branch
     * use continuous integration/[continuous deployment](https://www.atlassian.com/continuous-delivery)
     * [feature toggle/flag](https://www.atlassian.com/continuous-delivery/principles/feature-flags) are used to prevent to activate new feature too early
-  * [Forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) TODO
+  * [Forking workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-workflow) used in open source project in GitHub
+    * contributor does not clone the remote repository 
+    * contributor fork/make a copy of the remote repository in his own GitHub account
+    * every contributor has a local and a remote repository that is a copy/a fork of the source remote repository
+    * contributor create pull-requests of new feature/bugfix to source remote repository
+    * TODO
 * [references](https://git-scm.com/docs)
   * [tutorial](https://git-scm.com/docs/gittutorial)
   * online [Pro Git book](https://git-scm.com/book/en/v2)
