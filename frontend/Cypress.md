@@ -1,6 +1,6 @@
 # Cypress
 
-[Cypress](https://www.cypress.io/)
+[Cypress](https://www.cypress.io/) is test automation tool & framework for e2e or component tests.
 
 TODO
 
