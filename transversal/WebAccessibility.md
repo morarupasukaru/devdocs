@@ -59,6 +59,7 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * [Digital Accessibility Foundations](https://www.w3.org/WAI/courses/foundations-course/) WAI course
 * Tools  
   * [How to Meet WCAG (Quick Reference)](https://www.w3.org/WAI/WCAG21/quickref/)
+     or [WCAG 2 Checklist](https://webaim.org/standards/wcag/checklist)
   * [WAVE (Web Accessibility Evaluation Tool)](https://wave.webaim.org/)
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) to audit accessibilty (and performance, spa, etc. of a website)
     * [unlighthouse](https://unlighthouse.dev/) to scan your entire site with Google Lighthouse
