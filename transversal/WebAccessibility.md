@@ -65,7 +65,7 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * [NVDA](https://www.unimelb.edu.au/accessibility/tools/testing-web-pages-with-nvda) screen reader for Windows
   * [Apple VoiceOver](https://www.apple.com/accessibility/vision/) screen reader for Apple
   * [Colour Contrast Analyser](https://developer.paciellogroup.com/color-contrast-checker/)
-  * see also [tools recommanded by CivicActions](https://accessibility.civicactions.com/guide/tools)
+  * see also [tools recommanded by CivicActions](https://accessibility.civicactions.com/guide/tools) and [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/)
 
 *(Page mainly written in 06.2023)*
 
