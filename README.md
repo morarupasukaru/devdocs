@@ -31,7 +31,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * testing: 
     [Selenium](https://www.selenium.dev/) (e2e), 
     [Puppeteer](https://pptr.dev/) (e2e), 
-    [Cypress](https://www.cypress.io/) (e2e),
+    [Cypress](https://www.cypress.io/) (and [cypress-realworld-app](https://github.com/cypress-io/cypress-realworld-app)) (e2e),
     [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/) (java),
     [Jasmine](https://jasmine.github.io/) (js), 
     [Jest](https://jestjs.io/) (js)
