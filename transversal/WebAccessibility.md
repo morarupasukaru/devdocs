@@ -48,6 +48,7 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * [Tutorials about Design & Develop](https://www.w3.org/WAI/tutorials/)
   * [Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
     for [ARIA](https://www.w3.org/WAI/standards-guidelines/aria/)
+    * see also [Read Me First](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/) practises
 * Other documentations
   * [Accessibility in Angular](https://angular.io/guide/accessibility)
   * [Accessibility on MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
