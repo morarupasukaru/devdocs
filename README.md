@@ -53,7 +53,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * [http-server](https://github.com/http-party/http-server)
     to serve static web apps (frontends)   
   * [json-server](https://github.com/typicode/json-server) to fake REST API
-  * [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en)
 * *tools*
   * [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
     [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/) for documentation
