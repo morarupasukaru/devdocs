@@ -51,6 +51,8 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
     * see also [Read Me First](https://www.w3.org/WAI/ARIA/apg/practices/read-me-first/) practises
 * Tips
   * use [skip links](https://webaim.org/techniques/skipnav/), see also [removing headaches from focus management](https://developer.chrome.com/blog/focus-start-point/)
+  * [roving tabindex for managing focus within the radio group](https://www.w3.org/WAI/ARIA/apg/patterns/radio/examples/radio/)
+  * [Document.activeElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/activeElement) returns the Element within the DOM that currently has focus.
 * Other documentations
   * [Accessibility in Angular](https://angular.io/guide/accessibility)
   * [Accessibility on MDN web docs](https://developer.mozilla.org/en-US/docs/Learn/Accessibility)
