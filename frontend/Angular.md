@@ -3,7 +3,6 @@
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-TODO: add sections to 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 15 (11.2022)
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
