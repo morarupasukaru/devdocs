@@ -3,11 +3,13 @@
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
+TODO: add sections to 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 15 (11.2022)
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
   * [@NgModule](#NgModule) bundle a set of components together
+  * [Standalone components](https://angular.io/guide/standalone-components)
   * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
     additional features like dynamic changes
