@@ -9,6 +9,7 @@
      locally, etc.
   * [@NgModule](#NgModule) bundle a set of components together
   * [Standalone components](https://angular.io/guide/standalone-components)
+    to reducing the need for [@NgModule](#NgModule)s and simplify applications
   * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
     additional features like dynamic changes
