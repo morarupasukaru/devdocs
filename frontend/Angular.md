@@ -18,6 +18,7 @@
     in different use cases
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
+  * [Signals](https://angular.io/guide/signals) as more performant alternative automatic change detection (preview Angular 16)
 * [Other features](#Other-features)
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
