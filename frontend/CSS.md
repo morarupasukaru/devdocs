@@ -97,8 +97,7 @@
       [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
     * others visual properties:
       [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color),
-      [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color),
-      [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image),
+      [background](https://developer.mozilla.org/en-US/docs/Web/CSS/background),
       [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border),
       [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius),
       [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
