@@ -32,7 +32,7 @@
     and [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
     * hints
       * use `* { box-sizing: border-box; }` to ease lay out elements (see [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing))
-      * use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to sets whether an element is treated as a [block or inline box](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout)
+      * use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to sets whether an element is treated as a [block, inline or inline-block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout)
       * see [inline](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) vs
         [block-level](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) HTML elements
   * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
