@@ -139,6 +139,7 @@
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
   * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements; 
     see also [BEM 101](https://css-tricks.com/bem-101/)
+  * [CSS Modules](https://github.com/css-modules/css-modules) is a process in a build step that changes class names and selectors to be scoped 
 * Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
