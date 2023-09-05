@@ -30,7 +30,7 @@
     [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) values
   * [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
     and [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
-    * hint: use [box-sizing: border-box;](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing) to ease lay out elements
+    * hint: use `* { [box-sizing: border-box;](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing)}` to ease lay out elements
   * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
