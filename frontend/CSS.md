@@ -35,6 +35,7 @@
       * use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to sets whether an element is treated as a [block, inline or inline-block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout)
       * see [inline](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) vs
         [block-level](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) HTML elements
+      * see [Understanding the CSS box model for inline elements](https://hacks.mozilla.org/2015/03/understanding-inline-box-model/)
   * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
