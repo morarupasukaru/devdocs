@@ -74,6 +74,7 @@
     [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
     * hint: use `:not()` with caution to exclude certain elements; it's better to write "positive" rules
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+  * [!important](https://developer.mozilla.org/en-US/docs/Web/CSS/important) not be used if possible, see [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
   * properties like
     * layout properties:
       [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing),
