@@ -178,7 +178,7 @@
     [Picnic CSS](https://picnicss.com/),
     [Skeleton](http://getskeleton.com/)
   * utility frameworks: [tailwind css](https://tailwindcss.com/)
-  * feature detection: [Modernizr](https://modernizr.com/)
+  * feature detection: [Modernizr](https://modernizr.com/) or manual check with [caniuse](https://caniuse.com/)
   * css validation:
     [stylelint](https://stylelint.io/),
     [w3c CSS validation service](https://jigsaw.w3.org/css-validator/)
