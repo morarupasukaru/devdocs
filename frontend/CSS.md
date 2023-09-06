@@ -95,7 +95,7 @@
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
       [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content),
       [visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
-      * hint: `margin: auto` horizontally center the element within its container
+      * hint: `margin: auto` [horizontally center](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#horizontal_centering) the element within its container
     * [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) shorthand property
     * text formatting:
       [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align),
