@@ -53,7 +53,7 @@
         and [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox)
       * [a complete guide to css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
-    * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats) with [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) property
+    * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats) with [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) properties
     * [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
       see also [position property's article](https://academind.com/tutorials/the-position-property) 
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) css property
