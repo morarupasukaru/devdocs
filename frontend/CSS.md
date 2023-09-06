@@ -70,7 +70,8 @@
     [:enabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled),
     [:disabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled),
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
-    [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+    [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked),
+    [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
   * properties like
     * layout properties:
