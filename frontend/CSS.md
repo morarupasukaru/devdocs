@@ -71,7 +71,8 @@
     [:disabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled),
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
     [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked),
-    [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not) (it's better to avoid using `:not()` and writing "positive" rules)
+    [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+    * hints: it's better to avoid using `:not()` and writing "positive" rules
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
   * properties like
     * layout properties:
