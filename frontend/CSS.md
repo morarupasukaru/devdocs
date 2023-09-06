@@ -72,7 +72,7 @@
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
     [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked),
     [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
-    * hints: it's better to avoid using `:not()` and writing "positive" rules
+    * hint: use `:not()` with caution to exclude certain elements; it's better to write "positive" rules
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
   * properties like
     * layout properties:
