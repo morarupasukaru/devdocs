@@ -94,7 +94,8 @@
       [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order),
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
       [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content),
-      [visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility)
+      [visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility),
+      [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
       * hint: `margin: auto` [horizontally center](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#horizontal_centering) the element within its container
     * [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) shorthand property
     * text formatting:
