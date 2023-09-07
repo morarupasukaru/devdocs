@@ -114,7 +114,8 @@
       [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius),
       [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
       [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow),
-      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
+      [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
     * animation properties:
       * [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
         used by [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) 
