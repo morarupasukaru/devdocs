@@ -144,6 +144,8 @@
       [responsive images](https://web.dev/responsive-images/),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
       [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+    * see [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) HTML meta tag should be normally
+      `<meta name="viewport" content="width=device-width, initial-scale=1" />`
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
   * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
