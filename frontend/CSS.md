@@ -91,6 +91,7 @@
       [justify-content](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content),
       [align-items](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items),
       [flex](https://developer.mozilla.org/en-US/docs/Web/CSS/flex),
+      [flex-basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis),
       [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow),
       [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order),
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
