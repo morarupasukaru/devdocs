@@ -159,8 +159,7 @@
   * [vendor prefix](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
     * see [What CSS to prefix?](http://shouldiprefix.com/),
     * see [autoprefixer](https://github.com/postcss/autoprefixer) tool
-* Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
-    as alternatives to vanilla CSS with additional features like
+* Preprocessor languages with [Sass](https://sass-lang.com/) ease development of CSS with features like:
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/guide/#nesting) and [nested properties](https://sass-lang.com/documentation/style-rules/declarations/#nesting)
       reduce repetition of same selectors
@@ -173,6 +172,7 @@
     * [mixins](https://sass-lang.com/guide/#mixins) to groups CSS declarations that you want to reuse throughout your site
     * [parent Selector](https://sass-lang.com/documentation/style-rules/parent-selector/#advanced-nesting) `&` to refer to the outer selector in nesting
     * [scss](https://sass-lang.com/documentation/syntax/#scss) syntax as css (for .scss files) or [indented syntax](https://sass-lang.com/documentation/syntax/#the-indented-syntax) s (for .sass files)
+    * [Less](https://lesscss.org/) (based on Javascript) is an alternative to [Sass](https://sass-lang.com/) (based on Ruby)
 * Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
