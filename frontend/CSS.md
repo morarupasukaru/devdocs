@@ -22,6 +22,7 @@
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
     * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
     * [web safe fonts](https://www.cssfontstack.com/)
+  * [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and
     [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
