@@ -159,11 +159,20 @@
   * [vendor prefix](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
     * see [What CSS to prefix?](http://shouldiprefix.com/),
     * see [autoprefixer](https://github.com/postcss/autoprefixer) tool
-* Preprocessor 
-  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
-    alternatives to vanilla CSS with additional features like
+* Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
+    as alternatives to vanilla CSS with additional features like
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
-    * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
+    * [nesting](https://sass-lang.com/guide/#nesting) and [nested properties](https://sass-lang.com/documentation/style-rules/declarations/#nesting)
+      reduce repetition of same selectors
+    * [maps](https://sass-lang.com/documentation/values/maps/#look-up-a-value) to have key-value pairs (e.g. colors)
+      * other [helper functions](https://sass-lang.com/documentation/modules/) in modules like [map](https://sass-lang.com/documentation/modules/map/)
+    * [partials](https://sass-lang.com/guide/#partials) contain little snippets of CSS that you can include in other Sass files (not generated into a CSS file)
+    * [operators](https://sass-lang.com/guide/#operators) like +, -, *, etc.
+    * [@media](https://sass-lang.com/documentation/at-rules/css/#media) allow nest media query (to keep media query close to impacted elements)
+    * [inheritance](https://sass-lang.com/guide/#inheritance) with [@extend](https://sass-lang.com/documentation/at-rules/extend/) to share logic
+    * [mixins](https://sass-lang.com/guide/#mixins) to groups CSS declarations that you want to reuse throughout your site
+    * [parent Selector](https://sass-lang.com/documentation/style-rules/parent-selector/#advanced-nesting) `&` to refer to the outer selector in nesting
+    * [scss](https://sass-lang.com/documentation/syntax/#scss) syntax as css (for .scss files) or [indented syntax](https://sass-lang.com/documentation/syntax/#the-indented-syntax) s (for .sass files)
 * Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
