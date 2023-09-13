@@ -18,6 +18,7 @@
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
     [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media),
+    [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports),
     [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) or
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
     * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
@@ -151,13 +152,18 @@
       `<meta name="viewport" content="width=device-width, initial-scale=1" />`
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
+  * [BEM (Block Element Modifier)](http://getbem.com/) as methodology to name/organize elements; 
+    * see also [BEM 101](https://css-tricks.com/bem-101/)
+    * see [BEM introduction](https://getbem.com/introduction/)
+  * [CSS Modules](https://github.com/css-modules/css-modules) is a process in a build step that changes class names and selectors to be scoped 
+  * [vendor prefix](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
+    * see [What CSS to prefix?](http://shouldiprefix.com/),
+    * see [autoprefixer](https://github.com/postcss/autoprefixer) tool
+* Preprocessor 
   * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
     alternatives to vanilla CSS with additional features like
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
     * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements; 
-    see also [BEM 101](https://css-tricks.com/bem-101/)
-  * [CSS Modules](https://github.com/css-modules/css-modules) is a process in a build step that changes class names and selectors to be scoped 
 * Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
@@ -180,21 +186,23 @@
   * [Web Almanac](https://almanac.httparchive.org/en/2022/) with reports of most used features of websites on the web
   * [Vanilla CSS vs Frameworks](https://academind.com/tutorials/vanilla-css-vs-frameworks)
 * Tools / Frameworks / Libs
-  * frameworks:
+  * css frameworks:
     [Bootstrap](https://getbootstrap.com/),
     [Materialize](https://materializecss.com/),
     [Pure.css](https://purecss.io/),
     [Picnic CSS](https://picnicss.com/),
     [Skeleton](http://getskeleton.com/)
   * utility frameworks: [tailwind css](https://tailwindcss.com/)
-  * feature detection: [Modernizr](https://modernizr.com/) or manual check with [caniuse](https://caniuse.com/)
+  * polyfills load on demand with [Modernizr](https://modernizr.com/)
+    * see [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+  * manual check of browser support with [caniuse](https://caniuse.com/)
   * css validation:
     [stylelint](https://stylelint.io/),
     [w3c CSS validation service](https://jigsaw.w3.org/css-validator/)
   * css minification:
     [purgecss](https://purgecss.com/),
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
-  * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
+  * reset-library like [Normalize.css](https://necolas.github.io/normalize.css/) to makes browsers render all elements the same
 
 *(Page started in 2020; links checked on 13.03.2023)*
 
