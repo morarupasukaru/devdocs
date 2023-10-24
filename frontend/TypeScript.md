@@ -32,6 +32,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
     allow you to specify the exact value a string must have (enum-like); 
     * e.g. `type Alignment = "left" | "right" | "center";`
+    * see [How to list the possible values of a string literal union type in TypeScript](https://danielbarta.com/literal-iteration-typescript/)
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
