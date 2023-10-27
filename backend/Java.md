@@ -1,4 +1,4 @@
-![image](https://github.com/morarupasukaru/devdocs/assets/17615821/bbcdc6cb-ec35-4cde-b5aa-9b2e84a06f50)# Java
+# Java
 
 [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is a popular general-purpose language.
 
