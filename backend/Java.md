@@ -21,6 +21,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [Java language updates](https://docs.oracle.com/en/java/javase/19/language/java-language-changes.html) (from Java SE 9)
   * [JDK 19 Documentation](https://docs.oracle.com/en/java/javase/19/)
   * [JDK 19 Tool Specifications](https://docs.oracle.com/en/java/javase/19/docs/specs/man/index.html)
+  * [The Java Version Almanac](https://javaalmanac.io/)
   * [Specification for the Standard Doclet](https://docs.oracle.com/en/java/javase/19/docs/specs/javadoc/doc-comment-spec.html) (javadoc)
     * [How to Write Doc Comments for the Javadoc Tool](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#:~:text=A%20doc%20comment%20is%20written,%40return%20%2C%20and%20%40see%20.) 
   * [The Java Tutorials](https://docs.oracle.com/javase/tutorial/) (based on JDK 8)

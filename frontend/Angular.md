@@ -8,6 +8,8 @@
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
   * [@NgModule](#NgModule) bundle a set of components together
+  * [Standalone components](https://angular.io/guide/standalone-components)
+    to reducing the need for [@NgModule](#NgModule)s and simplify applications
   * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
     additional features like dynamic changes
@@ -16,6 +18,8 @@
     in different use cases
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
+  * [Signals](https://angular.io/guide/signals) as more performant alternative automatic change detection (preview Angular 16)
+    * see also [Why didn't the Angular team just use RxJS instead of Signals?](https://www.youtube.com/watch?v=iA6iyoantuo)
 * [Other features](#Other-features)
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach

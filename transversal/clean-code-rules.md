@@ -58,6 +58,6 @@ that is easy to understand.
   * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
   * [Java formatting and linting in Visual Studio Code](https://code.visualstudio.com/docs/java/java-linting)
 
-*(Page mainly started in March 2023)*
+*(Page written in March 2023)*
 
 [*Go to parent page*](../README.md)

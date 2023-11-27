@@ -18,9 +18,12 @@
   * [at-rules](https://developer.mozilla.org/en-US/docs/Web/CSS/At-rule) like
     [@import](https://developer.mozilla.org/en-US/docs/Web/CSS/@import),
     [@media](https://developer.mozilla.org/en-US/docs/Web/CSS/@media),
+    [@supports](https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports),
     [@keyframes](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes) or
     [@font-face](https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face)
     * see [google fonts](https://fonts.google.com/) to easy embed font (@font-face used internally)
+    * [web safe fonts](https://www.cssfontstack.com/)
+  * [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)
   * [media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries)
   * [selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors) and
     [combinators](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators)
@@ -30,6 +33,12 @@
     [actual](https://developer.mozilla.org/en-US/docs/Web/CSS/actual_value) values
   * [box model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
     and [margin collapsing](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing)
+    * hints
+      * use `* { box-sizing: border-box; }` to ease lay out elements (see [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing))
+      * use [display](https://developer.mozilla.org/en-US/docs/Web/CSS/display) to sets whether an element is treated as a [block, inline or inline-block](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_flow_layout)
+      * see [inline](https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements) vs
+        [block-level](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements) HTML elements
+      * see [Understanding the CSS box model for inline elements](https://hacks.mozilla.org/2015/03/understanding-inline-box-model/)
   * [containing block](https://developer.mozilla.org/en-US/docs/Web/CSS/Containing_block)
   * [stacking](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning/Understanding_z_index/The_stacking_context)
     and [block formatting](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context) contexts
@@ -47,7 +56,7 @@
         and [grid vs flexbox](https://academind.com/tutorials/css-grid-vs-flexbox)
       * [a complete guide to css grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
       * [gridgarden](https://github.com/thomaspark/gridgarden/) learning game
-    * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats)
+    * [floats](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Floats) with [float](https://developer.mozilla.org/en-US/docs/Web/CSS/float) and [clear](https://developer.mozilla.org/en-US/docs/Web/CSS/clear) properties
     * [positioned layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Positioning),
       see also [position property's article](https://academind.com/tutorials/the-position-property) 
   * [pseudo-classes](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) css property
@@ -64,8 +73,11 @@
     [:enabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:enabled),
     [:disabled](https://developer.mozilla.org/en-US/docs/Web/CSS/:disabled),
     [:indeterminate](https://developer.mozilla.org/en-US/docs/Web/CSS/:indeterminate),
-    [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked)
+    [:checked](https://developer.mozilla.org/en-US/docs/Web/CSS/:checked),
+    [:not(...)](https://developer.mozilla.org/en-US/docs/Web/CSS/:not)
+    * hint: use `:not()` with caution to exclude certain elements; it's better to write "positive" rules
   * [pseudo-elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements)
+  * [!important](https://developer.mozilla.org/en-US/docs/Web/CSS/important) not be used if possible, see [When Using !important is The Right Choice](https://css-tricks.com/when-using-important-is-the-right-choice/)
   * properties like
     * layout properties:
       [box-sizing](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing),
@@ -84,7 +96,10 @@
       [flex-flow](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow),
       [order](https://developer.mozilla.org/en-US/docs/Web/CSS/order),
       [align-self](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self),
-      [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+      [align-content](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content),
+      [visibility](https://developer.mozilla.org/en-US/docs/Web/CSS/visibility),
+      [overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+      * hint: `margin: auto` [horizontally center](https://developer.mozilla.org/en-US/docs/Web/CSS/margin#horizontal_centering) the element within its container
     * [font](https://developer.mozilla.org/en-US/docs/Web/CSS/font) shorthand property
     * text formatting:
       [text-align](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align),
@@ -97,13 +112,14 @@
       [text-transform](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
     * others visual properties:
       [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color),
-      [background-color](https://developer.mozilla.org/en-US/docs/Web/CSS/background-color),
-      [background-image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image),
+      [background](https://developer.mozilla.org/en-US/docs/Web/CSS/background),
       [border](https://developer.mozilla.org/en-US/docs/Web/CSS/border),
       [border-radius](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius),
       [box-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow),
       [text-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow),
-      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+      [transform](https://developer.mozilla.org/en-US/docs/Web/CSS/transform),
+      [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter),
+      [outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
     * animation properties:
       * [transition](https://developer.mozilla.org/en-US/docs/Web/CSS/transition) 
         used by [CSS Transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions) 
@@ -132,14 +148,31 @@
       [responsive images](https://web.dev/responsive-images/),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
       [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
+    * see [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) HTML meta tag should be normally
+      `<meta name="viewport" content="width=device-width, initial-scale=1" />`
   * [Mobile-first design](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first#google_searches_and_mobile_preference)
     to design websites for mobile (small screens) first and adapt then to desktop (larger screens)
-  * Preprocessor languages [Sass](https://sass-lang.com/) or [Less](https://lesscss.org/)
-    alternatives to vanilla CSS with additional features like
+  * [BEM (Block Element Modifier)](http://getbem.com/) as methodology to name/organize elements; 
+    * see also [BEM 101](https://css-tricks.com/bem-101/)
+    * see [BEM introduction](https://getbem.com/introduction/)
+  * [CSS Modules](https://github.com/css-modules/css-modules) is a process in a build step that changes class names and selectors to be scoped 
+  * [vendor prefix](https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix)
+    * see [What CSS to prefix?](http://shouldiprefix.com/),
+    * see [autoprefixer](https://github.com/postcss/autoprefixer) tool
+* Preprocessor languages with [Sass](https://sass-lang.com/) ease development of CSS with features like:
     * [variables](https://sass-lang.com/documentation/variables) allow defining constants to reduce repetition
-    * [nesting](https://sass-lang.com/documentation/style-rules#nesting) reduce repetition of same selectors
-  * [BEM - Block Element Modifier](http://getbem.com/) as methodology to name/organize elements; 
-    see also [BEM 101](https://css-tricks.com/bem-101/)
+    * [nesting](https://sass-lang.com/guide/#nesting) and [nested properties](https://sass-lang.com/documentation/style-rules/declarations/#nesting)
+      reduce repetition of same selectors
+    * [maps](https://sass-lang.com/documentation/values/maps/#look-up-a-value) to have key-value pairs (e.g. colors)
+      * other [helper functions](https://sass-lang.com/documentation/modules/) in modules like [map](https://sass-lang.com/documentation/modules/map/)
+    * [partials](https://sass-lang.com/guide/#partials) contain little snippets of CSS that you can include in other Sass files (not generated into a CSS file)
+    * [operators](https://sass-lang.com/guide/#operators) like +, -, *, etc.
+    * [@media](https://sass-lang.com/documentation/at-rules/css/#media) allow nest media query (to keep media query close to impacted elements)
+    * [inheritance](https://sass-lang.com/guide/#inheritance) with [@extend](https://sass-lang.com/documentation/at-rules/extend/) to share logic
+    * [mixins](https://sass-lang.com/guide/#mixins) to groups CSS declarations that you want to reuse throughout your site
+    * [parent Selector](https://sass-lang.com/documentation/style-rules/parent-selector/#advanced-nesting) `&` to refer to the outer selector in nesting
+    * [scss](https://sass-lang.com/documentation/syntax/#scss) syntax as css (for .scss files) or [indented syntax](https://sass-lang.com/documentation/syntax/#the-indented-syntax) s (for .sass files)
+    * [Less](https://lesscss.org/) (based on Javascript) is an alternative to [Sass](https://sass-lang.com/) (based on Ruby)
 * Tutorials
   * [CSS basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics) 
     of [Getting started with the web](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web) (MDN)
@@ -162,21 +195,23 @@
   * [Web Almanac](https://almanac.httparchive.org/en/2022/) with reports of most used features of websites on the web
   * [Vanilla CSS vs Frameworks](https://academind.com/tutorials/vanilla-css-vs-frameworks)
 * Tools / Frameworks / Libs
-  * frameworks:
+  * css frameworks:
     [Bootstrap](https://getbootstrap.com/),
     [Materialize](https://materializecss.com/),
     [Pure.css](https://purecss.io/),
     [Picnic CSS](https://picnicss.com/),
     [Skeleton](http://getskeleton.com/)
-  * utility frameworks: [tailwind css](https://tailwindcss.com/)
-  * feature detection: [Modernizr](https://modernizr.com/)
+  * utility frameworks like [tailwind css](https://tailwindcss.com/) as compromise to css frameworks (no control) and vanilla css (all todo)
+  * polyfills load on demand with [Modernizr](https://modernizr.com/)
+    * see [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
+  * manual check of browser support with [caniuse](https://caniuse.com/)
   * css validation:
     [stylelint](https://stylelint.io/),
     [w3c CSS validation service](https://jigsaw.w3.org/css-validator/)
   * css minification:
     [purgecss](https://purgecss.com/),
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
-  * css normalize: [Normalize.css](https://necolas.github.io/normalize.css/)
+  * reset-library like [Normalize.css](https://necolas.github.io/normalize.css/) to makes browsers render all elements the same
 
 *(Page started in 2020; links checked on 13.03.2023)*
 

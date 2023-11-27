@@ -22,7 +22,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language)), 
   [PostgreSQL](backend/PostgreSQL.md) db
 * *continuous integration* with [jenkins](https://www.jenkins.io/)
-  * [git](https://git-scm.com/) with [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) branching model
+  * [Git](transversal/Git.md) with [Github](https://github.com/)
   * [maven](https://maven.apache.org/), [gradle](https://gradle.org/) and [npm](https://www.npmjs.com/) as build process and dependencies management; see [gradle vs maven](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/)
   * linters: [ESLint](https://eslint.org/), 
     [stylelint](https://stylelint.io/), 
@@ -30,8 +30,9 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
     [PMD](https://pmd.github.io/)
   * testing: 
     [Selenium](https://www.selenium.dev/) (e2e), 
-    [Puppeteer](https://pptr.dev/) (e2e), 
-    [Cypress](https://www.cypress.io/) (e2e),
+    [Puppeteer](https://pptr.dev/) (e2e),
+    [Playwright](https://playwright.dev/),
+    [Cypress](https://www.cypress.io/) (and [cypress-realworld-app](https://github.com/cypress-io/cypress-realworld-app)) (e2e),
     [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/) (java),
     [Jasmine](https://jasmine.github.io/) (js), 
     [Jest](https://jestjs.io/) (js)
@@ -113,13 +114,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [React Icons](https://react-icons.github.io/react-icons) for icons
 * [Star Wars API](https://pipedream.com/apps/swapi) to do some quick testing
 
-
-## Links
-* [state of JS 2022](https://2022.stateofjs.com/en-US/)
-* [state of CSS 2022](https://2022.stateofcss.com/en-US)
-* [state of frontend 2022](https://tsh.io/state-of-frontend/)
-* [2022 javaScript rising stars](https://risingstars.js.org/2022/en)
-* [web almanac 2022](https://almanac.httparchive.org/en/2022/)
-
-
-*(last update march 2023; links checked on 13.02.2023)*
+*(last update August 2023; links checked on 13.02.2023)*
