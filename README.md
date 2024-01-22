@@ -46,13 +46,6 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [agile manifesto](https://agilemanifesto.org/),
   [kafka](backend/Kafka.md),
   [clean code rules](transversal/clean-code-rules.md)
-* *servers*  
-  * [tomcat](https://tomcat.apache.org/),
-    [jetty](https://www.eclipse.org/jetty/),
-    [undertow](https://undertow.io/) as java web containers
-  * [http-server](https://github.com/http-party/http-server)
-    to serve static web apps (frontends)   
-  * [json-server](https://github.com/typicode/json-server) to fake REST API
 * *tools*
   * [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) or
     [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/) for documentation
@@ -73,44 +66,50 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * https://ondras.zarovi.cz/sql/demo/ or
     [dbdiagram.io](https://dbdiagram.io/home) for sql schema designers
 
+## Resources
 
-## Alternatives
-* frontend frameworks:
-  [Svelte](frontend/Svelte.md),
-  [Next.js](frontend/NextJS.md) (based on [React](frontend/ReactJS.md)),
-  [Remix](frontend/RemixJS.md) (based on [React](frontend/ReactJS.md)),
-  ([JSF](frontend/JSF.md) _legacy_)
+* api
+  * [GraphQL](backend/GraphQL.md) as alternatives to REST
+  * [json-server](https://github.com/typicode/json-server) as fake REST API
 * application state management: [NgRx](frontend/NgRx.md)
-* JPA: 
-  [JOOQ](https://www.jooq.org/), 
-  [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
-  [Prisma](https://www.prisma.io/) (Typescript)
-* backend frameworks:
-  [Quarkus](https://quarkus.io/),
-  [Micronaut](https://micronaut.io/),
-  [Dropwizard](https://www.dropwizard.io/en/latest/),
-  [NodeJS](https://nodejs.org/) (JS), 
-  [Deno](https://deno.land/) (JS)
-  * see [comparing Spring Boot alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
-* JVMs: [graalvm](https://www.graalvm.org/)
-* webstacks: [JAMStack](frontend/JAMStack.md) 
-* databases: 
-  [MongoDB](https://www.mongodb.com/docs/manual/) (nosql), [Elasticsearch](backend/Elasticsearch.md) (nosql),
-  [hsql](http://hsqldb.org/) (in-memory), 
-  [H2](https://www.h2database.com/html/main.html) (in-memory),
-  [Apache Derby](https://db.apache.org/derby/) (in-memory)
-* REST API: [GraphQL](backend/GraphQL.md)
-
-
-## Assets
-* [unsplash.com](https://unsplash.com/) for images
-* [heroicons](https://heroicons.com/),
-  [Feather](https://feathericons.com/),
-  [Line Awesome](https://icons8.com/line-awesome),
-  [fontawesome](https://fontawesome.com/),
+* databases
+  * in-memory relational:
+    [hsql](http://hsqldb.org/),
+    [H2](https://www.h2database.com/html/main.html),
+    [Apache Derby](https://db.apache.org/derby/)
+  * nosql:
+    [MongoDB](https://www.mongodb.com/docs/manual/),
+    [Elasticsearch](backend/Elasticsearch.md)
+* frameworks
+  * backend:
+    [Quarkus](https://quarkus.io/),
+    [Micronaut](https://micronaut.io/),
+    [Dropwizard](https://www.dropwizard.io/en/latest/),
+    [NodeJS](https://nodejs.org/) (JS),
+    [Deno](https://deno.land/) (JS)
+  * frontend:
+    [Svelte](frontend/Svelte.md),
+    [Next.js](frontend/NextJS.md),
+    [Remix](frontend/RemixJS.md),
+    [React](frontend/ReactJS.md)
+  * webstacks: [JAMStack](frontend/JAMStack.md)
+* http servers
+  * java:
+    [tomcat](https://tomcat.apache.org/),
+    [jetty](https://www.eclipse.org/jetty/),
+    [undertow](https://undertow.io/)
+  * other:
+    [http-server](https://github.com/http-party/http-server),
+    [nginx](https://nginx.org/en/)
+* icons: [heroicons](https://heroicons.com/), [Feather](https://feathericons.com/),
   [Material Design Icons](https://pictogrammers.com/library/mdi/),
-  [Noun Project](https://thenounproject.com/),
-  [React Icons](https://react-icons.github.io/react-icons) for icons
-* [Star Wars API](https://pipedream.com/apps/swapi) to do some quick testing
+  [React Icons](https://react-icons.github.io/react-icons)
+* images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
+* orm: [JOOQ](https://www.jooq.org/),
+  [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
+  [Prisma](https://www.prisma.io/) (TS) as alternatives to JPA
+* vm: [graalvm](https://www.graalvm.org/)
 
-*(last update August 2023; links checked on 22.01.2024)*
+(see also [archived topics](./archive/archive.md))
+
+*(last update January 2024; links checked on 22.01.2024)*
