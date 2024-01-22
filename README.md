@@ -66,7 +66,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   * https://ondras.zarovi.cz/sql/demo/ or
     [dbdiagram.io](https://dbdiagram.io/home) for sql schema designers
 
-## Resources
+## Other topics
 
 * api
   * [GraphQL](backend/GraphQL.md) as alternatives to REST
