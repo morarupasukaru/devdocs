@@ -45,8 +45,7 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [security](transversal/Security.md) ,
   [agile manifesto](https://agilemanifesto.org/),
   [kafka](backend/Kafka.md),
-  [clean code rules](transversal/clean-code-rules.md),
-  _cloud computing_
+  [clean code rules](transversal/clean-code-rules.md)
 * *servers*  
   * [tomcat](https://tomcat.apache.org/),
     [jetty](https://www.eclipse.org/jetty/),
@@ -114,4 +113,4 @@ Webstack based on [Angular](https://angular.io/) & [Spring Boot](https://spring.
   [React Icons](https://react-icons.github.io/react-icons) for icons
 * [Star Wars API](https://pipedream.com/apps/swapi) to do some quick testing
 
-*(last update August 2023; links checked on 13.02.2023)*
+*(last update August 2023; links checked on 22.01.2024)*
