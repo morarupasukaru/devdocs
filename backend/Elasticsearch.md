@@ -140,6 +140,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * course [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
   * [OpenSearch](https://www.opensearch.org) is a fork of version 7.10.2 of the Elasticsearch because new releases of Elasticsearch are under private license with limitations
   * [elasticsearch-head](http://mobz.github.io/elasticsearch-head/): web front end for for Elasticsearch
+  * [download Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and install it as Windows service
 
 *(Page mainly written in july 2021; links checked on 07.02.2023)*
 
