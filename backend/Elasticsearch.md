@@ -6,7 +6,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
 *Disclaimer: this document cover not all features of ElasticSearch*
 
 * Concepts
-  * Elasticsearch is part of **[Elastic Stack](https://www.elastic.co/what-is/elk-stack)** ; the stack provide:
+  * Elasticsearch is part of **[Elastic Stack](https://www.elastic.co/what-is/elk-stack)**; the stack provide:
     * [Elasticsearch](https://www.elastic.co/elasticsearch/), a scallable search engine
     * [Kibana](https://www.elastic.co/kibana/), a Web UI for searching and visualizing
     * [Logstash](https://www.elastic.co/guide/en/logstash/current/introduction.html) and [Beats](https://www.elastic.co/beats/) to feed data into Elasticsearch
@@ -18,7 +18,8 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       ```
     * ... or with high level client API's like [Java API Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html)
   * **documents** are the data to search (like db row); they have an unique ID, a type and can be text or JSON data
-  * **indices** provide search on documents (like db table); they have [**mapping**](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) (schema definition) and **inverted indices** to provide full-text search
+  * **indices** provide search on documents (like db table); 
+    they have [**mapping**](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) (schema definition) and **inverted indices** to provide full-text search
     * only one type of document can be stored in an index
   * [**inverted index**](https://www.geeksforgeeks.org/inverted-index/): terms of documents are splitted and inverted index contains occurences of terms in documents to provide full-text searches (inverted index quickly map search terms to documents)
   * **term frequency**: how often a term appear in a document
