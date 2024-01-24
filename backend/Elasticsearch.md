@@ -5,11 +5,6 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
 
 *Disclaimer: this document cover not all features of ElasticSearch*
 
-* Install
-  * [Download Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and install it as Windows service
-  * or install Elasticsearch on [LTS Ubuntu Server](https://ubuntu.com/download) 
-  with [VirtualBox](https://www.virtualbox.org/) on Windows: see [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/) course and the [Setup Instructions](https://sundog-education.com/elasticsearch/)
-  * (use SSH or [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/) to access virtual OS: `ssh username@127.0.0.1 -p 22`)
 * Concepts
   * Elasticsearch is part of **[Elastic Stack](https://www.elastic.co/what-is/elk-stack)** ; the stack provide:
     * [Elasticsearch](https://www.elastic.co/elasticsearch/), a scallable search engine
