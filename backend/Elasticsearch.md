@@ -17,11 +17,11 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
       curl -H 'Content-Type: application/json' -X[GET|POST|PUT|DELETE] <URL> -d '<BODY>`
       ```
     * ... or with high level client API's like [Java API Client](https://www.elastic.co/guide/en/elasticsearch/client/java-api-client/current/index.html)
-  * **documents** are the data to search (like db row); they have an unique ID, a type and can be text or JSON data
+  * **documents** are the data to search (like db row); they have a unique ID, a type and can be text or JSON data
   * **indices** provide search on documents (like db table); 
     they have [**mapping**](https://www.elastic.co/guide/en/elasticsearch/reference/current/mapping.html) (schema definition) and **inverted indices** to provide full-text search
     * only one type of document can be stored in an index
-  * [**inverted index**](https://www.geeksforgeeks.org/inverted-index/): terms of documents are splitted and inverted index contains occurences of terms in documents to provide full-text searches (inverted index quickly map search terms to documents)
+  * [**inverted index**](https://www.geeksforgeeks.org/inverted-index/): terms of documents are split and inverted index contains occurences of terms in documents to provide full-text searches (inverted index quickly map search terms to documents)
   * **term frequency**: how often a term appear in a document
   * **document frequency**: how often a term appears in all documents
   * **term relevance**: term *frequency / document frequency* measure the relevance of a term in a document (frequent terms like 'the' won't have a high relevance)
@@ -140,7 +140,7 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * [Elasticsearch Guide](https://www.elastic.co/guide/en/elasticsearch/reference/current/index.html)
   * course [Elasticsearch 8 and the Elastic Stack: In Depth and Hands On](https://www.udemy.com/course/elasticsearch-7-and-elastic-stack/)
   * [OpenSearch](https://www.opensearch.org) is a fork of version 7.10.2 of the Elasticsearch because new releases of Elasticsearch are under private license with limitations
-  * [elasticsearch-head](http://mobz.github.io/elasticsearch-head/): web front end for for Elasticsearch
+  * [elasticsearch-head](http://mobz.github.io/elasticsearch-head/): web front end for Elasticsearch
   * [download Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and install it as Windows service
 
 *(Page mainly written in july 2021; links checked on 07.02.2023)*
