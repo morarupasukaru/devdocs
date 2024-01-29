@@ -1,5 +1,13 @@
 # Micro-frontends
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 *Micro-frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
 
 * Concepts

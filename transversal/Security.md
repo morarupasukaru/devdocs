@@ -1,5 +1,13 @@
 # Security
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a nonprofit foundation
   that works to improve the security of software
 

@@ -1,5 +1,13 @@
 # NgRx
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [NgRx](https://ngrx.io/), [Redux](https://redux.js.org/),
 [ngxs](https://www.ngxs.io/), [akita](https://github.com/salesforce/akita) are used to manage application state
 (see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.))

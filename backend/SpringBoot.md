@@ -1,5 +1,13 @@
 # Spring Boot
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Spring Boot](https://spring.io/projects/spring-boot#learn) makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 
 * [Spring Initializr](https://start.spring.io/) : wizard to initialize a Spring Boot application

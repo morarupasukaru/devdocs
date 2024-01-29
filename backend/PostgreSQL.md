@@ -1,5 +1,13 @@
 # PostgreSQL
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [PostgreSQL](https://www.postgresql.org/) is a powerful, open source object-relational database.
 
 * [Tutorial](https://www.postgresql.org/docs/current/tutorial.html)

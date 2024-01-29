@@ -1,5 +1,13 @@
 # Web Components
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) is used to develop custom web elements
 
 * [Native Web Components](#Native-Web-Components)

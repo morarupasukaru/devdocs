@@ -1,5 +1,13 @@
 # Git
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Git](https://git-scm.com/) is a popular version control system.
 
 * concepts

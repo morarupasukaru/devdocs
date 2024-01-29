@@ -1,5 +1,13 @@
 # Clean Code
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Clean code](https://de.wikipedia.org/wiki/Clean_Code)
 is about writing uncomplex readable and meaningfull code 
 that is easy to understand.

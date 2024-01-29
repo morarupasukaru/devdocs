@@ -1,5 +1,13 @@
 # Cascading Style Sheets
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 

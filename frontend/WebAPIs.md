@@ -1,5 +1,13 @@
 # Web APIs
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) to develop standard web applications.
 
 * [**DOM - Document Object Model**](#dom---document-object-model): 

@@ -1,5 +1,13 @@
 # Elasticsearch
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Elasticsearch](https://github.com/elastic/elasticsearch)
 is a search engine based on the [Lucene](https://lucene.apache.org/) library providing RESTful API. 
 

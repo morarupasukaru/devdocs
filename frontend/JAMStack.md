@@ -1,5 +1,13 @@
 # JAMStack
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [JAMStack](https://jamstack.org/) is "a modern web development architecture based on client-side 
 JavaScript, reusable APIs, and prebuilt Markup (static HTML files)"
 

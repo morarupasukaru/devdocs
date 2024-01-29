@@ -1,5 +1,13 @@
 # Stencil
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Stencil](https://stenciljs.com/docs/introduction) is a compiler that generates Web Components
 in plain JavaScript.
 

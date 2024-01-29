@@ -1,5 +1,13 @@
 # UX Design
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 Compilations of links about UX design
 
 * Catalogues

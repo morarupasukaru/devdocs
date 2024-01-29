@@ -1,5 +1,13 @@
 # Web Accessibility
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 Web Accessibility (A11y) means that websites are accessible to everyone regardless of disability. 
 
 * Concepts

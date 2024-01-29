@@ -1,5 +1,13 @@
 # Remix
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Remix](https://remix.run/) is a [React](./ReactJS.md) full stack web framework like [Next.js](./NextJS.md)
 
 * Remix vs [Next.js](./NextJS.md)

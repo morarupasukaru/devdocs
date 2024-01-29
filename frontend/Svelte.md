@@ -1,5 +1,13 @@
 # Svelte
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Svelte](https://svelte.dev/) ease development of SPA web applications and provide an interesting
 alternative to popular framework like Angular.
 

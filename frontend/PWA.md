@@ -1,5 +1,13 @@
 # Progressive Web App
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Progressive Web App (PWA)](https://web.dev/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
 
 * PWA is a bundle of technologies

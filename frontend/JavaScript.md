@@ -1,5 +1,13 @@
 # Javascript
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
 

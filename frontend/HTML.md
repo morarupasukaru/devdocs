@@ -1,5 +1,13 @@
 # Hypertext Markup Language
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Hypertext Markup Language) defines the 
 meaning and structure of web content. 
 "Hypertext" refers to links that connect web pages to one another, either within a single website or 

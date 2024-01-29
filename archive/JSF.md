@@ -1,5 +1,13 @@
 # JSF
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java.
 
 * Getting Started: 

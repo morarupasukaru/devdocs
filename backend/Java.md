@@ -1,5 +1,13 @@
 # Java
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is a popular general-purpose language.
 
 This document try to summarize best of Java to develop REST APIs (or batches).

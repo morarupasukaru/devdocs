@@ -1,5 +1,13 @@
 # Next.js
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [Next.js](https://nextjs.org/) is a framework to ease development of [React](./ReactJS.md) 
 web applications.
 

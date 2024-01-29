@@ -1,5 +1,13 @@
 # RxJS
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [RxJS](https://rxjs.dev/guide/overview) (Reactive Extensions for JavaScript) is a library for reactive 
 programming using observables that makes it easier to compose asynchronous or callback-based code.
 

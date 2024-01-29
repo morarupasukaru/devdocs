@@ -1,5 +1,13 @@
 # Frontend testing
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 Compilation of links about frontend testing
 
 * test libraries

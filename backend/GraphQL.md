@@ -1,5 +1,13 @@
 # GraphQL
 
+----
+TODO
+* solve error found by IDEA (e.g. typo)
+* read page & correct if needed
+* check links
+* update date of verification
+----
+
 [GraphQL](https://graphql.org/) 
 is a query language for APIs as alternative to SOAP and REST APIs
 that prioritizes giving clients exactly the data they request and no more.
