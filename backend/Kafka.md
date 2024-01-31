@@ -106,8 +106,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
 * APIs
   * [producer API](https://kafka.apache.org/documentation/#producerapi) 
     allows applications to send streams of data to topics in the Kafka cluster
-    * see example in javadocs of [KafkaProducer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
-    * see [ProducerConfig.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/producer/ProducerConfig.html)
+    * see example in javadocs of [KafkaProducer.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/producer/KafkaProducer.html)
+    * see [ProducerConfig.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/producer/ProducerConfig.html)
     and related [explanations](http://kafka.apache.org/documentation.html#producerconfigs)
       * [enable.idempotence](https://kafka.apache.org/documentation/#producerconfigs_enable.idempotence) to have
         an idempotent producer (avoid dupplicate of data)
@@ -117,8 +117,8 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
         [linger.ms](https://kafka.apache.org/documentation/#producerconfigs_linger.ms) having impact on batch processing
   * [consumer API](https://kafka.apache.org/documentation/#consumerapi) 
     allows applications to read streams of data from topics in the Kafka cluster
-    * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
-    * see [ConsumerConfig.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/ConsumerConfig.html)
+    * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+    * see [ConsumerConfig.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/consumer/ConsumerConfig.html)
       and related [explanation](https://kafka.apache.org/documentation/#consumerconfigs)
       * [auto.offset.reset](https://kafka.apache.org/documentation/#consumerconfigs_auto.offset.reset) to specify consumer offset reset behaviour
     * consumers are polling new data from topics (polling can be configured with 
@@ -130,7 +130,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
     * consumer offset commit strategies
       * [enable.auto.commit](https://kafka.apache.org/documentation/#consumerconfigs_enable.auto.commit) = true & synchronous processing of batches
       * [enable.auto.commit](https://kafka.apache.org/documentation/#consumerconfigs_enable.auto.commit) = false & manual commit of offsets
-      * see examples of javadocs of [KafkaConsumer.java](https://kafka.apache.org/34/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
+      * see examples of javadocs of [KafkaConsumer.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
   * [connect API](https://kafka.apache.org/documentation/#connectapi)
     simplify reading/writing of data but re-using working out-of-box connectors for various sources or sinks.
     * normally user won't dev custom connectors but use a pre-built connectors without writing code
