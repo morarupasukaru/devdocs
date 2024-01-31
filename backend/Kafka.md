@@ -39,7 +39,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
       * wait leader broker acknowledgment (limited data loss; acks=1)
       * wait leader and replicas brokers acknowledgment (no data loss; acks=all)
   * **message keys**: producers can send a key (any type) with the message (is optional)
-    * if key is null, data is sent to brokers in round robin logic 
+    * if key is null, data is sent to brokers in round-robin logic 
     * if key is not null, all messages of that key will be sent to the same partition
     * typical use case: ensure order of messages of a given entity are ordered (e.g. transactions of given 
       banking account)
@@ -81,7 +81,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
       * replicator factor = 3 is good (1 broker can be down for maintenance and second unexceptelly)
       * as long as the number of partitions for a topic remains unchanged, the same key will always go the same
       partition
-  * **client bi-directional compatibility**: older client can talk to newer broker or newer client can talk to older broker
+  * **client bidirectional compatibility**: older client can talk to newer broker or newer client can talk to older broker
     * see [article](https://www.confluent.io/blog/upgrading-apache-kafka-clients-just-got-easier)
     * always use the latest client library version if you can
   * **schema registry**
