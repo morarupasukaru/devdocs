@@ -1,13 +1,5 @@
 # Kafka
 
-----
-TODO
-* solve error found by IDEA (e.g. typo)
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Apache Kafka](https://kafka.apache.org/) is an open-source distributed event streaming platform.
 Kafka allow to decouple data streams from target systems (db, emails, logs, etc.).
 
@@ -115,7 +107,6 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
         compression of data
       * [batch.size](https://kafka.apache.org/documentation/#producerconfigs_batch.size) and
         [linger.ms](https://kafka.apache.org/documentation/#producerconfigs_linger.ms) having impact on batch processing
-  * TODO check from here
   * [consumer API](https://kafka.apache.org/documentation/#consumerapi) 
     allows applications to read streams of data from topics in the Kafka cluster
     * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
@@ -147,7 +138,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
   * see article [The Kafka API Battle: Producer vs Consumer vs Kafka Connect vs Kafka Streams vs KSQL !](https://medium.com/@stephane.maarek/the-kafka-api-battle-producer-vs-consumer-vs-kafka-connect-vs-kafka-streams-vs-ksql-ef584274c1e)
   * course [Learn Apache Kafka for Beginners](https://www.udemy.com/course/apache-kafka/)
 
-*(Page mainly written in mai 2021; links checked on 13.02.2023)*
+*(Page mainly written in mai 2021; links checked on 31.01.2024)*
 
 [*Go to parent page*](../README.md)
 
