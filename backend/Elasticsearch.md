@@ -1,13 +1,5 @@
 # Elasticsearch
 
-----
-TODO
-* solve error found by IDEA (e.g. typo)
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Elasticsearch](https://github.com/elastic/elasticsearch)
 is a search engine based on the [Lucene](https://lucene.apache.org/) library providing RESTful API. 
 
@@ -151,6 +143,6 @@ is a search engine based on the [Lucene](https://lucene.apache.org/) library pro
   * [elasticsearch-head](http://mobz.github.io/elasticsearch-head/): web front end for Elasticsearch
   * [download Elasticsearch](https://www.elastic.co/downloads/elasticsearch) and install it as Windows service
 
-*(Page mainly written in july 2021; links checked on 07.02.2023)*
+*(Page mainly written in july 2021; links checked on 31.01.2024)*
 
 [*Go to parent page*](../README.md)
