@@ -115,6 +115,7 @@ Kafka allow to decouple data streams from target systems (db, emails, logs, etc.
         compression of data
       * [batch.size](https://kafka.apache.org/documentation/#producerconfigs_batch.size) and
         [linger.ms](https://kafka.apache.org/documentation/#producerconfigs_linger.ms) having impact on batch processing
+  * TODO check from here
   * [consumer API](https://kafka.apache.org/documentation/#consumerapi) 
     allows applications to read streams of data from topics in the Kafka cluster
     * see example in javadocs of [KafkaConsumer.java](https://kafka.apache.org/36/javadoc/org/apache/kafka/clients/consumer/KafkaConsumer.html)
