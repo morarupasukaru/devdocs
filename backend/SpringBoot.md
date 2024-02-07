@@ -2,13 +2,13 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
-* read page & correct if needed
+* new tutorial?
 * check links
 * update date of verification
 ----
 
-[Spring Boot](https://spring.io/projects/spring-boot#learn) makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
+[Spring Boot](https://spring.io/projects/spring-boot#learn) 
+makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run".
 
 * [Spring Initializr](https://start.spring.io/) : wizard to initialize a Spring Boot application
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) is an application framework that 
@@ -26,7 +26,7 @@ TODO
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
     [circuit breaker guide](https://spring.io/guides/gs/cloud-circuit-breaker/)
 * [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
-  ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can used with 
+  ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
   Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready) 
   add monitor by using 
@@ -49,7 +49,7 @@ TODO
   ease implement SOAP services
   * tutorials: [producing](https://spring.io/guides/gs/producing-web-service/), 
     [consuming a SOAP web service](https://spring.io/guides/gs/consuming-web-service/)
-* Other [tutorials](https://spring.io/guides#getting-started-guides)
+* other [tutorials](https://spring.io/guides#getting-started-guides)
   * [managing transactions](https://spring.io/guides/gs/managing-transactions/)
   * [caching data](https://spring.io/guides/gs/caching/): 
     see [documentation](https://docs.spring.io/spring-framework/docs/current/reference/html/integration.html#cache)
