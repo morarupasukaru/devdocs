@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -68,7 +67,7 @@ TODO
     [Google Material Design specifications](https://material.io/design/)
   * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
     [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
-  * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
+  * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
     [Angular Universal](#Angular-Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
     [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
@@ -97,7 +96,7 @@ TODO
 locally, etc.
 * [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
 * [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-* see [Issue](https://github.com/angular/angular-cli/issues/9160) and [Skipping Tests In Angular CLI](https://tutorialsforangular.com/2019/12/31/skipping-tests-in-angular-cli/) to create a Angular project without testing
+* see [Issue](https://github.com/angular/angular-cli/issues/9160) and [Skipping Tests In Angular CLI](https://tutorialsforangular.com/2019/12/31/skipping-tests-in-angular-cli/) to create an Angular project without testing
 
 [*Go to top*](#Angular)
 
@@ -288,7 +287,7 @@ in different use cases
 
 * services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) 
   by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
-* dependency-injection of services can by done with 
+* dependency-injection of services can be done with 
   [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
   in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
   [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#elementinjector)
@@ -548,11 +547,11 @@ export class SafeUrlPipe implements PipeTransform {
     * function form `:host` component allow to style the host component on given css selector condition 
       (e.g. `:host(.active)`)
   * [:host-context](https://angular.io/guide/component-styles#host-context) style elements inside a component, depending on some condition set outside of it; it's usefull to apply css theme
-  * [::ng-deep](https://angular.io/guide/component-styles#deprecated-deep--and-ng-deep) allow to disables [view-encapsulation](https://angular.io/guide/view-encapsulation) for a given css rule; e.g. allow to style a 
+  * [::ng-deep](https://angular.io/guide/component-styles#deprecated-deep--and-ng-deep) allow to disable [view-encapsulation](https://angular.io/guide/view-encapsulation) for a given css rule; e.g. allow to style a 
     projected element with [<ng-content>](https://angular.io/api/core/ng-content)
     * `:host ::ng-deep input { ... }`: css rule only applied in the projected input element and not an every input of the page
 * Directives [ngClass](https://angular.io/api/common/NgClass) and [ngStyle](https://angular.io/api/common/NgStyle) 
-  are common way to dynamic style components
+  are a common way to dynamic style components
 * Angular component selector like `app-xyz { ... }` can be used in css
 * [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
 * Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without
@@ -567,7 +566,7 @@ export class SafeUrlPipe implements PipeTransform {
 
 * CSS Transitions/CSS Animations vs Angular Animations
   * allow to style an animation on one step; to keep all the stuff in angular world
-  * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); its very difficult to manage it with CSS Animations
+  * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); it's very difficult to manage it with CSS Animations
   * complex animation should be done in Angular Animations
   * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
 * concepts
@@ -602,7 +601,7 @@ export class SafeUrlPipe implements PipeTransform {
 
 [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
 
-* dynamic components can be achieve with [ngIf](https://angular.io/api/common/NgIf) in templates or 
+* dynamic components can be achieved with [ngIf](https://angular.io/api/common/NgIf) in templates or 
   by loading component programmatically and pushing into view
 * ngIf approach is easier and is the best solution in most cases
 * loading component programmatically could be used in some specific use cases (e.g. custom framework)
@@ -715,7 +714,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
 #### NestJS
 
-[NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can used in 
+[NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
 [Angular Universal](#Angular-Universal) instead of 
 [ExpressJS](https://expressjs.com/) to provide
 [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)

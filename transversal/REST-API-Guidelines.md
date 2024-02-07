@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -133,7 +132,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     used to implement [HATEOAS](https://en.wikipedia.org/wiki/HATEOAS)
   * [Open API](https://www.openapis.org/) describes APIs
     * OpenAPI provide more tooling as JSON Schema
-    * OpenAPI has lot of rules to follow but ease homegeanous APIs
+    * OpenAPI has a lot of rules to follow but ease homegeanous APIs
     * Open API is based on an extended version of the JSON Schema
     * Swagger is an implementation of the OpenAPI standard
   * [OData](https://www.odata.org/) is a protocol for sharing data

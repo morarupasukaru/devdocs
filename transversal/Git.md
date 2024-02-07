@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -17,7 +16,7 @@ TODO
     * a detached HEAD is the situation you end up in whenever you check out a commit (or tag) instead of a branch. In this case, you have to imagine this as a temporary branch without a name.
     * [.gitignore](https://git-scm.com/docs/gitignore)
       to specifies intentionally untracked files to ignore
-    * staging area: is a place to record things that will be commit
+    * staging area: is a place to record things that will be committed
     * branch types
         * _local_ branch:
           branch on your machine only
@@ -49,7 +48,7 @@ TODO
     * [git checkout](https://git-scm.com/docs/git-checkout)
       to switch branches or restore working tree files
         * `git checkout -b feature/xyz` create a branch and switch to it
-          (its a shortcut to `git branch feature/xyz` + `git checkout feature/xyz`)
+          (it's a shortcut to `git branch feature/xyz` + `git checkout feature/xyz`)
         * `git checkout commitid` to checkout a commit as detached HEAD
     * [git switch](https://git-scm.com/docs/git-switch)
       to create/switch branches (similar to git checkout but for branches only)
@@ -65,7 +64,7 @@ TODO
             * see [merge conflicts](https://git-scm.com/book/en/v2/Git-Tools-Advanced-Merging#_advanced_merging)
         * [git-rebase](https://git-scm.com/docs/git-rebase)
           change the base (parent commit) & reapply commits
-            * rebase is not recommended for shared repositories because it rewrite the history
+            * rebase is not recommended for shared repositories because it rewrites the history
             * see [git merge vs rebase](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
         * [git cherry-pick](https://git-scm.com/docs/git-cherry-pick)
           to apply the changes introduced by some existing commits
@@ -112,7 +111,8 @@ TODO
           to create a local-tracking branch
         * [git push](https://git-scm.com/docs/git-push)
           to update remote with local changes
-            * [git push](https://git-scm.com/docs/git-push) `-u origin feature-local` to push local branch to remote repository (non existing yet remote) and make it as local-tracking branch
+            * [git push](https://git-scm.com/docs/git-push) `-u origin feature-local` to push local branch to remote repository 
+              (non-existing yet remote) and make it as local-tracking branch
         * [git pull](https://git-scm.com/docs/git-pull)
           to incorporates changes from a remote repository into the current branch
         * [git fetch](https://git-scm.com/docs/git-fetch)

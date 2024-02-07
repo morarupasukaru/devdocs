@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -60,7 +59,7 @@ that is easy to understand.
     * prefer positive to negative check (isEmpty instead of isNotEmpty)
     * prefer polymorphism & factory functions to if/else or switch/case
 * links
-  * [summary of 'Clean code' by Robert C. Martin](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
+  * [summary of "Clean code" by Robert C. Martin](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
   * [clean code academind course](https://www.udemy.com/course/writing-clean-code/)
     and [summary](https://github.com/academind/clean-code-course-code/tree/general-resources)
   * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)

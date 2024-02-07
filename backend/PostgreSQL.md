@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -170,7 +169,7 @@ TODO
     * left value = _startup_ cost for this step to produce the first row
     * right value = _total_ cost for this step to produce all rows
   * goal is to identify which steps are expensive
-  * tip: existing index might be not used if sequential readings is more performant than lot of random accesses (and maybe index could be removed if never used)
+  * tip: existing index might be not used if sequential readings is more performant than a lot of random accesses (and maybe index could be removed if never used)
 * concurrency
   * ACID: 
     [Atomicity](https://www.postgresql.org/docs/15/glossary.html#GLOSSARY-ATOMICITY),
@@ -188,7 +187,7 @@ TODO
     * step 3: copy values from old to new (_data migration_, might take time)
     * step 4: applications write only in new column
     * step 5: drop old column (_schema migration_)
-  * if lot of rows must be updated, update should be done in several transaction 
+  * if a lot of rows must be updated, update should be done in several transaction 
     to prevent **transaction locks**
     ```sql
     UPDATE ... LIMIT 5000; COMMIT; -- (to repeat)
@@ -240,6 +239,6 @@ TODO
     as database version control / for schema migration
   * [SQL and PostgreSQL: The Complete Developer's Guide](https://www.udemy.com/course/sql-and-postgresql/) course
 
-*(Page mainly started in march 2023)*
+*(Page mainly started in March 2023)*
 
 [*Go to parent page*](../README.md)
