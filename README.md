@@ -74,6 +74,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer),
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials),
   [REST client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+  * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
 * images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
 * [micro-frontends](frontend/MicroFrontends.md)
 * orm: [JOOQ](https://www.jooq.org/),

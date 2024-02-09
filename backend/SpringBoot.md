@@ -28,7 +28,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
   ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
   Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
-* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready) 
+* [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
   or with JMX; see [tutorial](https://spring.io/guides/gs/actuator-service/)
@@ -57,6 +57,10 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
+  * [Building a GraphQL service](https://spring.io/guides/gs/graphql-server)
+  * [Spring Boot Docker](https://spring.io/guides/topicals/spring-boot-docker),
+  * [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes)
+  * [Creating API Documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs)
 * concepts
   * [spring bean scope](https://www.baeldung.com/spring-bean-scopes)
   * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
@@ -69,6 +73,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   [Deno](https://deno.land/) (JS)
   * see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
 
-*(Page mainly written in july 2020; links checked on 13.02.2023)*
+*(Page mainly written in july 2020; links checked on 09.02.2024)*
 
 [*Go to parent page*](../README.md)
