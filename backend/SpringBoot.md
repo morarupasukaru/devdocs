@@ -50,10 +50,10 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * [asynchronous methods](https://spring.io/guides/gs/async-method/): 
     see [documentation](https://docs.spring.io/spring/docs/current/spring-framework-reference/integration.html#scheduling)
   * [WebSocket](https://spring.io/guides/gs/messaging-stomp-websocket/)
-  * [Building a GraphQL service](https://spring.io/guides/gs/graphql-server)
-  * [Spring Boot Docker](https://spring.io/guides/topicals/spring-boot-docker),
-  * [Spring Boot Kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes)
-  * [Creating API Documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs)
+  * [GraphQL](https://spring.io/guides/gs/graphql-server)
+  * [docker](https://spring.io/guides/topicals/spring-boot-docker)
+  * [kubernetes](https://spring.io/guides/gs/spring-boot-kubernetes)
+  * [API documentation with Restdocs](https://spring.io/guides/gs/testing-restdocs)
 * concepts
   * [spring bean scope](https://www.baeldung.com/spring-bean-scopes)
   * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
