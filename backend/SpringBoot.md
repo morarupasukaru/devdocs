@@ -1,12 +1,5 @@
 # Spring Boot
 
-----
-TODO
-* new tutorial?
-* check links
-* update date of verification
-----
-
 [Spring Boot](https://spring.io/projects/spring-boot#learn) 
 makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run".
 
