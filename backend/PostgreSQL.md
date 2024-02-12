@@ -74,7 +74,6 @@
       * `SELECT CAST(10 AS BOOLEAN)` (sql standard)
       * tip: `COALESCE(value::BOOLEAN::INTEGER, 0)` to convert value to [0|1] number that can be used 
         in CHECK or aggregate functions
-  * **TODO check**
   * [functions & operators](https://www.postgresql.org/docs/current/functions.html)
     * [logical](https://www.postgresql.org/docs/current/functions-logical.html): 
       `AND`, `OR`, `NOT`
