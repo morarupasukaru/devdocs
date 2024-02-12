@@ -18,7 +18,7 @@ TODO
       * [PRIMARY KEY](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-PRIMARY-KEYS)
       * foreign-key with [REFERENCES ... [ON DELETE [NO ACTION |RESTRICT |CASCADE |SET NULL]]](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-FK)
       * [CHECK](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-CHECK-CONSTRAINTS),
-        [NOT NULL](https://www.postgresql.org/docs/current/ddl-constraints.html#id-1.5.4.6.6),
+        [NOT NULL](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-NOT-NULL),
         [UNIQUE](https://www.postgresql.org/docs/current/ddl-constraints.html#DDL-CONSTRAINTS-UNIQUE-CONSTRAINTS)
     * [schemas](https://www.postgresql.org/docs/current/ddl-schemas.html)
       * a database contains one or more named schemas, which in turn contain tables. Schemas also contain other kinds of named objects, including data types, functions, and operators
@@ -239,6 +239,6 @@ TODO
     as database version control / for schema migration
   * [SQL and PostgreSQL: The Complete Developer's Guide](https://www.udemy.com/course/sql-and-postgresql/) course
 
-*(Page mainly started in March 2023)*
+*(Page mainly started in March 2023; links checked on xx.02.2024)*
 
 [*Go to parent page*](../README.md)
