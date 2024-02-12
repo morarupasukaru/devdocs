@@ -55,7 +55,7 @@ TODO
     * [recursive common table expessions](https://www.postgresql.org/docs/current/queries-with.html#QUERIES-WITH-RECURSIVE)
       * recursive CTE are quite different and more complex than normal CTE
       * recursive CTE are usefull to parse a tree or graph
-    * see also [SQL CTE Explained](https://learnsql.com/blog/what-is-sql-cte/) and [What Is a Recursive CTE in SQL?](https://learnsql.com/blog/sql-recursive-cte/)$
+    * see also [SQL CTE Explained](https://learnsql.com/blog/what-is-sql-cte/) and [What Is a Recursive CTE in SQL?](https://learnsql.com/blog/sql-recursive-cte/)
   * [types](https://www.postgresql.org/docs/current/datatype.html)
     * [numbers](https://www.postgresql.org/docs/current/datatype-numeric.html);
       important types are
