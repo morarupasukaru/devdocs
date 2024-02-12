@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -13,7 +12,7 @@ TODO
 (see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.))
 
 * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
-* to not loose all important data, some of them are stored in the *persistent state* on backend (db)
+* to not lose all important data, some of them are stored in the *persistent state* on backend (db)
 * application state is scattered in several components, services
 * for big projects, application state can be difficult to manage
 * [RxJS](./RxJS.md) ease management of the application state with Subject and Observable
@@ -34,12 +33,12 @@ TODO
     * there is only one application state; the *Store*
     * services and components can interact between themselves but receives their state from the *Store* (with use of subscriptions)
     * change in the store are *dispatched* into *Actions*
-    * an *Action* has an type and could have data; the *Payload*
+    * an *Action* has a type and could have data; the *Payload*
     * *Actions* are sent to *Reducers* by dispatching them from the *Store*
     * an Action is dispatched to every *Reducers* no matter whether the reducer could handle the action or not
         * always provide a default case in reducer that returns the unchanged state
         * action.type must be unique in the whole application
-    * *Reducers* copy a *State* from the *Store*, apply required changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
+    * *Reducers* copy a *State* from the *Store*, apply required to be changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
     * *State* are immutable (or must be immutable)
     * a JavaScript object can be shallow-copied with spread operator: `const newObject = { ...object };`
 * NgRx basics

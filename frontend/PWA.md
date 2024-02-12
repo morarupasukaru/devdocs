@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -75,7 +74,7 @@ make web applications installable like native application on a homescreen of a d
     specify how much of browser UI is shown to the user; e.g. use `standalone` to make web app 
     like native application
   * [background_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/background_color):
-    background color while loading and an splashscreen
+    background color while loading and a splashscreen
   * [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color):
     define theme color used for several ui elements
   * [lang](https://developer.mozilla.org/en-US/docs/Web/Manifest/lang):
@@ -302,12 +301,12 @@ to user/device to go back to the web page with new content.
   * [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) 
     lets a web app send notifications that are displayed *outside the webpage* at the system level; 
     even if the application is idle or in the background
-    * notifications can triggered from 
+    * notifications can be trigger from 
       [frontend javascript](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API#creating_a_notification) 
       or from [service workers](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerRegistration/showNotification#examples)
       (e.g. to support web push notification)
     * web application [request user to enable notifications](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API#requesting_permission)
-    * do not depend on notification to display important informations. 
+    * do not depend on notification to display important information. 
       Notifications might be available on the device or accepted by user
     * apperance of [Notification](https://developer.mozilla.org/en-US/docs/Web/API/Notification#properties) 
       are set with properties like
@@ -339,7 +338,7 @@ to user/device to go back to the web page with new content.
     * push subscription can be stored on the web app backend server and can be used to 
     send notifications
     * backend need also library to be able to push notifications;
-      e.g [web-push](https://github.com/web-push-libs/web-push) for NodeJS or
+      e.g. [web-push](https://github.com/web-push-libs/web-push) for NodeJS or
       [webpush-java](https://github.com/web-push-libs/webpush-java)
     * notification from web app backend will be sent to browser vendor push server and
       browser vendor push server will forward the notification as "push" event to service worker
@@ -357,7 +356,7 @@ to user/device to go back to the web page with new content.
     * Configure Service Workers in an Angular project: `ng add @angular/pwa`
     * Angular/PWA generate a service worker based on the `ngsw-config.json`
     * we can specify in `ngsw-config.json`
-      * which files or urls should be prefetch by the generated service worker
+      * which files or urls should be prefetched by the generated service worker
       * caches to be used for rest APIs
       * service-worker can be configured to fetch data from the network and use cache data in case of timeout; see [strategy of cacheconfig](https://angular.io/guide/service-worker-config#strategy)
     * to disable quick service worker on production; set `serviceWorker` to false in `angular-cli.json` and serve a new version of the application in production (user still have to load the application twice)

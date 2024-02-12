@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -26,7 +25,7 @@ Compilations of links about UX design
 * Tools
   * [sketchize](https://www.sketchize.com/) - Sketch sheets on which you can draw mocks
   * [Lunacy](https://icons8.com/lunacy) - Free design software
-  * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) google chrome devtools to record and optimize user flow
+  * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) Google Chrome devtools to record and optimize user flow
 
 *(Page mainly written in december 2021; links checked on 19.02.2023)*
 

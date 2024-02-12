@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -13,7 +12,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
 * [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 4.9 (11.2022)
-* [JavaScript features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
+* [JavaScript's features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
 * types
@@ -35,7 +34,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [type alias](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#type-aliases) 
     allow to create a new name for a type 
   * [union types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types) 
-    allow to accept a given variable to be a of dedicated list of types (more restrictive than 
+    allow to accept a given variable to be a value of dedicated list of types (more restrictive than 
     [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any))
   * [string literal types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
     allow you to specify the exact value a string must have (enum-like); 

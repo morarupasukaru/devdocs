@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -22,7 +21,7 @@ web applications.
   * use [create-next-app](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) to create new Next.js application
   * [static file serving](https://nextjs.org/docs/basic-features/static-file-serving): files under /public are serve statically by Next.js
   * [Head](https://nextjs.org/docs/api-reference/next/head) component allow to add meta and <head> tags
-  * [page/_app.js](https://nextjs.org/docs/advanced-features/custom-app) custom app can override the default App, e.g. to add default <Head> to available to all pages
+  * [page/_app.js](https://nextjs.org/docs/advanced-features/custom-app) custom app can override the default App, e.g. to add default <Head> to be available to all pages
   * [pages/_document.js](https://nextjs.org/docs/advanced-features/custom-document) custom document can override the default Document (whole HTML document), e.g. to add lang to html tag
   * [Image](https://nextjs.org/docs/api-reference/next/image#required-props) component must be used instead of `<img>` to enable [image optimization](https://nextjs.org/docs/basic-features/image-optimization) like lazy loading and providing multiple version of the images depend on the browser 
   * [building forms with Next.js](https://nextjs.org/docs/guides/building-forms#part-6-form-submission-with-javascript-enabled)
@@ -41,7 +40,7 @@ web applications.
 is the Next.js feature that infer the routes of pages from the folder structure
 
 * [useRouter](https://nextjs.org/docs/routing/dynamic-routes) hook allow to access value of [dynamic routes](https://nextjs.org/docs/routing/introduction#dynamic-route-segments)
-* [catch all routes](https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes) is a dynamic route that support non fixed number of dynamic values in url
+* [catch all routes](https://nextjs.org/docs/routing/dynamic-routes#catch-all-routes) is a dynamic route that support non-fixed number of dynamic values in url
 * use [Link](https://nextjs.org/docs/api-reference/next/link) componet to add [Linking between pages](https://nextjs.org/docs/routing/introduction#linking-between-pages)
 * navigating [programmatically/imperatively](https://nextjs.org/docs/routing/imperatively) but using [router.push(...)](https://nextjs.org/docs/api-reference/next/router#routerpush) or [router.replace(...)](https://nextjs.org/docs/api-reference/next/router#routerreplace)
 * add [custom 404 page](https://nextjs.org/docs/advanced-features/custom-error-page#404-page) by adding `pages/404.js`
@@ -62,7 +61,7 @@ is the Next.js feature that infer the routes of pages from the folder structure
     the HTML is generated at build time and will be reused on each request (recommended)
   * [server-side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) (SSR) :
     the HTML is generated on each request
-* static generation is recommend for performance reason (can be stored in CDN)
+* static generation is recommended for performance reason (can be stored in CDN)
 * Next.js pre-render by default pages without dynamic data
 * Next.js pre-render mode is defined at page level and therefore is quite flexible
 * [client-side rendering](https://nextjs.org/docs/basic-features/data-fetching/client-side) (CSR) 
@@ -71,15 +70,15 @@ is the Next.js feature that infer the routes of pages from the folder structure
   with [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props)
   and [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths)
   * Next.js will pre-render _at build time_ (static generation) a page having [getStaticProps](https://nextjs.org/docs/basic-features/data-fetching/get-static-props) using the props returned by getStaticProps
-    * sourcecode of getStaticProps is not send to client and can contains critical data (as long as critical data are not provided in returned props)
+    * sourcecode of getStaticProps is not send to client and can contain critical data (as long as critical data are not provided in returned props)
   * [incremental static generation](https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration) (ISR) allow to re-generate a page on request at most every X seconds; 
   see [revalidate](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#revalidate) property of getStaticProps return values
     * see also [notfound](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#notfound) and [redirect](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#redirect) properties of getStaticProps return values
   * [context](https://nextjs.org/docs/api-reference/data-fetching/get-static-props#context-parameter) parameter is provided to getStaticProps; e.g. `context.params` contains _dynamic_ route parameters
   * [dynamic routes](https://nextjs.org/docs/routing/dynamic-routes) are not pre-render by default
   * [getStaticPaths](https://nextjs.org/docs/basic-features/data-fetching/get-static-paths) define a list of paths to be statically generated
-  * getStaticPaths can returns paths of a dynamic route for specific ids if data are available at pre-render time
-  * [fallback](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-false) of getStaticPaths return values is usefull too avoid to pre-render to many pages or unfrequent read pages
+  * getStaticPaths can return paths of a dynamic route for specific ids if data are available at pre-render time
+  * [fallback](https://nextjs.org/docs/api-reference/data-fetching/get-static-paths#fallback-false) of getStaticPaths return values is usefull to avoid to pre-render to many pages or unfrequent read pages
 * [server-side rendering](https://nextjs.org/docs/basic-features/pages#server-side-rendering) (SSR)
   with [getServerSideProps](https://nextjs.org/docs/api-reference/data-fetching/get-server-side-props)
   * SSR allow to pre-render the page on each request on the server

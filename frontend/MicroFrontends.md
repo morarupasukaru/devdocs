@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -11,8 +10,8 @@ TODO
 *Micro-frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
 
 * Concepts
-  * single page applications are typically frontend monolith above backend micro-services
-  * micro frontend web applications are composed of independent features/UI parts that can be develop by different 
+  * single page applications are typically frontend monolith above backend microservices
+  * micro frontend web applications are composed of independent features/UI parts that can be developed by different 
     teams in different technologies
   * teams develop features/micro-frontends end-to-end, from database to user interface
 * Goals of micro-frontends
@@ -25,7 +24,7 @@ TODO
     [server-side rendering](https://web.dev/rendering-on-the-web/#server-rendering)
 * Implementation approaches
   * the [container application](https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches)
-    is typically responsible of rending common elements (toolbar, navigation), owned authentication and
+    is typically responsible for rendering common elements (toolbar, navigation), owned authentication and
     bundle micro-frontends/pages together
   * there is a micro frontend pro page
   * integrations alternatives of micro-frontend
@@ -36,13 +35,13 @@ TODO
       * build-time approach with e.g. [Angular feature module](https://angular.io/guide/feature-modules) (lazy or not) 
         could be an alternative for web application that require less isolation between teams 
         (would be not obviously a micro-frontends architecture)
-    * [JavaScript](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaJavascript) 
+    * [JavaScript](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaJavascript)'s 
       integration provide no isolation of window global scope populated from different micro-frontends. 
-      Clatches could occurs if e.g. different versions of same library/framework is used
+      Clatches could occur if e.g. different versions of same library/framework is used
     * [web components](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaWebComponents)
       integration is cleaner as with JavaScript but also do not isolate window global scope 
     * [iframes](https://martinfowler.com/articles/micro-frontends.html#Run-timeIntegrationViaIframes)
-      integration isolate window global scope but performance issue could occurs and interaction 
+      integration isolate window global scope but performance issue could occur and interaction 
       between micro-frontends could be complex
   * [Communication between micro-frontends](https://martinfowler.com/articles/micro-frontends.html#Cross-applicationCommunication)
     * with [custom DOM events](https://developer.mozilla.org/en-US/docs/Web/Guide/Events/Creating_and_triggering_events): 

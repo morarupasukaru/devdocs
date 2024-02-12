@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -22,8 +21,8 @@ programming using observables that makes it easier to compose asynchronous or ca
       method is called
     * higher-order observable is an observable that emits observable that can be subscribed later on
   * Observable contract
-    * if stream emit error or completes, it will never complete or emit values afterwards
-    * if stream completes, it will never emit error or values afterwards
+    * if stream emit error or completes, it will never complete or emit values afterward
+    * if stream completes, it will never emit error or values afterward
     * infinite streams are allowed (without completion or error)
   * [Observer](https://rxjs.dev/guide/observer)
     is a collection of callbacks that knows how to listen to values delivered by the Observable
@@ -75,7 +74,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [merge](https://rxjs.dev/api/index/function/merge)
       creates an observable which concurrently emits all values from every given input observable
     * [zip](https://rxjs.dev/api/index/function/zip)
-      combine and emit n-th value of the any observables as an array
+      combine and emit n-th value of any observables as an array
       * difference with [combineLatest](https://rxjs.dev/api/index/function/combineLatest):
         zip waits until all observables emit values with same index with combine values
   * Join operators

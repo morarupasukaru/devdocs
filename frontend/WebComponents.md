@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -121,7 +120,7 @@ customElements.define('info-toggle', InfoToggle);
     * [CSS variables](https://developer.mozilla.org/en-US/docs/Web/CSS/--*) and
       [var()](https://developer.mozilla.org/en-US/docs/Web/CSS/var()#Using_a_custom_property_set_on_root)
       CSS function can be used to customized styles of web components or provide themes
-        * excepted CSS variables of web components / themes must documented
+        * excepted CSS variables of web components / themes must document
         * a CSS variable is defined in the light DOM, e.g.
   ```css
   :root {
@@ -163,7 +162,7 @@ customElements.define('info-toggle', InfoToggle);
         console.log('custom event happened');
     });
 ```  
-* event can be dispatch fro web component in two ways:
+* event can be dispatch from web component in two ways:
     * [custom events](https://web.dev/shadowdom-v1/#using-custom-events)
       can be used to inform event to users of web components
     * alternative is to dispatch event on host element self; event in that case will be fire in

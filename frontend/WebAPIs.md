@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -90,7 +89,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   enable push communication from server to client (one way communication) with an always open HTTP connection, 
   see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events/Using_server-sent_events)
   * limitation: browser forbid more than 2-6 connections per domain name
-  * server does not receive information of loss client (server will still emits)
+  * server does not receive information of loss client (server will still emit)
 * [Websockets API](https://developer.mozilla.org/en-US/docs/Web/API/Websockets_API): 
   enable bidirectional communication between client and server with full-duplex TCP connection 
   (HTTP still used for authentication); 

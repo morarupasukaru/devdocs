@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -81,7 +80,7 @@ in plain JavaScript.
     * ... [vanilla JavaScript](https://stenciljs.com/docs/javascript) applications
     * ... [and others](https://stenciljs.com/docs/overview)
 * Other references
-  * building SPA with Stencil only will required following two features
+  * building SPA with Stencil only will be required following two features
     * routing with [stencil-router](https://github.com/ionic-team/stencil-router)
   * see [Using RxJS Observables with StencilJS and Ionic](https://www.joshmorony.com/using-observables-with-stencil-js-and-ionic/) 
   * [Stencil App Starter](https://github.com/stencil-community/stencil-app-starter)

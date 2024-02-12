@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -30,7 +29,7 @@ alternative to popular framework like Angular.
   * Sapper/SvelteKit provide routing and server-side rendering (require Node.JS server)
   * prerendering on server side is done only with first HTTP request (for site scrawler)
   * rendering is done after first HTTP request only in SPA
-  * screens are pre-loaded when user move mouse hover links to speed-up navigation 
+  * screens are preloaded when user move mouse hover links to speed-up navigation 
   * server-side rendering require a Node.JS server
   * alternative: pre-render web pages with Sapper and provide them as static bundle (at build-time like JAMStack); 
     see [exporting](https://sapper.svelte.dev/docs#Exporting)

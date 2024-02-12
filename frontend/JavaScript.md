@@ -2,7 +2,6 @@
 
 ----
 TODO
-* solve error found by IDEA (e.g. typo)
 * read page & correct if needed
 * check links
 * update date of verification
@@ -47,7 +46,7 @@ and is the scripting language for Web pages.
   * [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE): immediately invoked function expression
   * [default function parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax)
   * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
-  * [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) allow to creates a new function with provided `this` value and argument values
+  * [Function.prototype.bind()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_objects/Function/bind) allow to create a new function with provided `this` value and argument values
 * type checks
   * [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
     operator used to check value's type
@@ -112,7 +111,7 @@ and is the scripting language for Web pages.
       with [dot](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#dot_notation)
       or [bracket](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Property_Accessors#bracket_notation) notation (e.g. ```object.name``` or ```object['name']```)
     * see shorter syntax of [method definitions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
-    * [**this** refer to object's properties within an object method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#class_context)
+    * [**this** refers to object's properties within an object method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this#class_context)
   * [Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
     * create array with [array literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Array#array_literal_notation); e.g. ```[1, 2, 3]```
     * [access with index](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#access_an_array_item_by_its_index); e.g. ```array[2]```
@@ -185,7 +184,7 @@ and is the scripting language for Web pages.
   * [Math](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math) 
     provide mathematical constants and functions (e.g. [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random#Examples))
   * [Regular expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) with [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) and strings
-    * create regex with [regexp literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression);
+    * create regex with [regex literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#Creating_a_regular_expression);
       e.g. ```/ab+c/``` 
     * [exec()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec),
       [test()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) RegExp methods and
@@ -239,7 +238,7 @@ and is the scripting language for Web pages.
     * features: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports) exports,
       [dynamic module loading](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#dynamic_module_loading),
       [top level await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#top_level_await)
-    * JavaScript modules should replace other module format like [CommonJS](https://en.wikipedia.org/wiki/CommonJS), 
+    * JavaScript's modules should replace other module format like [CommonJS](https://en.wikipedia.org/wiki/CommonJS), 
       [AMD](https://github.com/amdjs/amdjs-api/blob/master/AMD.md),
       [UMD](https://github.com/umdjs/umd) 
       or module and revealing module patterns (see below)
