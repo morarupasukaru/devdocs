@@ -240,6 +240,6 @@ TODO
     as database version control / for schema migration
   * [SQL and PostgreSQL: The Complete Developer's Guide](https://www.udemy.com/course/sql-and-postgresql/) course
 
-*(Page mainly started in March 2023; links checked on xx.02.2024)*
+*(Page mainly started in March 2023; links checked on 12.02.2024)*
 
 [*Go to parent page*](../README.md)
