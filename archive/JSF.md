@@ -1,13 +1,5 @@
 # JSF
 
-----
-TODO
-* solve error found by IDEA (e.g. typo)
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE standard framework to build web application in Java.
 
 * Getting Started: 
@@ -68,6 +60,6 @@ JSF (Jakarta Server Faces or previously JavaServer Faces) is/was the Java EE sta
       for anyone who wishes to browse the extensive history, prior to contribution to Eclipse
   * course: [JSF 2.2 - Java Server Faces for Beginners - Build a DB App](https://www.udemy.com/course/jsf-tutorial/)
 
-[*Go to parent page*](../README.md)
+[*Go to archive page*](./archive.md)
 
-*(Page mainly written in March 2021; links checked on 19.02.2023)*
+*(Page mainly written in March 2021; links checked on 12.02.2024)*
