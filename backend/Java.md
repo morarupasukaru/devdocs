@@ -138,7 +138,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * Platforms
   * [Java SE](https://en.wikipedia.org/wiki/Java_Platform,_Standard_Edition) (Standard Edition)
   * [Java EE or Jakarta EE](https://en.wikipedia.org/wiki/Jakarta_EE) (Enterprise Edition) extends Java SE with some entreprise feature
-    * most features are no usefull with modern frameworks
+    * most features are not usefull with modern frameworks
     * important features: [Bean Validation](https://en.wikipedia.org/wiki/Bean_Validation),
       [JPA](https://en.wikipedia.org/wiki/Jakarta_Persistence)
       [Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet)
@@ -339,7 +339,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [Java Hamcrest](http://hamcrest.org/JavaHamcrest/) to have better matchers
   * [mockito](https://site.mockito.org/) to have mocks; see also [Mockito vs EasyMock vs JMockit](https://www.baeldung.com/mockito-vs-easymock-vs-jmockit)
 * [Jakarta Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet) to provide web applications (usually hidden behind a framework)
-* dependency injection with [Guice](https://github.com/google/guice), [spring-context](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring) or [dagger](https://dagger.dev/)
+* dependency injection with [Guice](https://github.com/google/guice), [Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring) or [Dagger](https://dagger.dev/)
   ; see also [comparison](https://www.baeldung.com/guice-spring-dependency-injection)
 * [Thymeleaf](https://www.thymeleaf.org/) :
   HTML template engine for web/non-web environments as substitute for JSP
@@ -395,7 +395,7 @@ Libraries that should be avoided because adding extra complexity:
   Java framework for rapid development of RESTful web services
 * [Quarkus](https://quarkus.io/) : 
   Cloudnative microservices oriented Java stack 
-* [Micronaut](https://micronaut.io/)  
+* [Micronaut](https://micronaut.io/) :
   Cloudnative microservice/serverless full-stack framework
 * [JHipster](https://www.jhipster.tech/) :
   microservice web application generator using Angular or React and the Spring Framework
@@ -407,8 +407,7 @@ Libraries that should be avoided because adding extra complexity:
 
 ## Effective java
 
-Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
-
+Preferred [Effective Java, 3rd Edition](https://www.oreilly.com/library/view/effective-java/9780134686097/) items:
 
 * _Creating & Destroying objects_
   * consider static factory methods instead of constructor (item 1)
@@ -521,7 +520,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * make defensive copy of each mutable parameter to constructors
     * returns defensive copies of mutable internal fields
   * design method signatures carefully (item 51)
-    * choose method nmes carefully
+    * choose method names carefully
     * don't go overboard in providing convenience methods
       * when in doubt, leave a method out
     * avoid long parameter lists
@@ -529,7 +528,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
     * favor enum to boolean parameters
   * use overloading judiciously (item 52)
     * you can always give methods different names instead of overloading them to avoid confusion
-  * return empty collections or arrays not nulls (item 54)
+  * return empty collections or arrays, not nulls (item 54)
   * return optionals judiciously (item 55)
     * never return null from an Optional
     * collections, maps, streams, arrays and optionals should not be wrapped in optionals
@@ -582,7 +581,7 @@ Preferred [Effective Java 3rd ed](https://www.oreilly.com/library/view/effective
 * _Exceptions_
   * use exceptions only for exceptional conditions (item 69)
     * exceptions should never be used for ordinary control flow
-  * favor the use of standar exceptions (item 72)
+  * favor the use of standard exceptions (item 72)
     * [IllegalArgumentException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalArgumentException.html),
       [IllegalStateException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/IllegalStateException.html),
       [NullPointerException](https://docs.oracle.com/en/java/javase/19/docs/api/java.base/java/lang/NullPointerException.html),
