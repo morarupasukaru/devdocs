@@ -38,7 +38,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
     [Java serialization](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html)
 
-*(Page mainly written in 2022; links checked on 07.02.2023)*
+*(Page mainly written in 2022; links checked on xx.xx.2024)*
 
 [*Go to parent page*](../README.md)
 
@@ -86,13 +86,9 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Java history](https://en.wikipedia.org/wiki/Java_version_history)
   and [updates](https://docs.oracle.com/en/java/javase/19/language/java-language-changes.html):
   * _future features_:
-    * [value objects](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
+    * [value classes](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
       with [project valhalla](https://openjdk.org/projects/valhalla/) for better performances
-    * _improved interoperability with native code_
-      with [project panama](https://openjdk.org/projects/panama/) for better performances
-    * _virtual threads_ with [project loom](https://openjdk.org/projects/loom/)
-      for lightweight concurrency and better performances
-  * 2022 - Java SE 18-19 : nothing interesting
+  * 2022-2023 - Java SE 18-21 : nothing interesting
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/16/language/sealed-classes-and-interfaces.html)
     to restrict classes/interfaces inheritance
