@@ -66,7 +66,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [interfaces](https://docs.oracle.com/javase/tutorial/java/IandI/createinterface.html)
   * [inheritance / subclasses](https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html)
 * other concepts
-  * [package](https://docs.oracle.com/javase/tutorial/java/package/index.html)
+  * [packages](https://docs.oracle.com/javase/tutorial/java/package/index.html)
   * [numbers](https://docs.oracle.com/javase/tutorial/java/data/numbers.html)
   * [strings](https://docs.oracle.com/javase/tutorial/java/data/strings.html)
   * [annotations](https://docs.oracle.com/javase/tutorial/java/annotations/index.html)
@@ -74,6 +74,9 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * [generics](https://docs.oracle.com/javase/tutorial/java/generics/index.html)
     (see also [changes from Java SE 5](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)) 
   * [exceptions](https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html)
+  * [virtual threads](https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html);
+    see [article](https://foojay.io/today/unleashing-the-power-of-lightweight-concurrency-a-comprehensive-guide-to-java-virtual-threads-part-1/) and
+    [What are Java Virtual Threads ?](https://engineeringatscale.substack.com/p/what-are-java-virtual-threads)
   * [java preview features](https://www.baeldung.com/java-preview-features)
   * see also [history](#History) for other language/API features
 
@@ -87,6 +90,9 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   * _future features_:
     * [value classes](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
       with [project valhalla](https://openjdk.org/projects/valhalla/) for better performances
+  * 2023 - Java SE 21:
+    [virtual threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html]
+    for lightweight concurrency and better performances
   * 2022-2023 - Java SE 18-21 : nothing interesting
   * 2022 - Java SE 17 :
     [sealed classes](https://docs.oracle.com/en/java/javase/21/language/sealed-classes-and-interfaces.html)
