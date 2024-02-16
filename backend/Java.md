@@ -332,11 +332,11 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [JPA](https://jakarta.ee/specifications/persistence/) and [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language) to persist and query data with [EclipseLink](https://www.eclipse.org/eclipselink/) or [hibernate](https://hibernate.org/) as JPA implementation
 * [Jakarta Bean Validation](https://beanvalidation.org/) to validate objects
 * [SLF4J](https://www.slf4j.org/) and [logback](https://logback.qos.ch/index.html) to logs
-* JSON support with [Jakson](https://github.com/FasterXML/jackson),
+* JSON support with [Jackson](https://github.com/FasterXML/jackson),
   [Gson](https://github.com/google/gson), 
   [JSON](https://github.com/stleary/JSON-java)
   ; see also [article on compare of libs](https://www.innoq.com/en/articles/2022/02/java-json/)
-* caching with [ehcache](https://www.ehcache.org/), [cache2k](https://cache2k.org/) or [guava](https://github.com/google/guava/wiki/CachesExplained); see [comparisons](https://blog.actorsfit.com/a?ID=01250-d3d1718a-1629-447f-ac7b-d9afc18ef2c1)
+* caching with [ehcache](https://www.ehcache.org/), [cache2k](https://cache2k.org/) or [guava](https://github.com/google/guava/wiki/CachesExplained)
 * testing with [junit5](https://junit.org/junit5/),
   * [Java Hamcrest](http://hamcrest.org/JavaHamcrest/) to have better matchers
   * [mockito](https://site.mockito.org/) to have mocks; see also [Mockito vs EasyMock vs JMockit](https://www.baeldung.com/mockito-vs-easymock-vs-jmockit)
