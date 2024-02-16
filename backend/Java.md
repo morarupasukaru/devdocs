@@ -91,7 +91,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     * [value classes](https://en.wikipedia.org/wiki/Value_type_and_reference_type)
       with [project valhalla](https://openjdk.org/projects/valhalla/) for better performances
   * 2023 - Java SE 21:
-    [virtual threads|https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html]
+    [virtual threads](https://docs.oracle.com/en/java/javase/21/core/virtual-threads.html)
     for lightweight concurrency and better performances
   * 2022-2023 - Java SE 18-21 : nothing interesting
   * 2022 - Java SE 17 :
