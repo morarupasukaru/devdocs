@@ -1,11 +1,5 @@
 # Java
 
-----
-TODO
-* check links
-* update date of verification
-----
-
 [Java](https://en.wikipedia.org/wiki/Java_(software_platform)) is a popular general-purpose language.
 
 This document try to summarize best of Java to develop REST APIs (or batches).
@@ -37,7 +31,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
     [Java serialization](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html)
 
-*(Page mainly written in 2022; links checked on xx.xx.2024)*
+*(Page mainly written in 2022; links checked on 18.02.2024)*
 
 [*Go to parent page*](../README.md)
 
