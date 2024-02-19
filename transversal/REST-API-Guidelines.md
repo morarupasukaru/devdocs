@@ -1,12 +1,5 @@
 # REST API Guidelines
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) REST API guidelines
 
 * Guidelines
@@ -150,6 +143,6 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [Swagger Editor](https://editor.swagger.io/) has a "Convert to OpenAPI 3" option
     * [swagger-petstore](https://github.com/swagger-api/swagger-petstore) as OpenAPI 3.0 example
 
-*(Page mainly written in May 2020; links checked on 14.03.2023)*
+*(Page mainly written in May 2020; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
