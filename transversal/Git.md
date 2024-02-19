@@ -1,12 +1,5 @@
 # Git
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Git](https://git-scm.com/) is a popular version control system.
 
 * concepts
@@ -137,6 +130,6 @@ TODO
     * online [Pro Git book](https://git-scm.com/book/en/v2)
     * [getting started](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
 
-*(Page mainly written in April 2023)*
+*(Page mainly written in April 2023; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
