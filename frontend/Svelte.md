@@ -1,12 +1,5 @@
 # Svelte
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Svelte](https://svelte.dev/) ease development of SPA web applications and provide an interesting
 alternative to popular framework like Angular.
 
@@ -36,8 +29,8 @@ alternative to popular framework like Angular.
 * tools
   * [rollup.js](https://rollupjs.org/guide/en/) is a module bundler for JavaScript that can be used with Svelte
 * references
-  * [online sandbox](https://svelte.dev/repl/hello-world?version=3.35.0)
+  * [online sandbox](https://svelte.dev/repl/hello-world)
   * [examples](https://svelte.dev/examples#hello-world) from [Svelte website](https://svelte.dev/)
   * course: [Svelte.js - The Complete Guide (incl. Sapper.js)](https://www.udemy.com/sveltejs-the-complete-guide/)
 
-*(Page mainly written in april 2021; links checked on 18.02.2023)*
+*(Page mainly written in april 2021; links checked on 19.02.2024)*
