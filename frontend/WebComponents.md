@@ -101,7 +101,7 @@ customElements.define('info-toggle', InfoToggle);
     * slot content defined in DOM can be styled in light DOM itself
     * [::slotted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted) CSS pseudo-element
       is used to style slot content from shadow DOM
-        * see also [Styling distributed nodes](https://web.dev/articles/shadowdom-v1#styling-distributed-nodes)
+        * see also [Styling distributed nodes](https://web.dev/articles/shadowdom-v1#styling_distributed_nodes)
         * only first-level element of the slot can be styled from within the shadow DOM
         * child elements of the slot must be styled from the light DOM
     * [:host](https://developer.mozilla.org/en-US/docs/Web/CSS/:host) selector is used to style
@@ -137,7 +137,7 @@ customElements.define('info-toggle', InfoToggle);
 * Tips
     * It's a good practise to keep shadow & light DOM updates inside a single `_render()` method
       that acts differently depending on states
-    * [defining an element's JavaScript API](https://web.dev/articles/custom-elements-v1/#defining-an-elements-javascript-api):
+    * [defining an element's JavaScript API](https://web.dev/articles/custom-elements-v1/#defining_an_elements_javascript_api):
       to abstract complexity, an API based on public methods & properties of the class of a web component can be defined
     * slots can be queries in web component with following css query:
   ```javascript
@@ -145,7 +145,7 @@ customElements.define('info-toggle', InfoToggle);
   ```
     * [`slotchange`](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots)
       event fires when a slot's distributed nodes changes
-    * [slot.assignedNodes()](https://web.dev/articles/shadowdom-v1/#what-elements-are-being-rendering-in-a-slot) :
+    * [slot.assignedNodes()](https://web.dev/articles/shadowdom-v1/#what_elements_are_being_rendering_in_a_slot) :
       find which elements the slot is rendering
 * Event
     * event listener can be configured in javascript of the DOM
@@ -156,7 +156,7 @@ customElements.define('info-toggle', InfoToggle);
     });
 ```  
 * event can be dispatch from web component in two ways:
-    * [custom events](https://web.dev/articles/shadowdom-v1/#using-custom-events)
+    * [custom events](https://web.dev/articles/shadowdom-v1/#using_custom_events)
       can be used to inform event to users of web components
     * alternative is to dispatch event on host element self; event in that case will be fire in
       the light DOM
