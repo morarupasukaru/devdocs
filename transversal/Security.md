@@ -1,12 +1,5 @@
 # Security
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a nonprofit foundation
   that works to improve the security of software
 
@@ -42,7 +35,7 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a non
     * [Regular expression](https://owasp.org/www-community/attacks/Regular_expression_Denial_of_Service_-_ReDoS)
     * [Uncaught Exception](https://cwe.mitre.org/data/definitions/248.html)
     * [Failure to Release Resources](https://owasp.org/www-community/attacks/Denial_of_Service)
-  * [Lack of Resources & Rate Limiting (API)](https://github.com/OWASP/API-Security/blob/master/2019/en/src/0xa4-lack-of-resources-and-rate-limiting.md)
+  * [Lack of Resources & Rate Limiting (API)](https://owasp.org/API-Security/editions/2019/en/0xa4-lack-of-resources-and-rate-limiting/)
   * [Forced browsing](https://owasp.org/www-community/attacks/Forced_browsing)
   * [Insufficient anti-automation](https://cwe.mitre.org/data/definitions/799.html)
   * [Insecure Direct Object Reference](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
@@ -70,6 +63,6 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a non
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
   
-*(Page mainly written in April 2020; links checked on 13.03.2023)*
+*(Page mainly written in April 2020; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
