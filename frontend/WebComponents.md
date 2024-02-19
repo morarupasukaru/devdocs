@@ -22,15 +22,15 @@ TODO
 
 * Concepts
     * [Custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements),
-      see also [google article](https://web.dev/custom-elements-v1/)
+      see also [google article](https://web.dev/articles/custom-elements-v1/)
         * [Autonomous custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Autonomous_custom_elements)
         * [Customized built-in elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#Customized_built-in_elements)
     * [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_shadow_DOM),
-      see also [google article](https://web.dev/shadowdom-v1/)
+      see also [google article](https://web.dev/articles/shadowdom-v1/)
     * [HTML templates](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots)
         * [slots](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_templates_and_slots#Adding_flexibility_with_slots)
           are placeholders inside your component that users can fill with their own markup,
-          see also [google article](https://web.dev/shadowdom-v1/#slots)
+          see also [google article](https://web.dev/articles/shadowdom-v1/#slots)
         * named slots are specific holes in your shadow DOM that users reference by name
 * Basics
     * Web Components vs Frameworks: Web components are just components; there is no routing, state management, etc.
@@ -108,7 +108,7 @@ customElements.define('info-toggle', InfoToggle);
     * slot content defined in DOM can be styled in light DOM itself
     * [::slotted()](https://developer.mozilla.org/en-US/docs/Web/CSS/::slotted) CSS pseudo-element
       is used to style slot content from shadow DOM
-        * see also [Styling distributed nodes](https://web.dev/shadowdom-v1/#styling-distributed-nodes)
+        * see also [Styling distributed nodes](https://web.dev/articles/shadowdom-v1#styling-distributed-nodes)
         * only first-level element of the slot can be styled from within the shadow DOM
         * child elements of the slot must be styled from the light DOM
     * [:host](https://developer.mozilla.org/en-US/docs/Web/CSS/:host) selector is used to style
@@ -144,7 +144,7 @@ customElements.define('info-toggle', InfoToggle);
 * Tips
     * It's a good practise to keep shadow & light DOM updates inside a single `_render()` method
       that acts differently depending on states
-    * [defining an element's JavaScript API](https://web.dev/custom-elements-v1/#defining-an-elements-javascript-api):
+    * [defining an element's JavaScript API](https://web.dev/articles/custom-elements-v1/#defining-an-elements-javascript-api):
       to abstract complexity, an API based on public methods & properties of the class of a web component can be defined
     * slots can be queries in web component with following css query:
   ```javascript
@@ -152,7 +152,7 @@ customElements.define('info-toggle', InfoToggle);
   ```
     * [`slotchange`](https://developers.google.com/web/fundamentals/web-components/shadowdom#slots)
       event fires when a slot's distributed nodes changes
-    * [slot.assignedNodes()](https://web.dev/shadowdom-v1/#what-elements-are-being-rendering-in-a-slot) :
+    * [slot.assignedNodes()](https://web.dev/articles/shadowdom-v1/#what-elements-are-being-rendering-in-a-slot) :
       find which elements the slot is rendering
 * Event
     * event listener can be configured in javascript of the DOM
@@ -163,7 +163,7 @@ customElements.define('info-toggle', InfoToggle);
     });
 ```  
 * event can be dispatch from web component in two ways:
-    * [custom events](https://web.dev/shadowdom-v1/#using-custom-events)
+    * [custom events](https://web.dev/articles/shadowdom-v1/#using-custom-events)
       can be used to inform event to users of web components
     * alternative is to dispatch event on host element self; event in that case will be fire in
       the light DOM
