@@ -1,12 +1,5 @@
 # UX Design
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 Compilations of links about UX design
 
 * Catalogues
@@ -14,7 +7,7 @@ Compilations of links about UX design
   * [The Data Visualisation Catalogue](https://datavizcatalogue.com/) - Catalogue to choose a diagram / graph for a given function
   * [Mobbin](https://mobbin.design/browse/ios/apps) - Library of searchable mobile app screenshots
   * [Design Systems Repo](https://designsystemsrepo.com/) - Collection of Design Systems
-    * [Fluent Design System](https://www.microsoft.com/design/fluent/#/) from Microsoft
+    * [Fluent 2](https://fluent2.microsoft.design/#/) from Microsoft
 * Articles  
   * [UX Myths](https://uxmyths.com/) - collection of the most frequent user experience misconceptions
   * [Top 17 Web Design and UI Trends for 2019](https://designmodo.com/web-design-trends-2019/)
@@ -27,6 +20,6 @@ Compilations of links about UX design
   * [Lunacy](https://icons8.com/lunacy) - Free design software
   * [Recorder](https://developer.chrome.com/docs/devtools/recorder/) Google Chrome devtools to record and optimize user flow
 
-*(Page mainly written in december 2021; links checked on 19.02.2023)*
+*(Page mainly written in december 2021; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
