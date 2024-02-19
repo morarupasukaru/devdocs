@@ -1,19 +1,12 @@
 # Web Components
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components) is used to develop custom web elements
 
 * [Native Web Components](#Native-Web-Components)
 * [Stencil](Stencil.md) is a compiler that generates Web Components in plain JavaScript
 * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
-*(Page mainly written in september 2020; links checked on 13.02.2023)*
+*(Page mainly written in september 2020; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
 
