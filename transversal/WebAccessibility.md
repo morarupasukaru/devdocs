@@ -1,12 +1,5 @@
 # Web Accessibility
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 Web Accessibility (A11y) means that websites are accessible to everyone regardless of disability. 
 
 * Concepts
@@ -50,7 +43,7 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * Tips for [developing](https://www.w3.org/WAI/tips/developing/),
     for [designing](https://www.w3.org/WAI/tips/designing/),
     for [writing](https://www.w3.org/WAI/tips/writing/)
-    (and for [customizing your computer](https://www.w3.org/WAI/users/browsing))
+    (and for [customizing your computer](https://www.w3.org/WAI/meta/customize/))
     * [Use Clear and Understandable Content](https://www.w3.org/WAI/WCAG2/supplemental/objectives/o3-clear-content/)
   * [Tutorials about Design & Develop](https://www.w3.org/WAI/tutorials/)
   * [Practices Guide](https://www.w3.org/WAI/ARIA/apg/)
@@ -80,6 +73,6 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * [Colour Contrast Analyser](https://developer.paciellogroup.com/color-contrast-checker/)
   * see also [tools recommanded by CivicActions](https://accessibility.civicactions.com/guide/tools) and [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/)
 
-*(Page mainly written in 06.2023)*
+*(Page mainly written in 06.2023; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
