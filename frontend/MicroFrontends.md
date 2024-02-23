@@ -1,12 +1,5 @@
 # Micro-frontends
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 *Micro-frontends* is a [microservice](https://en.wikipedia.org/wiki/Microservices) approach to front-end web development.
 
 * Concepts
@@ -69,4 +62,4 @@ TODO
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on 17.02.2023)*
+*(Page mainly written in december 2020; links checked on 23.02.2024)*
