@@ -21,7 +21,7 @@ TODO
     (e.g. css, localStorage, etc.)
   * *use native browser features instead of custom APIs*
   * *be resilient*: feature should be useful even if JavaScript failed or has not executed yet with 
-    [server-side rendering](https://web.dev/rendering-on-the-web/#server-rendering)
+    [server-side rendering](https://web.dev/articles/rendering-on-the-web#server-side_rendering)
 * Implementation approaches
   * the [container application](https://martinfowler.com/articles/micro-frontends.html#IntegrationApproaches)
     is typically responsible for rendering common elements (toolbar, navigation), owned authentication and
