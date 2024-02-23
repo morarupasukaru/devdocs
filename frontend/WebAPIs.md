@@ -1,12 +1,5 @@
 # Web APIs
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web/API) to develop standard web applications.
 
 * [**DOM - Document Object Model**](#dom---document-object-model): 
@@ -110,7 +103,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   for speech recognition (recognize voice context from an audio input) & 
   synthesis (text-to-speech component that allows programs to read out their text content)
 
-*(Page mainly written in 2019, last update: september 2020; links checked on 17.02.2023)*
+*(Page mainly written in 2019, links checked on 23.02.2024)*
 
 [*Go to parent page*](../README.md)
 
