@@ -162,7 +162,7 @@ DOM Manipulations are mainly available with global object
   [querySelectorAll](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelectorAll), 
   [Element.getElementsByClassName()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByClassName) /
   [getElementsByTagName()](https://developer.mozilla.org/en-US/docs/Web/API/Element/getElementsByTagName)
-* traversing the DOM: element.[children](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) /
+* traversing the DOM: [element.children](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/children) /
   [firstElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/firstElementChild) /
   [lastElementChild](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/lastElementChild) /
   [parentElement](https://developer.mozilla.org/en-US/docs/Web/API/Node/parentElement) /
