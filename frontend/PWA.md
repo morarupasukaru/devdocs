@@ -46,8 +46,6 @@ TODO
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in spring 2022; links checked on 19.02.2023)*
-
 ## Application Manifest
 
 [Web app Manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest)
@@ -368,3 +366,5 @@ to user/device to go back to the web page with new content.
 
 
 [*Go to top*](#Progressive-Web-App)
+
+*(Page mainly written in spring 2022; links checked on 19.02.2023)*

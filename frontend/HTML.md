@@ -159,8 +159,6 @@ between websites.
     [part 2: CSS](https://academind.com/tutorials/css-beginner-s-guide), 
     [part 3: JavaScript](https://academind.com/tutorials/javascript-beginner-s-guide)
 
-*(Page mainly written in september 2020; links checked on 18.02.2023)*
-
 [*Go to parent page*](../README.md)
 
 
@@ -189,3 +187,5 @@ Notes:
 * see also [Anatomy of an HTML document](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started#Anatomy_of_an_HTML_document)
 
 [*Go to top*](#Hypertext-Markup-Language)
+
+*(Page mainly written in september 2020; links checked on 18.02.2023)*

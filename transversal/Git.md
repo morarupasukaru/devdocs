@@ -130,6 +130,6 @@
     * online [Pro Git book](https://git-scm.com/book/en/v2)
     * [getting started](https://www.atlassian.com/git/tutorials/setting-up-a-repository)
 
-*(Page mainly written in April 2023; links checked on 19.02.2024)*
-
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in April 2023; links checked on 19.02.2024)*

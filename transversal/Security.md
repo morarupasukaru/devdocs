@@ -62,7 +62,7 @@ The [Open Web Application Security Project (OWASP)](https://owasp.org/) is a non
 * Tools / Library
   * [node-argon2](https://github.com/ranisalt/node-argon2) password hash library
   * [password-validator](https://github.com/tarunbatra/password-validator) library
-  
-*(Page mainly written in April 2020; links checked on 19.02.2024)*
 
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in April 2020; links checked on 19.02.2024)*

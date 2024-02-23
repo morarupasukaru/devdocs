@@ -57,6 +57,6 @@ that is easy to understand.
   * [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
   * [Java formatting and linting in Visual Studio Code](https://code.visualstudio.com/docs/java/java-linting)
 
-*(Page written in March 2023; links checked on 18.02.2024)*
-
 [*Go to parent page*](../README.md)
+
+*(Page written in March 2023; links checked on 18.02.2024)*

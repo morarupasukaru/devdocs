@@ -73,6 +73,6 @@ Web Accessibility (A11y) means that websites are accessible to everyone regardle
   * [Colour Contrast Analyser](https://developer.paciellogroup.com/color-contrast-checker/)
   * see also [tools recommanded by CivicActions](https://accessibility.civicactions.com/guide/tools) and [Web Accessibility Evaluation Tools List](https://www.w3.org/WAI/ER/tools/)
 
-*(Page mainly written in 06.2023; links checked on 19.02.2024)*
-
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in 06.2023; links checked on 19.02.2024)*

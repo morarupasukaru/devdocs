@@ -31,8 +31,6 @@ This document try to summarize best of Java to develop REST APIs (or batches).
     [protobuf](https://developers.google.com/protocol-buffers) as alternative to
     [Java serialization](https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/io/Serializable.html)
 
-*(Page mainly written in 2022; links checked on 18.02.2024)*
-
 [*Go to parent page*](../README.md)
 
 ## Language
@@ -614,3 +612,5 @@ Preferred [Effective Java, 3rd Edition](https://www.oreilly.com/library/view/eff
     [protobuf](https://developers.google.com/protocol-buffers) (item 85)
   
 [*Go to top*](#Java)
+
+*(Page mainly written in 2022; links checked on 18.02.2024)*

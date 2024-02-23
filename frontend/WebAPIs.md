@@ -103,8 +103,6 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   for speech recognition (recognize voice context from an audio input) & 
   synthesis (text-to-speech component that allows programs to read out their text content)
 
-*(Page mainly written in 2019, links checked on 23.02.2024)*
-
 [*Go to parent page*](../README.md)
 
 
@@ -243,3 +241,5 @@ Events can be triggered by user actions or programmatically and can be listened 
   read-only property to indicate if bubbling happen
 
 [*Go to top*](#Web-APIs)
+
+*(Page mainly written in 2019, links checked on 23.02.2024)*

@@ -220,6 +220,6 @@ TODO
     [clean-css](https://github.com/jakubpawlowicz/clean-css)
   * reset-library like [Normalize.css](https://necolas.github.io/normalize.css/) to makes browsers render all elements the same
 
-*(Page started in 2020; links checked on 13.03.2023)*
-
 [*Go to parent page*](../README.md)
+
+*(Page started in 2020; links checked on 13.03.2023)*

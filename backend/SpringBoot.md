@@ -66,6 +66,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   [Deno](https://deno.land/) (JS)
   * see [Spring vs. the World: Comparing Spring Boot Alternatives](https://www.jrebel.com/blog/spring-boot-alternatives)
 
-*(Page mainly written in july 2020; links checked on 09.02.2024)*
-
 [*Go to parent page*](../README.md)
+
+*(Page mainly written in july 2020; links checked on 09.02.2024)*
