@@ -134,7 +134,8 @@ Main features of [Window](https://developer.mozilla.org/en-US/docs/Web/API/Windo
   [Document](https://developer.mozilla.org/en-US/docs/Web/API/Document) object and represents the web page loaded in 
   the browser. It's the root element of the 
   [DOM tree](https://developer.mozilla.org/en-US/docs/Web/API/Document_object_model/Using_the_W3C_DOM_Level_1_Core#what_is_a_dom_tree)
-* [window.localStorage/sessionStorage allow to store data](#Web-APIs)
+* [window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)/[sessionStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage) 
+  allow to store data
 * [window.setTimeout()](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setTimeout) 
   sets a timer which executes a function once the timer expires
   * see also [Why Promises Are Faster Than setTimeout()?](https://dmitripavlutin.com/javascript-promises-settimeout/)
