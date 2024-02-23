@@ -184,7 +184,7 @@ DOM Manipulations are mainly available with global object
   [(see differences)](https://developer.mozilla.org/en-US/docs/Web/API/Node/textContent#Differences_from_innerText) 
 * get/change html content with [Element.innerHTML](https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML)
 * get/set id: [Element.id](https://developer.mozilla.org/en-US/docs/Web/API/Element/id)
-* hints: convert ["live" NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#Live_vs._Static_NodeLists) 
+* hints: convert ["live" NodeList](https://developer.mozilla.org/en-US/docs/Web/API/NodeList#live_vs._static_nodelists) 
   or [HTMLCollection](https://developer.mozilla.org/en-US/docs/Web/API/HTMLCollection) to Array with 
   [Array.from()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from) 
   to reduce performance bottlenecks
