@@ -16,34 +16,33 @@ TODO
   * more info with [Remix vs Next.js](https://remix.run/blog/remix-vs-next)
 * concepts
   * routing 
-    * [file-based routing](https://remix.run/docs/en/v1/file-conventions/routes-files) like [Next.js](./NextJS.md)
+    * [file-based routing](https://remix.run/docs/en/main/file-conventions/routes) like [Next.js](./NextJS.md)
       supporting:
-      * [nested routing](https://remix.run/docs/en/v1/guides/routing#what-is-nested-routing)
-      * [dynamic routes](https://remix.run/docs/en/v1/file-conventions/routes-files#dynamic-route-parameters) 
-      * [optional segments](https://remix.run/docs/en/v1/file-conventions/routes-files#optional-segments)
-      * [layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#layout-routes)
-      * [splat routes](https://remix.run/docs/en/v1/file-conventions/routes-files#splat-routes) 
-        "catch-all routes" e.g. to [redirect](https://remix.run/docs/en/v1/utils/redirect) to on given url 
-      * [pathless layout routes](https://remix.run/docs/en/v1/file-conventions/routes-files#pathless-layout-routes)
+      * [nested routing](https://remix.run/docs/en/main/file-conventions/routes#nested-routes)
+      * [dynamic segments](https://remix.run/docs/en/main/file-conventions/routes#dynamic-segments) 
+      * [optional segments](https://remix.run/docs/en/main/file-conventions/routes#optional-segments)
+      * [nested routes](https://remix.run/docs/en/main/file-conventions/routes#nested-routes)
+      * [splat routes](https://remix.run/docs/en/main/file-conventions/routes#splat-routes) 
+        "catch-all routes" e.g. to [redirect](https://remix.run/docs/en/main/utils/redirect) to on given url 
+      * [pathless routes](https://remix.run/docs/en/main/file-conventions/routes#nested-layouts-without-nested-urls)
         to share e.g. layout, styles over several routes without adding new route segment 
-      * [resource routes](https://remix.run/docs/en/v1/guides/api-routes#resource-routes)
+      * [resource routes](https://remix.run/docs/en/main/guides/api-routes#resource-routes)
         to render e.g. PDF documents (non application's UI route)
-      * [useSearchParams](https://remix.run/docs/en/v1/guides/data-loading#search-params-in-components) 
+      * [useSearchParams](https://remix.run/docs/en/main/guides/data-loading#search-params-in-components) 
         hook to access URL search params 
         (based on URL API [URLSearchParams](https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams))
       * ...
-      * see [routing](https://remix.run/docs/en/v1/guides/routing#routing) guide
-      * take care: [route file naming convention is changing in v2](https://remix.run/docs/en/v1/file-conventions/route-files-v2)
-    * [root page (root.tsx)](https://remix.run/docs/en/v1/file-conventions/root#root-route)
-      containing a [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet) 
+    * [root page (root.tsx)](https://remix.run/docs/en/main/file-conventions/root)
+      containing a [&lt;Outlet /&gt;](https://remix.run/docs/en/main/components/outlet) 
       * add components to root page to make available on all *pages* (e.g. navigation)
-    * [Link](https://remix.run/docs/en/v1/components/link) to use for anchor tag
+    * [Link](https://remix.run/docs/en/main/components/link) to use for anchor tag
       * `..` can be used to got to parent path, (feature of React [Link](https://reactrouter.com/en/main/components/link))
-    * [useNavigate](https://reactrouter.com/en/6.7.0/hooks/use-navigate) 
+    * [useNavigate](https://remix.run/docs/en/main/hooks/use-navigate) 
       hook used for programmatically navigation 
       (from [React Router v6](https://remix.run/docs/en/v1/other-api/react-router))
-  * [&lt;Outlet /&gt;](https://remix.run/docs/en/v1/components/outlet)
+  * [&lt;Outlet /&gt;](https://remix.run/docs/en/main/components/outlet)
     to render child routes in parent component
+  * TODO
   * styling
     * [route styles](https://remix.run/docs/en/v1/guides/styling#route-styles)
       for styling of a route/page
