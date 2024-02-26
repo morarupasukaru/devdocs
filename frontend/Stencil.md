@@ -65,7 +65,7 @@ in plain JavaScript.
     [stencil.config.ts](https://stenciljs.com/docs/config) 
     * target [dist](https://stenciljs.com/docs/distribution) type is to generate the component(s) 
       as a reusable library that can be self-lazy loading
-  * `npm run build` with build the project in dist folder
+  * `npm run build` to build the project in dist folder
   * [Publishing A Component Library to npm](https://stenciljs.com/docs/publishing)
   * Integration of Stencil web components into
     * ... [Angular](https://stenciljs.com/docs/angular) applications
