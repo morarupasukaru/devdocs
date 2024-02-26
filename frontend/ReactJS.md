@@ -1,12 +1,5 @@
 # React
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [React](https://react.dev/) is a client-side JavaScript library for building user interfaces.
 
 * concepts
