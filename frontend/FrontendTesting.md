@@ -18,7 +18,7 @@ Compilation of links about frontend testing
   * [karma](https://karma-runner.github.io/latest/index.html) (used by Angular)
   * [mocha](https://mochajs.org/) require an assertion library, e.g. Chai
   * jest
-* e2e tests: [Selenium](https://www.selenium.dev/), [Puppeteer](https://pptr.dev/), [Cypress](https://www.cypress.io/)
+* e2e tests: [Playwright](https://playwright.dev/), [Selenium](https://www.selenium.dev/), [Puppeteer](https://pptr.dev/), [Cypress](https://www.cypress.io/)
 * angular libs
   * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
   * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
