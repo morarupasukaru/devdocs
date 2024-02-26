@@ -7,33 +7,32 @@ TODO
 * update date of verification
 ----
 
-[React](https://reactjs.org/) is a client-side JavaScript library for building user interfaces.
+[React](https://react.dev/) is a client-side JavaScript library for building user interfaces.
 
 * concepts
   * use [create-react-app](https://create-react-app.dev/) to create new react application
-  * [JSX](https://reactjs.org/docs/introducing-jsx.html) : _html_ tags in javascript code
-  * [component](https://reactjs.org/docs/components-and-props.html#function-and-class-components): provide custom html tag with a javascript function returning displayed content, e.g. html code
-  * [props](https://reactjs.org/docs/components-and-props.html) are input parameters of the javascript function of the component
-  * [handling events](https://reactjs.org/docs/handling-events.html) is very similar to handling events on DOM elements
-  * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook allow to re-render component/ui with new state/value;
-    see also [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+  * [JSX](https://react.dev/learn/writing-markup-with-jsx) : _html_ tags in javascript code
+  * [component](https://react.dev/learn/your-first-component): provide custom html tag with a javascript function returning displayed content, e.g. html code
+  * [props](https://react.dev/learn/passing-props-to-a-component) are input parameters of the javascript function of the component
+  * [handling events](https://react.dev/learn/responding-to-events) is very similar to handling events on DOM elements
+  * [useState](https://react.dev/reference/react/useState) hook allow to re-render component/ui with new state/value;
+    see also [State: A Component's Memory](https://react.dev/learn/state-a-components-memory)
   * [css modules](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet/) for having scoping component styles (require _.module.css_ suffix); see also [css module feature documentation](https://github.com/css-modules/css-modules)
-  * [basic list component](https://reactjs.org/docs/lists-and-keys.html#basic-list-component) use map javascript array function to map data to React tag component (JSX element)
-  * [wrapper component](https://reactjs.org/docs/composition-vs-inheritance.html#containment) by using children prop
+  * [rendering lists](https://react.dev/learn/rendering-lists) use map javascript array function to map data to React tag component (JSX element)
   * Forms
-    * [useRef](https://reactjs.org/docs/hooks-reference.html#useref) hook allow access DOM, e.g. providing access to current form input value 
-    * see typical [handleSubmit](https://reactjs.org/docs/forms.html#controlled-components) event form listener:
+    * [useRef](https://react.dev/reference/react/useRef) hook allow access DOM, e.g. providing access to current form input value 
+    * see typical [handleSubmit](https://react.dev/reference/react-dom/components/input#reading-the-input-values-when-submitting-a-form) event form listener:
       ```
       handleSubmit(event) {
         event.preventDefault();
         // ...
       }
       ```
-  * [useEffect](https://reactjs.org/docs/hooks-reference.html#conditionally-firing-an-effect) to execute imperative code that can be fire only when certain values are changed (or once by empty arrays as second argument, `useEffect(..., [])`); see also [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)    
-  * [context](https://reactjs.org/docs/context.html) provides a way to pass data through the component tree without having to pass props down manually at every level; 
-    see also [useContext](https://reactjs.org/docs/hooks-reference.html#usecontext) hook
-  * [fragments](https://reactjs.org/docs/fragments.html) allow a component to return multiple elements
-  * [portals](https://reactjs.org/docs/portals.html) used to render children into a DOM node that exists outside the DOM hierarchy of the parent component
+  * [useEffect](https://react.dev/reference/react/useEffect) to execute imperative code that can be fire only when certain values are changed (or once by empty arrays as second argument, `useEffect(..., [])`)   
+  * [context](https://react.dev/learn/passing-data-deeply-with-context) provides a way to pass data through the component tree without having to pass props down manually at every level; 
+    see also [useContext](https://react.dev/reference/react/useContext) hook
+  * [fragments](https://react.dev/reference/react/Fragment) allow a component to return multiple elements
+  * [createPortal](https://react.dev/reference/react-dom/createPortal) used to render children into a DOM node that exists outside the DOM hierarchy of the parent component
     * could be usefull to render component corresponding to its HTML semantics instead of nested in the generated HTML code 
 * React vs alternative frameworks
   * React: lean and focused component-based UI JavaScript library. Require community packages to build full SPA applicaroin (e.g. routing)
@@ -41,7 +40,7 @@ TODO
   * [Vue](https://vuejs.org/): complete component-based UI frameworks that use TypeScript language; less big and complex than Angular
 * libraries
   * [React Router](https://reactrouter.com/en/main) to add routing to React application
-    * [useHistory](https://v5.reactrouter.com/web/api/Hooks/usehistory) hook allow to navigate programmatically
+    * [useNavigate](https://reactrouter.com/en/main/hooks/use-navigate) hook allow to navigate programmatically
   * [react-markdown](https://remarkjs.github.io/react-markdown/): React component to render markdown
   * [React Syntax Highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
   : Syntax highlighting React component
@@ -53,4 +52,4 @@ TODO
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2022; links checked on 18.02.2023)*
+*(Page mainly written in december 2022; links checked on 26.02.2024)*
