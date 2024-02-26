@@ -1,12 +1,5 @@
 # Frontend testing
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 Compilation of links about frontend testing
 
 * test libraries
@@ -51,4 +44,4 @@ Compilation of links about frontend testing
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on 13.02.2023)*
+*(Page mainly written in december 2020; links checked on 26.02.2024)*
