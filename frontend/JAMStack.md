@@ -1,12 +1,5 @@
 # JAMStack
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [JAMStack](https://jamstack.org/) is "a modern web development architecture based on client-side 
 JavaScript, reusable APIs, and prebuilt Markup (static HTML files)"
 
@@ -44,4 +37,4 @@ JAMStack can be implemented in [Angular](Angular.md) with [Scully](https://scull
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in december 2020; links checked on 17.02.2023)*
+*(Page mainly written in december 2020; links checked on 26.02.2024)*
