@@ -56,7 +56,8 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
     [Next.js](frontend/NextJS.md),
     [Remix](frontend/RemixJS.md),
     [React](frontend/ReactJS.md),
-    [Storybook](https://storybook.js.org/)
+    [Storybook](https://storybook.js.org/),
+    [Solid](https://www.solidjs.com/)
   * webstacks: [JAMStack](frontend/JAMStack.md)
 * http servers
   * java:
