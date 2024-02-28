@@ -17,7 +17,7 @@ programming using observables that makes it easier to compose asynchronous or ca
   * Streams of values can emit a single or multi-values and can complete or not (infinite streams)
   * [Observable](https://rxjs.dev/guide/observable)
     represents a definition of stream of values; the idea of an invokable collection of future values or events
-    * stream of values are created as soon as [Observable.subscribe()](https://rxjs.dev/api/index/class/Observable#subscribe-)
+    * stream of values are created as soon as [Observable.subscribe()](https://rxjs.dev/api/index/class/Observable#subscribe)
       method is called
     * higher-order observable is an observable that emits observable that can be subscribed later on
   * Observable contract
@@ -119,6 +119,7 @@ programming using observables that makes it easier to compose asynchronous or ca
       another observable, then repeats this process;
       * can be used to limit emited values from a verbose source
       * cautious: last emiting value could be not emited (see marble diagram)
+  * TODO continue here 
   * Transformation operators
     * [bufferTime](https://rxjs.dev/api/operators/bufferTime)
       buffers the source observable values for a specific time period; emits buffered values as an array 
