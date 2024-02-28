@@ -1,15 +1,9 @@
 # NgRx
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
-[NgRx](https://ngrx.io/), [Redux](https://redux.js.org/),
-[ngxs](https://www.ngxs.io/), [akita](https://github.com/salesforce/akita) are used to manage application state
-(see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.))
+[NgRx](https://ngrx.io/) is used to manage application state
+(see [comparisons](https://ordina-jworks.github.io/angular/2018/10/08/angular-state-management-comparison.html#:~:text=%20NGRX%20offers%20support%20for%20Selectors%20as%20constants.,similar%2C%20but%20uses%20functions%20inside%20the%20State%20class.)
+of alternatives like [Redux](https://redux.js.org/),
+[ngxs](https://www.ngxs.io/), [elf](https://ngneat.github.io/elf/))
 
 * application state is the data used by the application at runtime; the *session data* (state is lost by application refresh)
 * to not lose all important data, some of them are stored in the *persistent state* on backend (db)
@@ -38,7 +32,7 @@ TODO
     * an Action is dispatched to every *Reducers* no matter whether the reducer could handle the action or not
         * always provide a default case in reducer that returns the unchanged state
         * action.type must be unique in the whole application
-    * *Reducers* copy a *State* from the *Store*, apply required to be changed on it with the *Action* & *Payload* and saves the reduced State in the *Store*
+    * *Reducers* copy a *State* from the *Store*, apply changes on it with the *Action* & *Payload* and saves the reduced State in the *Store*
     * *State* are immutable (or must be immutable)
     * a JavaScript object can be shallow-copied with spread operator: `const newObject = { ...object };`
 * NgRx basics
@@ -47,7 +41,7 @@ TODO
       *(source: [NgRx](https://ngrx.io/guide/store))*
     * [selectors](https://ngrx.io/guide/store/selectors): pure functions used for obtaining slices of store state.
         * see [example of selector](https://ngrx.io/guide/store/selectors#selecting-feature-states) that uses [createFeatureSelector](https://ngrx.io/api/store/createFeatureSelector) and [createSelector](https://ngrx.io/api/store/createSelector) functions
-    * [feature state](https://ngrx.io/guide/store/reducers#register-feature-state): state associated to a feature module
+    * [feature state](https://ngrx.io/guide/store/reducers#registering-feature-state): state associated to a feature module
     * [effect](https://ngrx.io/guide/effects): allow to handle asynchronous events
         * Effects are long-running services that listen to an observable of every action dispatched from the Store.
         * Effects filter those actions based on the type of action they are interested in. This is done by using an operator.
@@ -70,4 +64,4 @@ TODO
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in 2019, last update: february 2022; links checked on 18.02.2023)*
+*(Page mainly written in 2019-2022; links checked on 28.02.2024)*
