@@ -119,7 +119,6 @@ programming using observables that makes it easier to compose asynchronous or ca
       another observable, then repeats this process;
       * can be used to limit emited values from a verbose source
       * cautious: last emiting value could be not emited (see marble diagram)
-  * TODO continue here 
   * Transformation operators
     * [bufferTime](https://rxjs.dev/api/operators/bufferTime)
       buffers the source observable values for a specific time period; emits buffered values as an array 
@@ -146,6 +145,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [reduce](https://rxjs.dev/api/operators/reduce)
       reduces the values from source observable (apply a reducer function) 
       and returns the accumulated result when the source completes
+  * TODO 
   * Utility operators
     * [tap](https://rxjs.dev/api/operators/tap) 
       returns an Observable identical to the source, but runs the specified Observer or callback(s) for each item
