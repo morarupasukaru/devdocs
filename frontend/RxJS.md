@@ -1,12 +1,5 @@
 # RxJS
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [RxJS](https://rxjs.dev/guide/overview) (Reactive Extensions for JavaScript) is a library for reactive 
 programming using observables that makes it easier to compose asynchronous or callback-based code.
 
@@ -145,7 +138,6 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [reduce](https://rxjs.dev/api/operators/reduce)
       reduces the values from source observable (apply a reducer function) 
       and returns the accumulated result when the source completes
-  * TODO 
   * Utility operators
     * [tap](https://rxjs.dev/api/operators/tap) 
       returns an Observable identical to the source, but runs the specified Observer or callback(s) for each item
@@ -170,8 +162,7 @@ programming using observables that makes it easier to compose asynchronous or ca
     * [finalize](https://rxjs.dev/api/operators/finalize)
       returns an observable that mirrors the source, but will call the specified function on termination (complete or error)
 * Miscelleanous
-  * [naming conventions](https://angular.io/guide/rx-library#naming-conventions-for-observables) : observables should 
-    be named with a trailing $ sign
+  * naming convention: observables should be named with a trailing $ sign
   * it's possible to unsubscribe to the subscription inside the callback:
     ```typescript
     this.subscription = observable.subscribe(() => {
@@ -204,7 +195,4 @@ programming using observables that makes it easier to compose asynchronous or ca
 
 [*Go to parent page*](../README.md)
 
-----
-* *(Page mainly written in september 2020; links checked on 19.02.2023)*
-* *Disclaimer: notes concern RxJS version 6 but should be valid for stable version 7 at February 2022; see [RxJS 6.x to 7.x Detailed Change List](https://rxjs.dev/6-to-7-change-summary)*
-----
+*(Page mainly written in september 2020; links checked on 28.02.2024)*
