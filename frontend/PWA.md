@@ -1,13 +1,6 @@
 # Progressive Web App
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
-[Progressive Web App (PWA)](https://web.dev/progressive-web-apps/) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
+[Progressive Web App (PWA)](https://web.dev/explore/progressive-web-apps) is web application that work like desktop application (fast, installable, with offline capabilities) based on [offline first](https://offlinefirst.org/) design 
 
 * PWA is a bundle of technologies
   * [Web app Manifests](#Application-Manifest) make web applications installable
@@ -29,7 +22,7 @@ TODO
     see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API)
 * [PWA with Angular](#PWA-with-Angular)
 * tools
-  * [Workbox](https://developer.chrome.com/docs/workbox/) 
+  * [Workbox](https://developer.chrome.com/docs/workbox) 
     ease implementation of PWA features like caching (hide complex
     aspect through easier API / JavaScript libs)
   * [Lighthouse](https://developers.google.com/web/tools/lighthouse/) 
@@ -52,11 +45,10 @@ TODO
 make web applications installable like native application on a homescreen of a device
 * **prerequisite**: require a running service worker
 * links
-  * [Web App Manifest Explanation by Google](https://web.dev/add-manifest/)
-  * [How to provide your own in-app install experience](https://web.dev/customize-install/) 
+  * [Web App Manifest Explanation by Google](https://web.dev/articles/add-manifest)
+  * [How to provide your own in-app install experience](https://web.dev/articles/customize-install) 
     to make web application installable
   * [Can I use: Add to home screen](https://caniuse.com/web-app-manifest) 
-  * see [How to provide your own in-app install experience](https://web.dev/customize-install/)  
 * major manifest properties:
   * [name](https://developer.mozilla.org/en-US/docs/Web/Manifest/name): 
     long name of the web application
@@ -75,8 +67,6 @@ make web applications installable like native application on a homescreen of a d
     background color while loading and a splashscreen
   * [theme_color](https://developer.mozilla.org/en-US/docs/Web/Manifest/theme_color):
     define theme color used for several ui elements
-  * [lang](https://developer.mozilla.org/en-US/docs/Web/Manifest/lang):
-    specifies the primary language
   * [orientation](https://developer.mozilla.org/en-US/docs/Web/Manifest/orientation):
     defines the default screen orientation
     * tip: it's better to support both portrait /landscape orientation instead of restrict users
@@ -133,7 +123,7 @@ proxy requests between web applications and network (e.g. for caching).
   * Service workers support only http requests made with
     [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API).
     [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) is not supported
-* [install lifecycle](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#basic_architecture)
+* install lifecycle
   * frontend javascript (in window context) 
     [register a service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#registering_your_worker)
   * browser will **install** the service worker asynchronously and sent a `install` event to installed service worker on completion
@@ -144,8 +134,7 @@ proxy requests between web applications and network (e.g. for caching).
     * when a service worker is activated a `activate` event to the service worker is sent
   * it means that with default behaviours, user has to close/reload the application several times 
     to have a new version of service worker working on the application
-* service workers re-acts on
-  [dedicated events](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API/Using_Service_Workers#basic_architecture)
+* service workers re-acts on dedicated events
   * [install](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/install_event#examples) event;
     e.g. to download static assets in caches
   * [activate](https://developer.mozilla.org/en-US/docs/Web/API/ServiceWorkerGlobalScope/activate_event#examples) event;
@@ -183,19 +172,17 @@ is used to provide a cache of HTTP requests/responses of **static data** (e.g. a
   * [Got any Cache? Basic Service Worker Caching](https://www.afasterweb.com/2016/12/31/got-any-cache-basic-service-worker-caching/) and [Upgrading Your Service Worker Cache](https://www.afasterweb.com/2017/01/31/upgrading-your-service-worker-cache/) (tutorial)
   * [Cache and return requests](https://developer.chrome.com/docs/workbox/service-worker-overview/#cache_and_return_requests) (tutorial)
   * [The offline cookbook](https://jakearchibald.com/2014/offline-cookbook/) (caching strategies; great reference)
-  * [Storage for the web](https://web.dev/storage-for-the-web/) (checkout available storage quota)
+  * [Storage for the web](https://web.dev/articles/storage-for-the-web) (checkout available storage quota)
   * [Service worker and caching from other origins](https://filipbech.github.io/2017/02/service-worker-and-caching-from-other-origins)
   * [MDN ServiceWorker Cookbook](https://github.com/mdn/serviceworker-cookbook) (examples)
   * [Service Worker Recipes](https://github.com/GoogleChrome/samples/tree/gh-pages/service-worker) (examples)
 * concepts
   * caches are generally created to store application assets and provide offline mode
-  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) 
-    is available for frontend javascript and service workers
-  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache)
-    is not designed to requests/responses of REST API because caches is based on the URL only
+  * Cache API is available for frontend javascript and service workers
+  * Cache API is not designed to requests/responses of REST API because caches is based on the URL only
     (cache cannot be based on request parameters, like a transaction-id, or request payload)
     * see [Caching Dynamic data](#cache-dynamic-data-with-indexeddb) for caches of REST API
-  * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) differs from
+  * Cache API differs from
     [HTTP Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)  
     by providing a way to service workers and frontend javascript to implements caching strategies
     * caches of a web-application for a given scope can be shared between 
@@ -241,8 +228,8 @@ is a transactional Key-Value database in the browser and is used to store dynami
 * links
   * [MDN guide](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) and 
     [IndexedDB key characteristics](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Basic_Terminology)
-  * see [idb](https://github.com/jakearchibald/idb#readme), [idb-keyval](https://github.com/jakearchibald/idb-keyval), [Dexie.js](https://dexie.org/) and other [libraries](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API#see_also) to simplify the quite complex IndexedDB API
-  * [Best Practices for Using IndexedDB](https://web.dev/indexeddb-best-practices/)
+  * see [idb](https://github.com/jakearchibald/idb#readme), [idb-keyval](https://github.com/jakearchibald/idb-keyval), [Dexie.js](https://dexie.org/) libraries to simplify the quite complex IndexedDB API
+  * [Best Practices for Using IndexedDB](https://web.dev/articles/indexeddb-best-practices)
 * concepts
   * [Cache API](https://developer.mozilla.org/en-US/docs/Web/API/Cache) vs 
     [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API):
@@ -258,7 +245,7 @@ is a transactional Key-Value database in the browser and is used to store dynami
   * [caching strategies](https://jakearchibald.com/2014/offline-cookbook) 
     can also be used with [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) to cache GET REST APIs request
   * [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) in conjunction with Background sync allow to support offline capabilities with "update" REST APIs requests
-  * **take care**: caching dynamic data is complex and produce subtle bugs; see [Best Practices for Using IndexedDB](https://web.dev/indexeddb-best-practices/)
+  * **take care**: caching dynamic data is complex and produce subtle bugs; see [Best Practices for Using IndexedDB](https://web.dev/articles/indexeddb-best-practices)
 
 [*Go to top*](#Progressive-Web-App)
 
@@ -275,7 +262,7 @@ allows web applications to make any fetches/updates, at a periodic time interval
 * links
   * [Introducing Background Sync](https://developer.chrome.com/blog/background-sync/)
   * [ServiceWorker: A Basic Guide to BackgroundSync](https://ponyfoo.com/articles/backgroundsync)
-  * [Background Sync – PWA’s Backbone](https://www.excellarate.com/blogs/background-sync-pwas-backbone/)
+  * [Background Sync – PWA’s Backbone](https://www.encora.com/insights/background-sync-pwas-backbone?excellarate-is-now-encora)
   * [Supercharge Your Website Using PWA: Background Sync](https://dev.to/ruppysuppy/supercharge-your-website-using-pwa-background-sync-1m23)
 
 [*Go to top*](#Progressive-Web-App)
@@ -287,7 +274,7 @@ to user/device to go back to the web page with new content.
 
 * links
   * [Web Push Book](https://web-push-book.gauntface.com/); a really nice reference
-  * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/push-notifications/)
+  * [Web Push Notifications - Timely, relevant, and precise](https://web.dev/articles/push-notifications-overview)
   * MDN: [Notification API](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API)
     and [guide](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API/Using_the_Notifications_API); [Push API](https://developer.mozilla.org/en-US/docs/Web/API/Push_API)
   * VAPID for server identification
@@ -350,7 +337,7 @@ to user/device to go back to the web page with new content.
 ## PWA with Angular
 
 * [Service Workers](https://angular.io/guide/service-worker-intro)
-  * see [Create a Progressive Web App with the Angular CLI](https://web.dev/creating-pwa-with-angular-cli/) and [Precaching with the Angular service worker](https://web.dev/precaching-with-the-angular-service-worker/):
+  * see [Create a Progressive Web App with the Angular CLI](https://web.dev/articles/creating-pwa-with-angular-cli) and [Precaching with the Angular service worker](https://web.dev/articles/precaching-with-the-angular-service-worker):
     * Configure Service Workers in an Angular project: `ng add @angular/pwa`
     * Angular/PWA generate a service worker based on the `ngsw-config.json`
     * we can specify in `ngsw-config.json`
@@ -367,4 +354,4 @@ to user/device to go back to the web page with new content.
 
 [*Go to top*](#Progressive-Web-App)
 
-*(Page mainly written in spring 2022; links checked on 19.02.2023)*
+*(Page mainly written in spring 2022; links checked on 01.03.2024)*
