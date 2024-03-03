@@ -1,12 +1,5 @@
 # Hypertext Markup Language
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML) (Hypertext Markup Language) defines the 
 meaning and structure of web content. 
 "Hypertext" refers to links that connect web pages to one another, either within a single website or 
@@ -188,4 +181,4 @@ Notes:
 
 [*Go to top*](#Hypertext-Markup-Language)
 
-*(Page mainly written in september 2020; links checked on 18.02.2023)*
+*(Page mainly written in september 2020; links checked on 03.03.2024)*
