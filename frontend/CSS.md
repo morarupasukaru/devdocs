@@ -1,12 +1,5 @@
 # Cascading Style Sheets
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) 
 (Cascading Style Sheets) is a language to style and present HTML.
 
@@ -150,9 +143,9 @@ TODO
 * Other concepts
   * [Responsive design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
     that allows websites work on different screen widths, resolutions, etc.
-    * guides: [responsive web design basics](https://web.dev/responsive-web-design-basics/),
+    * guides: [responsive web design basics](https://web.dev/articles/responsive-web-design-basics),
       [learn responsive design](https://web.dev/learn/design/),
-      [responsive images](https://web.dev/responsive-images/),
+      [responsive images](https://web.dev/articles/responsive-images),
       [responsive images in CSS](https://css-tricks.com/responsive-images-css/),
       [using media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries)
     * see [viewport](https://developer.mozilla.org/en-US/docs/Web/HTML/Viewport_meta_tag) HTML meta tag should be normally
@@ -197,7 +190,7 @@ TODO
   * [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) ([MDN](https://developer.mozilla.org/en-US/))
   * [State of CSS 2022](https://2022.stateofcss.com/en-US)
     for summary of used tools, features, etc.
-  * [State of CSS 2022](https://web.dev/state-of-css-2022/)
+  * [State of CSS 2022](https://web.dev/blog/state-of-css-2022)
     for actual css features
   * [Web Almanac](https://almanac.httparchive.org/en/2022/) with reports of most used features of websites on the web
   * [Vanilla CSS vs Frameworks](https://academind.com/tutorials/vanilla-css-vs-frameworks)
@@ -222,4 +215,4 @@ TODO
 
 [*Go to parent page*](../README.md)
 
-*(Page started in 2020; links checked on 13.03.2023)*
+*(Page started in 2020; links checked on 04.03.2024)*
