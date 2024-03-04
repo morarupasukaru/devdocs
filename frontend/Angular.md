@@ -10,7 +10,7 @@ TODO
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 15 (11.2022)
+* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 17 (11.2023)
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
@@ -43,7 +43,7 @@ TODO
   * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
   * [Angular Universal](#Angular-Universal) provide
-    [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
   * [Web workers](https://angular.io/guide/web-worker) to run computations in a background thread
@@ -64,15 +64,15 @@ TODO
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
   * [Angular Material](#Angular-Material) is an Angular components suite based on 
-    [Google Material Design specifications](https://material.io/design/)
+    [Material Design](https://m3.material.io/) (by Google)
   * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
     [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
   * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
     [Angular Universal](#Angular-Universal) instead of 
     [ExpressJS](https://expressjs.com/) to provide
-    [Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
 * References
-  * [changelog](https://github.com/angular/angular/blob/master/CHANGELOG.md) to learn latest improvements and breaking changes
+  * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.mdd) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
   * [Angular Docs](https://angular.io/docs)
   * [Angular CLI](https://angular.io/cli)
@@ -103,9 +103,10 @@ locally, etc.
 
 #### @NgModule
 
-[@NgModule](https://angular.io/guide/architecture#modules) bundle a set of components together
+[@NgModule](https://angular.io/guide/architecture-modules#introduction-to-modules) bundle a set of components together
 
-* [introduction to modules](https://angular.io/guide/architecture-modules#introduction-to-modules)
+_Update 2024_: [Standalone components](https://angular.io/guide/standalone-components) reduce the need for @NgModule 
+
 * [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
 * [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
   a container of components
@@ -212,19 +213,19 @@ locally, etc.
     property binding `[hidden]="condition"` on 
     [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
 * see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
-* [build custom attribute directive](https://angular.io/guide/attribute-directives#build-a-simple-attribute-directive)
+* [build custom attribute directive](https://angular.io/guide/attribute-directives#building-an-attribute-directive)
   * by using [Renderer2](https://angular.io/api/core/Renderer2)
   * [@HostListener](https://angular.io/api/core/HostListener) to listen host DOM event
   * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host DOM properties
   * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#passing-values-into-an-attribute-directive)
-* [build custom structural directive](https://angular.io/guide/structural-directives#write-a-structural-directive)
+* [build custom structural directive](https://angular.io/guide/structural-directives#creating-a-structural-directive)
 
 [*Go to top*](#Angular)
 
 
 #### Data bindings
 
-Data bindings ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
+Data bindings ease [components interaction](https://angular.io/guide/component-interaction) 
 in different use cases
 
 * [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (one-way binding from controller to view)
@@ -271,12 +272,12 @@ in different use cases
   * [template variables](https://angular.io/guide/template-reference-variables#template-input-variable) can be defined
   * [*ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet) can be used to display a template in a ng-container
   * [TemplateRef](https://angular.io/api/core/TemplateRef) represents an embedded template that can be used to instantiate embedded views
-* [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-hooks)
+* [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-event-sequence)
   * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
     [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
   * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
     [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
-  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error/)
+  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://angularindepth.com/posts/1001/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error)
 
 [*Go to top*](#Angular)
 
@@ -285,7 +286,7 @@ in different use cases
 
 [Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
 
-* services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service) 
+* services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-using-a-service) 
   by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
 * dependency-injection of services can be done with 
   [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
@@ -500,20 +501,20 @@ export class SafeUrlPipe implements PipeTransform {
   of http methods'result 
 * use pipe and [map](https://rxjs.dev/api/operators/map) from [RxJS](https://rxjs.dev/guide/operators) 
   to convert response to required object
-* [response's type](https://angular.io/guide/http#requesting-a-typed-response) can be specified
+* [response's type](https://angular.io/guide/http-request-data-from-server#requesting-a-typed-response) can be specified
 * good practise: encapsulate HttpClient calls inside a custom service
 * use [mergeMap](https://rxjs.dev/api/operators/mergeMap) or [exhaustMap](https://rxjs.dev/api/operators/exhaustMap) 
   RxJS operators [to pipe several http calls](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
 * use [forkJoin](https://rxjs.dev/api/index/function/forkJoin) RxJS operator to 
   [performs http calls in parallel](https://coryrylan.com/blog/angular-multiple-http-requests-with-rxjs)
-* [handling request error](https://angular.io/guide/http#handling-request-errors) can be customized
+* [handling request error](https://angular.io/guide/http-handle-request-errors) can be customized
 * [headers](https://angular.io/api/common/http/HttpHeaders) can be [provided to http requests](https://angular.io/guide/http#adding-and-updating-headers)
-* [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http#configuring-http-url-parameters)
+* [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http-send-data-to-server#add-and-updating-headers)
   * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params (HttpParams is immutable)
 * [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) can be used to implicit features like
   * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
   * [caching requests](https://angular.io/guide/http#caching)
-  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http#interceptor-order)
+  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http-intercept-requests-and-responses)
 * authentication concepts
   * server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
   * frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
