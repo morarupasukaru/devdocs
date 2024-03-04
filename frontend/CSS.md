@@ -201,7 +201,7 @@
     [Pure.css](https://purecss.io/),
     [Picnic CSS](https://picnicss.com/),
     [Skeleton](http://getskeleton.com/)
-  * utility frameworks like [tailwind css](https://tailwindcss.com/) as compromise to css frameworks (no control) and vanilla css (all todo)
+  * utility frameworks like [tailwind css](https://tailwindcss.com/) as compromise to css frameworks (no control) and vanilla css (all to do)
   * polyfills load on demand with [Modernizr](https://modernizr.com/)
     * see [HTML5 Cross Browser Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-Browser-Polyfills)
   * manual check of browser support with [caniuse](https://caniuse.com/)
