@@ -1,16 +1,9 @@
 # Javascript
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
 
-* [language versions](https://en.wikipedia.org/wiki/ECMAScript#History): 
+* [language versions](https://en.wikipedia.org/wiki/ECMAScript_version_history): 
   * ES1 1997, ES2 1998, ES3 1999, ..., ES12 2021 and ES.Next for next version  
   * using [transpiler](https://en.wikipedia.org/wiki/Source-to-source_compiler) and/or [polyfills](https://en.wikipedia.org/wiki/Polyfill_(programming)) are recommended to be able to use features of latest JS version
 * [declare](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements#declarations) 
@@ -34,7 +27,7 @@ and is the scripting language for Web pages.
     [for ... in](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in) 
     ([not for Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in#array_iteration_and_for...in)
     see also [Array.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 
-    and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+    and [map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map))
 * error handling with [try...catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch) 
   and [throw](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw)
   * [custom error types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error#custom_error_types) ease error handling
@@ -80,7 +73,7 @@ and is the scripting language for Web pages.
     and a given [prototype](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes#Understanding_prototype_objects)
     * prototype are used mainly to share functions
     * see [example of classical inheritance with constructor function, prototype and Object.create()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create#classical_inheritance_with_object.create)
-  * ... [with class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_the_class_keyword) and 
+  * ... [with class](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain#with_classes) and 
     [constructor](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor),
     [static](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/static),
     [extends](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/extends),
@@ -150,7 +143,7 @@ and is the scripting language for Web pages.
       [delete()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete), 
       [size](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size) methods
     * iterate with [for..of or forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#Iterating_Sets)
-    * [convert sets from/to arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#Relation_with_Array_objects)
+    * [convert sets from/to arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set#relation_to_arrays)
   * [String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
     * [concatenation with +](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#string_operators); e.g. ```'my ' + 'string'```
     * [accessor with [...]](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#character_access); e.g. ```'hello'[1]```
@@ -200,7 +193,7 @@ and is the scripting language for Web pages.
       [finally()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/finally) methods
     * [Promise.all()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all) takes promises as parameters, wait for completion of all promises and returns a Promise with array of the results of promises
     * see [Using promises](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises) guide or
-    * see [JavaScript Promises: an introduction](https://web.dev/promises/)
+    * see [JavaScript Promises: an introduction](https://web.dev/articles/promises)
     * or see [Why Promises Are Faster Than setTimeout()?](https://dmitripavlutin.com/javascript-promises-settimeout/)
     * see also [Microtasks ](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
   * async and await to write asynchronous like synchronous code
@@ -334,7 +327,7 @@ and is the scripting language for Web pages.
     [intermediate](https://htmldog.com/guides/javascript/intermediate/),
     [advanced](https://htmldog.com/guides/javascript/advanced/)
   * webpages:
-    * [ECMAScript compatibilty table](https://kangax.github.io/compat-table/es6/)
+    * [ECMAScript compatibilty table](https://compat-table.github.io/compat-table/es6/)
     * [es6 summary](https://github.com/zsolt-nagy/es6-summary)
     * [es6 features](https://github.com/lukehoban/es6features)
     * [ECMAScript 6 - Overview & Comparison](http://es6-features.org/#Constants)
@@ -352,8 +345,4 @@ and is the scripting language for Web pages.
 
 [*Go to parent page*](../README.md)
 
-
-----
-* *(Page mainly written in 2019; links checked on 13.03.2023)*
-* *Disclaimer: notes concern up to ES11 2020 but should be valid for latest version*
-----
+* *(Page mainly written in 2019; links checked on 04.03.2024)*
