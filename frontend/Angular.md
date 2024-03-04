@@ -1,12 +1,5 @@
 # Angular
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
@@ -512,13 +505,13 @@ export class SafeUrlPipe implements PipeTransform {
 * [query parameters (HttpParams)](https://angular.io/api/common/http/HttpParams) can be [provided to http requests](https://angular.io/guide/http-send-data-to-server#add-and-updating-headers)
   * use [HttpParams.append](https://angular.io/api/common/http/HttpParams#append) method if you have several query params (HttpParams is immutable)
 * [HttpInterceptor](https://angular.io/api/common/http/HttpInterceptor) can be used to implicit features like
-  * [set default headers in http requests](https://angular.io/guide/http#setting-default-headers)
-  * [caching requests](https://angular.io/guide/http#caching)
-  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http-intercept-requests-and-responses)
+  * [set default headers in http requests](https://angular.io/guide/http-interceptor-use-cases#set-default-headers)
+  * [caching requests](https://angular.io/guide/http-interceptor-use-cases#cache-requests)
+  * interceptors are executed [in the order of their definition in module](https://angular.io/guide/http-intercept-requests-and-responses#interceptor-order)
 * authentication concepts
   * server validate credentials and deliver a token (e.g. json like [JWT (JSON Web Tokens)](https://jwt.io/)) to frontend
   * frontend save the token (e.g. localStorage) and sent it to any subsequent authorized requests 
-    with e.g. [interceptor](https://angular.io/guide/http#intercepting-requests-and-responses)
+    with e.g. [interceptor](https://angular.io/guide/http-intercept-requests-and-responses)
   * only the server is able to generate the token with a private key and a given algorithm and his therefore secure
 
 [*Go to top*](#Angular)
@@ -643,7 +636,7 @@ export class SafeUrlPipe implements PipeTransform {
 #### Angular Universal
 
 [Angular Universal](https://angular.io/guide/universal) provide 
-[Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+[Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
 (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
 
 * hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
@@ -700,7 +693,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 #### Angular Material
 
 [Angular Material](https://material.angular.io/) is an Angular components suite based on 
-[Google Material Design specifications](https://material.io/design/)
+[Material Design](https://m3.material.io/) of Google
 
 * [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
 * Angular Material is based on two packages:
@@ -718,7 +711,7 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 [NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
 [Angular Universal](#Angular-Universal) instead of 
 [ExpressJS](https://expressjs.com/) to provide
-[Server-side Rendering](https://developers.google.com/web/updates/2019/02/rendering-on-the-web)
+[Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
 
 * Angular Universal with NestJS vs Angular Universal with ExpressJS:
   * default Angular Universal only pre-render HTML webpage
@@ -730,4 +723,4 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
 [*Go to top*](#Angular)
 
-*Page mainly written in 2019, last update: february 2022; links checked on 07.02.2023*
+*Page mainly written in 2019, last update: february 2022; links checked on 04.03.2024*
