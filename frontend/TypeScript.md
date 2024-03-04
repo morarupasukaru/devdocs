@@ -1,17 +1,10 @@
 # Typescript
 
-----
-TODO
-* read page & correct if needed
-* check links
-* update date of verification
-----
-
 [TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](JavaScript.md) language and features and add 
 new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and TypeScript must be 
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
-* [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 4.9 (11.2022)
+* [language versions](https://en.wikipedia.org/wiki/TypeScript#Release_history): 0.8 (2012) to 5.3 (11.2023)
 * [JavaScript's features](JavaScript.md) are normally also [supported by TypeScript](http://kangax.github.io/compat-table/)
 * declare variables with [let](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#let-declarations) 
   and constants with [const](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#const-declarations)
@@ -125,15 +118,11 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
 * references
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
   * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
-  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-9.html) to check out new features
+  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-3.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 * libraries
   * [Prisma](https://www.prisma.io/) is a Node.js and TypeScript ORM
 
 [*Go to parent page*](../README.md)
-  
 
-----
-* *Page mainly written in 2019; links checked on 13.03.2023*
-* *Disclaimer: notes concern up to Typescript 3.x but should be valid for latest version*
-----
+* *Page mainly written in 2019; links checked on 04.03.2024*
