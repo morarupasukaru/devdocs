@@ -125,4 +125,4 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
 
 [*Go to parent page*](../README.md)
 
-* *Page mainly written in 2019; links checked on 04.03.2024*
+*Page mainly written in 2019; links checked on 04.03.2024*

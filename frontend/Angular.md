@@ -729,7 +729,4 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 
 [*Go to top*](#Angular)
 
-----
-* *Page mainly written in 2019, last update: february 2022; links checked on 07.02.2023*
-* *Disclaimer: notes concern up to Angular 8 (5.2018) but should be valid for latest version*
-----
+*Page mainly written in 2019, last update: february 2022; links checked on 07.02.2023*
