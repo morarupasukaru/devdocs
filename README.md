@@ -86,9 +86,12 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * [security](transversal/Security.md)
 * testing
   * java: [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/)
-  * [frontend testing](frontend/FrontendTesting.md)
-    * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
-    * js: [Jest](https://jestjs.io/), ([Jasmine](https://jasmine.github.io/))
+  * javascript 
+    * [Jest](https://jestjs.io/);
+      see [article](https://academind.com/tutorials/javascript-testing-introduction)
+    * [Jasmine](https://jasmine.github.io/); 
+      see [cheatsheet](https://devhints.io/jasmine)
+  * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
 * [ux design](frontend/UXDesign.md)
 * vcs: [Git](transversal/Git.md), [Github](https://github.com/)
 * vm: [graalvm](https://www.graalvm.org/)
