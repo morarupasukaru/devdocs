@@ -20,28 +20,6 @@ Compilation of links about frontend testing
     [Mocking Async Code](https://academind.com/tutorials/javascript-testing-mocking-async-code)
   * Mocha & Chai: [Testing JavaScript Promises with Mocha and Chai](https://www.sitepoint.com/promises-in-javascript-unit-tests-the-definitive-guide/)
 
-
-## Testing in Angular
-
-[Testing](https://angular.io/guide/testing) to write and run unit tests
-
-* isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
-  * [testing services](https://angular.io/guide/testing-services#testing-services)
-  * [testing pipes](https://angular.io/guide/testing-pipes)
-* shallow component tests / non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
-  to have angular dependency injection
-  * non isolated test is a "shallow component test" that test a component and its template, without its dependencies by mocking them
-  * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
-* hints:
-  * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
-  * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-* testing asynchronous code
-  * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
-  * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
-  * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
-  * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-* course: [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
-
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in december 2020; links checked on 26.02.2024)*
