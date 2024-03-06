@@ -13,7 +13,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
   [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language),
   [RxJS](frontend/RxJS.md)
 
-## Other topics
+# Other topics
 * api: [REST](transversal/REST-API-Guidelines.md), [GraphQL](backend/GraphQL.md)
   * [json-server](https://github.com/typicode/json-server) as fake REST API
 * application state management: [RxJS](frontend/RxJS.md) or [NgRx](frontend/NgRx.md)
