@@ -21,7 +21,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * build: [maven](https://maven.apache.org/), [gradle](https://gradle.org/), [npm](https://www.npmjs.com/)
   (see [comparison](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/))
 * ci: [jenkins](https://www.jenkins.io/)
-* [clean code rules](transversal/Clean-Code-Rules.md)
+* [clean code](transversal/Clean-code.md)
 * code analyzer/formatter: [ESLint](https://eslint.org/),
   [prettier](https://prettier.io/)
   [stylelint](https://stylelint.io/),
