@@ -92,7 +92,10 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
     * [Jasmine](https://jasmine.github.io/); 
       see [cheatsheet](https://devhints.io/jasmine)
   * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
-* [ux design](frontend/UXDesign.md)
+* UX design:
+  * [Checklist Design](https://www.checklist.design/) for best practices about UX design
+  * [The Data Visualisation Catalogue](https://datavizcatalogue.com/)
+    to choose a diagram / graph for a given purpose
 * vcs: [Git](transversal/Git.md), [Github](https://github.com/)
 * vm: [graalvm](https://www.graalvm.org/)
 * [web accessibility](transversal/WebAccessibility.md)
