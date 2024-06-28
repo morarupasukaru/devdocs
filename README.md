@@ -155,6 +155,7 @@ about writing uncomplex readable and meaningfull code that is easy to understand
 * links
   * [summary of "Clean code" by Robert C. Martin](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
   * [clean code academind course](https://www.udemy.com/course/writing-clean-code/)
+  * [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) provides an easy set of rules for creating an explicit commit history
   
 [*Go to top*](#Webstack)
 
