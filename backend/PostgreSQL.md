@@ -79,6 +79,7 @@
       `AND`, `OR`, `NOT`
     * [comparison](https://www.postgresql.org/docs/current/functions-comparison.html):
       `<`, `>=`, `=`, `<>`, `BETWEEN`, `IS NULL`, `IS TRUE`, etc.
+      * be careful with comparison with `NULL`, do not write expression = NULL (see [comparison](https://www.postgresql.org/docs/current/functions-comparison.html))
     * [mathematical](https://www.postgresql.org/docs/current/functions-math.html): 
       `+`, `*`, `%`, `abs`, `round`, etc.
     * [string](https://www.postgresql.org/docs/current/functions-string.html): 
