@@ -22,7 +22,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
   Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
   * [initialize a database using basic SQL scripts](https://docs.spring.io/spring-boot/how-to/data-initialization.html#howto.data-initialization.using-basic-sql-scripts)
-    * ... by default, it loads schema scripts from `optional:classpath*:schema.sql` and data scripts from `optional:classpath*:data.sql` ...
+    * ... by default, Spring Boot loads schema scripts from `optional:classpath*:schema.sql` and data scripts from `optional:classpath*:data.sql` ...
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
