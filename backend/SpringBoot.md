@@ -21,6 +21,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
   ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
   Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
+  * [initialize a database using basic SQL scripts](https://docs.spring.io/spring-boot/how-to/data-initialization.html#howto.data-initialization.using-basic-sql-scripts)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
