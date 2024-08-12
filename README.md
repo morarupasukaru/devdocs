@@ -92,6 +92,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
     * [Jasmine](https://jasmine.github.io/); 
       see [cheatsheet](https://devhints.io/jasmine)
   * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
+  * principles: [Test-driven development (TDD)](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
 * UX design:
   * [Checklist Design](https://www.checklist.design/) for best practices about UX design
   * [The Data Visualisation Catalogue](https://datavizcatalogue.com/)
