@@ -50,6 +50,8 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 response if the request is not authenticated
     * [override default configuration](https://docs.spring.io/spring-security/reference/servlet/configuration/java.html#jc-httpsecurity)
       of [SecurityFilterChain](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/SecurityFilterChain.html)
+    * use [InMemoryUserDetailsManager](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/provisioning/InMemoryUserDetailsManager.html)
+      to test basic authentication, see [InMemoryUserDetailsManager Java Configuration](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/in-memory.html)
   * Spring Security provides [Authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/architecture.html) via [Role-Based Access Control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
     * principal has roles
     * resource (or operation) specifies which roles a principal must have
