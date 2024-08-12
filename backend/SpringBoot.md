@@ -50,6 +50,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * Spring Security provides [Authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/architecture.html) via [Role-Based Access Control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
     * principal has roles
     * resource (or operation) specifies which roles a principal must have
+  * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
