@@ -57,7 +57,8 @@ response if the request is not authenticated
     * resource (or operation) specifies which roles a principal must have
     * configure authorization by calling ecurityFilterChain by calling hasRole or hasAuthority
     * use [@WithMockUser](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/test/context/support/WithMockUser.html) to test authorization of [InMemoryUserDetailsManager](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/provisioning/InMemoryUserDetailsManager.html) for testing purpose
-    * 
+    * Spring Boot allow to [model the authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html) depend on different use-cases
+      * e.g. add [hasRole()/hasAuthority() to SecurityFilterChain](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html#authorizing-endpoints) to restrict endpoints to provided roles 
   * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
   * spring boot support [CSRF Token](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern) to protect against [Cross-Site Request Forgery (CSRF)](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
