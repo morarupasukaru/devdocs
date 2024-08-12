@@ -14,6 +14,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   [uploading files](https://spring.io/guides/gs/uploading-files/), 
   [testing web layer](https://spring.io/guides/gs/testing-web/), 
   [building RESTful service](https://spring.io/guides/tutorials/rest/)
+  * [ResponseEntity](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html) to manipulate the HTTP response
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
