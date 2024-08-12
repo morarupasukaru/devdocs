@@ -23,6 +23,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
         // implementation
       }
       ```
+  * other classes: [Pageable](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html)
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
