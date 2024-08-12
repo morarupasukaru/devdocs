@@ -34,6 +34,10 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     * ... by default, Spring Boot loads schema scripts from `optional:classpath*:schema.sql` and data scripts from `optional:classpath*:data.sql` ...
   * other classes: [CrudRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html) and
     [PagingAndSortingRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/PagingAndSortingRepository.html)
+  * Spring Data generate itself queries (sql) related repositories
+  * it's still possible to
+    [define query methods](https://docs.spring.io/spring-data/relational/reference/repositories/query-methods-details.html)
+    based on method name convention or manually
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
