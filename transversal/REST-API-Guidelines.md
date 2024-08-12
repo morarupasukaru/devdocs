@@ -72,6 +72,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
         * [200 *OK*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/200),
           [201 *Created*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201),
           [204 *No Content*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/204)
+          * add [Location](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201#examples) HTTP Header to [201 *Created*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/201)
         * [202 *Accepted*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/202) for [**long processing action**](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design#asynchronous-operations)
       * client side errors: [400 *Bad Request*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/400),
         * [401 *Unauthorized*](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401),
