@@ -35,6 +35,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
   * nosql:
     [MongoDB](https://www.mongodb.com/docs/manual/),
     [Elasticsearch](backend/Elasticsearch.md)
+  * misc: [What is the best database design for multi-language data?](https://medium.com/kocsistem/what-is-the-best-database-design-for-multi-language-data-b21982dd7265)  
 * db tool: [dbeaver](https://dbeaver.io/)
 * db versioning: [flyway](https://flywaydb.org/), 
   [liquibase](https://www.liquibase.com/) 
