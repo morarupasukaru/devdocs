@@ -64,8 +64,15 @@ response if the request is not authenticated
     * Spring Boot allow to [model the authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html) depend on different use-cases
       * e.g. add [hasRole()/hasAuthority() to SecurityFilterChain](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html#authorizing-endpoints) to restrict endpoints to provided roles
       * or [Spring Security Method Security](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html) to have authorization at the method level instead of request level
+    *  [Principal](https://docs.oracle.com/en/java/javase/21/docs/api//java.base/java/security/Principal.html) holds our user's authenticated and can be injected to RestController
+    ```java
+    @GetMapping("/{requestedId}")
+    private ResponseEntity<Xyz> findById(@PathVariable Long requestedId, Principal principal) {
+      ... principal.getName() ...
+    ```
   * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
   * spring boot support [CSRF Token](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern) to protect against [Cross-Site Request Forgery (CSRF)](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+  * if spring security is active, '500 INTERNAL_SERVER_ERROR' is returned as '403 FORBIDDEN' to prevent "leaking" information
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
