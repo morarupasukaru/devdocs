@@ -23,7 +23,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
         // implementation
       }
       ```
-  * other classes: [Pageable](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html)
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
@@ -81,6 +80,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     ```
   * [TestRestTemplate](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
     as test helper that’ll allow us to make HTTP requests to the locally running application
+* other classes: [Pageable](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html)
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
