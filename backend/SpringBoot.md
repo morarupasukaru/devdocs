@@ -60,6 +60,10 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * testing
   * [JacksonTester](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/json/JacksonTester.html) as a wrapper to the Jackson JSON parsing library
   * [SpringBootTest](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/context/SpringBootTest.html) to start a Spring Boot application and make it available for a test
+  * [JsonPath](https://github.com/json-path/JsonPath) as a java DSL for reading JSON documents
+    ```java
+    DocumentContext documentContext = JsonPath.parse(... json as string ...);
+    ```
   * TestRestTemplate[](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
     as test helper that’ll allow us to make HTTP requests to the locally running application
   * see [Testing Spring Boot Applications](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
