@@ -44,6 +44,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     [enabling CORS](https://spring.io/guides/gs/rest-service-cors/), 
     [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/), 
     [Spring Security and Angular](https://spring.io/guides/tutorials/spring-security-and-angular-js/)
+  * [Security Filters](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters) (Filter Chain)
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
