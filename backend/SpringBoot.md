@@ -1,7 +1,5 @@
 # Spring Boot
 
-Test
-
 [Spring Boot](https://spring.io/projects/spring-boot#learn) 
 makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run".
 
