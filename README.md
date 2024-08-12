@@ -103,6 +103,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * [web accessibility](transversal/WebAccessibility.md)
 * [web components](frontend/WebComponents.md)
 * [you aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
+
 (see also [archived topics](./archive/archive.md))
 
 ## Clean code
