@@ -84,6 +84,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * [progressive web app](frontend/PWA.md)
 * [reactive programming](https://www.baeldung.com/cs/reactive-programming): [RxJS](frontend/RxJS.md)
 * [security](transversal/Security.md)
+* [steel-thread](https://www.rubick.com/steel-threads/) is a very thin slice of functionality that threads through a software system; you build the thinnest possible version that crosses the boundaries of the system and covers an important use case
 * testing
   * java: [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/)
   * javascript 
