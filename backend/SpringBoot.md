@@ -72,6 +72,9 @@ response if the request is not authenticated
     ```
   * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
   * spring boot support [CSRF Token](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern) to protect against [Cross-Site Request Forgery (CSRF)](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+    * CSRF must be enabled (default) for any request that could be processed by a browser by normal users
+    * [CSRF protection can be disabled](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#disable-csrf) can be disabled by non-browser clients.
+    * see [Testing with CSRF Protection](https://docs.spring.io/spring-security/reference/servlet/test/mockmvc/csrf.html)
   * if spring security is active, '500 INTERNAL_SERVER_ERROR' is returned as '403 FORBIDDEN' to prevent "leaking" information
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
