@@ -103,6 +103,7 @@ response if the request is not authenticated
   * [spring bean scope](https://www.baeldung.com/spring-bean-scopes)
   * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
   * [auto-configuration](https://docs.spring.io/spring-boot/reference/using/auto-configuration.html)
+  * [@Autowired](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html) should only be used for test classes
 * [testing](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
   * [JacksonTester](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/json/JacksonTester.html) as a wrapper to the Jackson JSON parsing library
   * [SpringBootTest](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/context/SpringBootTest.html) to start a Spring Boot application and make it available for a test
