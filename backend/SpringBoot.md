@@ -52,6 +52,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     * resource (or operation) specifies which roles a principal must have
   * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
   * spring boot support [CSRF Token](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern) to protect against [Cross-Site Request Forgery (CSRF)](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
+  * [override default configuration](https://docs.spring.io/spring-security/reference/servlet/configuration/java.html#jc-httpsecurity) of [SecurityFilterChain](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/SecurityFilterChain.html)
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
