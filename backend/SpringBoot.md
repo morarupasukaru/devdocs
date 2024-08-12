@@ -80,6 +80,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     ```
   * [TestRestTemplate](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
     as test helper that’ll allow us to make HTTP requests to the locally running application
+  * [DirtiesContext](https://docs.spring.io/spring-framework/reference/testing/annotations/integration-spring/annotation-dirtiescontext.html) is a Spring testing annotation. It indicates the associated test/method or class modifies the ApplicationContext. It tells the testing framework to close and recreate the context for later tests.
   * [assertThat(...).containsExactlyInAnyOrder(...)](https://www.javadoc.io/doc/org.assertj/assertj-core/latest/org/assertj/core/api/AbstractIterableAssert.html#containsExactlyInAnyOrder(ELEMENT...)) of [assertj](https://assertj.github.io/doc/#assertj-core) might be usefull sometime
 * other Spring classes: [Pageable](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html)
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
