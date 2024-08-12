@@ -57,16 +57,15 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * concepts
   * [spring bean scope](https://www.baeldung.com/spring-bean-scopes)
   * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
-* testing
+* [testing](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
   * [JacksonTester](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/json/JacksonTester.html) as a wrapper to the Jackson JSON parsing library
   * [SpringBootTest](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/context/SpringBootTest.html) to start a Spring Boot application and make it available for a test
   * [JsonPath](https://github.com/json-path/JsonPath) as a java DSL for reading JSON documents
     ```java
     DocumentContext documentContext = JsonPath.parse(... json as string ...);
     ```
-  * TestRestTemplate[](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
+  * [TestRestTemplate](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
     as test helper that’ll allow us to make HTTP requests to the locally running application
-  * see [Testing Spring Boot Applications](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
