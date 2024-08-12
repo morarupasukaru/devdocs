@@ -37,7 +37,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * Spring Data generate itself queries (sql) related repositories
   * it's still possible to
     [define query methods](https://docs.spring.io/spring-data/relational/reference/repositories/query-methods-details.html)
-    based on method name convention or manually
+    based on method name convention or manually with [@Query](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/Query.html)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
