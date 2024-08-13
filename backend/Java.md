@@ -17,6 +17,7 @@ This document try to summarize best of Java to develop REST APIs (or batches).
   [Groovy](https://groovy-lang.org/),
   [Clojure](https://clojure.org/)
 * Links
+  * [OpenJDK on adoptium.net](https://adoptium.net/)
   * [Java SE javadoc](https://docs.oracle.com/en/java/javase/21/docs/api/new-list.html)
   * [Java language updates](https://docs.oracle.com/en/java/javase/21/language/java-language-changes.html) (from Java SE 9)
   * [JDK 21 Documentation](https://docs.oracle.com/en/java/javase/21/)
