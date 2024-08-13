@@ -1,7 +1,7 @@
 # Spring Boot
 
 [Spring Boot](https://spring.io/projects/spring-boot#learn) 
-makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run". (springboot.devdoc)
+makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run". (springboot-devdoc)
 
 * [Spring Initializr](https://start.spring.io/) : wizard to initialize a Spring Boot application
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) is an application framework that 
@@ -128,4 +128,4 @@ response if the request is not authenticated
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in july 2020; links checked on 09.02.2024)*
-(springboot.devdoc)
+(springboot-devdoc)
