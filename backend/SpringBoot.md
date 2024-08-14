@@ -1,8 +1,7 @@
 # Spring Boot
 
 [Spring Boot](https://spring.io/projects/spring-boot#learn) 
-makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run". (springboot.devdoc)
-.d
+makes it easy to create stand-alone, production-grade Java/Spring based Applications that you can "just run".
 * [Spring Initializr](https://start.spring.io/) : wizard to initialize a Spring Boot application
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) is an application framework that 
   provide [dependency injection (DI) or Inversion of Control (IoC)](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction)
@@ -23,6 +22,8 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
         // implementation
       }
       ```
+   * use [RestClient](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestClient.html) instead
+     [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)   
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
@@ -83,6 +84,8 @@ response if the request is not authenticated
   [tutorial](https://spring.io/guides/gs/accessing-data-jpa/)
 * [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc#overview)
   ease implement JDBC based repositories; [tutorial](https://spring.io/guides/gs/relational-data-access/)
+  * use [JdbcClient](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/simple/JdbcClient.html) instead
+    [JdbcTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
 * [Spring Web Services](https://spring.io/projects/spring-ws)
   ease implement SOAP services
   * tutorials: [producing](https://spring.io/guides/gs/producing-web-service/), 
@@ -128,4 +131,3 @@ response if the request is not authenticated
 [*Go to parent page*](../README.md)
 
 *(Page mainly written in july 2020; links checked on 09.02.2024)*
-(springboot-devdoc)
