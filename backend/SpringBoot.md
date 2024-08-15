@@ -70,7 +70,7 @@ response if the request is not authenticated
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
   ease implement [JPA](https://en.wikipedia.org/wiki/Jakarta_Persistence) based repositories;
   [tutorial](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc#overview)
+* [Spring Data JDBC](https://spring.io/projects/spring-data-jdbc)
   ease implement JDBC based repositories; [tutorial](https://spring.io/guides/gs/relational-data-access/)
   * use [JdbcClient](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/simple/JdbcClient.html) instead
     [JdbcTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/jdbc/core/JdbcTemplate.html)
