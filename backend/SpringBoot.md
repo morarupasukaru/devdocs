@@ -19,11 +19,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
     [circuit breaker guide](https://spring.io/guides/gs/cloud-circuit-breaker/)
-* Spring Data - TODO
-  * Spring Data generate itself queries (sql) related repositories
-  * it's still possible to
-    [define query methods](https://docs.spring.io/spring-data/relational/reference/repositories/query-methods-details.html)
-    based on method name convention or manually with [@Query](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/Query.html)  
 * [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
   ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
   Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
