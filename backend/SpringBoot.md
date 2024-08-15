@@ -13,7 +13,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   [uploading files](https://spring.io/guides/gs/uploading-files/), 
   [testing web layer](https://spring.io/guides/gs/testing-web/), 
   [building RESTful service](https://spring.io/guides/tutorials/rest/)
-  * [ResponseEntity](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/http/ResponseEntity.html) to manipulate the HTTP response
   * [UriComponentsBuilder](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponentsBuilder.html) helps to create [UriComponents](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponents.html) (URI)
     * UriComponentsBuilder can be injected right into a controller method
       ```java
@@ -107,18 +106,7 @@ response if the request is not authenticated
   * [spring component vs repository vs service](https://www.baeldung.com/spring-component-repository-service)
   * [auto-configuration](https://docs.spring.io/spring-boot/reference/using/auto-configuration.html)
   * [@Autowired](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html) should only be used for test classes
-* [testing](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
-  * [JacksonTester](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/json/JacksonTester.html) as a wrapper to the Jackson JSON parsing library
-  * [SpringBootTest](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/context/SpringBootTest.html) to start a Spring Boot application and make it available for a test
-  * [JsonPath](https://github.com/json-path/JsonPath) as a java DSL for reading JSON documents
-    ```java
-    DocumentContext documentContext = JsonPath.parse(... json as string ...);
-    ```
-  * [TestRestTemplate](https://docs.spring.io/spring-boot/api/java/org/springframework/boot/test/web/client/TestRestTemplate.html)
-    as test helper that’ll allow us to make HTTP requests to the locally running application
-  * [DirtiesContext](https://docs.spring.io/spring-framework/reference/testing/annotations/integration-spring/annotation-dirtiescontext.html) is a Spring testing annotation. It indicates the associated test/method or class modifies the ApplicationContext. It tells the testing framework to close and recreate the context for later tests.
-  * [assertThat(...).containsExactlyInAnyOrder(...)](https://www.javadoc.io/doc/org.assertj/assertj-core/latest/org/assertj/core/api/AbstractIterableAssert.html#containsExactlyInAnyOrder(ELEMENT...)) of [assertj](https://assertj.github.io/doc/#assertj-core) might be usefull sometime
-* other Spring classes: [Pageable](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/domain/Pageable.html)
+  * [testing](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
 * tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
