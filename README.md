@@ -44,6 +44,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * distributed event streaming: [kafka](backend/Kafka.md)
 * documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), 
   [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
+* feature toggles: [togglz](https://www.togglz.org/)  
 * frameworks
   * backend:
     [Quarkus](https://quarkus.io/),
