@@ -19,17 +19,14 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   is a reactive-stack web framework
   * tutorials: [reactive REST](https://spring.io/guides/gs/reactive-rest-service/), 
     [circuit breaker guide](https://spring.io/guides/gs/cloud-circuit-breaker/)
-* [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
-  ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
-  Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
-  * [initialize a database using basic SQL scripts](https://docs.spring.io/spring-boot/how-to/data-initialization.html#howto.data-initialization.using-basic-sql-scripts)
-    * ... by default, Spring Boot loads schema scripts from `optional:classpath*:schema.sql` and data scripts from `optional:classpath*:data.sql` ...
-  * other classes: [CrudRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/CrudRepository.html) and
-    [PagingAndSortingRepository](https://docs.spring.io/spring-data/commons/docs/current/api/org/springframework/data/repository/PagingAndSortingRepository.html)
+* Spring Data - TODO
   * Spring Data generate itself queries (sql) related repositories
   * it's still possible to
     [define query methods](https://docs.spring.io/spring-data/relational/reference/repositories/query-methods-details.html)
-    based on method name convention or manually with [@Query](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/Query.html)
+    based on method name convention or manually with [@Query](https://docs.spring.io/spring-data/jpa/docs/current/api/org/springframework/data/jpa/repository/Query.html)  
+* [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc) 
+  ease implement R2DBC (Reactive Relational Database Connectivity) based repositories and can be used with 
+  Spring WebFlux; [tutorial](https://spring.io/guides/gs/accessing-data-r2dbc/)
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#actuator) 
   add monitor by using 
   HTTP [endpoints](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints) 
