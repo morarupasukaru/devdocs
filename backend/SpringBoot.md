@@ -6,7 +6,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * [Spring Framework](https://spring.io/projects/spring-framework#overview) is an application framework that 
   provide [dependency injection (DI) or Inversion of Control (IoC)](https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans-introduction)
 * [Spring Boot quickstart guide](https://spring.io/quickstart)
-* [Spring Web MVC](https://docs.spring.io/spring/docs/current/spring-framework-reference/web.html) 
+* [Spring Web MVC](https://docs.spring.io/spring-framework/reference/web/webmvc.html#mvc) 
   is a Java framework which is used to build web applications
   * tutorials: [producing](https://spring.io/guides/gs/rest-service/) and 
   [consuming a REST web service](https://spring.io/guides/gs/consuming-rest/), 
