@@ -13,14 +13,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   [uploading files](https://spring.io/guides/gs/uploading-files/), 
   [testing web layer](https://spring.io/guides/gs/testing-web/), 
   [building RESTful service](https://spring.io/guides/tutorials/rest/)
-  * [UriComponentsBuilder](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponentsBuilder.html) helps to create [UriComponents](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/util/UriComponents.html) (URI)
-    * UriComponentsBuilder can be injected right into a controller method
-      ```java
-      @RequestMapping(method = RequestMethod.POST)
-      public ResponseEntity<Customer> createCustomer(@RequestBody Customer newCustomer, UriComponentsBuilder builder) {
-        // implementation
-      }
-      ```
    * use [RestClient](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestClient.html) instead
      [RestTemplate](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/client/RestTemplate.html)   
 * [Spring WebFlux](https://docs.spring.io/spring/docs/current/spring-framework-reference/web-reactive.html) 
