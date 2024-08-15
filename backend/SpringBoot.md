@@ -32,34 +32,6 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
     [enabling CORS](https://spring.io/guides/gs/rest-service-cors/), 
     [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/), 
     [Spring Security and Angular](https://spring.io/guides/tutorials/spring-security-and-angular-js/)
-  * [Security Filters](https://docs.spring.io/spring-security/reference/servlet/architecture.html#servlet-security-filters) (Filter Chain)
-    * each filter in the chain decides whether to allow request processing to continue, or not
-    * Spring Security inserts a filter which checks the user’s authentication and returns with a 401 UNAUTHORIZED   
-response if the request is not authenticated
-    * [override default configuration](https://docs.spring.io/spring-security/reference/servlet/configuration/java.html#jc-httpsecurity)
-      of [SecurityFilterChain](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/web/SecurityFilterChain.html)
-    * use [InMemoryUserDetailsManager](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/provisioning/InMemoryUserDetailsManager.html)
-      to test basic authentication, see [InMemoryUserDetailsManager Java Configuration](https://docs.spring.io/spring-security/reference/servlet/authentication/passwords/in-memory.html)
-  * Spring Security provides [Authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/architecture.html) via [Role-Based Access Control (RBAC)](https://en.wikipedia.org/wiki/Role-based_access_control)
-    * principal has roles
-    * resource (or operation) specifies which roles a principal must have
-    * configure authorization by calling ecurityFilterChain by calling hasRole or hasAuthority
-    * use [@WithMockUser](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/test/context/support/WithMockUser.html) to test authorization of [InMemoryUserDetailsManager](https://docs.spring.io/spring-security/site/docs/current/api/org/springframework/security/provisioning/InMemoryUserDetailsManager.html) for testing purpose
-    * Spring Boot allow to [model the authorization](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html) depend on different use-cases
-      * e.g. add [hasRole()/hasAuthority() to SecurityFilterChain](https://docs.spring.io/spring-security/reference/servlet/authorization/authorize-http-requests.html#authorizing-endpoints) to restrict endpoints to provided roles
-      * or [Spring Security Method Security](https://docs.spring.io/spring-security/reference/servlet/authorization/method-security.html) to have authorization at the method level instead of request level
-    *  [Principal](https://docs.oracle.com/en/java/javase/21/docs/api//java.base/java/security/Principal.html) holds our user's authenticated and can be injected to RestController
-    ```java
-    @GetMapping("/{requestedId}")
-    private ResponseEntity<Xyz> findById(@PathVariable Long requestedId, Principal principal) {
-      ... principal.getName() ...
-    ```
-  * [@CrossOrigin](https://docs.spring.io/spring-framework/docs/current/javadoc-api/org/springframework/web/bind/annotation/CrossOrigin.html) used to specify a list of allowed sites for [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) to relax [Same Origin Policy (SOP)](https://en.wikipedia.org/wiki/Same-origin_policy)
-  * spring boot support [CSRF Token](https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html#synchronizer-token-pattern) to protect against [Cross-Site Request Forgery (CSRF)](https://en.wikipedia.org/wiki/Cross-site_request_forgery) attacks like [Cross-Site Scripting (XSS)](https://owasp.org/www-community/attacks/xss/)
-    * CSRF must be enabled (default) for any request that could be processed by a browser by normal users
-    * [CSRF protection can be disabled](https://docs.spring.io/spring-security/reference/servlet/exploits/csrf.html#disable-csrf) can be disabled by non-browser clients.
-    * see [Testing with CSRF Protection](https://docs.spring.io/spring-security/reference/servlet/test/mockmvc/csrf.html)
-  * if spring security is active, '500 INTERNAL_SERVER_ERROR' is returned as '403 FORBIDDEN' to prevent "leaking" information
 * [Spring Batch](https://spring.io/projects/spring-batch#overview) is a batch framework;
   [tutorial](https://spring.io/guides/gs/batch-processing/)
 * [Spring Data JPA](https://spring.io/projects/spring-data-jpa#overview) 
