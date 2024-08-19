@@ -63,7 +63,8 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * [auto-configuration](https://docs.spring.io/spring-boot/reference/using/auto-configuration.html)
   * [@Autowired](https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/autowired.html) should only be used for test classes
   * [testing](https://docs.spring.io/spring-boot/reference/testing/spring-boot-applications.html)
-* tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator) 
+* tools: [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator)
+  * [Spring Tools 4](https://spring.io/tools) for the IDEs integration
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
