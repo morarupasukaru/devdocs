@@ -336,7 +336,8 @@ This document try to summarize best of Java to develop REST APIs (or batches).
 * [Jakarta Servlet](https://en.wikipedia.org/wiki/Jakarta_Servlet) to provide web applications (usually hidden behind a framework)
 * dependency injection with [Guice](https://github.com/google/guice), [Spring](https://www.baeldung.com/inversion-control-and-dependency-injection-in-spring) or [Dagger](https://dagger.dev/)
   ; see also [comparison](https://www.baeldung.com/guice-spring-dependency-injection)
-* [lombok](https://projectlombok.org/) and [mapstruct](https://mapstruct.org/) to ease mapping of java beans
+* [lombok](https://projectlombok.org/) to generate getter, setter, toString, builder, etc.
+* [mapstruct](https://mapstruct.org/) to ease mapping of java beans
 * [aspectj](https://www.eclipse.org/aspectj/) ([aspect-oriented programming](https://en.wikipedia.org/wiki/Aspect-oriented_programming)) to add cross-cutting concerns (generic functionality needed in many places; e.g. security)
 * [Thymeleaf](https://www.thymeleaf.org/) :
   HTML template engine for web/non-web environments as substitute for JSP
