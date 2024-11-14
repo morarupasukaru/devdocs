@@ -139,6 +139,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * [Best Practices for Designing a Pragmatic RESTful API](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api)
     * [REST API Error Handling - Problem Details Response](https://blog.restcase.com/rest-api-error-handling-problem-details-response/)
     * [API Design Guidelines from Paypal](https://github.com/levid-gc/paypal-api-standards/blob/master/api-style-guide.md)
+    * [Federal Administration API Guidelines](https://github.com/swiss/api-guidelines)
   * OpenAPI
     * [OpenAPI Specification](https://github.com/OAI/OpenAPI-Specification/)
     * [OpenAPI Mindmap](https://openapi-map.apihandyman.io/)
