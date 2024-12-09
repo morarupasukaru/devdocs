@@ -101,6 +101,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
   * [The Data Visualisation Catalogue](https://datavizcatalogue.com/)
     to choose a diagram / graph for a given purpose
 * vcs: [Git](transversal/Git.md), [Github](https://github.com/)
+* video recording: [screentogif](https://www.screentogif.com/)
 * vm: [graalvm](https://www.graalvm.org/)
 * [web accessibility](transversal/WebAccessibility.md)
 * [web components](frontend/WebComponents.md)
