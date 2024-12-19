@@ -1,113 +1,34 @@
 # Webstack
 
 Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringBoot.md)
-* languages: 
-  [Java](backend/Java.md), 
-  [Typescript](frontend/TypeScript.md),
-  [Javascript](frontend/JavaScript.md),
-  [CSS](frontend/CSS.md),
-  [HTML](frontend/HTML.md)
-* libs:
-  [WebAPIs](frontend/WebAPIs.md),
-  [JPA](https://jakarta.ee/specifications/persistence/),
-  [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language),
-  [RxJS](frontend/RxJS.md)
 
-# Other topics
-* api: [REST](transversal/REST-API-Guidelines.md), [GraphQL](backend/GraphQL.md)
-  * [json-server](https://github.com/typicode/json-server) as fake REST API
-* application state management: [RxJS](frontend/RxJS.md) or [NgRx](frontend/NgRx.md)
-* audit website: [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
-* build: [maven](https://maven.apache.org/), [gradle](https://gradle.org/), [npm](https://www.npmjs.com/)
-  (see [comparison](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/))
-* ci: [jenkins](https://www.jenkins.io/)
+* api: [REST](transversal/REST-API-Guidelines.md)
+* application state management: [RxJS](frontend/RxJS.md)
+* build: [maven](https://maven.apache.org/)
 * [clean code](#Clean-code)
-* code analyzer/formatter: [ESLint](https://eslint.org/),
-  [prettier](https://prettier.io/)
-  [stylelint](https://stylelint.io/),
-  [checkstyle](https://checkstyle.sourceforge.io),
-  [PMD](https://pmd.github.io/)
-* databases: [PostgreSQL](backend/PostgreSQL.md)
-  * in-memory relational:
-    [hsql](http://hsqldb.org/),
-    [H2](https://www.h2database.com/html/main.html),
-    [Apache Derby](https://db.apache.org/derby/)
-  * nosql:
-    [MongoDB](https://www.mongodb.com/docs/manual/),
-    [Elasticsearch](backend/Elasticsearch.md)
-  * misc: [What is the best database design for multi-language data?](https://medium.com/kocsistem/what-is-the-best-database-design-for-multi-language-data-b21982dd7265)  
-* db tool: [dbeaver](https://dbeaver.io/)
-* db versioning: [flyway](https://flywaydb.org/), 
-  [liquibase](https://www.liquibase.com/) 
-  (see [comparison](https://www.liquibase.com/liquibase-vs-flyway))
-* diagram editors: [PlantText](https://www.planttext.com/)
-* distributed event streaming: [kafka](backend/Kafka.md)
-* documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), 
-  [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/)
-* feature toggles: [togglz](https://www.togglz.org/)  
-* frameworks
-  * backend:
-    [Quarkus](https://quarkus.io/),
-    [Micronaut](https://micronaut.io/),
-    [Dropwizard](https://www.dropwizard.io/en/latest/),
-    [NodeJS](https://nodejs.org/) (JS),
-    [Deno](https://deno.land/) (JS)
-  * frontend:
-    [Stencil](frontend/Stencil.md),
-    [Svelte](frontend/Svelte.md),
-    [Next.js](frontend/NextJS.md),
-    [Remix](frontend/RemixJS.md),
-    [React](frontend/ReactJS.md),
-    [Storybook](https://storybook.js.org/),
-    [Solid](https://www.solidjs.com/)
-  * webstacks: [JAMStack](frontend/JAMStack.md)
-* http servers
-  * java:
-    [tomcat](https://tomcat.apache.org/),
-    [jetty](https://www.eclipse.org/jetty/),
-    [undertow](https://undertow.io/)
-  * other:
-    [http-server](https://github.com/http-party/http-server),
-    [nginx](https://nginx.org/en/)
-* icons: [heroicons](https://heroicons.com/), [Feather](https://feathericons.com/),
-  [Material Design Icons](https://pictogrammers.com/library/mdi/),
-  [React Icons](https://react-icons.github.io/react-icons)
-* ide: [Visual Studio Code](https://code.visualstudio.com/) + pluggins
-  [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
-  [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer),
-  [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials),
-  [REST client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client),
-  * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
-* images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
-* [micro-frontends](frontend/MicroFrontends.md)
-* orm: [JOOQ](https://www.jooq.org/),
-  [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
-  [Prisma](https://www.prisma.io/) (TS) as alternatives to JPA 
-* [progressive web app](frontend/PWA.md)
-* [reactive programming](https://www.baeldung.com/cs/reactive-programming): [RxJS](frontend/RxJS.md)
-* [security](transversal/Security.md)
-* [steel-thread](https://www.rubick.com/steel-threads/) is a very thin slice of functionality that threads through a software system; you build the thinnest possible version that crosses the boundaries of the system and covers an important use case
+  * [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (don't repeat yourself)
+  * [KISS](https://en.wikipedia.org/wiki/KISS_principle) (keep it simple stupid)
+  * [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (you aren't gonna need it)
+* code analyzer/formatter: **TODO**
+* databases: [H2](https://www.h2database.com/html/main.html)
+* documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+* frameworks: [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringBoot.md)
+* ide: IntelliJ IDEA
+* languages:
+  [Java](backend/Java.md),
+  [Typescript](frontend/TypeScript.md),
+* persistence: [JPA](https://jakarta.ee/specifications/persistence/)
 * testing
-  * java: [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/)
-  * javascript 
-    * [Jest](https://jestjs.io/);
-      see [article](https://academind.com/tutorials/javascript-testing-introduction)
-    * [Jasmine](https://jasmine.github.io/); 
-      see [cheatsheet](https://devhints.io/jasmine)
-  * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
-  * principles: [Test-driven development (TDD)](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
-* UX design:
-  * [Checklist Design](https://www.checklist.design/) for best practices about UX design
-  * [The Data Visualisation Catalogue](https://datavizcatalogue.com/)
-    to choose a diagram / graph for a given purpose
+  * backend: [junit5](https://junit.org/junit5/) + [mockito](https://site.mockito.org/),
+    [Spring Boot Testing](https://docs.spring.io/spring-boot/reference/testing/index.html)
+  * frontend: **TODO** (see angular docs)
+  * e2e: **TODO** (see angular docs)
+  * [TDD](https://martinfowler.com/bliki/TestDrivenDevelopment.html) (test-driven development)
 * vcs: [Git](transversal/Git.md), [Github](https://github.com/)
-* video recording: [screentogif](https://www.screentogif.com/)
-* vm: [graalvm](https://www.graalvm.org/)
-* [web accessibility](transversal/WebAccessibility.md)
-* [web components](frontend/WebComponents.md)
-* [you aren't gonna need it (YAGNI)](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it)
 
-(see also [archived topics](./archive/archive.md))
+
+(See also [minor topics](./minor-topics.md) and [archived topics](./archive/archive.md))
+
 
 ## Clean code
 
@@ -162,8 +83,8 @@ about writing uncomplex readable and meaningfull code that is easy to understand
   * [summary of "Clean code" by Robert C. Martin](https://gist.github.com/wojteklu/73c6914cc446146b8b533c0988cf8d29)
   * [clean code academind course](https://www.udemy.com/course/writing-clean-code/)
   * [Conventional Commits 1.0.0](https://www.conventionalcommits.org/en/v1.0.0/) provides an easy set of rules for creating an explicit commit history
-  
+
+
 [*Go to top*](#Webstack)
 
-
-*(last update January 2024; links checked on 22.01.2024)*
+*(last update december 2024; links checked on 22.01.2024)*
