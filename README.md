@@ -12,7 +12,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 * ide: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * languages:
   [Java](webstack/Java.md),
-  [Typescript](webstack/TypeScript.md),
+  [Typescript](webstack/TypeScript.md)
 * persistence: [JPA](https://jakarta.ee/specifications/persistence/)
 * principles: 
     [clean code](#Clean-code) with 
