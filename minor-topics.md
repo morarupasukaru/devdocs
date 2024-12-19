@@ -2,15 +2,14 @@
 
 Following topics are interesting but less important and should be studyed on demand.
 
-* api: [GraphQL](backend/GraphQL.md) instead of [REST](transversal/REST-API-Guidelines.md), 
+* api: [GraphQL](backend/GraphQL.md) instead of [REST](transversal/REST-API-Guidelines.md);
     [json-server](https://github.com/typicode/json-server) as fake REST API
 * application state management: [NgRx](frontend/NgRx.md) instead of [RxJS](frontend/RxJS.md)
 * audit website: [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * build: [gradle](https://gradle.org/) instead of [maven](https://maven.apache.org/)
     (see [comparison](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/))
-* ci: [jenkins](https://www.jenkins.io/), tekton, github action, etc. **TODO**
-* [clean code](#Clean-code)
-* cloud-hosting: **TODO**
+* ci: [jenkins](https://www.jenkins.io/), [tekton](https://tekton.dev/), [GitHub Actions](https://github.com/features/actions)
+* cloud-hosting: **TBD**
 * code analyzer/formatter: [ESLint](https://eslint.org/),
   [prettier](https://prettier.io/)
   [stylelint](https://stylelint.io/),
@@ -83,15 +82,8 @@ Following topics are interesting but less important and should be studyed on dem
 * [reactive programming](https://www.baeldung.com/cs/reactive-programming): [RxJS](frontend/RxJS.md)
 * [security](transversal/Security.md)
 * [steel-thread](https://www.rubick.com/steel-threads/) is a very thin slice of functionality that threads through a software system; you build the thinnest possible version that crosses the boundaries of the system and covers an important use case
-* testing **TODO**
-  * java: [junit](https://junit.org/junit5/) + [mockito](https://site.mockito.org/)
-  * javascript 
-    * [Jest](https://jestjs.io/);
+* testing: [Jest](https://jestjs.io/) instead of [Jasmine](https://jasmine.github.io/);
       see [article](https://academind.com/tutorials/javascript-testing-introduction)
-    * [Jasmine](https://jasmine.github.io/); 
-      see [cheatsheet](https://devhints.io/jasmine)
-  * e2e: [Playwright](https://playwright.dev/), ([Selenium](https://www.selenium.dev/), [Cypress](https://www.cypress.io/))
-  * principles: [Test-driven development (TDD)](https://martinfowler.com/bliki/TestDrivenDevelopment.html)
 * UX design:
   * [Checklist Design](https://www.checklist.design/) for best practices about UX design
   * [The Data Visualisation Catalogue](https://datavizcatalogue.com/)
