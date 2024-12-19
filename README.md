@@ -5,15 +5,15 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
 * api: [REST](transversal/REST-API-Guidelines.md)
 * application state management: [RxJS](frontend/RxJS.md)
 * build: [maven](https://maven.apache.org/)
-* [clean code](#Clean-code)
-  * [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (don't repeat yourself)
-  * [KISS](https://en.wikipedia.org/wiki/KISS_principle) (keep it simple stupid)
-  * [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (you aren't gonna need it)
+* [clean code](#Clean-code) with 
+  [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) (don't repeat yourself),
+  [KISS](https://en.wikipedia.org/wiki/KISS_principle) (keep it simple stupid),
+  [YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) (you aren't gonna need it)
 * code analyzer/formatter: **TODO**
 * databases: [H2](https://www.h2database.com/html/main.html)
 * documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * frameworks: [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringBoot.md)
-* ide: IntelliJ IDEA
+* ide: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * languages:
   [Java](backend/Java.md),
   [Typescript](frontend/TypeScript.md),
