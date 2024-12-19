@@ -5,7 +5,8 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 * api: [REST](webstack/REST-API-Guidelines.md)
 * application state management: [RxJS](webstack/RxJS.md)
 * build: [maven](https://maven.apache.org/), [npm](https://nodejs.org/en/download/package-manager)
-* code analyzer/formatter: **TODO**
+* code formatters: [prettier](https://prettier.io/), [checkstyle](https://checkstyle.sourceforge.io/)
+* dependency updates: [dependabot](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide)
 * database: [H2](https://www.h2database.com/html/main.html)
 * documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * frameworks: [Angular](webstack/Angular.md) & [Spring Boot](webstack/SpringBoot.md)
@@ -13,6 +14,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 * languages:
   [Java](webstack/Java.md),
   [Typescript](webstack/TypeScript.md)
+* linters: [eslint](https://eslint.org/), [stylelint](https://stylelint.io/), [PMD](https://pmd.github.io/)
 * persistence: [JPA](https://jakarta.ee/specifications/persistence/)
 * principles: 
     [clean code](#Clean-code) with 
