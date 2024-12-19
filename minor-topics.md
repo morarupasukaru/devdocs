@@ -10,10 +10,6 @@ Following topics are interesting but less important and should be studyed on dem
     (see [comparison](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/))
 * ci: [jenkins](https://www.jenkins.io/), [tekton](https://tekton.dev/), [GitHub Actions](https://github.com/features/actions)
 * cloud-hosting: **TBD**
-* code analyzer/formatter: [ESLint](https://eslint.org/),
-  [stylelint](https://stylelint.io/),
-  [checkstyle](https://checkstyle.sourceforge.io),
-  [PMD](https://pmd.github.io/)
 * databases: [PostgreSQL](minor-topics/PostgreSQL.md)
   * in-memory relational:
     [H2](https://www.h2database.com/html/main.html),
