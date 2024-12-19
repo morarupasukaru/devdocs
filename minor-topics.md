@@ -2,9 +2,9 @@
 
 Following topics are interesting but less important and should be studyed on demand.
 
-* api: [GraphQL](backend/GraphQL.md) instead of [REST](transversal/REST-API-Guidelines.md);
+* api: [GraphQL](minor-topics/GraphQL.md) instead of [REST](webstack/REST-API-Guidelines.md);
     [json-server](https://github.com/typicode/json-server) as fake REST API
-* application state management: [NgRx](frontend/NgRx.md) instead of [RxJS](frontend/RxJS.md)
+* application state management: [NgRx](minor-topics/NgRx.md) instead of [RxJS](webstack/RxJS.md)
 * audit website: [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
 * build: [gradle](https://gradle.org/) instead of [maven](https://maven.apache.org/)
     (see [comparison](https://www.geeksforgeeks.org/difference-between-gradle-and-maven/))
@@ -15,21 +15,21 @@ Following topics are interesting but less important and should be studyed on dem
   [stylelint](https://stylelint.io/),
   [checkstyle](https://checkstyle.sourceforge.io),
   [PMD](https://pmd.github.io/)
-* databases: [PostgreSQL](backend/PostgreSQL.md)
+* databases: [PostgreSQL](minor-topics/PostgreSQL.md)
   * in-memory relational:
     [H2](https://www.h2database.com/html/main.html),
     [hsql](http://hsqldb.org/),
     [Apache Derby](https://db.apache.org/derby/)
   * nosql:
     [MongoDB](https://www.mongodb.com/docs/manual/),
-    [Elasticsearch](backend/Elasticsearch.md)
+    [Elasticsearch](minor-topics/Elasticsearch.md)
   * misc: [What is the best database design for multi-language data?](https://medium.com/kocsistem/what-is-the-best-database-design-for-multi-language-data-b21982dd7265)  
 * db tool: [dbeaver](https://dbeaver.io/)
 * db versioning: [flyway](https://flywaydb.org/), 
   [liquibase](https://www.liquibase.com/) 
   (see [comparison](https://www.liquibase.com/liquibase-vs-flyway))
 * diagram editors: [PlantText](https://www.planttext.com/)
-* distributed event streaming: [kafka](backend/Kafka.md)
+* distributed event streaming: [kafka](minor-topics/Kafka.md)
 * documentation: [AsciiDoc](https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/) instead of [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * feature toggles: [togglz](https://www.togglz.org/)  
 * frameworks
@@ -40,14 +40,14 @@ Following topics are interesting but less important and should be studyed on dem
     [NodeJS](https://nodejs.org/) (JS),
     [Deno](https://deno.land/) (JS)
   * frontend:
-    [Stencil](frontend/Stencil.md),
-    [Svelte](frontend/Svelte.md),
-    [Next.js](frontend/NextJS.md),
-    [Remix](frontend/RemixJS.md),
-    [React](frontend/ReactJS.md),
+    [Stencil](minor-topics/Stencil.md),
+    [Svelte](minor-topics/Svelte.md),
+    [Next.js](minor-topics/NextJS.md),
+    [Remix](minor-topics/RemixJS.md),
+    [React](minor-topics/ReactJS.md),
     [Storybook](https://storybook.js.org/),
     [Solid](https://www.solidjs.com/)
-  * webstacks: [JAMStack](frontend/JAMStack.md)
+  * webstacks: [JAMStack](minor-topics/JAMStack.md)
 * http servers
   * java:
     [tomcat](https://tomcat.apache.org/),
@@ -67,20 +67,20 @@ Following topics are interesting but less important and should be studyed on dem
   * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
 * images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
 * languages:
-  [Javascript](frontend/JavaScript.md),
-  [CSS](frontend/CSS.md),
-  [HTML](frontend/HTML.md)
+  [Javascript](minor-topics/JavaScript.md),
+  [CSS](minor-topics/CSS.md),
+  [HTML](minor-topics/HTML.md)
 * libs:
-  [WebAPIs](frontend/WebAPIs.md),
+  [WebAPIs](minor-topics/WebAPIs.md),
   [JPA](https://jakarta.ee/specifications/persistence/),
   [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language),
-* [micro-frontends](frontend/MicroFrontends.md)
+* [micro-frontends](minor-topics/MicroFrontends.md)
 * orm: [JOOQ](https://www.jooq.org/),
   [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
   [Prisma](https://www.prisma.io/) (TS) as alternatives to JPA 
-* [progressive web app](frontend/PWA.md)
-* [reactive programming](https://www.baeldung.com/cs/reactive-programming): [RxJS](frontend/RxJS.md)
-* [security](transversal/Security.md)
+* [progressive web app](minor-topics/PWA.md)
+* [reactive programming](https://www.baeldung.com/cs/reactive-programming): [RxJS](webstack/RxJS.md)
+* [security](minor-topics/Security.md)
 * [steel-thread](https://www.rubick.com/steel-threads/) is a very thin slice of functionality that threads through a software system; you build the thinnest possible version that crosses the boundaries of the system and covers an important use case
 * testing: [Jest](https://jestjs.io/) instead of [Jasmine](https://jasmine.github.io/);
       see [article](https://academind.com/tutorials/javascript-testing-introduction)
@@ -90,8 +90,8 @@ Following topics are interesting but less important and should be studyed on dem
     to choose a diagram / graph for a given purpose
 * video recording: [screentogif](https://www.screentogif.com/)
 * vm: [graalvm](https://www.graalvm.org/)
-* [web accessibility](transversal/WebAccessibility.md)
-* [web components](frontend/WebComponents.md)
+* [web accessibility](minor-topics/WebAccessibility.md)
+* [web components](minor-topics/WebComponents.md)
 
 
 See also [webstack](./README.md) for main topics (and [archived topics](./archive/archive.md))

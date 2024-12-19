@@ -1,18 +1,18 @@
 # Webstack
 
-Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringBoot.md)
+Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/SpringBoot.md)
 
-* api: [REST](transversal/REST-API-Guidelines.md)
-* application state management: [RxJS](frontend/RxJS.md)
+* api: [REST](webstack/REST-API-Guidelines.md)
+* application state management: [RxJS](webstack/RxJS.md)
 * build: [maven](https://maven.apache.org/), [npm](https://nodejs.org/en/download/package-manager)
 * code analyzer/formatter: **TODO**
 * database: [H2](https://www.h2database.com/html/main.html)
 * documentation: [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-* frameworks: [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringBoot.md)
+* frameworks: [Angular](webstack/Angular.md) & [Spring Boot](webstack/SpringBoot.md)
 * ide: [IntelliJ IDEA](https://www.jetbrains.com/idea/)
 * languages:
-  [Java](backend/Java.md),
-  [Typescript](frontend/TypeScript.md),
+  [Java](webstack/Java.md),
+  [Typescript](webstack/TypeScript.md),
 * persistence: [JPA](https://jakarta.ee/specifications/persistence/)
 * principles: 
     [clean code](#Clean-code) with 
@@ -25,7 +25,7 @@ Webstack based on [Angular](frontend/Angular.md) & [Spring Boot](backend/SpringB
       with [junit5](https://junit.org/junit5/), [mockito](https://site.mockito.org/) and
     [Angular testing](https://angular.dev/guide/testing)
       with [Jasmine](https://jasmine.github.io/), [Playwright](https://playwright.dev/)
-* vcs: [Git](transversal/Git.md), [Github](https://github.com/)
+* vcs: [Git](webstack/Git.md), [Github](https://github.com/)
 
 
 (See also [minor topics](./minor-topics.md) and [archived topics](./archive/archive.md))
