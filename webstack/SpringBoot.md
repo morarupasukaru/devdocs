@@ -66,6 +66,11 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 * tools:
   * [spring-boot-migrator](https://github.com/spring-projects-experimental/spring-boot-migrator)
   * [Spring Tools 4](https://spring.io/tools) for the IDEs integration
+* courses
+  * [Spring Academy - Learning path - Spring Certified Professional](https://spring.academy/paths)
+  * [Spring Professional Certification Exam Tutorial - Module 01 - Container, Dependency, and IoC](https://www.udemy.com/course/spring-certified-tutorial)
+  * TODO
+  * [Spring Boot 3, Spring 6 & Hibernate for Beginners](https://www.udemy.com/course/spring-hibernate-tutorial/)
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
