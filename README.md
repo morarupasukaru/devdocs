@@ -14,7 +14,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 * languages:
   [Java](webstack/Java.md),
   [Typescript](webstack/TypeScript.md)
-* linters: [eslint](https://eslint.org/), [stylelint](https://stylelint.io/), [PMD](https://pmd.github.io/)
+* linters: [eslint](https://eslint.org/), [stylelint](https://stylelint.io/), [PMD](https://pmd.github.io/), [husky](https://typicode.github.io/husky/) (git hooks)
 * persistence: [JPA](https://jakarta.ee/specifications/persistence/)
 * principles: 
     [clean code](#Clean-code) with 
