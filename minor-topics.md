@@ -68,8 +68,9 @@ Following topics are interesting but less important and should be studyed on dem
 * libs:
   [WebAPIs](minor-topics/WebAPIs.md),
   [JPA](https://jakarta.ee/specifications/persistence/),
-  [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language),
+  [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language)
 * [micro-frontends](minor-topics/MicroFrontends.md)
+* monitoring: [glowroot](https://glowroot.org/)  
 * orm: [JOOQ](https://www.jooq.org/),
   [Spring Data R2DBC](https://spring.io/projects/spring-data-r2dbc),
   [Prisma](https://www.prisma.io/) (TS) as alternatives to JPA 
