@@ -2,7 +2,7 @@
 
 Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/SpringBoot.md)
 
-* api: [REST](webstack/REST-API-Guidelines.md)
+* api: [REST](webstack/REST-API-Guidelines.md), [bruno](https://www.usebruno.com/)
 * application state management: [RxJS](webstack/RxJS.md)
 * build: [maven](https://maven.apache.org/), [npm](https://nodejs.org/en/download/package-manager)
 * code formatters: [prettier](https://prettier.io/), [checkstyle](https://checkstyle.sourceforge.io/)
