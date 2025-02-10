@@ -43,6 +43,7 @@ Following topics are interesting but less important and should be studyed on dem
     [Storybook](https://storybook.js.org/),
     [Solid](https://www.solidjs.com/)
   * webstacks: [JAMStack](minor-topics/JAMStack.md)
+* greenIT: [Green Software Practitioner](https://learn.greensoftware.foundation/)
 * http servers
   * java:
     [tomcat](https://tomcat.apache.org/),
