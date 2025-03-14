@@ -71,14 +71,22 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * [Spring Academy - Learning path - Spring Certified Professional](https://spring.academy/paths)
   * [Spring Boot 3, Spring 6 & Hibernate for Beginners](https://www.udemy.com/course/spring-hibernate-tutorial/)
   * Spring Professional Certification Exam Tutorial
-    * [Module 01 - Container, Dependency, and IoC](https://www.udemy.com/course/spring-certified-tutorial)
-    * [Module 02 - Aspect Oriented Programming](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-02)
-    * [Module 03 - Data Management: JDBC, Transactions, Spring Data JPA](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-03)
-    * [Module 04 - Spring Boot, Spring Boot Auto Configuration, Spring Boot Actuator, Spring Boot Testing](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-04-spring-boot)
-    * [Module 05 - Spring MVC and the Web Layer](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-05)
-    * [Module 06 - Spring Security](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-06)
-    * [Module 07 - Spring REST](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-07)
-    * [Module 08 - Spring Testing](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-08)
+    * [Module 1 - Container, Dependency, and IoC](https://www.udemy.com/course/spring-certified-tutorial) /
+      [Tests Module 1](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-01)
+    * [Module 2 - Aspect Oriented Programming](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-02) /
+      [Tests Module 2](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-02)
+    * [Module 3 - Data Management: JDBC, Transactions, Spring Data JPA](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-03) /
+      [Tests Module 3](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-03)
+    * [Module 4 - Spring Boot, Spring Boot Auto Configuration, Spring Boot Actuator, Spring Boot Testing](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-04-spring-boot) /
+      [Tests Module 4](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-04)
+    * [Module 5 - Spring MVC and the Web Layer](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-05) /
+      [Tests Module 5](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-05)
+    * [Module 6 - Spring Security](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-06) /
+      [Tests Module 6](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-06)
+    * [Module 7 - Spring REST](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-07) /
+      [Tests Module 7](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-07)
+    * [Module 8 - Spring Testing](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-08) /
+      [Tests Module 8](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-08)
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
