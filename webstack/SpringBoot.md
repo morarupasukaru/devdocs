@@ -72,7 +72,13 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
   * [Spring Boot 3, Spring 6 & Hibernate for Beginners](https://www.udemy.com/course/spring-hibernate-tutorial/)
   * Spring Professional Certification Exam Tutorial
     * [Module 01 - Container, Dependency, and IoC](https://www.udemy.com/course/spring-certified-tutorial)
-    * TODO
+    * [Module 02 - Aspect Oriented Programming](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-02)
+    * [Module 03 - Data Management: JDBC, Transactions, Spring Data JPA](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-03)
+    * [Module 04 -]()
+    * [Module 05 -]()
+    * [Module 06 -]()
+    * [Module 07 -]()
+    * [Module 08 -]()
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
