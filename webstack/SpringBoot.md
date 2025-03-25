@@ -87,6 +87,7 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
       [Tests Module 7](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-07)
     * [Module 8 - Spring Testing](https://www.udemy.com/course/spring-professional-certification-exam-tutorial-module-08) /
       [Tests Module 8](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-08)
+    * see also [Spring certification know-how](https://github.com/DalvirSinghBains/spring-cert-prep-2025) 
 * alternatives to SpringBoot:
   [Quarkus](https://quarkus.io/),
   [Micronaut](https://micronaut.io/),
