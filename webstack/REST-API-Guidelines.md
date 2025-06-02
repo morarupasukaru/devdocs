@@ -104,6 +104,7 @@ Selection of [Zalando](https://opensource.zalando.com/restful-api-guidelines/#) 
     * and therefore MUST NOT use **[HATEOAS](https://www.vinaysahni.com/best-practices-for-a-pragmatic-restful-api#hateoas)**
     * MUST be **Stateless** API
 * Tools
+  * [Spectral](https://stoplight.io/open-source/spectral): an open-source API style guide enforcer and linter
   * [HTTP Client Tool in IntelliJ](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html) as alternative to [curl](https://curl.se/)
   * list of [OpenAPI tools](https://openapi.tools/)
   * [json-server](https://github.com/typicode/json-server): fake REST API
