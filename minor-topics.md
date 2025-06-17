@@ -55,12 +55,14 @@ Following topics are interesting but less important and should be studyed on dem
 * icons: [heroicons](https://heroicons.com/), [Feather](https://feathericons.com/),
   [Material Design Icons](https://pictogrammers.com/library/mdi/),
   [React Icons](https://react-icons.github.io/react-icons)
-* ide: [Visual Studio Code](https://code.visualstudio.com/) instead of IntelliJ IDEA + pluggins
+* ide:
+  * [Visual Studio Code](https://code.visualstudio.com/) instead of IntelliJ IDEA + pluggins
   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer),
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials),
   [REST client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client),
   * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
+  * IntelliJ + pluggins [HTTP Client](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html), [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x)
 * images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
 * languages:
   [Javascript](minor-topics/JavaScript.md),
