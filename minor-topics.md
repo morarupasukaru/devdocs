@@ -61,7 +61,7 @@ Following topics are interesting but less important and should be studyed on dem
   [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer),
   [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials),
   [REST client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client),
-  * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
+    * see [guide for building java](https://spring.io/guides/gs/guides-with-vscode)
   * IntelliJ + pluggins [HTTP Client](https://www.jetbrains.com/help/idea/http-client-in-product-code-editor.html), [Key Promoter X](https://plugins.jetbrains.com/plugin/9792-key-promoter-x)
 * images: [unsplash.com](https://unsplash.com/), [Noun Project](https://thenounproject.com/)
 * languages:
