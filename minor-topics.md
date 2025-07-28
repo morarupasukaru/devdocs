@@ -72,6 +72,7 @@ Following topics are interesting but less important and should be studyed on dem
   [WebAPIs](minor-topics/WebAPIs.md),
   [JPA](https://jakarta.ee/specifications/persistence/),
   [JPQL](https://en.wikipedia.org/wiki/Jakarta_Persistence_Query_Language)
+* virtualization: [wsl](https://learn.microsoft.com/en-us/windows/wsl/install) to run linux on microsoft windows
 * [micro-frontends](minor-topics/MicroFrontends.md)
 * monitoring: [glowroot](https://glowroot.org/)  
 * orm: [JOOQ](https://www.jooq.org/),
