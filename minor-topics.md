@@ -55,6 +55,7 @@ Following topics are interesting but less important and should be studyed on dem
 * icons: [heroicons](https://heroicons.com/), [Feather](https://feathericons.com/),
   [Material Design Icons](https://pictogrammers.com/library/mdi/),
   [React Icons](https://react-icons.github.io/react-icons)
+  * [emojis](https://www.unicode.org/emoji/charts/full-emoji-list.html)  
 * ide:
   * [Visual Studio Code](https://code.visualstudio.com/) instead of IntelliJ IDEA + pluggins
   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode),
