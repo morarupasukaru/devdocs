@@ -3,25 +3,25 @@
 ## Prompt Engineering 
 see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
-* general informations
-  * two main goals of prompt engineering is to control output **content** (an article) and optionaly control output **format** (e.g. markdown)
-  * a good prompt include a detailed task description (or goal, question) and context (role, relevant information, examples, contraints)
-  * complex (multi-task) prompts should be avoided
-  * fine-tune & adjust output with follow-up question/task in chat (e.g. add links)
-* techniques
-  * [zero-shot Prompting](https://www.promptingguide.ai/techniques/zeroshot), [one-, few-shot prompting](https://www.promptingguide.ai/techniques/fewshot)
-    * finetuning vs few-shot prompting
-  * using delimiters to structure prompt
-  * contextual prompting (including relevant data + information)
-  * [chain-of-thought prompting](https://www.promptingguide.ai/techniques/cot)
-    * reasoning models & chain-of-thought prompting
-  * split complex problems into simpler ones
-  * ask-before-answer prompting
-  * persona prompting
-  * [self-reflective prompting](https://www.promptingguide.ai/techniques/reflexion)
-  * negative prompting
-  * controlling the output format
-  * 
+*general informations*
+* two main goals of prompt engineering is to control output **content** (an article) and optionaly control output **format** (e.g. markdown)
+* a good prompt include a detailed task description (or goal, question) and context (role, relevant information, examples, contraints)
+* complex (multi-task) prompts should be avoided
+* fine-tune & adjust output with follow-up question/task in chat (e.g. add links)
+
+*techniques*
+* [zero-shot Prompting](https://www.promptingguide.ai/techniques/zeroshot), [one-, few-shot prompting](https://www.promptingguide.ai/techniques/fewshot)
+  * finetuning vs few-shot prompting
+* using delimiters to structure prompt
+* contextual prompting (including relevant data + information)
+* [chain-of-thought prompting](https://www.promptingguide.ai/techniques/cot)
+  * reasoning models & chain-of-thought prompting
+* split complex problems into simpler ones
+* ask-before-answer prompting
+* persona prompting
+* [self-reflective prompting](https://www.promptingguide.ai/techniques/reflexion)
+* negative prompting
+* controlling the output format
 
 ## GitHub CoPilot completions
 * *trigger completions via variable/function names*: write variable or function names to ease GitHub CoPilot to guess what to do next and trigger good completion
