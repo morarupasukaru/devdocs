@@ -9,4 +9,9 @@
 * *completions in CSS styling* to increase productivity
 
 ## GitHub CoPilot Chat
-* TODO
+* explain code with */explain*
+* generate code
+* fixing errors with *fix*
+* generate unit tests with */test*
+
+*hint*: it's better to use normal AI chat than GitHub CoPilot for project's planification
