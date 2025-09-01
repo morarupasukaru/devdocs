@@ -39,7 +39,6 @@ see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 ## Prompts Templates
 
 see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#prompts):
-
 * [Act as a UX/UI Developer](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-uxui-developer)
 * [Act as a Web Design Consultant](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-web-design-consultant)
 * [Act as a Text Based Adventure Game](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-text-based-adventure-game)
