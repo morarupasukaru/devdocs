@@ -24,6 +24,8 @@
 
 see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) and https://prompts.chat/
 
+TODO add example of SBB & tipps
+
 ### Programming Teacher
 
 * *Template*:
