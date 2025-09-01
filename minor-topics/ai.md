@@ -1,10 +1,15 @@
 # AI Hints
 
-## Prompt Engineering
-
+## Prompt Engineering 
 see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
-* TODO
+* general informations
+  * two main goals of prompt engineering is to control output **content** (an article) and optionaly control output **format** (e.g. markdown)
+  * a good prompt include a detailed task description (or goal, question) and context (role, relevant information, examples, contraints)
+  * complex (multi-task) prompts should be avoided
+  * fine-tune & adjust output with follow-up question/task in chat (e.g. add links)
+* techniques
+  * TODO
 
 ## GitHub CoPilot completions
 * *trigger completions via variable/function names*: write variable or function names to ease GitHub CoPilot to guess what to do next and trigger good completion
