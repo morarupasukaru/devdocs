@@ -1,6 +1,9 @@
 # AI Hints
 
 ## Prompt Engineering
+
+see [Prompt Engineering Guide](https://www.promptingguide.ai/)
+
 * TODO
 
 ## GitHub CoPilot completions
@@ -16,11 +19,7 @@
 
 *hint*: it's better to use normal AI chat than GitHub CoPilot for project's planification
 
-## Own Chats
-
-* provide list of new in 2025 about technology ...
-
-## Templates
+## Prompts Templates
 
 see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#prompts) and https://prompts.chat/
 
