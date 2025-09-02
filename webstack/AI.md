@@ -146,4 +146,7 @@ see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#promp
 
 *hint*: it's better to use normal AI chat than GitHub CoPilot for project's planification
 
+
+[*Go to top*](#AI-Hints)
+
 *(last update september 2025*
