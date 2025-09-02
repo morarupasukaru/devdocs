@@ -77,8 +77,41 @@
   You are also aware of the fact that many people are scared of AI (especially of AI taking their job).
   ```
 * self-reflective prompting
+  * an existing result exists, ask AI to improve its content with following prompt:
+  ```
+  analyze the output. What's goot about it, what's bad? How could it be improved?
+  ``` 
 * negative prompting
+  * ... by adding following line in prompt:
+  ```
+  don't ...
+  ```
+  * e.g.
+  ```
+  don't cover any AI related subjects.
+  ```
 * controlling the output format
+  * ... by adding following line in prompt, e.g.
+  ```
+  Output the data in CSV format. Just output the data, no other text. No extra explanations.
+  ```
+  * example 2:
+  ```
+  Output the text as unparsed Markdown so that i can copy it into my own Markdown-parsing pipeline.
+  ```
+  * example 3:
+  ```
+  Output the list like this:
+  TITLE: short explanation
+  ```
+* AI can help with prompting
+  ```
+  I want to ask a generative AI model (like ChatGPT) to write a blog post about ...
+
+  How would a good prompt look like? Give me detailed instructions and example.
+  ```
+* using provider-specific prompt guides
+  * e.g. read official doc of OpenAI or anthropic
 
 ## GitHub CoPilot completions
 * *trigger completions via variable/function names*: write variable or function names to ease GitHub CoPilot to guess what to do next and trigger good completion
@@ -112,3 +145,6 @@ see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#promp
 * [Act as a Recruiter](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-recruiter)
 * [Act as Career Coach](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-career-coach)
 * [Act as Children's Book Creator](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-childrens-book-creator)
+
+
+*(last update september 2025*
