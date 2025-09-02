@@ -100,11 +100,13 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * see other [options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
   * [build tools integration](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp) 
   * project configuration: [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html); useful flags:
-    * TODO continue here: + nullcheck flag, stricts 
-    * [sourceMap](https://www.typescriptlang.org/tsconfig#sourceMap) : allow to debug typescript code in browser
-    * [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny): force to declare type of variables
+    * [strict](https://www.typescriptlang.org/tsconfig/#strict): to enables a wide range of type checking behavior like
+      * ... [strictNullChecks](https://www.typescriptlang.org/tsconfig/#strictNullChecks) : to get a type error if null and undefined is used where a concrete value is expected (if strictNullChecks = true)
+      * ... [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny): force to declare type of variables
+      * etc.
     * [noUnusedParameters](https://www.typescriptlang.org/tsconfig#noUnusedParameters): report errors on unused parameters
     * [noUnusedLocals](https://www.typescriptlang.org/tsconfig#noUnusedLocals): report errors on unused locals
+    * [sourceMap](https://www.typescriptlang.org/tsconfig#sourceMap) : allow to debug typescript code in browser
     * [include](https://www.typescriptlang.org/tsconfig#include) /
     [exclude](https://www.typescriptlang.org/tsconfig#exclude): define compiled files
     * [target](https://www.typescriptlang.org/tsconfig#target): specify target ECMAScript version (e.g. ES6)
