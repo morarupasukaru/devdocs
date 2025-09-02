@@ -120,9 +120,9 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
   * [TypeScript Cheat Sheets](https://www.typescriptlang.org/cheatsheets/)
   * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
-  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-3.html) to check out new features
+  * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
 
 [*Go to parent page*](../README.md)
 
-*Page update written in 2019, last update: 09.2025; links checked on 04.03.2024*
+*Page update written in 2019, last update: 09.2025; links checked on 02.09.2025*
