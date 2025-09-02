@@ -99,8 +99,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * ```tsc --watch``` to recompile project on changes
     * see other [options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
   * [build tools integration](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp) 
-    with [gulp](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#gulp), 
-    [webpack](https://webpack.js.org/guides/typescript/), etc.
   * project configuration: [tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html); useful flags:
     * [sourceMap](https://www.typescriptlang.org/tsconfig#sourceMap) : allow to debug typescript code in browser
     * [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny): force to declare type of variables
