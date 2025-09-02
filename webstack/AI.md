@@ -113,20 +113,7 @@
 * using provider-specific prompt guides
   * e.g. read official doc of OpenAI or anthropic
 
-## GitHub CoPilot completions
-* *trigger completions via variable/function names*: write variable or function names to ease GitHub CoPilot to guess what to do next and trigger good completion
-* *comment-based prompting*: suggest GitHub CoPilot what to do as next completion by providing context with a comment
-* *completions in CSS styling* to increase productivity
-
-## GitHub CoPilot Chat
-* explain code with */explain*
-* generate code
-* fixing errors with *fix*
-* generate unit tests with */test*
-
-*hint*: it's better to use normal AI chat than GitHub CoPilot for project's planification
-
-## Prompts Templates
+### Prompts Templates
 
 see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#prompts):
 * [Act as a UX/UI Developer](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-uxui-developer)
@@ -145,6 +132,18 @@ see [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts#promp
 * [Act as a Recruiter](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-a-recruiter)
 * [Act as Career Coach](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-career-coach)
 * [Act as Children's Book Creator](https://github.com/f/awesome-chatgpt-prompts?tab=readme-ov-file#act-as-childrens-book-creator)
+  
+## GitHub CoPilot completions
+* *trigger completions via variable/function names*: write variable or function names to ease GitHub CoPilot to guess what to do next and trigger good completion
+* *comment-based prompting*: suggest GitHub CoPilot what to do as next completion by providing context with a comment
+* *completions in CSS styling* to increase productivity
 
+## GitHub CoPilot Chat
+* explain code with */explain*
+* generate code
+* fixing errors with *fix*
+* generate unit tests with */test*
+
+*hint*: it's better to use normal AI chat than GitHub CoPilot for project's planification
 
 *(last update september 2025*
