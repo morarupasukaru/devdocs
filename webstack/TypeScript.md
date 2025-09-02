@@ -33,6 +33,8 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     allow you to specify the exact value a string must have (enum-like); 
     * e.g. `type Alignment = "left" | "right" | "center";`
     * see [How to list the possible values of a string literal union type in TypeScript](https://danielbarta.com/literal-iteration-typescript/)
+  * [discriminated unions](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions) or [tagged union](https://en.wikipedia.org/wiki/Tagged_union)
+    is a data structure used to hold a value that could take on several different, but fixed, types
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
@@ -117,8 +119,8 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * of needed JS library at [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped)
     * see also [how to write a TypeScript library](https://www.tsmean.com/articles/how-to-write-a-typescript-library/)
 * references
+  * **[TypeScript Cheat Sheets](https://www.typescriptlang.org/cheatsheets/)**
   * [TypeScript documentation](https://www.typescriptlang.org/docs/)
-  * [TypeScript Cheat Sheets](https://www.typescriptlang.org/cheatsheets/)
   * [JSDoc reference](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html)
   * [TypeScript release notes](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-9.html) to check out new features
   * course: [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/)
