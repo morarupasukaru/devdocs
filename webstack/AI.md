@@ -1,8 +1,10 @@
 # AI Hints
 
-## Prompt Engineering 
+## Prompt Engineering
 
 *general informations*
+* good prompts: "be specific" - "add useful context" - "add examples" - "split complex tasks"
+** iterate to improve the result BUT don't get lost in "iteration hell"
 * two main goals of prompt engineering is to control output **content** (an article) and optionaly control output **format** (e.g. markdown)
 * a good prompt include a detailed task description (or goal, question) and context (role, relevant information, examples, contraints)
 * complex (multi-task) prompts should be avoided
