@@ -91,4 +91,4 @@ about writing uncomplex readable and meaningfull code that is easy to understand
 
 [*Go to top*](#Webstack)
 
-*(last update december 2024; links checked on 22.01.2024)*
+*(last update september 2025; links checked on 22.01.2024)*
