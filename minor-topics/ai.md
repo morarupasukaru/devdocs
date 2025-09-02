@@ -10,8 +10,40 @@ see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 * fine-tune & adjust output with follow-up question/task in chat (e.g. add links)
 
 *techniques*
-* [zero-shot Prompting](https://www.promptingguide.ai/techniques/zeroshot), [one-, few-shot prompting](https://www.promptingguide.ai/techniques/fewshot)
-  * finetuning vs few-shot prompting
+* [zero-shot Prompting](https://www.promptingguide.ai/techniques/zeroshot) without providing examples
+* [one-, few-shot prompting](https://www.promptingguide.ai/techniques/fewshot)
+  * ... by providing examples to fine-tune the result, style and content
+  * examples should be separated by some characters (e.g. """ or <example1>)
+  * put first context and examples and then instruction at last (sequence to be completed)
+  ```
+  Act as ... that ...
+  Here is a few examples:
+  <example1>....</example1>
+  <example2>...</example2>
+
+  Do ...  
+  ```
+  * example can contain expected output:
+  ```
+  I need to translate an English text to German
+  Please analyze the text and translate it on a word-by-word basis.
+  For example:
+  <english-text>The sun is shining.</english-text>
+  <translated-output>
+  The: Die
+  Sun: Sonne
+  is: ist
+  shining: scheint
+  </translated-output>
+
+  Here's the text I want you to translate:
+  <input>
+  </input>
+  ```
+  * [finetuning model](https://www.promptingguide.ai/applications/finetuning-gpt4o) as alternative to few-shot prompting
+    * finetune for a specific task repeated regurlaly 
+    * ... finetune is expensive
+    * ... finetune can produce worse results with other tasks
 * using delimiters to structure prompt
 * contextual prompting (including relevant data + information)
 * [chain-of-thought prompting](https://www.promptingguide.ai/techniques/cot)
