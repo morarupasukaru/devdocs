@@ -83,7 +83,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
       : constructs a type with all properties of *Type* set to optional
     * [`Readonly<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
       : constructs a type with all properties of *Type* set to readonly (immutable)
-    * [`Record<Keys,Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeystype)
+    * [`Record<Keys,Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
       : constructs an object type whose property keys are *Keys* and whose property values are *Type* (map)
     * [`NonNullable<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)
       : constructs a type by excluding null and undefined from *Type*
