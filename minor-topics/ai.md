@@ -1,7 +1,6 @@
 # AI Hints
 
 ## Prompt Engineering 
-see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 
 *general informations*
 * two main goals of prompt engineering is to control output **content** (an article) and optionaly control output **format** (e.g. markdown)
@@ -10,16 +9,16 @@ see [Prompt Engineering Guide](https://www.promptingguide.ai/)
 * fine-tune & adjust output with follow-up question/task in chat (e.g. add links)
 
 *techniques*
-* [zero-shot Prompting](https://www.promptingguide.ai/techniques/zeroshot) without providing examples
-* [one-, few-shot prompting](https://www.promptingguide.ai/techniques/fewshot)
+* zero-shot Prompting without providing examples
+* one-, few-shot prompting
   * ... by providing examples to fine-tune the result, style and content
   * examples should be separated by some characters (e.g. """ or <example1>)
   * put first context and examples and then instruction at last (sequence to be completed)
   ```
   Act as ... that ...
   Here is a few examples:
-  <example1>....</example1>
-  <example2>...</example2>
+  <example-1>....</example-1>
+  <example-2>...</example-2>
 
   Do ...  
   ```
@@ -27,8 +26,10 @@ see [Prompt Engineering Guide](https://www.promptingguide.ai/)
   ```
   I need to translate an English text to German
   Please analyze the text and translate it on a word-by-word basis.
+  
   For example:
   <english-text>The sun is shining.</english-text>
+  
   <translated-output>
   The: Die
   Sun: Sonne
@@ -40,18 +41,42 @@ see [Prompt Engineering Guide](https://www.promptingguide.ai/)
   <input>
   </input>
   ```
-  * [finetuning model](https://www.promptingguide.ai/applications/finetuning-gpt4o) as alternative to few-shot prompting
+  * finetuning model as alternative to few-shot prompting
     * finetune for a specific task repeated regurlaly 
     * ... finetune is expensive
     * ... finetune can produce worse results with other tasks
 * using delimiters to structure prompt
-* contextual prompting (including relevant data + information)
-* [chain-of-thought prompting](https://www.promptingguide.ai/techniques/cot)
-  * reasoning models & chain-of-thought prompting
+* contextual prompting
+  * by including relevant information / data in prompt or as attachment files (e.g. an article)
+* chain-of-thought prompting
+  * ... by adding following line in prompt: 
+  ```
+  think step-by-step, outline your solution process (in detail) and derive the solution step-by-step therefore.
+  ```
+  * chain-of-thought helps e.g. for math/logical problem to increase correct results
+  * reasoning models include chain-of-thought internally --> please not use chain-of-thought explicitly in that case   
 * split complex problems into simpler ones
+  * ... with multiple prompts/tasks in the same chat to achieve the final complex task 
 * ask-before-answer prompting
+  * ... by adding following line in prompt: 
+  ```
+  ask any clarifying questions you want me to clarify before answering.
+  ```
 * persona prompting
-* [self-reflective prompting](https://www.promptingguide.ai/techniques/reflexion)
+  * ... by adding a role as first-line in prompt, e.g.
+  ```
+  You are an expert developer.
+  ```
+  * ... role can have more detail
+  ```
+  You are an expert developer. You are friendly but you're also aware of your status as a leader in AI-space.
+  ```
+  * ... detail about target audience might help
+  ```
+  You are an expert developer. You are friendly but you're also aware of your status as a leader in AI-space.
+  You are also aware of the fact that many people are scared of AI (especially of AI taking their job).
+  ```
+* self-reflective prompting
 * negative prompting
 * controlling the output format
 
