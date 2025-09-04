@@ -42,6 +42,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [rest parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#rest-parameters)
     available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions)
     as well
+  * [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads) by specifiying several signature overload and one function implementation matching them
 * [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
   * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/2/classes.html#public) (default), [private](https://www.typescriptlang.org/docs/handbook/2/classes.html#private), [protected](https://www.typescriptlang.org/docs/handbook/2/classes.html#protected), [readonly](https://www.typescriptlang.org/docs/handbook/2/classes.html#readonly)
