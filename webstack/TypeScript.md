@@ -82,7 +82,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [modules](https://www.typescriptlang.org/docs/handbook/modules.html) 
     of TypeScript works like 
     [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-  * [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (types, interfaces, ...) to build reusable components/APIs
+  * [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (in types, interfaces, ...) to build reusable components/APIs
   * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
   * [utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) used to transform types; e.g.
     * [`Partial<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
