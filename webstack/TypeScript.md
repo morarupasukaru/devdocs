@@ -37,6 +37,8 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [discriminated unions](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions) or [tagged union](https://en.wikipedia.org/wiki/Tagged_union)
     is a data structure used to hold a value that could take on several different, but fixed, types
   * [intersection types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types) to build up new types from other types by extending them
+  * [tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types) and [readonly
+ tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#readonly-tuple-types) types
 * [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is the process of refining types to more specific types than declared; help TypeScript to use JavaScript syntax with strong typing
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
