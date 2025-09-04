@@ -40,6 +40,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types) and [readonly
  tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#readonly-tuple-types) types
 * [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is the process of refining types to more specific types than declared; help TypeScript to use JavaScript syntax with strong typing
+  * use [{ ... } as const](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to convert an entire object to be type literals
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
