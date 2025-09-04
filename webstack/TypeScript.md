@@ -20,6 +20,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any), 
     [void](https://www.typescriptlang.org/docs/handbook/2/functions.html#void), 
     [never](https://www.typescriptlang.org/docs/handbook/2/functions.html#never)
+  * [template strings](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
   * [Array](https://www.typescriptlang.org/docs/handbook/2/objects.html#the-array-type) and [ReadonlyArray](https://www.typescriptlang.org/docs/handbook/2/objects.html#the-readonlyarray-type) generic types  
   * [type annotation](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#type-annotations) 
     declare explicitly a variable to be a given type; e.g. `let x: number;`
@@ -59,7 +60,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [conditional typess](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) - Types which act like if statements in the type system
   * [mapped typess](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html) - Creating types by mapping each property in an existing type
   * [template literal types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) - Mapped types which change properties via template literal strings
-    * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
