@@ -51,6 +51,15 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * etc.
 * [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is the process of refining types to more specific types than declared; help TypeScript to use JavaScript syntax with strong typing
   * use [{ ... } as const](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to convert an entire object to be type literals
+* creating types from types
+  * [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) - types which take parameters (in types, interfaces, ...)
+  * [keyof type operators](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html) - Using the keyof operator to create new types
+  * [typeof type operators](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html) - Using the typeof operator to create new types
+  * [indexed access typess](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html) - Using Type['a'] syntax to access a subset of a type
+  * [conditional typess](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html) - Types which act like if statements in the type system
+  * [mapped typess](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html) - Creating types by mapping each property in an existing type
+  * [template literal types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html) - Mapped types which change properties via template literal strings
+    * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
@@ -60,7 +69,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     as well
   * [parameter destructuring](https://www.typescriptlang.org/docs/handbook/2/functions.html#parameter-destructuring) to conveniently unpack objects provided as an argument into one or more local variables in the function body; default value can be set to local variables
   * [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads) by specifiying several signature overload and one function implementation matching them
-* [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (in types, interfaces, ...) to build reusable components/APIs
 * [modules](https://www.typescriptlang.org/docs/handbook/modules.html) 
   of TypeScript works like 
   [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
@@ -96,7 +104,6 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     ease copy of values from [arrays](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#array-destructuring) 
     or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
     into distinct variables
-  * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
   * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
   * [declaration files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#dts-files)
     `.d.ts` contain only type information
