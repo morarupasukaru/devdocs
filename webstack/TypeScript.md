@@ -35,6 +35,8 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     * see [How to list the possible values of a string literal union type in TypeScript](https://danielbarta.com/literal-iteration-typescript/)
   * [discriminated unions](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes-func.html#discriminated-unions) or [tagged union](https://en.wikipedia.org/wiki/Tagged_union)
     is a data structure used to hold a value that could take on several different, but fixed, types
+  * [intersection types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types) to build up new types from other types by extending them
+* [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is the process of refining types to more specific types than declared; help TypeScript to use JavaScript syntax with strong typing
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
   * [function type expressions](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-type-expressions)
     can also be defined directly
@@ -42,6 +44,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [rest parameters](https://www.typescriptlang.org/docs/handbook/2/functions.html#rest-parameters)
     available on [tuple](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-3-0.html#tuples-in-rest-parameters-and-spread-expressions)
     as well
+  * [parameter destructuring](https://www.typescriptlang.org/docs/handbook/2/functions.html#parameter-destructuring) to conveniently unpack objects provided as an argument into one or more local variables in the function body
   * [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads) by specifiying several signature overload and one function implementation matching them
 * [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
