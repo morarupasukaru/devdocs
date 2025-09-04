@@ -39,6 +39,16 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * [intersection types](https://www.typescriptlang.org/docs/handbook/2/objects.html#intersection-types) to build up new types from other types by extending them
   * [tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#tuple-types) and [readonly
  tuple](https://www.typescriptlang.org/docs/handbook/2/objects.html#readonly-tuple-types) types
+  * [utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) used to transform types; e.g.
+    * [`Partial<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
+      : constructs a type with all properties of *Type* set to optional
+    * [`Readonly<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
+      : constructs a type with all properties of *Type* set to readonly (immutable)
+    * [`Record<Keys,Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
+      : constructs an object type whose property keys are *Keys* and whose property values are *Type* (map)
+    * [`NonNullable<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)
+      : constructs a type by excluding null and undefined from *Type*
+    * etc.
 * [narrowing](https://www.typescriptlang.org/docs/handbook/2/narrowing.html) is the process of refining types to more specific types than declared; help TypeScript to use JavaScript syntax with strong typing
   * use [{ ... } as const](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to convert an entire object to be type literals
 * [functions](https://www.typescriptlang.org/docs/handbook/2/functions.html)
@@ -50,6 +60,10 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     as well
   * [parameter destructuring](https://www.typescriptlang.org/docs/handbook/2/functions.html#parameter-destructuring) to conveniently unpack objects provided as an argument into one or more local variables in the function body; default value can be set to local variables
   * [function overloads](https://www.typescriptlang.org/docs/handbook/2/functions.html#function-overloads) by specifiying several signature overload and one function implementation matching them
+* [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (in types, interfaces, ...) to build reusable components/APIs
+* [modules](https://www.typescriptlang.org/docs/handbook/modules.html) 
+  of TypeScript works like 
+  [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
 * [classes](https://www.typescriptlang.org/docs/handbook/2/classes.html) of TypeScript are more powerful as in 
   [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Inheritance#ECMAScript_2015_Classes), e.g.
   * more wide support of access modifiers: [public](https://www.typescriptlang.org/docs/handbook/2/classes.html#public) (default), [private](https://www.typescriptlang.org/docs/handbook/2/classes.html#private), [protected](https://www.typescriptlang.org/docs/handbook/2/classes.html#protected), [readonly](https://www.typescriptlang.org/docs/handbook/2/classes.html#readonly)
@@ -83,21 +97,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
     into distinct variables
   * [template literal](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-1-4.html#template-strings)
-  * [modules](https://www.typescriptlang.org/docs/handbook/modules.html) 
-    of TypeScript works like 
-    [ES6 Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules)
-  * [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) (in types, interfaces, ...) to build reusable components/APIs
   * [decorators](https://www.typescriptlang.org/docs/handbook/decorators.html) to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
-  * [utility types](https://www.typescriptlang.org/docs/handbook/utility-types.html) used to transform types; e.g.
-    * [`Partial<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
-      : constructs a type with all properties of *Type* set to optional
-    * [`Readonly<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
-      : constructs a type with all properties of *Type* set to readonly (immutable)
-    * [`Record<Keys,Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type)
-      : constructs an object type whose property keys are *Keys* and whose property values are *Type* (map)
-    * [`NonNullable<Type>`](https://www.typescriptlang.org/docs/handbook/utility-types.html#nonnullabletype)
-      : constructs a type by excluding null and undefined from *Type*
-    * etc.
   * [declaration files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#dts-files)
     `.d.ts` contain only type information
     * see [creating .d.ts Files from .js files with JSDoc](https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html) 
