@@ -20,6 +20,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     [any](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#any), 
     [void](https://www.typescriptlang.org/docs/handbook/2/functions.html#void), 
     [never](https://www.typescriptlang.org/docs/handbook/2/functions.html#never)
+  * [Array](https://www.typescriptlang.org/docs/handbook/2/objects.html#the-array-type) and [ReadonlyArray](https://www.typescriptlang.org/docs/handbook/2/objects.html#the-readonlyarray-type) generic types  
   * [type annotation](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html#type-annotations) 
     declare explicitly a variable to be a given type; e.g. `let x: number;`
   * [type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html) 
