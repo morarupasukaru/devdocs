@@ -115,7 +115,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
     into distinct variables
   * [decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators) based on ECMAScript to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
-    (see also [previous TS only decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)) 
+    (see also [legacy TS only decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)) 
   * [declaration files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#dts-files)
     `.d.ts` contain only type information
     * see [creating .d.ts Files from .js files with JSDoc](https://www.typescriptlang.org/docs/handbook/declaration-files/dts-from-js.html) 
