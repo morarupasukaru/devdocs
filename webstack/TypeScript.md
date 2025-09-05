@@ -54,6 +54,15 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
   * use [{ ... } as const](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-inference) to convert an entire object to be type literals
 * creating types from types
   * [generics](https://www.typescriptlang.org/docs/handbook/2/generics.html) - types which take parameters (in types, interfaces, ...)
+    * [using type parameters in generic constraints](https://www.typescriptlang.org/docs/handbook/2/generics.html#using-type-parameters-in-generic-constraints), e.g.
+    ```typescript
+    function getProperty<Type, Key extends keyof Type>(obj: Type, key: Key) {
+      return obj[key];
+    }
+    let x = { a: 1, b: 2, c: 3, d: 4 };
+    getProperty(x, "a");
+    getProperty(x, "m"); // error, m not assignable to type '"a" | "b" | "c" | "d"'
+      ```
   * [keyof type operators](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html) - Using the keyof operator to create new types
   * [typeof type operators](https://www.typescriptlang.org/docs/handbook/2/typeof-types.html) - Using the typeof operator to create new types
   * [indexed access typess](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html) - Using Type['a'] syntax to access a subset of a type
