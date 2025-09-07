@@ -114,7 +114,7 @@ new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* ar
     ease copy of values from [arrays](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#array-destructuring) 
     or properties of [tuples](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#tuple-destructuring) or [objects](https://www.typescriptlang.org/docs/handbook/variable-declarations.html#object-destructuring) 
     into distinct variables
-  * [decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators) based on ECMAScript to annotate a class/method/property/etc. to add functionality dynamically (like annotations in Java)
+  * [decorators](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#decorators) based on ECMAScript to annotate a class/method/property/etc.
     (see also [legacy TS only decorators](https://www.typescriptlang.org/docs/handbook/decorators.html)) 
   * [declaration files](https://www.typescriptlang.org/docs/handbook/2/type-declarations.html#dts-files)
     `.d.ts` contain only type information
