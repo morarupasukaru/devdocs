@@ -1,4 +1,4 @@
-# Javascript
+# JavaScript
 
 JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions 
 and is the scripting language for Web pages.
