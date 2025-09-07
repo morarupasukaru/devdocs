@@ -98,4 +98,4 @@ makes it easy to create stand-alone, production-grade Java/Spring based Applicat
 
 [*Go to parent page*](../README.md)
 
-*(Page mainly written in july 2020; links checked on 09.02.2024)*
+*(Page mainly written in july 2020, last update 25.03.2025; links checked on 09.02.2024)*
