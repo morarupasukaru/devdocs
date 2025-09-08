@@ -47,18 +47,6 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   * [encodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent) / 
     [decodeURIComponent()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent) 
     methods
-* [Fullscreen API](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API): 
-  to display a specific Element in full-screen mode; 
-  see [guide](https://developer.mozilla.org/en-US/docs/Web/API/Fullscreen_API/Guide)
-* [Presentation](https://developer.mozilla.org/en-US/docs/Web/API/Presentation_API): 
-  to support dual-screen
-* [Page Visibility](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API): 
-  to know when a document becomes visible or hidden
-  (see also [stackoverflow question](https://stackoverflow.com/questions/1060008/is-there-a-way-to-detect-if-a-browser-window-is-not-currently-active/9502074#9502074)
-  and [ifvisible.js](https://github.com/serkanyersen/ifvisible.js) JS lib)
-* [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API): 
-  to support e.g. infinite-scrolling; 
-  see [scroll-aware navigation bar](https://academind.com/tutorials/scroll-aware-navigation)
 * [Constraint validation API](https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation#the_constraint_validation_api): 
   to apply custom validation on user inputs
 * [Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API): 
@@ -94,15 +82,10 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
   [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
 * [Web app manifests](https://developer.mozilla.org/en-US/docs/Web/Manifest) to provide [Progressive web apps](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps)
 * [Background Synchronization API](https://developer.mozilla.org/en-US/docs/Web/API/Background_Synchronization_API) to defer tasks to be run in a service worker until the user has a stable network connection.
-* [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) to access user location
-* [Media Capture and Streams API](https://developer.mozilla.org/en-US/docs/Web/API/Media_Capture_and_Streams_API) 
-  and [MediaStream Recording API](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream_Recording_API) 
-  to access device camera and microphone
-* [Screen Orientation API](https://developer.mozilla.org/en-US/docs/Web/API/Screen_Orientation_API): change screen orientation at runtime; see [guide](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Object_Model/Managing_screen_orientation)
 * [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
   for speech recognition (recognize voice context from an audio input) & 
   synthesis (text-to-speech component that allows programs to read out their text content)
-* [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for controlling audio; see [guide](https://web.dev/articles/webaudio-intro)
+* ...  
 
 [*Go to parent page*](../README.md)
 
