@@ -230,8 +230,8 @@ Events can be triggered by user actions or programmatically and can be listened 
   [clientX](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/clientX)
 * Other properties: [Event.type](https://developer.mozilla.org/en-US/docs/Web/API/Event/type), 
   [Event.timeStamp](https://developer.mozilla.org/en-US/docs/Web/API/Event/timeStamp)
-* Event [bubbling](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_bubbling)
-  vs [capture](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events#event_capture)
+* Event [bubbling](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling)
+  vs [capture](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Event_bubbling#event_capture)
 * [Event.stopPropagation()](https://developer.mozilla.org/en-US/docs/Web/API/Event/stopPropagation) : 
   prevent further bubbling
 * [Event delegation](https://davidwalsh.name/event-delegate) : 
