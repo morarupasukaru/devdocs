@@ -102,7 +102,7 @@ Here is a list of useful [Web APIs](https://developer.mozilla.org/en-US/docs/Web
 * [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
   for speech recognition (recognize voice context from an audio input) & 
   synthesis (text-to-speech component that allows programs to read out their text content)
-* [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for controlling audio
+* [Web Audio API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API) for controlling audio; see [guide](https://web.dev/articles/webaudio-intro)
 
 [*Go to parent page*](../README.md)
 
