@@ -226,4 +226,4 @@ Events can be triggered by user actions or programmatically and can be listened 
 
 [*Go to top*](#Web-APIs)
 
-*(Page mainly written in 2019, links checked on 23.02.2024)*
+*(Page mainly written in 2019, last update: 09.2025, links checked on 08.09.2025)*
