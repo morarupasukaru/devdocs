@@ -9,7 +9,7 @@ update 22.08.2025 - interesting new topics
  
 ----
 
-* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 17 (11.2023)
+* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
