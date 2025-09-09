@@ -223,7 +223,7 @@ and is the scripting language for Web pages.
   * [optional chaining](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Optional_chaining) with ```?.``` operator ease access of object properties
   * [shorthand property](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#property_definitions)
     and [shorthand method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#method_definitions)
-  * names is a shorter way to define object's properties or methods within an 
+    is a shorter way to define object's properties or methods within an 
     [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer)
   * [nullish coalescing operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing_operator) 
     ```??``` allow to specify default value if left-hand side operand is null or undefined only
