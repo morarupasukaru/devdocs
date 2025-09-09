@@ -1,6 +1,6 @@
 # Angular
 
-[Angular](https://angular.io/) is a [TypeScript](TypeScript.md) framework to build 
+[Angular](https://angular.dev/) is a [TypeScript](TypeScript.md) framework to build 
 [Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 ----
@@ -13,19 +13,18 @@ update 22.08.2025 - interesting new topics
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
-  * [@NgModule](#NgModule) bundle a set of components together
+  * TODO: [@NgModule](#NgModule) bundle a set of components together
   * [Standalone components](https://angular.io/guide/standalone-components)
     to reducing the need for [@NgModule](#NgModule)s and simplify applications
   * [@Component](#Component) is a decorator used to identify a class as a component
-  * [Templates](https://angular.io/guide/template-syntax) in Angular represent the view written in HTML with 
+  * [Templates](https://angular.dev/guide/templates#) in Angular represent the view written in HTML with 
     additional features like dynamic changes
   * [Directives](#Directives) allow to add features to elements in the DOM
-  * [Data bindings](#Data-bindings) ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
+  * TODO [Data bindings](#Data-bindings) ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
     in different use cases
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
-  * [Signals](https://angular.io/guide/signals) as more performant alternative automatic change detection (preview Angular 16)
-    * see also [Why didn't the Angular team just use RxJS instead of Signals?](https://www.youtube.com/watch?v=iA6iyoantuo)
+  * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
 * [Other features](#Other-features)
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
@@ -39,22 +38,16 @@ update 22.08.2025 - interesting new topics
   * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](#ahead-of-time-aot-or-just-in-time-jit-compilation) happens at runtime (JiT) or during build (AoT)
   * [Deployment](#Deployment) to deploy Angular application on remote server
   * [Testing](#Testing) to write and run unit tests
-  * [Angular Elements](https://angular.io/guide/elements) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
+  * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
   * [Angular Universal](#Angular-Universal) provide
     [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
-  * [Web workers](https://angular.io/guide/web-worker) to run computations in a background thread
+  * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
   * [Angular Libraries](#Angular-Libraries)  
-  * [Angular Internationalization](https://angular.io/guide/i18n-overview)
-    with [@angular/localize](https://angular.io/api/localize)
-    or [ngx-translate](http://www.ngx-translate.com/)
-    * [ngx-translate](http://www.ngx-translate.com/) allow changing language at runtime
-    * [angular i18n support](https://angular.io/guide/i18n) build an angular app pro language to
-      ease search engine work
-    * see following [stackoverflow ticket](https://stackoverflow.com/questions/44923138/differences-ngx-translate-vs-i18n)
-    * [angular-t9n](https://github.com/kyubisation/angular-t9n) tool to manage .xlf translation files
+  * [Angular Internationalization](https://angular.dev/guide/i18n#)
+    or [ngx-translate](http://www.ngx-translate.com/) as alternative
 * [Ecosystem](#Ecosystem)
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
@@ -73,10 +66,9 @@ update 22.08.2025 - interesting new topics
 * References
   * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.mdd) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
-  * [Angular Docs](https://angular.io/docs)
-  * [Angular CLI](https://angular.io/cli)
-  * [Cheatsheet](https://angular.io/guide/cheatsheet)
-  * [Angular Update Guide](https://update.angular.io/)
+  * [Angular Docs](https://angular.dev/)
+  * [Angular CLI](https://angular.dev/tools/cli#)
+  * [Angular Update Guide](https://angular.dev/update-guide#)
 * Courses
   * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
   * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
