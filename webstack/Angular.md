@@ -51,7 +51,7 @@ update 22.08.2025 - interesting new topics
 * Ecosystem
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
-  * [NgRx](NgRx.md) used to manage application state
+  * [NgRx](https://github.com/morarupasukaru/devdocs/blob/main/minor-topics/NgRx.md) used to manage application state
   * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API (grid-system) using
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
