@@ -230,7 +230,7 @@ and is the scripting language for Web pages.
     * [logical OR](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR) ```||``` returns default value also if left-hand side operand if falsy (side-effect possible; e.g. 0)
   * [modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules) ease to compose self-contained piece of codes together
     * [import](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import#Description) and [export](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export#Description) statements
-    * features: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#Default_exports_versus_named_exports) exports,
+    * features: [named and default](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#default_exports_versus_named_exports) exports,
       [dynamic module loading](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#dynamic_module_loading),
       [top level await](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules#top_level_await)
     * JavaScript's modules should replace other module format like [CommonJS](https://en.wikipedia.org/wiki/CommonJS), 
