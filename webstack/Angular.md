@@ -1,13 +1,16 @@
 # Angular
 
 [Angular](https://angular.dev/) is a [TypeScript](TypeScript.md) framework to build 
-[Single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
+[single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
+
+TODO rewrite documentations with subset of official docs but with same structure
 
 ----
 update 22.08.2025 - interesting new topics
 * [Deferred loading with @defer](https://angular.dev/guide/templates/defer)
  
 ----
+
 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
 * concepts
