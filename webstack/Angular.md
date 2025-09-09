@@ -48,17 +48,15 @@ update 22.08.2025 - interesting new topics
   * [Angular Libraries](#Angular-Libraries)  
   * [Angular Internationalization](https://angular.dev/guide/i18n#)
     or [ngx-translate](http://www.ngx-translate.com/) as alternative
-* [Ecosystem](#Ecosystem)
+* Ecosystem
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
   * [NgRx](NgRx.md) used to manage application state
-  * [Angular Flex-Layout](#Angular-Flex-Layout) provide layout API using 
+  * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API (grid-system) using
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-  * [Angular Material](#Angular-Material) is an Angular components suite based on 
-    [Material Design](https://m3.material.io/) (by Google)
-  * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
-    [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
+* [Angular Material](https://material.angular.io/) is an Angular components suite based on
+    [Material Design](https://m3.material.io/) of Google
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
 * References
@@ -75,6 +73,7 @@ update 22.08.2025 - interesting new topics
   * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)
 
 [*Go to parent page*](../README.md)
+
 
 ## Angular concepts
 
@@ -685,43 +684,6 @@ export class SafeUrlPipe implements PipeTransform {
 [Angular Package Format](https://angular.io/guide/angular-package-format) (APF). APF is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages
 
 * [Angular QuickStart Lib](https://github.com/filipesilva/angular-quickstart-lib) is a simple library quickstart for Angular libraries, implementing the Angular Package Format v4.0.
-
-[*Go to top*](#Angular)
-
-
-## Ecosystem
-
-#### Angular Flex-Layout
-
-[Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API using 
-[Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-
-* basics
-  * use [fxLayout](https://github.com/angular/flex-layout/wiki/fxLayout-API) directive to define flex-direction on the container
-  * use [fxLayoutAlign](https://github.com/angular/flex-layout/wiki/fxLayoutAlign-API) directive to align flex items on the main and cross-axis
-  * use [fxLayoutGap](https://github.com/angular/flex-layout/wiki/fxLayoutGap-API) directive to specify margin gaps on children within a flexbox container
-  * use [fxHide](https://github.com/angular/flex-layout/wiki/fxHide-API) and [fxShow](https://github.com/angular/flex-layout/wiki/fxShow-API) directives to show/hide component in combination with breakpoints;
-    * hide a div on small devices: ```<div fxHide.xs>...</div>```
-    * hide a div on greater than small devices: ```<div fxHide.gt-xs>...</div>```
-* docs: [Overview of core directives](https://github.com/angular/flex-layout/wiki/Declarative-API-Overview)
-  and [Responsive API](https://github.com/angular/flex-layout/wiki/Responsive-API)
-
-[*Go to top*](#Angular)
-
-
-#### Angular Material
-
-[Angular Material](https://material.angular.io/) is an Angular components suite based on 
-[Material Design](https://m3.material.io/) of Google
-
-* [Getting Started with Angular Material](https://material.angular.io/guide/getting-started)
-* Angular Material is based on two packages:
-  * [component dev kit](https://material.angular.io/cdk/categories)(CDK) to develop a component suite (@angular/cdk)
-  * [component suite](https://material.angular.io/components/categories) based on Material Design (@angular/material)
-* see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
-* Angular Material provide no grid system; 
-  use [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation)
 
 [*Go to top*](#Angular)
 
