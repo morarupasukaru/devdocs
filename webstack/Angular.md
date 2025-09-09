@@ -45,7 +45,8 @@ update 22.08.2025 - interesting new topics
     (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
     (a web framework for [Node.js](https://nodejs.org/en/))
   * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
-  * [Angular Libraries](#Angular-Libraries)  
+  * [Angular Package Format](https://angular.dev/tools/libraries/angular-package-format#) (APF) 
+is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages (@angular/core, @angular/material, etc.) and most third-party Angular libraries.
   * [Angular Internationalization](https://angular.dev/guide/i18n#)
     or [ngx-translate](http://www.ngx-translate.com/) as alternative
 * Ecosystem
@@ -677,15 +678,6 @@ export class SafeUrlPipe implements PipeTransform {
         ...
       }
     ```
-
-[*Go to top*](#Angular)
-
-
-#### Angular Libraries
-
-[Angular Package Format](https://angular.io/guide/angular-package-format) (APF). APF is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages
-
-* [Angular QuickStart Lib](https://github.com/filipesilva/angular-quickstart-lib) is a simple library quickstart for Angular libraries, implementing the Angular Package Format v4.0.
 
 [*Go to top*](#Angular)
 
