@@ -22,6 +22,21 @@ update 22.08.2025 - interesting new topics
   * [Routing](#Routing) define navigation of screens / components and associated url
   * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
 * other features
+  * signals
+  * components
+  * templates
+  * directives
+  * dependency injection
+  * routing
+  * forms
+  * HTTP client
+  * [server-side & hybrid rendering](https://angular.dev/guide/performance) (previously angular universal) provide
+    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
+    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
+  * testing  
+  * internationalization
+  * [animations](https://angular.dev/guide/animations)
+  * drag'n drop
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
@@ -29,16 +44,12 @@ update 22.08.2025 - interesting new topics
   * [Pipes](#Pipes) are used to transform output into templates
   * [HttpClient](#HttpClient) provide an API to perform HTTP requests
   * [Styling](#Styling) of angular applications are made with CSS
-  * [Animations](https://angular.dev/guide/animations) to animate your application's elements
   * [Dynamic Components](#Dynamic-Components) allow to load new components at runtime
   * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](#ahead-of-time-aot-or-just-in-time-jit-compilation) happens at runtime (JiT) or during build (AoT)
   * [Deployment](#Deployment) to deploy Angular application on remote server
   * [Testing](#Testing) to write and run unit tests
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
-  * [server-side & hybrid rendering](https://angular.dev/guide/performance) (previously angular universal) provide
-    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
-    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
   * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
   * [Angular Package Format](https://angular.dev/tools/libraries/angular-package-format#) (APF) 
 is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages (@angular/core, @angular/material, etc.) and most third-party Angular libraries.
