@@ -335,7 +335,6 @@ and is the scripting language for Web pages.
     [JavaScript Patterns](http://shop.oreilly.com/product/9780596806767.do),
     [Maintainable JavaScript](http://shop.oreilly.com/product/0636920025245.do),
     [The principles of Object-Oriented JavaScript](https://leanpub.com/oopinjavascript),
-    [Effective JavaScript](http://effectivejs.com/),
     [JavaScript, The Definitive Guide](http://shop.oreilly.com/product/9780596805531.do),
     [Understanding ECMAScript 6](https://leanpub.com/understandinges6) and
     [ES6 & Beyond](https://github.com/getify/You-Dont-Know-JS/tree/1st-ed/es6%20%26%20beyond)
