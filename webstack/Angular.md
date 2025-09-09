@@ -520,7 +520,7 @@ export class SafeUrlPipe implements PipeTransform {
 
 ### Testing
 
-[Testing](https://angular.io/guide/testing) to write and run unit tests
+[Testing](https://angular.dev/guide/testing#) to write and run unit tests
 
 * isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
   * [testing services](https://angular.io/guide/testing-services#testing-services)
