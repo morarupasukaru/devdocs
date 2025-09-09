@@ -187,7 +187,6 @@ and is the scripting language for Web pages.
       [replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace) String methods
     * concepts: [search flags](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#advanced_searching_with_flags) and
       [metacharacters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_expressions#using_special_characters)
-* **TODO continue here**
 * other nice language features
   * [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) used for asynchronous operations (replace "old-style" passed-in callbacks)
     * [then()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/then), 
@@ -324,7 +323,7 @@ and is the scripting language for Web pages.
     ```
 * references: [MDN web docs](https://developer.mozilla.org/en-US/)
   * courses: [Modern JavaScript From The Beginning](https://www.udemy.com/modern-javascript-from-the-beginning/) and
-    [JavaScript - The Complete Guide 2020](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
+    [JavaScript - The Complete Guide 2025](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/)
   * tutorial [beginner](https://htmldog.com/guides/javascript/beginner/),
     [intermediate](https://htmldog.com/guides/javascript/intermediate/),
     [advanced](https://htmldog.com/guides/javascript/advanced/)
