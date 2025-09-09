@@ -35,7 +35,8 @@ and is the scripting language for Web pages.
 * functions
   * kinds: [function declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function#Description), 
     [function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function#Syntax),
-    [object's method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description)
+    [object's method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Method_definitions#Description),
+    [arrow function expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
   * [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE): immediately invoked function expression
   * [default function parameter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters#Syntax)
   * [rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
