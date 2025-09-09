@@ -10,7 +10,7 @@ update 22.08.2025 - interesting new topics
 ----
 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
-* [Angular concepts](#Angular-concepts)
+* concepts
   * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application locally, etc.
   * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.dev/guide/templates#) in Angular represent the view written in HTML with 
@@ -21,8 +21,7 @@ update 22.08.2025 - interesting new topics
   * [Services](#Services) are normally classes and provide some feature
   * [Routing](#Routing) define navigation of screens / components and associated url
   * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
-* [Other features](#Other-features)
-  * [@NgModule](#NgModule) bundle a set of components together
+* other features
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
@@ -30,7 +29,7 @@ update 22.08.2025 - interesting new topics
   * [Pipes](#Pipes) are used to transform output into templates
   * [HttpClient](#HttpClient) provide an API to perform HTTP requests
   * [Styling](#Styling) of angular applications are made with CSS
-  * [Animations](#Animations) provided by Angular is based on CSS features but provide a specific DSL language
+  * [Animations](https://angular.dev/guide/animations) to animate your application's elements
   * [Dynamic Components](#Dynamic-Components) allow to load new components at runtime
   * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](#ahead-of-time-aot-or-just-in-time-jit-compilation) happens at runtime (JiT) or during build (AoT)
   * [Deployment](#Deployment) to deploy Angular application on remote server
@@ -281,59 +280,6 @@ in different use cases
 
 ## Other features
 
-### @NgModule
-
-TODO https://angular.dev/guide/ngmodules/overview
-
-[@NgModule](https://angular.io/guide/architecture-modules#introduction-to-modules) bundle a set of components together
-
-_Update 2024_: [Standalone components](https://angular.io/guide/standalone-components) reduce the need for @NgModule 
-
-* [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
-* [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
-  a container of components
-* root module is normally `app.module.ts`; the `AppModule`
-* most important [properties of @NgModule](https://angular.io/guide/architecture-modules#ngmodule-metadata):
-  * [declarations](https://angular.io/api/core/NgModule#declarations): 
-    components that belong to this module
-  * [imports](https://angular.io/api/core/NgModule#imports): 
-    other modules needed by this NgModule (cascade)
-  * [bootstrap](https://angular.io/api/core/NgModule#bootstrap): 
-    configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
-  * [providers](https://angular.io/api/core/NgModule#providers): 
-    specify services available to this module (and submodules)
-  * [exports](https://angular.io/api/core/NgModule#exports): 
-    components, directives, pipes and modules declared in this NgModule that can be used in any component part 
-    of an NgModule that imports this NgModule
-* [feature modules](https://angular.io/guide/feature-modules) are submodules of AppModule that group components, 
-  directives, etc. of a certain business feature of the application
-  * splitting application in feature modules ease optimizations (like lazy-loaded modules; see optimizations above)
-  * use [CommonModule](https://angular.io/api/common/CommonModule) 
-    instead of [BrowserModule](https://angular.io/api/platform-browser/BrowserModule) 
-    to get access to ngIF or ngFor in feature module 
-    ([BrowserModule](https://angular.io/api/platform-browser/BrowserModule) has to be declared once per application)
-  * use [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-    instead of [.forRoot(...)](https://angular.io/api/router/RouterModule#forroot) to specify feature module routes
-  * using [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-    permit to avoid to have to export inner components of feature module
-* [shared modules](https://angular.io/guide/sharing-ngmodules) 
-  allow to package components, directives, etc. shared by feature modules 
-  (shared modules export the modules, components, directives in common)
-* [lazy loading feature modules](https://angular.io/guide/lazy-loading-ngmodules) 
-  are *lazy loaded* when visiting their associated route
-  * lazy loading technical require that feature module provide their own route
-  * a route with [Routes.loadChildren](https://angular.io/api/router/Route#lazy-loading) allow to specify the module to be loaded on demand
-  * angular CLI analyse the routes and will split bundle if `loadChildren` is used
-  * `import` in module impact the size of bundle; it is therefore important to clean-up unused `import`
-  * empty path is required for the root route in the feature module
-  * lazy loaded feature module must not be declared in app module
-  * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
-  * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
-  * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
-  * a guard that implements [CanMatch](https://angular.io/api/router/CanMatch) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
-
-[*Go to top*](#Angular)
-
 ### Forms
 
 [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
@@ -527,43 +473,6 @@ export class SafeUrlPipe implements PipeTransform {
 * [@import](https://angular.io/guide/component-styles#css-imports) can be used to import css files into css file
 * Angular [Renderer2](https://angular.io/api/core/Renderer2) is a service to manipulate elements of your app without
   having to touch the DOM directly
-
-[*Go to top*](#Angular)
-
-
-### Animations
-
-[Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
-
-* CSS Transitions/CSS Animations vs Angular Animations
-  * allow to style an animation on one step; to keep all the stuff in angular world
-  * angular animation allow to animate element added on the fly in the DOM (e.g. with *ngIf); it's very difficult to manage it with CSS Animations
-  * complex animation should be done in Angular Animations
-  * infinite animation should be done with CSS Transitions/CSS Animations (not well done in Angular Animations)
-* concepts
-  * [trigger](https://angular.io/guide/animations#triggering-the-animation) encapsulates a named animation; the transitions between states included in its definition when a change occurs
-  * [state](https://angular.io/guide/animations#animation-state-and-styles) define styles related to a given named state
-  * [transition](https://angular.io/guide/animations#transitions-and-timing) define animation between styles of state
-* see [animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties) (evolves over time)
-* advanced topics
-  * [animations transitions and triggers](https://angular.io/guide/transition-and-triggers)
-    * [wildcard state (*)](https://angular.io/guide/transition-and-triggers#wildcard-state) means any state
-    * [void state](https://angular.io/guide/transition-and-triggers#void-state) means state when element is not in the DOM
-    * [:enter and :leave aliases](https://angular.io/guide/transition-and-triggers#aliases-enter-and-leave) for `void => *` and `* => void` transitions
-    * [use wildcards with styles](https://angular.io/guide/transition-and-triggers#use-wildcards-with-styles) to use current style value
-  * use [animation callbacks](https://angular.io/guide/transition-and-triggers#animation-callbacks) to be informed when animation start/end
-  * [complex animation sequences](https://angular.io/guide/complex-animation-sequences) with 
-    [query()](https://angular.io/guide/complex-animation-sequences#animate-multiple-elements-using-query-and-stagger-functions) 
-    allow to find and animate inner elements; see also [query](https://angular.io/api/animations/query) in reference
-  * [route transition animations](https://angular.io/guide/route-animations)
-  * [AnimationBuilder](https://angular.io/api/animations/AnimationBuilder) allow to produce animation programmatically
-* tip: animations works on block element but per default Angular Component are inline-block element. 
-  Don't forget to add:
-  ```css
-  :host {
-    display: block;
-  }
-  ```
 
 [*Go to top*](#Angular)
 
