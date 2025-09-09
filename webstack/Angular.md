@@ -36,10 +36,9 @@ update 22.08.2025 - interesting new topics
   * [Testing](#Testing) to write and run unit tests
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
-  * [Angular Universal](#Angular-Universal) provide
+  * [server-side & hybrid rendering](https://angular.dev/guide/performance) (previously angular universal) provide
     [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
-    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) 
-    (a web framework for [Node.js](https://nodejs.org/en/))
+    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
   * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
   * [Angular Package Format](https://angular.dev/tools/libraries/angular-package-format#) (APF) 
 is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages (@angular/core, @angular/material, etc.) and most third-party Angular libraries.
@@ -542,32 +541,6 @@ export class SafeUrlPipe implements PipeTransform {
   * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
   * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
 * course: [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
-
-[*Go to top*](#Angular)
-
-### Angular Universal
-
-[Angular Universal](https://angular.io/guide/universal) provide 
-[Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
-(pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
-
-* hint: JavaScript of Angular application will be executed on the server to pre-render HTML pages but 
-  does not have access to several APIs like [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
-  * use [PLATFORM_ID](https://angular.io/api/core/PLATFORM_ID) and [isPlatformBrowser()](https://angular.io/api/common/isPlatformBrowser) to check if code is running in the browser or not:
-    ```typescript
-    import { ..., Inject, PLATFORM_ID } from '@angular/core';
-    import { isPlatformBrowser } from '@angular/common';
-
-    export class AppComponent implements OnInit {
-      constructor(@Inject(PLATFORM_ID) private platformId) {}
-
-      ngOnInit() {
-        if (isPlatformBrowser(this.platformId)) {
-          ... call e.g. localStorage
-        }
-        ...
-      }
-    ```
 
 [*Go to top*](#Angular)
 
