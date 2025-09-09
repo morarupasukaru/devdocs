@@ -59,12 +59,10 @@ update 22.08.2025 - interesting new topics
     [Material Design](https://m3.material.io/) (by Google)
   * [AngularFire](https://github.com/angular/angularfire) is an Angular connector library to 
     [Firebase](https://firebase.google.com/) (Backend-as-a-Service (BaaS); no service-side code required)
-  * [NestJS](#NestJS) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
-    [Angular Universal](#Angular-Universal) instead of 
-    [ExpressJS](https://expressjs.com/) to provide
-    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
+  * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
+    applications with [Node.js](https://nodejs.org/en/)
 * References
-  * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.mdd) to learn latest improvements and breaking changes
+  * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
   * [Angular Docs](https://angular.dev/)
   * [Angular CLI](https://angular.dev/tools/cli#)
@@ -77,7 +75,6 @@ update 22.08.2025 - interesting new topics
   * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)
 
 [*Go to parent page*](../README.md)
-
 
 ## Angular concepts
 
@@ -725,24 +722,6 @@ and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
 * see list of [Material Icons](https://material.io/resources/icons/?style=baseline)
 * Angular Material provide no grid system; 
   use [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation)
-
-[*Go to top*](#Angular)
-
-
-#### NestJS
-
-[NestJS](https://nestjs.com/) is a web framework for [Node.js](https://nodejs.org/en/) and can be used in 
-[Angular Universal](#Angular-Universal) instead of 
-[ExpressJS](https://expressjs.com/) to provide
-[Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
-
-* Angular Universal with NestJS vs Angular Universal with ExpressJS:
-  * default Angular Universal only pre-render HTML webpage
-  * NestJS allow to build REST APIs
-  * NestJS is a server-side framework that borrow a lot from Angular and use TypeScript
-  * Angular + NestJS is a full-stack
-* use [nestjs/ng-universal](https://github.com/nestjs/ng-universal) to integrate NestJS to Angular Universal 
-* see [NestJS docs](https://docs.nestjs.com/) 
 
 [*Go to top*](#Angular)
 
