@@ -11,11 +11,7 @@ update 22.08.2025 - interesting new topics
 
 * [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
 * [Angular concepts](#Angular-concepts)
-  * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
-     locally, etc.
-  * [@NgModule](#NgModule) bundle a set of components together
-  * [Standalone components](https://angular.io/guide/standalone-components)
-    to reducing the need for [@NgModule](#NgModule)s and simplify applications
+  * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application locally, etc.
   * [@Component](#Component) is a decorator used to identify a class as a component
   * [Templates](https://angular.dev/guide/templates#) in Angular represent the view written in HTML with 
     additional features like dynamic changes
@@ -26,6 +22,7 @@ update 22.08.2025 - interesting new topics
   * [Routing](#Routing) define navigation of screens / components and associated url
   * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
 * [Other features](#Other-features)
+  * [@NgModule](#NgModule) bundle a set of components together
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
@@ -76,74 +73,7 @@ is an Angular specific specification for the structure and format of npm package
 [*Go to parent page*](../README.md)
 
 
-## Angular concepts
-
-#### Angular CLI
-
-[Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application 
-locally, etc.
-* [installation](https://angular.io/cli#installing-angular-cli) of Angular CLI
-* [how-to create project and deploy app locally](https://angular.io/cli#basic-workflow)
-* see [Issue](https://github.com/angular/angular-cli/issues/9160) and [Skipping Tests In Angular CLI](https://tutorialsforangular.com/2019/12/31/skipping-tests-in-angular-cli/) to create an Angular project without testing
-
-[*Go to top*](#Angular)
-
-
-#### @NgModule
-
-TODO https://angular.dev/guide/ngmodules/overview
-
-[@NgModule](https://angular.io/guide/architecture-modules#introduction-to-modules) bundle a set of components together
-
-_Update 2024_: [Standalone components](https://angular.io/guide/standalone-components) reduce the need for @NgModule 
-
-* [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
-* [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
-  a container of components
-* root module is normally `app.module.ts`; the `AppModule`
-* most important [properties of @NgModule](https://angular.io/guide/architecture-modules#ngmodule-metadata):
-  * [declarations](https://angular.io/api/core/NgModule#declarations): 
-    components that belong to this module
-  * [imports](https://angular.io/api/core/NgModule#imports): 
-    other modules needed by this NgModule (cascade)
-  * [bootstrap](https://angular.io/api/core/NgModule#bootstrap): 
-    configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
-  * [providers](https://angular.io/api/core/NgModule#providers): 
-    specify services available to this module (and submodules)
-  * [exports](https://angular.io/api/core/NgModule#exports): 
-    components, directives, pipes and modules declared in this NgModule that can be used in any component part 
-    of an NgModule that imports this NgModule
-* [feature modules](https://angular.io/guide/feature-modules) are submodules of AppModule that group components, 
-  directives, etc. of a certain business feature of the application
-  * splitting application in feature modules ease optimizations (like lazy-loaded modules; see optimizations above)
-  * use [CommonModule](https://angular.io/api/common/CommonModule) 
-    instead of [BrowserModule](https://angular.io/api/platform-browser/BrowserModule) 
-    to get access to ngIF or ngFor in feature module 
-    ([BrowserModule](https://angular.io/api/platform-browser/BrowserModule) has to be declared once per application)
-  * use [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-    instead of [.forRoot(...)](https://angular.io/api/router/RouterModule#forroot) to specify feature module routes
-  * using [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
-    permit to avoid to have to export inner components of feature module
-* [shared modules](https://angular.io/guide/sharing-ngmodules) 
-  allow to package components, directives, etc. shared by feature modules 
-  (shared modules export the modules, components, directives in common)
-* [lazy loading feature modules](https://angular.io/guide/lazy-loading-ngmodules) 
-  are *lazy loaded* when visiting their associated route
-  * lazy loading technical require that feature module provide their own route
-  * a route with [Routes.loadChildren](https://angular.io/api/router/Route#lazy-loading) allow to specify the module to be loaded on demand
-  * angular CLI analyse the routes and will split bundle if `loadChildren` is used
-  * `import` in module impact the size of bundle; it is therefore important to clean-up unused `import`
-  * empty path is required for the root route in the feature module
-  * lazy loaded feature module must not be declared in app module
-  * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
-  * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
-  * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
-  * a guard that implements [CanMatch](https://angular.io/api/router/CanMatch) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
-
-[*Go to top*](#Angular)
-
-
-#### @Component
+## @Component
 
 [@Component](https://angular.io/guide/architecture#components) is a decorator used to identify a class as a component
 
@@ -181,10 +111,9 @@ _Update 2024_: [Standalone components](https://angular.io/guide/standalone-compo
 [*Go to top*](#Angular)
 
 
-#### Directives
+## Directives
 
 [Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
-
 * [types of directives](https://angular.io/guide/built-in-directives): 
   [structural](https://angular.io/guide/structural-directives) and 
   [attribute](https://angular.io/guide/attribute-directives) directives
@@ -212,9 +141,7 @@ _Update 2024_: [Standalone components](https://angular.io/guide/standalone-compo
 
 [*Go to top*](#Angular)
 
-
-#### Data bindings
-
+## Data bindings
 Data bindings ease [components interaction](https://angular.io/guide/component-interaction) 
 in different use cases
 
@@ -272,7 +199,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-#### Services
+## Services
 
 [Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
 
@@ -292,7 +219,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-#### Routing
+## Routing
 
 [Routing](https://angular.io/guide/router) define navigation of screens / components and associated url
 
@@ -354,13 +281,66 @@ in different use cases
 
 ## Other features
 
-#### Forms
+### @NgModule
+
+TODO https://angular.dev/guide/ngmodules/overview
+
+[@NgModule](https://angular.io/guide/architecture-modules#introduction-to-modules) bundle a set of components together
+
+_Update 2024_: [Standalone components](https://angular.io/guide/standalone-components) reduce the need for @NgModule 
+
+* [JavaScript modules vs NgModules](https://angular.io/guide/ngmodule-vs-jsmodule)
+* [@NgModule](https://angular.io/guide/ngmodules) is a decorator used to identify a class as a NgModule; 
+  a container of components
+* root module is normally `app.module.ts`; the `AppModule`
+* most important [properties of @NgModule](https://angular.io/guide/architecture-modules#ngmodule-metadata):
+  * [declarations](https://angular.io/api/core/NgModule#declarations): 
+    components that belong to this module
+  * [imports](https://angular.io/api/core/NgModule#imports): 
+    other modules needed by this NgModule (cascade)
+  * [bootstrap](https://angular.io/api/core/NgModule#bootstrap): 
+    configure root component (only for root module); see [bootstrapping](https://angular.io/guide/bootstrapping)
+  * [providers](https://angular.io/api/core/NgModule#providers): 
+    specify services available to this module (and submodules)
+  * [exports](https://angular.io/api/core/NgModule#exports): 
+    components, directives, pipes and modules declared in this NgModule that can be used in any component part 
+    of an NgModule that imports this NgModule
+* [feature modules](https://angular.io/guide/feature-modules) are submodules of AppModule that group components, 
+  directives, etc. of a certain business feature of the application
+  * splitting application in feature modules ease optimizations (like lazy-loaded modules; see optimizations above)
+  * use [CommonModule](https://angular.io/api/common/CommonModule) 
+    instead of [BrowserModule](https://angular.io/api/platform-browser/BrowserModule) 
+    to get access to ngIF or ngFor in feature module 
+    ([BrowserModule](https://angular.io/api/platform-browser/BrowserModule) has to be declared once per application)
+  * use [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
+    instead of [.forRoot(...)](https://angular.io/api/router/RouterModule#forroot) to specify feature module routes
+  * using [RouterModule.forChild(...)](https://angular.io/api/router/RouterModule#forchild) 
+    permit to avoid to have to export inner components of feature module
+* [shared modules](https://angular.io/guide/sharing-ngmodules) 
+  allow to package components, directives, etc. shared by feature modules 
+  (shared modules export the modules, components, directives in common)
+* [lazy loading feature modules](https://angular.io/guide/lazy-loading-ngmodules) 
+  are *lazy loaded* when visiting their associated route
+  * lazy loading technical require that feature module provide their own route
+  * a route with [Routes.loadChildren](https://angular.io/api/router/Route#lazy-loading) allow to specify the module to be loaded on demand
+  * angular CLI analyse the routes and will split bundle if `loadChildren` is used
+  * `import` in module impact the size of bundle; it is therefore important to clean-up unused `import`
+  * empty path is required for the root route in the feature module
+  * lazy loaded feature module must not be declared in app module
+  * preload lazy loaded modules by calling [RouterModule.forRoot(..., )](https://angular.io/api/router/RouterModule#forroot) with a second argument `{ preloadingStrategy: PreloadAllModules }`
+  * if a service appear in `providers` of several lazy-loading feature modules, they are different instance of the service
+  * common source of bug: if a service is provided into a shared module imported in various lazy-loading feature modules, different service instances will be created
+  * a guard that implements [CanMatch](https://angular.io/api/router/CanMatch) interface could be used to prevent to load lazy-loading modules (e.g. if unauthorized)
+
+[*Go to top*](#Angular)
+
+### Forms
 
 [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
 [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
 
 
-##### Template-driven forms
+#### Template-driven forms
 
 [Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
 
@@ -389,7 +369,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-##### Reactive forms
+#### Reactive forms
 
 [Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
 
@@ -431,7 +411,7 @@ in different use cases
 [*Go to top*](#Angular)
 
 
-#### Observables
+### Observables
 
 [Observables](https://angular.io/guide/observables) provided by [RxJS](./RxJS.md) 
 is used extensively within Angular to ease writing of asynchronous calls and event handling
@@ -447,7 +427,7 @@ is used extensively within Angular to ease writing of asynchronous calls and eve
 [*Go to top*](#Angular)
 
 
-#### Pipes
+### Pipes
 
 [Pipes](https://angular.io/guide/pipes) are used to transform output into templates
 
@@ -479,7 +459,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### HttpClient
+### HttpClient
 
 [HttpClient](https://angular.io/guide/http) provide an API to perform HTTP requests
 
@@ -514,7 +494,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Styling
+### Styling
 
 [Styling](https://angular.io/guide/component-styles) of angular applications are made with CSS
 
@@ -551,7 +531,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Animations
+### Animations
 
 [Animations](https://angular.io/guide/animations) provided by Angular is based on CSS features but provide a specific DSL language
 
@@ -588,7 +568,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Dynamic Components
+### Dynamic Components
 
 [Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
 
@@ -600,7 +580,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
+### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
 
 [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
 
@@ -612,7 +592,7 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-#### Deployment
+### Deployment
 
 [Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
 
@@ -629,7 +609,7 @@ export class SafeUrlPipe implements PipeTransform {
 
 [*Go to top*](#Angular)
 
-#### Testing
+### Testing
 
 [Testing](https://angular.io/guide/testing) to write and run unit tests
 
@@ -655,7 +635,7 @@ export class SafeUrlPipe implements PipeTransform {
 
 [*Go to top*](#Angular)
 
-#### Angular Universal
+### Angular Universal
 
 [Angular Universal](https://angular.io/guide/universal) provide 
 [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
