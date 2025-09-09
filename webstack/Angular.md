@@ -57,6 +57,7 @@ is an Angular specific specification for the structure and format of npm package
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
 * References
+  * [angular tutorials](https://angular.dev/tutorials) 
   * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
   * [Angular Docs](https://angular.dev/)
