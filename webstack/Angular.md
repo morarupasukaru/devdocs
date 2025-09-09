@@ -13,7 +13,7 @@ update 22.08.2025 - interesting new topics
 * [Angular concepts](#Angular-concepts)
   * [Angular CLI](#Angular-CLI) is a command-line tool to create project, components, deploy application 
      locally, etc.
-  * TODO: [@NgModule](#NgModule) bundle a set of components together
+  * [@NgModule](#NgModule) bundle a set of components together
   * [Standalone components](https://angular.io/guide/standalone-components)
     to reducing the need for [@NgModule](#NgModule)s and simplify applications
   * [@Component](#Component) is a decorator used to identify a class as a component
@@ -55,7 +55,7 @@ update 22.08.2025 - interesting new topics
   * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API (grid-system) using
     [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
     and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-* [Angular Material](https://material.angular.io/) is an Angular components suite based on
+  * [Angular Material](https://material.angular.io/) is an Angular components suite based on
     [Material Design](https://m3.material.io/) of Google
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
@@ -89,6 +89,8 @@ locally, etc.
 
 
 #### @NgModule
+
+TODO https://angular.dev/guide/ngmodules/overview
 
 [@NgModule](https://angular.io/guide/architecture-modules#introduction-to-modules) bundle a set of components together
 
