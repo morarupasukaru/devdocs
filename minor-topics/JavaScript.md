@@ -98,6 +98,7 @@ and is the scripting language for Web pages.
     });
   }
   ```
+* **TODO continue here**
 * APIs
   * [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
     * create object with [object literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Object_initializer#Creating_objects); e.g. ```{name: 'toto', age: 21}```
