@@ -38,19 +38,15 @@
     [NgRx](https://github.com/morarupasukaru/devdocs/blob/main/minor-topics/NgRx.md) (reactive state for angular),
     [NestJS](https://nestjs.com/) (full-stack angular web framework),
     [TypeScript](TypeScript.md)
-* references
-  * [angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
-  * [angular blog](https://blog.angular.dev/)
-  * [angular update guide](https://angular.dev/update-guide#)
-  * [error encyclopedia](https://angular.dev/errors)
+* references:
+  [history](https://en.wikipedia.org/wiki/Angular_(web_framework)#History),
+  [blog](https://blog.angular.dev/),
+  [update guide](https://angular.dev/update-guide#),
+  [error encyclopedia](https://angular.dev/errors)
 * courses:
   [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/),
   [angular testing masterclass](https://www.udemy.com/course/angular-testing-course/),
   [angular security masterclass](https://www.udemy.com/course/angular-security/)
-  
-[*Go to parent page*](../README.md)
-
-----
 
 ## Other interessting topics
 * components
@@ -75,7 +71,7 @@
   * [e2e testing](https://angular.dev/tools/cli/end-to-end)
   * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
 * state management: [Reactive Async Data with Angular 20 rxResource: Simplified State Management Without RxJS](https://medium.com/@viacheslav.klavdiiev/reactive-async-data-with-angular-20-rxresource-simplified-state-management-without-rxjs-c63fd5533ca4)
-
-[*Go to top*](#Angular)
+  
+[*Go to parent page*](../README.md)
 
 *Page mainly written in 2019, last update: 09.2025; links checked on 10.09.2025*
