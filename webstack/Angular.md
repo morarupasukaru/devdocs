@@ -35,7 +35,7 @@
 ----
 
 interesting topics:
-* [Deferred loading with @defer](https://angular.dev/guide/templates/defer)
+* templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
 * ...
  
 ----
