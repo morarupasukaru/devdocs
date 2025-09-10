@@ -3,11 +3,40 @@
 [Angular](https://angular.dev/) is a [TypeScript](TypeScript.md) framework to build 
 [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
-TODO rewrite documentations with subset of official docs but with same structure
+* [tutorials](https://angular.dev/tutorials)
+* [docs](https://angular.dev/overview)
+  * [main concepts](https://angular.dev/essentials) : components, signals, templates, dependency injection
+  * in-depth guides:
+    [signals](https://angular.dev/guide/signals),
+    [components](https://angular.dev/guide/components)
+    [templates](https://angular.dev/guide/templates)
+    [directives](https://angular.dev/guide/directives)
+    [dependency injection](https://angular.dev/guide/di)
+    [routing](https://angular.dev/guide/routing)
+    [forms](https://angular.dev/guide/forms)
+    [HTTP client](https://angular.dev/guide/http)
+    [server-side & hybrid rendering](https://angular.dev/guide/performance)
+    [testing](https://angular.dev/guide/testing)
+    [internationalization](https://angular.dev/guide/i18n)
+    [animations](https://angular.dev/guide/animations)
+    [drag'n drop](https://angular.dev/guide/drag-drop)
+  * AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
+  * devtools
+    * [angular cli](https://angular.dev/tools/cli)
+    * [libraries](https://angular.dev/tools/libraries) explain how to use or create library
+    * [angular devtools](https://angular.dev/tools/devtools) for chrome or firefox
+    * [language service](https://angular.dev/tools/language-service) as plugin in IDE for completions, errors, hints
+  * best-practises
+    * TODO 
+  * ecosystem
+    * TODO
+    * 
 
 ----
-update 22.08.2025 - interesting new topics
+
+interesting topics:
 * [Deferred loading with @defer](https://angular.dev/guide/templates/defer)
+* ...
  
 ----
 
@@ -25,21 +54,6 @@ update 22.08.2025 - interesting new topics
   * [Routing](#Routing) define navigation of screens / components and associated url
   * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
 * other features
-  * signals
-  * components
-  * templates
-  * directives
-  * dependency injection
-  * routing
-  * forms
-  * HTTP client
-  * [server-side & hybrid rendering](https://angular.dev/guide/performance) (previously angular universal) provide
-    [Server-side Rendering](https://web.dev/articles/rendering-on-the-web)
-    (pre-render web-pages on the server on the fly) with [ExpressJS](https://expressjs.com/) (a web framework for [Node.js](https://nodejs.org/en/))
-  * testing  
-  * internationalization
-  * [animations](https://angular.dev/guide/animations)
-  * drag'n drop
   * [Forms](#Forms) can be written in two different ways in Angular:
     [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
   * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
