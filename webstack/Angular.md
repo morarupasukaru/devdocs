@@ -47,7 +47,7 @@
   [angular testing masterclass](https://www.udemy.com/course/angular-testing-course/),
   [angular security masterclass](https://www.udemy.com/course/angular-security/)
 
-## Other interessting topics
+## interesting topics
 * components
   * [smart vs presentational components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
     * *presentational components* are only responsible to display some data from provided @Input and 
