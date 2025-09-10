@@ -30,18 +30,15 @@
   [error handling](https://angular.dev/best-practices/error-handling),
   [performance](https://angular.dev/best-practices/runtime-performance)
 * ecosystem
+  * [RxJS interop with Angular signals](https://angular.dev/ecosystem/rxjs-interop); see also [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
+    or callback-based code
+  * [service workers & PWA](https://angular.dev/ecosystem/service-workers) for basic caching utility for simple offline support; see also [Progressive Web App](PWA.md)
+  * [web workers](https://angular.dev/ecosystem/web-workers) for background processing
+  * [tailwind css with Angular](https://angular.dev/guide/tailwind); [Tailwind CSS](https://tailwindcss.com/) is a utility-first CSS framework
+  * [Angular Material](https://material.angular.io/) for components suite based on [Material Design](https://m3.material.io/)
   * TODO
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
-  * [Progressive Web App](PWA.md) to provide desktop's like applications
-  * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
-  * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
-    or callback-based code
   * [NgRx](https://github.com/morarupasukaru/devdocs/blob/main/minor-topics/NgRx.md) used to manage application state
-  * [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) provide layout API (grid-system) using
-    [Flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
-    and [mediaQuery](https://developer.mozilla.org/en-US/docs/Web/CSS/@media)
-  * [Angular Material](https://material.angular.io/) is an Angular components suite based on
-    [Material Design](https://m3.material.io/) of Google
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
   * [TypeScript](TypeScript.md)
@@ -82,6 +79,7 @@ other detailed topics:
   * [e2e testing](https://angular.dev/tools/cli/end-to-end)
   * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
 * observables?
+* [Reactive Async Data with Angular 20 rxResource: Simplified State Management Without RxJS](https://medium.com/@viacheslav.klavdiiev/reactive-async-data-with-angular-20-rxresource-simplified-state-management-without-rxjs-c63fd5533ca4)
 
 [*Go to parent page*](../README.md)
 
