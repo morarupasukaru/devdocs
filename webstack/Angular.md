@@ -4,75 +4,32 @@
 [single-page applications](https://en.wikipedia.org/wiki/Single-page_application) (SPA).
 
 * [tutorials](https://angular.dev/tutorials)
-* [docs](https://angular.dev/overview)
-  * [main concepts](https://angular.dev/essentials) : components, signals, templates, dependency injection
-  * in-depth guides:
-    [signals](https://angular.dev/guide/signals),
-    [components](https://angular.dev/guide/components)
-    [templates](https://angular.dev/guide/templates)
-    [directives](https://angular.dev/guide/directives)
-    [dependency injection](https://angular.dev/guide/di)
-    [routing](https://angular.dev/guide/routing)
-    [forms](https://angular.dev/guide/forms)
-    [HTTP client](https://angular.dev/guide/http)
-    [server-side & hybrid rendering](https://angular.dev/guide/performance)
-    [testing](https://angular.dev/guide/testing)
-    [internationalization](https://angular.dev/guide/i18n)
-    [animations](https://angular.dev/guide/animations)
-    [drag'n drop](https://angular.dev/guide/drag-drop)
-  * AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
-  * devtools
-    * [angular cli](https://angular.dev/tools/cli)
-    * [libraries](https://angular.dev/tools/libraries) explain how to use or create library
-    * [angular devtools](https://angular.dev/tools/devtools) for chrome or firefox
-    * [language service](https://angular.dev/tools/language-service) as plugin in IDE for completions, errors, hints
-  * best-practises
-    * TODO 
-  * ecosystem
-    * TODO
-    * 
-
-----
-
-interesting topics:
-* templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
-* ...
- 
-----
-
-
-* [Angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
-* concepts
-  * [Angular CLI](https://cli.angular.io/) is a command-line tool to create project, components, deploy application locally, etc.
-  * [@Component](#Component) is a decorator used to identify a class as a component
-  * [Templates](https://angular.dev/guide/templates#) in Angular represent the view written in HTML with 
-    additional features like dynamic changes
-  * [Directives](#Directives) allow to add features to elements in the DOM
-  * TODO [Data bindings](#Data-bindings) ease [components interaction](https://angular.io/guide/component-interaction#component-interaction) 
-    in different use cases
-  * [Services](#Services) are normally classes and provide some feature
-  * [Routing](#Routing) define navigation of screens / components and associated url
-  * [Signals](https://angular.dev/guide/signals#) as more performant alternative automatic change detection
-* other features
-  * [Forms](#Forms) can be written in two different ways in Angular:
-    [reactive](#reactive-forms) or [template-driven](#template-driven-forms) approach
-  * [Observables](#Observables) provided by [RxJS](./RxJS.md) 
-    is used extensively within Angular to ease writing of asynchronous calls and event handling
-  * [Pipes](#Pipes) are used to transform output into templates
-  * [HttpClient](#HttpClient) provide an API to perform HTTP requests
-  * [Styling](#Styling) of angular applications are made with CSS
-  * [Dynamic Components](#Dynamic-Components) allow to load new components at runtime
-  * [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](#ahead-of-time-aot-or-just-in-time-jit-compilation) happens at runtime (JiT) or during build (AoT)
-  * [Deployment](#Deployment) to deploy Angular application on remote server
-  * [Testing](#Testing) to write and run unit tests
+* [main concepts](https://angular.dev/essentials) : components, signals, templates, dependency injection
+* in-depth guides:
+  [signals](https://angular.dev/guide/signals),
+  [components](https://angular.dev/guide/components)
+  [templates](https://angular.dev/guide/templates)
+  [directives](https://angular.dev/guide/directives)
+  [dependency injection](https://angular.dev/guide/di)
+  [routing](https://angular.dev/guide/routing)
+  [forms](https://angular.dev/guide/forms)
+  [HTTP client](https://angular.dev/guide/http)
+  [server-side & hybrid rendering](https://angular.dev/guide/performance)
+  [testing](https://angular.dev/guide/testing)
+  [internationalization](https://angular.dev/guide/i18n)
+  [animations](https://angular.dev/guide/animations)
+  [drag'n drop](https://angular.dev/guide/drag-drop)
+* devtools:
+  [angular cli](https://angular.dev/tools/cli),
+  [how to use & create libraries](https://angular.dev/tools/libraries),
+  [browser devtools extension](https://angular.dev/tools/devtools)
+* best-practises
+  * TODO 
+* ecosystem
+  * TODO
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
   * [Progressive Web App](PWA.md) to provide desktop's like applications
   * [Web workers](https://angular.dev/ecosystem/web-workers#) to run computations in a background thread
-  * [Angular Package Format](https://angular.dev/tools/libraries/angular-package-format#) (APF) 
-is an Angular specific specification for the structure and format of npm packages that is used by all first-party Angular packages (@angular/core, @angular/material, etc.) and most third-party Angular libraries.
-  * [Angular Internationalization](https://angular.dev/guide/i18n#)
-    or [ngx-translate](http://www.ngx-translate.com/) as alternative
-* Ecosystem
   * [RxJS](RxJS.md) for reactive programming using observables that makes it easier to compose asynchronous 
     or callback-based code
   * [NgRx](https://github.com/morarupasukaru/devdocs/blob/main/minor-topics/NgRx.md) used to manage application state
@@ -83,39 +40,40 @@ is an Angular specific specification for the structure and format of npm package
     [Material Design](https://m3.material.io/) of Google
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
-* References
+* references
+  * TODO 
+  * [angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
   * [angular tutorials](https://angular.dev/tutorials) 
   * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
   * [Angular Docs](https://angular.dev/)
   * [Angular CLI](https://angular.dev/tools/cli#)
   * [Angular Update Guide](https://angular.dev/update-guide#)
-* Courses
+* courses
   * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
   * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
   * [Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)
   * [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
   * [Angular Security Masterclass](https://www.udemy.com/course/angular-security/)
 
+----
+
+interesting topics:
+* templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
+* AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
+* ...
+* observables?
+* services?
+* pipes?
+* 
+* [Angular Internationalization](https://angular.dev/guide/i18n#)
+  or [ngx-translate](http://www.ngx-translate.com/) as alternative
+
 [*Go to parent page*](../README.md)
 
 
 ## @Component
 
-[@Component](https://angular.io/guide/architecture#components) is a decorator used to identify a class as a component
-
-* most important [properties of @Component](https://angular.io/api/core/Component):
-  * [selector](https://angular.io/api/core/Directive#selector): 
-    CSS selector (tag, class or attribute name) that tells Angular to create and insert an instance of this 
-    component wherever it finds the corresponding tag in template HTML
-  * [templateUrl](https://angular.io/api/core/Component#templateurl): 
-    module-relative address of this component's HTML template
-  * [styleUrls](https://angular.io/api/core/Component#styleurls): 
-    one or more relative paths or absolute URLs for files containing CSS stylesheets to use in this component
-  * [providers](https://angular.io/api/core/Directive#providers): 
-    specify services available to this component (if not defined in a @NgModule or with `providedIn: 'root'` 
-    on service self)
-  * creating component with Angular CLI: `ng g c name-of-component`
 * Smart vs Presentational components
   * *presentational components* are only responsible to display some data from provided @Input and 
     returns modified data through @Output
@@ -134,94 +92,6 @@ is an Angular specific specification for the structure and format of npm package
     (template accessing data through observables; with RxJS)
   * change detection strategy is defined on [@Component.changeDetection](https://angular.io/api/core/Component#changeDetection) options
   * see [Angular OnPush Change Detection and Component Design - Avoid Common Pitfalls](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
-
-[*Go to top*](#Angular)
-
-
-## Directives
-
-[Directives](https://angular.io/guide/built-in-directives) allow to add features to elements in the DOM
-* [types of directives](https://angular.io/guide/built-in-directives): 
-  [structural](https://angular.io/guide/structural-directives) and 
-  [attribute](https://angular.io/guide/attribute-directives) directives
-* built-in structural directives: 
-  [ngIf](https://angular.io/api/common/NgIf), 
-  [ngStyle](https://angular.io/api/common/NgStyle), 
-  [ngClass](https://angular.io/api/common/NgClass), 
-  [ngFor](https://angular.io/api/common/NgForOf), 
-  [ngSwitch](https://angular.io/api/common/NgSwitch),
-  [ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet)
-* tips: 
-  * [ng-if else](https://angular.io/api/common/NgIf#showing-an-alternative-template-using-else); 
-    alternative is to write two ngIf
-  * [getting index of ng-for](https://angular.io/api/common/NgForOf#description)
-  * [AngularJS ngShow](https://docs.angularjs.org/api/ng/directive/ngShow) can be simulated in Angular by using 
-    property binding `[hidden]="condition"` on 
-    [hidden](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/hidden) html attribute
-* see explanation of [`*` structural directive's prefix](https://angular.io/guide/structural-directives#asterisk) 
-* [build custom attribute directive](https://angular.io/guide/attribute-directives#building-an-attribute-directive)
-  * by using [Renderer2](https://angular.io/api/core/Renderer2)
-  * [@HostListener](https://angular.io/api/core/HostListener) to listen host DOM event
-  * [@HostBinding](https://angular.io/api/core/HostBinding) to bind host DOM properties
-  * [@Input to pass values to directive](https://angular.io/guide/attribute-directives#passing-values-into-an-attribute-directive)
-* [build custom structural directive](https://angular.io/guide/structural-directives#creating-a-structural-directive)
-
-[*Go to top*](#Angular)
-
-## Data bindings
-Data bindings ease [components interaction](https://angular.io/guide/component-interaction) 
-in different use cases
-
-* [String interpolation](https://angular.io/guide/interpolation): `{{ data }}` (one-way binding from controller to view)
-* [Property binding](https://angular.io/guide/property-binding): `[property]="data"` (one-way binding from controller to view)
-* [Event binding](https://angular.io/guide/event-binding): `(event)="expression"` (one-way binding from view to controller)
-* [Two-way binding](https://angular.io/guide/two-way-binding): `[(property)]="data"` (two-way binding between view and controller)
-  (two-way binding is a syntactic sugar for a property binding and an event binding)
-* [ngModel](https://angular.io/guide/built-in-directives#ngModel) directive allow two-way binding for form's inputs 
-* custom property and event bindings
-  * Binding custom properties with [@Input](https://angular.io/api/core/Input#usage-notes)
-  * Binding custom events with [@Output](https://angular.io/guide/inputs-outputs#configuring-the-child-component-1)
-  * Components communication with @Input & @Output is good if component are not far for themselves (e.g. parent-child)
-* a [template reference variable](https://angular.io/guide/template-reference-variables) is a reference to a 
-  DOM element available within in template (could replace bindings with custom properties)
-* [@ViewChild](https://angular.io/guide/component-interaction#parent-calls-an-viewchild) allow to access template 
-  reference element as [ElementRef](https://angular.io/api/core/ElementRef) in controller
-  (e.g. input field value readable with ElementRef.nativeElement.value)
-* ng-content allow to project content into a reusable component (e.g. tabs component)
-  * see following [article](https://medium.com/claritydesignsystem/ng-content-the-hidden-docs-96a29d70d11b) 
-    (ng-content is officially not documented; [issue](https://github.com/angular/angular/issues/17983))
-  * see [Multi-slot content projection](https://angular.io/guide/content-projection#multi-slot) pattern as well
-  * [@ContentChild](https://angular.io/api/core/ContentChild) allow to access reference of the single ng-content element or [@ContentChildren](https://angular.io/api/core/ContentChildren#contentchildren) for a list of injected child elements
-    as [ElementRef](https://angular.io/api/core/ElementRef) from injected component ts file; see also [Using AfterContent hooks](https://angular.io/guide/lifecycle-hooks#using-aftercontent-hooks)
-  * tips: it's possible to create a [Directive](https://angular.io/api/core/Directive#options) with a css selector and use it to access such element with @ContentChild:
-    ```
-    @Directive({
-      selector: 'app-input input'
-    }
-    export class InputRefDirective {
-    
-      
-    }
-    ```
-    and then
-    ```
-    export class AppInputComponent implements AfterContentInit {
-      @ContentChild(InputRefDirective);
-      input: InputRefDirective;
-    }   
-    ```
-* [ng-container](https://angular.io/api/core/ng-container) is a grouping element 
-  that doesn't interfere with styles or layout because Angular doesn't put it in the DOM
-* [ng-template](https://angular.io/api/core/ng-template) defines a template that is not rendered by default
-  * [template variables](https://angular.io/guide/template-reference-variables#template-input-variable) can be defined
-  * [*ngTemplateOutlet](https://angular.io/api/common/NgTemplateOutlet) can be used to display a template in a ng-container
-  * [TemplateRef](https://angular.io/api/core/TemplateRef) represents an embedded template that can be used to instantiate embedded views
-* [lifecycle hooks](https://angular.io/guide/lifecycle-hooks#lifecycle-event-sequence)
-  * [@ViewChild](https://angular.io/api/core/ViewChild) properties are available on
-    [ngAfterViewInit](https://angular.io/api/core/AfterViewInit#ngafterviewinit)
-  * [@ContentChild](https://angular.io/api/core/ContentChild) properties are available on 
-    [ngAfterContentInit](https://angular.io/api/core/AfterContentInit#ngaftercontentinit)
-  * see article [Everything you need to know about the `ExpressionChangedAfterItHasBeenCheckedError` error](https://angularindepth.com/posts/1001/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error)
 
 [*Go to top*](#Angular)
 
@@ -313,76 +183,6 @@ in different use cases
 [Forms](https://angular.io/guide/forms-overview#key-differences) can be written in two different ways in Angular:
 [reactive](https://angular.io/guide/reactive-forms) or [template-driven](https://angular.io/guide/forms) approach
 
-
-#### Template-driven forms
-
-[Template-driven forms](https://angular.io/guide/forms): Angular infers the Form Object ([FormGroup](https://angular.io/api/forms/FormGroup)) from the DOM
-
-* import [FormsModule](https://angular.io/api/forms/FormsModule)
-* (Angular automatically add an [ngForm](https://angular.io/api/forms/NgForm) directive to the `<form>`)
-* add [ngModule](https://angular.io/api/forms/NgModel) directive on `<input>`
-* add [ngSubmit](https://angular.io/api/forms/FormGroupDirective#properties) event emitter on `<form>`
-* add a [template reference variable `<form #f="ngForm">`](https://angular.io/guide/forms#submit-the-form-with-ngsubmit) 
-  to access the FormGroup / form state inside the template
-* add a [ViewChild](https://angular.io/api/core/ViewChild) annotation to access the template reference variable 
-  of the NgForm inside controller:
-  ```typescript
-    @ViewChild('f', { static: false }) signupForm: NgForm;
-  ```
-* add [built-in validators](https://angular.io/api/forms/Validators) (`required`, `email`, etc.) on `<input>`
-* add styles or *ngIf by using css classes: `ng-untouched`/`ng-touched`, `ng-pristine`/`ng-dirty`, 
-  `ng-valid`/`ng-invalid`, see [Angular docs](https://angular.io/guide/forms#create-visual-feedback-for-states)
-* custom validator is implemented with [directives](https://angular.io/guide/form-validation#adding-to-template-driven-forms) 
-* binding with [ngModel](https://angular.io/api/forms/NgModel) directive:
-  * no binding: indicate Angular which input to manage
-  * one-way binding: set default value to input, e.g. `<select [ngModel]="defaultQuestion" ...>`
-  * two-way binding: variable inside controller instantly updated on user-input
-* use [ngModelGroup](https://angular.io/api/forms/NgModelGroup) directive to group several input into a logical group
-* call [NgForm.from.patchValue({ key:value })](https://angular.io/api/forms/FormGroup#patchvalue) to override specific form values
-
-[*Go to top*](#Angular)
-
-
-#### Reactive forms
-
-[Reactive forms](https://angular.io/guide/reactive-forms): Form is created programmatically and synchronised with the DOM
-
-* import [ReactiveFormsModule](https://angular.io/api/forms/ReactiveFormsModule)
-* create a [FormGroup](https://angular.io/guide/reactive-forms#grouping-form-controls) inside component controller
-  by using [FormBuilder](https://angular.io/guide/reactive-forms#using-the-formbuilder-service-to-generate-controls)
-* add [[formGroup]="xxxx"](https://angular.io/api/forms/FormGroupDirective) directive to the `<form>` in the template 
-  to one-way bind [FormGroup](https://angular.io/api/forms/FormGroup) of the controller to the template
-* add [formControlName](https://angular.io/api/forms/FormControlName) directive to `<input>`s in template
-* add [(ngSubmit)="xxx()"](https://angular.io/guide/reactive-forms#grouping-form-controls) event emitter to `<form>` in template 
-* validation directive does not work (e.g. `required`)
-* [Validators](https://angular.io/api/forms/Validators) must be added to the 2nd parameter to 
-  [FormControl](https://angular.io/api/forms/FormControl)
-* control and form states are available in the template by calling get on bind FormGroup, e.g. 
-  `<span *ngIf="!signupForm.get('email').valid && signupForm.get('email').touched">...<span>`
-* `FormGroup` can contains `FormGroup`
-  * add ["formGroupName"="..."](https://angular.io/api/forms/FormGroupName) in template
-  * `"FormGroup.get()"` can contains path with . separator
-* add [FormArray](https://angular.io/api/forms/FormArray) to `FormGroup`
-  * constructor of [FormArray](https://angular.io/api/forms/FormArray) expect an array
-  * cast is required when retrieving `FormArray` from `FormGroup`: `<FormArray>formGroup.get('xyz')`
-  * add [formArrayName="..."](https://angular.io/api/forms/FormArrayName) directive in template
-  * use index of [*ngFor](https://angular.io/api/common/NgForOf) to set the [formControlName](https://angular.io/api/forms/FormControlName)
-* [custom validator](https://angular.io/guide/form-validation#custom-validators) are functions in Reactive forms
-  * add custom validator to validator array of the FormControl in 2nd parameter
-  * `.bind(this)` required if `this` is used inside the validator function
-  * validator in error are set on the `.errors` field of the FormControl; can be used in template to customize error message
-* [async validator](https://angular.io/guide/form-validation#implementing-a-custom-async-validator) are used e.g. 
-  to validate field on the server
-  * async validator return Promise or Observable
-  * async validator are added in FormControl third argument
-  * ng-pending class is set the FormControl while waiting to the async validator result
-* FormGroup, FormControl have two observables [valueChanges and statusChanges](https://angular.io/api/forms/AbstractControl#properties)
-* [FormGroup.setValue()](https://angular.io/api/forms/FormGroup#setvalue), 
-  [.patchValue()](https://angular.io/api/forms/FormGroup#patchvalue) are also available with Reactive forms
-* [FormGroup.reset()](https://angular.io/api/forms/FormGroup#reset) could be called on submit to reset form 
-  controls (optional arg allow to set default value; e.g. for radiobuttons)
-
-[*Go to top*](#Angular)
 
 
 ### Observables
