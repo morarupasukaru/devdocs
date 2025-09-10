@@ -24,7 +24,8 @@
   [how to use & create libraries](https://angular.dev/tools/libraries),
   [browser devtools extension](https://angular.dev/tools/devtools)
 * best-practises
-  * TODO 
+  * TODO
+  * [performance](https://angular.dev/best-practices/runtime-performance)
 * ecosystem
   * TODO
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
@@ -55,68 +56,36 @@
 
 ----
 
-interesting topics:
-* templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
-* AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
-* internationalization: [ngx-translate](http://www.ngx-translate.com/) as alternative to [angular i18n](https://angular.dev/guide/i18n#)
-* testing:
-  * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
-  * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
-* ...
-* observables?
-* services?
-* pipes?
-* 
-* 
-  or 
-
-
-
-[*Go to parent page*](../README.md)
-
-
-## @Component
-
-* Smart vs Presentational components
+other detailed topics:
+* components: [smart vs presentational components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
   * *presentational components* are only responsible to display some data from provided @Input and 
     returns modified data through @Output
   * *smart components* are responsible to retrieve/update data from services and pass data to presentational components
   * concepts of smart/presentational components are not specific to Angular but could be applied with 
     every frontend technology
-  * see [Angular Architecture - Smart Components vs Presentational Components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
-* Improvement Angular performance with OnPush Change Detection strategy
-  * angular default [change-detection](https://angular.io/guide/glossary#change-detection) strategy
-    compare current and previous state of every bind data in template and update the DOM if necessary
-  * alternative is to configure OnPush change detection strategy on some components:
-    the change detector runs only when explicitly invoked, when Input changes or new value of observable used
-    by async pipe are emmited
-  * OnPush Change Detection strategy improve performances
-  * OnPush Change Detection strategy can be enabled easily on components using reactive style
-    (template accessing data through observables; with RxJS)
-  * change detection strategy is defined on [@Component.changeDetection](https://angular.io/api/core/Component#changeDetection) options
+* components: [input](https://angular.dev/guide/components/inputs) and [output](https://angular.dev/guide/components/outputs) for custom events
+* templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
+* templates: [pipes](https://angular.dev/guide/templates/pipes) that allows you to transform data declaratively in your template
+* AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
+* internationalization: [ngx-translate](http://www.ngx-translate.com/) as alternative to [angular i18n](https://angular.dev/guide/i18n#)
+* performance: [skip change detection](https://angular.dev/best-practices/skipping-subtrees) with [OnPush](https://angular.dev/api/core/ChangeDetectionStrategy#OnPush) strategy instead of default
   * see [Angular OnPush Change Detection and Component Design - Avoid Common Pitfalls](https://blog.angular-university.io/onpush-change-detection-how-it-works/)
+* testing:
+  * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
+  * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
+* ...
+* angular cli
+  * [deployment](https://angular.dev/tools/cli/deployment)
+  * [e2e testing](https://angular.dev/tools/cli/end-to-end)
+  * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
+* observables?
+
+[*Go to parent page*](../README.md)
+
+
 
 [*Go to top*](#Angular)
 
-
-## Services
-
-[Services](https://angular.io/guide/architecture-services) are normally classes and provide some feature
-
-* services ease [cross-component communication](https://angular.io/guide/component-interaction#parent-and-children-communicate-using-a-service) 
-  by using [EventEmitter](https://angular.io/api/core/EventEmitter) or RxJS
-* dependency-injection of services can be done with 
-  [@Injectable](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) decorator on the service itself
-  in [@NgModule.providers](https://angular.io/guide/hierarchical-dependency-injection#moduleinjector) or 
-  [@Component.providers](https://angular.io/guide/hierarchical-dependency-injection#elementinjector)
-* [hierarchical injector](https://angular.io/guide/hierarchical-dependency-injection) : instance of service provided to 
-  a given Module/Component will be provided to childs
-  (means that several instance of a service could exist in the application; depending on the DI configuration)
-* a [singleton service](https://angular.io/guide/singleton-services) has to be provided at root level
-* [@Injectable](https://angular.io/api/core/Injectable) decorator is required on the target service to 
-  [inject services into services](https://angular.io/guide/creating-injectable-service#injecting-services)
-
-[*Go to top*](#Angular)
 
 
 ## Routing
@@ -308,34 +277,6 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
-
-[Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
-
-* TypeScript compiler compiles TS into JavaScript and is called in the build process
-* Angular compiler compile template into JavaScript DOM instructions
-* Just-in-Time (JiT) compilation is used normally for `ng serve`
-* Ahead-of-time (AoT) compilation is used for `ng build`
-
-[*Go to top*](#Angular)
-
-
-### Deployment
-
-[Deployment](https://angular.io/guide/deployment) to deploy Angular application on remote server
-
-* [configure application environments](https://angular.io/guide/build#configuring-application-environments)
-  in `environment.ts` like API key
-  * [use environment variables](https://angular.io/guide/build#using-environment-specific-variables-in-your-app):
-   `import { environment } from '../environments/environment';`
-  * [build your production configuration](https://angular.io/guide/build#configure-target-specific-file-replacements):
-    `ng build --prod` ensure to use `/environment/environment.prod.ts` instead of `/environment/environment.ts`
-* hints
-  * [deploy to GitHub pages with --base-href](https://angular.io/guide/deployment#deploy-to-github-pages)
-  * it's important to make sure that your server is configured to 
-    [always serve the index.html](https://angular.io/guide/deployment#routed-apps-must-fall-back-to-indexhtml) file (and not returning 404)
-
-[*Go to top*](#Angular)
 
 
 *Page mainly written in 2019, last update: february 2022; links checked on 04.03.2024*
