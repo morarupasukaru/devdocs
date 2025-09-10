@@ -43,12 +43,9 @@
 * references
   * TODO 
   * [angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
-  * [angular tutorials](https://angular.dev/tutorials) 
-  * [changelog](https://github.com/angular/angular/blob/main/CHANGELOG.md) to learn latest improvements and breaking changes
   * [TypeScript](TypeScript.md)
-  * [Angular Docs](https://angular.dev/)
-  * [Angular CLI](https://angular.dev/tools/cli#)
-  * [Angular Update Guide](https://angular.dev/update-guide#)
+  * [angular update guide](https://angular.dev/update-guide#)
+  * [error encyclopedia](https://angular.dev/errors)
 * courses
   * [The complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/)
   * [Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)
@@ -61,13 +58,19 @@
 interesting topics:
 * templates: [@defer](https://angular.dev/guide/templates/defer) for deferred loading of views
 * AI: [AI prompts](https://angular.dev/ai/develop-with-ai) to help LLMs generate correct code that follows Angular best practices
+* internationalization: [ngx-translate](http://www.ngx-translate.com/) as alternative to [angular i18n](https://angular.dev/guide/i18n#)
+* testing:
+  * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
+  * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
 * ...
 * observables?
 * services?
 * pipes?
 * 
-* [Angular Internationalization](https://angular.dev/guide/i18n#)
-  or [ngx-translate](http://www.ngx-translate.com/) as alternative
+* 
+  or 
+
+
 
 [*Go to parent page*](../README.md)
 
@@ -305,18 +308,6 @@ export class SafeUrlPipe implements PipeTransform {
 [*Go to top*](#Angular)
 
 
-### Dynamic Components
-
-[Dynamic Components](https://angular.io/guide/dynamic-component-loader) allow to load new components at runtime
-
-* dynamic components can be achieved with [ngIf](https://angular.io/api/common/NgIf) in templates or 
-  by loading component programmatically and pushing into view
-* ngIf approach is easier and is the best solution in most cases
-* loading component programmatically could be used in some specific use cases (e.g. custom framework)
-
-[*Go to top*](#Angular)
-
-
 ### Ahead-of-time (AoT) or Just-in-Time (JiT) compilation
 
 [Ahead-of-time (AoT) or Just-in-Time (JiT) compilation](https://angular.io/guide/aot-compiler) happens at runtime (JiT) or during build (AoT)
@@ -346,30 +337,5 @@ export class SafeUrlPipe implements PipeTransform {
 
 [*Go to top*](#Angular)
 
-### Testing
-
-[Testing](https://angular.dev/guide/testing#) to write and run unit tests
-
-* isolated tests: [Jasmine](https://jasmine.github.io/) unit test without angular bundle
-  * [testing services](https://angular.io/guide/testing-services#testing-services)
-  * [testing pipes](https://angular.io/guide/testing-pipes)
-* shallow component tests / non isolated tests: unit test with [TestBed](https://angular.io/guide/testing-services#angular-testbed)
-  to have angular dependency injection
-  * non isolated test is a "shallow component test" that test a component and its template, without its dependencies by mocking them
-  * e.g. [testing component DOM](https://angular.io/guide/testing-components-basics#component-dom-testing)
-* hints:
-  * [fixture.detectChanges()](https://angular.io/guide/testing-components-scenarios#detectchanges) call is required to perform data binding
-  * [spy](https://angular.io/guide/testing-components-scenarios#testing-with-a-spy) can be used to mock remote servers
-* testing asynchronous code
-  * [async](https://angular.io/guide/testing-components-scenarios#component-with-async-service) and whenStable() methods are used to test asynchronous code;
-  * [whenStable()](https://angular.io/guide/testing-components-scenarios#whenstable) is used to wait that all asynchronous code are finished
-  * [fakeAsync](https://angular.io/guide/testing-components-scenarios#async-test-with-fakeasync) and tick methods are an alternative to async
-  * [tick](https://angular.io/guide/testing-components-scenarios#the-tick-function) method is then used to say "finish all asynchronous tasks"
-* libs
-  * [ng-mocks](https://github.com/help-me-mom/ng-mocks) as alternative to spy
-  * [shallow-render](https://github.com/getsaf/shallow-render) as alternative to Angular testing with shallow rendering and easy mocking
-* course: [Angular Testing Masterclass](https://www.udemy.com/course/angular-testing-course/) : nice course containing helpfull explanation about asynchronous testing
-
-[*Go to top*](#Angular)
 
 *Page mainly written in 2019, last update: february 2022; links checked on 04.03.2024*
