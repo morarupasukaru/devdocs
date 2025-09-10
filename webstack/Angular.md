@@ -10,7 +10,7 @@
   [components](https://angular.dev/guide/components)
   [templates](https://angular.dev/guide/templates)
   [directives](https://angular.dev/guide/directives)
-  [dependency injection](https://angular.dev/guide/di)
+  [dependency injection / services](https://angular.dev/guide/di)
   [routing](https://angular.dev/guide/routing)
   [forms](https://angular.dev/guide/forms)
   [HTTP client](https://angular.dev/guide/http)
