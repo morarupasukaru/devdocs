@@ -46,11 +46,8 @@
 * courses:
   [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/),
   [angular testing masterclass](https://www.udemy.com/course/angular-testing-course/),
-  [angular security masterclass](https://www.udemy.com/course/angular-security/),
-  , obsolete:
-  --[Angular material, angularfire & NgRx](https://www.udemy.com/angular-full-app-with-angular-material-angularfire-ngrx/)--
-  --[Angular styling & animations](https://www.udemy.com/angular-styling-animations-for-angular-2-and-angular-4/)--
-
+  [angular security masterclass](https://www.udemy.com/course/angular-security/)
+  
 [*Go to parent page*](../README.md)
 
 ----
