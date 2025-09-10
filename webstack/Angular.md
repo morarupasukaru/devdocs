@@ -7,17 +7,17 @@
 * [main concepts](https://angular.dev/essentials) : components, signals, templates, dependency injection
 * in-depth guides:
   [signals](https://angular.dev/guide/signals),
-  [components](https://angular.dev/guide/components)
-  [templates](https://angular.dev/guide/templates)
-  [directives](https://angular.dev/guide/directives)
-  [dependency injection / services](https://angular.dev/guide/di)
-  [routing](https://angular.dev/guide/routing)
-  [forms](https://angular.dev/guide/forms)
-  [HTTP client](https://angular.dev/guide/http)
-  [server-side & hybrid rendering](https://angular.dev/guide/performance)
-  [testing](https://angular.dev/guide/testing)
-  [internationalization](https://angular.dev/guide/i18n)
-  [animations](https://angular.dev/guide/animations)
+  [components](https://angular.dev/guide/components),
+  [templates](https://angular.dev/guide/templates),
+  [directives](https://angular.dev/guide/directives),
+  [dependency injection / services](https://angular.dev/guide/di),
+  [routing](https://angular.dev/guide/routing),
+  [forms](https://angular.dev/guide/forms),
+  [HTTP client](https://angular.dev/guide/http),
+  [server-side & hybrid rendering](https://angular.dev/guide/performance),
+  [testing](https://angular.dev/guide/testing),
+  [internationalization](https://angular.dev/guide/i18n),
+  [animations](https://angular.dev/guide/animations),
   [drag'n drop](https://angular.dev/guide/drag-drop)
 * devtools:
   [angular cli](https://angular.dev/tools/cli),
