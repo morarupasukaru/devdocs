@@ -36,8 +36,7 @@
     [tailwind css with angular](https://angular.dev/guide/tailwind) ([tailwind css](https://tailwindcss.com/) is a utility-first CSS framework),
     [angular material](https://material.angular.io/),
     [NgRx](https://github.com/morarupasukaru/devdocs/blob/main/minor-topics/NgRx.md) (reactive state for angular),
-    [NestJS](https://nestjs.com/) (full-stack angular web framework),
-    [TypeScript](TypeScript.md)
+    [NestJS](https://nestjs.com/) (full-stack angular web framework)
 * references:
   [history](https://en.wikipedia.org/wiki/Angular_(web_framework)#History),
   [blog](https://blog.angular.dev/),
