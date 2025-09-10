@@ -23,9 +23,12 @@
   [angular cli](https://angular.dev/tools/cli),
   [how to use & create libraries](https://angular.dev/tools/libraries),
   [browser devtools extension](https://angular.dev/tools/devtools)
-* best-practises
-  * TODO
-  * [performance](https://angular.dev/best-practices/runtime-performance)
+* best-practises:
+  [angular coding style guide](https://angular.dev/style-guide),
+  [security](https://angular.dev/best-practices/security),
+  [accessibility](https://angular.dev/best-practices/a11y),
+  [error handling](https://angular.dev/best-practices/error-handling),
+  [performance](https://angular.dev/best-practices/runtime-performance)
 * ecosystem
   * TODO
   * [Angular Elements](https://angular.dev/guide/elements#) turn Angular Components as [Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
@@ -41,10 +44,10 @@
     [Material Design](https://m3.material.io/) of Google
   * [NestJS](https://nestjs.com/) is a full-stack angular web framework for [server-side](https://web.dev/articles/rendering-on-the-web)
     applications with [Node.js](https://nodejs.org/en/)
-* references
-  * TODO 
-  * [angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
   * [TypeScript](TypeScript.md)
+* references
+  * [angular versions](https://en.wikipedia.org/wiki/Angular_(web_framework)#History): 2 (9.2016) to 20 (05.2025)
+  * [angular blog](https://blog.angular.dev/)
   * [angular update guide](https://angular.dev/update-guide#)
   * [error encyclopedia](https://angular.dev/errors)
 * courses
