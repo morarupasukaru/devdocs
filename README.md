@@ -2,7 +2,7 @@ TODO move to new repo
 TODO move archive > archive/webstack
 
 # devdocs
-[[webstack](#webstack)], [[fundev](#fun-dev)], [[digital-education](#digital-education)]
+[[webstack](#webstack)], [[fundev](#fundev)], [[digital-education](#digital-education)]
 
 ## webstack
 
@@ -51,7 +51,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 [*Go to top*](#devdocs)
 
 
-## fun-dev
+## fundev
 
 topics for fun:
 * [fantasy consoles](https://en.wikipedia.org/wiki/Fantasy_video_game_console)
