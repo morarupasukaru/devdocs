@@ -1,6 +1,3 @@
-TODO move to new repo
-TODO move archive > archive/webstack
-
 # devdocs
 [[webstack](#webstack)], [[fundev](#fundev)], [[digital-education](#digital-education)]
 
