@@ -1,4 +1,4 @@
-# Archive topics
+# Archive webstack topics
 
 following links are topics that won't be updated due to lack of time:
 * [GraphQL](GraphQL.md) instead of [REST](REST-API-Guidelines.md) >> api
