@@ -43,7 +43,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 * [lombok](https://projectlombok.org/) to generate getter, setter, toString, builder, etc. for java >> lib
 * [mapstruct](https://mapstruct.org/) to ease mapping of java beans >> lib
 
-(See also [archived topics](archive/webstack/README.md))
+(See also [archived webstack topics](archive/webstack/README.md))
 
 [*Go to top*](#devdocs)
 
