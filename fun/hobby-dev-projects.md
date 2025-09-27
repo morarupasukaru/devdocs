@@ -1,5 +1,12 @@
 # hobby projects
 
+* [learning platform](#learning-platform)
+* [search docs application](#search-docs-application)
+* [dictonnary-editor](#dictonnary-editor)
+* [dico](#dico)
+* [utopian-projects](#utopian-projects)
+* [micro-frontend](#micro-frontend)
+
 ## potential projects
 
 ### learning platform
@@ -85,7 +92,7 @@ Project was initialy planed for https://github.com/morarupasukaru/webstack-bluep
 
 Project require lot of works and therefore was is currently archived
 
-## features
+### features
 
 * CRUD frontend (read/write role, write access to all dictionaries)
   * publish new major version of a dictionary
@@ -97,7 +104,7 @@ Project require lot of works and therefore was is currently archived
 * devops API (swagger-ui, devops role)
 * TODO login where?
 
-## entities
+### entities
 
 * _dictionary_
   * _id_ : uuid
@@ -124,7 +131,7 @@ Project require lot of works and therefore was is currently archived
   [language iso]: string
 * language iso: 2 char code
 
-## screens
+### screens
 
 * public _homepage_ (if unlogged)
   * teaser of available features, dictionnaries
