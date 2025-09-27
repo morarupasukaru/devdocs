@@ -1,5 +1,5 @@
 # my-devdocs
-[[webstack](#webstack)], [[fundev](#fundev)], [[digital-education](#digital-education)], [[gamography](fun/gamography.md)], [[courses](webstack/courses.md)], [[hobby development projects](fun/hobby-dev-projects.md)]
+[[webstack](#webstack)], [[fundev](#fundev)], [[digital-education](#digital-education)], [[gamography](fun/gamography.md)], [[courses](webstack/courses.md)], [[hobby projects](fun/hobby-dev-projects.md)], [[my history as developer](my-history-as-developer.md)]
 
 ## webstack
 
