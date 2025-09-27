@@ -91,6 +91,7 @@ topics for fun:
   * [uncharted wanders](https://dashingstrike.itch.io/uncharted-wanders) >> game
   * [snake eyes](https://dashingstrike.itch.io/snake-eyes) >> game
   * [resources about dungeoncrawlers game development](https://www.dungeoncrawlers.org/resources/gamedev/)
+  * [dungeon master encyclopaedia](http://dmweb.free.fr/)
 * demoscene
   * [demo effects](https://en.wikipedia.org/wiki/Demo_effect) used by demscone
   * [sizecoding](http://www.sizecoding.org/wiki/Main_Page) a wiki dedicated to create tiny demoscene intros
