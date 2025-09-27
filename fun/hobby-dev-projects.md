@@ -24,6 +24,33 @@
   * general education 
 * (notes)
 
+## search docs application
+
+### main goals
+* provide a term search into json objects
+* filter search by attribute like tags
+* json objects can have dynamic properties, e.g. tags as array of string
+
+### versions
+* "terminal-first" application version (could be implemented in fantasy console)
+* angular mobile-first application
+  * result as tables, cards, (tree)
+
+### features
+* prio 1 - term query
+* prio 1 - result of query in short form
+* prio 1 - detail of single result can be displayed
+* prio 2-  short form / template (displayed attributes and stringify) customizable
+* prio 2 - detail form / template (displayed attributes and stringify) customizable
+* prio 2 - tags filtering
+* prio 3 - tags editing
+* prio 3 - define detail of entry
+
+### use cases
+* search words (german) in a directory (with translations)
+* search kanji by levels
+* search into markdown documents (offline wiki)
+
 ## utopian projects
 utopian projects are projects cool to develop but require lot of times and certainly won't be made but who knows...
 
