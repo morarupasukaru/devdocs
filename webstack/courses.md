@@ -25,8 +25,34 @@ try to have certificate in angular and java?
     * [A collection of AssemblyScript examples](https://github.com/AssemblyScript/examples)
     * [WAT to HTML framework for sizecoders](https://github.com/Kaproncai/wasmer)
     * [sizecoding with WebAssembly](http://www.sizecoding.org/wiki/JavaScript#WebAssembly)
-  * find course certification about greenit 
-* Archive
+  * find course certification about greenit
+ 
+## refresher
+* mock exams as refresher
+  * Spring Boot:
+    [Tests Module 1](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-01),
+    [2](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-02),
+    [3](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-03),
+    [4](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-04),
+    [5](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-05),
+    [6](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-06),
+    [7](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-07),
+    [8](https://www.udemy.com/course/spring-professional-certification-practice-tests-module-08) and
+    [Spring Professional Certification - 6 full Tests (2V0-72.22)](https://www.udemy.com/course/spring-professional-certification-6-full-tests-2v0-7222-a/)
+  * Java: TODO for [Java SE 21 Developer Professional (1Z0-830)](https://mylearn.oracle.com/ou/exam/java-se-21-developer-professional-1z0-830/40805/139080/220555)
+* read official docs & blogs
+  * [Spring Framework](https://spring.io/projects/spring-framework),
+    [Spring Boot](https://spring.io/projects/spring-boot),
+    [Spring Blog](https://spring.io/blog/category/releases),
+    [Spring Framework wiki](https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions),
+    [Spring Boot wiki](https://github.com/spring-projects/spring-boot/wiki#release-notes)
+  * [Angular](https://angular.dev/),
+    [Angular Blog](https://blog.angular.dev/),
+    [Typescript Blog](https://devblogs.microsoft.com/typescript/)
+  * [Java](https://docs.oracle.com/en/java/javase/), [Java Blog](https://blogs.oracle.com/java/)
+* read & update [devdocs](https://github.com/morarupasukaru/devdocs) (all topics)
+ 
+##  past courses
   * [AI] [ChatGPT, Midjourney, DALL-E 3 & APIs - The Complete Guide](https://www.udemy.com/course/chatgpt-bard-bing-complete-guide-to-chatgpt-openai-apis/) [done in 2025]
   * [AI] [AI For Developers With GitHub Copilot, Cursor AI & ChatGPT](https://www.udemy.com/course/ai-for-developers-with-github-copilot-cursor-ai-chatgpt/) [done in 2025]
   * [Spring Boot] Spring Professional Certification Exam Tutorial  [done in 2025]
