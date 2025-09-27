@@ -1,4 +1,4 @@
-# devdocs
+# my-devdocs
 [[webstack](#webstack)], [[fundev](#fundev)], [[digital-education](#digital-education)]
 
 ## webstack
@@ -45,7 +45,7 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 
 (See also [archived webstack topics](archive/webstack/README.md))
 
-[*Go to top*](#devdocs)
+[*Go to top*](#my-devdocs)
 
 
 ## fundev
@@ -115,7 +115,7 @@ topics for fun:
 * retro
   * [Microsoft BASIC for 6502 Microprocessor](https://github.com/microsoft/BASIC-M6502)
 
-[*Go to top*](#devdocs)
+[*Go to top*](#my-devdocs)
 
 
 ## digital-education
@@ -161,6 +161,6 @@ Links and articles about digital education for young people
   * no portable consoles at first (because they are difficult to handle and lack parental control).
   * game ideas: Mario Odyssey, Mario Kart, etc.
 
-[*Go to top*](#devdocs)
+[*Go to top*](#my-devdocs)
 
 *(last update september 2025; links checked on 26.09.2025)*
