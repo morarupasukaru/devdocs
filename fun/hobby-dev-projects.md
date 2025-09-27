@@ -24,6 +24,27 @@
   * general education 
 * (notes)
 
+## utopian projects
+utopian projects are projects cool to develop but require lot of times and certainly won't be made but who knows...
+
+* document search API with authorization based on data entries [springboot]
+  * de: https://github.com/hdaSprachtechnologie/odenet
+* digital instrument [angular] (see https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Simple_synth, https://github.com/deanmalone/PianoPlay/)
+* cleopatra like / admin [springboot + angular + angular material + ...]
+* [learning platform](./learning-platform.md) web application as micro-frontends with shell
+* dungeon crawler like dungeon master in browser
+  * https://excaliburjs.com/
+  * http://dmweb.free.fr/
+* dungeon crawler / maze editor
+  * https://github.com/changhuixu/angular-maze
+* rogue game like angband or dungeon crawl stone soup
+  * https://github.com/justindujardin/angular-rpg
+  * https://github.com/tome2/tome2
+  * https://rephial.org/
+  * https://crawl.develz.org/
+  * https://github.com/crawl/crawl
+
+
 ## past hobby dev projects
 * choose your own adventure book in BASIC on Commodore 64 (< 10 years old)
 * demoscene effects on MS-DOS PC in assembly language (15-18 years old)
