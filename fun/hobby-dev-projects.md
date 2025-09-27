@@ -1,8 +1,8 @@
 # hobby projects
 
-* [dictonnary-editor](#dictonnary-editor)
-* [dico](#dico)
-* [utopian-projects](#utopian-projects)
+## in progress
+
+TBD
 
 ## potential projects
 
@@ -14,10 +14,6 @@ _do it with fantasy console, e.g. terminal-first app design_
 * digital instrument [angular] (see https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Simple_synth, https://github.com/deanmalone/PianoPlay/)
 * cleopatra like / admin [springboot + angular + angular material + ...]
 * dungeon crawler like dungeon master in browser
-  * https://excaliburjs.com/
-  * http://dmweb.free.fr/
-* dungeon crawler / maze editor
-  * https://github.com/changhuixu/angular-maze
 * rogue game like angband or dungeon crawl stone soup
   * https://github.com/justindujardin/angular-rpg
   * https://github.com/tome2/tome2
