@@ -62,6 +62,8 @@
 ## utopian projects
 utopian projects are projects cool to develop but require lot of times and certainly won't be made but who knows...
 
+* digital instrument [angular] (see https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Simple_synth]
+* cleopatra like / admin [springboot + angular + angular material + ...]
 * document search API with authorization based on data entries [springboot]
   * de: https://github.com/hdaSprachtechnologie/odenet
 * digital instrument [angular] (see https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Simple_synth, https://github.com/deanmalone/PianoPlay/)
