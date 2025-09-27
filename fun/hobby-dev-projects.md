@@ -41,3 +41,8 @@
 * robot combat simulation in ada at engineering school (18-22 years old)
 * computer network traffic simulation in java at engineering school, diploma (18-22 years old)
 * flashcards for learning kanji, kana, and Japanese words in Java (>25 years old)
+
+_(last update 27.09.2025)_
+
+[*Go to parent page*](../README.md)
+
