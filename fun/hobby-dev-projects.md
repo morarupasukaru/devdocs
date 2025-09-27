@@ -51,6 +51,14 @@
 * search kanji by levels
 * search into markdown documents (offline wiki)
 
+### implicit acceptance criterias
+* code auto-formating/prettier
+* linting
+* git hook for commit message
+* integration-tests for API (SpringDoc?)
+* frontend-tests for frontend (playwright? embedded prototype/demo?)
+* automatic upgrade lib version (like renovate)
+
 ## utopian projects
 utopian projects are projects cool to develop but require lot of times and certainly won't be made but who knows...
 
