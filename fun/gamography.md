@@ -4,6 +4,7 @@
   * [No Man's Sky](https://en.wikipedia.org/wiki/No_Man%27s_Sky)
     * [Assistant for No Man's Sky](https://nmsassistant.com/)
     * [10 Essential Tips the Game Doesn't Tell You](https://www.youtube.com/watch?v=GtwQ3cyv-3E)
+    * [10 Things No Mans Sky Doesn't Tell You!](https://www.youtube.com/watch?v=umhAxtT1ZDA)
     * [10 astuces pour bien débuter No Man's Sky avec la mise à jour 5.0](https://www.millenium.org/guide/416026.html)
   * [Final Fantasy VII Remake Integrade](https://fr.wikipedia.org/wiki/Final_Fantasy_VII_Remake)
 * :heart: **Favorites games** :heart::
