@@ -14,6 +14,7 @@ software
 * tuxpaint
 * univers photo CEWE
 * audacity
+
 hardware
 * printer HL-1210W series
 * scanner "canon lide 220"
