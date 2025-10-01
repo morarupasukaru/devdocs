@@ -76,5 +76,7 @@ following links are topics that won't be updated due to lack of time:
 * [bruno](https://www.usebruno.com/) API client >> tool
 * [Git](Git.md), [GitHub](https://github.com/) as vcs >> tool
 * persistence: [JPA](https://jakarta.ee/specifications/persistence/) >> lib
+* [Rancher Desktop](https://rancherdesktop.io/) as alternative to docker desktop to manager docker image (virtualization)
+* [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) for linux on windows (virtualization)
 
 [*Go to parent page*](../../README.md)
