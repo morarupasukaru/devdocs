@@ -46,8 +46,9 @@
 * courses:
   [the complete guide to angular](https://www.udemy.com/the-complete-guide-to-angular-2/),
   [angular testing masterclass](https://www.udemy.com/course/angular-testing-course/),
-  [angular security masterclass](https://www.udemy.com/course/angular-security/)
-
+  [angular security masterclass](https://www.udemy.com/course/angular-security/),
+  [angular signals in depth](https://www.udemy.com/course/angular-signals/)
+  
 ## interesting topics
 * components
   * [smart vs presentational components](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/)  
