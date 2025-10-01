@@ -72,6 +72,7 @@
   * [e2e testing](https://angular.dev/tools/cli/end-to-end)
   * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
 * state management: [Reactive Async Data with Angular 20 rxResource: Simplified State Management Without RxJS](https://medium.com/@viacheslav.klavdiiev/reactive-async-data-with-angular-20-rxresource-simplified-state-management-without-rxjs-c63fd5533ca4)
+* use [HttpContext](https://angular.dev/api/common/http/HttpContext#usage-example) to toggle feature in HttpInterceptor
   
 [*Go to parent page*](../README.md)
 
