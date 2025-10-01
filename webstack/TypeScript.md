@@ -1,6 +1,6 @@
 # Typescript
 
-[TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](../archive/JavaScript.md) language and features and add 
+[TypeScript](https://www.typescriptlang.org/) is based on [JavaScript](../archive/webstack/JavaScript.md) language and features and add 
 new features: **strongly types**, generics, interfaces, etc. It's a *wrapper* around JavaScript and TypeScript must be 
 [transpiled](https://en.wikipedia.org/wiki/Source-to-source_compiler) to JavaScript to be run in the browser.
 
