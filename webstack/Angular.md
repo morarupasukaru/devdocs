@@ -73,6 +73,7 @@
   * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
 * state management: [Reactive Async Data with Angular 20 rxResource: Simplified State Management Without RxJS](https://medium.com/@viacheslav.klavdiiev/reactive-async-data-with-angular-20-rxresource-simplified-state-management-without-rxjs-c63fd5533ca4)
 * use [HttpContext](https://angular.dev/api/common/http/HttpContext#usage-example) to toggle feature in HttpInterceptor
+* [View queries](https://angular.dev/guide/components/queries#view-queries) to retrieve element from template (view) from component with [viewChild](https://angular.dev/api/core/viewChild) signal
   
 [*Go to parent page*](../README.md)
 
