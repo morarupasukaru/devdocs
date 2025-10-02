@@ -73,7 +73,9 @@
   * [environment-specific configuration](https://angular.dev/tools/cli/environments#configure-environment-specific-defaults)
 * state management: [Reactive Async Data with Angular 20 rxResource: Simplified State Management Without RxJS](https://medium.com/@viacheslav.klavdiiev/reactive-async-data-with-angular-20-rxresource-simplified-state-management-without-rxjs-c63fd5533ca4)
 * use [HttpContext](https://angular.dev/api/common/http/HttpContext#usage-example) to toggle feature in HttpInterceptor
-* [View queries](https://angular.dev/guide/components/queries#view-queries) to retrieve elements (component, DOM element, directive, etc.) from template(view) as signal with [viewChild](https://angular.dev/api/core/viewChild) or [viewChildren](https://angular.dev/api/core/viewChildren#) 
+* [View queries](https://angular.dev/guide/components/queries#view-queries) to retrieve elements (component, DOM element, directive, etc.) from template(view) as signal with [viewChild](https://angular.dev/api/core/viewChild) or [viewChildren](https://angular.dev/api/core/viewChildren#)
+* [Angular supports projecting multiple different elements into different <ng-content> placeholders based on CSS selector](https://angular.dev/guide/components/content-projection#multiple-content-placeholders),
+  see select of [<ng-content>](https://angular.dev/api/core/ng-content#)
   
 [*Go to parent page*](../README.md)
 
