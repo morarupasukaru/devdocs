@@ -3,11 +3,10 @@
 try to have certificate in angular and java?
 
 * In Progress
-  * [Angular] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/) [done in 2019, repeated in TODO]
+  * [Angular] [Understanding TypeScript](https://www.udemy.com/course/understanding-typescript/) [done in 2019, repeated in TODO] -> watch only
 * Next courses
-  * [Angular] [Angular Signals In Depth (Angular 19)](https://www.udemy.com/course/angular-signals/)
-  * [Angular] [The complete guide to angular](https://www.udemy.com/course/the-complete-guide-to-angular-2/) [done in 2019, repeated in TODO]
-  * [Frontend] [JavaScript - The Complete Guide 2025](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) [2023, repeated in TODO]
+  * [Angular] [The complete guide to angular](https://www.udemy.com/course/the-complete-guide-to-angular-2/) [done in 2019, repeated in TODO] -> code-along
+  * [Frontend] [JavaScript - The Complete Guide 2025](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) [2023, repeated in TODO] -> watch only
   * [Python]
     * [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/?couponCode=ST22MT240325G1) 
     * [Python - The Practical Guide](https://www.udemy.com/course/learn-python-by-building-a-blockchain-cryptocurrency/)
@@ -53,6 +52,7 @@ try to have certificate in angular and java?
 * read & update [devdocs](https://github.com/morarupasukaru/devdocs) (all topics)
  
 ##  past courses
+  * [Angular] [Angular Signals In Depth (Angular 19)](https://www.udemy.com/course/angular-signals/) [done in 2025]
   * [AI] [ChatGPT, Midjourney, DALL-E 3 & APIs - The Complete Guide](https://www.udemy.com/course/chatgpt-bard-bing-complete-guide-to-chatgpt-openai-apis/) [done in 2025]
   * [AI] [AI For Developers With GitHub Copilot, Cursor AI & ChatGPT](https://www.udemy.com/course/ai-for-developers-with-github-copilot-cursor-ai-chatgpt/) [done in 2025]
   * [Spring Boot] Spring Professional Certification Exam Tutorial  [done in 2025]
