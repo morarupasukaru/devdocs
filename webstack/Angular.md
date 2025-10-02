@@ -77,6 +77,8 @@
   [contentChild](https://angular.dev/api/core/contentChild#) or [contentChildren](https://angular.dev/api/core/contentChildren)
 * [Angular supports projecting multiple different elements into different <ng-content> placeholders based on CSS selector](https://angular.dev/guide/components/content-projection#multiple-content-placeholders),
   see select of [<ng-content>](https://angular.dev/api/core/ng-content#)
+* use [linkedSignal](https://angular.dev/guide/signals/linked-signal) to have mutable [computed](https://angular.dev/api/core/computed#) signal; (but try to keep computed immutable with usage of [computed](https://angular.dev/api/core/computed#) only)
+* use [resource()](https://angular.dev/guide/signals/resource#) to perform any kind of async operation instead of normal synchronous signal APIs
   
 [*Go to parent page*](../README.md)
 
