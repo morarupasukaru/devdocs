@@ -5,7 +5,6 @@
   * [Hyrule Warriors: Age of Imprisonment](https://en.wikipedia.org/wiki/Hyrule_Warriors:_Age_of_Imprisonment)
 * :heart: **Favorites games** :heart::
   [Final Fantasy XII](https://en.wikipedia.org/wiki/Final_Fantasy_XII),
-  [Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim),
   [Zelda - Breath of the Wild](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild)
   & [Tears of the Kingdom](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom)
 * **Others**
@@ -68,6 +67,7 @@
     [Sega Genesis Classics](https://en.wikipedia.org/wiki/Sega_Genesis_Classics),
     [Silence](https://en.wikipedia.org/wiki/Silence_(video_game)),
     [Sine Mora EX](https://en.wikipedia.org/wiki/Sine_Mora),
+    [Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim),
     [Sonic Mania](https://en.wikipedia.org/wiki/Sonic_Mania),
     [Sonic the Hedgehog 1-2](https://en.wikipedia.org/wiki/Sonic_the_Hedgehog_(1991_video_game)),
     [Space Commander: War and Trade](https://store.steampowered.com/app/1449750/Space_Commander_War_and_Trade/),
