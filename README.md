@@ -91,6 +91,11 @@ topics for fun:
     * [A collection of AssemblyScript examples](https://github.com/AssemblyScript/examples)
     * [WAT to HTML framework for sizecoders](https://github.com/Kaproncai/wasmer)
     * [sizecoding with WebAssembly](http://www.sizecoding.org/wiki/JavaScript#WebAssembly)
+  * [Python]
+    * [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/?couponCode=ST22MT240325G1) 
+    * [Python - The Practical Guide](https://www.udemy.com/course/learn-python-by-building-a-blockchain-cryptocurrency/)
+    * [Rasperry Pi projects](https://projects.raspberrypi.org/en) pour apprendre à programmer avec scratch, python, etc.
+      * with [pygame](https://www.pygame.org) (for python)
 * dungeoncrawlers
   * [uncharted wanders](https://dashingstrike.itch.io/uncharted-wanders) >> game
   * [snake eyes](https://dashingstrike.itch.io/snake-eyes) >> game
