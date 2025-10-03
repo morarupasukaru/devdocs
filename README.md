@@ -86,7 +86,11 @@ topics for fun:
     * [microw8](https://exoticorn.github.io/microw8/) in WebAssembly
 * languages
   * [learn Lua in 15 minutes](https://tylerneylon.com/a/learn-lua/)
-  * [WebAssembly](https://webassembly.org/) 
+  * [WebAssembly](https://webassembly.org/) in [AssemblyScript](https://www.assemblyscript.org/introduction.html)
+    * [2D Video Game in AssemblyScript Tutorial](https://blog.ttulka.com/2d-video-game-in-assemblyscript-tutorial/)
+    * [A collection of AssemblyScript examples](https://github.com/AssemblyScript/examples)
+    * [WAT to HTML framework for sizecoders](https://github.com/Kaproncai/wasmer)
+    * [sizecoding with WebAssembly](http://www.sizecoding.org/wiki/JavaScript#WebAssembly)
 * dungeoncrawlers
   * [uncharted wanders](https://dashingstrike.itch.io/uncharted-wanders) >> game
   * [snake eyes](https://dashingstrike.itch.io/snake-eyes) >> game
