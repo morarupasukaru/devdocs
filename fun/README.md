@@ -89,7 +89,11 @@ TBD
 * [learn Lua in 15 minutes](https://tylerneylon.com/a/learn-lua/)
 
 ### AssemblyScript
-* [WebAssembly](https://webassembly.org/) in [AssemblyScript](https://www.assemblyscript.org/introduction.html)
+
+* [AssemblyScript](https://www.assemblyscript.org/introduction.html)
+  * [The AssemblyScript Book](https://www.assemblyscript.org/introduction.html)
+
+* [WebAssembly](https://webassembly.org/) in
   * [2D Video Game in AssemblyScript Tutorial](https://blog.ttulka.com/2d-video-game-in-assemblyscript-tutorial/)
   * [A collection of AssemblyScript examples](https://github.com/AssemblyScript/examples)
   * [WAT to HTML framework for sizecoders](https://github.com/Kaproncai/wasmer)
