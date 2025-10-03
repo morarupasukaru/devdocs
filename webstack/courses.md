@@ -7,25 +7,13 @@ try to have certificate in angular and java?
 * Next courses
   * [Angular] [The complete guide to angular](https://www.udemy.com/course/the-complete-guide-to-angular-2/) [done in 2019, repeated in TODO] -> code-along
   * [Frontend] [JavaScript - The Complete Guide 2025](https://www.udemy.com/course/javascript-the-complete-guide-2020-beginner-advanced/) [2023, repeated in TODO] -> watch only
-  * [Python]
-    * [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/?couponCode=ST22MT240325G1) 
-    * [Python - The Practical Guide](https://www.udemy.com/course/learn-python-by-building-a-blockchain-cryptocurrency/)
-    * [Rasperry Pi projects](https://projects.raspberrypi.org/en) pour apprendre à programmer avec scratch, python, etc.
-      * with [pygame](https://www.pygame.org) (for python)
   * [Java]
     * [Java SE 11 Developer 1Z0-819 OCP Course - Part 1](https://www.udemy.com/course/java-se-11-developer-1z0-819-ocp-course-part-1/)
     * [Java SE 11 Developer 1Z0-819 OCP Course - Part 2](https://www.udemy.com/course/java-se-11-developer-1z0-819-ocp-course-part-2/)
     * [Oracle Java SE 21 Developer Professional: 1Z0-830](https://www.udemy.com/course/oracle-certification-java-21-learnit/)
     * [OCP Java 21, 17: Certification 1Z0-830, 1Z0-829 --BRAND NEW!](https://www.udemy.com/course/ocp-oracle-certified-professional-java-developer-prep/)
     * other mocks exam? (enthuware? ...)
-  * [AssemblyScript / WASM] [WebAssembly](https://webassembly.org/) in [AssemblyScript](https://www.assemblyscript.org/introduction.html)
-    * [wasm4](https://wasm4.org/) fantasy console
-    * [2D Video Game in AssemblyScript Tutorial](https://blog.ttulka.com/2d-video-game-in-assemblyscript-tutorial/)
-    * [A collection of AssemblyScript examples](https://github.com/AssemblyScript/examples)
-    * [WAT to HTML framework for sizecoders](https://github.com/Kaproncai/wasmer)
-    * [sizecoding with WebAssembly](http://www.sizecoding.org/wiki/JavaScript#WebAssembly)
   * find course certification about greenit
- 
 ## refresher
 * mock exams as refresher
   * Spring Boot:
