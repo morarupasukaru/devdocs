@@ -51,6 +51,12 @@ Webstack based on [Angular](webstack/Angular.md) & [Spring Boot](webstack/Spring
 ## fundev
 
 topics for fun:
+* [gaming](https://github.com/morarupasukaru/my-devdocs/blob/main/fun/gamography.md): FF12 
+* fantasy consoles: PICO-8, TIC-80, picotron, wasm4, microw8
+  * projects: demoscene, games (dungeoncrawler, roguelike, gambits rpg), app (to learn german)
+* languages: lua, assemblyscript, python
+* hardware: raspberry pi 500, c64
+
 * [fantasy consoles](https://en.wikipedia.org/wiki/Fantasy_video_game_console)
   * [PICO-8](https://www.lexaloffle.com/pico-8.php)
     * [Manual](https://www.lexaloffle.com/dl/docs/pico-8_manual.html)
