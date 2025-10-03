@@ -1,18 +1,13 @@
 # Gamography
 
 * *playlist* on Switch2
-  * [No Man's Sky](https://en.wikipedia.org/wiki/No_Man%27s_Sky)
-    * [Assistant for No Man's Sky](https://nmsassistant.com/)
-    * [10 Essential Tips the Game Doesn't Tell You](https://www.youtube.com/watch?v=GtwQ3cyv-3E)
-    * [10 Things No Mans Sky Doesn't Tell You!](https://www.youtube.com/watch?v=umhAxtT1ZDA)
-    * [10 astuces pour bien débuter No Man's Sky avec la mise à jour 5.0](https://www.millenium.org/guide/416026.html)
-  * [Final Fantasy VII Remake Integrade](https://fr.wikipedia.org/wiki/Final_Fantasy_VII_Remake)
+  * [Final Fantasy VII Remake Integrade](https://fr.wikipedia.org/wiki/Final_Fantasy_VII_Remake),
+  * [Hyrule Warriors: Age of Imprisonment](https://en.wikipedia.org/wiki/Hyrule_Warriors:_Age_of_Imprisonment)
 * :heart: **Favorites games** :heart::
-  [No Man's Sky](https://en.wikipedia.org/wiki/No_Man%27s_Sky),
   [Final Fantasy XII](https://en.wikipedia.org/wiki/Final_Fantasy_XII),
   [Skyrim](https://en.wikipedia.org/wiki/The_Elder_Scrolls_V:_Skyrim),
   [Zelda - Breath of the Wild](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Breath_of_the_Wild)
-  & [Tears of the Kingdom](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom),
+  & [Tears of the Kingdom](https://en.wikipedia.org/wiki/The_Legend_of_Zelda:_Tears_of_the_Kingdom)
 * **Others**
   * _Switch_:
     [A Monster's Expedition](https://www.monsterexpedition.com/),
